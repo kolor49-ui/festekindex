@@ -1,0 +1,67 @@
+import type { Source } from "./types";
+
+export const sources: Source[] = [
+  {
+    id: "src_euroll_official",
+    type: "hu_representation",
+    title: "Euroll Hungária — hivatalos weboldal",
+    url: "https://www.euroll.hu",
+    publisher: "Euroll Hungária Kft.",
+    accessedAt: "2026-10-01",
+  },
+  {
+    id: "src_graco_official",
+    type: "manufacturer",
+    title: "Graco — hivatalos weboldal",
+    url: "https://www.graco.com",
+    publisher: "Graco Inc.",
+    accessedAt: "2026-10-01",
+  },
+  {
+    id: "src_akzonobel_hu",
+    type: "official_website",
+    title: "AkzoNobel Coatings Magyarország",
+    url: "https://www.akzonobel.com",
+    publisher: "Akzo Nobel Coatings Zrt.",
+    accessedAt: "2026-09-15",
+  },
+  {
+    id: "src_wagner_official",
+    type: "manufacturer",
+    title: "Wagner Group — hivatalos weboldal",
+    url: "https://www.wagner-group.com",
+    publisher: "J. Wagner GmbH",
+    accessedAt: "2026-10-01",
+  },
+  {
+    id: "src_mirka_official",
+    type: "manufacturer",
+    title: "Mirka — hivatalos weboldal",
+    url: "https://www.mirka.com",
+    publisher: "Mirka Ltd",
+    accessedAt: "2026-09-20",
+  },
+  {
+    id: "src_ppg_trilak",
+    type: "official_website",
+    title: "PPG Trilak — hivatalos weboldal",
+    url: "https://www.trilak.hu",
+    publisher: "PPG TRILAK Kft.",
+    accessedAt: "2026-09-10",
+  },
+  {
+    id: "src_sika_hu",
+    type: "official_website",
+    title: "Sika Hungária — hivatalos weboldal",
+    url: "https://hun.sika.com",
+    publisher: "Sika Hungária Kft.",
+    accessedAt: "2026-09-10",
+  },
+  {
+    id: "src_airless_knowledge",
+    type: "other",
+    title: "Airless szórástechnika — szakmai összefoglaló források",
+    notes: "Gyártói alkalmazástechnikai dokumentációk összevetése",
+    accessedAt: "2026-10-01",
+  },
+];

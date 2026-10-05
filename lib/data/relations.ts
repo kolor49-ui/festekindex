@@ -1,0 +1,273 @@
+import type { Relation } from "./types";
+
+/**
+ * First-class relation graph. All links use stable entity IDs (not slugs).
+ */
+export const relations: Relation[] = [
+  // Euroll ↔ brands / tech
+  {
+    id: "rel_euroll_dist_graco",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "brand_graco",
+    relationType: "distributes",
+    description: "Graco szórástechnikai gépek magyarországi forgalmazása",
+    sourceIds: ["src_euroll_official", "src_graco_official"],
+    verifiedAt: "2026-10-01",
+    status: "active",
+  },
+  {
+    id: "rel_euroll_official_graco",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "brand_graco",
+    relationType: "officialDistributor",
+    description: "Hivatalos / kiemelt magyarországi forgalmazói kapcsolat",
+    sourceIds: ["src_euroll_official"],
+    verifiedAt: "2026-10-01",
+    status: "active",
+  },
+  {
+    id: "rel_euroll_services_graco",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "brand_graco",
+    relationType: "services",
+    description: "Graco gépek szervizháttére",
+    sourceIds: ["src_euroll_official"],
+    verifiedAt: "2026-10-01",
+    status: "active",
+  },
+  {
+    id: "rel_euroll_dist_mirka",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "brand_mirka",
+    relationType: "distributes",
+    description: "Mirka csiszolástechnika forgalmazása",
+    sourceIds: ["src_euroll_official", "src_mirka_official"],
+    verifiedAt: "2026-09-20",
+    status: "active",
+  },
+  {
+    id: "rel_euroll_uses_airless",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    description: "Airless szórástechnikai portfólió",
+    sourceIds: ["src_euroll_official"],
+    status: "active",
+  },
+
+  // Graco ↔ tech / families / compare
+  {
+    id: "rel_graco_uses_airless",
+    fromEntityId: "brand_graco",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    description: "Graco airless gépek és rendszerek",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_graco_mark_family",
+    fromEntityId: "brand_graco",
+    toEntityId: "pf_graco_mark",
+    relationType: "productFamilyOf",
+    description: "Mark gépcsalád",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_graco_ultra_family",
+    fromEntityId: "brand_graco",
+    toEntityId: "pf_graco_ultra",
+    relationType: "productFamilyOf",
+    description: "Ultra gépcsalád",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_graco_gx_family",
+    fromEntityId: "brand_graco",
+    toEntityId: "pf_graco_gx",
+    relationType: "productFamilyOf",
+    description: "GX gépcsalád",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_mark_uses_airless",
+    fromEntityId: "pf_graco_mark",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_ultra_uses_airless",
+    fromEntityId: "pf_graco_ultra",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_gx_uses_airless",
+    fromEntityId: "pf_graco_gx",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    sourceIds: ["src_graco_official"],
+    status: "active",
+  },
+  {
+    id: "rel_graco_related_wagner",
+    fromEntityId: "brand_graco",
+    toEntityId: "brand_wagner",
+    relationType: "relatedTo",
+    description: "Szórástechnikai összehasonlítási pont",
+    sourceIds: [],
+    status: "active",
+  },
+
+  // Wagner / MLS
+  {
+    id: "rel_mls_dist_wagner",
+    fromEntityId: "org_mls_magyarorszag",
+    toEntityId: "brand_wagner",
+    relationType: "distributes",
+    description: "Wagner szórástechnika magyarországi kapcsolat",
+    sourceIds: ["src_wagner_official"],
+    status: "active",
+  },
+  {
+    id: "rel_mls_dist_milesi",
+    fromEntityId: "org_mls_magyarorszag",
+    toEntityId: "brand_milesi",
+    relationType: "distributes",
+    description: "Milesi faipari bevonatok",
+    sourceIds: [],
+    status: "active",
+  },
+  {
+    id: "rel_wagner_uses_airless",
+    fromEntityId: "brand_wagner",
+    toEntityId: "tech_airless",
+    relationType: "usesTechnology",
+    sourceIds: ["src_wagner_official"],
+    status: "active",
+  },
+
+  // AkzoNobel brands
+  {
+    id: "rel_akzo_owns_dulux",
+    fromEntityId: "org_akzo_nobel_coatings",
+    toEntityId: "brand_dulux",
+    relationType: "owns",
+    sourceIds: ["src_akzonobel_hu"],
+    status: "active",
+  },
+  {
+    id: "rel_dulux_brandof_akzo",
+    fromEntityId: "brand_dulux",
+    toEntityId: "org_akzo_nobel_coatings",
+    relationType: "brandOf",
+    sourceIds: ["src_akzonobel_hu"],
+    status: "active",
+  },
+  {
+    id: "rel_akzo_owns_interpon",
+    fromEntityId: "org_akzo_nobel_coatings",
+    toEntityId: "brand_interpon",
+    relationType: "owns",
+    sourceIds: ["src_akzonobel_hu"],
+    status: "active",
+  },
+  {
+    id: "rel_interpon_uses_powder",
+    fromEntityId: "brand_interpon",
+    toEntityId: "tech_porfestek",
+    relationType: "usesTechnology",
+    sourceIds: ["src_akzonobel_hu"],
+    status: "active",
+  },
+
+  // PPG / Héra
+  {
+    id: "rel_ppg_owns_hera",
+    fromEntityId: "org_ppg_trilak",
+    toEntityId: "brand_hera",
+    relationType: "owns",
+    sourceIds: ["src_ppg_trilak"],
+    status: "active",
+  },
+  {
+    id: "rel_ppg_manufactures_hera",
+    fromEntityId: "org_ppg_trilak",
+    toEntityId: "brand_hera",
+    relationType: "manufactures",
+    sourceIds: ["src_ppg_trilak"],
+    status: "active",
+  },
+
+  // Sika
+  {
+    id: "rel_sika_org_owns_brand",
+    fromEntityId: "org_sika_hungaria",
+    toEntityId: "brand_sika",
+    relationType: "owns",
+    sourceIds: ["src_sika_hu"],
+    status: "active",
+  },
+
+  // Mirka ↔ tech
+  {
+    id: "rel_mirka_uses_csiszolas",
+    fromEntityId: "brand_mirka",
+    toEntityId: "tech_csiszolas",
+    relationType: "usesTechnology",
+    sourceIds: ["src_mirka_official"],
+    status: "active",
+  },
+
+  // Knowledge
+  {
+    id: "rel_know_airless_docs_tech",
+    fromEntityId: "know_airless_alapok",
+    toEntityId: "tech_airless",
+    relationType: "documentedBy",
+    description: "Technológiai alapismeret",
+    sourceIds: ["src_airless_knowledge"],
+    status: "active",
+  },
+  {
+    id: "rel_know_airless_docs_graco",
+    fromEntityId: "know_airless_alapok",
+    toEntityId: "brand_graco",
+    relationType: "relatedTo",
+    sourceIds: [],
+    status: "active",
+  },
+  {
+    id: "rel_know_powder_docs_tech",
+    fromEntityId: "know_porfestek_vs_folyadek",
+    toEntityId: "tech_porfestek",
+    relationType: "documentedBy",
+    sourceIds: [],
+    status: "active",
+  },
+
+  // Category membership via relations (complements categoryIds on entities)
+  {
+    id: "rel_graco_cat_szoras",
+    fromEntityId: "brand_graco",
+    toEntityId: "cat_szoras",
+    relationType: "belongsToCategory",
+    sourceIds: [],
+    status: "active",
+  },
+  {
+    id: "rel_euroll_cat_szoras",
+    fromEntityId: "org_euroll_hungaria",
+    toEntityId: "cat_szoras",
+    relationType: "belongsToCategory",
+    sourceIds: [],
+    status: "active",
+  },
+];
