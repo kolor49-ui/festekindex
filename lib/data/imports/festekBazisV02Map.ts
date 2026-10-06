@@ -38,11 +38,23 @@ type PackEntity = {
   body?: string;
   sourceIds?: string[];
   updatedAt?: string;
+  verifiedAt?: string;
   aliases?: string[];
   kind?: string;
   legalName?: string;
   roles?: string[];
   country?: string;
+  website?: string;
+  taxNumber?: string;
+  companyRegistrationNumber?: string;
+  registeredOffice?: {
+    postalCode?: string;
+    city?: string;
+    addressLine?: string;
+  };
+  primaryActivity?: string;
+  foundedYear?: number;
+  hqCity?: string;
 };
 
 type PackRelation = {
@@ -194,6 +206,24 @@ export function mapFestekBazisV02(): FestekBazisV02Seed {
     legalName: o.legalName ?? o.name,
     country: o.country ?? "HU",
     roles: (o.roles as Organization["roles"]) ?? ["manufacturer"],
+    website: o.website?.trim() || undefined,
+    taxNumber: o.taxNumber?.trim() || undefined,
+    companyRegistrationNumber:
+      o.companyRegistrationNumber?.trim() || undefined,
+    registeredOffice: o.registeredOffice
+      ? {
+          postalCode: o.registeredOffice.postalCode?.trim() || undefined,
+          city: o.registeredOffice.city?.trim() || undefined,
+          addressLine: o.registeredOffice.addressLine?.trim() || undefined,
+        }
+      : undefined,
+    primaryActivity: o.primaryActivity?.trim() || undefined,
+    // foundedYear omitted unless pack provides it with org-level source support
+    foundedYear:
+      typeof o.foundedYear === "number" && Number.isFinite(o.foundedYear)
+        ? o.foundedYear
+        : undefined,
+    hqCity: o.hqCity?.trim() || undefined,
     shortDescription:
       (o.shortDescription ?? "").trim() ||
       structuralShort(o.name, "magyar festékgyártó szervezet"),
@@ -204,6 +234,7 @@ export function mapFestekBazisV02(): FestekBazisV02Seed {
     seoDescription: `${o.name} — magyar festék- és bevonóanyag-gyártó a FESTÉKINDEX-en.`,
     sourceIds: o.sourceIds ?? [],
     updatedAt: o.updatedAt ?? UPDATED_AT,
+    verifiedAt: o.verifiedAt,
   }));
 
   const brands: Brand[] = pack.brands.map((b) => ({

@@ -112,13 +112,28 @@ export type Category = EntityBase & {
   navLabel?: string;
 };
 
+/** Seat address parts — country lives on Organization.country (single source). */
+export type RegisteredOffice = {
+  postalCode?: string;
+  city?: string;
+  addressLine?: string;
+};
+
 export type Organization = EntityBase & {
   type: "organization";
   legalName: string;
+  /** ISO-style country code (e.g. HU) — canonical country fact. */
   country: string;
+  /** @deprecated Prefer registeredOffice when structured seat is available. */
   hqCity?: string;
   roles: OrganizationRole[];
   website?: string;
+  taxNumber?: string;
+  companyRegistrationNumber?: string;
+  registeredOffice?: RegisteredOffice;
+  primaryActivity?: string;
+  /** Only publish when organization-level source provenance supports it. */
+  foundedYear?: number;
 };
 
 export type Brand = EntityBase & {

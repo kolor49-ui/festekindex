@@ -44,6 +44,8 @@ export type CompanyFact = {
   value: string;
   /** External URL when the fact is a website link. */
   href?: string;
+  /** Span full grid width (e.g. long legal name). */
+  wide?: boolean;
 };
 
 export type OrganizationHubModel = {
@@ -101,19 +103,69 @@ export function formatHuVerifiedDate(iso: string): string | undefined {
   return `${year}. ${HU_MONTHS[monthIdx]} ${day}.`;
 }
 
+/** Human-readable seat: "9545 Jánosháza, Jókai utca 28." */
+export function formatRegisteredOffice(
+  org: Organization,
+): string | undefined {
+  const office = org.registeredOffice;
+  if (office) {
+    const locality = [office.postalCode?.trim(), office.city?.trim()]
+      .filter(Boolean)
+      .join(" ");
+    const line = office.addressLine?.trim();
+    if (locality && line) return `${locality}, ${line}`;
+    if (locality) return locality;
+    if (line) return line;
+  }
+  const legacy = org.hqCity?.trim();
+  return legacy || undefined;
+}
+
 /**
  * Company facts from Organization fields only — never invented.
  * Omit any row whose value is missing.
+ * foundedYear only when present on the entity (callers gate provenance at write-time).
  */
 export function buildCompanyFacts(org: Organization): CompanyFact[] {
   const facts: CompanyFact[] = [];
 
   if (org.legalName?.trim()) {
-    facts.push({ label: "Teljes cégnév", value: org.legalName.trim() });
+    facts.push({
+      label: "Teljes cégnév",
+      value: org.legalName.trim(),
+      wide: true,
+    });
   }
-  if (org.hqCity?.trim()) {
-    facts.push({ label: "Székhely", value: org.hqCity.trim() });
+
+  const seat = formatRegisteredOffice(org);
+  if (seat) {
+    facts.push({ label: "Székhely", value: seat });
   }
+
+  if (org.companyRegistrationNumber?.trim()) {
+    facts.push({
+      label: "Cégjegyzékszám",
+      value: org.companyRegistrationNumber.trim(),
+    });
+  }
+
+  if (org.taxNumber?.trim()) {
+    facts.push({ label: "Adószám", value: org.taxNumber.trim() });
+  }
+
+  if (org.primaryActivity?.trim()) {
+    facts.push({ label: "Tevékenység", value: org.primaryActivity.trim() });
+  }
+
+  if (
+    typeof org.foundedYear === "number" &&
+    Number.isFinite(org.foundedYear) &&
+    org.foundedYear >= 1800 &&
+    org.foundedYear <= 2100
+  ) {
+    facts.push({ label: "Alapítás éve", value: String(org.foundedYear) });
+  }
+
   if (org.country?.trim()) {
     const code = org.country.trim();
     facts.push({
@@ -121,6 +173,7 @@ export function buildCompanyFacts(org: Organization): CompanyFact[] {
       value: code === "HU" ? "Magyarország" : code,
     });
   }
+
   if (org.website?.trim()) {
     const url = org.website.trim();
     facts.push({ label: "Hivatalos weboldal", value: url, href: url });
@@ -264,11 +317,32 @@ export function buildOrganizationHubJsonLd(model: OrganizationHubModel) {
     url: model.canonicalUrl,
   };
   if (org.legalName) organizationLd.legalName = org.legalName;
-  if (org.website) organizationLd.sameAs = [org.website];
+  if (org.website) {
+    organizationLd.sameAs = [org.website];
+  }
+
+  const office = org.registeredOffice;
+  if (office?.addressLine || office?.city || office?.postalCode || org.country) {
+    const address: Record<string, string> = {
+      "@type": "PostalAddress",
+    };
+    if (office?.addressLine) address.streetAddress = office.addressLine;
+    if (office?.city) address.addressLocality = office.city;
+    if (office?.postalCode) address.postalCode = office.postalCode;
+    if (org.country) address.addressCountry = org.country;
+    organizationLd.address = address;
+  } else if (org.hqCity) {
+    organizationLd.address = {
+      "@type": "PostalAddress",
+      addressLocality: org.hqCity,
+      ...(org.country ? { addressCountry: org.country } : {}),
+    };
+  }
+
   if (org.country) {
     organizationLd.areaServed = {
       "@type": "Country",
-      name: org.country,
+      name: org.country === "HU" ? "Hungary" : org.country,
     };
   }
   if (model.brands.length) {

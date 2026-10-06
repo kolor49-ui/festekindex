@@ -23,12 +23,25 @@
       "indexable": true,
       "shortDescription": "Magyar festék- és bevonóanyag-gyártó.",
       "body": "",
-      "sourceIds": [],
+      "sourceIds": [
+        "src_fb_company"
+      ],
       "updatedAt": "2026-10-05",
+      "verifiedAt": "2026-10-05",
       "legalName": "FESTÉK BÁZIS Gyártó és Kereskedelmi Zártkörűen Működő Részvénytársaság",
+      "country": "HU",
       "roles": [
         "manufacturer"
-      ]
+      ],
+      "taxNumber": "25026331-2-18",
+      "companyRegistrationNumber": "18-10-100739",
+      "registeredOffice": {
+        "postalCode": "9545",
+        "city": "Jánosháza",
+        "addressLine": "Jókai utca 28."
+      },
+      "website": "https://www.festekbazis.hu/",
+      "primaryActivity": "Festék- és bevonóanyag-gyártás"
     }
   ],
   "brands": [
@@ -2151,6 +2164,15 @@
     }
   ],
   "sources": [
+    {
+      "id": "src_fb_company",
+      "title": "Festék Bázis Zrt. hivatalos cégadatok",
+      "url": "https://www.festekbazis.hu/",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_website",
+      "verifiedAt": "2026-10-05",
+      "notes": "Organization-level company facts: legal name, registered office, tax/company identifiers, primary activity, website."
+    },
     {
       "id": "src_fb_7016_family",
       "title": "7016™ termékcsalád",

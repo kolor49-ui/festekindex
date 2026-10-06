@@ -220,7 +220,12 @@ export function OrganizationHubPage({
               <h2 className="seo-heading">Cégadatok</h2>
               <dl className="org-facts">
                 {model.companyFacts.map((fact) => (
-                  <div key={fact.label} className="org-fact">
+                  <div
+                    key={fact.label}
+                    className={
+                      fact.wide ? "org-fact org-fact-wide" : "org-fact"
+                    }
+                  >
                     <dt>{fact.label}</dt>
                     <dd>
                       {fact.href ? (
