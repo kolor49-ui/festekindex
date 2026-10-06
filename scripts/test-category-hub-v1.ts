@@ -255,8 +255,54 @@ section("Faipari Brand separation");
   assert.ok(html.includes("További kapcsolódó márkák"));
   assert.ok(html.includes("FACTOR"));
   assert.ok(html.includes("Sikkens"));
+  // Product-derived company navigation (not omitted beside Brands)
+  assert.ok(model.organizationContext);
+  assert.equal(model.organizationContext!.mode, "unified");
+  assert.equal(model.organizationContext!.unified.length, 1);
+  assert.equal(
+    model.organizationContext!.unified[0]!.id,
+    "org_festek_bazis_zrt",
+  );
+  assert.ok(html.includes("Cégek"));
+  assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
+  assert.ok(html.includes("FESTÉK BÁZIS Zrt."));
+  assert.ok(!html.includes("Tulajdonos"));
+  assert.ok(!html.includes("Gyártók és szakmai szereplők"));
 }
 console.log("Faipari OK");
+
+section("Homlokzat company navigation");
+{
+  const p = getCategoryPortfolio("cat_homlokzat")!;
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
+  assert.equal(p.derivedOrganizations.length, 1);
+  assert.equal(p.directOrganizations.length, 0);
+  const model = buildCategoryHubModel(p.category)!;
+  assert.ok(model.organizationContext, "Homlokzat must expose Cégek");
+  assert.equal(model.organizationContext!.mode, "unified");
+  assert.equal(model.organizationContext!.unified.length, 1);
+  assert.equal(
+    model.organizationContext!.unified[0]!.href,
+    "/cegek/festek-bazis-zrt",
+  );
+  const html = renderToStaticMarkup(
+    createElement(CategoryHubPage, { model }),
+  );
+  assert.ok(html.includes("Cégek"));
+  assert.equal(
+    (html.match(/FESTÉK BÁZIS Zrt\./g) ?? []).length,
+    1,
+    "FB appears once in company chips",
+  );
+  assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
+  assert.ok(!html.includes("id=\"gyartok-szereplok\""));
+  assert.ok(html.includes("id=\"cegek\""));
+  // Section order: Márkák before Cégek
+  const markak = html.indexOf("id=\"markak\"");
+  const cegek = html.indexOf("id=\"cegek\"");
+  assert.ok(markak >= 0 && cegek > markak);
+}
+console.log("Homlokzat company OK");
 
 section("Dekor / 7016 safety");
 {
@@ -269,14 +315,90 @@ section("Dekor / 7016 safety");
   const brand = getCanonicalProductBrand(wall.id);
   assert.equal(family?.id, "pf_7016");
   assert.equal(brand, undefined);
+  // 7016 resolves manufacturer via Family, not fake Brand
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   const model = buildCategoryHubModel(p.category)!;
+  assert.equal(model.organizationContext?.mode, "split");
+  assert.ok(
+    model.organizationContext!.productOrgs.some(
+      (o) => o.id === "org_festek_bazis_zrt",
+    ),
+  );
+  assert.ok(
+    model.organizationContext!.additionalOrgs.every(
+      (o) => o.id !== "org_festek_bazis_zrt",
+    ),
+  );
   const html = renderToStaticMarkup(
     createElement(CategoryHubPage, { model }),
   );
   assert.ok(!html.includes("brand_7016"));
   assert.ok(html.includes("7016"));
+  assert.ok(html.includes("Cégek"));
+  assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
+  assert.ok(html.includes("További kapcsolódó cégek"));
+  assert.ok(!html.includes("Tulajdonos"));
+  assert.ok(!html.includes("Képviselet"));
 }
 console.log("7016 OK");
+
+section("Ipari company navigation");
+{
+  const model = buildCategoryHubModel(getCategoryById("cat_ipari")!)!;
+  assert.ok(model.organizationContext);
+  assert.ok(
+    model.organizationContext!.productOrgs.some(
+      (o) => o.id === "org_festek_bazis_zrt",
+    ),
+  );
+  const html = renderToStaticMarkup(
+    createElement(CategoryHubPage, { model }),
+  );
+  assert.ok(html.includes("Cégek"));
+  assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
+}
+console.log("Ipari company OK");
+
+section("empty company section omitted");
+{
+  const model = buildCategoryHubModel(getCategoryById("cat_porfestek")!)!;
+  assert.equal(model.organizationContext, undefined);
+  const html = renderToStaticMarkup(
+    createElement(CategoryHubPage, { model }),
+  );
+  assert.ok(!html.includes("Cégek"));
+  assert.ok(!html.includes("id=\"cegek\""));
+}
+console.log("empty company OK");
+
+section("Szórás Graco/Euroll company safety");
+{
+  const p = getCategoryPortfolio("cat_szoras")!;
+  assert.equal(p.products.length, 0);
+  assert.equal(p.derivedOrganizations.length, 0);
+  assert.ok(p.directOrganizations.some((o) => o.id === "org_graco_inc"));
+  assert.ok(p.directOrganizations.some((o) => o.id === "org_euroll_hungaria"));
+  const gracoOwner = getCanonicalBrandOwner("brand_graco");
+  assert.equal(gracoOwner?.id, "org_graco_inc");
+  assert.notEqual(gracoOwner?.id, "org_euroll_hungaria");
+  const model = buildCategoryHubModel(p.category)!;
+  assert.ok(model.organizationContext);
+  assert.equal(model.organizationContext!.mode, "unified");
+  const html = renderToStaticMarkup(
+    createElement(CategoryHubPage, { model }),
+  );
+  assert.ok(html.includes("Cégek"));
+  assert.ok(html.includes("Graco Inc."));
+  assert.ok(html.includes("Euroll Hungária Kft."));
+  assert.ok(html.includes('href="/cegek/graco-inc"'));
+  assert.ok(html.includes('href="/cegek/euroll-hungaria"'));
+  // No manufacturer/owner role leakage; Euroll is not Graco owner
+  assert.ok(!html.includes("Tulajdonos"));
+  assert.ok(!html.includes("Gyártó"));
+  assert.ok(!html.includes("Forgalmazó"));
+  assert.ok(!model.breadcrumbs.some((c) => /euroll/i.test(c.name)));
+}
+console.log("Szórás company OK");
 
 section("pairwise Technology / Surface");
 for (const c of categories.filter((x) => x.id !== "cat_all")) {

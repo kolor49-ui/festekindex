@@ -44,8 +44,10 @@ export type CategoryHubModel = {
   knowledge: CategoryPortfolio["knowledge"];
 
   /**
-   * Manufacturer / professional org context.
-   * Omitted when redundant single-org repeat of Brand context only.
+   * Public company navigation (“Cégek”).
+   * Product-derived orgs always included when present; never omitted merely
+   * because Brands already appear. Direct-only Category orgs stay separated
+   * in split mode (additionalOrgs) — not presented as Product manufacturers.
    */
   organizationContext?: {
     mode: "unified" | "split";
@@ -143,16 +145,14 @@ function buildMetaDescription(
 }
 
 /**
- * Organization section — show when useful.
- * Split mode always useful.
- * Unified: omit single org when Brands already present (avoid redundant FB).
- * Zero Brands but Org present → show.
- * Direct-only orgs (zero Products) → always show.
+ * Organization section — show whenever safely-derived or direct Category
+ * organizations exist. Never omit product-derived companies merely because
+ * Brands are already listed (Homlokzat / Faipari navigation gap).
  */
 function resolveOrganizationContext(
   portfolio: CategoryPortfolio,
 ): CategoryHubModel["organizationContext"] {
-  const { orgPresentation, brandPresentation } = portfolio;
+  const { orgPresentation } = portfolio;
   const hasAny =
     orgPresentation.unified.length > 0 ||
     orgPresentation.productOrgs.length > 0 ||
@@ -162,36 +162,18 @@ function resolveOrganizationContext(
   if (orgPresentation.mode === "split") {
     return {
       mode: "split",
-      heading: "Gyártók és szakmai szereplők",
-      productHeading: "Gyártói háttér a kapcsolódó termékeknél",
-      additionalHeading: "További kapcsolódó szakmai szereplők",
+      heading: "Cégek",
+      productHeading: "Cégek",
+      additionalHeading: "További kapcsolódó cégek",
       productOrgs: orgPresentation.productOrgs,
       additionalOrgs: orgPresentation.additionalOrgs,
       unified: orgPresentation.unified,
     };
   }
 
-  const brands =
-    brandPresentation.mode === "unified"
-      ? brandPresentation.unified
-      : [
-          ...brandPresentation.productBrands,
-          ...brandPresentation.additionalBrands,
-        ];
-
-  // Product-backed Category with single derived org + brands → omit redundancy
-  if (
-    portfolio.products.length > 0 &&
-    orgPresentation.unified.length === 1 &&
-    brands.length > 0 &&
-    orgPresentation.additionalOrgs.length === 0
-  ) {
-    return undefined;
-  }
-
   return {
     mode: "unified",
-    heading: "Gyártók és szakmai szereplők",
+    heading: "Cégek",
     productOrgs: orgPresentation.productOrgs,
     additionalOrgs: orgPresentation.additionalOrgs,
     unified: orgPresentation.unified,

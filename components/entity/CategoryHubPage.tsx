@@ -205,6 +205,64 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
             </section>
           ) : null}
 
+          {orgCtx ? (
+            <section className="seo-section" id="cegek">
+              {orgCtx.mode === "split" ? (
+                <>
+                  {orgCtx.productOrgs.length > 0 ? (
+                    <div className="category-org-block">
+                      <h2 className="seo-heading">{orgCtx.productHeading}</h2>
+                      <div className="seo-links org-category-chips">
+                        {orgCtx.productOrgs.map((o) => (
+                          <Link
+                            key={o.id}
+                            href={o.href}
+                            className="pill pill-link"
+                          >
+                            {o.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                  {orgCtx.additionalOrgs.length > 0 ? (
+                    <div className="category-org-block">
+                      <h2 className="seo-heading">
+                        {orgCtx.additionalHeading}
+                      </h2>
+                      <div className="seo-links org-category-chips">
+                        {orgCtx.additionalOrgs.map((o) => (
+                          <Link
+                            key={o.id}
+                            href={o.href}
+                            className="pill pill-link"
+                          >
+                            {o.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                </>
+              ) : (
+                <>
+                  <h2 className="seo-heading">{orgCtx.heading}</h2>
+                  <div className="seo-links org-category-chips">
+                    {orgCtx.unified.map((o) => (
+                      <Link
+                        key={o.id}
+                        href={o.href}
+                        className="pill pill-link"
+                      >
+                        {o.name}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
+            </section>
+          ) : null}
+
           {hasTechSurfaces ? (
             <section className="seo-section" id="technologiak-feluletek">
               {model.surfaces.length > 0 ? (
@@ -254,76 +312,6 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
                   </div>
                 ) : null}
               </div>
-            </section>
-          ) : null}
-
-          {orgCtx ? (
-            <section className="seo-section" id="gyartok-szereplok">
-              {orgCtx.mode === "split" ? (
-                <>
-                  {orgCtx.productOrgs.length > 0 ? (
-                    <div className="category-org-block">
-                      <h2 className="seo-heading">{orgCtx.productHeading}</h2>
-                      <div className="product-background">
-                        {orgCtx.productOrgs.map((o) => (
-                          <div key={o.id} className="product-background-block">
-                            <div className="product-background-label">
-                              {o.label}
-                            </div>
-                            <Link
-                              href={o.href}
-                              className="product-background-name"
-                            >
-                              {o.name}
-                            </Link>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                  {orgCtx.additionalOrgs.length > 0 ? (
-                    <div className="category-org-block">
-                      <h2 className="seo-heading">
-                        {orgCtx.additionalHeading}
-                      </h2>
-                      <div className="product-background">
-                        {orgCtx.additionalOrgs.map((o) => (
-                          <div key={o.id} className="product-background-block">
-                            <div className="product-background-label">
-                              {o.label}
-                            </div>
-                            <Link
-                              href={o.href}
-                              className="product-background-name"
-                            >
-                              {o.name}
-                            </Link>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                </>
-              ) : (
-                <>
-                  <h2 className="seo-heading">{orgCtx.heading}</h2>
-                  <div className="product-background">
-                    {orgCtx.unified.map((o) => (
-                      <div key={o.id} className="product-background-block">
-                        <div className="product-background-label">
-                          {o.label}
-                        </div>
-                        <Link
-                          href={o.href}
-                          className="product-background-name"
-                        >
-                          {o.name}
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
-                </>
-              )}
             </section>
           ) : null}
 

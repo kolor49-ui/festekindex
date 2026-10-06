@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { EntityList, Breadcrumbs } from "@/components/entity/EntityUI";
-import { getEntityById, searchEntities } from "@/lib/data/repository";
-import { listMetadata } from "@/lib/seo/metadata";
-import type { AnyEntity } from "@/lib/data/types";
+import { Breadcrumbs } from "@/components/entity/EntityUI";
+import { SITE_ORIGIN } from "@/lib/data/repository";
+import {
+  searchCatalog,
+  SEARCH_FULL_LIMIT,
+} from "@/lib/search";
 
 type Props = { searchParams: Promise<{ q?: string }> };
 
@@ -12,27 +14,57 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { q } = await searchParams;
   const term = q?.trim();
+  const canonical = `${SITE_ORIGIN}/kereses`;
+
   if (!term) {
-    return listMetadata(
-      "Keresés | FESTÉKINDEX",
-      "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
-      "/kereses",
-    );
+    return {
+      title: "Keresés | FESTÉKINDEX",
+      description:
+        "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
+      alternates: { canonical },
+      openGraph: {
+        title: "Keresés | FESTÉKINDEX",
+        description:
+          "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
+        url: canonical,
+        siteName: "FESTÉKINDEX",
+        locale: "hu_HU",
+        type: "website",
+      },
+    };
   }
-  return listMetadata(
-    `Keresés: ${term} | FESTÉKINDEX`,
-    `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
-    `/kereses?q=${encodeURIComponent(term)}`,
-  );
+
+  return {
+    title: `Keresés: ${term} | FESTÉKINDEX`,
+    description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
+    alternates: { canonical },
+    robots: { index: false, follow: true },
+    openGraph: {
+      title: `Keresés: ${term} | FESTÉKINDEX`,
+      description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
+      url: canonical,
+      siteName: "FESTÉKINDEX",
+      locale: "hu_HU",
+      type: "website",
+    },
+  };
+}
+
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((x) => x[0])
+    .join("")
+    .toUpperCase();
 }
 
 export default async function KeresesPage({ searchParams }: Props) {
   const { q } = await searchParams;
   const term = q?.trim() ?? "";
-  const hits = term ? searchEntities(term, { limit: 40 }) : [];
-  const entities = hits
-    .map((h) => getEntityById(h.id))
-    .filter((e): e is AnyEntity => Boolean(e));
+  const results = term
+    ? searchCatalog(term, { limit: SEARCH_FULL_LIMIT })
+    : [];
 
   return (
     <main className="main">
@@ -45,8 +77,8 @@ export default async function KeresesPage({ searchParams }: Props) {
         />
         <h1>Keresés</h1>
         <p className="page-lead">
-          Globális entitáskereső: cégek, márkák, technológiák, kategóriák,
-          termékcsaládok és tudástár.
+          Globális keresés: cégek, márkák, termékcsaládok, termékek,
+          technológiák, felületek, szakmai területek és tudástár.
         </p>
 
         <form
@@ -58,31 +90,49 @@ export default async function KeresesPage({ searchParams }: Props) {
           <input
             name="q"
             defaultValue={term}
-            placeholder="Keress cégre, márkára, technológiára…"
+            placeholder="Keress cégre, márkára, termékre, technológiára…"
             aria-label="Keresés"
+            autoComplete="off"
           />
           <button type="submit">Keresés</button>
         </form>
 
-        {term ? (
+        {!term ? (
+          <p className="empty">Írj be legalább két karaktert a kereséshez.</p>
+        ) : results.length === 0 ? (
+          <p className="empty">Nincs találat a „{term}” kifejezésre.</p>
+        ) : (
           <>
             <div className="toolbar" style={{ marginLeft: 0, marginRight: 0 }}>
               <h3>
-                {entities.length} találat: „{term}”
+                {results.length} találat: „{term}”
               </h3>
             </div>
-            <EntityList entities={entities} />
+            <div className="list-grid" role="list">
+              {results.map((hit) => {
+                const subtitle = [hit.typeLabelHu, hit.contextLabel]
+                  .filter(Boolean)
+                  .join(" · ");
+                return (
+                  <Link
+                    key={`${hit.type}:${hit.id}`}
+                    href={hit.href}
+                    className="row"
+                    role="listitem"
+                  >
+                    <div className="icon" aria-hidden>
+                      {initials(hit.displayName)}
+                    </div>
+                    <div>
+                      <b>{hit.displayName}</b>
+                      <small>{subtitle}</small>
+                    </div>
+                    <div className="kind">{hit.typeLabelHu}</div>
+                  </Link>
+                );
+              })}
+            </div>
           </>
-        ) : (
-          <p className="empty">
-            Írj be egy kifejezést, vagy próbáld:{" "}
-            <Link href="/kereses?q=Graco" className="pill pill-link">
-              Graco
-            </Link>{" "}
-            <Link href="/kereses?q=Airless" className="pill pill-link">
-              Airless
-            </Link>
-          </p>
         )}
       </div>
     </main>
