@@ -108,11 +108,6 @@ export function HomeExplorer({
       </section>
 
       <div className="toolbar">
-        <h3>
-          {submitted
-            ? `${filtered.length} találat: „${submitted}”`
-            : `${filtered.length} kiemelt találat`}
-        </h3>
         <div className="filters">
           {FILTERS.map((f, i) => (
             <button
