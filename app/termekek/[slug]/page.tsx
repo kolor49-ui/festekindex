@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
+import { ProductHubPage } from "@/components/entity/ProductHubPage";
+import { productHasHub } from "@/lib/data/productHub";
 import { getProductBySlug, listProducts } from "@/lib/data/repository";
-import { entityMetadata } from "@/lib/seo/metadata";
+import {
+  buildProductHubModel,
+  productHubMetadata,
+} from "@/lib/seo/productHubModel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -14,12 +18,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entity = getProductBySlug(slug);
   if (!entity) return {};
-  return entityMetadata(entity);
+
+  if (productHasHub(entity.id)) {
+    const hub = buildProductHubModel(entity);
+    if (hub) return productHubMetadata(hub);
+  }
+
+  return {};
 }
 
 export default async function TermekPage({ params }: Props) {
   const { slug } = await params;
   const entity = getProductBySlug(slug);
   if (!entity) notFound();
-  return <EntityDetailPage entity={entity} />;
+
+  if (productHasHub(entity.id)) {
+    const hub = buildProductHubModel(entity);
+    if (hub) return <ProductHubPage model={hub} />;
+  }
+
+  notFound();
 }

@@ -153,7 +153,16 @@ export const RELATION_TYPE_DEFS: Record<RelationType, RelationTypeDef> = {
     forwardLabel: "Kompatibilis",
     reverseLabel: "Kompatibilis",
     description:
-      "Bidirectional compatibility (store one canonical edge). Prefer partOfSystem for intentional layering / rétegrend.",
+      "Bidirectional compatibility (store one canonical edge). Prefer partOfSystem for intentional layering / rétegrend. Existing thinner edges may use this until dilutedWith migration.",
+  },
+  dilutedWith: {
+    type: "dilutedWith",
+    from: ["product"],
+    to: ["product"],
+    forwardLabel: "Hígító",
+    reverseLabel: "Hígított termék",
+    description:
+      "Product is diluted with Product (thinner / reducer). Preferred long-term semantics over compatibleWith for thinner links. No seed edges yet — additive type only.",
   },
   relatedTo: {
     type: "relatedTo",

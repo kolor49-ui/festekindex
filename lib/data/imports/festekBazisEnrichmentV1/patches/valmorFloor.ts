@@ -1,0 +1,108 @@
+import type { ProductEnrichmentPatch } from "../types";
+
+const V = "2026-10-06";
+const PAGE = "src_valmor_floor";
+const TDS = "src_valmor_floor_tds";
+
+export const valmorFloorPatch: ProductEnrichmentPatch = {
+  productId: "prod_valmor_floor",
+  officialUrl: "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-flexibilis-padlobevonat-p-302",
+  productClass: "architectural_coating",
+  sourceSummary: "VALMOR Flexibilis Padlóbevonat vizes bázisú, matt bel- és kültéri padlóbevonat. A műszaki adatlap szerint kiadósság kb. 3 m²/l alapozás + két réteg; átvonhatóság 4 óra (25 °C, lépésálló). Felhordás ecsettel vagy hengerrel.",
+  sourceSummarySourceIds: [PAGE, TDS],
+  additionalSourceIds: [PAGE, TDS],
+  packagingOptions: [
+    { id: "pack_valmor_floor_1l", amount: 1, unit: "l", sourceIds: ["src_valmor_floor_tds", "src_valmor_floor"], verifiedAt: V, status: "verified" },
+    { id: "pack_valmor_floor_4l", amount: 4, unit: "l", sourceIds: ["src_valmor_floor_tds", "src_valmor_floor"], verifiedAt: V, status: "verified" },
+    { id: "pack_valmor_floor_8l", amount: 8, unit: "l", sourceIds: ["src_valmor_floor_tds", "src_valmor_floor"], verifiedAt: V, status: "verified" },
+  ],
+  specifications: [
+    {
+      key: "coverage",
+      value: {"kind":"number_unit","value":3,"unit":"m2_per_l"},
+      condition: {"basis":"per_system","note":"kb. (~); alapozás + két réteg; glettelt"},
+      rawValue: "Kiadósság: ~3 m2/liter alapozás + két réteg",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dust_dry_time",
+      value: {"kind":"duration","value":2,"unit":"h"},
+      condition: {"temperatureC":25,"note":"maximum; 1. száradási fokozat"},
+      sourceIds: ["src_valmor_floor_tds"],
+      rawValue: "Száradási idő: 25°C-on 1.fokozat max. 2 óra",
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "full_cure_time",
+      value: {"kind":"duration","value":24,"unit":"h"},
+      condition: {"temperatureC":25},
+      note: "TDS: teljes száradás 24 óra (esőálló); 5. fokozat max. 24 óra",
+      sourceIds: ["src_valmor_floor_tds"],
+      rawValue: "Teljes száradási idő: 24 óra (esőálló)",
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "recoat_time",
+      value: {"kind":"duration","value":4,"unit":"h"},
+      condition: {"temperatureC":25,"note":"lépésálló"},
+      rawValue: "Átfesthetőség: 4 óra (lépésálló)",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: {"kind":"percentage","value":10},
+      condition: {"note":"első réteg; hígítószer: víz"},
+      rawValue: "Az első réteg felvitelét 10% víz hozzáadásával",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: {"kind":"percentage","value":5},
+      condition: {"note":"fedőréteg; hígítószer: víz"},
+      rawValue: "a fedőfestést 5%-os hígítással végezzük",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "coat_count",
+      value: {"kind":"range","min":2,"max":3},
+      rawValue: "Javasolt rétegszám 2-3 réteg",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "gloss",
+      value: {"kind":"enum","value":"matt"},
+      rawValue: "Fényesség: matt",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "binder",
+      value: {"kind":"text","text":"emulzió"},
+      rawValue: "Összetétel: emulzió, pigmentek, töltőanyagok, adalékok",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "application_environment",
+      value: {"kind":"multi_enum","values":["interior","exterior"]},
+      rawValue: "bel- és kültéri felhasználású",
+      sourceIds: ["src_valmor_floor_tds","src_valmor_floor"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+  ],
+};

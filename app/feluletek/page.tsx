@@ -5,7 +5,7 @@ import { EntityList, Breadcrumbs } from "@/components/entity/EntityUI";
 
 export const metadata: Metadata = listMetadata(
   "Felületek | FESTÉKINDEX",
-  "Festékipari felületek és aljzatok: fa, acél, beton, vakolat és további Surface hubok.",
+  "Festékipari felületek és aljzatok: fa, acél, beton, vakolat és további felületek termékekkel és bevonatokkal.",
   "/feluletek",
 );
 

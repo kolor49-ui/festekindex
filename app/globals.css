@@ -1242,19 +1242,22 @@ a {
   letter-spacing: -0.25px;
 }
 
-.brand-hub .brand-product-grid {
+.brand-hub .brand-product-grid,
+.product-family-hub .brand-product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px 28px;
   margin-top: 8px;
 }
 
-.brand-hub .brand-product-item {
+.brand-hub .brand-product-item,
+.product-family-hub .brand-product-item {
   padding: 0 0 12px;
   border-bottom: 1px solid #eef1f4;
 }
 
-.brand-hub .brand-product-name {
+.brand-hub .brand-product-name,
+.product-family-hub .brand-product-name {
   display: inline-block;
   font-size: 13px;
   font-weight: 650;
@@ -1264,33 +1267,40 @@ a {
 }
 
 .brand-hub .brand-product-name:hover,
-.brand-hub .brand-product-name:focus-visible {
+.brand-hub .brand-product-name:focus-visible,
+.product-family-hub .brand-product-name:hover,
+.product-family-hub .brand-product-name:focus-visible {
   color: #176fa8;
   text-decoration: underline;
 }
 
-.brand-hub .brand-product-meta {
+.brand-hub .brand-product-meta,
+.product-family-hub .brand-product-meta {
   margin-top: 3px;
   font-size: 11px;
   color: #6f7c87;
   line-height: 1.4;
 }
 
-.brand-hub .brand-product-meta a {
+.brand-hub .brand-product-meta a,
+.product-family-hub .brand-product-meta a {
   color: #6f7c87;
   text-decoration: none;
 }
 
-.brand-hub .brand-product-meta a:hover {
+.brand-hub .brand-product-meta a:hover,
+.product-family-hub .brand-product-meta a:hover {
   color: #176fa8;
   text-decoration: underline;
 }
 
-.brand-hub .brand-product-surfaces {
+.brand-hub .brand-product-surfaces,
+.product-family-hub .brand-product-surfaces {
   margin-top: 6px;
 }
 
-.brand-hub .brand-product-surfaces .pill {
+.brand-hub .brand-product-surfaces .pill,
+.product-family-hub .brand-product-surfaces .pill {
   font-size: 10px;
   padding: 4px 7px;
   margin: 0 4px 4px 0;
@@ -1329,8 +1339,266 @@ a {
 }
 
 @media (max-width: 720px) {
-  .brand-hub .brand-product-grid {
+  .brand-hub .brand-product-grid,
+  .product-family-hub .brand-product-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ——— Product hub ——— */
+.product-hub .product-header-facts .org-meta-chip dd a,
+.product-family-hub .product-header-facts .org-meta-chip dd a {
+  color: #1a2430;
+  text-decoration: none;
+}
+
+.product-hub .product-header-facts .org-meta-chip dd a:hover,
+.product-family-hub .product-header-facts .org-meta-chip dd a:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.product-hub .page-lead {
+  margin-bottom: 14px;
+}
+
+.product-hub .product-system-list,
+.product-family-hub .product-system-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-hub .product-system-item,
+.product-family-hub .product-system-item {
+  margin: 0;
+}
+
+.product-hub .product-system-arrow,
+.product-family-hub .product-system-arrow {
+  display: block;
+  color: #8a969f;
+  font-size: 12px;
+  line-height: 1;
+  margin: 2px 0 4px 2px;
+}
+
+.product-hub .product-system-body,
+.product-family-hub .product-system-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.product-hub .product-system-name,
+.product-family-hub .product-system-name {
+  font-size: 13px;
+  font-weight: 650;
+  color: #243240;
+  text-decoration: none;
+}
+
+.product-hub a.product-system-name:hover,
+.product-family-hub a.product-system-name:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.product-hub .product-system-current .product-system-name {
+  color: #14202c;
+  font-weight: 750;
+}
+
+.product-hub .product-system-role,
+.product-family-hub .product-system-role {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #7a8791;
+  font-weight: 700;
+}
+
+.product-hub .product-background,
+.product-family-hub .product-background {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.product-hub .product-background-label,
+.product-family-hub .product-background-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #71808c;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.product-hub .product-background-name,
+.product-family-hub .product-background-name {
+  font-size: 14px;
+  font-weight: 750;
+  color: #14202c;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+}
+
+.product-hub .product-background-name:hover,
+.product-family-hub .product-background-name:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.product-hub .product-background-blurb,
+.product-family-hub .product-background-blurb {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #5a6874;
+  max-width: 640px;
+}
+
+/* ——— Product Hub v2.1 technical data ——— */
+.product-hub .product-tech-group {
+  margin-top: 10px;
+}
+
+.product-hub .product-tech-group-flat {
+  margin-top: 4px;
+}
+
+.product-hub .product-tech-group-title {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #71808c;
+}
+
+.product-hub .product-tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-hub .product-tech-row {
+  margin: 0;
+  padding: 0 0 8px;
+  border-bottom: 1px solid rgba(26, 36, 48, 0.06);
+}
+
+.product-hub .product-tech-row dt {
+  margin: 0 0 2px;
+  font-size: 11px;
+  font-weight: 650;
+  color: #71808c;
+  letter-spacing: 0.2px;
+}
+
+.product-hub .product-tech-row dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.product-hub .product-tech-value {
+  font-size: 14px;
+  font-weight: 650;
+  color: #1a2430;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.product-hub .product-tech-condition {
+  font-size: 12px;
+  color: #6a7884;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.product-hub .product-packaging-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-hub .product-packaging-chip {
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 650;
+  color: #1a2430;
+  background: rgba(26, 36, 48, 0.04);
+  border: 1px solid rgba(26, 36, 48, 0.08);
+  border-radius: 6px;
+}
+
+.product-hub .product-related-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-hub .product-related-list-extra {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(26, 36, 48, 0.06);
+}
+
+.product-hub .product-related-item {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.product-hub .product-related-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #7a8791;
+  font-weight: 700;
+  min-width: 7.5rem;
+}
+
+.product-hub .product-related-name {
+  font-size: 13px;
+  font-weight: 650;
+  color: #243240;
+  text-decoration: none;
+}
+
+.product-hub .product-related-name:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .product-hub .product-tech-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .product-hub .product-related-label {
+    min-width: 0;
+    width: 100%;
   }
 }
 
@@ -1404,5 +1672,441 @@ a {
 
   .toplinks {
     display: none;
+  }
+}
+
+/* —— Surface Hub v1 —— */
+.surface-hub .surface-product-group {
+  margin-top: 18px;
+}
+
+.surface-hub .surface-product-group:first-of-type {
+  margin-top: 8px;
+}
+
+.surface-hub .surface-product-group-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #3a4a58;
+}
+
+.surface-hub .surface-product-group-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.surface-hub .surface-product-group-title a:hover,
+.surface-hub .surface-product-group-title a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.surface-hub .surface-product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.surface-hub .brand-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.surface-hub .brand-product-item {
+  padding: 0 0 12px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.surface-hub .brand-product-name {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.45;
+  color: #243240;
+  text-decoration: none;
+}
+
+.surface-hub .brand-product-name:hover,
+.surface-hub .brand-product-name:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.surface-hub .brand-product-meta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #5a6b78;
+  line-height: 1.4;
+}
+
+.surface-hub .brand-product-meta a {
+  color: #5a6b78;
+  text-decoration: none;
+}
+
+.surface-hub .brand-product-meta a:hover,
+.surface-hub .brand-product-meta a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.surface-hub .surface-coverage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.surface-hub .surface-coverage-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.surface-hub .surface-coverage-item a {
+  color: #243240;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.surface-hub .surface-coverage-item a:hover,
+.surface-hub .surface-coverage-item a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.surface-hub .surface-coverage-count {
+  font-size: 12px;
+  color: #6a7a88;
+}
+
+@media (max-width: 720px) {
+  .surface-hub .brand-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .surface-hub .org-tech-surface-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* —— Technology Hub v1 — reuse Surface Hub product/coverage patterns —— */
+.technology-hub .surface-product-group {
+  margin-top: 18px;
+}
+
+.technology-hub .surface-product-group:first-of-type {
+  margin-top: 8px;
+}
+
+.technology-hub .surface-product-group-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #3a4a58;
+}
+
+.technology-hub .surface-product-group-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.technology-hub .surface-product-group-title a:hover,
+.technology-hub .surface-product-group-title a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.technology-hub .surface-product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.technology-hub .brand-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.technology-hub .brand-product-item {
+  padding: 0 0 12px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.technology-hub .brand-product-name {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.45;
+  color: #243240;
+  text-decoration: none;
+}
+
+.technology-hub .brand-product-name:hover,
+.technology-hub .brand-product-name:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.technology-hub .brand-product-meta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #5a6b78;
+  line-height: 1.4;
+}
+
+.technology-hub .brand-product-meta a {
+  color: #5a6b78;
+  text-decoration: none;
+}
+
+.technology-hub .brand-product-meta a:hover,
+.technology-hub .brand-product-meta a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.technology-hub .surface-coverage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.technology-hub .surface-coverage-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.technology-hub .surface-coverage-item a {
+  color: #243240;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.technology-hub .surface-coverage-item a:hover,
+.technology-hub .surface-coverage-item a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.technology-hub .surface-coverage-count {
+  font-size: 12px;
+  color: #6a7a88;
+}
+
+@media (max-width: 720px) {
+  .technology-hub .brand-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-hub .org-tech-surface-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Category Hub v1 — reuse Surface/Technology product + coverage patterns */
+.category-hub .surface-product-group {
+  margin-top: 1.25rem;
+}
+
+.category-hub .surface-product-group:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.category-hub .surface-product-group-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+  color: #1a2b3c;
+}
+
+.category-hub .surface-product-group-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-hub .surface-product-group-title a:hover,
+.category-hub .surface-product-group-title a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.category-hub .surface-product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-hub .brand-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+}
+
+.category-hub .brand-product-item {
+  min-width: 0;
+}
+
+.category-hub .brand-product-name {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: #0f1c27;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.category-hub .brand-product-name:hover,
+.category-hub .brand-product-name:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.category-hub .brand-product-meta {
+  margin-top: 0.2rem;
+  font-size: 13px;
+  color: #5a6b78;
+  overflow-wrap: anywhere;
+}
+
+.category-hub .brand-product-meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-hub .brand-product-meta a:hover,
+.category-hub .brand-product-meta a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.category-hub .category-brand-block + .category-brand-block,
+.category-hub .category-org-block + .category-org-block {
+  margin-top: 1.25rem;
+}
+
+.category-hub .surface-coverage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.category-hub .surface-coverage-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  min-width: 0;
+}
+
+.category-hub .surface-coverage-item a {
+  color: #0f1c27;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.category-hub .surface-coverage-item a:hover,
+.category-hub .surface-coverage-item a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.category-hub .surface-coverage-count {
+  font-size: 12px;
+  color: #6a7a88;
+}
+
+@media (max-width: 720px) {
+  .category-hub .brand-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-hub .org-tech-surface-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* —— Knowledge Hub v1 — professional article measure —— */
+.knowledge-hub .knowledge-article-body {
+  max-width: 42rem;
+  margin: 1.25rem 0 0.5rem;
+  color: #1a2b3c;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.knowledge-hub .knowledge-article-h2 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #0f1c27;
+  line-height: 1.35;
+}
+
+.knowledge-hub .knowledge-article-h3 {
+  margin: 1.35rem 0 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: #1a2b3c;
+  line-height: 1.4;
+}
+
+.knowledge-hub .knowledge-article-p {
+  margin: 0 0 1rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.knowledge-hub .knowledge-article-ul,
+.knowledge-hub .knowledge-article-ol {
+  margin: 0 0 1.1rem;
+  padding-left: 1.35rem;
+}
+
+.knowledge-hub .knowledge-article-ul li,
+.knowledge-hub .knowledge-article-ol li {
+  margin: 0.35rem 0;
+  overflow-wrap: anywhere;
+}
+
+.knowledge-hub .knowledge-article-ul li::marker,
+.knowledge-hub .knowledge-article-ol li::marker {
+  color: #5a6a78;
+}
+
+@media (max-width: 720px) {
+  .knowledge-hub .knowledge-article-body {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .knowledge-hub .knowledge-article-h2 {
+    font-size: 1.1rem;
+  }
+
+  .knowledge-hub .org-sources-list a {
+    overflow-wrap: anywhere;
   }
 }

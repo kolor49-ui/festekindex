@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { listPublishedForSitemap, SITE_ORIGIN } from "@/lib/data/repository";
+import { SITE_ORIGIN } from "@/lib/data/repository";
+import { listPublishedForSitemap } from "@/lib/seo/sitemapEntries";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return listPublishedForSitemap().map((entry) => ({

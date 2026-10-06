@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
+import { SurfaceHubPage } from "@/components/entity/SurfaceHubPage";
 import { getSurfaceBySlug, listSurfaces } from "@/lib/data/repository";
-import { entityMetadata } from "@/lib/seo/metadata";
+import {
+  buildSurfaceHubModel,
+  surfaceHubMetadata,
+} from "@/lib/seo/surfaceHubModel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -14,12 +17,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entity = getSurfaceBySlug(slug);
   if (!entity) return {};
-  return entityMetadata(entity);
+  const hub = buildSurfaceHubModel(entity);
+  if (!hub) return {};
+  return surfaceHubMetadata(hub);
 }
 
 export default async function FeluletPage({ params }: Props) {
   const { slug } = await params;
   const entity = getSurfaceBySlug(slug);
   if (!entity) notFound();
-  return <EntityDetailPage entity={entity} />;
+  const hub = buildSurfaceHubModel(entity);
+  if (!hub) notFound();
+  return <SurfaceHubPage model={hub} />;
 }

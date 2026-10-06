@@ -15,12 +15,17 @@ import { surfaces as surfacesBase } from "../lib/data/surfaces";
 import { technologies as technologiesBase } from "../lib/data/technologies";
 import { festekBazisV02Seed } from "../lib/data/imports/festekBazisV02Map";
 import {
+  festekBazisEnrichmentV1,
+  applyFestekBazisEnrichmentV1,
+} from "../lib/data/imports/festekBazisEnrichmentV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
   mergeTechnologies,
 } from "../lib/data/imports/merge";
 import { validateGraph } from "../lib/data/imports/validateGraph";
+import { sources as sourcesBase } from "../lib/data/sources";
 import type { AnyEntity, Relation } from "../lib/data/types";
 import { Counter } from "./_counter";
 
@@ -36,13 +41,30 @@ const productFamilies = mergeById(
   productFamiliesBase,
   festekBazisV02Seed.productFamilies,
 );
-const products = mergeById(productsBase, festekBazisV02Seed.products);
+const productsMerged = mergeById(productsBase, festekBazisV02Seed.products);
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
   technologiesBase,
   festekBazisV02Seed.technologies,
 );
 const categories = mergeById(categoriesBase, festekBazisV02Seed.categories);
+
+const relationsMerged: Relation[] = mergeRelationsByCanonicalKey(
+  relationsBase,
+  festekBazisV02Seed.relations,
+);
+
+const sourcesMerged = mergeById(sourcesBase, festekBazisV02Seed.sources);
+
+const enriched = applyFestekBazisEnrichmentV1(
+  productsMerged,
+  sourcesMerged,
+  relationsMerged,
+  festekBazisEnrichmentV1,
+);
+const products = enriched.products;
+const relations = enriched.relations;
+const sources = enriched.sources;
 
 const entities: AnyEntity[] = [
   ...organizations,
@@ -56,12 +78,7 @@ const entities: AnyEntity[] = [
   ...surfaces,
 ];
 
-const relations: Relation[] = mergeRelationsByCanonicalKey(
-  relationsBase,
-  festekBazisV02Seed.relations,
-);
-
-const result = validateGraph(entities, relations);
+const result = validateGraph(entities, relations, sources);
 
 const byType = Counter(entities.map((e) => e.type));
 const byRel = Counter(relations.map((r) => r.relationType));

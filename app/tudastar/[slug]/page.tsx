@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
+import { KnowledgeHubPage } from "@/components/entity/KnowledgeHubPage";
 import { getKnowledgeBySlug, listKnowledge } from "@/lib/data/repository";
-import { entityMetadata } from "@/lib/seo/metadata";
+import {
+  buildKnowledgeHubModel,
+  knowledgeHubMetadata,
+} from "@/lib/seo/knowledgeHubModel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -14,12 +17,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entity = getKnowledgeBySlug(slug);
   if (!entity) return {};
-  return entityMetadata(entity);
+  const hub = buildKnowledgeHubModel(entity);
+  if (!hub) return {};
+  return knowledgeHubMetadata(hub);
 }
 
 export default async function TudastarCikkPage({ params }: Props) {
   const { slug } = await params;
   const entity = getKnowledgeBySlug(slug);
   if (!entity) notFound();
-  return <EntityDetailPage entity={entity} />;
+  const hub = buildKnowledgeHubModel(entity);
+  if (!hub) notFound();
+  return <KnowledgeHubPage model={hub} />;
 }

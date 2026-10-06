@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
+import { CategoryHubPage } from "@/components/entity/CategoryHubPage";
 import {
   getCategoryBySlug,
   listNavCategories,
 } from "@/lib/data/repository";
-import { entityMetadata } from "@/lib/seo/metadata";
+import {
+  buildCategoryHubModel,
+  categoryHubMetadata,
+} from "@/lib/seo/categoryHubModel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -18,8 +21,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entity = getCategoryBySlug(slug);
-  if (!entity) return {};
-  return entityMetadata(entity);
+  if (!entity || entity.id === "cat_all") return {};
+  const hub = buildCategoryHubModel(entity);
+  if (!hub) return {};
+  return categoryHubMetadata(hub);
 }
 
 export default async function KategoriaPage({ params }: Props) {
@@ -28,5 +33,7 @@ export default async function KategoriaPage({ params }: Props) {
   if (!entity || entity.id === "cat_all" || entity.status !== "published") {
     notFound();
   }
-  return <EntityDetailPage entity={entity} />;
+  const hub = buildCategoryHubModel(entity);
+  if (!hub) notFound();
+  return <CategoryHubPage model={hub} />;
 }

@@ -33,6 +33,8 @@ export type RelationType =
   | "partOfSystem"
   | "documents"
   | "compatibleWith"
+  /** Planned precise thinner semantics: Product --dilutedWith--> Product (thinner). No seed data yet. */
+  | "dilutedWith"
   | "relatedTo"
   | "compares";
 
@@ -43,6 +45,127 @@ export type SourceType =
   | "company_registry"
   | "report"
   | "other";
+
+/** Additive source document classification — does not replace SourceType. */
+export type SourceDocumentKind =
+  | "tds"
+  | "sds"
+  | "product_page"
+  | "catalog"
+  | "distributor"
+  | "company_registry"
+  | "other";
+
+/**
+ * Internal Product technical class for specification registry hints.
+ * NOT an EntityType, Category, SEO landing, or breadcrumb node.
+ */
+export type ProductClass =
+  | "architectural_coating"
+  | "industrial_coating"
+  | "primer"
+  | "varnish"
+  | "thinner"
+  | "filler"
+  | "surface_prep"
+  | "spray_equipment"
+  | "tool"
+  | "ancillary"
+  | "other";
+
+export type SpecFactStatus = "draft" | "verified" | "conflict";
+
+export type PackagingUnit = "l" | "ml" | "kg" | "g" | "pcs";
+
+export type DurationUnit = "min" | "h" | "day";
+
+/** Controlled unit codes — no conversion engine. */
+export type UnitCode =
+  | PackagingUnit
+  | DurationUnit
+  | "m2_per_l"
+  | "m2_per_kg"
+  | "g_per_m2"
+  | "kg_per_m2"
+  | "ml_per_m2"
+  | "celsius"
+  | "percent"
+  | "bar"
+  | "mpa"
+  | "mm"
+  | "um"
+  | "l_per_min";
+
+export type SpecValue =
+  | { kind: "text"; text: string }
+  | { kind: "number"; value: number }
+  | { kind: "range"; min: number; max: number }
+  | { kind: "number_unit"; value: number; unit: UnitCode }
+  | { kind: "range_unit"; min: number; max: number; unit: UnitCode }
+  | { kind: "duration"; value: number; unit: DurationUnit }
+  | { kind: "duration_range"; min: number; max: number; unit: DurationUnit }
+  | { kind: "percentage"; value: number }
+  | { kind: "percentage_range"; min: number; max: number }
+  | { kind: "boolean"; value: boolean }
+  | { kind: "enum"; value: string }
+  | { kind: "multi_enum"; values: string[] };
+
+export type SpecCondition = {
+  temperatureC?: number;
+  relativeHumidityPct?: number;
+  basis?: "per_coat" | "per_system" | "typical" | "max" | "min";
+  /** Existing Technology entity IDs (application methods, etc.). */
+  applicationMethodTechIds?: string[];
+  /** Existing Surface entity IDs. */
+  surfaceIds?: string[];
+  note?: string;
+};
+
+export type ProductSpecification = {
+  key: string;
+  value: SpecValue;
+  condition?: SpecCondition;
+  note?: string;
+  /** Internal import audit — never public UI / SEO. */
+  rawValue?: string;
+  sourceIds?: string[];
+  verifiedAt?: string;
+  /** Internal only — never public UI. */
+  status?: SpecFactStatus;
+};
+
+export type ProductPackagingOption = {
+  /** Stable Product-local id (not a global EntityType). */
+  id: string;
+  amount: number;
+  unit: PackagingUnit;
+  sku?: string;
+  gtin?: string;
+  sourceIds?: string[];
+  verifiedAt?: string;
+  /** Internal only — never public UI. */
+  status?: SpecFactStatus;
+};
+
+export type SpecUiGroup =
+  | "performance"
+  | "application"
+  | "appearance"
+  | "chemical"
+  | "other";
+
+export type SpecificationDefinition = {
+  key: string;
+  labelHu: string;
+  valueKinds: SpecValue["kind"][];
+  allowedUnits?: UnitCode[];
+  allowedEnums?: string[];
+  applicableClasses?: ProductClass[];
+  filterable: boolean;
+  searchable: boolean;
+  displayOrder: number;
+  uiGroup: SpecUiGroup;
+};
 
 export type OrganizationRole =
   | "manufacturer"
@@ -98,9 +221,14 @@ export type EntityBase = SeoFields & {
 export type Source = {
   id: string;
   type: SourceType;
+  /** Additive — e.g. type manufacturer + documentKind tds. */
+  documentKind?: SourceDocumentKind;
   title: string;
   url?: string;
   publisher?: string;
+  /** Manufacturer / document publication or issue date. */
+  publishedAt?: string;
+  /** When FESTÉKINDEX accessed / checked this source. */
   accessedAt?: string;
   notes?: string;
 };
@@ -150,10 +278,29 @@ export type ProductFamily = EntityBase & {
   type: "productFamily";
 };
 
-/** Concrete commercial product / SKU — Brand/Family via relations only. */
+/**
+ * Concrete commercial product / model — Brand/Family via relations only.
+ * Technical facts: specifications[]; packaging: packagingOptions[].
+ * Legacy shortDescription/body retained for backward compatibility.
+ */
 export type Product = EntityBase & {
   type: "product";
   aliases?: string[];
+  /** Official product page URL when source-backed. */
+  officialUrl?: string;
+  /** Internal registry hint — not Category / SEO taxonomy. */
+  productClass?: ProductClass;
+  /**
+   * Factual FESTÉKINDEX summary derived from primary sources.
+   * Not verbatim manufacturer marketing; never structural filler.
+   */
+  sourceSummary?: string;
+  /** Provenance for sourceSummary (optional; entity sourceIds remain aggregate). */
+  sourceSummarySourceIds?: string[];
+  /** FESTÉKINDEX editorial professional summary. */
+  editorialSummary?: string;
+  specifications?: ProductSpecification[];
+  packagingOptions?: ProductPackagingOption[];
 };
 
 export type KnowledgeArticle = EntityBase & {

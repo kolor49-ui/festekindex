@@ -1,0 +1,108 @@
+import type { ProductEnrichmentPatch } from "../types";
+
+const V = "2026-10-06";
+const PAGE = "src_valmor_facade";
+const TDS = "src_valmor_facade_tds";
+
+export const valmorFacadePatch: ProductEnrichmentPatch = {
+  productId: "prod_valmor_facade",
+  officialUrl: "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-homlokzatfestek-p-317",
+  productClass: "architectural_coating",
+  sourceSummary: "VALMOR Homlokzatfesték diszperziós matt kültéri falfesték. A műszaki adatlap szerint kiadósság 5 m²/l két rétegben (fehér, glettelt); átvonhatóság 4 óra (25 °C). Felhordás ecsettel, hengerrel vagy szórással; első réteg 10%, fedőréteg max. 5% vízzel.",
+  sourceSummarySourceIds: [PAGE, TDS],
+  additionalSourceIds: [PAGE, TDS],
+  packagingOptions: [
+    { id: "pack_valmor_facade_2_5l", amount: 2.5, unit: "l", sourceIds: ["src_valmor_facade_tds", "src_valmor_facade"], verifiedAt: V, status: "verified" },
+    { id: "pack_valmor_facade_5l", amount: 5, unit: "l", sourceIds: ["src_valmor_facade_tds", "src_valmor_facade"], verifiedAt: V, status: "verified" },
+    { id: "pack_valmor_facade_10l", amount: 10, unit: "l", sourceIds: ["src_valmor_facade_tds", "src_valmor_facade"], verifiedAt: V, status: "verified" },
+    { id: "pack_valmor_facade_15l", amount: 15, unit: "l", sourceIds: ["src_valmor_facade_tds", "src_valmor_facade"], verifiedAt: V, status: "verified" },
+  ],
+  specifications: [
+    {
+      key: "coverage",
+      value: {"kind":"number_unit","value":5,"unit":"m2_per_l"},
+      condition: {"basis":"per_system","note":"két réteg; fehér, glettelt felület"},
+      rawValue: "Kiadósság: 5 m2/liter két rétegben, fehér, glettelt minőségű felület esetén",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dust_dry_time",
+      value: {"kind":"duration","value":2,"unit":"h"},
+      condition: {"temperatureC":25,"note":"maximum; 1. száradási fokozat"},
+      rawValue: "Száradási idő: 25°C-on 1.fokozat max. 2 óra",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "full_cure_time",
+      value: {"kind":"duration","value":24,"unit":"h"},
+      condition: {"temperatureC":25,"note":"maximum; 5. száradási fokozat"},
+      rawValue: "Száradási idő: 25°C-on 5.fokozat max. 24 óra",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "recoat_time",
+      value: {"kind":"duration","value":4,"unit":"h"},
+      condition: {"temperatureC":25},
+      rawValue: "Átfesthetőség: (25 °C-on): 4 óra",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: {"kind":"percentage","value":10},
+      condition: {"note":"első réteg; hígítószer: víz"},
+      rawValue: "hígítsuk meg 10% víz hozzáadásával",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: {"kind":"percentage","value":5},
+      condition: {"note":"fedőréteg; hígítószer: víz; maximum"},
+      rawValue: "fedőfestést max. 5% víz hozzáadásával végezzük",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "coat_count",
+      value: {"kind":"number","value":2},
+      rawValue: "Javasolt rétegszám 2 réteg",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "gloss",
+      value: {"kind":"enum","value":"matt"},
+      rawValue: "Fényesség: matt",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "binder",
+      value: {"kind":"text","text":"vizes diszperziós kötőanyag"},
+      rawValue: "Összetétel: Vizes diszperziós kötőanyag, pigment, töltőanyagok és egyéb adalékanyagok",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+    {
+      key: "application_environment",
+      value: {"kind":"multi_enum","values":["exterior","interior"]},
+      rawValue: "kültéri falfesték; beltéri nagyobb igénybevételű felületekre is",
+      sourceIds: ["src_valmor_facade_tds","src_valmor_facade"],
+      verifiedAt: "2026-10-06",
+      status: "verified",
+    },
+  ],
+};

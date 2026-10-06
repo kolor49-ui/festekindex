@@ -27,13 +27,14 @@ export function EntityDetailPage({ entity }: { entity: AnyEntity }) {
         />
 
         <article className="entity-card entity-seo">
-          <div className="entity-meta">
-            {page.kindLabel}
-            {!page.indexable ? " · noindex (vékony / hiányos)" : null}
-          </div>
+          <div className="entity-meta">{page.kindLabel}</div>
 
           <h1>{page.h1}</h1>
-          <p className="page-lead">{page.lead}</p>
+          {page.lead &&
+          !page.lead.toLowerCase().includes("a festékindex adatbázisában") &&
+          !page.lead.toLowerCase().includes("festék bázis v0.") ? (
+            <p className="page-lead">{page.lead}</p>
+          ) : null}
 
           {page.showContextNav ? (
             <EntityContextNav items={page.contextItems} />

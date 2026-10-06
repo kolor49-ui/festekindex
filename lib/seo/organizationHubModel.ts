@@ -15,30 +15,11 @@ import {
   type PortfolioBrandGroup,
   type PortfolioFamilyCard,
 } from "@/lib/data/organizationPortfolio";
-import { evaluateIndexability } from "@/lib/seo/indexability";
+import { ORG_HUB_SEO, type OrgHubSeoOverride } from "@/lib/seo/hubSeoOverrides";
+import { evaluatePublicIndexability } from "@/lib/seo/publicIndexability";
 import { getEntityBreadcrumb } from "@/lib/navigation/entityNavigation";
 
-export type OrgHubSeoOverride = {
-  h1: string;
-  title: string;
-  lead: string;
-  metaDescription?: string;
-};
-
-/**
- * Verified editorial SEO for reference hubs.
- * Only copy — never product/category lists.
- */
-const ORG_HUB_SEO: Record<string, OrgHubSeoOverride> = {
-  "festek-bazis-zrt": {
-    h1: "Festék Bázis Zrt.",
-    title:
-      "Festék Bázis Zrt. – VALMOR, FACTOR és COROR festékek | FESTÉKINDEX",
-    lead: "Magyar festék- és bevonóanyag-gyártó, VALMOR, FACTOR és COROR termékcsaládokkal. Portfóliója a beltéri és homlokzati festékektől a faipari bevonatokon és padlóbevonatokon át a korrózióvédelmi rendszerekig terjed.",
-    metaDescription:
-      "Festék Bázis Zrt.: VALMOR, FACTOR és COROR — magyar festékgyártó márkák, termékcsaládok és szakmai kapcsolatok a FESTÉKINDEX-en.",
-  },
-};
+export type { OrgHubSeoOverride };
 
 export type CompanyFact = {
   label: string;
@@ -190,7 +171,7 @@ export function buildOrganizationHubModel(
   if (!portfolio) return null;
 
   const seo = ORG_HUB_SEO[organization.slug];
-  const evaluation = evaluateIndexability(organization);
+  const publicIndex = evaluatePublicIndexability(organization);
   const canonicalUrl = getCanonicalUrl(organization);
 
   const h1 = seo?.h1 ?? organization.name;
@@ -256,8 +237,8 @@ export function buildOrganizationHubModel(
     metaDescription,
     canonicalUrl,
     breadcrumbs: getEntityBreadcrumb(organization),
-    // Hub is indexable if org flag allows OR we have a full editorial SEO override
-    indexable: evaluation.indexable || Boolean(seo),
+    // Final public indexability (hard gates + editorial override) — same as sitemap
+    indexable: publicIndex.indexable,
     metaChips,
     brands,
     brandGroups: portfolio.brandGroups,

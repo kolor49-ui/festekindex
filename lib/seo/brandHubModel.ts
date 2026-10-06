@@ -16,28 +16,12 @@ import {
   type BrandFamilyBlock,
   type BrandPortfolioProduct,
 } from "@/lib/data/brandPortfolio";
-import { evaluateIndexability } from "@/lib/seo/indexability";
+import { BRAND_HUB_SEO, type BrandHubSeoOverride } from "@/lib/seo/hubSeoOverrides";
+import { evaluatePublicIndexability } from "@/lib/seo/publicIndexability";
 import { formatHuVerifiedDate } from "@/lib/seo/organizationHubModel";
 import { getEntityBreadcrumb } from "@/lib/navigation/entityNavigation";
 
-export type BrandHubSeoOverride = {
-  h1?: string;
-  title: string;
-  lead?: string;
-  metaDescription?: string;
-};
-
-/**
- * Verified editorial SEO for reference hubs — copy only, never product lists.
- */
-const BRAND_HUB_SEO: Record<string, BrandHubSeoOverride> = {
-  valmor: {
-    title: "VALMOR festékek és bevonatok | FESTÉKINDEX",
-    lead: "Festék- és bevonatmárka a Festék Bázis Zrt. portfóliójában.",
-    metaDescription:
-      "VALMOR festékek és bevonatok: termékcsaládok, termékek és szakmai kapcsolatok a FESTÉKINDEX-en.",
-  },
-};
+export type { BrandHubSeoOverride };
 
 export type BrandHubModel = {
   brand: Brand;
@@ -197,7 +181,7 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
   if (!portfolio) return null;
 
   const seo = BRAND_HUB_SEO[brand.slug];
-  const evaluation = evaluateIndexability(brand);
+  const publicIndex = evaluatePublicIndexability(brand);
   const canonicalUrl = getCanonicalUrl(brand);
 
   const h1 = seo?.h1 ?? brand.name;
@@ -245,11 +229,6 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
     ? formatHuVerifiedDate(portfolio.lastVerifiedAt)
     : undefined;
 
-  // Index when evaluation passes, editorial SEO exists, or portfolio graph is substantive
-  const substantive =
-    portfolio.allProducts.length + portfolio.families.length >= 1 &&
-    portfolio.organizations.length >= 1;
-
   return {
     brand,
     portfolio,
@@ -260,7 +239,8 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
     metaDescription,
     canonicalUrl,
     breadcrumbs: getEntityBreadcrumb(brand),
-    indexable: evaluation.indexable || Boolean(seo) || substantive,
+    // Final public indexability (hard gates + SEO/substantive) — same as sitemap
+    indexable: publicIndex.indexable,
     metaChips,
     families: portfolio.families,
     directProducts: portfolio.directProducts,

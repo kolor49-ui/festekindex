@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
+import { TechnologyHubPage } from "@/components/entity/TechnologyHubPage";
 import {
   getTechnologyBySlug,
   listTechnologies,
 } from "@/lib/data/repository";
-import { entityMetadata } from "@/lib/seo/metadata";
+import {
+  buildTechnologyHubModel,
+  technologyHubMetadata,
+} from "@/lib/seo/technologyHubModel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,12 +20,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entity = getTechnologyBySlug(slug);
   if (!entity) return {};
-  return entityMetadata(entity);
+  const hub = buildTechnologyHubModel(entity);
+  if (!hub) return {};
+  return technologyHubMetadata(hub);
 }
 
 export default async function TechnologiaPage({ params }: Props) {
   const { slug } = await params;
   const entity = getTechnologyBySlug(slug);
   if (!entity) notFound();
-  return <EntityDetailPage entity={entity} />;
+  const hub = buildTechnologyHubModel(entity);
+  if (!hub) notFound();
+  return <TechnologyHubPage model={hub} />;
 }

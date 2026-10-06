@@ -5,7 +5,7 @@ import { EntityList, Breadcrumbs } from "@/components/entity/EntityUI";
 
 export const metadata: Metadata = listMetadata(
   "Tudástár | FESTÉKINDEX",
-  "Szakmai tudásanyagok a festékiparról — technológiák, anyagok, kapcsolatok.",
+  "Festékekről, bevonatokról és alkalmazástechnológiákról szóló szakmai útmutatók és összehasonlítások.",
   "/tudastar",
 );
 
@@ -22,8 +22,8 @@ export default function TudastarPage() {
         />
         <h1>Tudástár</h1>
         <p className="page-lead">
-          Szakmai magyarázatok és összefoglalók — az adatbázis entitásaihoz
-          kapcsolva.
+          Festékekről, bevonatokról és alkalmazástechnológiákról szóló szakmai
+          útmutatók és összehasonlítások.
         </p>
         <EntityList entities={items} />
       </div>

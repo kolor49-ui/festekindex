@@ -1,10 +1,22 @@
+/**
+ * Base/raw entity SEO quality evaluation.
+ *
+ * evaluateIndexability = raw shortDescription/body/graph thresholds.
+ * Final robots + sitemap decisions use evaluatePublicIndexability
+ * (lib/seo/publicIndexability.ts), which applies hard gates then
+ * approved Organization/Brand Hub public-page policy.
+ */
+
 import type { AnyEntity } from "@/lib/data/types";
 import { allRelations } from "@/lib/data/imports/allRelations";
 
 /**
- * SEO indexability — programmatic pages must not be thin.
- * Sitemap + robots index only when these pass.
- * Uses merged relations (base + Festék Bázis import).
+ * Base/raw quality gate for programmatic entity pages.
+ * Soft fails: short_description_thin, body_thin, insufficient_context_graph.
+ * Hard early exits: not_published, flag_noindex, synthetic_nav_category.
+ *
+ * Does NOT alone decide robots/sitemap for Organization/Brand Hubs —
+ * use evaluatePublicIndexability for the final public decision.
  */
 export function evaluateIndexability(entity: AnyEntity): {
   indexable: boolean;
@@ -55,6 +67,7 @@ export function evaluateIndexability(entity: AnyEntity): {
   };
 }
 
+/** @deprecated Prefer isPubliclyIndexable from publicIndexability for robots/sitemap. */
 export function isSeoIndexable(entity: AnyEntity): boolean {
   return evaluateIndexability(entity).indexable;
 }

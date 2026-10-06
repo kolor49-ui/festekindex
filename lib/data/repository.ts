@@ -11,13 +11,11 @@ import type {
   Relation,
   RelationType,
   SearchHit,
-  SitemapEntry,
   Source,
   Surface,
   Technology,
 } from "./types";
 import { getRelationLabel } from "./relationTypes";
-import { isSeoIndexable } from "@/lib/seo/indexability";
 import { brands as brandsBase } from "./brands";
 import { categories as categoriesBase } from "./categories";
 import { knowledge } from "./knowledge";
@@ -30,6 +28,7 @@ import { comparisons } from "./comparisons";
 import { surfaces as surfacesBase } from "./surfaces";
 import { technologies as technologiesBase } from "./technologies";
 import { festekBazisV02Seed } from "./imports/festekBazisV02Map";
+import { festekBazisEnrichmentV1, applyFestekBazisEnrichmentV1 } from "./imports/festekBazisEnrichmentV1";
 import {
   mergeById,
   mergeRelationsByCanonicalKey,
@@ -51,18 +50,28 @@ const productFamilies = mergeById(
   productFamiliesBase,
   festekBazisV02Seed.productFamilies,
 );
-const products = mergeById(productsBase, festekBazisV02Seed.products);
+const productsMerged = mergeById(productsBase, festekBazisV02Seed.products);
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
   technologiesBase,
   festekBazisV02Seed.technologies,
 );
 const categories = mergeById(categoriesBase, festekBazisV02Seed.categories);
-const relations = mergeRelationsByCanonicalKey(
+const relationsMerged = mergeRelationsByCanonicalKey(
   relationsBase,
   festekBazisV02Seed.relations,
 );
-const sources = mergeById(sourcesBase, festekBazisV02Seed.sources);
+const sourcesMerged = mergeById(sourcesBase, festekBazisV02Seed.sources);
+
+const enriched = applyFestekBazisEnrichmentV1(
+  productsMerged,
+  sourcesMerged,
+  relationsMerged,
+  festekBazisEnrichmentV1,
+);
+const products = enriched.products;
+const relations = enriched.relations;
+const sources = enriched.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",
@@ -106,8 +115,9 @@ function entityMap(): Map<string, AnyEntity> {
   return new Map(allEntities().map((e) => [e.id, e]));
 }
 
-export function isIndexableEntity(entity: AnyEntity): boolean {
-  return isSeoIndexable(entity);
+/** All merged entities — SEO sitemap eligibility lives in lib/seo/sitemapEntries. */
+export function listAllEntities(): AnyEntity[] {
+  return allEntities();
 }
 
 export function getEntityHref(entity: Pick<AnyEntity, "type" | "slug">): string {
@@ -582,31 +592,6 @@ export function getStats() {
       (c) => c.status === "published" && c.id !== "cat_all",
     ).length,
   };
-}
-
-export function listPublishedForSitemap(): SitemapEntry[] {
-  const entries: SitemapEntry[] = [
-    { path: "/", lastModified: "2026-10-05" },
-    { path: "/cegek", lastModified: "2026-10-05" },
-    { path: "/markak", lastModified: "2026-10-05" },
-    { path: "/technologiak", lastModified: "2026-10-05" },
-    { path: "/kategoriak", lastModified: "2026-10-05" },
-    { path: "/tudastar", lastModified: "2026-10-05" },
-    { path: "/termekcsaladok", lastModified: "2026-10-05" },
-    { path: "/termekek", lastModified: "2026-10-05" },
-    { path: "/feluletek", lastModified: "2026-10-05" },
-  ];
-
-  for (const entity of allEntities()) {
-    if (entity.id === "cat_all") continue;
-    if (!isIndexableEntity(entity)) continue;
-    entries.push({
-      path: getEntityHref(entity),
-      lastModified: entity.updatedAt,
-    });
-  }
-
-  return entries;
 }
 
 /** @deprecated Prefer getRelationLabel(type, direction) from relationTypes */

@@ -5,7 +5,7 @@ import { EntityList, Breadcrumbs } from "@/components/entity/EntityUI";
 
 export const metadata: Metadata = listMetadata(
   "Kategóriák | FESTÉKINDEX",
-  "Festékipari szakterületek és hierarchikus kategóriarendszer.",
+  "Festékipari szakterületek és szakmai kategóriarendszer.",
   "/kategoriak",
 );
 
@@ -22,7 +22,8 @@ export default function KategoriakPage() {
         />
         <h1>Kategóriák</h1>
         <p className="page-lead">
-          Hierarchikus szakterületi rendszer — később mélyíthető alkategóriákkal.
+          Szakmai kategóriarendszer — festékipari szakterületek és kapcsolódó
+          termékek.
         </p>
         <EntityList entities={items} />
       </div>

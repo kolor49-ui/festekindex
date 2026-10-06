@@ -3,7 +3,11 @@
  */
 
 import { RELATION_TYPE_DEFS } from "../relationTypes";
-import type { AnyEntity, Relation, RelationType } from "../types";
+import type { AnyEntity, Relation, RelationType, Source } from "../types";
+import {
+  runProductModelFixtureTests,
+  validateAllProducts,
+} from "../productValidation";
 
 export type GraphIssue = {
   severity: "error" | "warning";
@@ -289,11 +293,14 @@ export function validate7016Migration(
 export function validateGraph(
   entities: AnyEntity[],
   relations: Relation[],
+  sources: Source[] = [],
 ): GraphValidationResult {
   const all = [
     ...validateRelations(entities, relations),
     ...validateDuplicateRelations(relations),
     ...validateOrphans(entities, relations),
+    ...validateAllProducts(entities, sources),
+    ...runProductModelFixtureTests(entities, sources),
   ];
 
   // Duplicate entity ids

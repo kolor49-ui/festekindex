@@ -5,9 +5,10 @@
 
 import { relations as relationsBase } from "../relations";
 import { festekBazisV02Seed } from "./festekBazisV02Map";
+import { festekBazisEnrichmentV1 } from "./festekBazisEnrichmentV1";
 import { mergeRelationsByCanonicalKey } from "./merge";
 
 export const allRelations = mergeRelationsByCanonicalKey(
-  relationsBase,
-  festekBazisV02Seed.relations,
+  mergeRelationsByCanonicalKey(relationsBase, festekBazisV02Seed.relations),
+  festekBazisEnrichmentV1.relations,
 );
