@@ -26,11 +26,9 @@ const QUICK = ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"];
 export function HomeExplorer({
   initialHits,
   relatedByEntityId,
-  stats,
 }: {
   initialHits: SearchHit[];
   relatedByEntityId: Record<string, RelationPreview[]>;
-  stats: { entities: number; brands: number; categories: number };
 }) {
   const [query, setQuery] = useState("");
   const [submitted, setSubmitted] = useState("");
@@ -108,25 +106,6 @@ export function HomeExplorer({
           ))}
         </div>
       </section>
-
-      <div className="stats">
-        <div className="stat">
-          <strong>{stats.entities}+</strong>
-          <span>Szakmai entitás</span>
-        </div>
-        <div className="stat">
-          <strong>{stats.brands}+</strong>
-          <span>Márka</span>
-        </div>
-        <div className="stat">
-          <strong>{stats.categories}</strong>
-          <span>Szakterület</span>
-        </div>
-        <div className="stat">
-          <strong>1</strong>
-          <span>Kapcsolati rendszer</span>
-        </div>
-      </div>
 
       <div className="toolbar">
         <h3>

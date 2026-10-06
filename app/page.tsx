@@ -3,7 +3,6 @@ import { HomeExplorer } from "@/components/home/HomeExplorer";
 import {
   getFeaturedHits,
   getRelationPreviewsMap,
-  getStats,
 } from "@/lib/data/repository";
 
 export const metadata: Metadata = {
@@ -16,14 +15,12 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const hits = getFeaturedHits(10);
   const relatedByEntityId = getRelationPreviewsMap(hits.map((h) => h.id));
-  const stats = getStats();
 
   return (
     <main className="main">
       <HomeExplorer
         initialHits={hits}
         relatedByEntityId={relatedByEntityId}
-        stats={stats}
       />
     </main>
   );
