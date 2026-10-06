@@ -14,7 +14,6 @@ import {
   type OrganizationPortfolio,
   type PortfolioBrandGroup,
   type PortfolioFamilyCard,
-  type PortfolioProductLink,
 } from "@/lib/data/organizationPortfolio";
 import { evaluateIndexability } from "@/lib/seo/indexability";
 
@@ -40,6 +39,13 @@ const ORG_HUB_SEO: Record<string, OrgHubSeoOverride> = {
   },
 };
 
+export type CompanyFact = {
+  label: string;
+  value: string;
+  /** External URL when the fact is a website link. */
+  href?: string;
+};
+
 export type OrganizationHubModel = {
   organization: Organization;
   portfolio: OrganizationPortfolio;
@@ -54,33 +60,74 @@ export type OrganizationHubModel = {
   /** Compact meta chips under the lead */
   metaChips: { label: string; value: string }[];
   brands: { id: string; name: string; href: string }[];
-  /** All families: under brands + orphan (7016™ etc.) */
-  familyCards: PortfolioFamilyCard[];
   brandGroups: PortfolioBrandGroup[];
   orphanFamilies: PortfolioFamilyCard[];
-  productSections: {
-    heading: string;
-    href?: string;
-    products: PortfolioProductLink[];
-  }[];
-  allProductsHref: string;
   allProductCount: number;
+  companyFacts: CompanyFact[];
   categories: OrganizationPortfolio["categories"];
   technologies: OrganizationPortfolio["technologies"];
   surfaces: OrganizationPortfolio["surfaces"];
   sources: Source[];
   lastVerifiedAt?: string;
-  /** HTML outline: Org → Brands → Families → Products */
-  connectionTree: {
-    brands: {
-      name: string;
-      href: string;
-      families: { name: string; href: string; productCount: number }[];
-      directProductCount: number;
-    }[];
-    orphanFamilies: { name: string; href: string; productCount: number }[];
-  };
+  /** Human-readable HU date derived from lastVerifiedAt. */
+  lastVerifiedLabel?: string;
 };
+
+const HU_MONTHS = [
+  "január",
+  "február",
+  "március",
+  "április",
+  "május",
+  "június",
+  "július",
+  "augusztus",
+  "szeptember",
+  "október",
+  "november",
+  "december",
+] as const;
+
+/** Format repository ISO date (YYYY-MM-DD…) as "2026. október 5." */
+export function formatHuVerifiedDate(iso: string): string | undefined {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso.trim());
+  if (!m) return undefined;
+  const year = m[1];
+  const monthIdx = Number(m[2]) - 1;
+  const day = Number(m[3]);
+  if (monthIdx < 0 || monthIdx > 11 || !Number.isFinite(day) || day < 1) {
+    return undefined;
+  }
+  return `${year}. ${HU_MONTHS[monthIdx]} ${day}.`;
+}
+
+/**
+ * Company facts from Organization fields only — never invented.
+ * Omit any row whose value is missing.
+ */
+export function buildCompanyFacts(org: Organization): CompanyFact[] {
+  const facts: CompanyFact[] = [];
+
+  if (org.legalName?.trim()) {
+    facts.push({ label: "Teljes cégnév", value: org.legalName.trim() });
+  }
+  if (org.hqCity?.trim()) {
+    facts.push({ label: "Székhely", value: org.hqCity.trim() });
+  }
+  if (org.country?.trim()) {
+    const code = org.country.trim();
+    facts.push({
+      label: "Ország",
+      value: code === "HU" ? "Magyarország" : code,
+    });
+  }
+  if (org.website?.trim()) {
+    const url = org.website.trim();
+    facts.push({ label: "Hivatalos weboldal", value: url, href: url });
+  }
+
+  return facts;
+}
 
 export function buildOrganizationHubModel(
   organization: Organization,
@@ -113,37 +160,9 @@ export function buildOrganizationHubModel(
     href: getEntityHref(b),
   }));
 
-  const familyCards = [
-    ...portfolio.brandGroups.flatMap((g) => g.families),
-    ...portfolio.orphanFamilies,
-  ];
-
-  const productSections: OrganizationHubModel["productSections"] = [];
-  for (const group of portfolio.brandGroups) {
-    for (const family of group.families) {
-      if (!family.products.length) continue;
-      productSections.push({
-        heading: family.name,
-        href: family.href,
-        products: family.products,
-      });
-    }
-    if (group.directProducts.length) {
-      productSections.push({
-        heading: `${group.brand.name} — további termékek`,
-        href: group.href,
-        products: group.directProducts,
-      });
-    }
-  }
-  for (const family of portfolio.orphanFamilies) {
-    if (!family.products.length) continue;
-    productSections.push({
-      heading: family.name,
-      href: family.href,
-      products: family.products,
-    });
-  }
+  const familyCount =
+    portfolio.brandGroups.reduce((n, g) => n + g.families.length, 0) +
+    portfolio.orphanFamilies.length;
 
   const metaChips: { label: string; value: string }[] = [
     { label: "Szerep", value: "Gyártó" },
@@ -157,10 +176,10 @@ export function buildOrganizationHubModel(
       value: String(portfolio.ownedBrands.length),
     });
   }
-  if (familyCards.length) {
+  if (familyCount) {
     metaChips.push({
       label: "Termékcsaládok",
-      value: String(familyCards.length),
+      value: String(familyCount),
     });
   }
   if (portfolio.allProducts.length) {
@@ -170,23 +189,9 @@ export function buildOrganizationHubModel(
     });
   }
 
-  const connectionTree = {
-    brands: portfolio.brandGroups.map((g) => ({
-      name: g.brand.name,
-      href: g.href,
-      families: g.families.map((f) => ({
-        name: f.name,
-        href: f.href,
-        productCount: f.productCount,
-      })),
-      directProductCount: g.directProducts.length,
-    })),
-    orphanFamilies: portfolio.orphanFamilies.map((f) => ({
-      name: f.name,
-      href: f.href,
-      productCount: f.productCount,
-    })),
-  };
+  const lastVerifiedLabel = portfolio.lastVerifiedAt
+    ? formatHuVerifiedDate(portfolio.lastVerifiedAt)
+    : undefined;
 
   return {
     organization,
@@ -206,18 +211,16 @@ export function buildOrganizationHubModel(
     indexable: evaluation.indexable || Boolean(seo),
     metaChips,
     brands,
-    familyCards,
     brandGroups: portfolio.brandGroups,
     orphanFamilies: portfolio.orphanFamilies,
-    productSections,
-    allProductsHref: `#osszes-termek`,
     allProductCount: portfolio.allProducts.length,
+    companyFacts: buildCompanyFacts(organization),
     categories: portfolio.categories,
     technologies: portfolio.technologies,
     surfaces: portfolio.surfaces,
     sources: portfolio.sources,
     lastVerifiedAt: portfolio.lastVerifiedAt,
-    connectionTree,
+    lastVerifiedLabel,
   };
 }
 

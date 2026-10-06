@@ -5,8 +5,47 @@ import {
   buildOrganizationHubJsonLd,
   type OrganizationHubModel,
 } from "@/lib/seo/organizationHubModel";
+import type { PortfolioProductLink } from "@/lib/data/organizationPortfolio";
 
-const PREVIEW_PRODUCTS_PER_SECTION = 4;
+/** Visible product links before SSR <details> overflow (crawlable either way). */
+const PREVIEW_PRODUCTS = 4;
+
+function ProductLinkList({
+  products,
+  preview = PREVIEW_PRODUCTS,
+}: {
+  products: PortfolioProductLink[];
+  preview?: number;
+}) {
+  if (!products.length) return null;
+
+  const visible = products.slice(0, preview);
+  const rest = products.slice(preview);
+
+  return (
+    <>
+      <ul className="org-product-list">
+        {visible.map((p) => (
+          <li key={p.id}>
+            <Link href={p.href}>{p.name}</Link>
+          </li>
+        ))}
+      </ul>
+      {rest.length > 0 ? (
+        <details className="org-product-more">
+          <summary>+{rest.length} további termék</summary>
+          <ul className="org-product-list">
+            {rest.map((p) => (
+              <li key={p.id}>
+                <Link href={p.href}>{p.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </details>
+      ) : null}
+    </>
+  );
+}
 
 /**
  * Manufacturer Organization hub — SSR HTML, repository-driven.
@@ -18,6 +57,12 @@ export function OrganizationHubPage({
   model: OrganizationHubModel;
 }) {
   const jsonLd = buildOrganizationHubJsonLd(model);
+  const hasPortfolio =
+    model.brandGroups.some(
+      (g) => g.families.length > 0 || g.directProducts.length > 0,
+    ) || model.orphanFamilies.length > 0;
+  const hasTechSurfaces =
+    model.technologies.length > 0 || model.surfaces.length > 0;
 
   return (
     <main className="main">
@@ -60,46 +105,146 @@ export function OrganizationHubPage({
             </section>
           ) : null}
 
-          {model.familyCards.length > 0 ? (
-            <section className="seo-section" id="termekcsaladok">
-              <h2 className="seo-heading">Termékrendszerek / termékcsaládok</h2>
-              <div className="org-family-list">
-                {model.familyCards.map((f) => (
-                  <div key={f.id} className="org-family-card">
-                    <div className="org-family-head">
-                      <Link href={f.href} className="org-family-name">
-                        {f.name}
-                      </Link>
-                      {f.brandName && f.brandHref ? (
-                        <span className="org-family-parent">
-                          Márka:{" "}
-                          <Link href={f.brandHref}>{f.brandName}</Link>
-                        </span>
-                      ) : (
-                        <span className="org-family-parent">
-                          Termékcsalád (márka nélkül)
-                        </span>
-                      )}
+          {hasPortfolio ? (
+            <section className="seo-section" id="termekportfolio">
+              <h2 className="seo-heading">Termékportfólió</h2>
+              <div className="org-portfolio">
+                {model.brandGroups.map((group) => {
+                  const brandProductCount =
+                    group.families.reduce((n, f) => n + f.productCount, 0) +
+                    group.directProducts.length;
+                  if (
+                    group.families.length === 0 &&
+                    group.directProducts.length === 0
+                  ) {
+                    return null;
+                  }
+                  return (
+                    <div
+                      key={group.brand.id}
+                      className="org-portfolio-brand"
+                      id={`portfolio-${group.brand.slug}`}
+                    >
+                      <h3 className="org-portfolio-brand-name">
+                        <Link href={group.href}>{group.brand.name}</Link>
+                      </h3>
+
+                      {group.families.map((family) => (
+                        <div
+                          key={family.id}
+                          className="org-portfolio-family"
+                        >
+                          <div className="org-portfolio-family-head">
+                            <Link
+                              href={family.href}
+                              className="org-portfolio-family-name"
+                            >
+                              {family.name}
+                            </Link>
+                            <span className="org-portfolio-count">
+                              {family.productCount} termék
+                            </span>
+                          </div>
+                          {family.description ? (
+                            <p className="org-portfolio-desc">
+                              {family.description}
+                            </p>
+                          ) : null}
+                          <ProductLinkList products={family.products} />
+                        </div>
+                      ))}
+
+                      {group.directProducts.length > 0 ? (
+                        <div className="org-portfolio-family">
+                          <div className="org-portfolio-family-head">
+                            <span className="org-portfolio-family-name org-portfolio-family-name-plain">
+                              További {group.brand.name} termékek
+                            </span>
+                            <span className="org-portfolio-count">
+                              {group.directProducts.length} termék
+                            </span>
+                          </div>
+                          <ProductLinkList products={group.directProducts} />
+                        </div>
+                      ) : null}
+
+                      {brandProductCount > 0 ? (
+                        <p className="org-portfolio-brand-all">
+                          <Link href={group.href}>
+                            Összes {group.brand.name} termék →
+                          </Link>
+                        </p>
+                      ) : null}
                     </div>
-                    {f.description ? (
-                      <p className="org-family-desc">{f.description}</p>
+                  );
+                })}
+
+                {model.orphanFamilies.map((family) => (
+                  <div
+                    key={family.id}
+                    className="org-portfolio-brand org-portfolio-orphan-family"
+                    id={`portfolio-family-${family.id}`}
+                  >
+                    <div className="org-portfolio-family-kind">
+                      Termékcsalád
+                    </div>
+                    <h3 className="org-portfolio-brand-name">
+                      <Link href={family.href}>{family.name}</Link>
+                    </h3>
+                    {family.description ? (
+                      <p className="org-portfolio-desc">
+                        {family.description}
+                      </p>
                     ) : null}
-                    <div className="org-family-meta">
-                      {f.productCount} termék
+                    <div className="org-portfolio-family-head">
+                      <span className="org-portfolio-count">
+                        {family.productCount} termék
+                      </span>
                     </div>
+                    <ProductLinkList products={family.products} />
+                    {family.productCount > PREVIEW_PRODUCTS ? (
+                      <p className="org-portfolio-brand-all">
+                        <Link href={family.href}>
+                          Összes {family.name} termék →
+                        </Link>
+                      </p>
+                    ) : null}
                   </div>
                 ))}
               </div>
             </section>
           ) : null}
 
+          {model.companyFacts.length > 0 ? (
+            <section className="seo-section" id="cegadatok">
+              <h2 className="seo-heading">Cégadatok</h2>
+              <dl className="org-facts">
+                {model.companyFacts.map((fact) => (
+                  <div key={fact.label} className="org-fact">
+                    <dt>{fact.label}</dt>
+                    <dd>
+                      {fact.href ? (
+                        <a
+                          href={fact.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {fact.value}
+                        </a>
+                      ) : (
+                        fact.value
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          ) : null}
+
           {model.categories.length > 0 ? (
             <section className="seo-section" id="szakteruletek">
-              <h2 className="seo-heading">Portfólió / szakmai területek</h2>
-              <p className="org-section-note">
-                A cég termékeinek belongsToCategory kapcsolataiból aggregálva.
-              </p>
-              <div className="seo-links">
+              <h2 className="seo-heading">Szakmai területek</h2>
+              <div className="seo-links org-category-chips">
                 {model.categories.map((c) => (
                   <Link
                     key={c.id}
@@ -114,131 +259,45 @@ export function OrganizationHubPage({
             </section>
           ) : null}
 
-          {model.productSections.length > 0 ? (
-            <section className="seo-section" id="termekek">
-              <h2 className="seo-heading">Kiemelt termékek</h2>
-              {model.productSections.map((section) => (
-                <div key={section.heading} className="org-product-block">
-                  <h3 className="seo-subheading">
-                    {section.href ? (
-                      <Link href={section.href}>{section.heading}</Link>
-                    ) : (
-                      section.heading
-                    )}
-                  </h3>
-                  <ul className="org-product-list">
-                    {section.products
-                      .slice(0, PREVIEW_PRODUCTS_PER_SECTION)
-                      .map((p) => (
-                        <li key={p.id}>
-                          <Link href={p.href}>{p.name}</Link>
-                        </li>
-                      ))}
-                  </ul>
-                  {section.products.length > PREVIEW_PRODUCTS_PER_SECTION ? (
-                    <p className="org-more">
-                      +{section.products.length - PREVIEW_PRODUCTS_PER_SECTION}{" "}
-                      további ebben a csoportban
-                    </p>
-                  ) : null}
-                </div>
-              ))}
-              {model.allProductCount > 0 ? (
-                <p className="org-all-products">
-                  <Link href={model.allProductsHref} className="pill pill-link">
-                    Összes termék megtekintése ({model.allProductCount})
-                  </Link>
-                </p>
-              ) : null}
-            </section>
-          ) : null}
-
-          {model.allProductCount > 0 ? (
-            <section className="seo-section" id="osszes-termek">
-              <h2 className="seo-heading">
-                Összes termék ({model.allProductCount})
-              </h2>
-              <ul className="org-product-list org-product-list-full">
-                {model.portfolio.allProducts.map((p) => (
-                  <li key={p.id}>
-                    <Link href={p.href}>{p.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-
-          {(model.connectionTree.brands.length > 0 ||
-            model.connectionTree.orphanFamilies.length > 0) && (
-            <section className="seo-section" id="kapcsolatok">
-              <h2 className="seo-heading">Kapcsolatok</h2>
+          {hasTechSurfaces ? (
+            <section className="seo-section" id="technologiak-feluletek">
               <p className="org-section-note">
-                Organization → Brands → ProductFamilies → Products
+                A gyártó termékeihez kapcsolódó alkalmazási technológiák és
+                felületek.
               </p>
-              <ul className="org-tree">
-                <li>
-                  <strong>{model.organization.name}</strong>
-                  <ul>
-                    {model.connectionTree.brands.map((b) => (
-                      <li key={b.href}>
-                        <Link href={b.href}>{b.name}</Link>
-                        <ul>
-                          {b.families.map((f) => (
-                            <li key={f.href}>
-                              <Link href={f.href}>{f.name}</Link>
-                              {f.productCount > 0
-                                ? ` · ${f.productCount} termék`
-                                : null}
-                            </li>
-                          ))}
-                          {b.directProductCount > 0 ? (
-                            <li>
-                              További termékek · {b.directProductCount}
-                            </li>
-                          ) : null}
-                        </ul>
-                      </li>
-                    ))}
-                    {model.connectionTree.orphanFamilies.map((f) => (
-                      <li key={f.href}>
-                        <Link href={f.href}>{f.name}</Link>
-                        {f.productCount > 0
-                          ? ` · ${f.productCount} termék`
-                          : null}
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          )}
-
-          {model.technologies.length > 0 ? (
-            <section className="seo-section" id="technologiak">
-              <h2 className="seo-heading">
-                A portfólióban előforduló technológiák
-              </h2>
-              <div className="seo-links">
-                {model.technologies.map((t) => (
-                  <Link key={t.id} href={t.href} className="pill pill-link">
-                    {t.name}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          ) : null}
-
-          {model.surfaces.length > 0 ? (
-            <section className="seo-section" id="feluletek">
-              <h2 className="seo-heading">
-                A portfólióban előforduló felületek
-              </h2>
-              <div className="seo-links">
-                {model.surfaces.map((s) => (
-                  <Link key={s.id} href={s.href} className="pill pill-link">
-                    {s.name}
-                  </Link>
-                ))}
+              <div className="org-tech-surface-grid">
+                {model.technologies.length > 0 ? (
+                  <div className="org-tech-surface-col">
+                    <h2 className="seo-heading">Technológiák</h2>
+                    <div className="seo-links">
+                      {model.technologies.map((t) => (
+                        <Link
+                          key={t.id}
+                          href={t.href}
+                          className="pill pill-link"
+                        >
+                          {t.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {model.surfaces.length > 0 ? (
+                  <div className="org-tech-surface-col">
+                    <h2 className="seo-heading">Felületek</h2>
+                    <div className="seo-links">
+                      {model.surfaces.map((s) => (
+                        <Link
+                          key={s.id}
+                          href={s.href}
+                          className="pill pill-link"
+                        >
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </section>
           ) : null}
@@ -248,9 +307,9 @@ export function OrganizationHubPage({
               <h2 className="seo-heading sources-heading">
                 Források és adatellenőrzés
               </h2>
-              {model.lastVerifiedAt ? (
+              {model.lastVerifiedLabel ? (
                 <p className="sources-meta">
-                  Utolsó ellenőrzési dátum a gráfban: {model.lastVerifiedAt}
+                  Adatok ellenőrizve: {model.lastVerifiedLabel}
                 </p>
               ) : null}
               <details className="org-sources-details">

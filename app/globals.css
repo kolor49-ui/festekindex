@@ -852,58 +852,95 @@ a {
   color: #6a7a88;
 }
 
-.org-hub .org-family-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 6px;
+.org-hub .org-section-note {
+  font-size: 12px;
+  color: #6f7c87;
+  margin: 0 0 12px;
+  line-height: 1.45;
 }
 
-.org-hub .org-family-card {
-  padding: 12px 14px;
+.org-hub .org-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.org-hub .org-portfolio-brand {
+  padding: 14px 16px;
   border: 1px solid #e3e7eb;
   border-radius: 8px;
   background: #fcfdfe;
 }
 
-.org-hub .org-family-head {
+.org-hub .org-portfolio-orphan-family {
+  background: linear-gradient(165deg, #f8fafb 0%, #f2f5f8 100%);
+}
+
+.org-hub .org-portfolio-family-kind {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6a7a88;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.org-hub .org-portfolio-brand-name {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.3px;
+  color: #14202c;
+}
+
+.org-hub .org-portfolio-brand-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.org-hub .org-portfolio-brand-name a:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.org-hub .org-portfolio-family {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e8ecef;
+}
+
+.org-hub .org-portfolio-brand > .org-portfolio-family:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.org-hub .org-portfolio-family-head {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 6px 12px;
+  margin-bottom: 4px;
 }
 
-.org-hub .org-family-name {
-  font-size: 14px;
-  font-weight: 750;
+.org-hub .org-portfolio-family-name {
+  font-size: 13px;
+  font-weight: 700;
   color: #176fa8;
   text-decoration: none;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.15px;
 }
 
-.org-hub .org-family-name:hover {
+.org-hub .org-portfolio-family-name:hover {
   text-decoration: underline;
 }
 
-.org-hub .org-family-parent {
-  font-size: 11px;
-  color: #6f7c87;
+.org-hub .org-portfolio-family-name-plain {
+  color: #2a3640;
 }
 
-.org-hub .org-family-parent a {
-  color: #176fa8;
-}
-
-.org-hub .org-family-desc {
-  margin: 6px 0 0;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #5a6874;
-  max-width: 640px;
-}
-
-.org-hub .org-family-meta {
-  margin-top: 6px;
+.org-hub .org-portfolio-count {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -911,45 +948,15 @@ a {
   font-weight: 700;
 }
 
-.org-hub .org-section-note {
-  font-size: 11px;
-  color: #6f7c87;
-  margin: 0 0 10px;
-  line-height: 1.45;
-}
-
-.org-hub .org-product-block {
-  margin-bottom: 12px;
+.org-hub .org-portfolio-desc {
+  margin: 0 0 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5a6874;
+  max-width: 640px;
 }
 
 .org-hub .org-product-list {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 13px;
-  line-height: 1.65;
-  color: #2a3640;
-}
-
-.org-hub .org-product-list a {
-  color: #176fa8;
-}
-
-.org-hub .org-product-list-full {
-  columns: 2;
-  column-gap: 24px;
-}
-
-.org-hub .org-more {
-  font-size: 11px;
-  color: #6f7c87;
-  margin: 4px 0 0 18px;
-}
-
-.org-hub .org-all-products {
-  margin: 14px 0 0;
-}
-
-.org-hub .org-tree {
   margin: 0;
   padding-left: 18px;
   font-size: 13px;
@@ -957,13 +964,94 @@ a {
   color: #2a3640;
 }
 
-.org-hub .org-tree ul {
-  margin: 2px 0 6px;
-  padding-left: 18px;
+.org-hub .org-product-list a {
+  color: #176fa8;
+  text-decoration: none;
 }
 
-.org-hub .org-tree a {
+.org-hub .org-product-list a:hover {
+  text-decoration: underline;
+}
+
+.org-hub .org-product-more {
+  margin: 4px 0 0 18px;
+  font-size: 12px;
+}
+
+.org-hub .org-product-more summary {
+  cursor: pointer;
+  color: #6f7c87;
+  font-weight: 650;
+  list-style: none;
+}
+
+.org-hub .org-product-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.org-hub .org-product-more[open] summary {
+  margin-bottom: 4px;
+}
+
+.org-hub .org-portfolio-brand-all {
+  margin: 12px 0 0;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.org-hub .org-portfolio-brand-all a {
   color: #176fa8;
+  text-decoration: none;
+}
+
+.org-hub .org-portfolio-brand-all a:hover {
+  text-decoration: underline;
+}
+
+.org-hub .org-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 28px;
+  margin: 8px 0 0;
+}
+
+.org-hub .org-fact {
+  margin: 0;
+}
+
+.org-hub .org-fact dt {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #71808c;
+  margin: 0 0 3px;
+  font-weight: 700;
+}
+
+.org-hub .org-fact dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #1a2430;
+}
+
+.org-hub .org-fact dd a {
+  color: #176fa8;
+  word-break: break-all;
+}
+
+.org-hub .org-category-chips {
+  margin-top: 4px;
+}
+
+.org-hub .org-tech-surface-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+.org-hub .org-tech-surface-col .seo-heading {
+  margin-top: 0;
 }
 
 .org-hub .org-sources-details {
@@ -1000,8 +1088,12 @@ a {
 }
 
 @media (max-width: 720px) {
-  .org-hub .org-product-list-full {
-    columns: 1;
+  .org-hub .org-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .org-hub .org-tech-surface-grid {
+    grid-template-columns: 1fr;
   }
 }
 
