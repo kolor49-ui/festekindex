@@ -1147,6 +1147,105 @@ a {
   }
 }
 
+/* ——— Brand hub (shares org-hub primitives) ——— */
+.brand-hub .brand-family-title {
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.25px;
+}
+
+.brand-hub .brand-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+  margin-top: 8px;
+}
+
+.brand-hub .brand-product-item {
+  padding: 0 0 12px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.brand-hub .brand-product-name {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.45;
+  color: #243240;
+  text-decoration: none;
+}
+
+.brand-hub .brand-product-name:hover,
+.brand-hub .brand-product-name:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.brand-hub .brand-product-meta {
+  margin-top: 3px;
+  font-size: 11px;
+  color: #6f7c87;
+  line-height: 1.4;
+}
+
+.brand-hub .brand-product-meta a {
+  color: #6f7c87;
+  text-decoration: none;
+}
+
+.brand-hub .brand-product-meta a:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.brand-hub .brand-product-surfaces {
+  margin-top: 6px;
+}
+
+.brand-hub .brand-product-surfaces .pill {
+  font-size: 10px;
+  padding: 4px 7px;
+  margin: 0 4px 4px 0;
+}
+
+.brand-hub .brand-product-more {
+  margin: 10px 0 0;
+}
+
+.brand-hub .brand-owner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.brand-hub .brand-owner-name {
+  font-size: 15px;
+  font-weight: 750;
+  color: #14202c;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+}
+
+.brand-hub .brand-owner-name:hover {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.brand-hub .brand-owner-blurb {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #5a6874;
+  max-width: 640px;
+}
+
+@media (max-width: 720px) {
+  .brand-hub .brand-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .empty {
   font-size: 12px;
   color: var(--muted);
