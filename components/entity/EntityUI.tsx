@@ -23,11 +23,46 @@ export function Breadcrumbs({
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       {items.map((item, i) => (
-        <span key={`${item.name}-${i}`}>
-          {i > 0 ? " / " : null}
-          {item.href ? <Link href={item.href}>{item.name}</Link> : <b>{item.name}</b>}
+        <span key={`${item.name}-${i}`} className="breadcrumb-item">
+          {i > 0 ? <span className="breadcrumb-sep"> / </span> : null}
+          {item.href ? (
+            <Link href={item.href}>{item.name}</Link>
+          ) : (
+            <span className="breadcrumb-current">{item.name}</span>
+          )}
         </span>
       ))}
+    </nav>
+  );
+}
+
+/** Compact portfolio context — Entity Navigation Standard v1. */
+export function EntityContextNav({
+  items,
+  heading = "Kapcsolódás",
+}: {
+  items: { label: string; name: string; href: string }[];
+  heading?: string;
+}) {
+  if (!items.length) return null;
+
+  return (
+    <nav className="entity-context-nav" aria-label={heading}>
+      <div className="entity-context-heading">{heading}</div>
+      <ul className="entity-context-list">
+        {items.map((item) => (
+          <li key={`${item.label}-${item.href}`} className="entity-context-row">
+            <span className="entity-context-label">{item.label}</span>
+            <Link href={item.href} className="entity-context-link">
+              {item.name}
+              <span className="entity-context-arrow" aria-hidden="true">
+                {" "}
+                →
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }

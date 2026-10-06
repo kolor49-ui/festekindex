@@ -16,6 +16,7 @@ import {
   type PortfolioFamilyCard,
 } from "@/lib/data/organizationPortfolio";
 import { evaluateIndexability } from "@/lib/seo/indexability";
+import { getEntityBreadcrumb } from "@/lib/navigation/entityNavigation";
 
 export type OrgHubSeoOverride = {
   h1: string;
@@ -190,7 +191,6 @@ export function buildOrganizationHubModel(
 
   const seo = ORG_HUB_SEO[organization.slug];
   const evaluation = evaluateIndexability(organization);
-  const path = getEntityHref(organization);
   const canonicalUrl = getCanonicalUrl(organization);
 
   const h1 = seo?.h1 ?? organization.name;
@@ -255,11 +255,7 @@ export function buildOrganizationHubModel(
     lead,
     metaDescription,
     canonicalUrl,
-    breadcrumbs: [
-      { name: "FESTÉKINDEX", path: "/" },
-      { name: "Cégek", path: "/cegek" },
-      { name: organization.name, path },
-    ],
+    breadcrumbs: getEntityBreadcrumb(organization),
     // Hub is indexable if org flag allows OR we have a full editorial SEO override
     indexable: evaluation.indexable || Boolean(seo),
     metaChips,

@@ -18,6 +18,7 @@ import {
 } from "@/lib/data/brandPortfolio";
 import { evaluateIndexability } from "@/lib/seo/indexability";
 import { formatHuVerifiedDate } from "@/lib/seo/organizationHubModel";
+import { getEntityBreadcrumb } from "@/lib/navigation/entityNavigation";
 
 export type BrandHubSeoOverride = {
   h1?: string;
@@ -197,7 +198,6 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
 
   const seo = BRAND_HUB_SEO[brand.slug];
   const evaluation = evaluateIndexability(brand);
-  const path = getEntityHref(brand);
   const canonicalUrl = getCanonicalUrl(brand);
 
   const h1 = seo?.h1 ?? brand.name;
@@ -259,11 +259,7 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
     lead,
     metaDescription,
     canonicalUrl,
-    breadcrumbs: [
-      { name: "FESTÉKINDEX", path: "/" },
-      { name: "Márkák", path: "/markak" },
-      { name: brand.name, path },
-    ],
+    breadcrumbs: getEntityBreadcrumb(brand),
     indexable: evaluation.indexable || Boolean(seo) || substantive,
     metaChips,
     families: portfolio.families,

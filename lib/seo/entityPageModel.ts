@@ -6,9 +6,12 @@ import {
   getRelatedEntities,
   getSourcesByIds,
   KIND_LABEL,
-  TYPE_PATH,
 } from "@/lib/data/repository";
 import { evaluateIndexability } from "@/lib/seo/indexability";
+import {
+  getEntityNavigation,
+  type NavContextItem,
+} from "@/lib/navigation/entityNavigation";
 
 export type Crumb = { name: string; path: string };
 
@@ -59,6 +62,9 @@ export type EntityPageModel = {
   /** Latest verification date across entity + relations (ISO or display) */
   lastVerifiedAt?: string;
   contextualLinks: PageLink[];
+  /** Entity Navigation Standard v1 — deep-page portfolio context. */
+  contextItems: NavContextItem[];
+  showContextNav: boolean;
 };
 
 const LIST_META: Record<
@@ -632,7 +638,6 @@ export function buildEntityPageModel(entity: AnyEntity): EntityPageModel {
   const lastVerifiedAt =
     verificationDates.sort().reverse()[0] ?? entity.updatedAt;
 
-  const path = `/${TYPE_PATH[entity.type]}/${entity.slug}`;
   const title =
     entity.seoTitle?.trim() || `${entity.name} | FESTÉKINDEX`;
   const metaDescription = (
@@ -667,6 +672,8 @@ export function buildEntityPageModel(entity: AnyEntity): EntityPageModel {
           });
         })();
 
+  const navigation = getEntityNavigation(entity);
+
   return {
     entity,
     kindLabel: KIND_LABEL[entity.type],
@@ -679,11 +686,7 @@ export function buildEntityPageModel(entity: AnyEntity): EntityPageModel {
     title,
     metaDescription,
     canonicalUrl: getCanonicalUrl(entity),
-    breadcrumbs: [
-      { name: "FESTÉKINDEX", path: "/" },
-      { name: meta.label, path: meta.path },
-      { name: entity.name, path },
-    ],
+    breadcrumbs: navigation.breadcrumbs,
     lead: entity.shortDescription,
     overviewParagraphs: entity.body ? [entity.body] : [entity.shortDescription],
     sections,
@@ -694,5 +697,7 @@ export function buildEntityPageModel(entity: AnyEntity): EntityPageModel {
     sources,
     lastVerifiedAt,
     contextualLinks,
+    contextItems: navigation.contextItems,
+    showContextNav: navigation.showContextNav,
   };
 }

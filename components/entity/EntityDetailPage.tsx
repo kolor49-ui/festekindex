@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Breadcrumbs, SourcesBlock } from "@/components/entity/EntityUI";
+import { Breadcrumbs, EntityContextNav, SourcesBlock } from "@/components/entity/EntityUI";
 import type { AnyEntity } from "@/lib/data/types";
 import { buildEntityPageModel } from "@/lib/seo/entityPageModel";
 import { buildEntityJsonLd, JsonLdScript } from "@/lib/seo/jsonld";
@@ -34,6 +34,10 @@ export function EntityDetailPage({ entity }: { entity: AnyEntity }) {
 
           <h1>{page.h1}</h1>
           <p className="page-lead">{page.lead}</p>
+
+          {page.showContextNav ? (
+            <EntityContextNav items={page.contextItems} />
+          ) : null}
 
           {page.sections.map((section) => {
             const Heading = section.headingLevel === 3 ? "h3" : "h2";
