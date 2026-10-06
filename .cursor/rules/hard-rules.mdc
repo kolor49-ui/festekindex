@@ -1,0 +1,34 @@
+---
+description: Hard rules — scope, user control, no water-leak, git discipline
+alwaysApply: true
+---
+
+# Hard rules (minden feladatra)
+
+## 1. Csak a user irányít
+- TILOS magától navigálni, űrlapot nullázni, folyamatot félbeszakítani.
+- Háttér / app-váltás / remount / overlay bezárás ≠ kilépés.
+- Automata `router.push` / `replace` / `redirect` csak explicit user CTA után.
+
+## 2. Ne folyjon máshol a víz
+Munka előtt: `git status`.
+- Ha van idegen dirty fájl → ÁLLJ. Ne kezdj. Stash / discard / külön branch.
+- Csak a megbeszélt path-hoz nyúlj. Nincs „még ezt is”, nincs spekulatív refaktor.
+- Kész = kért flow jó **és** 1–2 szomszédos lépés nem romlott.
+
+## 3. Ne inventálj
+- Ne találj ki adatot, méretet, copyt, API-t, ha nincs forrás.
+- Ha bizonytalan → kérdezz; ne tippelj éles adatot.
+
+## 4. Scope
+- Minimális diff. Közös csőnél a legkisebb változtatás.
+- Teszt csak a változásra + 1 szomszédos smoke.
+- Commit/push csak ha a user kéri. Idegen dirty soha ne menjen fel.
+
+## 5. Git
+- Nincs force push mainre, nincs `--no-verify`, nincs amend push után.
+- Commit üzenet: miért, ne file-lista.
+
+## 6. Agents
+- Ne ígérj „majd később”. Ha a szabály sérül a kódban → javíts most.
+- Ask módban ne írj fájlt; Agent módban implementálj.
