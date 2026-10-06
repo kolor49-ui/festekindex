@@ -24,11 +24,5 @@ export default async function TermekcsaladPage({ params }: Props) {
   const { slug } = await params;
   const entity = getProductFamilyBySlug(slug);
   if (!entity) notFound();
-  return (
-    <EntityDetailPage
-      entity={entity}
-      listPath="/termekcsaladok"
-      listLabel="Termékcsaládok"
-    />
-  );
+  return <EntityDetailPage entity={entity} />;
 }

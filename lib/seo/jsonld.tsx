@@ -1,27 +1,7 @@
-import type { AnyEntity } from "@/lib/data/types";
-import { getCanonicalUrl, SITE_ORIGIN } from "@/lib/data/repository";
+import type { EntityPageModel } from "@/lib/seo/entityPageModel";
+import { SITE_ORIGIN } from "@/lib/data/repository";
 
 type JsonLd = Record<string, unknown>;
-
-export function organizationJsonLd(entity: AnyEntity): JsonLd {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: entity.name,
-    description: entity.shortDescription,
-    url: getCanonicalUrl(entity),
-  };
-}
-
-export function brandJsonLd(entity: AnyEntity): JsonLd {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Brand",
-    name: entity.name,
-    description: entity.shortDescription,
-    url: getCanonicalUrl(entity),
-  };
-}
 
 export function breadcrumbJsonLd(
   items: { name: string; path: string }[],
@@ -36,6 +16,83 @@ export function breadcrumbJsonLd(
       item: `${SITE_ORIGIN}${item.path}`,
     })),
   };
+}
+
+function primaryEntityJsonLd(page: EntityPageModel): JsonLd | null {
+  const base = {
+    name: page.entity.name,
+    description: page.lead,
+    url: page.canonicalUrl,
+  };
+
+  switch (page.entity.type) {
+    case "organization":
+      return {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: page.entity.name,
+        description: page.lead,
+        url: page.canonicalUrl,
+        ...(page.entity.website ? { sameAs: [page.entity.website] } : {}),
+      };
+    case "brand":
+      return {
+        "@context": "https://schema.org",
+        "@type": "Brand",
+        ...base,
+      };
+    case "productFamily":
+    case "product":
+      return {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        ...base,
+        category: page.categories.map((c) => c.name).join(", ") || undefined,
+      };
+    case "knowledge":
+      return {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: page.entity.name,
+        description: page.lead,
+        url: page.canonicalUrl,
+        dateModified: page.entity.updatedAt,
+      };
+    case "technology":
+    case "category":
+      return {
+        "@context": "https://schema.org",
+        "@type": "Thing",
+        ...base,
+      };
+    default:
+      return null;
+  }
+}
+
+/** Full JSON-LD graph for an assembled SEO entity page. */
+export function buildEntityJsonLd(page: EntityPageModel): JsonLd[] {
+  const blocks: JsonLd[] = [breadcrumbJsonLd(page.breadcrumbs)];
+  const primary = primaryEntityJsonLd(page);
+  if (primary) blocks.push(primary);
+
+  if (page.contextualLinks.length) {
+    blocks.push({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `${page.entity.name} — kapcsolódó szakmai entitások`,
+      itemListElement: page.contextualLinks.slice(0, 20).map((link, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: link.name,
+        url: link.href.startsWith("http")
+          ? link.href
+          : `${SITE_ORIGIN}${link.href}`,
+      })),
+    });
+  }
+
+  return blocks;
 }
 
 export function JsonLdScript({ data }: { data: JsonLd | JsonLd[] }) {

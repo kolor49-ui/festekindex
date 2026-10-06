@@ -8,7 +8,7 @@ Domain: [festekindex.hu](https://festekindex.hu)
 - Next.js (App Router) + TypeScript
 - SEO-first (SSG / `generateMetadata`, sitemap, robots, JSON-LD)
 - TypeScript adatréteg + `repository.ts` (nincs külső DB az első körben)
-- Design baseline: `festekindex_sidebar_hero_v3.html`
+- Design baseline: `festekindex_sidebar_hero_v5_balanced.html`
 
 ## Fejlesztés
 
@@ -29,7 +29,12 @@ import { getBrandBySlug, getRelatedEntities, searchEntities } from "@/lib/data/r
 
 Seed fájlok (`organizations.ts`, `brands.ts`, …) nem importálhatók komponensekből.
 
-## Fő route-ok
+## SEO / programmatic pages
+
+- `lib/seo/entityPageModel.ts` — normalized graph → rich SSR page model
+- `lib/seo/indexability.ts` — thin-page gate (sitemap + robots)
+- Entity routes render via `EntityDetailPage` (server components, no client data fetch for primary content)
+
 
 - `/` — főoldal (hero + kereső)
 - `/cegek/[slug]`, `/markak/[slug]`, `/technologiak/[slug]`

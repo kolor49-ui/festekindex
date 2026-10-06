@@ -21,7 +21,5 @@ export default async function MarkaPage({ params }: Props) {
   const { slug } = await params;
   const entity = getBrandBySlug(slug);
   if (!entity) notFound();
-  return (
-    <EntityDetailPage entity={entity} listPath="/markak" listLabel="Márkák" />
-  );
+  return <EntityDetailPage entity={entity} />;
 }

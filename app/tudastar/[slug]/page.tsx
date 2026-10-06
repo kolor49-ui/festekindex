@@ -21,11 +21,5 @@ export default async function TudastarCikkPage({ params }: Props) {
   const { slug } = await params;
   const entity = getKnowledgeBySlug(slug);
   if (!entity) notFound();
-  return (
-    <EntityDetailPage
-      entity={entity}
-      listPath="/tudastar"
-      listLabel="Tudástár"
-    />
-  );
+  return <EntityDetailPage entity={entity} />;
 }

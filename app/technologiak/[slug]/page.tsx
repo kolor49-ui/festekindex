@@ -24,11 +24,5 @@ export default async function TechnologiaPage({ params }: Props) {
   const { slug } = await params;
   const entity = getTechnologyBySlug(slug);
   if (!entity) notFound();
-  return (
-    <EntityDetailPage
-      entity={entity}
-      listPath="/technologiak"
-      listLabel="Technológiák"
-    />
-  );
+  return <EntityDetailPage entity={entity} />;
 }

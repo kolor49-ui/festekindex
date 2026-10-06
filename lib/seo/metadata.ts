@@ -1,31 +1,24 @@
 import type { Metadata } from "next";
 import type { AnyEntity } from "@/lib/data/types";
-import {
-  getCanonicalUrl,
-  isIndexableEntity,
-  SITE_ORIGIN,
-} from "@/lib/data/repository";
+import { SITE_ORIGIN } from "@/lib/data/repository";
+import { buildEntityPageModel } from "@/lib/seo/entityPageModel";
 
 export function entityMetadata(entity: AnyEntity): Metadata {
-  const title = entity.seoTitle ?? `${entity.name} | FESTÉKINDEX`;
-  const description =
-    entity.seoDescription ?? entity.shortDescription.slice(0, 160);
-  const url = getCanonicalUrl(entity);
-  const indexable = isIndexableEntity(entity);
+  const page = buildEntityPageModel(entity);
 
   return {
-    title,
-    description,
-    alternates: { canonical: url },
+    title: page.title,
+    description: page.metaDescription,
+    alternates: { canonical: page.canonicalUrl },
     openGraph: {
-      title,
-      description,
-      url,
+      title: page.title,
+      description: page.metaDescription,
+      url: page.canonicalUrl,
       siteName: "FESTÉKINDEX",
       locale: "hu_HU",
       type: "website",
     },
-    robots: indexable
+    robots: page.indexable
       ? { index: true, follow: true }
       : { index: false, follow: true },
   };

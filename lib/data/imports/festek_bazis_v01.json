@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "dataset": "FESTEKINDEX Festék Bázis import pack",
+    "version": "0.1",
+    "status": "curated-seed",
+    "rule": "manufacturer facts and FESTEKINDEX editorial taxonomy are kept distinguishable"
+  },
+  "entities": {
+    "organizations": [
+      {
+        "id": "org_festek_bazis_zrt",
+        "type": "organization",
+        "name": "FESTÉK BÁZIS Zrt.",
+        "slug": "festek-bazis-zrt",
+        "country": "HU",
+        "status": "active"
+      }
+    ],
+    "brands": [
+      {
+        "id": "brand_valmor",
+        "type": "brand",
+        "name": "VALMOR",
+        "slug": "valmor",
+        "status": "verified"
+      },
+      {
+        "id": "brand_factor",
+        "type": "brand",
+        "name": "FACTOR",
+        "slug": "factor",
+        "status": "verified"
+      },
+      {
+        "id": "brand_coror",
+        "type": "brand",
+        "name": "COROR",
+        "slug": "coror",
+        "status": "verified"
+      },
+      {
+        "id": "brand_7016",
+        "type": "brand",
+        "name": "7016",
+        "slug": "7016",
+        "status": "candidate",
+        "note": "Distinct named product line with own products; formal brand status to be verified."
+      }
+    ],
+    "productFamilies": [
+      {
+        "id": "pf_valmor_air_flow",
+        "type": "productFamily",
+        "name": "VALMOR AIR FLOW",
+        "slug": "valmor-air-flow"
+      },
+      {
+        "id": "pf_factor_aqua",
+        "type": "productFamily",
+        "name": "FACTOR Aqua",
+        "slug": "factor-aqua"
+      },
+      {
+        "id": "pf_coror_rapid",
+        "type": "productFamily",
+        "name": "COROR Rapid",
+        "slug": "coror-rapid"
+      },
+      {
+        "id": "pf_coror_industry",
+        "type": "productFamily",
+        "name": "COROR Industry",
+        "slug": "coror-industry"
+      }
+    ],
+    "surfaces": [
+      {
+        "id": "surface_steel",
+        "name": "Acél",
+        "slug": "acel"
+      },
+      {
+        "id": "surface_galvanized_steel",
+        "name": "Horganyzott acél",
+        "slug": "horganyzott-acel"
+      },
+      {
+        "id": "surface_aluminium",
+        "name": "Alumínium",
+        "slug": "aluminium"
+      },
+      {
+        "id": "surface_copper",
+        "name": "Réz",
+        "slug": "rez"
+      },
+      {
+        "id": "surface_wood",
+        "name": "Fa",
+        "slug": "fa"
+      },
+      {
+        "id": "surface_concrete",
+        "name": "Beton",
+        "slug": "beton"
+      },
+      {
+        "id": "surface_plaster",
+        "name": "Vakolat",
+        "slug": "vakolat"
+      },
+      {
+        "id": "surface_drywall",
+        "name": "Gipszkarton",
+        "slug": "gipszkarton"
+      },
+      {
+        "id": "surface_osb",
+        "name": "OSB",
+        "slug": "osb"
+      },
+      {
+        "id": "surface_plastic",
+        "name": "Műanyag",
+        "slug": "muanyag"
+      },
+      {
+        "id": "surface_ceramic",
+        "name": "Kerámia / csempe",
+        "slug": "keramia-csempe"
+      },
+      {
+        "id": "surface_mdf",
+        "name": "MDF",
+        "slug": "mdf"
+      }
+    ],
+    "technologies": [
+      {
+        "id": "tech_brush",
+        "name": "Ecsetes felhordás",
+        "slug": "ecsetes-felhordas"
+      },
+      {
+        "id": "tech_roller",
+        "name": "Hengeres felhordás",
+        "slug": "hengeres-felhordas"
+      },
+      {
+        "id": "tech_spray",
+        "name": "Szórás",
+        "slug": "szoras"
+      },
+      {
+        "id": "tech_airless",
+        "name": "Airless festékszórás",
+        "slug": "airless-festekszoras"
+      },
+      {
+        "id": "tech_airmix",
+        "name": "Air-mix festékszórás",
+        "slug": "air-mix-festekszoras"
+      },
+      {
+        "id": "tech_trowel",
+        "name": "Glettvasas felhordás",
+        "slug": "glettvasas-felhordas"
+      }
+    ],
+    "products": [
+      {
+        "id": "prod_valmor_air_flow_interior",
+        "name": "VALMOR AIR FLOW Lélegző Beltéri Falfesték",
+        "slug": "valmor-air-flow-lelegzo-belteri-falfestek",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_air_flow_primer",
+        "name": "VALMOR AIR FLOW Lélegző Mélyalapozó 1:1",
+        "slug": "valmor-air-flow-lelegzo-melyalapozo-1-1",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_air_flow_facade",
+        "name": "VALMOR AIR FLOW Homlokzat és Lábazatfesték",
+        "slug": "valmor-air-flow-homlokzat-es-labazatfestek",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_air_flow_salt_putty",
+        "name": "VALMOR AIR FLOW Sóglett",
+        "slug": "valmor-air-flow-soglett",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_air_flow_heat_mirror",
+        "name": "VALMOR AIR FLOW Kenhető Hőtükör",
+        "slug": "valmor-air-flow-kenheto-hotukor",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_air_flow_heat_paint",
+        "name": "VALMOR AIR FLOW Beltéri Hőtükör-Festék",
+        "slug": "valmor-air-flow-belteri-hotukor-festek",
+        "brandId": "brand_valmor",
+        "familyId": "pf_valmor_air_flow"
+      },
+      {
+        "id": "prod_valmor_xclusive",
+        "name": "VALMOR Xclusive Latex Matt",
+        "slug": "valmor-xclusive-latex-matt",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_deep_primer",
+        "name": "VALMOR Univerzális Mélyalapozó",
+        "slug": "valmor-univerzalis-melyalapozo",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_plinth",
+        "name": "VALMOR Lábazatfesték",
+        "slug": "valmor-labazatfestek",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_textured_plinth",
+        "name": "VALMOR Szemcsés Lábazat- és Betonfesték",
+        "slug": "valmor-szemcses-labazat-es-betonfestek",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_garage",
+        "name": "VALMOR Garázsfesték",
+        "slug": "valmor-garazsfestek",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_flexible_floor",
+        "name": "VALMOR Flexibilis Padlóbevonat",
+        "slug": "valmor-flexibilis-padlobevonat",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_valmor_weatherproof",
+        "name": "VALMOR Időjárásálló és Szigetelőfesték",
+        "slug": "valmor-idojarasallo-es-szigetelofestek",
+        "brandId": "brand_valmor"
+      },
+      {
+        "id": "prod_factor_thick_stain",
+        "name": "FACTOR Vastaglazúr",
+        "slug": "factor-vastaglazur",
+        "brandId": "brand_factor"
+      },
+      {
+        "id": "prod_factor_aqua_parquet",
+        "name": "FACTOR Aqua Parkettalakk",
+        "slug": "factor-aqua-parkettalakk",
+        "brandId": "brand_factor",
+        "familyId": "pf_factor_aqua"
+      },
+      {
+        "id": "prod_factor_parquet",
+        "name": "FACTOR Parkettalakk",
+        "slug": "factor-parkettalakk",
+        "brandId": "brand_factor"
+      },
+      {
+        "id": "prod_coror_rapid_primer",
+        "name": "COROR Rapid Korróziógátló Alapozó",
+        "slug": "coror-rapid-korroziogatlo-alapozo",
+        "brandId": "brand_coror",
+        "familyId": "pf_coror_rapid"
+      },
+      {
+        "id": "prod_coror_rapid_enamel",
+        "name": "COROR Rapid Zománcfesték",
+        "slug": "coror-rapid-zomancfestek",
+        "brandId": "brand_coror",
+        "familyId": "pf_coror_rapid"
+      },
+      {
+        "id": "prod_coror_rapid_stripper",
+        "name": "COROR Rapid Festéklemaró",
+        "slug": "coror-rapid-festeklemaro",
+        "brandId": "brand_coror",
+        "familyId": "pf_coror_rapid"
+      },
+      {
+        "id": "prod_coror_industry_primer",
+        "name": "COROR Industry Korróziógátló Alapozó",
+        "slug": "coror-industry-korroziogatlo-alapozo",
+        "brandId": "brand_coror",
+        "familyId": "pf_coror_industry"
+      },
+      {
+        "id": "prod_7016_wall",
+        "name": "7016 Antracit Egyrétegű Beltéri Falfesték",
+        "slug": "7016-antracit-egyretegu-belteri-falfestek",
+        "brandId": "brand_7016"
+      },
+      {
+        "id": "prod_7016_acrylic_enamel",
+        "name": "7016 Antracit Akril Zománc",
+        "slug": "7016-antracit-akril-zomanc",
+        "brandId": "brand_7016"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "from": "org_festek_bazis_zrt",
+      "type": "owns",
+      "to": "brand_valmor",
+      "confidence": "verified"
+    },
+    {
+      "from": "org_festek_bazis_zrt",
+      "type": "owns",
+      "to": "brand_factor",
+      "confidence": "verified"
+    },
+    {
+      "from": "org_festek_bazis_zrt",
+      "type": "owns",
+      "to": "brand_coror",
+      "confidence": "verified"
+    },
+    {
+      "from": "brand_valmor",
+      "type": "hasProductFamily",
+      "to": "pf_valmor_air_flow",
+      "confidence": "verified"
+    },
+    {
+      "from": "brand_factor",
+      "type": "hasProductFamily",
+      "to": "pf_factor_aqua",
+      "confidence": "verified"
+    },
+    {
+      "from": "brand_coror",
+      "type": "hasProductFamily",
+      "to": "pf_coror_rapid",
+      "confidence": "verified"
+    },
+    {
+      "from": "brand_coror",
+      "type": "hasProductFamily",
+      "to": "pf_coror_industry",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_enamel",
+      "type": "applicableToSurface",
+      "to": "surface_steel",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_enamel",
+      "type": "applicableToSurface",
+      "to": "surface_aluminium",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_enamel",
+      "type": "applicableToSurface",
+      "to": "surface_galvanized_steel",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_enamel",
+      "type": "applicableToSurface",
+      "to": "surface_wood",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_enamel",
+      "type": "applicableToSurface",
+      "to": "surface_concrete",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_industry_primer",
+      "type": "applicableToSurface",
+      "to": "surface_steel",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_factor_thick_stain",
+      "type": "applicableToSurface",
+      "to": "surface_wood",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_valmor_deep_primer",
+      "type": "applicableToSurface",
+      "to": "surface_concrete",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_valmor_deep_primer",
+      "type": "applicableToSurface",
+      "to": "surface_plaster",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_valmor_deep_primer",
+      "type": "applicableToSurface",
+      "to": "surface_drywall",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_factor_parquet",
+      "type": "usesTechnology",
+      "to": "tech_brush",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_factor_parquet",
+      "type": "usesTechnology",
+      "to": "tech_roller",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_factor_parquet",
+      "type": "usesTechnology",
+      "to": "tech_spray",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_valmor_air_flow_salt_putty",
+      "type": "usesTechnology",
+      "to": "tech_trowel",
+      "confidence": "verified"
+    },
+    {
+      "from": "prod_coror_rapid_primer",
+      "type": "partOfSystemWith",
+      "to": "prod_coror_rapid_enamel",
+      "confidence": "verified"
+    }
+  ],
+  "editorialTaxonomy": {
+    "categories": [
+      "Dekor- és falfesték",
+      "Homlokzat és hőszigetelés",
+      "Faipari bevonatok",
+      "Ipari bevonat és korrózióvédelem",
+      "Padlóbevonatok",
+      "Felület-előkészítés",
+      "Speciális bevonatok"
+    ]
+  },
+  "notes": [
+    "7016 has its own named products on the official manufacturer site; formal Brand status should still be explicitly verified.",
+    "Do not infer product suitability solely from marketing navigation labels such as 'A fára' or 'A fémre'.",
+    "Claims about standards, durability, resistance or health effects must remain source-bound and must not be generalized."
+  ]
+}

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { AnyEntity, RelatedEntity, Source } from "@/lib/data/types";
 import {
+  aggregateRelatedByTarget,
   getEntityHref,
-  getRelationTypeLabel,
   KIND_LABEL,
 } from "@/lib/data/repository";
 
@@ -32,61 +32,105 @@ export function Breadcrumbs({
   );
 }
 
+/** One chip per related entity; multiple relation roles merged into note. */
 export function RelationPills({ related }: { related: RelatedEntity[] }) {
-  if (!related.length) {
+  const aggregated = aggregateRelatedByTarget(related);
+  if (!aggregated.length) {
     return <p className="empty">Még nincsenek rögzített kapcsolatok.</p>;
   }
 
-  const grouped = new Map<string, RelatedEntity[]>();
-  for (const item of related) {
-    const key = getRelationTypeLabel(item.relation.relationType);
-    const list = grouped.get(key) ?? [];
+  const byKind = new Map<string, typeof aggregated>();
+  for (const item of aggregated) {
+    const list = byKind.get(item.kindLabel) ?? [];
     list.push(item);
-    grouped.set(key, list);
+    byKind.set(item.kindLabel, list);
   }
 
   return (
     <>
-      {[...grouped.entries()].map(([label, items]) => (
-        <div className="section" key={label}>
-          <h4>{label}</h4>
-          {items.map(({ entity, relation }) => (
-            <Link
-              key={`${relation.id}-${entity.id}`}
-              href={getEntityHref(entity)}
-              className="pill pill-link"
-              title={relation.description}
-            >
-              {entity.name}
-            </Link>
-          ))}
+      {[...byKind.entries()].map(([kind, items]) => (
+        <div className="section" key={kind}>
+          <h4>{kind}</h4>
+          <div className="agg-links">
+            {items.map((agg) => (
+              <div key={agg.entity.id} className="agg-link">
+                <Link
+                  href={agg.href}
+                  className="pill pill-link"
+                  title={agg.rolesSummary}
+                >
+                  {agg.entity.name}
+                </Link>
+                {agg.roles.length > 0 ? (
+                  <span className="agg-roles">{agg.rolesSummary}</span>
+                ) : null}
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </>
   );
 }
 
-export function SourcesBlock({ sources }: { sources: Source[] }) {
-  if (!sources.length) return null;
+export function SourcesBlock({
+  sources,
+  lastVerifiedAt,
+}: {
+  sources: Source[];
+  lastVerifiedAt?: string;
+}) {
+  if (!sources.length && !lastVerifiedAt) return null;
+
+  const verifiedLabel = lastVerifiedAt
+    ? formatVerifiedDate(lastVerifiedAt)
+    : null;
+
   return (
-    <div className="section">
-      <h4>Források</h4>
-      <div className="sources-list">
-        {sources.map((s) => (
-          <div key={s.id}>
-            {s.url ? (
-              <a href={s.url} target="_blank" rel="noopener noreferrer">
-                {s.title}
-              </a>
-            ) : (
-              s.title
-            )}
-            {s.accessedAt ? ` · ellenőrizve: ${s.accessedAt}` : null}
-          </div>
-        ))}
-      </div>
-    </div>
+    <section className="seo-section sources-footer" id="forrasok">
+      <h2 className="seo-heading sources-heading">Források és adatellenőrzés</h2>
+      {verifiedLabel ? (
+        <p className="sources-meta">Utolsó szakmai ellenőrzés: {verifiedLabel}</p>
+      ) : null}
+      {sources.length > 0 ? (
+        <div className="sources-list">
+          {sources.map((s) => (
+            <div key={s.id}>
+              {s.url ? (
+                <a href={s.url} target="_blank" rel="noopener noreferrer">
+                  {s.title}
+                </a>
+              ) : (
+                s.title
+              )}
+              {s.accessedAt ? ` · ${s.accessedAt}` : null}
+            </div>
+          ))}
+        </div>
+      ) : null}
+    </section>
   );
+}
+
+function formatVerifiedDate(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return iso;
+  const months = [
+    "január",
+    "február",
+    "március",
+    "április",
+    "május",
+    "június",
+    "július",
+    "augusztus",
+    "szeptember",
+    "október",
+    "november",
+    "december",
+  ];
+  const month = months[Number(m[2]) - 1] ?? m[2];
+  return `${m[1]}. ${month}`;
 }
 
 export function EntityHeader({ entity }: { entity: AnyEntity }) {

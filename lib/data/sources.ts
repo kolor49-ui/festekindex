@@ -64,4 +64,13 @@ export const sources: Source[] = [
     notes: "Gyártói alkalmazástechnikai dokumentációk összevetése",
     accessedAt: "2026-10-01",
   },
+  {
+    id: "src_festek_bazis_official",
+    type: "manufacturer",
+    title: "Festék Bázis Zrt. — gyártói termékanyagok (v0.1 curated seed)",
+    publisher: "FESTÉK BÁZIS Zrt.",
+    notes:
+      "Curated FESTÉKINDEX import pack v0.1. Manufacturer facts vs editorial taxonomy kept distinguishable. Not a full catalog export.",
+    accessedAt: "2026-10-05",
+  },
 ];

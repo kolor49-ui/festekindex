@@ -1,0 +1,2387 @@
+{
+  "meta": {
+    "dataset": "FESTÉKINDEX — FESTÉK BÁZIS v0.2 curated master",
+    "version": "0.2",
+    "generatedAt": "2026-10-05",
+    "status": "production-candidate",
+    "completeness": "official-source curated; catalog reconciliation still required before claiming exhaustive SKU/product coverage",
+    "rules": [
+      "One fact = one canonical stored relation.",
+      "No stored Product.brandId or Product.familyId.",
+      "Manufacturer claims remain source-bound.",
+      "FESTÉKINDEX categories are editorial taxonomy, not manufacturer marketing navigation.",
+      "7016™ is modeled as ProductFamily, not Brand, based on official manufacturer wording."
+    ]
+  },
+  "organizations": [
+    {
+      "id": "org_festek_bazis_zrt",
+      "type": "organization",
+      "name": "FESTÉK BÁZIS Zrt.",
+      "slug": "festek-bazis-zrt",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "Magyar festék- és bevonóanyag-gyártó.",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05",
+      "legalName": "FESTÉK BÁZIS Gyártó és Kereskedelmi Zártkörűen Működő Részvénytársaság",
+      "roles": [
+        "manufacturer"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "id": "brand_valmor",
+      "type": "brand",
+      "name": "VALMOR",
+      "slug": "valmor",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "brand_factor",
+      "type": "brand",
+      "name": "FACTOR",
+      "slug": "factor",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "brand_coror",
+      "type": "brand",
+      "name": "COROR",
+      "slug": "coror",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "productFamilies": [
+    {
+      "id": "pf_valmor_air_flow",
+      "type": "productFamily",
+      "name": "VALMOR AIR FLOW",
+      "slug": "valmor-air-flow",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "pf_factor_aqua",
+      "type": "productFamily",
+      "name": "FACTOR Aqua",
+      "slug": "factor-aqua",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "pf_coror_rapid",
+      "type": "productFamily",
+      "name": "COROR Rapid",
+      "slug": "coror-rapid",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "pf_coror_industry",
+      "type": "productFamily",
+      "name": "COROR Industry",
+      "slug": "coror-industry",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "pf_7016",
+      "type": "productFamily",
+      "name": "7016™",
+      "slug": "7016",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "RAL 7016 antracit árnyalatra épülő többfelületes termékcsalád.",
+      "body": "",
+      "sourceIds": [
+        "src_fb_7016_family"
+      ],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_valmor_airflow_interior",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Lélegző Beltéri Falfesték",
+      "slug": "valmor-air-flow-lelegzo-belteri-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_interior"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_airflow_primer",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Lélegző Mélyalapozó 1:1",
+      "slug": "valmor-air-flow-lelegzo-melyalapozo-1-1",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_primer"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_airflow_facade",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Homlokzat és Lábazatfesték",
+      "slug": "valmor-air-flow-homlokzat-es-labazatfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_facade"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_airflow_salt",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Sóglett",
+      "slug": "valmor-air-flow-soglett",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_salt"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_xclusive",
+      "type": "product",
+      "name": "VALMOR Xclusive Latex Matt",
+      "slug": "valmor-xclusive-latex-matt",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_xclusive"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_kontrol",
+      "type": "product",
+      "name": "VALMOR Kontrol Falfesték",
+      "slug": "valmor-kontrol-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_kontrol"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_deep_primer",
+      "type": "product",
+      "name": "VALMOR Univerzális Mélyalapozó",
+      "slug": "valmor-univerzalis-melyalapozo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_facade",
+      "type": "product",
+      "name": "VALMOR Homlokzatfesték",
+      "slug": "valmor-homlokzatfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_facade"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_plinth",
+      "type": "product",
+      "name": "VALMOR Lábazatfesték",
+      "slug": "valmor-labazatfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_plinth"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_textured",
+      "type": "product",
+      "name": "VALMOR Szemcsés Lábazat- és Betonfesték",
+      "slug": "valmor-szemcses-labazat-es-betonfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_textured"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_garage",
+      "type": "product",
+      "name": "VALMOR Garázsfesték",
+      "slug": "valmor-garazsfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_garage"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_floor",
+      "type": "product",
+      "name": "VALMOR Flexibilis Padlóbevonat",
+      "slug": "valmor-flexibilis-padlobevonat",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_floor"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_weather",
+      "type": "product",
+      "name": "VALMOR Időjárásálló és Szigetelőfesték",
+      "slug": "valmor-idojarasallo-es-szigetelofestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_weather"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_valmor_plaster",
+      "type": "product",
+      "name": "VALMOR Vakolat",
+      "slug": "valmor-vakolat",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_plaster"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_pergola",
+      "type": "product",
+      "name": "FACTOR Pergola Kültéri Fafesték",
+      "slug": "factor-pergola-kulteri-fafestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_pergola"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_aqua_primer",
+      "type": "product",
+      "name": "FACTOR Aqua Impregnáló Alapozó",
+      "slug": "factor-aqua-impregnalo-alapozo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_aqua_parquet",
+      "type": "product",
+      "name": "FACTOR Aqua Parkettalakk",
+      "slug": "factor-aqua-parkettalakk",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_aqua_parquet"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_parquet",
+      "type": "product",
+      "name": "FACTOR Parkettalakk",
+      "slug": "factor-parkettalakk",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_parquet"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_boat",
+      "type": "product",
+      "name": "FACTOR Csónaklakk",
+      "slug": "factor-csonaklakk",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_boat"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_rapid_primer",
+      "type": "product",
+      "name": "COROR Rapid Korróziógátló Alapozó",
+      "slug": "coror-rapid-korroziogatlo-alapozo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_rapid_enamel",
+      "type": "product",
+      "name": "COROR Rapid Zománcfesték",
+      "slug": "coror-rapid-zomancfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_rapid_stripper",
+      "type": "product",
+      "name": "COROR Rapid Festéklemaró",
+      "slug": "coror-rapid-festeklemaro",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_stripper"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_ind_primer",
+      "type": "product",
+      "name": "COROR Industry Korróziógátló Alapozó",
+      "slug": "coror-industry-korroziogatlo-alapozo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_ind_primer"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_ind_enamel",
+      "type": "product",
+      "name": "COROR Industry Ipari Zománc",
+      "slug": "coror-industry-ipari-zomanc",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_aromatic",
+      "type": "product",
+      "name": "COROR Aromás Hígító",
+      "slug": "coror-aromas-higito",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_aromatic"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_coror_synthetic",
+      "type": "product",
+      "name": "COROR Szintetikus Hígító",
+      "slug": "coror-szintetikus-higito",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_synthetic"
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_7016_wall",
+      "type": "product",
+      "name": "7016™ Antracit Egyrétegű Beltéri Falfesték",
+      "slug": "7016-antracit-egyretegu-belteri-falfestek",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_7016_wall"
+      ],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "surface_fa",
+      "type": "surface",
+      "name": "Fa",
+      "slug": "fa",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_acel",
+      "type": "surface",
+      "name": "Acél",
+      "slug": "acel",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_horganyzott_acel",
+      "type": "surface",
+      "name": "Horganyzott acél",
+      "slug": "horganyzott-acel",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_aluminium",
+      "type": "surface",
+      "name": "Alumínium",
+      "slug": "aluminium",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_rez",
+      "type": "surface",
+      "name": "Réz",
+      "slug": "rez",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_beton",
+      "type": "surface",
+      "name": "Beton",
+      "slug": "beton",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_vakolat",
+      "type": "surface",
+      "name": "Vakolat",
+      "slug": "vakolat",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_gipszkarton",
+      "type": "surface",
+      "name": "Gipszkarton",
+      "slug": "gipszkarton",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_osb",
+      "type": "surface",
+      "name": "OSB",
+      "slug": "osb",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_mdf",
+      "type": "surface",
+      "name": "MDF",
+      "slug": "mdf",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_keramia_csempe",
+      "type": "surface",
+      "name": "Kerámia / csempe",
+      "slug": "keramia-csempe",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_muanyag",
+      "type": "surface",
+      "name": "Műanyag",
+      "slug": "muanyag",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_tegla",
+      "type": "surface",
+      "name": "Tégla",
+      "slug": "tegla",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_ko",
+      "type": "surface",
+      "name": "Természetes kő / műkő",
+      "slug": "ko",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "surface_eps_xps",
+      "type": "surface",
+      "name": "EPS / XPS rendszerfelület",
+      "slug": "eps-xps",
+      "aliases": [],
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "tech_ecset",
+      "type": "technology",
+      "name": "Ecsetes felhordás",
+      "slug": "ecsetes-felhordas",
+      "aliases": [],
+      "kind": "application_method",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_henger",
+      "type": "technology",
+      "name": "Hengeres felhordás",
+      "slug": "hengeres-felhordas",
+      "aliases": [],
+      "kind": "application_method",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_szoras",
+      "type": "technology",
+      "name": "Szórás",
+      "slug": "szoras",
+      "aliases": [],
+      "kind": "spray_process",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_airless",
+      "type": "technology",
+      "name": "Airless festékszórás",
+      "slug": "airless-festekszoras",
+      "aliases": [],
+      "kind": "spray_process",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_air_mix",
+      "type": "technology",
+      "name": "Air-mix festékszórás",
+      "slug": "air-mix-festekszoras",
+      "aliases": [],
+      "kind": "spray_process",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_martas",
+      "type": "technology",
+      "name": "Mártás",
+      "slug": "martas",
+      "aliases": [],
+      "kind": "application_method",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "tech_glettvas",
+      "type": "technology",
+      "name": "Glettvasas felhordás",
+      "slug": "glettvasas-felhordas",
+      "aliases": [],
+      "kind": "application_method",
+      "status": "published",
+      "indexable": false,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_dekor_falfestek",
+      "type": "category",
+      "name": "Dekor- és falfesték",
+      "slug": "dekor-es-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_homlokzat_hoszigeteles",
+      "type": "category",
+      "name": "Homlokzat és hőszigetelés",
+      "slug": "homlokzat-es-hoszigeteles",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_faipari_bevonatok",
+      "type": "category",
+      "name": "Faipari bevonatok",
+      "slug": "faipari-bevonatok",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_ipari_korroziovedelem",
+      "type": "category",
+      "name": "Ipari bevonat és korrózióvédelem",
+      "slug": "ipari-bevonat-es-korroziovedelem",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_padlo_mugyanta",
+      "type": "category",
+      "name": "Padló és műgyanta",
+      "slug": "padlo-es-mugyanta",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_felulet_elokeszites",
+      "type": "category",
+      "name": "Csiszolás és felület-előkészítés",
+      "slug": "csiszolas-es-felulet-elokeszites",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_specialis_bevonat",
+      "type": "category",
+      "name": "Tűzvédő és speciális bevonat",
+      "slug": "tuzvedo-es-specialis-bevonat",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "cat_higito_segedanyag",
+      "type": "category",
+      "name": "Hígító és segédanyag",
+      "slug": "higito-es-segedanyag",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [],
+      "updatedAt": "2026-10-05"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_org_festek_bazis_zrt_owns_brand_valmor",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "brand_valmor",
+      "relationType": "owns",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_owns_brand_factor",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "brand_factor",
+      "relationType": "owns",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_owns_brand_coror",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "brand_coror",
+      "relationType": "owns",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_brand_valmor_hasProductFamily_pf_valmor_air_flow",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "pf_valmor_air_flow",
+      "relationType": "hasProductFamily",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_manufactures_pf_valmor_air_flow",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "pf_valmor_air_flow",
+      "relationType": "manufactures",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_brand_factor_hasProductFamily_pf_factor_aqua",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "pf_factor_aqua",
+      "relationType": "hasProductFamily",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_manufactures_pf_factor_aqua",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "pf_factor_aqua",
+      "relationType": "manufactures",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_brand_coror_hasProductFamily_pf_coror_rapid",
+      "fromEntityId": "brand_coror",
+      "toEntityId": "pf_coror_rapid",
+      "relationType": "hasProductFamily",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_manufactures_pf_coror_rapid",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "pf_coror_rapid",
+      "relationType": "manufactures",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_brand_coror_hasProductFamily_pf_coror_industry",
+      "fromEntityId": "brand_coror",
+      "toEntityId": "pf_coror_industry",
+      "relationType": "hasProductFamily",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_manufactures_pf_coror_industry",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "pf_coror_industry",
+      "relationType": "manufactures",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_org_festek_bazis_zrt_manufactures_pf_7016",
+      "fromEntityId": "org_festek_bazis_zrt",
+      "toEntityId": "pf_7016",
+      "relationType": "manufactures",
+      "status": "active",
+      "sourceIds": [
+        "src_fb_7016_family"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_interior",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_interior",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_interior"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_primer",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_primer"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_facade",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_facade",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_facade"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_salt",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_salt",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_salt"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_xclusive",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_xclusive",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_xclusive"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_kontrol",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_kontrol",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_kontrol"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_deep_primer",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_deep_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_facade",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_facade",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_facade"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_plinth",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_plinth",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plinth"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_textured",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_textured",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_textured"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_garage",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_garage",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_garage"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_floor",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_floor",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_floor"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_weather",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_weather",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_weather"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_plaster",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_plaster",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plaster"
+      ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_pergola",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_pergola",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_pergola"
+      ]
+    },
+    {
+      "id": "rel_pf_factor_aqua_prod_factor_aqua_primer",
+      "fromEntityId": "pf_factor_aqua",
+      "toEntityId": "prod_factor_aqua_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ]
+    },
+    {
+      "id": "rel_pf_factor_aqua_prod_factor_aqua_parquet",
+      "fromEntityId": "pf_factor_aqua",
+      "toEntityId": "prod_factor_aqua_parquet",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_parquet"
+      ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_parquet",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_parquet",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_parquet"
+      ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_boat",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_boat",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_boat"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_rapid_prod_coror_rapid_primer",
+      "fromEntityId": "pf_coror_rapid",
+      "toEntityId": "prod_coror_rapid_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_rapid_prod_coror_rapid_enamel",
+      "fromEntityId": "pf_coror_rapid",
+      "toEntityId": "prod_coror_rapid_enamel",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_rapid_prod_coror_rapid_stripper",
+      "fromEntityId": "pf_coror_rapid",
+      "toEntityId": "prod_coror_rapid_stripper",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_stripper"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_industry_prod_coror_ind_primer",
+      "fromEntityId": "pf_coror_industry",
+      "toEntityId": "prod_coror_ind_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_primer"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_industry_prod_coror_ind_enamel",
+      "fromEntityId": "pf_coror_industry",
+      "toEntityId": "prod_coror_ind_enamel",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ]
+    },
+    {
+      "id": "rel_brand_coror_prod_coror_aromatic",
+      "fromEntityId": "brand_coror",
+      "toEntityId": "prod_coror_aromatic",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_aromatic"
+      ]
+    },
+    {
+      "id": "rel_brand_coror_prod_coror_synthetic",
+      "fromEntityId": "brand_coror",
+      "toEntityId": "prod_coror_synthetic",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_synthetic"
+      ]
+    },
+    {
+      "id": "rel_pf_7016_prod_7016_wall",
+      "fromEntityId": "pf_7016",
+      "toEntityId": "prod_7016_wall",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_wall"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_interior_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_interior",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_interior"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_interior_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_airflow_interior",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_interior"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_interior_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_airflow_interior",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_interior"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_primer_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_primer",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_primer_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_airflow_primer",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_facade_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_facade",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_facade_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_airflow_facade",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_salt_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_salt",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_salt"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_salt_usesTechnology_tech_glettvas",
+      "fromEntityId": "prod_valmor_airflow_salt",
+      "toEntityId": "tech_glettvas",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_salt"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_xclusive_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_xclusive",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_kontrol_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_kontrol",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_airflow_interior_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_airflow_interior",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_facade_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_facade",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_plinth_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_plinth",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_textured_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_textured",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_plaster_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_plaster",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_airflow_facade_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_airflow_facade",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_garage_belongsToCategory_cat_padlo_mugyanta",
+      "fromEntityId": "prod_valmor_garage",
+      "toEntityId": "cat_padlo_mugyanta",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_floor_belongsToCategory_cat_padlo_mugyanta",
+      "fromEntityId": "prod_valmor_floor",
+      "toEntityId": "cat_padlo_mugyanta",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_weather_belongsToCategory_cat_specialis_bevonat",
+      "fromEntityId": "prod_valmor_weather",
+      "toEntityId": "cat_specialis_bevonat",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_deep_primer_applicableToSurface_surface_tegla",
+      "fromEntityId": "prod_valmor_deep_primer",
+      "toEntityId": "surface_tegla",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_deep_primer_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_deep_primer",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_deep_primer_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_deep_primer",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_deep_primer_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_deep_primer",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_deep_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_facade_applicableToSurface_surface_tegla",
+      "fromEntityId": "prod_valmor_facade",
+      "toEntityId": "surface_tegla",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_facade_applicableToSurface_surface_ko",
+      "fromEntityId": "prod_valmor_facade",
+      "toEntityId": "surface_ko",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_facade_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_facade",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_facade_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_facade",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_facade"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_plinth_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_plinth",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plinth"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_plinth_applicableToSurface_surface_tegla",
+      "fromEntityId": "prod_valmor_plinth",
+      "toEntityId": "surface_tegla",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plinth"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_plinth_applicableToSurface_surface_eps_xps",
+      "fromEntityId": "prod_valmor_plinth",
+      "toEntityId": "surface_eps_xps",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plinth"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_textured_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_textured",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_textured"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_textured_applicableToSurface_surface_ko",
+      "fromEntityId": "prod_valmor_textured",
+      "toEntityId": "surface_ko",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_textured"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_textured_applicableToSurface_surface_eps_xps",
+      "fromEntityId": "prod_valmor_textured",
+      "toEntityId": "surface_eps_xps",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_textured"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_plaster_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_plaster",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plaster"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_plaster_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_plaster",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_plaster"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_pergola_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_pergola",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_pergola_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_pergola",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_pergola"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_primer_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_aqua_primer",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_aqua_primer_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_aqua_primer",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_parquet_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_aqua_parquet",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_aqua_parquet_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_aqua_parquet",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_parquet"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_parquet_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_parquet",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_parquet_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_parquet",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_parquet"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_boat_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_boat",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_boat_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_boat",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_boat"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_primer_usesTechnology_tech_ecset",
+      "fromEntityId": "prod_factor_aqua_primer",
+      "toEntityId": "tech_ecset",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_primer_usesTechnology_tech_henger",
+      "fromEntityId": "prod_factor_aqua_primer",
+      "toEntityId": "tech_henger",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_primer_usesTechnology_tech_martas",
+      "fromEntityId": "prod_factor_aqua_primer",
+      "toEntityId": "tech_martas",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_pergola_usesTechnology_tech_ecset",
+      "fromEntityId": "prod_factor_pergola",
+      "toEntityId": "tech_ecset",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_pergola"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_pergola_usesTechnology_tech_henger",
+      "fromEntityId": "prod_factor_pergola",
+      "toEntityId": "tech_henger",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_pergola"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_parquet_usesTechnology_tech_ecset",
+      "fromEntityId": "prod_factor_parquet",
+      "toEntityId": "tech_ecset",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_parquet"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_boat_usesTechnology_tech_ecset",
+      "fromEntityId": "prod_factor_boat",
+      "toEntityId": "tech_ecset",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_boat"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_parquet_usesTechnology_tech_henger",
+      "fromEntityId": "prod_factor_parquet",
+      "toEntityId": "tech_henger",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_parquet"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_boat_usesTechnology_tech_henger",
+      "fromEntityId": "prod_factor_boat",
+      "toEntityId": "tech_henger",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_boat"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_parquet_usesTechnology_tech_szoras",
+      "fromEntityId": "prod_factor_parquet",
+      "toEntityId": "tech_szoras",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_parquet"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_boat_usesTechnology_tech_szoras",
+      "fromEntityId": "prod_factor_boat",
+      "toEntityId": "tech_szoras",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_boat"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_ind_primer_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_ind_primer",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_rapid_stripper_belongsToCategory_cat_felulet_elokeszites",
+      "fromEntityId": "prod_coror_rapid_stripper",
+      "toEntityId": "cat_felulet_elokeszites",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_aromatic_belongsToCategory_cat_higito_segedanyag",
+      "fromEntityId": "prod_coror_aromatic",
+      "toEntityId": "cat_higito_segedanyag",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_synthetic_belongsToCategory_cat_higito_segedanyag",
+      "fromEntityId": "prod_coror_synthetic",
+      "toEntityId": "cat_higito_segedanyag",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_applicableToSurface_surface_aluminium",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "surface_aluminium",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_applicableToSurface_surface_horganyzott_acel",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "surface_horganyzott_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_applicableToSurface_surface_rez",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "surface_rez",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_aluminium",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_aluminium",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_horganyzott_acel",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_horganyzott_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_rez",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_rez",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_muanyag",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_muanyag",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_osb",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_osb",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_enamel_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_coror_rapid_enamel",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_stripper_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_rapid_stripper",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_stripper"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_stripper_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_coror_rapid_stripper",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_stripper"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_stripper_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_coror_rapid_stripper",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_stripper"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_primer_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_ind_primer",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_primer_usesTechnology_tech_szoras",
+      "fromEntityId": "prod_coror_ind_primer",
+      "toEntityId": "tech_szoras",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_usesTechnology_tech_szoras",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "tech_szoras",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_usesTechnology_tech_airless",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "tech_airless",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_usesTechnology_tech_air_mix",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "tech_air_mix",
+      "relationType": "usesTechnology",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_primer_partOfSystem_prod_coror_rapid_enamel",
+      "fromEntityId": "prod_coror_rapid_primer",
+      "toEntityId": "prod_coror_rapid_enamel",
+      "relationType": "partOfSystem",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_primer"
+      ],
+      "metadata": {
+        "sequence": 1,
+        "role": "primer"
+      }
+    },
+    {
+      "id": "rel_prod_coror_ind_enamel_partOfSystem_prod_coror_ind_primer",
+      "fromEntityId": "prod_coror_ind_enamel",
+      "toEntityId": "prod_coror_ind_primer",
+      "relationType": "partOfSystem",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_enamel"
+      ],
+      "metadata": {
+        "sequence": 2,
+        "role": "topcoat"
+      }
+    },
+    {
+      "id": "rel_prod_coror_aromatic_compatibleWith_prod_coror_rapid_primer",
+      "fromEntityId": "prod_coror_aromatic",
+      "toEntityId": "prod_coror_rapid_primer",
+      "relationType": "compatibleWith",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_aromatic"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_wall_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_7016_wall",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_wall"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_wall_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_7016_wall",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_wall"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_fb_7016_family",
+      "title": "7016™ termékcsalád",
+      "url": "https://www.festekbazis.hu/hu/e-book-blog/blog/minimalista-stilus-egy-festekcsaladdal-5-feluletre-igen-7016",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_fb_shop",
+      "title": "Festék Bázis webáruház / szűrők",
+      "url": "https://www.festekbazis.hu/hu/webaruhaz/",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_airflow_interior",
+      "title": "VALMOR AIR FLOW Lélegző Beltéri Falfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-lelegzo-belteri-falfestek-p-319",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_airflow_primer",
+      "title": "VALMOR AIR FLOW Lélegző Mélyalapozó 1:1",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-lelegzo-melyalapozo-1-1-p-322",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_airflow_facade",
+      "title": "VALMOR AIR FLOW Homlokzat és Lábazatfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-homlokzat-es-labazatfestek-p-437",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_airflow_salt",
+      "title": "VALMOR AIR FLOW Sóglett",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-soglett-p-354",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_xclusive",
+      "title": "VALMOR Xclusive Latex Matt",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-xclusive-belteri-falfestek-p-467",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_kontrol",
+      "title": "VALMOR Kontrol Falfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-kontrol-falfestek-p-315",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_deep_primer",
+      "title": "VALMOR Univerzális Mélyalapozó",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-univerzalis-melyalapozo-p-313",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_facade",
+      "title": "VALMOR Homlokzatfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-homlokzatfestek-p-317",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_plinth",
+      "title": "VALMOR Lábazatfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-labazatfestek-p-303",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_textured",
+      "title": "VALMOR Szemcsés Lábazat- és Betonfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-szemcses-labazat-es-betonfestek-p-304",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_garage",
+      "title": "VALMOR Garázsfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-garazsfestek-p-305",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_floor",
+      "title": "VALMOR Flexibilis Padlóbevonat",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-flexibilis-padlobevonat-p-302",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_weather",
+      "title": "VALMOR Időjárásálló és Szigetelőfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-idojarasallo-es-szigetelofestek-p-311",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_valmor_plaster",
+      "title": "VALMOR Vakolat",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-vakolat-p-318",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_pergola",
+      "title": "FACTOR Pergola Kültéri Fafesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-pergola-kulteri-fafestek-p-323",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_aqua_primer",
+      "title": "FACTOR Aqua Impregnáló Alapozó",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-aqua-impregnalo-alapozo-p-324",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_aqua_parquet",
+      "title": "FACTOR Aqua Parkettalakk",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-aqua-parkettalakk-p-328",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_parquet",
+      "title": "FACTOR Parkettalakk",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-parkettalakk-p-329",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_boat",
+      "title": "FACTOR Csónaklakk",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-csonaklakk-p-343",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_rapid_primer",
+      "title": "COROR Rapid Korróziógátló Alapozó",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-rapid-korroziogatlo-alapozo-p-331",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_rapid_enamel",
+      "title": "COROR Rapid Zománcfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-rapid-zomancfestek-p-332",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_stripper",
+      "title": "COROR Rapid Festéklemaró",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-rapid-festeklemaro-p-333",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_ind_primer",
+      "title": "COROR Industry Korróziógátló alapozó",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-industry-p-442",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_ind_enamel",
+      "title": "COROR Industry Ipari Zománc",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-indrusty-ipari-zomanc-p-444",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_aromatic",
+      "title": "COROR Aromás Hígító",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-aromas-higito-p-335",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_coror_synthetic",
+      "title": "COROR Szintetikus hígító",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-szintetikus-higito-p-461",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_7016_wall",
+      "title": "7016 Antracit Egyrétegű Beltéri Falfesték",
+      "url": "https://www.festekbazis.hu/hu/webaruhaz-7016-7016-antracit-egyretegu-belteri-falfestek-p-340",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-05"
+    }
+  ]
+}

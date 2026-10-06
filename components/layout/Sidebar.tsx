@@ -14,6 +14,7 @@ const DB_LINKS = [
   { href: "/cegek", label: "Cégek" },
   { href: "/markak", label: "Márkák" },
   { href: "/technologiak", label: "Technológiák" },
+  { href: "/feluletek", label: "Felületek" },
   { href: "/tudastar", label: "Tudástár" },
 ];
 
@@ -30,15 +31,17 @@ export function Sidebar({
 
   return (
     <aside className={`sidebar${open ? " open" : ""}`} id="side">
-      <Link href="/" className="brand" onClick={onNavigate}>
-        <div className="brandrow">
-          <div className="mark" aria-hidden />
-          <div className="name">
-            FESTÉK<span>INDEX</span>
+      <div className="brand">
+        <Link href="/" onClick={onNavigate}>
+          <div className="brandrow">
+            <div className="mark" aria-hidden />
+            <div className="name">
+              FESTÉK<span>INDEX</span>
+            </div>
           </div>
-        </div>
-        <div className="tagline">A festékipar szakmai indexe</div>
-      </Link>
+          <div className="tagline">A festékipar szakmai indexe</div>
+        </Link>
+      </div>
 
       <div className="sidebody">
         <div className="sidetitle">Szakterületek</div>

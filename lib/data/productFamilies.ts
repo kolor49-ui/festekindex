@@ -1,25 +1,24 @@
 import type { ProductFamily } from "./types";
 
 /**
- * Product families are modeled from day one (e.g. Graco Mark / Ultra / GX).
- * Sparse seed for now — relations wire them into the knowledge graph.
+ * Product families (series / platforms). Concrete SKUs = Product (empty for now).
+ * Brand / manufacturer links live in relations.
+ * Blurbs = shortDescription only when source-backed.
  */
 export const productFamilies: ProductFamily[] = [
   {
     id: "pf_graco_mark",
     type: "productFamily",
-    slug: "graco-mark",
-    name: "Graco Mark",
-    brandId: "brand_graco",
+    slug: "graco-mark-vii",
+    name: "Graco Mark VII",
     shortDescription:
-      "Graco Mark airless gépcsalád — professzionális festékszóró rendszerek.",
-    body: "A Graco Mark család professzionális airless festékszóró gépeket foglal magába. A FESTÉKINDEX-en a Graco márkához, az airless technológiához és az Euroll forgalmazói kapcsolathoz kötődik.",
+      "Nagyobb teljesítményű professzionális airless festékszóró gépcsalád.",
+    body: "A Graco Mark VII család professzionális airless festékszóró rendszereket foglal magába. A FESTÉKINDEX-en a Graco márkához, a Graco Inc. gyártói szervezethez és az airless technológiához kapcsolódik.",
     status: "published",
     indexable: true,
-    seoTitle: "Graco Mark gépcsalád | FESTÉKINDEX",
+    seoTitle: "Graco Mark VII gépcsalád | FESTÉKINDEX",
     seoDescription:
-      "Graco Mark airless gépcsalád: technológia, forgalmazás, kapcsolódó tudás.",
-    categoryIds: ["cat_szoras"],
+      "Graco Mark VII professzionális airless gépcsalád — gyártó, forgalmazás, technológia.",
     sourceIds: ["src_graco_official", "src_euroll_official"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-10-01",
@@ -29,31 +28,31 @@ export const productFamilies: ProductFamily[] = [
     type: "productFamily",
     slug: "graco-ultra",
     name: "Graco Ultra",
-    brandId: "brand_graco",
-    shortDescription: "Graco Ultra airless gépcsalád.",
-    body: "A Graco Ultra család airless szórástechnikai gépeket tartalmaz. Kapcsolódik a Graco márkához és az airless festékszórás technológiához.",
+    shortDescription:
+      "Kompaktabb professzionális airless festékszóró gépcsalád.",
+    body: "A Graco Ultra család kompaktabb airless szórástechnikai gépeket tartalmaz professzionális felhasználásra. Kapcsolódik a Graco márkához és az airless technológiához.",
     status: "published",
     indexable: true,
     seoTitle: "Graco Ultra gépcsalád | FESTÉKINDEX",
-    seoDescription: "Graco Ultra airless gépcsalád a FESTÉKINDEX szakmai hálójában.",
-    categoryIds: ["cat_szoras"],
+    seoDescription: "Graco Ultra kompakt airless festékszóró gépcsalád.",
     sourceIds: ["src_graco_official"],
     updatedAt: "2026-10-05",
+    verifiedAt: "2026-10-01",
   },
   {
     id: "pf_graco_gx",
     type: "productFamily",
     slug: "graco-gx",
     name: "Graco GX",
-    brandId: "brand_graco",
-    shortDescription: "Graco GX airless gépcsalád — belépő és középkategória.",
-    body: "A Graco GX család belépő és középkategóriás airless gépeket kínál. A FESTÉKINDEX adatmodelljében a Graco márka és az airless technológia alá kapcsolódik.",
+    shortDescription:
+      "Belépő- és középkategóriás professzionális airless festékszóró rendszer.",
+    body: "A Graco GX család belépő- és középkategóriás professzionális airless gépeket kínál. A FESTÉKINDEX-en a Graco márkához és az airless technológiához kapcsolódik.",
     status: "published",
     indexable: true,
     seoTitle: "Graco GX gépcsalád | FESTÉKINDEX",
-    seoDescription: "Graco GX airless gépcsalád — szakmai adatlap és kapcsolatok.",
-    categoryIds: ["cat_szoras"],
+    seoDescription: "Graco GX belépő- és középkategóriás airless gépcsalád.",
     sourceIds: ["src_graco_official"],
     updatedAt: "2026-10-05",
+    verifiedAt: "2026-10-01",
   },
 ];

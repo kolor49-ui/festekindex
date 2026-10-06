@@ -5,6 +5,7 @@ import type {
   EntityType,
   KnowledgeArticle,
   Organization,
+  Product,
   ProductFamily,
   RelatedEntity,
   Relation,
@@ -12,18 +13,56 @@ import type {
   SearchHit,
   SitemapEntry,
   Source,
+  Surface,
   Technology,
 } from "./types";
-import { brands } from "./brands";
-import { categories } from "./categories";
+import { getRelationLabel } from "./relationTypes";
+import { isSeoIndexable } from "@/lib/seo/indexability";
+import { brands as brandsBase } from "./brands";
+import { categories as categoriesBase } from "./categories";
 import { knowledge } from "./knowledge";
-import { organizations } from "./organizations";
-import { productFamilies } from "./productFamilies";
-import { relations } from "./relations";
-import { sources } from "./sources";
-import { technologies } from "./technologies";
+import { organizations as organizationsBase } from "./organizations";
+import { productFamilies as productFamiliesBase } from "./productFamilies";
+import { products as productsBase } from "./products";
+import { relations as relationsBase } from "./relations";
+import { sources as sourcesBase } from "./sources";
+import { comparisons } from "./comparisons";
+import { surfaces as surfacesBase } from "./surfaces";
+import { technologies as technologiesBase } from "./technologies";
+import { festekBazisV02Seed } from "./imports/festekBazisV02Map";
+import {
+  mergeById,
+  mergeRelationsByCanonicalKey,
+  mergeSurfaces,
+  mergeTechnologies,
+} from "./imports/merge";
 
 const SITE_ORIGIN = "https://festekindex.hu";
+
+const organizations = mergeById(
+  organizationsBase,
+  festekBazisV02Seed.organizations,
+);
+const brands = mergeById(
+  [...brandsBase, festekBazisV02Seed.archivedBrand7016],
+  festekBazisV02Seed.brands,
+);
+const productFamilies = mergeById(
+  productFamiliesBase,
+  festekBazisV02Seed.productFamilies,
+);
+const products = mergeById(productsBase, festekBazisV02Seed.products);
+const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
+const technologies = mergeTechnologies(
+  technologiesBase,
+  festekBazisV02Seed.technologies,
+);
+const categories = mergeById(categoriesBase, festekBazisV02Seed.categories);
+const relations = mergeRelationsByCanonicalKey(
+  relationsBase,
+  festekBazisV02Seed.relations,
+);
+const sources = mergeById(sourcesBase, festekBazisV02Seed.sources);
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",
@@ -31,7 +70,10 @@ const TYPE_PATH: Record<EntityType, string> = {
   technology: "technologiak",
   category: "kategoriak",
   productFamily: "termekcsaladok",
+  product: "termekek",
   knowledge: "tudastar",
+  comparison: "osszehasonlitas",
+  surface: "feluletek",
 };
 
 const KIND_LABEL: Record<EntityType, string> = {
@@ -40,7 +82,10 @@ const KIND_LABEL: Record<EntityType, string> = {
   technology: "Technológia",
   category: "Kategória",
   productFamily: "Termékcsalád",
+  product: "Termék",
   knowledge: "Tudástár",
+  comparison: "Összehasonlítás",
+  surface: "Felület",
 };
 
 function allEntities(): AnyEntity[] {
@@ -50,7 +95,10 @@ function allEntities(): AnyEntity[] {
     ...technologies,
     ...categories,
     ...productFamilies,
+    ...products,
     ...knowledge,
+    ...comparisons,
+    ...surfaces,
   ];
 }
 
@@ -58,18 +106,8 @@ function entityMap(): Map<string, AnyEntity> {
   return new Map(allEntities().map((e) => [e.id, e]));
 }
 
-function hasMeaningfulContent(entity: AnyEntity): boolean {
-  const body = entity.body?.trim() ?? "";
-  const short = entity.shortDescription?.trim() ?? "";
-  return body.length >= 80 || (short.length >= 40 && body.length >= 40);
-}
-
 export function isIndexableEntity(entity: AnyEntity): boolean {
-  return (
-    entity.status === "published" &&
-    entity.indexable === true &&
-    hasMeaningfulContent(entity)
-  );
+  return isSeoIndexable(entity);
 }
 
 export function getEntityHref(entity: Pick<AnyEntity, "type" | "slug">): string {
@@ -97,12 +135,20 @@ export function getTechnologyById(id: string): Technology | undefined {
   return technologies.find((t) => t.id === id);
 }
 
+export function getSurfaceById(id: string): Surface | undefined {
+  return surfaces.find((s) => s.id === id);
+}
+
 export function getCategoryById(id: string): Category | undefined {
   return categories.find((c) => c.id === id);
 }
 
 export function getProductFamilyById(id: string): ProductFamily | undefined {
   return productFamilies.find((p) => p.id === id);
+}
+
+export function getProductById(id: string): Product | undefined {
+  return products.find((p) => p.id === id);
 }
 
 export function getKnowledgeById(id: string): KnowledgeArticle | undefined {
@@ -128,12 +174,20 @@ export function getTechnologyBySlug(slug: string): Technology | undefined {
   return technologies.find((t) => t.slug === slug);
 }
 
+export function getSurfaceBySlug(slug: string): Surface | undefined {
+  return surfaces.find((s) => s.slug === slug);
+}
+
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
 }
 
 export function getProductFamilyBySlug(slug: string): ProductFamily | undefined {
   return productFamilies.find((p) => p.slug === slug);
+}
+
+export function getProductBySlug(slug: string): Product | undefined {
+  return products.find((p) => p.slug === slug);
 }
 
 export function getKnowledgeBySlug(slug: string): KnowledgeArticle | undefined {
@@ -159,6 +213,11 @@ export function listTechnologies(opts?: {
   return technologies.filter((t) => !publishedOnly || t.status === "published");
 }
 
+export function listSurfaces(opts?: { publishedOnly?: boolean }): Surface[] {
+  const publishedOnly = opts?.publishedOnly ?? true;
+  return surfaces.filter((s) => !publishedOnly || s.status === "published");
+}
+
 export function listProductFamilies(opts?: {
   publishedOnly?: boolean;
 }): ProductFamily[] {
@@ -166,6 +225,11 @@ export function listProductFamilies(opts?: {
   return productFamilies.filter(
     (p) => !publishedOnly || p.status === "published",
   );
+}
+
+export function listProducts(opts?: { publishedOnly?: boolean }): Product[] {
+  const publishedOnly = opts?.publishedOnly ?? true;
+  return products.filter((p) => !publishedOnly || p.status === "published");
 }
 
 export function listKnowledge(opts?: {
@@ -220,7 +284,10 @@ export function getActiveRelationsForEntity(entityId: string): Relation[] {
 
 export function getRelatedEntities(
   entityId: string,
-  opts?: { relationTypes?: RelationType[]; direction?: "outgoing" | "incoming" | "both" },
+  opts?: {
+    relationTypes?: RelationType[];
+    direction?: "outgoing" | "incoming" | "both";
+  },
 ): RelatedEntity[] {
   const direction = opts?.direction ?? "both";
   const typeFilter = opts?.relationTypes
@@ -238,7 +305,12 @@ export function getRelatedEntities(
     ) {
       const entity = map.get(relation.toEntityId);
       if (entity) {
-        results.push({ entity, relation, direction: "outgoing" });
+        results.push({
+          entity,
+          relation,
+          direction: "outgoing",
+          label: getRelationLabel(relation.relationType, "outgoing"),
+        });
       }
     }
 
@@ -248,7 +320,12 @@ export function getRelatedEntities(
     ) {
       const entity = map.get(relation.fromEntityId);
       if (entity) {
-        results.push({ entity, relation, direction: "incoming" });
+        results.push({
+          entity,
+          relation,
+          direction: "incoming",
+          label: getRelationLabel(relation.relationType, "incoming"),
+        });
       }
     }
   }
@@ -256,48 +333,58 @@ export function getRelatedEntities(
   return results;
 }
 
+/** Brands owned / distributed / represented / serviced by an organization. */
 export function getBrandsByOrganization(orgId: string): Brand[] {
   const related = getRelatedEntities(orgId, {
-    relationTypes: ["owns", "distributes", "officialDistributor", "represents", "manufactures"],
+    relationTypes: [
+      "owns",
+      "distributes",
+      "officialDistributor",
+      "represents",
+      "services",
+    ],
     direction: "outgoing",
   });
   const brandIds = new Set(
     related.filter((r) => r.entity.type === "brand").map((r) => r.entity.id),
   );
-  return brands.filter((b) => brandIds.has(b.id) || b.ownerOrgId === orgId);
+  return brands.filter((b) => brandIds.has(b.id));
 }
 
+/** Owning organization for a brand (derived from owns). */
+export function getOwnerOrganization(brandId: string): Organization | undefined {
+  const related = getRelatedEntities(brandId, {
+    relationTypes: ["owns"],
+    direction: "incoming",
+  });
+  const org = related.find((r) => r.entity.type === "organization")?.entity;
+  return org as Organization | undefined;
+}
+
+/** Entities linked to a category via belongsToCategory (incoming to category). */
 export function getEntitiesByCategory(
   categoryId: string,
   opts?: { types?: EntityType[] },
 ): AnyEntity[] {
   const typeFilter = opts?.types ? new Set(opts.types) : null;
-  const byField = allEntities().filter(
-    (e) =>
-      e.type !== "category" &&
-      e.status === "published" &&
-      e.categoryIds.includes(categoryId) &&
-      (!typeFilter || typeFilter.has(e.type)),
-  );
-
-  const byRelation = getRelatedEntities(categoryId, {
+  return getRelatedEntities(categoryId, {
     relationTypes: ["belongsToCategory"],
     direction: "incoming",
   })
     .map((r) => r.entity)
-    .filter((e) => !typeFilter || typeFilter.has(e.type));
-
-  const map = new Map<string, AnyEntity>();
-  for (const e of [...byField, ...byRelation]) {
-    map.set(e.id, e);
-  }
-  return [...map.values()];
+    .filter(
+      (e) =>
+        e.status === "published" && (!typeFilter || typeFilter.has(e.type)),
+    );
 }
 
 function categoryNamesFor(entity: AnyEntity): string[] {
-  return entity.categoryIds
-    .map((id) => getCategoryById(id)?.name)
-    .filter((n): n is string => Boolean(n));
+  return getRelatedEntities(entity.id, {
+    relationTypes: ["belongsToCategory"],
+    direction: "outgoing",
+  })
+    .filter((r) => r.entity.type === "category")
+    .map((r) => r.entity.name);
 }
 
 function toSearchHit(entity: AnyEntity): SearchHit {
@@ -328,10 +415,7 @@ export function searchEntities(
       getEntitiesByCategory(opts.categoryId).map((e) => e.id),
     );
     pool = pool.filter(
-      (e) =>
-        e.id === opts.categoryId ||
-        inCat.has(e.id) ||
-        e.categoryIds.includes(opts.categoryId!),
+      (e) => e.id === opts.categoryId || inCat.has(e.id),
     );
   }
 
@@ -339,7 +423,6 @@ export function searchEntities(
     pool = pool.filter((e) => typeFilter.has(e.type));
   }
 
-  // Exclude the synthetic "all" category from result lists
   pool = pool.filter((e) => e.id !== "cat_all");
 
   if (!term) {
@@ -348,12 +431,19 @@ export function searchEntities(
 
   const scored = pool
     .map((entity) => {
+      const aliases =
+        entity.type === "technology" || entity.type === "surface"
+          ? entity.aliases.join(" ")
+          : entity.type === "product" && entity.aliases
+            ? entity.aliases.join(" ")
+            : "";
+
       const hay = [
         entity.name,
         entity.shortDescription,
         entity.body ?? "",
         ...categoryNamesFor(entity),
-        entity.type === "technology" ? entity.aliases.join(" ") : "",
+        aliases,
       ]
         .join(" ")
         .toLowerCase();
@@ -374,16 +464,16 @@ export function searchEntities(
 
 export function getFeaturedHits(limit = 10): SearchHit[] {
   const featuredIds = [
+    "org_graco_inc",
     "brand_graco",
-    "brand_wagner",
     "org_euroll_hungaria",
+    "tech_airless",
+    "pf_graco_mark",
     "org_akzo_nobel_coatings",
-    "org_ppg_trilak",
-    "brand_milesi",
-    "brand_mirka",
-    "org_sika_hungaria",
-    "brand_interpon",
-    "org_european_aerosols",
+    "brand_dulux",
+    "brand_sikkens",
+    "brand_international",
+    "brand_wagner",
   ];
   const map = entityMap();
   return featuredIds
@@ -393,10 +483,100 @@ export function getFeaturedHits(limit = 10): SearchHit[] {
     .map(toSearchHit);
 }
 
+export type RelationPreview = {
+  entityId: string;
+  name: string;
+  href: string;
+  kindLabel: string;
+  relationLabel: string;
+  description?: string;
+};
+
+/** Presentation-only: one entry per related entity, roles merged. */
+export type AggregatedRelatedEntity = {
+  entity: AnyEntity;
+  href: string;
+  kindLabel: string;
+  roles: string[];
+  rolesSummary: string;
+  relations: Relation[];
+};
+
+export function aggregateRelatedByTarget(
+  related: RelatedEntity[],
+): AggregatedRelatedEntity[] {
+  const map = new Map<
+    string,
+    {
+      entity: AnyEntity;
+      roles: string[];
+      roleSet: Set<string>;
+      relations: Relation[];
+    }
+  >();
+
+  for (const item of related) {
+    if (item.entity.status !== "published") continue;
+    const id = item.entity.id;
+    let bucket = map.get(id);
+    if (!bucket) {
+      bucket = {
+        entity: item.entity,
+        roles: [],
+        roleSet: new Set(),
+        relations: [],
+      };
+      map.set(id, bucket);
+    }
+    if (!bucket.roleSet.has(item.label)) {
+      bucket.roleSet.add(item.label);
+      bucket.roles.push(item.label);
+    }
+    bucket.relations.push(item.relation);
+  }
+
+  return [...map.values()].map((b) => ({
+    entity: b.entity,
+    href: getEntityHref(b.entity),
+    kindLabel: KIND_LABEL[b.entity.type],
+    roles: b.roles,
+    rolesSummary: b.roles.join(" · "),
+    relations: b.relations,
+  }));
+}
+
+export function getRelationPreviews(
+  entityId: string,
+  limit = 12,
+): RelationPreview[] {
+  return aggregateRelatedByTarget(getRelatedEntities(entityId))
+    .slice(0, limit)
+    .map((agg) => ({
+      entityId: agg.entity.id,
+      name: agg.entity.name,
+      href: agg.href,
+      kindLabel: agg.kindLabel,
+      relationLabel: agg.rolesSummary,
+      description: agg.rolesSummary,
+    }));
+}
+
+export function getRelationPreviewsMap(
+  entityIds: string[],
+  limit = 12,
+): Record<string, RelationPreview[]> {
+  const out: Record<string, RelationPreview[]> = {};
+  for (const id of entityIds) {
+    out[id] = getRelationPreviews(id, limit);
+  }
+  return out;
+}
+
 export function getStats() {
   return {
-    entities: allEntities().filter((e) => e.status === "published" && e.id !== "cat_all")
-      .length,
+    entities: allEntities().filter(
+      (e) => e.status === "published" && e.id !== "cat_all",
+    ).length,
     brands: brands.filter((b) => b.status === "published").length,
     categories: categories.filter(
       (c) => c.status === "published" && c.id !== "cat_all",
@@ -413,6 +593,8 @@ export function listPublishedForSitemap(): SitemapEntry[] {
     { path: "/kategoriak", lastModified: "2026-10-05" },
     { path: "/tudastar", lastModified: "2026-10-05" },
     { path: "/termekcsaladok", lastModified: "2026-10-05" },
+    { path: "/termekek", lastModified: "2026-10-05" },
+    { path: "/feluletek", lastModified: "2026-10-05" },
   ];
 
   for (const entity of allEntities()) {
@@ -427,23 +609,12 @@ export function listPublishedForSitemap(): SitemapEntry[] {
   return entries;
 }
 
-export function getRelationTypeLabel(type: RelationType): string {
-  const labels: Record<RelationType, string> = {
-    owns: "Tulajdonos",
-    brandOf: "Márkája",
-    manufactures: "Gyártja",
-    distributes: "Forgalmazza",
-    officialDistributor: "Hivatalos forgalmazó",
-    represents: "Képviseli",
-    services: "Szervizeli",
-    usesTechnology: "Technológia",
-    belongsToCategory: "Kategória",
-    compatibleWith: "Kompatibilis",
-    relatedTo: "Kapcsolódó",
-    productFamilyOf: "Termékcsalád",
-    documentedBy: "Dokumentálja",
-  };
-  return labels[type];
+/** @deprecated Prefer getRelationLabel(type, direction) from relationTypes */
+export function getRelationTypeLabel(
+  type: RelationType,
+  direction: "outgoing" | "incoming" = "outgoing",
+): string {
+  return getRelationLabel(type, direction);
 }
 
-export { SITE_ORIGIN, TYPE_PATH, KIND_LABEL };
+export { SITE_ORIGIN, TYPE_PATH, KIND_LABEL, getRelationLabel };

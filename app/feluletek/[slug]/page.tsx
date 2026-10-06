@@ -1,32 +1,25 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EntityDetailPage } from "@/components/entity/EntityDetailPage";
-import {
-  getCategoryBySlug,
-  listNavCategories,
-} from "@/lib/data/repository";
+import { getSurfaceBySlug, listSurfaces } from "@/lib/data/repository";
 import { entityMetadata } from "@/lib/seo/metadata";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return listNavCategories()
-    .filter((c) => c.id !== "cat_all")
-    .map((c) => ({ slug: c.slug }));
+  return listSurfaces().map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const entity = getCategoryBySlug(slug);
+  const entity = getSurfaceBySlug(slug);
   if (!entity) return {};
   return entityMetadata(entity);
 }
 
-export default async function KategoriaPage({ params }: Props) {
+export default async function FeluletPage({ params }: Props) {
   const { slug } = await params;
-  const entity = getCategoryBySlug(slug);
-  if (!entity || entity.id === "cat_all" || entity.status !== "published") {
-    notFound();
-  }
+  const entity = getSurfaceBySlug(slug);
+  if (!entity) notFound();
   return <EntityDetailPage entity={entity} />;
 }

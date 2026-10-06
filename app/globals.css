@@ -24,10 +24,13 @@ body {
 }
 
 body {
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-inter), Inter, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
   background: var(--bg);
   color: var(--ink);
   letter-spacing: -0.012em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -59,9 +62,17 @@ a {
 }
 
 .brand {
+  display: block;
   height: 108px;
   padding: 24px 25px;
   border-bottom: 1px solid #27323c;
+  box-sizing: border-box;
+}
+
+.brand a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .brandrow {
@@ -77,6 +88,8 @@ a {
   border: 1px solid #657582;
   position: relative;
   flex-shrink: 0;
+  /* rotated diamond needs inset so corners stay inside brand padding */
+  margin: 5px 0 5px 5px;
 }
 
 .mark:after {
@@ -89,9 +102,10 @@ a {
 
 .name {
   font-size: 18px;
-  font-weight: 860;
+  font-weight: 800;
   letter-spacing: 1.7px;
   color: white;
+  line-height: 1.1;
 }
 
 .name span {
@@ -99,7 +113,7 @@ a {
 }
 
 .tagline {
-  margin: 10px 0 0 43px;
+  margin: 10px 0 0 48px;
   font-size: 8px;
   letter-spacing: 1.8px;
   color: #788794;
@@ -245,8 +259,8 @@ a {
   border-bottom: 1px solid #2a3944;
   border-radius: 0;
   color: white;
-  padding: 48px 46px 46px;
-  min-height: 420px;
+  padding: 38px 46px 34px;
+  min-height: 340px;
   box-shadow: none;
   position: relative;
   overflow: hidden;
@@ -273,12 +287,12 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(43px, 4.4vw, 68px);
-  line-height: 0.96;
-  margin: 0 0 24px;
-  letter-spacing: -3px;
+  font-size: clamp(36px, 3.15vw, 46px);
+  line-height: 1.02;
+  margin: 0 0 18px;
+  letter-spacing: -2px;
   max-width: 720px;
-  font-weight: 790;
+  font-weight: 800;
 }
 
 .hero h1 span {
@@ -289,8 +303,8 @@ a {
 .hero > p {
   font-size: 12px;
   color: #aab6bf;
-  margin: 0 0 26px;
-  line-height: 1.6;
+  margin: 0 0 20px;
+  line-height: 1.55;
   max-width: 730px;
 }
 
@@ -330,7 +344,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-top: 13px;
+  margin-top: 10px;
   position: relative;
   z-index: 2;
 }
@@ -605,7 +619,119 @@ a {
   line-height: 1.65;
   color: #3a4650;
   max-width: 760px;
-  margin: 0 0 24px;
+  margin: 0 0 14px;
+}
+
+.seo-section {
+  border-top: 1px solid #e3e7eb;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.seo-heading {
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.seo-subheading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #7a8791;
+  margin: 12px 0 8px;
+  font-weight: 750;
+}
+
+.seo-subsection {
+  margin-bottom: 8px;
+}
+
+.seo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 0;
+  margin-bottom: 4px;
+}
+
+.agg-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0 10px;
+}
+
+.agg-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+}
+
+.agg-roles {
+  font-size: 9px;
+  color: #6f7c87;
+  letter-spacing: 0.2px;
+  line-height: 1.35;
+}
+
+.hub-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 8px 0 4px;
+}
+
+.hub-link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.hub-blurb {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #5a6874;
+  margin: 2px 0 0;
+  max-width: 640px;
+}
+
+.sources-footer {
+  opacity: 0.92;
+}
+
+.sources-heading {
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #7a8791 !important;
+  font-weight: 750 !important;
+}
+
+.sources-meta {
+  font-size: 11px;
+  color: #6f7c87;
+  margin: 0 0 8px;
+}
+
+.seo-knowledge-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #3a4650;
+}
+
+.seo-knowledge-list a {
+  color: #176fa8;
+}
+
+.seo-knowledge-note {
+  color: #6f7c87;
+  font-size: 11px;
 }
 
 .entity-card {
@@ -649,6 +775,233 @@ a {
 
 .sources-list a {
   color: #176fa8;
+}
+
+/* ——— Organization manufacturer hub ——— */
+.org-hub .org-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 0 0 8px;
+}
+
+.org-hub .org-meta-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 72px;
+  padding: 8px 10px;
+  background: #f4f6f8;
+  border: 1px solid #e2e6ea;
+  border-radius: 6px;
+}
+
+.org-hub .org-meta-chip dt {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #71808c;
+  margin: 0;
+}
+
+.org-hub .org-meta-chip dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a2430;
+  letter-spacing: -0.2px;
+}
+
+.org-hub .org-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.org-hub .org-brand-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  background: linear-gradient(165deg, #f7f9fb 0%, #eef2f6 100%);
+  border: 1px solid #d8dee5;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.org-hub .org-brand-card:hover {
+  border-color: #8aa4b8;
+  box-shadow: 0 1px 0 rgba(23, 55, 80, 0.06);
+}
+
+.org-hub .org-brand-name {
+  font-size: 15px;
+  font-weight: 750;
+  letter-spacing: -0.3px;
+  color: #14202c;
+}
+
+.org-hub .org-brand-kind {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6a7a88;
+}
+
+.org-hub .org-family-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.org-hub .org-family-card {
+  padding: 12px 14px;
+  border: 1px solid #e3e7eb;
+  border-radius: 8px;
+  background: #fcfdfe;
+}
+
+.org-hub .org-family-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.org-hub .org-family-name {
+  font-size: 14px;
+  font-weight: 750;
+  color: #176fa8;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+}
+
+.org-hub .org-family-name:hover {
+  text-decoration: underline;
+}
+
+.org-hub .org-family-parent {
+  font-size: 11px;
+  color: #6f7c87;
+}
+
+.org-hub .org-family-parent a {
+  color: #176fa8;
+}
+
+.org-hub .org-family-desc {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5a6874;
+  max-width: 640px;
+}
+
+.org-hub .org-family-meta {
+  margin-top: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #7a8791;
+  font-weight: 700;
+}
+
+.org-hub .org-section-note {
+  font-size: 11px;
+  color: #6f7c87;
+  margin: 0 0 10px;
+  line-height: 1.45;
+}
+
+.org-hub .org-product-block {
+  margin-bottom: 12px;
+}
+
+.org-hub .org-product-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #2a3640;
+}
+
+.org-hub .org-product-list a {
+  color: #176fa8;
+}
+
+.org-hub .org-product-list-full {
+  columns: 2;
+  column-gap: 24px;
+}
+
+.org-hub .org-more {
+  font-size: 11px;
+  color: #6f7c87;
+  margin: 4px 0 0 18px;
+}
+
+.org-hub .org-all-products {
+  margin: 14px 0 0;
+}
+
+.org-hub .org-tree {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2a3640;
+}
+
+.org-hub .org-tree ul {
+  margin: 2px 0 6px;
+  padding-left: 18px;
+}
+
+.org-hub .org-tree a {
+  color: #176fa8;
+}
+
+.org-hub .org-sources-details {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #51616d;
+}
+
+.org-hub .org-sources-details summary {
+  cursor: pointer;
+  color: #176fa8;
+  font-weight: 650;
+  list-style: none;
+}
+
+.org-hub .org-sources-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.org-hub .org-sources-list {
+  margin: 10px 0 0;
+  padding-left: 16px;
+  line-height: 1.65;
+}
+
+.org-hub .org-sources-list a {
+  color: #176fa8;
+}
+
+.org-hub .org-source-pub,
+.org-hub .org-source-date {
+  color: #6f7c87;
+  font-size: 11px;
+}
+
+@media (max-width: 720px) {
+  .org-hub .org-product-list-full {
+    columns: 1;
+  }
 }
 
 .empty {
@@ -695,7 +1048,7 @@ a {
   }
 
   .hero {
-    padding: 40px 20px;
+    padding: 32px 20px 28px;
     min-height: auto;
   }
 
@@ -713,10 +1066,6 @@ a {
 
   .detail {
     position: static;
-  }
-
-  .headline {
-    display: block;
   }
 
   .stats {

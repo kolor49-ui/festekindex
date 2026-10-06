@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { EntityType, SearchHit } from "@/lib/data/types";
+import type { RelationPreview } from "@/lib/data/repository";
 
 function initials(name: string) {
   return name
@@ -24,9 +25,11 @@ const QUICK = ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"];
 
 export function HomeExplorer({
   initialHits,
+  relatedByEntityId,
   stats,
 }: {
   initialHits: SearchHit[];
+  relatedByEntityId: Record<string, RelationPreview[]>;
   stats: { entities: number; brands: number; categories: number };
 }) {
   const [query, setQuery] = useState("");
@@ -58,6 +61,7 @@ export function HomeExplorer({
   }, [initialHits, submitted, filterIdx]);
 
   const selected = filtered.find((h) => h.id === selectedId) ?? filtered[0];
+  const related = selected ? (relatedByEntityId[selected.id] ?? []) : [];
 
   function runSearch(value?: string) {
     const next = value ?? query;
@@ -75,8 +79,7 @@ export function HomeExplorer({
           <span>Rendszerezve.</span>
         </h1>
         <p>
-          Gyártók, márkák, festékek, bevonatok, technológiák, gépek és szakmai
-          kapcsolatok egyetlen kereshető rendszerben.
+          Gyártók, márkák és technológiák egyetlen kereshető szakmai rendszerben.
         </p>
         <form
           className="search"
@@ -180,22 +183,40 @@ export function HomeExplorer({
               <h2>{selected.name}</h2>
               <p>{selected.shortDescription}</p>
               <div className="section">
-                <h4>Kategóriák</h4>
-                {selected.categoryNames.length ? (
-                  selected.categoryNames.map((c) => (
-                    <span key={c} className="pill">
-                      {c}
-                    </span>
-                  ))
+                <h4>Kapcsolódó elemek</h4>
+                {related.length ? (
+                  <div className="agg-links">
+                    {related.map((r) => (
+                      <div key={r.entityId} className="agg-link">
+                        <Link
+                          href={r.href}
+                          className="pill pill-link"
+                          title={r.relationLabel}
+                        >
+                          {r.name}
+                        </Link>
+                        {r.relationLabel ? (
+                          <span className="agg-roles">{r.relationLabel}</span>
+                        ) : null}
+                      </div>
+                    ))}
+                  </div>
                 ) : (
-                  <span className="pill">—</span>
+                  <span className="pill">Nincs rögzített kapcsolat</span>
                 )}
               </div>
               <div className="section">
-                <h4>SEO / tudásháló</h4>
+                <h4>Kapcsolati háló</h4>
                 <div className="route">
-                  <b>{selected.name}</b> → kapcsolódó márkák → technológiák →
-                  termékcsoportok → magyarországi kapcsolat → szakmai cikkek
+                  <b>{selected.name}</b>
+                  {related.length
+                    ? related.slice(0, 4).map((r) => (
+                        <span key={`${r.entityId}-route`}>
+                          {" "}
+                          → {r.name}
+                        </span>
+                      ))
+                    : " → kapcsolódó entitások a relations rétegből"}
                 </div>
               </div>
               <div className="section">

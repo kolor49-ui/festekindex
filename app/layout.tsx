@@ -7,6 +7,7 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
   display: "swap",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -37,8 +38,8 @@ export default function RootLayout({
   }));
 
   return (
-    <html lang="hu">
-      <body className={inter.className}>
+    <html lang="hu" className={inter.variable}>
+      <body>
         <AppShell categories={categories}>{children}</AppShell>
       </body>
     </html>
