@@ -1,7 +1,18 @@
 /**
  * Missing Products Closure v1 — audited candidate decisions.
  * Expected count increments derive from ACCEPTED fixtures, not hardcoded targets.
+ * Final locked counts after Catalogue Completeness Closure v1 are composed below.
  */
+
+import {
+  expectedDilutedWithAfterCatalogueClosure,
+  expectedEnrichmentSourcesAfterCatalogueClosure,
+  expectedMergedSourcesAfterCatalogueClosure,
+  expectedPackagingCountAfterCatalogueClosure,
+  expectedProductCountAfterCatalogueClosure,
+  expectedSearchDocumentsAfterCatalogueClosure,
+  expectedSpecCountAfterCatalogueClosure,
+} from "./catalogueClosureV1";
 
 export type MissingProductCandidateDecision =
   | "ACCEPTED"
@@ -87,58 +98,34 @@ export const MISSING_PRODUCTS_CLOSURE_V1_BASELINE = {
 } as const;
 
 export function expectedProductCountAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.products +
-    ACCEPTED_MISSING_PRODUCTS_V1.length
-  );
+  return expectedProductCountAfterCatalogueClosure();
 }
 
 export function expectedSpecCountAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.specifications +
-    ACCEPTED_MISSING_PRODUCTS_V1.reduce(
-      (n, c) => n + (c.expectedSpecCount ?? 0),
-      0,
-    )
-  );
+  return expectedSpecCountAfterCatalogueClosure();
 }
 
 export function expectedPackagingCountAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.packaging +
-    ACCEPTED_MISSING_PRODUCTS_V1.reduce(
-      (n, c) => n + (c.expectedPackagingCount ?? 0),
-      0,
-    )
-  );
+  return expectedPackagingCountAfterCatalogueClosure();
 }
 
 /** New dilutedWith edges added by this closure (Industry Primer/Enamel → S-31). */
 export const NEW_DILUTED_WITH_FROM_S31_CLOSURE = 2;
 
 export function expectedDilutedWithAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.dilutedWith +
-    NEW_DILUTED_WITH_FROM_S31_CLOSURE
-  );
+  return expectedDilutedWithAfterCatalogueClosure();
 }
 
 /** Page + TDS sources per accepted Product. */
 export const NEW_ENRICHMENT_SOURCES_PER_ACCEPTED = 2;
 
 export function expectedEnrichmentSourcesAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.enrichmentSources +
-    ACCEPTED_MISSING_PRODUCTS_V1.length * NEW_ENRICHMENT_SOURCES_PER_ACCEPTED
-  );
+  return expectedEnrichmentSourcesAfterCatalogueClosure();
 }
 
 /** Likely SearchDocument delta: +1 published Product SearchDocument each. */
 export function expectedSearchDocumentsAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.searchDocuments +
-    ACCEPTED_MISSING_PRODUCTS_V1.length
-  );
+  return expectedSearchDocumentsAfterCatalogueClosure();
 }
 
 /**
@@ -159,30 +146,37 @@ export const MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS = {
   applicableToSurfaceBaseline: 48,
 } as const;
 
+/** Catalogue Completeness Closure v1 relation increments (derived from accepted fixtures). */
+export const CATALOGUE_CLOSURE_V1_RELATION_DELTAS = {
+  belongsToCategory: 23,
+  usesTechnology: 49,
+  applicableToSurface: 48,
+} as const;
+
 export function expectedProductCategoryRelationsAfterClosure(): number {
   return (
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.productCategoryBaseline +
-    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.belongsToCategory
+    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
+    CATALOGUE_CLOSURE_V1_RELATION_DELTAS.belongsToCategory
   );
 }
 
 export function expectedUsesTechnologyAfterClosure(): number {
   return (
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.usesTechnologyBaseline +
-    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.usesTechnology
+    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.usesTechnology +
+    CATALOGUE_CLOSURE_V1_RELATION_DELTAS.usesTechnology
   );
 }
 
 export function expectedApplicableToSurfaceAfterClosure(): number {
   return (
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.applicableToSurfaceBaseline +
-    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.applicableToSurface
+    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.applicableToSurface +
+    CATALOGUE_CLOSURE_V1_RELATION_DELTAS.applicableToSurface
   );
 }
 
 export function expectedMergedSourcesAfterClosure(): number {
-  return (
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.mergedSources +
-    MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.mergedSources
-  );
+  return expectedMergedSourcesAfterCatalogueClosure();
 }

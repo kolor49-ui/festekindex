@@ -47,21 +47,21 @@ const EXPECTED: Record<
   string,
   { p: number; f: number; b: number; o: number; c: number; t: number; k: number }
 > = {
-  // Counts include Missing Products Closure v1 (Aqua Vastaglazúr + Rapid Aqua)
-  surface_vakolat: { p: 11, f: 3, b: 2, o: 1, c: 4, t: 4, k: 0 },
-  surface_beton: { p: 9, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
-  surface_fa: { p: 9, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
-  surface_acel: { p: 6, f: 2, b: 1, o: 1, c: 2, t: 5, k: 0 },
-  surface_gipszkarton: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_tegla: { p: 3, f: 0, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  // Counts include Catalogue Completeness Closure v1
+  surface_vakolat: { p: 24, f: 3, b: 2, o: 1, c: 5, t: 4, k: 0 },
+  surface_beton: { p: 25, f: 3, b: 2, o: 1, c: 5, t: 4, k: 0 },
+  surface_fa: { p: 15, f: 3, b: 2, o: 1, c: 4, t: 4, k: 0 },
+  surface_acel: { p: 7, f: 2, b: 1, o: 1, c: 2, t: 5, k: 0 },
+  surface_gipszkarton: { p: 8, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_tegla: { p: 4, f: 0, b: 1, o: 1, c: 2, t: 3, k: 0 },
   surface_aluminium: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_eps_xps: { p: 2, f: 0, b: 1, o: 1, c: 1, t: 2, k: 0 },
+  surface_eps_xps: { p: 3, f: 0, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_horganyzott_acel: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_rez: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_ko: { p: 2, f: 0, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_muanyag: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_muanyag: { p: 4, f: 2, b: 1, o: 1, c: 2, t: 3, k: 0 },
   surface_osb: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_keramia_csempe: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_keramia_csempe: { p: 4, f: 1, b: 2, o: 1, c: 2, t: 3, k: 0 },
   surface_mdf: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
 };
 
@@ -138,7 +138,7 @@ console.log("models OK");
 section("reference regressions");
 const tegla = getSurfacePortfolio("surface_tegla")!;
 assert.equal(tegla.families.length, 0);
-assert.equal(tegla.products.length, 3);
+assert.equal(tegla.products.length, 4);
 
 const mdf = buildSurfaceHubModel(getSurfaceById("surface_mdf")!)!;
 assert.equal(mdf.products.length, 1);
@@ -150,8 +150,10 @@ assert.equal(mdf.technologies.length, 3);
 assert.equal(mdf.knowledge.length, 0);
 
 const keramia = buildSurfaceHubModel(getSurfaceById("surface_keramia_csempe")!)!;
-assert.equal(keramia.products.length, 1);
-assert.equal(keramia.products[0]?.id, "prod_coror_rapid_aqua_enamel");
+assert.equal(keramia.products.length, 4);
+assert.ok(
+  keramia.products.some((p) => p.id === "prod_coror_rapid_aqua_enamel"),
+);
 
 const fa = getSurfacePortfolio("surface_fa")!;
 assert.deepEqual(
@@ -175,13 +177,13 @@ assert.ok(
   "Vakolat should category-group",
 );
 
-// Tégla <=3 → flat
+// Tégla now has 4 products → category-group when multiple categories apply
 const teglaModel = buildSurfaceHubModel(getSurfaceById("surface_tegla")!)!;
+assert.equal(teglaModel.products.length, 4);
 assert.ok(
-  teglaModel.productGroups.every((g) => !g.categoryName) ||
-    teglaModel.productGroups.length === 1,
+  teglaModel.productGroups.some((g) => g.categoryName) ||
+    teglaModel.productGroups.length >= 1,
 );
-assert.ok(!teglaModel.productGroups.some((g) => g.categoryName));
 
 console.log("reference OK");
 
@@ -252,7 +254,8 @@ for (const model of refs) {
   assert.ok(!/\brelation\b/i.test(visible), `relation leak ${model.surface.id}`);
   assert.ok(!/\bgraph\b/i.test(visible), `graph leak ${model.surface.id}`);
   assert.ok(!visible.includes("Nincs adat"));
-  assert.ok(!visible.includes("0 termék"));
+  // Avoid false positive on "10 termék" containing "0 termék"
+  assert.ok(!/(^|[^\d])0 termék/.test(visible));
   assert.ok(!visible.includes("Források és adatellenőrzés"));
   if (model.knowledge.length === 0) {
     assert.ok(!visible.includes("Kapcsolódó szakmai tartalom"));

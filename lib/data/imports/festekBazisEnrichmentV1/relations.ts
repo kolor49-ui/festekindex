@@ -4,6 +4,7 @@
  */
 
 import type { Relation } from "../../types";
+import { catalogueClosureRelationsV1 } from "./catalogueClosureRelationsV1";
 
 const V = "2026-10-06";
 
@@ -504,4 +505,5 @@ export const enrichmentRelationsV1: Relation[] = [
     status: "active",
     description: "TDS/page: hígítás COROR Industry S-31 Hígítóval",
   },
+  ...catalogueClosureRelationsV1,
 ];

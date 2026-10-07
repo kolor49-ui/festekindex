@@ -53,7 +53,6 @@ const PUBLIC_LABELS = [
 
 section("SearchDocuments baseline");
 {
-  assert.equal(buildSearchCatalog().length, 105);
   assert.equal(
     buildSearchCatalog().length,
     expectedSearchDocumentsAfterClosure(),
@@ -244,7 +243,7 @@ section("Data regression gate");
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(diluted, expectedDilutedWithAfterClosure());
-  assert.equal(listProducts().length, 30);
+  assert.equal(listProducts().length, expectedProductCountAfterClosure());
   console.log("data gate OK");
 }
 

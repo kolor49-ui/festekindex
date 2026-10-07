@@ -566,6 +566,328 @@
         "src_coror_ind_s31"
       ],
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_factor_vastaglazur",
+      "type": "product",
+      "name": "FACTOR Vastaglazúr",
+      "slug": "factor-vastaglazur",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_vastaglazur"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_airflow_heat_mirror_paint",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Beltéri Hőtükör-Festék",
+      "slug": "valmor-air-flow-belteri-hotukor-festek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paint"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_airflow_heat_mirror_paste",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Kenhető Hőtükör",
+      "slug": "valmor-air-flow-kenheto-hotukor",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paste"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_coror_chlorinated_rubber",
+      "type": "product",
+      "name": "COROR Klórkaucsuk Bevonat",
+      "slug": "coror-klorkaucsuk-bevonat",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_safe_floor",
+      "type": "product",
+      "name": "VALMOR Biztonságos Padló- és Jelölőfesték",
+      "slug": "valmor-biztonsagos-padlo-es-jelolo-festek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_safe_floor"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_factor_2in1_lazur",
+      "type": "product",
+      "name": "FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr",
+      "slug": "factor-2-in-1-szinezett-alapozo-es-vekonylazur",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_2in1_lazur"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_factor_floor_enamel",
+      "type": "product",
+      "name": "FACTOR Padlózománc",
+      "slug": "factor-padlozomanc",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_floor_enamel"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_airflow_fixative",
+      "type": "product",
+      "name": "VALMOR AIR FLOW Fixatív Felületkezelő",
+      "slug": "valmor-air-flow-fixativ-feluletkezelo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_airflow_fixative"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_aqua_tech",
+      "type": "product",
+      "name": "VALMOR Aqua-Tech Kenhető Vízszigetelés",
+      "slug": "valmor-aqua-tech-kenheto-vizszigeteles",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_aqua_tech"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_liquid_foil",
+      "type": "product",
+      "name": "VALMOR Flexibilis Folyékony Fólia",
+      "slug": "valmor-flexibilis-folyekony-folia",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_liquid_foil"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_bridge_primer",
+      "type": "product",
+      "name": "VALMOR Hídképző Alapozó",
+      "slug": "valmor-hidkepzo-alapozo",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_bridge_primer"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_bond_bridge",
+      "type": "product",
+      "name": "VALMOR Tapadóhíd",
+      "slug": "valmor-tapadohid",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_bond_bridge"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_mold_paint",
+      "type": "product",
+      "name": "VALMOR Penészgátló Falfesték",
+      "slug": "valmor-peneszgatlo-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_mold_paint"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_qlassique",
+      "type": "product",
+      "name": "VALMOR Qlassique Fehér Beltéri Falfesték",
+      "slug": "valmor-qlassique-feher-belteri-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_qlassique"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_touchline",
+      "type": "product",
+      "name": "VALMOR Touchline pályafesték",
+      "slug": "valmor-touchline-palyafestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_touchline"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_immunetec_standard",
+      "type": "product",
+      "name": "Immunetec by VALMOR Standard Beltéri Falfesték",
+      "slug": "immunetec-by-valmor-belteri-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_immunetec_standard"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_immunetec_premium",
+      "type": "product",
+      "name": "Immunetec by VALMOR Prémium Beltéri Falfesték",
+      "slug": "immunetec-by-valmor-premium-belteri-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_immunetec_premium"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_7016_enamel",
+      "type": "product",
+      "name": "7016™ Antracit Akril Zománc",
+      "slug": "7016-antracit-akril-zomanc",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_7016_enamel"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_7016_exterior",
+      "type": "product",
+      "name": "7016™ Antracit Kültéri Falfesték",
+      "slug": "7016-antracit-kulteri-falfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_7016_exterior"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_7016_pergola",
+      "type": "product",
+      "name": "7016™ Antracit Pergola Fafesték",
+      "slug": "7016-antracit-pergola-fafestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_7016_pergola"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_7016_plaster",
+      "type": "product",
+      "name": "7016™ Antracit Kapart 1,5 Vakolat",
+      "slug": "7016-antracit-kapart-1-5-vakolat",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_7016_plaster"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_stone_balm",
+      "type": "product",
+      "name": "VALMOR Kőbalzsam",
+      "slug": "valmor-kobalzsam",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_stone_balm"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_valmor_eps_adhesive",
+      "type": "product",
+      "name": "VALMOR Rapid Polisztirol Ragasztó",
+      "slug": "valmor-rapid-polisztirol-ragaszto",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_valmor_eps_adhesive"
+      ],
+      "updatedAt": "2026-10-07"
     }
   ],
   "surfaces": [
@@ -2377,6 +2699,900 @@
       "sourceIds": [
         "src_coror_rapid_aqua_enamel"
       ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_vastaglazur",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_vastaglazur",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_vastaglazur"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_vastaglazur_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_vastaglazur",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_vastaglazur_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_vastaglazur",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_vastaglazur"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_heat_mirror_paint",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_heat_mirror_paint",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paint_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paint",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paint_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paint",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paint_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paint",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paint_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paint",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paint"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_heat_mirror_paste",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_heat_mirror_paste",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paste"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paste_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paste",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paste_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paste",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paste"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_heat_mirror_paste_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_airflow_heat_mirror_paste",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_heat_mirror_paste"
+      ]
+    },
+    {
+      "id": "rel_brand_coror_prod_coror_chlorinated_rubber",
+      "fromEntityId": "brand_coror",
+      "toEntityId": "prod_coror_chlorinated_rubber",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_keramia_csempe",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_keramia_csempe",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_chlorinated_rubber_applicableToSurface_surface_muanyag",
+      "fromEntityId": "prod_coror_chlorinated_rubber",
+      "toEntityId": "surface_muanyag",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_chlorinated_rubber"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_safe_floor",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_safe_floor",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_safe_floor"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_safe_floor_belongsToCategory_cat_padlo_mugyanta",
+      "fromEntityId": "prod_valmor_safe_floor",
+      "toEntityId": "cat_padlo_mugyanta",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_safe_floor_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_safe_floor",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_safe_floor"
+      ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_2in1_lazur",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_2in1_lazur",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_2in1_lazur"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_2in1_lazur_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_2in1_lazur",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_2in1_lazur_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_2in1_lazur",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_2in1_lazur"
+      ]
+    },
+    {
+      "id": "rel_brand_factor_prod_factor_floor_enamel",
+      "fromEntityId": "brand_factor",
+      "toEntityId": "prod_factor_floor_enamel",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_floor_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_floor_enamel_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_floor_enamel",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_floor_enamel_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_floor_enamel",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_floor_enamel"
+      ]
+    },
+    {
+      "id": "rel_pf_valmor_air_flow_prod_valmor_airflow_fixative",
+      "fromEntityId": "pf_valmor_air_flow",
+      "toEntityId": "prod_valmor_airflow_fixative",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_fixative"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_fixative_belongsToCategory_cat_felulet_elokeszites",
+      "fromEntityId": "prod_valmor_airflow_fixative",
+      "toEntityId": "cat_felulet_elokeszites",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_airflow_fixative_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_airflow_fixative",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_fixative"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_airflow_fixative_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_airflow_fixative",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_airflow_fixative"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_aqua_tech",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_aqua_tech",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_aqua_tech"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_aqua_tech_belongsToCategory_cat_padlo_mugyanta",
+      "fromEntityId": "prod_valmor_aqua_tech",
+      "toEntityId": "cat_padlo_mugyanta",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_aqua_tech_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_aqua_tech",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_aqua_tech"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_aqua_tech_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_aqua_tech",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_aqua_tech"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_liquid_foil",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_liquid_foil",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_liquid_foil"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_liquid_foil_belongsToCategory_cat_padlo_mugyanta",
+      "fromEntityId": "prod_valmor_liquid_foil",
+      "toEntityId": "cat_padlo_mugyanta",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_liquid_foil_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_liquid_foil",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_liquid_foil"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_liquid_foil_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_liquid_foil",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_liquid_foil"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_bridge_primer",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_bridge_primer",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bridge_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_bridge_primer_belongsToCategory_cat_felulet_elokeszites",
+      "fromEntityId": "prod_valmor_bridge_primer",
+      "toEntityId": "cat_felulet_elokeszites",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_bridge_primer_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_bridge_primer",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bridge_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_bridge_primer_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_bridge_primer",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bridge_primer"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_bridge_primer_applicableToSurface_surface_keramia_csempe",
+      "fromEntityId": "prod_valmor_bridge_primer",
+      "toEntityId": "surface_keramia_csempe",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bridge_primer"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_bond_bridge",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_bond_bridge",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bond_bridge"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_bond_bridge_belongsToCategory_cat_felulet_elokeszites",
+      "fromEntityId": "prod_valmor_bond_bridge",
+      "toEntityId": "cat_felulet_elokeszites",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_bond_bridge_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_bond_bridge",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bond_bridge"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_bond_bridge_applicableToSurface_surface_keramia_csempe",
+      "fromEntityId": "prod_valmor_bond_bridge",
+      "toEntityId": "surface_keramia_csempe",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_bond_bridge"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_mold_paint",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_mold_paint",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_mold_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_mold_paint_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_mold_paint",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_mold_paint_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_mold_paint",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_mold_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_mold_paint_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_mold_paint",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_mold_paint"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_mold_paint_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_mold_paint",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_mold_paint"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_qlassique",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_qlassique",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_qlassique"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_qlassique_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_qlassique",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_qlassique_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_qlassique",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_qlassique"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_qlassique_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_qlassique",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_qlassique"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_qlassique_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_qlassique",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_qlassique"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_touchline",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_touchline",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_touchline"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_touchline_belongsToCategory_cat_specialis_bevonat",
+      "fromEntityId": "prod_valmor_touchline",
+      "toEntityId": "cat_specialis_bevonat",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_immunetec_standard",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_immunetec_standard",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_standard"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_standard_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_immunetec_standard",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_standard_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_immunetec_standard",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_standard"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_standard_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_immunetec_standard",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_standard"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_standard_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_immunetec_standard",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_standard"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_immunetec_premium",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_immunetec_premium",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_premium"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_premium_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_valmor_immunetec_premium",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_premium_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_valmor_immunetec_premium",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_premium"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_premium_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_immunetec_premium",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_premium"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_immunetec_premium_applicableToSurface_surface_gipszkarton",
+      "fromEntityId": "prod_valmor_immunetec_premium",
+      "toEntityId": "surface_gipszkarton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_immunetec_premium"
+      ]
+    },
+    {
+      "id": "rel_pf_7016_prod_7016_enamel",
+      "fromEntityId": "pf_7016",
+      "toEntityId": "prod_7016_enamel",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_enamel_belongsToCategory_cat_dekor_falfestek",
+      "fromEntityId": "prod_7016_enamel",
+      "toEntityId": "cat_dekor_falfestek",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_7016_enamel_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_7016_enamel",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_enamel_applicableToSurface_surface_muanyag",
+      "fromEntityId": "prod_7016_enamel",
+      "toEntityId": "surface_muanyag",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_enamel"
+      ]
+    },
+    {
+      "id": "rel_pf_7016_prod_7016_exterior",
+      "fromEntityId": "pf_7016",
+      "toEntityId": "prod_7016_exterior",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_exterior"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_exterior_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_7016_exterior",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_7016_exterior_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_7016_exterior",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_exterior"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_exterior_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_7016_exterior",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_exterior"
+      ]
+    },
+    {
+      "id": "rel_pf_7016_prod_7016_pergola",
+      "fromEntityId": "pf_7016",
+      "toEntityId": "prod_7016_pergola",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_pergola"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_pergola_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_7016_pergola",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_7016_pergola_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_7016_pergola",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_pergola"
+      ]
+    },
+    {
+      "id": "rel_pf_7016_prod_7016_plaster",
+      "fromEntityId": "pf_7016",
+      "toEntityId": "prod_7016_plaster",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_plaster"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_plaster_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_7016_plaster",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_7016_plaster_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_7016_plaster",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_plaster"
+      ]
+    },
+    {
+      "id": "rel_prod_7016_plaster_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_7016_plaster",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_7016_plaster"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_stone_balm",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_stone_balm",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_stone_balm"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_stone_balm_belongsToCategory_cat_felulet_elokeszites",
+      "fromEntityId": "prod_valmor_stone_balm",
+      "toEntityId": "cat_felulet_elokeszites",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_stone_balm_applicableToSurface_surface_tegla",
+      "fromEntityId": "prod_valmor_stone_balm",
+      "toEntityId": "surface_tegla",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_stone_balm"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_stone_balm_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_valmor_stone_balm",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_stone_balm"
+      ]
+    },
+    {
+      "id": "rel_brand_valmor_prod_valmor_eps_adhesive",
+      "fromEntityId": "brand_valmor",
+      "toEntityId": "prod_valmor_eps_adhesive",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_eps_adhesive"
+      ]
+    },
+    {
+      "id": "rel_prod_valmor_eps_adhesive_belongsToCategory_cat_homlokzat_hoszigeteles",
+      "fromEntityId": "prod_valmor_eps_adhesive",
+      "toEntityId": "cat_homlokzat_hoszigeteles",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_valmor_eps_adhesive_applicableToSurface_surface_eps_xps",
+      "fromEntityId": "prod_valmor_eps_adhesive",
+      "toEntityId": "surface_eps_xps",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_valmor_eps_adhesive"
+      ]
     }
   ],
   "sources": [
@@ -2644,6 +3860,190 @@
       "publisher": "FESTÉK BÁZIS Zrt.",
       "sourceType": "official_manufacturer",
       "verifiedAt": "2026-10-07"
+    },
+    {
+      "id": "src_factor_vastaglazur",
+      "title": "FACTOR Vastaglazúr — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-vastaglazur-p-327",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_airflow_heat_mirror_paint",
+      "title": "VALMOR AIR FLOW Beltéri Hőtükör-Festék — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-belteri-hotukor-festek-p-356",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_airflow_heat_mirror_paste",
+      "title": "VALMOR AIR FLOW Kenhető Hőtükör — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-kenheto-hotukor-p-321",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_coror_chlorinated_rubber",
+      "title": "COROR Klórkaucsuk Bevonat — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-klorkaucsuk-bevonat-p-334",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_safe_floor",
+      "title": "VALMOR Biztonságos Padló- és Jelölőfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-biztonsagos-padlo-es-jelolo-festek-p-306",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_factor_2in1_lazur",
+      "title": "FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-2-in-1-szinezett-alapozo-es-vekonylazur-p-326",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_factor_floor_enamel",
+      "title": "FACTOR Padlózománc — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-padlozomanc-p-330",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_airflow_fixative",
+      "title": "VALMOR AIR FLOW Fixatív Felületkezelő — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-air-flow-fixativ-feluletkezelo-p-355",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_aqua_tech",
+      "title": "VALMOR Aqua-Tech Kenhető Vízszigetelés — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-aqua-tech-kenheto-vizszigeteles-p-310",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_liquid_foil",
+      "title": "VALMOR Flexibilis Folyékony Fólia — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-flexibilis-folyekony-folia-p-308",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_bridge_primer",
+      "title": "VALMOR Hídképző Alapozó — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-hidkepzo-alapozo-p-342",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_bond_bridge",
+      "title": "VALMOR Tapadóhíd — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-tapadohid-p-309",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_mold_paint",
+      "title": "VALMOR Penészgátló Falfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-peneszgatlo-falfestek-p-316",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_qlassique",
+      "title": "VALMOR Qlassique Fehér Beltéri Falfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-qlassique-feher-belteri-falfestek-p-314",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_touchline",
+      "title": "VALMOR Touchline pályafesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-touchline-palyafestek-p-465",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_immunetec_standard",
+      "title": "Immunetec by VALMOR Standard Beltéri Falfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-immunetec-by-valmor-belteri-falfestek-p-362",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_immunetec_premium",
+      "title": "Immunetec by VALMOR Prémium Beltéri Falfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-immunetec-by-valmor-premium-belteri-falfestek-p-363",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_7016_enamel",
+      "title": "7016™ Antracit Akril Zománc — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/7016-7016-antracit-akril-zomanc-p-345",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_7016_exterior",
+      "title": "7016™ Antracit Kültéri Falfesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/7016-7016-antracit-kulteri-falfestek-p-347",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_7016_pergola",
+      "title": "7016™ Antracit Pergola Fafesték — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/7016-7016-antracit-pergola-fafestek-p-344",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_7016_plaster",
+      "title": "7016™ Antracit Kapart 1,5 Vakolat — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/7016-7016-antracit-kapart-1-5-vakolat-p-346",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_stone_balm",
+      "title": "VALMOR Kőbalzsam — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-kobalzsam-p-307",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
+    },
+    {
+      "id": "src_valmor_eps_adhesive",
+      "title": "VALMOR Rapid Polisztirol Ragasztó — hivatalos termékoldal",
+      "url": "https://www.festekbazis.hu/hu/termekeink/valmor-a-falra-valmor-rapid-polisztirol-ragaszto-p-312",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-10-07"
     }
   ]
 }

@@ -150,14 +150,14 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 6, f: 1, b: 1, o: 1, t: 4, s: 1, k: 0 },
-  cat_homlokzat: { p: 5, f: 1, b: 1, o: 1, t: 4, s: 5, k: 0 },
-  cat_dekor: { p: 4, f: 2, b: 1, o: 1, t: 3, s: 3, k: 0 },
-  cat_ipari: { p: 5, f: 2, b: 1, o: 1, t: 5, s: 11, k: 0 },
+  cat_faipar: { p: 10, f: 2, b: 1, o: 1, t: 4, s: 1, k: 0 },
+  cat_homlokzat: { p: 8, f: 2, b: 1, o: 1, t: 4, s: 5, k: 0 },
+  cat_dekor: { p: 11, f: 2, b: 1, o: 1, t: 4, s: 5, k: 0 },
+  cat_ipari: { p: 6, f: 2, b: 1, o: 1, t: 5, s: 11, k: 0 },
   cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
-  cat_padlo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
-  cat_csiszolas: { p: 1, f: 1, b: 1, o: 1, t: 1, s: 3, k: 0 },
-  cat_tuzvedo: { p: 1, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
+  cat_padlo: { p: 5, f: 0, b: 1, o: 1, t: 3, s: 2, k: 0 },
+  cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
+  cat_tuzvedo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
 };
 
 section("product-backed richness");
@@ -244,7 +244,7 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 6);
+  assert.equal(p.products.length, 10);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_sikkens"));
@@ -580,8 +580,10 @@ console.log("leakage OK");
 section("Csiszolás semantic separation");
 {
   const p = getCategoryPortfolio("cat_csiszolas")!;
-  assert.equal(p.products.length, 1);
-  assert.equal(p.products[0]!.id, "prod_coror_rapid_stripper");
+  assert.equal(p.products.length, 5);
+  assert.ok(p.products.some((x) => x.id === "prod_coror_rapid_stripper"));
+  assert.ok(p.derivedBrands.some((b) => b.id === "brand_coror"));
+  assert.ok(p.derivedBrands.some((b) => b.id === "brand_valmor"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_mirka"));
   assert.ok(p.directOrganizations.some((o) => o.id === "org_euroll_hungaria"));
   assert.ok(p.directTechnologies.some((t) => t.id === "tech_csiszolas"));
@@ -622,7 +624,7 @@ assert.equal(
   productUses.filter((r) => (r.sourceIds?.length ?? 0) > 0).length,
   expectedUsesTechnologyAfterClosure(),
 );
-assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 25);
+assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 48);
 assert.equal(listSurfaces().length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length, expectedApplicableToSurfaceAfterClosure());

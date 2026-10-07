@@ -161,7 +161,8 @@ section("Product Hub lead uses editorialSummary");
 section("Product description visibility — 30/30 hub lead SSR");
 {
   const products = listProducts();
-  assert.equal(products.length, 30);
+  const expected = expectedProductCountAfterClosure();
+  assert.equal(products.length, expected);
 
   let editorial = 0;
   let source = 0;
@@ -213,12 +214,12 @@ section("Product description visibility — 30/30 hub lead SSR");
     assert.ok(!/editorialSummary|sourceSummary|shortDescription/.test(html));
   }
 
-  assert.equal(editorial, 30);
-  assert.equal(source, 30);
-  assert.equal(resolvedLead, 30);
-  assert.equal(renderedLead, 30);
-  assert.equal(leadBeforeSzakmai, 30);
-  assert.equal(leadBeforeIdentity, 30);
+  assert.equal(editorial, expected);
+  assert.equal(source, expected);
+  assert.equal(resolvedLead, expected);
+  assert.equal(renderedLead, expected);
+  assert.equal(leadBeforeSzakmai, expected);
+  assert.equal(leadBeforeIdentity, expected);
 
   for (const rep of representatives) {
     const p = products.find((x) => x.name.includes(rep.substr));

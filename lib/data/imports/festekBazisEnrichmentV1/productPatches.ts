@@ -33,6 +33,7 @@ import { cororIndS31Patch } from "./patches/cororIndS31";
 import { cororAromaticPatch } from "./patches/cororAromatic";
 import { cororSyntheticPatch } from "./patches/cororSynthetic";
 import { pf7016WallPatch } from "./patches/pf7016Wall";
+import { catalogueClosurePatchesV1 } from "./patches/catalogueClosureV1";
 
 export const productPatchesV1: ProductEnrichmentPatch[] = [
   airflowInteriorPatch,
@@ -65,4 +66,5 @@ export const productPatchesV1: ProductEnrichmentPatch[] = [
   cororAromaticPatch,
   cororSyntheticPatch,
   pf7016WallPatch,
+  ...catalogueClosurePatchesV1,
 ];

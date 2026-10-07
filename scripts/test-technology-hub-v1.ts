@@ -57,10 +57,10 @@ type Exp = {
 };
 
 const EXPECTED: Record<string, Exp> = {
-  tech_ecset: { p: 23, fDer: 5, bDer: 3, oDer: 1, c: 7, s: 15, k: 0, fDir: 0 },
-  tech_henger: { p: 20, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 15, k: 0, fDir: 0 },
-  tech_szoras: { p: 16, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 14, k: 0, fDir: 0 },
-  tech_glettvas: { p: 2, fDer: 1, bDer: 1, oDer: 1, c: 1, s: 2, k: 0, fDir: 0 },
+  tech_ecset: { p: 43, fDer: 5, bDer: 3, oDer: 1, c: 7, s: 15, k: 0, fDir: 0 },
+  tech_henger: { p: 39, fDer: 5, bDer: 3, oDer: 1, c: 7, s: 15, k: 0, fDir: 0 },
+  tech_szoras: { p: 23, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 14, k: 0, fDir: 0 },
+  tech_glettvas: { p: 5, fDer: 2, bDer: 1, oDer: 1, c: 2, s: 3, k: 0, fDir: 0 },
   tech_air_mix: { p: 1, fDer: 1, bDer: 1, oDer: 1, c: 1, s: 1, k: 0, fDir: 0 },
   tech_airless: {
     p: 1,
@@ -288,7 +288,8 @@ for (const model of refs) {
   assert.ok(!/\brelation\b/i.test(visible));
   assert.ok(!/\bgraph\b/i.test(visible));
   assert.ok(!visible.includes("Nincs adat"));
-  assert.ok(!visible.includes("0 termék"));
+  // Avoid false positive on "10 termék" containing "0 termék"
+  assert.ok(!/(^|[^\d])0 termék/.test(visible));
   // No Product section when empty
   if (model.products.length === 0) {
     assert.ok(!visible.includes("Kapcsolódó termékek"));
@@ -348,7 +349,7 @@ assert.equal(
   productUses.filter((r) => (r.sourceIds?.length ?? 0) > 0).length,
   expectedUsesTechnologyAfterClosure(),
 );
-assert.equal(withTech.size, 25);
+assert.equal(withTech.size, 48);
 assert.equal(products.length - withTech.size, 5);
 const without = products
   .filter((p) => !withTech.has(p.id))

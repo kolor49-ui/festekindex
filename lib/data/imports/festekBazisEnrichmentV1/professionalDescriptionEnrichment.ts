@@ -4,6 +4,7 @@
  */
 
 import type { ProductProfessionalDescriptionEnrichment } from "./types";
+import { catalogueClosureProfessionalDescriptionsV1 } from "./catalogueClosureProfessionalDescriptionsV1";
 
 export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDescriptionEnrichment[] = [
   {
@@ -741,5 +742,6 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
       },
     ],
   },
+  ...catalogueClosureProfessionalDescriptionsV1,
 ];
 

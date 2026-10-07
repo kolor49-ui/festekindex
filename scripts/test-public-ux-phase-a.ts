@@ -163,9 +163,9 @@ section("Zero-product portfolio — no 0 termék");
   const vHtml = renderToStaticMarkup(
     createElement(BrandHubPage, { model: valmor }),
   );
-  assert.ok(vHtml.includes("4 termék") || /AIR FLOW[\s\S]*?4 termék/.test(vHtml));
+  assert.ok(vHtml.includes("7 termék") || /AIR FLOW[\s\S]*?7 termék/.test(vHtml));
   const air = buildProductFamilyHubModel(getProductFamilyById("pf_valmor_air_flow")!)!;
-  assert.equal(air.products.length, 4);
+  assert.equal(air.products.length, 7);
   console.log("zero-product presentation OK");
 }
 

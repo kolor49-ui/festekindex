@@ -3,6 +3,7 @@
  */
 
 import type { Source } from "../../types";
+import { catalogueClosureSourcesV1 } from "./catalogueClosureSourcesV1";
 
 const ACCESSED = "2026-10-06";
 const PUBLISHER = "FESTÉK BÁZIS Zrt.";
@@ -540,4 +541,5 @@ export const enrichmentSourcesV1: Source[] = [
     publisher: PUBLISHER,
     accessedAt: "2026-10-07",
   },
+  ...catalogueClosureSourcesV1,
 ];

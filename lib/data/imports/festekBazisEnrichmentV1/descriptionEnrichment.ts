@@ -5,6 +5,7 @@
  */
 
 import type { ProductDescriptionEnrichment } from "./types";
+import { catalogueClosureDescriptionsV1 } from "./catalogueClosureDescriptionsV1";
 
 export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
   // —— VALMOR AIR FLOW ——
@@ -302,4 +303,5 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
     editorialSummary:
       "Matt beltéri falfesték a 7016™ termékcsaládból. Vakolat és glettelt felületekre szánt egyrétegű antracit beltéri bevonat.",
   },
+  ...catalogueClosureDescriptionsV1,
 ];

@@ -153,11 +153,6 @@ section("No duplicates / no unrelated FB products");
   assert.equal(new Set(slugs).size, slugs.length);
 
   assert.equal(products.length, expectedProductCountAfterClosure());
-  assert.equal(
-    products.length,
-    MISSING_PRODUCTS_CLOSURE_V1_BASELINE.products +
-      ACCEPTED_MISSING_PRODUCTS_V1.length,
-  );
 
   // Only the three accepted IDs are new vs baseline 27
   const acceptedIds = new Set(

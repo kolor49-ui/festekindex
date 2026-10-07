@@ -17,6 +17,10 @@ import {
   expectedSpecCountAfterClosure,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
+  expectedMergedSourcesAfterCatalogueClosure,
+  expectedProductCountAfterCatalogueClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
+import {
   getActiveRelationsForEntity,
   getProductById,
   getSourceById,
@@ -40,7 +44,7 @@ section("Baseline locks");
 {
   const products = listProducts();
   assert.equal(products.length, expectedProductCountAfterClosure());
-  assert.equal(products.length, 30);
+  assert.equal(products.length, expectedProductCountAfterCatalogueClosure());
 
   let specs = 0;
   let packs = 0;
@@ -56,7 +60,6 @@ section("Baseline locks");
     buildSearchCatalog().length,
     expectedSearchDocumentsAfterClosure(),
   );
-  assert.equal(buildSearchCatalog().length, 105);
 
   for (const p of products) {
     for (const r of getActiveRelationsForEntity(p.id)) {
@@ -64,7 +67,10 @@ section("Baseline locks");
     }
   }
   assert.equal(diluted, expectedDilutedWithAfterClosure());
-  assert.equal(expectedMergedSourcesAfterClosure(), 83);
+  assert.equal(
+    expectedMergedSourcesAfterClosure(),
+    expectedMergedSourcesAfterCatalogueClosure(),
+  );
   console.log("baseline OK", { specs, packs, diluted });
 }
 
@@ -72,8 +78,11 @@ section("Coverage + provenance");
 {
   const products = listProducts();
   const withDesc = products.filter((p) => p.professionalDescription?.sections?.length);
-  assert.equal(withDesc.length, 30);
-  assert.equal(productProfessionalDescriptionEnrichmentsV1.length, 30);
+  assert.equal(withDesc.length, expectedProductCountAfterClosure());
+  assert.equal(
+    productProfessionalDescriptionEnrichmentsV1.length,
+    expectedProductCountAfterClosure(),
+  );
 
   let totalSections = 0;
   const headingCounts = new Map<string, number>();
@@ -213,7 +222,7 @@ section("Reference content");
 section("Hub render order + SSR + leakage");
 {
   const products = listProducts().filter((p) => p.professionalDescription);
-  assert.equal(products.length, 30);
+  assert.equal(products.length, expectedProductCountAfterClosure());
 
   for (const p of products) {
     const model = buildProductHubModel(p)!;

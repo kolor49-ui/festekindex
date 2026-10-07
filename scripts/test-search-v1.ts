@@ -237,23 +237,23 @@ section("progressive roots");
   const vProd = valmor.filter((c) => c.type === "product");
   assert.equal(vFam.length, 1);
   assert.equal(vFam[0]!.id, "pf_valmor_air_flow");
-  assert.equal(vProd.length, 10);
+  assert.equal(vProd.length, 22);
   assert.ok(!valmor.some((c) => /nélkül/i.test(c.name)));
 
   const factor = getProductSearchChildren("brand_factor", "brand");
   assert.equal(factor.filter((c) => c.type === "productFamily").length, 1);
-  assert.equal(factor.filter((c) => c.type === "product").length, 3);
+  assert.equal(factor.filter((c) => c.type === "product").length, 6);
 
   const coror = getProductSearchChildren("brand_coror", "brand");
   assert.equal(coror.filter((c) => c.type === "productFamily").length, 2);
-  assert.equal(coror.filter((c) => c.type === "product").length, 2);
+  assert.equal(coror.filter((c) => c.type === "product").length, 3);
 
   const seven = getProductSearchChildren("pf_7016", "productFamily");
-  assert.equal(seven.length, 1);
-  assert.equal(seven[0]!.type, "product");
+  assert.equal(seven.length, 5);
+  assert.ok(seven.every((c) => c.type === "product"));
 
   const airFlow = getProductSearchFamilyProducts("pf_valmor_air_flow");
-  assert.equal(airFlow.length, 4);
+  assert.equal(airFlow.length, 7);
 
   assert.equal(getCanonicalBrandOwner("brand_graco")?.id, "org_graco_inc");
 }
