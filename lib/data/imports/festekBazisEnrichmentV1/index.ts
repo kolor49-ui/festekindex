@@ -12,14 +12,17 @@ export type {
   FestekBazisEnrichmentV1,
   ProductDescriptionEnrichment,
   ProductEnrichmentPatch,
+  ProductProfessionalDescriptionEnrichment,
 } from "./types";
 export {
   applyFestekBazisEnrichmentV1,
   applyProductDescriptionEnrichments,
+  applyProductProfessionalDescriptionEnrichments,
   applyProductEnrichments,
   mergeSourcesWithEnrichment,
 } from "./apply";
 export { productDescriptionEnrichmentsV1 } from "./descriptionEnrichment";
+export { productProfessionalDescriptionEnrichmentsV1 } from "./professionalDescriptionEnrichment";
 
 export const festekBazisEnrichmentV1: FestekBazisEnrichmentV1 = {
   version: "festek_bazis_enrichment_v1",

@@ -9,8 +9,10 @@ import type {
   FestekBazisEnrichmentV1,
   ProductDescriptionEnrichment,
   ProductEnrichmentPatch,
+  ProductProfessionalDescriptionEnrichment,
 } from "./types";
 import { productDescriptionEnrichmentsV1 } from "./descriptionEnrichment";
+import { productProfessionalDescriptionEnrichmentsV1 } from "./professionalDescriptionEnrichment";
 
 function uniqueIds(ids: string[]): string[] {
   return [...new Set(ids.filter(Boolean))];
@@ -117,6 +119,35 @@ export function applyProductDescriptionEnrichments(
   });
 }
 
+export function applyProductProfessionalDescriptionEnrichments(
+  products: Product[],
+  descriptions: ProductProfessionalDescriptionEnrichment[] = productProfessionalDescriptionEnrichmentsV1,
+): Product[] {
+  const byId = new Map(descriptions.map((d) => [d.productId, d]));
+  return products.map((product) => {
+    const d = byId.get(product.id);
+    if (!d || d.sections.length === 0) return product;
+    return {
+      ...product,
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      status: product.status,
+      indexable: product.indexable,
+      type: "product" as const,
+      professionalDescription: {
+        sections: d.sections,
+        sourceIds: uniqueIds(d.sourceIds),
+      },
+      sourceIds: uniqueIds([
+        ...product.sourceIds,
+        ...d.sourceIds,
+        ...d.sections.flatMap((s) => s.sourceIds ?? []),
+      ]),
+    };
+  });
+}
+
 export function applyFestekBazisEnrichmentV1(
   products: Product[],
   sources: Source[],
@@ -128,8 +159,10 @@ export function applyFestekBazisEnrichmentV1(
   relations: Relation[];
 } {
   return {
-    products: applyProductDescriptionEnrichments(
-      applyProductEnrichments(products, enrichment.productPatches),
+    products: applyProductProfessionalDescriptionEnrichments(
+      applyProductDescriptionEnrichments(
+        applyProductEnrichments(products, enrichment.productPatches),
+      ),
     ),
     sources: mergeSourcesWithEnrichment(sources, enrichment.sources),
     relations: mergeRelationsByCanonicalKey(relations, enrichment.relations),

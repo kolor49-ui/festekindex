@@ -9,7 +9,7 @@ import {
 
 /**
  * Product hub v2.1 — SSR HTML, repository-driven.
- * Phase B: identity → context → technical → packaging → related → background → sources.
+ * Order: header → short lead → identity → Termékleírás → context → technical → …
  * Never renders internal enums, rawValue, sourceIds, relation type names.
  */
 export function ProductHubPage({ model }: { model: ProductHubModel }) {
@@ -28,6 +28,7 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
   });
   const hasRelatedSection =
     hasSystemSequence || model.relatedProducts.length > 0;
+  const professional = model.professionalDescription;
 
   return (
     <main className="main">
@@ -43,6 +44,7 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
         <article className="entity-card entity-seo">
           <div className="entity-meta">{model.kindLabel}</div>
           <h1>{model.h1}</h1>
+          {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
           {model.headerFacts.length > 0 ? (
             <dl className="org-meta-row product-header-facts">
@@ -61,7 +63,34 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
             </dl>
           ) : null}
 
-          {model.lead ? <p className="page-lead">{model.lead}</p> : null}
+          {professional ? (
+            <section
+              className="seo-section product-description-section hub-primary-section"
+              id="termekleiras"
+            >
+              <h2 className="seo-heading hub-primary-heading">Termékleírás</h2>
+              <div className="product-description-body">
+                {professional.sections.map((section) => (
+                  <div
+                    key={section.heading}
+                    className="product-description-block"
+                  >
+                    <h3 className="product-description-heading">
+                      {section.heading}
+                    </h3>
+                    {section.paragraphs.map((paragraph, i) => (
+                      <p
+                        key={`${section.heading}-${i}`}
+                        className="product-description-paragraph"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           {hasContext ? (
             <section

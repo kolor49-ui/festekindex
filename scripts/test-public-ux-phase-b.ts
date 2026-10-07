@@ -85,13 +85,16 @@ section("Product hierarchy — AIR FLOW / Rapid / 7016");
   const ctxIdx = airHtml.indexOf('id="szakmai-kornyezet"');
   assert.ok(leadIdx >= 0 && techIdx > leadIdx, "summary before technical");
   assert.ok(
-    factsIdx >= 0 && leadIdx > factsIdx,
-    "product lead after identity facts",
+    factsIdx >= 0 && leadIdx < factsIdx,
+    "product lead before identity facts",
   );
   assert.ok(
     ctxIdx >= 0 && leadIdx < ctxIdx,
     "product lead before Szakmai környezet",
   );
+  const descIdx = airHtml.indexOf('id="termekleiras"');
+  assert.ok(descIdx >= 0, "Termékleírás section present");
+  assert.ok(factsIdx < descIdx && descIdx < ctxIdx, "Termékleírás between identity and context");
   assert.ok(ctxIdx >= 0 && ctxIdx < techIdx, "context before technical");
   assert.ok(airHtml.includes("Műszaki adatok"));
   assert.ok(air.packaging.length > 0);

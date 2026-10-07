@@ -299,8 +299,27 @@ export type Product = EntityBase & {
   sourceSummarySourceIds?: string[];
   /** FESTÉKINDEX editorial professional summary. */
   editorialSummary?: string;
+  /**
+   * Structured professional Product description (Termékleírás).
+   * Official-source sections only — not the short lead.
+   */
+  professionalDescription?: ProductProfessionalDescription;
   specifications?: ProductSpecification[];
   packagingOptions?: ProductPackagingOption[];
+};
+
+/** One public Termékleírás subsection (heading is user-facing Hungarian). */
+export type ProductProfessionalDescriptionSection = {
+  heading: string;
+  paragraphs: string[];
+  /** Provenance — never rendered publicly. */
+  sourceIds?: string[];
+};
+
+/** Embedded Product professional description — not a separate Entity. */
+export type ProductProfessionalDescription = {
+  sections: ProductProfessionalDescriptionSection[];
+  sourceIds: string[];
 };
 
 export type KnowledgeArticle = EntityBase & {

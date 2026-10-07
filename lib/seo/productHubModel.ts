@@ -53,12 +53,24 @@ export type ProductFact = {
   href?: string;
 };
 
+export type ProductHubProfessionalSection = {
+  heading: string;
+  paragraphs: string[];
+};
+
 export type ProductHubModel = {
   product: Product;
   kindLabel: string;
   h1: string;
   /** Undefined when no source-backed usable description. */
   lead?: string;
+  /**
+   * Public Termékleírás sections — headings/paragraphs only.
+   * Absent when no official professional description is available.
+   */
+  professionalDescription?: {
+    sections: ProductHubProfessionalSection[];
+  };
   title: string;
   metaDescription: string;
   canonicalUrl: string;
@@ -199,6 +211,20 @@ export function buildProductHubModel(
     usableText(product.body) ??
     usableText(product.shortDescription);
 
+  const professionalSections =
+    product.professionalDescription?.sections
+      ?.map((s) => ({
+        heading: s.heading.trim(),
+        paragraphs: s.paragraphs
+          .map((p) => p.trim())
+          .filter((p) => p.length > 0),
+      }))
+      .filter((s) => s.heading && s.paragraphs.length > 0) ?? [];
+  const professionalDescription =
+    professionalSections.length > 0
+      ? { sections: professionalSections }
+      : undefined;
+
   const headerFacts: ProductFact[] = [];
   if (brand) {
     headerFacts.push({
@@ -291,6 +317,7 @@ export function buildProductHubModel(
     kindLabel: "Termék",
     h1: product.name,
     lead,
+    professionalDescription,
     title,
     metaDescription,
     canonicalUrl: getCanonicalUrl(product),

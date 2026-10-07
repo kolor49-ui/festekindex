@@ -168,7 +168,7 @@ section("Product description visibility — 30/30 hub lead SSR");
   let resolvedLead = 0;
   let renderedLead = 0;
   let leadBeforeSzakmai = 0;
-  let leadAfterIdentity = 0;
+  let leadBeforeIdentity = 0;
 
   const representatives: Array<{ substr: string; needle: RegExp }> = [
     { substr: "FACTOR Aqua Akril Vastaglazúr", needle: /vastaglazúr|akril/i },
@@ -206,8 +206,8 @@ section("Product description visibility — 30/30 hub lead SSR");
     assert.ok(leadIdx < szakmaiIdx, `${p.id} lead before Szakmai környezet`);
     leadBeforeSzakmai++;
     if (factsIdx >= 0) {
-      assert.ok(leadIdx > factsIdx, `${p.id} lead after identity facts`);
-      leadAfterIdentity++;
+      assert.ok(leadIdx < factsIdx, `${p.id} lead before identity facts`);
+      leadBeforeIdentity++;
     }
 
     assert.ok(!/editorialSummary|sourceSummary|shortDescription/.test(html));
@@ -218,7 +218,7 @@ section("Product description visibility — 30/30 hub lead SSR");
   assert.equal(resolvedLead, 30);
   assert.equal(renderedLead, 30);
   assert.equal(leadBeforeSzakmai, 30);
-  assert.equal(leadAfterIdentity, 30);
+  assert.equal(leadBeforeIdentity, 30);
 
   for (const rep of representatives) {
     const p = products.find((x) => x.name.includes(rep.substr));
@@ -235,8 +235,8 @@ section("Product description visibility — 30/30 hub lead SSR");
       `${rep.substr} before Szakmai`,
     );
     assert.ok(
-      html.indexOf(marker) > html.indexOf("product-header-facts"),
-      `${rep.substr} after identity`,
+      html.indexOf(marker) < html.indexOf("product-header-facts"),
+      `${rep.substr} lead before identity`,
     );
   }
 

@@ -7,6 +7,7 @@ import type {
   Product,
   ProductClass,
   ProductPackagingOption,
+  ProductProfessionalDescription,
   ProductSpecification,
   Relation,
   Source,
@@ -33,6 +34,13 @@ export type ProductDescriptionEnrichment = {
   sourceSummary: string;
   sourceSummarySourceIds: string[];
   editorialSummary: string;
+};
+
+/** Structured Termékleírás overlay (Product Professional Description v1). */
+export type ProductProfessionalDescriptionEnrichment = {
+  productId: string;
+  sourceIds: string[];
+  sections: ProductProfessionalDescription["sections"];
 };
 
 export type FestekBazisEnrichmentV1 = {
