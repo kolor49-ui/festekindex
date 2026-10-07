@@ -158,6 +158,96 @@ section("Product Hub lead uses editorialSummary");
   console.log("Product Hub lead OK");
 }
 
+section("Product description visibility — 30/30 hub lead SSR");
+{
+  const products = listProducts();
+  assert.equal(products.length, 30);
+
+  let editorial = 0;
+  let source = 0;
+  let resolvedLead = 0;
+  let renderedLead = 0;
+  let leadBeforeSzakmai = 0;
+  let leadAfterIdentity = 0;
+
+  const representatives: Array<{ substr: string; needle: RegExp }> = [
+    { substr: "FACTOR Aqua Akril Vastaglazúr", needle: /vastaglazúr|akril/i },
+    { substr: "COROR Rapid Aqua Zománcfesték", needle: /vizes|zománc|rapid/i },
+    { substr: "COROR Industry S-31 Hígító", needle: /hígító|industry/i },
+    { substr: "COROR Rapid Korróziógátló Alapozó", needle: /alapozó|korrózió/i },
+    {
+      substr: "VALMOR AIR FLOW Lélegző Beltéri Falfesték",
+      needle: /páraáteresztő|lélegző|beltéri/i,
+    },
+  ];
+
+  for (const p of products) {
+    if (p.editorialSummary?.trim()) editorial++;
+    if (p.sourceSummary?.trim()) source++;
+
+    const model = buildProductHubModel(p)!;
+    assert.ok(model.lead?.trim(), `${p.id} resolved lead`);
+    resolvedLead++;
+
+    const html = renderToStaticMarkup(
+      createElement(ProductHubPage, { model }),
+    );
+    const visibleLeadMarker = `<p class="page-lead">${model.lead}</p>`;
+    assert.ok(
+      html.includes(visibleLeadMarker),
+      `${p.id} visible page-lead in SSR HTML`,
+    );
+    renderedLead++;
+
+    const leadIdx = html.indexOf(visibleLeadMarker);
+    const factsIdx = html.indexOf("product-header-facts");
+    const szakmaiIdx = html.indexOf("Szakmai környezet");
+    assert.ok(szakmaiIdx >= 0, `${p.id} Szakmai környezet`);
+    assert.ok(leadIdx < szakmaiIdx, `${p.id} lead before Szakmai környezet`);
+    leadBeforeSzakmai++;
+    if (factsIdx >= 0) {
+      assert.ok(leadIdx > factsIdx, `${p.id} lead after identity facts`);
+      leadAfterIdentity++;
+    }
+
+    assert.ok(!/editorialSummary|sourceSummary|shortDescription/.test(html));
+  }
+
+  assert.equal(editorial, 30);
+  assert.equal(source, 30);
+  assert.equal(resolvedLead, 30);
+  assert.equal(renderedLead, 30);
+  assert.equal(leadBeforeSzakmai, 30);
+  assert.equal(leadAfterIdentity, 30);
+
+  for (const rep of representatives) {
+    const p = products.find((x) => x.name.includes(rep.substr));
+    assert.ok(p, `representative ${rep.substr}`);
+    const model = buildProductHubModel(p!)!;
+    assert.ok(model.lead && rep.needle.test(model.lead), rep.substr);
+    const html = renderToStaticMarkup(
+      createElement(ProductHubPage, { model }),
+    );
+    const marker = `<p class="page-lead">${model.lead}</p>`;
+    assert.ok(html.includes(marker));
+    assert.ok(
+      html.indexOf(marker) < html.indexOf("Szakmai környezet"),
+      `${rep.substr} before Szakmai`,
+    );
+    assert.ok(
+      html.indexOf(marker) > html.indexOf("product-header-facts"),
+      `${rep.substr} after identity`,
+    );
+  }
+
+  console.log("Product description visibility OK", {
+    editorial,
+    source,
+    resolvedLead,
+    renderedLead,
+  });
+}
+
 section("Locked data + hierarchy");
 {
   assert.equal(listProducts().length, expectedProductCountAfterClosure());

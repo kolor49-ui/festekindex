@@ -43,7 +43,6 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
         <article className="entity-card entity-seo">
           <div className="entity-meta">{model.kindLabel}</div>
           <h1>{model.h1}</h1>
-          {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
           {model.headerFacts.length > 0 ? (
             <dl className="org-meta-row product-header-facts">
@@ -61,6 +60,8 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
               ))}
             </dl>
           ) : null}
+
+          {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
           {hasContext ? (
             <section

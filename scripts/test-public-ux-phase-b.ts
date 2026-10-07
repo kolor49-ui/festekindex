@@ -78,10 +78,20 @@ section("Product hierarchy — AIR FLOW / Rapid / 7016");
   const airHtml = renderToStaticMarkup(
     createElement(ProductHubPage, { model: air }),
   );
-  const leadIdx = airHtml.indexOf(air.lead!);
+  const leadMarker = `<p class="page-lead">${air.lead}</p>`;
+  const leadIdx = airHtml.indexOf(leadMarker);
+  const factsIdx = airHtml.indexOf("product-header-facts");
   const techIdx = airHtml.indexOf('id="muszaki-adatok"');
   const ctxIdx = airHtml.indexOf('id="szakmai-kornyezet"');
   assert.ok(leadIdx >= 0 && techIdx > leadIdx, "summary before technical");
+  assert.ok(
+    factsIdx >= 0 && leadIdx > factsIdx,
+    "product lead after identity facts",
+  );
+  assert.ok(
+    ctxIdx >= 0 && leadIdx < ctxIdx,
+    "product lead before Szakmai környezet",
+  );
   assert.ok(ctxIdx >= 0 && ctxIdx < techIdx, "context before technical");
   assert.ok(airHtml.includes("Műszaki adatok"));
   assert.ok(air.packaging.length > 0);
