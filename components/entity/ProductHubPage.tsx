@@ -207,6 +207,38 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
             </section>
           ) : null}
 
+          {model.colorAvailability ? (
+            <section className="seo-section" id="szinvalasztek">
+              <h2 className="seo-heading">Színválaszték</h2>
+              {model.colorAvailability.groups.map((group) => (
+                <div key={group.systemId} className="product-color-group">
+                  {model.colorAvailability!.groups.length > 1 ||
+                  group.systemId === "color_system_ral" ? (
+                    <h3 className="product-color-system-heading">
+                      {group.systemName}
+                    </h3>
+                  ) : null}
+                  <ul className="product-color-list">
+                    {group.items.map((item) => (
+                      <li key={item.colorId} className="product-color-chip">
+                        {item.label}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              {model.colorAvailability.genericStatements.length > 0 ? (
+                <ul className="product-color-generic-list">
+                  {model.colorAvailability.genericStatements.map((text) => (
+                    <li key={text} className="product-color-generic">
+                      {text}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </section>
+          ) : null}
+
           {hasRelatedSection ? (
             <section
               className="seo-section hub-primary-section"

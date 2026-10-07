@@ -306,6 +306,59 @@ export type Product = EntityBase & {
   professionalDescription?: ProductProfessionalDescription;
   specifications?: ProductSpecification[];
   packagingOptions?: ProductPackagingOption[];
+  /**
+   * Verified Product color availability (Color System v1).
+   * Specific Color links and/or generic statements — never inferred.
+   */
+  colorAvailability?: ProductColorAvailability;
+};
+
+/** Non-EntityType Color System registry entry (RAL, manufacturer systems, …). */
+export type ColorSystem = {
+  id: string;
+  name: string;
+  slug: string;
+};
+
+/**
+ * Specific Color identity within a ColorSystem.
+ * No HEX/RGB / swatch data in v1 (licensing + evidence safety).
+ */
+export type Color = {
+  id: string;
+  colorSystemId: string;
+  /** System-local code (e.g. RAL "7016", manufacturer slug). */
+  code: string;
+  /** Optional official name when manufacturer-sourced (not invented). */
+  name?: string;
+  sourceIds?: string[];
+};
+
+/** Product → specific Color availability with provenance. */
+export type ProductColorAvailabilityEntry = {
+  colorId: string;
+  /** Manufacturer listing label when the Color is a RAL (or similar) code. */
+  labelOverride?: string;
+  sourceIds: string[];
+  verifiedAt: string;
+  status: "verified" | "draft";
+};
+
+/** Generic verified availability without specific Color codes. */
+export type ProductColorGenericStatement = {
+  id: string;
+  /** Public Hungarian statement — source-backed wording. */
+  text: string;
+  sourceIds: string[];
+  verifiedAt: string;
+  status: "verified" | "draft";
+};
+
+/** Embedded Product color availability — not a graph EntityType. */
+export type ProductColorAvailability = {
+  status: "verified" | "draft";
+  colors?: ProductColorAvailabilityEntry[];
+  genericStatements?: ProductColorGenericStatement[];
 };
 
 /** One public Termékleírás subsection (heading is user-facing Hungarian). */

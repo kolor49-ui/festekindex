@@ -36,6 +36,10 @@ import {
   type ProductRelatedLink,
 } from "@/lib/data/productHub";
 import {
+  buildColorAvailabilityDisplay,
+  type ProductColorAvailabilityDisplay,
+} from "@/lib/data/colorSystem";
+import {
   getCanonicalProductBrand,
   getCanonicalProductFamily,
   getCanonicalBrandOwner,
@@ -87,6 +91,8 @@ export type ProductHubModel = {
   relatedProducts: ProductRelatedLink[];
   technicalData: ProductTechDataGroup[];
   packaging: ProductPackagingDisplay[];
+  /** Verified Színválaszték — absent when no official color facts. */
+  colorAvailability?: ProductColorAvailabilityDisplay;
   knowledge: ProductKnowledgeLink[];
   /** Background section — only when blurbs add info beyond header facts. */
   background?: {
@@ -202,6 +208,7 @@ export function buildProductHubModel(
   const relatedProducts = getRelatedProductsForHub(product.id);
   const technicalData = getTechnicalDataForProduct(product.id);
   const packaging = getPackagingForProduct(product.id);
+  const colorAvailability = buildColorAvailabilityDisplay(product) ?? undefined;
   const knowledge = getKnowledgeForProduct(product.id);
   const { sources, lastVerifiedAt } = getSourcesForProduct(product.id);
 
@@ -335,6 +342,7 @@ export function buildProductHubModel(
     relatedProducts,
     technicalData,
     packaging,
+    colorAvailability,
     knowledge,
     background,
     sources,

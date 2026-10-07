@@ -13,6 +13,10 @@ import type {
 } from "./types";
 import { productDescriptionEnrichmentsV1 } from "./descriptionEnrichment";
 import { productProfessionalDescriptionEnrichmentsV1 } from "./professionalDescriptionEnrichment";
+import {
+  productColorAvailabilityV1,
+  type ProductColorAvailabilityPatch,
+} from "./colorSystemV1";
 
 function uniqueIds(ids: string[]): string[] {
   return [...new Set(ids.filter(Boolean))];
@@ -148,6 +152,37 @@ export function applyProductProfessionalDescriptionEnrichments(
   });
 }
 
+export function applyProductColorAvailability(
+  products: Product[],
+  patches: ProductColorAvailabilityPatch[] = productColorAvailabilityV1,
+): Product[] {
+  const byId = new Map(patches.map((p) => [p.productId, p]));
+  return products.map((product) => {
+    const patch = byId.get(product.id);
+    if (!patch) return product;
+    const { productId: _pid, ...availability } = patch;
+    const colorSourceIds = uniqueIds([
+      ...(availability.colors ?? []).flatMap((c) => c.sourceIds),
+      ...(availability.genericStatements ?? []).flatMap((g) => g.sourceIds),
+    ]);
+    return {
+      ...product,
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      status: product.status,
+      indexable: product.indexable,
+      type: "product" as const,
+      colorAvailability: {
+        status: availability.status,
+        colors: availability.colors,
+        genericStatements: availability.genericStatements,
+      },
+      sourceIds: uniqueIds([...product.sourceIds, ...colorSourceIds]),
+    };
+  });
+}
+
 export function applyFestekBazisEnrichmentV1(
   products: Product[],
   sources: Source[],
@@ -159,9 +194,11 @@ export function applyFestekBazisEnrichmentV1(
   relations: Relation[];
 } {
   return {
-    products: applyProductProfessionalDescriptionEnrichments(
-      applyProductDescriptionEnrichments(
-        applyProductEnrichments(products, enrichment.productPatches),
+    products: applyProductColorAvailability(
+      applyProductProfessionalDescriptionEnrichments(
+        applyProductDescriptionEnrichments(
+          applyProductEnrichments(products, enrichment.productPatches),
+        ),
       ),
     ),
     sources: mergeSourcesWithEnrichment(sources, enrichment.sources),
