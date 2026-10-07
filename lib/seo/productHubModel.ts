@@ -4,7 +4,12 @@
  * No product/brand/org hardcoding.
  */
 
-import type { Brand, Product, ProductFamily } from "@/lib/data/types";
+import type {
+  Brand,
+  Organization,
+  Product,
+  ProductFamily,
+} from "@/lib/data/types";
 import {
   getCanonicalUrl,
   getEntityHref,
@@ -34,6 +39,7 @@ import {
   getCanonicalProductBrand,
   getCanonicalProductFamily,
   getCanonicalBrandOwner,
+  getCanonicalFamilyManufacturer,
   getEntityNavigation,
   type NavContextItem,
   type NavCrumb,
@@ -159,10 +165,23 @@ export function buildProductHubModel(
 
   const family = getCanonicalProductFamily(product.id);
   const brand = getCanonicalProductBrand(product.id);
-  const owner = brand ? getCanonicalBrandOwner(brand.id) : undefined;
-  const organizationRole: "owner" | "manufacturer" | undefined = owner
-    ? "owner"
-    : undefined;
+  // Canonical org only: Brand --owns--> Org, else Family --manufactures--> Org.
+  // Never invent Brand (7016) or treat distributors as owner.
+  let owner: Organization | undefined;
+  let organizationRole: "owner" | "manufacturer" | undefined;
+  if (brand) {
+    const brandOwner = getCanonicalBrandOwner(brand.id);
+    if (brandOwner) {
+      owner = brandOwner;
+      organizationRole = "owner";
+    }
+  } else if (family) {
+    const mfr = getCanonicalFamilyManufacturer(family.id);
+    if (mfr) {
+      owner = mfr;
+      organizationRole = "manufacturer";
+    }
+  }
 
   const categories = getCategoriesForProduct(product.id);
   const technologies = getTechnologiesForProduct(product.id);

@@ -36,6 +36,29 @@ export function SurfaceHubPage({ model }: { model: SurfaceHubModel }) {
           <h1>{model.h1}</h1>
           {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
+          {model.products.length === 0 ? (
+            <section className="seo-section surface-empty-recovery" id="felulet-allapot">
+              <p className="org-section-note">
+                Ehhez a felülethez jelenleg még nincs kapcsolt termék a
+                FESTÉKINDEX-ben.
+              </p>
+              <div className="seo-links org-category-chips surface-recovery-links">
+                <Link href="/kategoriak" className="pill pill-link">
+                  Szakmai területek
+                </Link>
+                <Link href="/technologiak" className="pill pill-link">
+                  Technológiák
+                </Link>
+                <Link
+                  href={`/kereses?q=${encodeURIComponent(model.surface.name)}`}
+                  className="pill pill-link"
+                >
+                  Keresés: {model.surface.name}
+                </Link>
+              </div>
+            </section>
+          ) : null}
+
           {model.products.length > 0 ? (
             <section className="seo-section" id="kapcsolodo-termekek">
               <h2 className="seo-heading">Kapcsolódó termékek</h2>

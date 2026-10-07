@@ -13,10 +13,10 @@ type NavCategory = {
 
 export function AppShell({
   categories,
-  crumb,
   children,
 }: {
   categories: NavCategory[];
+  /** @deprecated Unused — page Breadcrumbs are the canonical location signal. */
   crumb?: string;
   children: React.ReactNode;
 }) {
@@ -47,8 +47,10 @@ export function AppShell({
           >
             ☰
           </button>
-          <div className="crumb">
-            FESTÉKINDEX / <b>{crumb ?? "Minden terület"}</b>
+          {/* Global site scope — not a page breadcrumb (those live in each Hub). */}
+          <div className="crumb site-scope">
+            <Link href="/">FESTÉKINDEX</Link>
+            <span className="site-scope-tag">A festékipar szakmai indexe</span>
           </div>
           <div className="toplinks">
             <Link href="/cegek">Cégek</Link>

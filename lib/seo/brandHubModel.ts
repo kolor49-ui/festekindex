@@ -34,7 +34,8 @@ export type BrandHubModel = {
   canonicalUrl: string;
   breadcrumbs: { name: string; path: string }[];
   indexable: boolean;
-  metaChips: { label: string; value: string }[];
+  /** Optional href for entity-backed chips (owner/manufacturer). Counts stay plain. */
+  metaChips: { label: string; value: string; href?: string }[];
   families: BrandFamilyBlock[];
   directProducts: BrandPortfolioProduct[];
   allProductCount: number;
@@ -199,11 +200,13 @@ export function buildBrandHubModel(brand: Brand): BrandHubModel | null {
       ? ownerOrgs
       : portfolio.organizations.slice(0, 1);
 
-  const metaChips: { label: string; value: string }[] = [];
-  if (displayOrgs.length) {
+  const metaChips: { label: string; value: string; href?: string }[] = [];
+  // One chip per unambiguous org — crawlable via getEntityHref (same as owner section).
+  for (const o of displayOrgs) {
     metaChips.push({
-      label: ownerChipLabel(displayOrgs),
-      value: displayOrgs.map((o) => o.organization.name).join(", "),
+      label: ownerChipLabel([o]),
+      value: o.organization.name,
+      href: o.href,
     });
   }
   if (portfolio.families.length) {

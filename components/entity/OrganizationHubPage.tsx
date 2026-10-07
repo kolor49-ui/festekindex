@@ -141,9 +141,11 @@ export function OrganizationHubPage({
                             >
                               {family.name}
                             </Link>
-                            <span className="org-portfolio-count">
-                              {family.productCount} termék
-                            </span>
+                            {family.productCount > 0 ? (
+                              <span className="org-portfolio-count">
+                                {family.productCount} termék
+                              </span>
+                            ) : null}
                           </div>
                           {family.description ? (
                             <p className="org-portfolio-desc">
@@ -196,11 +198,13 @@ export function OrganizationHubPage({
                         {family.description}
                       </p>
                     ) : null}
-                    <div className="org-portfolio-family-head">
-                      <span className="org-portfolio-count">
-                        {family.productCount} termék
-                      </span>
-                    </div>
+                    {family.productCount > 0 ? (
+                      <div className="org-portfolio-family-head">
+                        <span className="org-portfolio-count">
+                          {family.productCount} termék
+                        </span>
+                      </div>
+                    ) : null}
                     <ProductLinkList products={family.products} />
                     {family.productCount > PREVIEW_PRODUCTS ? (
                       <p className="org-portfolio-brand-all">

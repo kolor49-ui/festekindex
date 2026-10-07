@@ -205,6 +205,37 @@ a {
   color: #1d6f9f;
 }
 
+/* Global topbar site scope — not a page breadcrumb */
+.crumb.site-scope {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.crumb.site-scope a {
+  color: #1d6f9f;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.crumb.site-scope a:hover,
+.crumb.site-scope a:focus-visible {
+  text-decoration: underline;
+}
+
+.site-scope-tag {
+  font-size: 10px;
+  color: #71808c;
+  letter-spacing: 0.2px;
+  text-transform: none;
+}
+
 .toplinks {
   margin-left: auto;
   display: flex;
@@ -361,9 +392,15 @@ a {
 }
 
 .quick button:hover,
-.quick a:hover {
+.quick a:hover,
+.quick a:focus-visible {
   border-color: #5d98bc;
   color: white;
+}
+
+.quick a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .stats {
@@ -899,6 +936,23 @@ a {
   font-weight: 700;
   color: #1a2430;
   letter-spacing: -0.2px;
+}
+
+.org-hub .org-meta-chip dd a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.org-hub .org-meta-chip dd a:hover,
+.org-hub .org-meta-chip dd a:focus-visible {
+  color: #176fa8;
+  text-decoration: underline;
+}
+
+.surface-hub .surface-recovery-links {
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .org-hub .org-brand-grid {

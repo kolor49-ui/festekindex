@@ -132,9 +132,18 @@ export function BrandHubPage({ model }: { model: BrandHubModel }) {
           {model.metaChips.length > 0 ? (
             <dl className="org-meta-row">
               {model.metaChips.map((chip) => (
-                <div key={chip.label} className="org-meta-chip">
+                <div
+                  key={`${chip.label}:${chip.href ?? chip.value}`}
+                  className="org-meta-chip"
+                >
                   <dt>{chip.label}</dt>
-                  <dd>{chip.value}</dd>
+                  <dd>
+                    {chip.href ? (
+                      <Link href={chip.href}>{chip.value}</Link>
+                    ) : (
+                      chip.value
+                    )}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -157,9 +166,11 @@ export function BrandHubPage({ model }: { model: BrandHubModel }) {
                       >
                         {family.name}
                       </Link>
-                      <span className="org-portfolio-count">
-                        {family.productCount} termék
-                      </span>
+                      {family.productCount > 0 ? (
+                        <span className="org-portfolio-count">
+                          {family.productCount} termék
+                        </span>
+                      ) : null}
                     </div>
                     {family.description ? (
                       <p className="org-portfolio-desc">{family.description}</p>

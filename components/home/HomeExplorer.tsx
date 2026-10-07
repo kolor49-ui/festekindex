@@ -100,9 +100,13 @@ export function HomeExplorer({
         </form>
         <div className="quick">
           {QUICK.map((q) => (
-            <button key={q} type="button" onClick={() => runSearch(q)}>
+            <Link
+              key={q}
+              href={`/kereses?q=${encodeURIComponent(q)}`}
+              className="quick-chip"
+            >
               {q}
-            </button>
+            </Link>
           ))}
         </div>
       </section>

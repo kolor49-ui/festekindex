@@ -1,6 +1,7 @@
 /**
- * SSR page model for manufacturer Organization hubs.
+ * SSR page model for Organization hubs.
  * Editorial SEO overrides are slug-keyed and optional — graph data always from repository.
+ * Public role labels derive from Organization.roles (never hardcoded Gyártó).
  */
 
 import type { Organization, Source } from "@/lib/data/types";
@@ -17,6 +18,7 @@ import {
 } from "@/lib/data/organizationPortfolio";
 import { ORG_HUB_SEO, type OrgHubSeoOverride } from "@/lib/seo/hubSeoOverrides";
 import { evaluatePublicIndexability } from "@/lib/seo/publicIndexability";
+import { resolveOrganizationPublicRole } from "@/lib/seo/organizationPublicRole";
 import { getEntityBreadcrumb } from "@/lib/navigation/entityNavigation";
 
 export type { OrgHubSeoOverride };
@@ -198,8 +200,9 @@ export function buildOrganizationHubModel(
     portfolio.brandGroups.reduce((n, g) => n + g.families.length, 0) +
     portfolio.orphanFamilies.length;
 
+  const publicRole = resolveOrganizationPublicRole(organization);
   const metaChips: { label: string; value: string }[] = [
-    { label: "Szerep", value: "Gyártó" },
+    { label: "Szerep", value: publicRole },
   ];
   if (organization.country) {
     metaChips.push({ label: "Ország", value: organization.country });
@@ -230,7 +233,7 @@ export function buildOrganizationHubModel(
   return {
     organization,
     portfolio,
-    kindLabel: "Gyártó",
+    kindLabel: publicRole,
     h1,
     title,
     lead,

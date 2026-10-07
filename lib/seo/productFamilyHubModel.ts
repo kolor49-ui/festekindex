@@ -191,14 +191,21 @@ export function buildProductFamilyHubModel(
     portfolio.categories,
   );
 
-  // Header facts: Márka + counts. Organization lives in background section
-  // to avoid duplicating the same nav context three times.
+  // Header facts: Márka + canonical Gyártó/Tulajdonos + counts.
+  // Organization uses Navigation Standard only (owns / manufactures) — never invent Brand for 7016.
   const headerFacts: FamilyFact[] = [];
   if (publishedBrand) {
     headerFacts.push({
       label: "Márka",
       value: publishedBrand.name,
       href: getEntityHref(publishedBrand),
+    });
+  }
+  if (organization && role) {
+    headerFacts.push({
+      label: orgLabel(role),
+      value: organization.name,
+      href: getEntityHref(organization),
     });
   }
   if (portfolio.products.length) {

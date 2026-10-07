@@ -251,10 +251,14 @@ const mdfHtml = renderToStaticMarkup(
 );
 assert.ok(!mdfHtml.includes("Kapcsolódó termékek"));
 assert.ok(!mdfHtml.includes("Termékcsaládok"));
-assert.ok(!mdfHtml.includes("Márkák"));
-assert.ok(!mdfHtml.includes("Szakmai területek"));
-assert.ok(!mdfHtml.includes("Technológiák"));
+assert.ok(!mdfHtml.includes(">Márkák<"));
+// Empty related sections omitted — recovery links to index lists are allowed (Phase A)
+assert.ok(!mdfHtml.includes("seo-heading\">Szakmai területek"));
+assert.ok(!mdfHtml.includes("seo-heading\">Technológiák"));
 assert.ok(!mdfHtml.includes("Kapcsolódó szakmai tartalom"));
+assert.ok(mdfHtml.includes("felulet-allapot"));
+assert.ok(mdfHtml.includes('href="/kategoriak"'));
+assert.ok(mdfHtml.includes('href="/technologiak"'));
 
 const teglaHtml = renderToStaticMarkup(
   createElement(SurfaceHubPage, { model: teglaModel }),
