@@ -164,7 +164,7 @@ function resolveOrganizationContext(
       mode: "split",
       heading: "Cégek",
       productHeading: "Cégek",
-      additionalHeading: "További kapcsolódó cégek",
+      additionalHeading: "Egyéb cégek",
       productOrgs: orgPresentation.productOrgs,
       additionalOrgs: orgPresentation.additionalOrgs,
       unified: orgPresentation.unified,

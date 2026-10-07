@@ -27,6 +27,19 @@ import {
 } from "../lib/data/repository";
 import { allRelations } from "../lib/data/imports/allRelations";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
+import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
 import { sources as sourcesBase } from "../lib/data/sources";
 import { festekBazisV02Seed } from "../lib/data/imports/festekBazisV02Map";
 import { mergeById } from "../lib/data/imports/merge";
@@ -243,7 +256,7 @@ assert.equal(familySm.length, 3);
 console.log("ProductFamily OK");
 
 section("Product / Surface locks");
-assert.equal(listProducts().length, 27);
+assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
   0,
@@ -484,23 +497,23 @@ const productUses = allRelations.filter(
 const ats = allRelations.filter(
   (r) => r.relationType === "applicableToSurface" && r.status === "active",
 );
-assert.equal(products.length, 27);
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(diluted, 6);
+assert.equal(products.length, expectedProductCountAfterClosure());
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(categories.length, 20);
-assert.equal(productCat.length, 24);
+assert.equal(productCat.length, expectedProductCategoryRelationsAfterClosure());
 assert.equal(listTechnologies().length, 9);
-assert.equal(productUses.length, 60);
+assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(listSurfaces().length, 15);
-assert.equal(ats.length, 48);
+assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(listKnowledge().length, 2);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 const globalSources = mergeById(
   mergeById(sourcesBase, festekBazisV02Seed.sources),
   festekBazisEnrichmentV1.sources,
 );
-assert.equal(globalSources.length, 76);
+assert.equal(globalSources.length, expectedMergedSourcesAfterClosure());
 assert.equal(
   allRelations.filter(
     (r) =>

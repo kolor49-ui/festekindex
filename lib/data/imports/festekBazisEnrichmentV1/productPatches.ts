@@ -20,13 +20,16 @@ import { valmorPlasterPatch } from "./patches/valmorPlaster";
 import { factorPergolaPatch } from "./patches/factorPergola";
 import { factorAquaPrimerPatch } from "./patches/factorAquaPrimer";
 import { factorAquaParquetPatch } from "./patches/factorAquaParquet";
+import { factorAquaGlazePatch } from "./patches/factorAquaGlaze";
 import { factorParquetPatch } from "./patches/factorParquet";
 import { factorBoatPatch } from "./patches/factorBoat";
 import { cororRapidPrimerPatch } from "./patches/cororRapidPrimer";
 import { cororRapidEnamelPatch } from "./patches/cororRapidEnamel";
+import { cororRapidAquaEnamelPatch } from "./patches/cororRapidAquaEnamel";
 import { cororRapidStripperPatch } from "./patches/cororRapidStripper";
 import { cororIndPrimerPatch } from "./patches/cororIndPrimer";
 import { cororIndEnamelPatch } from "./patches/cororIndEnamel";
+import { cororIndS31Patch } from "./patches/cororIndS31";
 import { cororAromaticPatch } from "./patches/cororAromatic";
 import { cororSyntheticPatch } from "./patches/cororSynthetic";
 import { pf7016WallPatch } from "./patches/pf7016Wall";
@@ -49,13 +52,16 @@ export const productPatchesV1: ProductEnrichmentPatch[] = [
   factorPergolaPatch,
   factorAquaPrimerPatch,
   factorAquaParquetPatch,
+  factorAquaGlazePatch,
   factorParquetPatch,
   factorBoatPatch,
   cororRapidPrimerPatch,
   cororRapidEnamelPatch,
+  cororRapidAquaEnamelPatch,
   cororRapidStripperPatch,
   cororIndPrimerPatch,
   cororIndEnamelPatch,
+  cororIndS31Patch,
   cororAromaticPatch,
   cororSyntheticPatch,
   pf7016WallPatch,

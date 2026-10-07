@@ -1242,6 +1242,115 @@ a {
   margin-top: 32px;
 }
 
+/* —— Phase B: information hierarchy —— */
+.org-hub .hub-primary-section {
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+.org-hub .hub-primary-heading {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a2430;
+  letter-spacing: -0.01em;
+}
+
+.org-hub .hub-secondary-cluster {
+  margin-top: 8px;
+  padding-top: 4px;
+  border-top: 1px solid #e8ecf0;
+}
+
+.org-hub .hub-secondary-cluster .hub-secondary-section {
+  margin-top: 20px;
+  padding-top: 14px;
+}
+
+.org-hub .hub-secondary-heading {
+  font-size: 14px;
+  font-weight: 650;
+  color: #2a3844;
+}
+
+.org-hub .hub-supporting-cluster {
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #eef1f4;
+}
+
+.org-hub .hub-supporting-cluster > .org-section-note {
+  margin-bottom: 8px;
+}
+
+.org-hub .hub-supporting-section {
+  margin-top: 18px;
+  padding-top: 12px;
+}
+
+.org-hub .hub-supporting-heading {
+  font-size: 13px;
+  font-weight: 650;
+  color: #4a5a68;
+  letter-spacing: 0.01em;
+}
+
+.org-hub .hub-related-pills {
+  flex-wrap: wrap;
+}
+
+.org-hub .hub-related-explore {
+  margin-top: 28px;
+  padding-top: 20px;
+}
+
+.org-hub .hub-related-explore-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.org-hub .hub-related-explore-group {
+  min-width: 0;
+}
+
+.org-hub .hub-related-explore-title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5a6a78;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.product-hub .product-context-section {
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.product-hub .product-context-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.product-hub .product-context-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5a6a78;
+}
+
+@media (max-width: 640px) {
+  .org-hub .hub-secondary-cluster,
+  .org-hub .hub-supporting-cluster {
+    border-top-color: #e8ecf0;
+  }
+
+  .org-hub .hub-related-explore-groups {
+    gap: 14px;
+  }
+}
+
 .org-hub .org-sources-details {
   margin-top: 6px;
   font-size: 12px;

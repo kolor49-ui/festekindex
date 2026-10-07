@@ -1,0 +1,138 @@
+import type { ProductEnrichmentPatch } from "../types";
+
+const V = "2026-10-07";
+const PAGE = "src_factor_aqua_glaze";
+const TDS = "src_factor_aqua_glaze_tds";
+
+export const factorAquaGlazePatch: ProductEnrichmentPatch = {
+  productId: "prod_factor_aqua_glaze",
+  officialUrl:
+    "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-aqua-akril-vastaglazur-p-325",
+  productClass: "varnish",
+  sourceSummary:
+    "FACTOR Aqua Akril Vastaglazúr vizes bázisú, selyemfényű bel- és kültéri akril vastaglazúr. A műszaki adatlap szerint kiadósság 12–14 m²/l egy rétegben; átvonhatóság 4 óra (25 °C); javasolt 2–3 réteg. Hígítás vízzel; felhordás speciális vizes lazúr ecsettel.",
+  sourceSummarySourceIds: [PAGE, TDS],
+  additionalSourceIds: [PAGE, TDS],
+  packagingOptions: [
+    {
+      id: "pack_factor_aqua_glaze_0_75l",
+      amount: 0.75,
+      unit: "l",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      id: "pack_factor_aqua_glaze_2_5l",
+      amount: 2.5,
+      unit: "l",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      id: "pack_factor_aqua_glaze_5l",
+      amount: 5,
+      unit: "l",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      id: "pack_factor_aqua_glaze_20l",
+      amount: 20,
+      unit: "l",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+  ],
+  specifications: [
+    {
+      key: "coverage",
+      value: { kind: "range_unit", min: 12, max: 14, unit: "m2_per_l" },
+      condition: { basis: "per_coat" },
+      rawValue: "Kiadósság: 12-14 m2/liter egy rétegben",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "dust_dry_time",
+      value: { kind: "duration", value: 2, unit: "h" },
+      condition: { temperatureC: 25, note: "maximum; 1. száradási fokozat" },
+      rawValue: "Száradási idő: 25°C-on 1.fokozat max. 2 óra",
+      sourceIds: [TDS],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "full_cure_time",
+      value: { kind: "duration", value: 24, unit: "h" },
+      condition: { temperatureC: 25, note: "maximum; 5. száradási fokozat" },
+      rawValue: "Száradási idő: 25°C-on 5.fokozat max. 24 óra",
+      sourceIds: [TDS],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "recoat_time",
+      value: { kind: "duration", value: 4, unit: "h" },
+      condition: { temperatureC: 25 },
+      rawValue: "Átfesthetőség: (25 °C-on): 4 óra",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: { kind: "percentage", value: 15 },
+      condition: { note: "első réteg; hígítószer: víz" },
+      rawValue: "Az első réteg esetén 15%-os hígítást javaslunk",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "dilution",
+      value: { kind: "percentage", value: 10 },
+      condition: { note: "további rétegek; hígítószer: víz" },
+      rawValue: "a továbbiakban 10%-os hígítást javaslunk",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "coat_count",
+      value: { kind: "range", min: 2, max: 3 },
+      rawValue: "Javasolt rétegszám 2-3 réteg",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "gloss",
+      value: { kind: "enum", value: "satin" },
+      rawValue: "Fényesség: selyemfényű",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "binder",
+      value: { kind: "text", text: "akrilgyanta" },
+      rawValue: "Akrilgyanta tartalmának köszönhetően… / Vizes diszperziós kötőanyag",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+    {
+      key: "application_environment",
+      value: { kind: "multi_enum", values: ["interior", "exterior"] },
+      rawValue: "kül- és beltéri fafelületek",
+      sourceIds: [TDS, PAGE],
+      verifiedAt: V,
+      status: "verified",
+    },
+  ],
+};

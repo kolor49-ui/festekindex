@@ -524,6 +524,48 @@
         "src_7016_wall"
       ],
       "updatedAt": "2026-10-05"
+    },
+    {
+      "id": "prod_factor_aqua_glaze",
+      "type": "product",
+      "name": "FACTOR Aqua Akril Vastaglazúr",
+      "slug": "factor-aqua-akril-vastaglazur",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_factor_aqua_glaze"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_coror_rapid_aqua_enamel",
+      "type": "product",
+      "name": "COROR Rapid Aqua Zománcfesték",
+      "slug": "coror-rapid-aqua-zomancfestek",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "prod_coror_ind_s31",
+      "type": "product",
+      "name": "COROR Industry S-31 Hígító",
+      "slug": "coror-industry-s-31-higito",
+      "status": "published",
+      "indexable": true,
+      "shortDescription": "",
+      "body": "",
+      "sourceIds": [
+        "src_coror_ind_s31"
+      ],
+      "updatedAt": "2026-10-07"
     }
   ],
   "surfaces": [
@@ -2161,6 +2203,180 @@
       "sourceIds": [
         "src_7016_wall"
       ]
+    },
+    {
+      "id": "rel_pf_factor_aqua_prod_factor_aqua_glaze",
+      "fromEntityId": "pf_factor_aqua",
+      "toEntityId": "prod_factor_aqua_glaze",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_glaze"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_rapid_prod_coror_rapid_aqua_enamel",
+      "fromEntityId": "pf_coror_rapid",
+      "toEntityId": "prod_coror_rapid_aqua_enamel",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_pf_coror_industry_prod_coror_ind_s31",
+      "fromEntityId": "pf_coror_industry",
+      "toEntityId": "prod_coror_ind_s31",
+      "relationType": "hasProduct",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_ind_s31"
+      ]
+    },
+    {
+      "id": "rel_prod_factor_aqua_glaze_belongsToCategory_cat_faipari_bevonatok",
+      "fromEntityId": "prod_factor_aqua_glaze",
+      "toEntityId": "cat_faipari_bevonatok",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_belongsToCategory_cat_ipari_korroziovedelem",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "cat_ipari_korroziovedelem",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_coror_ind_s31_belongsToCategory_cat_higito_segedanyag",
+      "fromEntityId": "prod_coror_ind_s31",
+      "toEntityId": "cat_higito_segedanyag",
+      "relationType": "belongsToCategory",
+      "status": "active",
+      "sourceIds": []
+    },
+    {
+      "id": "rel_prod_factor_aqua_glaze_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_factor_aqua_glaze",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_factor_aqua_glaze"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_acel",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_aluminium",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_aluminium",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_horganyzott_acel",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_horganyzott_acel",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_rez",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_rez",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_muanyag",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_muanyag",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_mdf",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_mdf",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_keramia_csempe",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_keramia_csempe",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_osb",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_osb",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_fa",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_fa",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_beton",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_beton",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
+    },
+    {
+      "id": "rel_prod_coror_rapid_aqua_enamel_applicableToSurface_surface_vakolat",
+      "fromEntityId": "prod_coror_rapid_aqua_enamel",
+      "toEntityId": "surface_vakolat",
+      "relationType": "applicableToSurface",
+      "status": "active",
+      "sourceIds": [
+        "src_coror_rapid_aqua_enamel"
+      ]
     }
   ],
   "sources": [
@@ -2404,6 +2620,30 @@
       "publisher": "FESTÉK BÁZIS Zrt.",
       "sourceType": "official_manufacturer",
       "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "src_factor_aqua_glaze",
+      "title": "FACTOR Aqua Akril Vastaglazúr",
+      "url": "https://www.festekbazis.hu/hu/termekeink/factor-a-fara-factor-aqua-akril-vastaglazur-p-325",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "id": "src_coror_rapid_aqua_enamel",
+      "title": "COROR Rapid Aqua Zománcfesték",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-rapid-aqua-zomancfestek-p-460",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "id": "src_coror_ind_s31",
+      "title": "COROR Industry S-31 Hígító",
+      "url": "https://www.festekbazis.hu/hu/termekeink/coror-a-femre-coror-indrusty-aromas-higito-p-443",
+      "publisher": "FESTÉK BÁZIS Zrt.",
+      "sourceType": "official_manufacturer",
+      "verifiedAt": "2026-10-07"
     }
   ]
 }

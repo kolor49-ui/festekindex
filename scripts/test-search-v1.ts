@@ -16,6 +16,19 @@ import {
   SEARCH_FULL_LIMIT,
   SEARCH_TYPE_LABEL_HU,
 } from "../lib/search";
+import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
 import { getCanonicalBrandOwner } from "../lib/navigation/entityNavigation";
 import { listProducts, listSurfaces } from "../lib/data/repository";
 
@@ -49,7 +62,7 @@ section("eligibility");
 {
   const catalog = buildSearchCatalog();
   const counts = countSearchCatalogByType();
-  assert.equal(counts.product, 27, "all FB products searchable");
+  assert.equal(counts.product, expectedProductCountAfterClosure(), "all FB products searchable");
   assert.equal(counts.surface, 15, "all surfaces searchable");
   assert.equal(counts.organization, 9);
   assert.equal(counts.brand, 13, "published brands only");
@@ -268,7 +281,7 @@ console.log("surface context OK");
 
 section("dataset lock smoke");
 {
-  assert.equal(listProducts().length, 27);
+  assert.equal(listProducts().length, expectedProductCountAfterClosure());
   assert.equal(listSurfaces().length, 15);
   let specs = 0;
   let packs = 0;
@@ -276,8 +289,8 @@ section("dataset lock smoke");
     specs += p.specifications?.length ?? 0;
     packs += p.packagingOptions?.length ?? 0;
   }
-  assert.equal(specs, 203);
-  assert.equal(packs, 68);
+  assert.equal(specs, expectedSpecCountAfterClosure());
+  assert.equal(packs, expectedPackagingCountAfterClosure());
 }
 console.log("dataset OK");
 

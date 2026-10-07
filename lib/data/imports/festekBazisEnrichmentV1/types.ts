@@ -18,11 +18,21 @@ export type ProductEnrichmentPatch = {
   productClass?: ProductClass;
   sourceSummary?: string;
   sourceSummarySourceIds?: string[];
+  /** FESTÉKINDEX professional lead — official-source facts only. */
+  editorialSummary?: string;
   /** Absolute list of verified/draft specs for this product (replaces empty). */
   specifications?: ProductSpecification[];
   packagingOptions?: ProductPackagingOption[];
   /** Extra entity-level source ids to merge into Product.sourceIds. */
   additionalSourceIds?: string[];
+};
+
+/** Description-only overlay (Product Description Enrichment v1). */
+export type ProductDescriptionEnrichment = {
+  productId: string;
+  sourceSummary: string;
+  sourceSummarySourceIds: string[];
+  editorialSummary: string;
 };
 
 export type FestekBazisEnrichmentV1 = {

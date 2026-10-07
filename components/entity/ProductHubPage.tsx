@@ -9,20 +9,21 @@ import {
 
 /**
  * Product hub v2.1 — SSR HTML, repository-driven.
- * Additive: Műszaki adatok + Kiszerelések + related products.
+ * Phase B: identity → context → technical → packaging → related → background → sources.
  * Never renders internal enums, rawValue, sourceIds, relation type names.
  */
 export function ProductHubPage({ model }: { model: ProductHubModel }) {
   const jsonLd = buildProductHubJsonLd(model);
-  const hasTechSurfaces =
-    model.technologies.length > 0 || model.surfaces.length > 0;
+  const hasContext =
+    model.categories.length > 0 ||
+    model.technologies.length > 0 ||
+    model.surfaces.length > 0;
   const hasSystemSequence =
     model.systemHasSequence &&
     (model.systemPeers.length > 1 ||
       (model.systemPeers.length === 1 && !model.systemPeers[0]?.isCurrent));
   const relatedExtras = model.relatedProducts.filter((r) => {
     if (!hasSystemSequence) return true;
-    // Already shown in sequenced system list
     return !model.systemPeers.some((p) => p.id === r.id && !p.isCurrent);
   });
   const hasRelatedSection =
@@ -61,9 +62,73 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
             </dl>
           ) : null}
 
+          {hasContext ? (
+            <section
+              className="seo-section product-context-section hub-secondary-section"
+              id="szakmai-kornyezet"
+            >
+              <h2 className="seo-heading hub-secondary-heading">
+                Szakmai környezet
+              </h2>
+              <div className="product-context-groups">
+                {model.categories.length > 0 ? (
+                  <div className="product-context-group" id="szakteruletek">
+                    <h3 className="product-context-label">Szakmai területek</h3>
+                    <div className="seo-links org-category-chips hub-related-pills">
+                      {model.categories.map((c) => (
+                        <Link
+                          key={c.id}
+                          href={c.href}
+                          className="pill pill-link"
+                        >
+                          {c.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {model.technologies.length > 0 ? (
+                  <div
+                    className="product-context-group"
+                    id="technologiak"
+                  >
+                    <h3 className="product-context-label">Technológiák</h3>
+                    <div className="seo-links hub-related-pills">
+                      {model.technologies.map((t) => (
+                        <Link
+                          key={t.id}
+                          href={t.href}
+                          className="pill pill-link"
+                        >
+                          {t.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {model.surfaces.length > 0 ? (
+                  <div className="product-context-group" id="feluletek">
+                    <h3 className="product-context-label">Felületek</h3>
+                    <div className="seo-links hub-related-pills">
+                      {model.surfaces.map((s) => (
+                        <Link
+                          key={s.id}
+                          href={s.href}
+                          className="pill pill-link"
+                        >
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </section>
+          ) : null}
+
           {model.technicalData.length > 0 ? (
-            <section className="seo-section" id="muszaki-adatok">
-              <h2 className="seo-heading">Műszaki adatok</h2>
+            <section className="seo-section hub-primary-section" id="muszaki-adatok">
+              <h2 className="seo-heading hub-primary-heading">Műszaki adatok</h2>
               {model.technicalData.map((group) => (
                 <div
                   key={group.key}
@@ -78,7 +143,10 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
                   ) : null}
                   <dl className="product-tech-list">
                     {group.items.map((item) => (
-                      <div key={`${item.key}-${item.value}`} className="product-tech-row">
+                      <div
+                        key={`${item.key}-${item.value}`}
+                        className="product-tech-row"
+                      >
                         <dt>{item.label}</dt>
                         <dd>
                           <span className="product-tech-value">{item.value}</span>
@@ -109,61 +177,14 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
             </section>
           ) : null}
 
-          {model.categories.length > 0 ? (
-            <section className="seo-section" id="szakteruletek">
-              <h2 className="seo-heading">Szakmai területek</h2>
-              <div className="seo-links org-category-chips">
-                {model.categories.map((c) => (
-                  <Link key={c.id} href={c.href} className="pill pill-link">
-                    {c.name}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          ) : null}
-
-          {hasTechSurfaces ? (
-            <section className="seo-section" id="technologiak-feluletek">
-              <div className="org-tech-surface-grid">
-                {model.technologies.length > 0 ? (
-                  <div className="org-tech-surface-col">
-                    <h2 className="seo-heading">Technológiák</h2>
-                    <div className="seo-links">
-                      {model.technologies.map((t) => (
-                        <Link
-                          key={t.id}
-                          href={t.href}
-                          className="pill pill-link"
-                        >
-                          {t.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-                {model.surfaces.length > 0 ? (
-                  <div className="org-tech-surface-col">
-                    <h2 className="seo-heading">Felületek</h2>
-                    <div className="seo-links">
-                      {model.surfaces.map((s) => (
-                        <Link
-                          key={s.id}
-                          href={s.href}
-                          className="pill pill-link"
-                        >
-                          {s.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-            </section>
-          ) : null}
-
           {hasRelatedSection ? (
-            <section className="seo-section" id="kapcsolodo-termekek">
-              <h2 className="seo-heading">Rendszer és kapcsolódó termékek</h2>
+            <section
+              className="seo-section hub-primary-section"
+              id="kapcsolodo-termekek"
+            >
+              <h2 className="seo-heading hub-primary-heading">
+                Rendszer és kapcsolódó termékek
+              </h2>
 
               {hasSystemSequence ? (
                 <ol className="product-system-list product-system-sequenced">
@@ -231,8 +252,13 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
           ) : null}
 
           {model.background ? (
-            <section className="seo-section" id="marka-hatter">
-              <h2 className="seo-heading">{model.background.heading}</h2>
+            <section
+              className="seo-section hub-supporting-section"
+              id="marka-hatter"
+            >
+              <h2 className="seo-heading hub-supporting-heading">
+                {model.background.heading}
+              </h2>
               <div className="product-background">
                 {model.background.brand ? (
                   <div className="product-background-block">
@@ -291,8 +317,13 @@ export function ProductHubPage({ model }: { model: ProductHubModel }) {
           ) : null}
 
           {model.knowledge.length > 0 ? (
-            <section className="seo-section" id="tudastar">
-              <h2 className="seo-heading">Kapcsolódó szakmai tartalom</h2>
+            <section
+              className="seo-section hub-supporting-section"
+              id="tudastar"
+            >
+              <h2 className="seo-heading hub-supporting-heading">
+                Kapcsolódó szakmai tartalom
+              </h2>
               <ul className="seo-knowledge-list">
                 {model.knowledge.map((k) => (
                   <li key={k.id}>

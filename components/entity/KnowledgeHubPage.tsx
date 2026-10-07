@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Breadcrumbs } from "@/components/entity/EntityUI";
+import { RelatedExploreSection } from "@/components/entity/HubHierarchy";
 import { JsonLdScript } from "@/lib/seo/jsonld";
 import { renderKnowledgeArticleBody } from "@/lib/content/knowledgeArticle";
 import {
@@ -9,33 +9,10 @@ import {
 } from "@/lib/seo/knowledgeHubModel";
 import type { KnowledgeLink } from "@/lib/data/knowledgeHub";
 
-function RelatedChips({
-  id,
-  heading,
-  items,
-}: {
-  id: string;
-  heading: string;
-  items: KnowledgeLink[];
-}) {
-  if (!items.length) return null;
-  return (
-    <section className="seo-section" id={id}>
-      <h2 className="seo-heading">{heading}</h2>
-      <div className="seo-links org-category-chips">
-        {items.map((item) => (
-          <Link key={item.id} href={item.href} className="pill pill-link">
-            {item.name}
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 /**
  * Knowledge Hub v1 — SSR HTML.
- * DIRECT-FIRST related context; structured article body; Knowledge sources only.
+ * Phase B: article remains primary; related navigation grouped under one
+ * supporting explore section (not an equal-weight chip cloud).
  * Never renders internal enums, relation types, or graph jargon.
  */
 export function KnowledgeHubPage({ model }: { model: KnowledgeHubModel }) {
@@ -50,6 +27,55 @@ export function KnowledgeHubPage({ model }: { model: KnowledgeHubModel }) {
     seenArea.add(c.id);
     areaLinks.push(c);
   }
+
+  const relatedGroups = [
+    {
+      id: "kapcsolodo-technologiak",
+      heading: knowledgeSectionHeading("technologies", d.technologies.length),
+      items: d.technologies,
+    },
+    {
+      id: "szakmai-terulet",
+      heading: knowledgeSectionHeading("categories", areaLinks.length),
+      items: areaLinks,
+    },
+    {
+      id: "kapcsolodo-termekek",
+      heading: knowledgeSectionHeading("products", d.products.length),
+      items: d.products,
+    },
+    {
+      id: "kapcsolodo-feluletek",
+      heading: knowledgeSectionHeading("surfaces", d.surfaces.length),
+      items: d.surfaces,
+    },
+    {
+      id: "kapcsolodo-termekcsaladok",
+      heading: knowledgeSectionHeading(
+        "productFamilies",
+        d.productFamilies.length,
+      ),
+      items: d.productFamilies,
+    },
+    {
+      id: "kapcsolodo-markak",
+      heading: knowledgeSectionHeading("brands", d.brands.length),
+      items: d.brands,
+    },
+    {
+      id: "kapcsolodo-cegek",
+      heading: knowledgeSectionHeading(
+        "organizations",
+        d.organizations.length,
+      ),
+      items: d.organizations,
+    },
+    {
+      id: "osszehasonlitasok",
+      heading: knowledgeSectionHeading("comparisons", d.comparisons.length),
+      items: d.comparisons,
+    },
+  ];
 
   return (
     <main className="main">
@@ -71,65 +97,7 @@ export function KnowledgeHubPage({ model }: { model: KnowledgeHubModel }) {
             {renderKnowledgeArticleBody(model.article.body)}
           </div>
 
-          <RelatedChips
-            id="szakmai-terulet"
-            heading={knowledgeSectionHeading("categories", areaLinks.length)}
-            items={areaLinks}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-technologiak"
-            heading={knowledgeSectionHeading(
-              "technologies",
-              d.technologies.length,
-            )}
-            items={d.technologies}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-feluletek"
-            heading={knowledgeSectionHeading("surfaces", d.surfaces.length)}
-            items={d.surfaces}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-termekek"
-            heading={knowledgeSectionHeading("products", d.products.length)}
-            items={d.products}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-termekcsaladok"
-            heading={knowledgeSectionHeading(
-              "productFamilies",
-              d.productFamilies.length,
-            )}
-            items={d.productFamilies}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-markak"
-            heading={knowledgeSectionHeading("brands", d.brands.length)}
-            items={d.brands}
-          />
-
-          <RelatedChips
-            id="kapcsolodo-cegek"
-            heading={knowledgeSectionHeading(
-              "organizations",
-              d.organizations.length,
-            )}
-            items={d.organizations}
-          />
-
-          <RelatedChips
-            id="osszehasonlitasok"
-            heading={knowledgeSectionHeading(
-              "comparisons",
-              d.comparisons.length,
-            )}
-            items={d.comparisons}
-          />
+          <RelatedExploreSection groups={relatedGroups} />
 
           {model.sources.length > 0 ? (
             <section className="seo-section sources-footer" id="forrasok">

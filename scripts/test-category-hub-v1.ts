@@ -21,6 +21,19 @@ import {
 } from "../lib/data/repository";
 import { allRelations } from "../lib/data/imports/allRelations";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
+import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
 import { categories as categoriesBase } from "../lib/data/categories";
 import { festekBazisV02Seed } from "../lib/data/imports/festekBazisV02Map";
 import { mergeById } from "../lib/data/imports/merge";
@@ -67,12 +80,12 @@ function countIncoming(type: string) {
 
 section("inventory + relation counts");
 assert.equal(categories.length, 20, "Categories = 20");
-assert.equal(productCatRels.length, 24, "Product→Category = 24");
+assert.equal(productCatRels.length, expectedProductCategoryRelationsAfterClosure(), "Product→Category derived");
 
 const productsWithCat = new Set(productCatRels.map((r) => r.fromEntityId));
 const products = listProducts();
-assert.equal(products.length, 27);
-assert.equal(productsWithCat.size, 24);
+assert.equal(products.length, expectedProductCountAfterClosure());
+assert.equal(productsWithCat.size, expectedProductCategoryRelationsAfterClosure());
 assert.equal(products.length - productsWithCat.size, 3);
 
 assert.equal(countIncoming("productFamily"), 1);
@@ -114,7 +127,7 @@ for (const p of products) {
   else multi++;
 }
 assert.equal(zero, 3);
-assert.equal(one, 24);
+assert.equal(one, expectedProductCategoryRelationsAfterClosure());
 assert.equal(multi, 0);
 console.log("distribution OK");
 
@@ -137,11 +150,11 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 5, f: 1, b: 1, o: 1, t: 4, s: 1, k: 0 },
+  cat_faipar: { p: 6, f: 1, b: 1, o: 1, t: 4, s: 1, k: 0 },
   cat_homlokzat: { p: 5, f: 1, b: 1, o: 1, t: 4, s: 5, k: 0 },
   cat_dekor: { p: 4, f: 2, b: 1, o: 1, t: 3, s: 3, k: 0 },
-  cat_ipari: { p: 4, f: 2, b: 1, o: 1, t: 5, s: 9, k: 0 },
-  cat_higito_segedanyag: { p: 2, f: 0, b: 1, o: 1, t: 0, s: 0, k: 0 },
+  cat_ipari: { p: 5, f: 2, b: 1, o: 1, t: 5, s: 11, k: 0 },
+  cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
   cat_padlo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
   cat_csiszolas: { p: 1, f: 1, b: 1, o: 1, t: 1, s: 3, k: 0 },
   cat_tuzvedo: { p: 1, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
@@ -231,7 +244,7 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 5);
+  assert.equal(p.products.length, 6);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_sikkens"));
@@ -251,8 +264,8 @@ section("Faipari Brand separation");
   const html = renderToStaticMarkup(
     createElement(CategoryHubPage, { model }),
   );
-  assert.ok(html.includes("Márkák a kapcsolódó termékek között"));
-  assert.ok(html.includes("További kapcsolódó márkák"));
+  assert.ok(html.includes(">Márkák<") || html.includes("Márkák"));
+  assert.ok(html.includes("Egyéb márkák"));
   assert.ok(html.includes("FACTOR"));
   assert.ok(html.includes("Sikkens"));
   // Product-derived company navigation (not omitted beside Brands)
@@ -336,7 +349,7 @@ section("Dekor / 7016 safety");
   assert.ok(html.includes("7016"));
   assert.ok(html.includes("Cégek"));
   assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
-  assert.ok(html.includes("További kapcsolódó cégek"));
+  assert.ok(html.includes("Egyéb cégek"));
   assert.ok(!html.includes("Tulajdonos"));
   assert.ok(!html.includes("Képviselet"));
 }
@@ -599,20 +612,20 @@ const ats = allRelations.filter(
   (r) => r.relationType === "applicableToSurface" && r.status === "active",
 );
 
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
-assert.equal(diluted, 6);
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(listTechnologies().length, 9);
-assert.equal(productUses.length, 60);
+assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(
   productUses.filter((r) => (r.sourceIds?.length ?? 0) > 0).length,
-  60,
+  expectedUsesTechnologyAfterClosure(),
 );
-assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 23);
+assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 25);
 assert.equal(listSurfaces().length, 15);
-assert.equal(ats.length, 48);
-assert.equal(ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length, 48);
+assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
+assert.equal(ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(products.filter((p) => p.indexable).length, 0);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 assert.equal(

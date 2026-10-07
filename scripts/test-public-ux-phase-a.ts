@@ -32,6 +32,12 @@ import {
 } from "../lib/search";
 import { getCanonicalBrandOwner } from "../lib/navigation/entityNavigation";
 import { evaluatePublicIndexability } from "../lib/seo/publicIndexability";
+import {
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+  expectedSpecCountAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import type { SearchHit } from "../lib/data/types";
 
 function section(name: string) {
@@ -54,20 +60,22 @@ section("Surface recovery — MDF / Kerámia");
 
   for (const surface of [mdf, ker]) {
     const model = buildSurfaceHubModel(surface)!;
-    assert.equal(model.products.length, 0);
+    // Missing Products Closure v1: COROR Rapid Aqua now applies to MDF / Kerámia
+    assert.ok(
+      model.products.some((p) => p.id === "prod_coror_rapid_aqua_enamel"),
+    );
     assert.equal(evaluatePublicIndexability(surface).indexable, false);
     const html = renderToStaticMarkup(
       createElement(SurfaceHubPage, { model }),
     );
-    assert.ok(html.includes("felulet-allapot"));
-    assert.ok(html.includes("nincs kapcsolt termék"));
-    assert.ok(html.includes('href="/kategoriak"'));
-    assert.ok(html.includes('href="/technologiak"'));
-    const q = encodeURIComponent(surface.name);
-    assert.ok(html.includes(`href="/kereses?q=${q}"`));
-    assert.ok(!html.includes("Kapcsolódó termékek"));
+    assert.ok(html.includes("hub-primary-section") || html.includes("Termékek"));
+    assert.ok(html.includes("COROR Rapid Aqua Zománcfesték"));
+    assert.ok(!html.includes("nincs kapcsolt termék"));
+    assert.ok(!html.includes("felulet-allapot"));
+    assert.ok(model.categories.length > 0);
+    assert.ok(model.technologies.length > 0);
     assert.ok(!/belongsToCategory|hasProduct|applicableToSurface/.test(html));
-    // Still in Search corpus
+    // Still in Search corpus; still NOINDEX as Surface
     assert.ok(
       buildSearchCatalog().some((d) => d.id === surface.id),
       `${surface.name} must remain searchable`,
@@ -84,7 +92,9 @@ section("Populated Surface — Beton unchanged");
   const html = renderToStaticMarkup(
     createElement(SurfaceHubPage, { model }),
   );
-  assert.ok(html.includes("Kapcsolódó termékek"));
+  assert.ok(
+    html.includes('id="kapcsolodo-termekek"') || html.includes(">Termékek<"),
+  );
   assert.ok(!html.includes("felulet-allapot"));
   assert.ok(!html.includes("nincs kapcsolt termék"));
   console.log("Beton OK");
@@ -189,24 +199,30 @@ section("Home quick chips → Search v1");
       `missing chip link for ${q}`,
     );
   }
-  // Search engine untouched
-  assert.equal(buildSearchCatalog().length, 102);
-  assert.equal(countSearchCatalogByType().product, 27);
+  // Search engine ranking/normalization untouched; catalog grows with published Products
+  assert.equal(
+    buildSearchCatalog().length,
+    expectedSearchDocumentsAfterClosure(),
+  );
+  assert.equal(
+    countSearchCatalogByType().product,
+    expectedProductCountAfterClosure(),
+  );
   assert.equal(searchCatalog("valmor")[0]?.id, "brand_valmor");
   console.log("Home chips OK");
 }
 
 section("Public language + dataset lock");
 {
-  assert.equal(listProducts().length, 27);
+  assert.equal(listProducts().length, expectedProductCountAfterClosure());
   let specs = 0;
   let packs = 0;
   for (const p of listProducts()) {
     specs += p.specifications?.length ?? 0;
     packs += p.packagingOptions?.length ?? 0;
   }
-  assert.equal(specs, 203);
-  assert.equal(packs, 68);
+  assert.equal(specs, expectedSpecCountAfterClosure());
+  assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(getCanonicalBrandOwner("brand_graco")?.id, "org_graco_inc");
   console.log("dataset OK");
 }

@@ -31,6 +31,19 @@ import {
 } from "../lib/data/repository";
 import { allRelations } from "../lib/data/imports/allRelations";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
+import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
 import { festekBazisV02Seed } from "../lib/data/imports/festekBazisV02Map";
 import { mergeById } from "../lib/data/imports/merge";
 import { categories as categoriesBase } from "../lib/data/categories";
@@ -562,20 +575,20 @@ const ats = allRelations.filter(
   (r) => r.relationType === "applicableToSurface" && r.status === "active",
 );
 
-assert.equal(products.length, 27);
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(diluted, 6);
+assert.equal(products.length, expectedProductCountAfterClosure());
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(categories.length, 20);
-assert.equal(productCat.length, 24);
+assert.equal(productCat.length, expectedProductCategoryRelationsAfterClosure());
 assert.equal(listTechnologies().length, 9);
-assert.equal(productUses.length, 60);
+assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(listSurfaces().length, 15);
-assert.equal(ats.length, 48);
+assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(knowledge.length, 2);
 assert.equal(docs.length, 3);
 assert.equal(knowCat.length, 2);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 
 const knowSourceIds = new Set([
   ...airless.sourceIds,
@@ -592,7 +605,7 @@ const globalSources = mergeById(
   festekBazisEnrichmentV1.sources,
 );
 console.log(`global merged Source count: ${globalSources.length}`);
-assert.equal(globalSources.length, 76);
+assert.equal(globalSources.length, expectedMergedSourcesAfterClosure());
 
 assert.equal(products.filter((p) => p.indexable).length, 0);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);

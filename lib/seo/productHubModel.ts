@@ -241,44 +241,39 @@ export function buildProductHubModel(
 
   let background: ProductHubModel["background"];
   if (brandBlurb || familyBlurb || orgBlurb) {
-    const parts: string[] = [];
-    if (brandBlurb) parts.push("márka");
-    if (familyBlurb) parts.push("termékcsalád");
-    if (orgBlurb) parts.push("gyártói háttér");
-    const heading =
-      parts.length >= 2
-        ? parts[0] === "márka" && parts.includes("termékcsalád")
-          ? "Márka és termékcsalád"
-          : "Márka és gyártói háttér"
-        : parts[0] === "márka"
-          ? "Márka"
-          : parts[0] === "termékcsalád"
-            ? "Termékcsalád"
-            : "Gyártói háttér";
+    const hasBrand = !!(brand && brandBlurb);
+    const hasFamily = !!(family && familyBlurb);
+    const hasOrg = !!(owner && orgBlurb);
+    // Heading must match rendered blocks — never imply Brand when none exists (7016).
+    let heading: string;
+    if (hasBrand && hasFamily && hasOrg) heading = "Márka és gyártói háttér";
+    else if (hasBrand && hasFamily) heading = "Márka és termékcsalád";
+    else if (hasBrand && hasOrg) heading = "Márka és gyártói háttér";
+    else if (hasFamily && hasOrg) heading = "Termékcsalád és gyártói háttér";
+    else if (hasBrand) heading = "Márka";
+    else if (hasFamily) heading = "Termékcsalád";
+    else heading = "Gyártói háttér";
 
     background = {
       heading,
-      brand:
-        brand && brandBlurb
-          ? { name: brand.name, href: getEntityHref(brand), blurb: brandBlurb }
-          : undefined,
-      family:
-        family && familyBlurb
-          ? {
-              name: family.name,
-              href: getEntityHref(family),
-              blurb: familyBlurb,
-            }
-          : undefined,
-      organization:
-        owner && orgBlurb
-          ? {
-              name: owner.name,
-              href: getEntityHref(owner),
-              label: orgLabel(organizationRole),
-              blurb: orgBlurb,
-            }
-          : undefined,
+      brand: hasBrand
+        ? { name: brand!.name, href: getEntityHref(brand!), blurb: brandBlurb! }
+        : undefined,
+      family: hasFamily
+        ? {
+            name: family!.name,
+            href: getEntityHref(family!),
+            blurb: familyBlurb!,
+          }
+        : undefined,
+      organization: hasOrg
+        ? {
+            name: owner!.name,
+            href: getEntityHref(owner!),
+            label: orgLabel(organizationRole),
+            blurb: orgBlurb!,
+          }
+        : undefined,
     };
   }
 

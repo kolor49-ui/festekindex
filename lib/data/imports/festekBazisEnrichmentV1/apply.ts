@@ -7,8 +7,10 @@ import type { Product, Relation, Source } from "../../types";
 import { mergeRelationsByCanonicalKey } from "../merge";
 import type {
   FestekBazisEnrichmentV1,
+  ProductDescriptionEnrichment,
   ProductEnrichmentPatch,
 } from "./types";
+import { productDescriptionEnrichmentsV1 } from "./descriptionEnrichment";
 
 function uniqueIds(ids: string[]): string[] {
   return [...new Set(ids.filter(Boolean))];
@@ -64,7 +66,7 @@ export function applyProductPatch(
     sourceSummary: patch.sourceSummary ?? product.sourceSummary,
     sourceSummarySourceIds:
       patch.sourceSummarySourceIds ?? product.sourceSummarySourceIds,
-    // editorialSummary intentionally not set in Phase 3
+    editorialSummary: patch.editorialSummary ?? product.editorialSummary,
     specifications: patch.specifications ?? product.specifications,
     packagingOptions: patch.packagingOptions ?? product.packagingOptions,
     sourceIds: uniqueIds([
@@ -88,6 +90,33 @@ export function applyProductEnrichments(
   });
 }
 
+export function applyProductDescriptionEnrichments(
+  products: Product[],
+  descriptions: ProductDescriptionEnrichment[] = productDescriptionEnrichmentsV1,
+): Product[] {
+  const byId = new Map(descriptions.map((d) => [d.productId, d]));
+  return products.map((product) => {
+    const d = byId.get(product.id);
+    if (!d) return product;
+    return {
+      ...product,
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      status: product.status,
+      indexable: product.indexable,
+      type: "product" as const,
+      sourceSummary: d.sourceSummary,
+      sourceSummarySourceIds: d.sourceSummarySourceIds,
+      editorialSummary: d.editorialSummary,
+      sourceIds: uniqueIds([
+        ...product.sourceIds,
+        ...d.sourceSummarySourceIds,
+      ]),
+    };
+  });
+}
+
 export function applyFestekBazisEnrichmentV1(
   products: Product[],
   sources: Source[],
@@ -99,7 +128,9 @@ export function applyFestekBazisEnrichmentV1(
   relations: Relation[];
 } {
   return {
-    products: applyProductEnrichments(products, enrichment.productPatches),
+    products: applyProductDescriptionEnrichments(
+      applyProductEnrichments(products, enrichment.productPatches),
+    ),
     sources: mergeSourcesWithEnrichment(sources, enrichment.sources),
     relations: mergeRelationsByCanonicalKey(relations, enrichment.relations),
   };

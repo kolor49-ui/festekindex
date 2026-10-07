@@ -20,6 +20,19 @@ import {
 import { allRelations } from "../lib/data/imports/allRelations";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
 import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
+import {
   buildSurfaceHubModel,
   publicSafeSurfaceCopy,
 } from "../lib/seo/surfaceHubModel";
@@ -34,21 +47,22 @@ const EXPECTED: Record<
   string,
   { p: number; f: number; b: number; o: number; c: number; t: number; k: number }
 > = {
-  surface_vakolat: { p: 10, f: 3, b: 2, o: 1, c: 4, t: 4, k: 0 },
-  surface_beton: { p: 8, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
-  surface_fa: { p: 7, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
-  surface_acel: { p: 5, f: 2, b: 1, o: 1, c: 2, t: 5, k: 0 },
+  // Counts include Missing Products Closure v1 (Aqua Vastaglazúr + Rapid Aqua)
+  surface_vakolat: { p: 11, f: 3, b: 2, o: 1, c: 4, t: 4, k: 0 },
+  surface_beton: { p: 9, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
+  surface_fa: { p: 9, f: 2, b: 2, o: 1, c: 3, t: 4, k: 0 },
+  surface_acel: { p: 6, f: 2, b: 1, o: 1, c: 2, t: 5, k: 0 },
   surface_gipszkarton: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_tegla: { p: 3, f: 0, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_aluminium: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_aluminium: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_eps_xps: { p: 2, f: 0, b: 1, o: 1, c: 1, t: 2, k: 0 },
-  surface_horganyzott_acel: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_rez: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_horganyzott_acel: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_rez: { p: 3, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_ko: { p: 2, f: 0, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_muanyag: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_osb: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-  surface_keramia_csempe: { p: 0, f: 0, b: 0, o: 0, c: 0, t: 0, k: 0 },
-  surface_mdf: { p: 0, f: 0, b: 0, o: 0, c: 0, t: 0, k: 0 },
+  surface_muanyag: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_osb: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_keramia_csempe: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
+  surface_mdf: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
 };
 
 section("build all models");
@@ -127,16 +141,17 @@ assert.equal(tegla.families.length, 0);
 assert.equal(tegla.products.length, 3);
 
 const mdf = buildSurfaceHubModel(getSurfaceById("surface_mdf")!)!;
-assert.equal(mdf.products.length, 0);
-assert.equal(mdf.families.length, 0);
-assert.equal(mdf.brands.length, 0);
-assert.equal(mdf.categories.length, 0);
-assert.equal(mdf.technologies.length, 0);
+assert.equal(mdf.products.length, 1);
+assert.equal(mdf.products[0]?.id, "prod_coror_rapid_aqua_enamel");
+assert.equal(mdf.families.length, 1);
+assert.equal(mdf.brands.length, 1);
+assert.equal(mdf.categories.length, 1);
+assert.equal(mdf.technologies.length, 3);
 assert.equal(mdf.knowledge.length, 0);
-assert.equal(mdf.manufacturerContext, undefined);
 
 const keramia = buildSurfaceHubModel(getSurfaceById("surface_keramia_csempe")!)!;
-assert.equal(keramia.products.length, 0);
+assert.equal(keramia.products.length, 1);
+assert.equal(keramia.products[0]?.id, "prod_coror_rapid_aqua_enamel");
 
 const fa = getSurfacePortfolio("surface_fa")!;
 assert.deepEqual(
@@ -245,27 +260,28 @@ for (const model of refs) {
 }
 console.log("leakage OK");
 
-section("empty section HTML");
+section("populated MDF / Tegla section HTML");
 const mdfHtml = renderToStaticMarkup(
   createElement(SurfaceHubPage, { model: mdf }),
 );
-assert.ok(!mdfHtml.includes("Kapcsolódó termékek"));
-assert.ok(!mdfHtml.includes("Termékcsaládok"));
-assert.ok(!mdfHtml.includes(">Márkák<"));
-// Empty related sections omitted — recovery links to index lists are allowed (Phase A)
-assert.ok(!mdfHtml.includes("seo-heading\">Szakmai területek"));
-assert.ok(!mdfHtml.includes("seo-heading\">Technológiák"));
+assert.ok(
+  mdfHtml.includes('id="kapcsolodo-termekek"') ||
+    mdfHtml.includes(">Termékek<"),
+);
+assert.ok(mdfHtml.includes("COROR Rapid Aqua Zománcfesték"));
+assert.ok(!mdfHtml.includes("felulet-allapot"));
+assert.ok(!mdfHtml.includes("nincs kapcsolt termék"));
 assert.ok(!mdfHtml.includes("Kapcsolódó szakmai tartalom"));
-assert.ok(mdfHtml.includes("felulet-allapot"));
-assert.ok(mdfHtml.includes('href="/kategoriak"'));
-assert.ok(mdfHtml.includes('href="/technologiak"'));
 
 const teglaHtml = renderToStaticMarkup(
   createElement(SurfaceHubPage, { model: teglaModel }),
 );
-assert.ok(teglaHtml.includes("Kapcsolódó termékek"));
+assert.ok(
+  teglaHtml.includes('id="kapcsolodo-termekek"') ||
+    teglaHtml.includes(">Termékek<"),
+);
 assert.ok(!teglaHtml.includes("Termékcsaládok"));
-console.log("empty sections OK");
+console.log("section HTML OK");
 
 section("dataset regression");
 const products = listProducts();
@@ -282,17 +298,17 @@ for (const p of products) {
 const ats = allRelations.filter(
   (r) => r.relationType === "applicableToSurface" && r.status === "active",
 );
-assert.equal(products.length, 27);
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
-assert.equal(diluted, 6);
+assert.equal(products.length, expectedProductCountAfterClosure());
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(products.filter((p) => p.indexable).length, 0);
 assert.equal(surfaces.length, 15);
-assert.equal(ats.length, 48);
+assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(
   ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length,
-  48,
+  expectedApplicableToSurfaceAfterClosure(),
 );
 assert.equal(surfaces.filter((s) => s.indexable).length, 0);
 assert.equal(

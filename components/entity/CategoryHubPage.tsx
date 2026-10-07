@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/entity/EntityUI";
+import {
+  HubPrimarySection,
+  HubSecondaryCluster,
+  HubSecondarySection,
+  HubSupportingCluster,
+  HubSupportingSection,
+  RelatedPillGroup,
+} from "@/components/entity/HubHierarchy";
 import { JsonLdScript } from "@/lib/seo/jsonld";
 import {
   buildCategoryHubJsonLd,
@@ -8,7 +16,8 @@ import {
 
 /**
  * Category Hub v1 — SSR HTML.
- * Direct Category graph + Product-derived context, semantically separated.
+ * Phase B: Products primary → families/brands/companies secondary →
+ * tech/surface/knowledge supporting → sources.
  * Never renders internal enums, relation types, readiness grades, or graph jargon.
  */
 export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
@@ -27,6 +36,8 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
       : brands.unified.length > 0;
 
   const orgCtx = model.organizationContext;
+  const hasSecondary =
+    model.families.length > 0 || hasBrands || !!orgCtx;
 
   return (
     <main className="main">
@@ -45,8 +56,7 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
           {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
           {model.products.length > 0 ? (
-            <section className="seo-section" id="kapcsolodo-termekek">
-              <h2 className="seo-heading">Kapcsolódó termékek</h2>
+            <HubPrimarySection id="kapcsolodo-termekek" heading="Termékek">
               {grouped
                 ? model.productGroups.map((group) => (
                     <div
@@ -133,202 +143,161 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
                     ))}
                   </ul>
                 )}
-            </section>
+            </HubPrimarySection>
           ) : null}
 
-          {model.families.length > 0 ? (
-            <section className="seo-section" id="termekcsaladok">
-              <h2 className="seo-heading">Termékcsaládok</h2>
-              <div className="seo-links org-category-chips">
-                {model.families.map((f) => (
-                  <Link key={f.id} href={f.href} className="pill pill-link">
-                    {f.name}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          ) : null}
-
-          {hasBrands ? (
-            <section className="seo-section" id="markak">
-              {brands.mode === "split" ? (
-                <>
-                  {brands.productBrands.length > 0 ? (
-                    <div className="category-brand-block">
-                      <h2 className="seo-heading">
-                        Márkák a kapcsolódó termékek között
-                      </h2>
-                      <div className="seo-links org-category-chips">
-                        {brands.productBrands.map((b) => (
-                          <Link
-                            key={b.id}
-                            href={b.href}
-                            className="pill pill-link"
-                          >
-                            {b.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                  {brands.additionalBrands.length > 0 ? (
-                    <div className="category-brand-block">
-                      <h2 className="seo-heading">
-                        További kapcsolódó márkák
-                      </h2>
-                      <div className="seo-links org-category-chips">
-                        {brands.additionalBrands.map((b) => (
-                          <Link
-                            key={b.id}
-                            href={b.href}
-                            className="pill pill-link"
-                          >
-                            {b.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                </>
-              ) : (
-                <>
-                  <h2 className="seo-heading">Márkák</h2>
-                  <div className="seo-links org-category-chips">
-                    {brands.unified.map((b) => (
-                      <Link key={b.id} href={b.href} className="pill pill-link">
-                        {b.name}
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
-            </section>
-          ) : null}
-
-          {orgCtx ? (
-            <section className="seo-section" id="cegek">
-              {orgCtx.mode === "split" ? (
-                <>
-                  {orgCtx.productOrgs.length > 0 ? (
-                    <div className="category-org-block">
-                      <h2 className="seo-heading">{orgCtx.productHeading}</h2>
-                      <div className="seo-links org-category-chips">
-                        {orgCtx.productOrgs.map((o) => (
-                          <Link
-                            key={o.id}
-                            href={o.href}
-                            className="pill pill-link"
-                          >
-                            {o.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                  {orgCtx.additionalOrgs.length > 0 ? (
-                    <div className="category-org-block">
-                      <h2 className="seo-heading">
-                        {orgCtx.additionalHeading}
-                      </h2>
-                      <div className="seo-links org-category-chips">
-                        {orgCtx.additionalOrgs.map((o) => (
-                          <Link
-                            key={o.id}
-                            href={o.href}
-                            className="pill pill-link"
-                          >
-                            {o.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                </>
-              ) : (
-                <>
-                  <h2 className="seo-heading">{orgCtx.heading}</h2>
-                  <div className="seo-links org-category-chips">
-                    {orgCtx.unified.map((o) => (
-                      <Link
-                        key={o.id}
-                        href={o.href}
-                        className="pill pill-link"
-                      >
-                        {o.name}
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
-            </section>
-          ) : null}
-
-          {hasTechSurfaces ? (
-            <section className="seo-section" id="technologiak-feluletek">
-              {model.surfaces.length > 0 ? (
-                <p className="org-section-note">
-                  A kapcsolódó felületek a kategóriához rendelt termékek alapján
-                  jelennek meg. Ez nem jelenti, hogy a szakterület minden
-                  felsorolt felületre általánosan vonatkozik.
-                </p>
+          {hasSecondary ? (
+            <HubSecondaryCluster>
+              {model.families.length > 0 ? (
+                <HubSecondarySection id="termekcsaladok" heading="Termékcsaládok">
+                  <RelatedPillGroup items={model.families} />
+                </HubSecondarySection>
               ) : null}
-              <div
-                className={
-                  model.technologies.length > 0 && model.surfaces.length > 0
-                    ? "org-tech-surface-grid"
-                    : undefined
-                }
-              >
-                {model.technologies.length > 0 ? (
-                  <div className="org-tech-surface-col">
-                    <h2 className="seo-heading">Kapcsolódó technológiák</h2>
-                    <ul className="surface-coverage-list">
-                      {model.technologies.map((t) => (
-                        <li key={t.id} className="surface-coverage-item">
-                          <Link href={t.href}>{t.name}</Link>
-                          {t.productCount != null && t.productCount > 0 ? (
-                            <span className="surface-coverage-count">
-                              {t.productCount} termék
-                            </span>
-                          ) : null}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
-                {model.surfaces.length > 0 ? (
-                  <div className="org-tech-surface-col">
-                    <h2 className="seo-heading">Kapcsolódó felületek</h2>
-                    <ul className="surface-coverage-list">
-                      {model.surfaces.map((s) => (
-                        <li key={s.id} className="surface-coverage-item">
-                          <Link href={s.href}>{s.name}</Link>
-                          <span className="surface-coverage-count">
-                            {s.productCount} termék
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
-              </div>
-            </section>
+
+              {hasBrands ? (
+                <section className="seo-section hub-secondary-section" id="markak">
+                  {brands.mode === "split" ? (
+                    <>
+                      {brands.productBrands.length > 0 ? (
+                        <div className="category-brand-block">
+                          <h2 className="seo-heading hub-secondary-heading">
+                            Márkák
+                          </h2>
+                          <RelatedPillGroup items={brands.productBrands} />
+                        </div>
+                      ) : null}
+                      {brands.additionalBrands.length > 0 ? (
+                        <div className="category-brand-block">
+                          <h2 className="seo-heading hub-secondary-heading">
+                            Egyéb márkák
+                          </h2>
+                          <RelatedPillGroup items={brands.additionalBrands} />
+                        </div>
+                      ) : null}
+                    </>
+                  ) : (
+                    <>
+                      <h2 className="seo-heading hub-secondary-heading">
+                        Márkák
+                      </h2>
+                      <RelatedPillGroup items={brands.unified} />
+                    </>
+                  )}
+                </section>
+              ) : null}
+
+              {orgCtx ? (
+                <section className="seo-section hub-secondary-section" id="cegek">
+                  {orgCtx.mode === "split" ? (
+                    <>
+                      {orgCtx.productOrgs.length > 0 ? (
+                        <div className="category-org-block">
+                          <h2 className="seo-heading hub-secondary-heading">
+                            {orgCtx.productHeading}
+                          </h2>
+                          <RelatedPillGroup items={orgCtx.productOrgs} />
+                        </div>
+                      ) : null}
+                      {orgCtx.additionalOrgs.length > 0 ? (
+                        <div className="category-org-block">
+                          <h2 className="seo-heading hub-secondary-heading">
+                            {orgCtx.additionalHeading}
+                          </h2>
+                          <RelatedPillGroup items={orgCtx.additionalOrgs} />
+                        </div>
+                      ) : null}
+                    </>
+                  ) : (
+                    <>
+                      <h2 className="seo-heading hub-secondary-heading">
+                        {orgCtx.heading}
+                      </h2>
+                      <RelatedPillGroup items={orgCtx.unified} />
+                    </>
+                  )}
+                </section>
+              ) : null}
+            </HubSecondaryCluster>
           ) : null}
 
-          {model.knowledge.length > 0 ? (
-            <section className="seo-section" id="tudastar">
-              <h2 className="seo-heading">Kapcsolódó szakmai tartalom</h2>
-              <ul className="seo-knowledge-list">
-                {model.knowledge.map((k) => (
-                  <li key={k.id}>
-                    <Link href={k.href}>{k.name}</Link>
-                    {k.note ? (
-                      <span className="seo-knowledge-note"> — {k.note}</span>
+          {hasTechSurfaces || model.knowledge.length > 0 ? (
+            <HubSupportingCluster
+              note={
+                model.surfaces.length > 0
+                  ? "A kapcsolódó felületek a kategóriához rendelt termékek alapján jelennek meg. Ez nem jelenti, hogy a szakterület minden felsorolt felületre általánosan vonatkozik."
+                  : undefined
+              }
+            >
+              {hasTechSurfaces ? (
+                <section
+                  className="seo-section hub-supporting-section"
+                  id="technologiak-feluletek"
+                >
+                  <div
+                    className={
+                      model.technologies.length > 0 && model.surfaces.length > 0
+                        ? "org-tech-surface-grid"
+                        : undefined
+                    }
+                  >
+                    {model.technologies.length > 0 ? (
+                      <div className="org-tech-surface-col">
+                        <h2 className="seo-heading hub-supporting-heading">
+                          Technológiák
+                        </h2>
+                        <ul className="surface-coverage-list">
+                          {model.technologies.map((t) => (
+                            <li key={t.id} className="surface-coverage-item">
+                              <Link href={t.href}>{t.name}</Link>
+                              {t.productCount != null && t.productCount > 0 ? (
+                                <span className="surface-coverage-count">
+                                  {t.productCount} termék
+                                </span>
+                              ) : null}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ) : null}
-                  </li>
-                ))}
-              </ul>
-            </section>
+                    {model.surfaces.length > 0 ? (
+                      <div className="org-tech-surface-col">
+                        <h2 className="seo-heading hub-supporting-heading">
+                          Felületek
+                        </h2>
+                        <ul className="surface-coverage-list">
+                          {model.surfaces.map((s) => (
+                            <li key={s.id} className="surface-coverage-item">
+                              <Link href={s.href}>{s.name}</Link>
+                              <span className="surface-coverage-count">
+                                {s.productCount} termék
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </div>
+                </section>
+              ) : null}
+
+              {model.knowledge.length > 0 ? (
+                <HubSupportingSection
+                  id="tudastar"
+                  heading="Kapcsolódó szakmai tartalom"
+                >
+                  <ul className="seo-knowledge-list">
+                    {model.knowledge.map((k) => (
+                      <li key={k.id}>
+                        <Link href={k.href}>{k.name}</Link>
+                        {k.note ? (
+                          <span className="seo-knowledge-note"> — {k.note}</span>
+                        ) : null}
+                      </li>
+                    ))}
+                  </ul>
+                </HubSupportingSection>
+              ) : null}
+            </HubSupportingCluster>
           ) : null}
 
           {model.sources.length > 0 ? (

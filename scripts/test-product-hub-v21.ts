@@ -24,6 +24,19 @@ import {
   getActiveRelationsForEntity,
 } from "../lib/data/repository";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
+import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
 import { renderToStaticMarkup } from "react-dom/server";
 import { createElement } from "react";
 import { ProductHubPage } from "../components/entity/ProductHubPage";
@@ -102,12 +115,12 @@ for (const p of products) {
     if (r.relationType === "dilutedWith" && r.fromEntityId === p.id) diluted++;
   }
 }
-assert.equal(products.length, 27);
+assert.equal(products.length, expectedProductCountAfterClosure());
 assert.equal(products.filter((p) => p.indexable).length, 0);
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
-assert.equal(diluted, 6);
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(
   (getProductById("prod_coror_aromatic")?.specifications ?? []).filter(
     (s) => s.key === "binder",

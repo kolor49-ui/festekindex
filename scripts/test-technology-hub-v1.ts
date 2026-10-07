@@ -20,6 +20,19 @@ import {
 import { allRelations } from "../lib/data/imports/allRelations";
 import { festekBazisEnrichmentV1 } from "../lib/data/imports/festekBazisEnrichmentV1";
 import {
+  expectedDilutedWithAfterClosure,
+  expectedEnrichmentSourcesAfterClosure,
+  expectedPackagingCountAfterClosure,
+  expectedProductCountAfterClosure,
+  expectedSpecCountAfterClosure,
+  expectedMergedSourcesAfterClosure,
+  expectedProductCategoryRelationsAfterClosure,
+  expectedUsesTechnologyAfterClosure,
+  expectedApplicableToSurfaceAfterClosure,
+  expectedSearchDocumentsAfterClosure,
+} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+
+import {
   buildTechnologyHubModel,
   publicSafeTechnologyCopy,
 } from "../lib/seo/technologyHubModel";
@@ -44,9 +57,9 @@ type Exp = {
 };
 
 const EXPECTED: Record<string, Exp> = {
-  tech_ecset: { p: 21, fDer: 5, bDer: 3, oDer: 1, c: 7, s: 13, k: 0, fDir: 0 },
-  tech_henger: { p: 19, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 13, k: 0, fDir: 0 },
-  tech_szoras: { p: 15, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 12, k: 0, fDir: 0 },
+  tech_ecset: { p: 23, fDer: 5, bDer: 3, oDer: 1, c: 7, s: 15, k: 0, fDir: 0 },
+  tech_henger: { p: 20, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 15, k: 0, fDir: 0 },
+  tech_szoras: { p: 16, fDer: 5, bDer: 3, oDer: 1, c: 6, s: 14, k: 0, fDir: 0 },
   tech_glettvas: { p: 2, fDer: 1, bDer: 1, oDer: 1, c: 1, s: 2, k: 0, fDir: 0 },
   tech_air_mix: { p: 1, fDer: 1, bDer: 1, oDer: 1, c: 1, s: 1, k: 0, fDir: 0 },
   tech_airless: {
@@ -324,25 +337,26 @@ for (const p of products) {
     if (r.relationType === "dilutedWith" && r.fromEntityId === p.id) diluted++;
   }
 }
-assert.equal(products.length, 27);
-assert.equal(specs, 203);
-assert.equal(packs, 68);
-assert.equal(festekBazisEnrichmentV1.sources.length, 52);
-assert.equal(diluted, 6);
+assert.equal(products.length, expectedProductCountAfterClosure());
+assert.equal(specs, expectedSpecCountAfterClosure());
+assert.equal(packs, expectedPackagingCountAfterClosure());
+assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
+assert.equal(diluted, expectedDilutedWithAfterClosure());
 assert.equal(technologies.length, 9);
-assert.equal(productUses.length, 60);
+assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(
   productUses.filter((r) => (r.sourceIds?.length ?? 0) > 0).length,
-  60,
+  expectedUsesTechnologyAfterClosure(),
 );
-assert.equal(withTech.size, 23);
-assert.equal(products.length - withTech.size, 4);
+assert.equal(withTech.size, 25);
+assert.equal(products.length - withTech.size, 5);
 const without = products
   .filter((p) => !withTech.has(p.id))
   .map((p) => p.id)
   .sort();
 assert.deepEqual(without, [
   "prod_coror_aromatic",
+  "prod_coror_ind_s31",
   "prod_coror_synthetic",
   "prod_valmor_deep_primer",
   "prod_valmor_plinth",
@@ -354,7 +368,7 @@ assert.equal(
   allRelations.filter(
     (r) => r.relationType === "applicableToSurface" && r.status === "active",
   ).length,
-  48,
+  expectedApplicableToSurfaceAfterClosure(),
 );
 assert.equal(products.filter((p) => p.indexable).length, 0);
 assert.equal(surfaces.filter((s) => s.indexable).length, 0);

@@ -8,12 +8,18 @@ import { productPatchesV1 } from "./productPatches";
 import { enrichmentSourcesV1 } from "./sources";
 import type { FestekBazisEnrichmentV1 } from "./types";
 
-export type { FestekBazisEnrichmentV1, ProductEnrichmentPatch } from "./types";
+export type {
+  FestekBazisEnrichmentV1,
+  ProductDescriptionEnrichment,
+  ProductEnrichmentPatch,
+} from "./types";
 export {
   applyFestekBazisEnrichmentV1,
+  applyProductDescriptionEnrichments,
   applyProductEnrichments,
   mergeSourcesWithEnrichment,
 } from "./apply";
+export { productDescriptionEnrichmentsV1 } from "./descriptionEnrichment";
 
 export const festekBazisEnrichmentV1: FestekBazisEnrichmentV1 = {
   version: "festek_bazis_enrichment_v1",
