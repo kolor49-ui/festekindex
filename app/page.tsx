@@ -4,6 +4,7 @@ import {
   getFeaturedHits,
   getRelationPreviewsMap,
 } from "@/lib/data/repository";
+import { buildSearchCatalog } from "@/lib/search";
 
 export const metadata: Metadata = {
   title: "FESTÉKINDEX — a festékipar szakmai indexe",
@@ -15,12 +16,14 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const hits = getFeaturedHits(10);
   const relatedByEntityId = getRelationPreviewsMap(hits.map((h) => h.id));
+  const searchCatalogDocs = buildSearchCatalog();
 
   return (
     <main className="main">
       <HomeExplorer
         initialHits={hits}
         relatedByEntityId={relatedByEntityId}
+        searchCatalogDocs={searchCatalogDocs}
       />
     </main>
   );

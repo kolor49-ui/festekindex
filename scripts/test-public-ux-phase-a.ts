@@ -191,6 +191,7 @@ section("Home quick chips → Search v1");
     createElement(HomeExplorer, {
       initialHits: hits,
       relatedByEntityId: {},
+      searchCatalogDocs: buildSearchCatalog(),
     }),
   );
   for (const q of ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"]) {

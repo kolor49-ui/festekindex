@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Breadcrumbs } from "@/components/entity/EntityUI";
-import { SITE_ORIGIN } from "@/lib/data/repository";
+import { SearchBox } from "@/components/search/SearchBox";
+import { SearchResultsList } from "@/components/search/SearchResultsList";
+import { getProductById, SITE_ORIGIN } from "@/lib/data/repository";
 import {
+  buildSearchCatalog,
+  normalizeSearchText,
   searchCatalog,
   SEARCH_FULL_LIMIT,
+  SEARCH_MIN_QUERY_LENGTH,
 } from "@/lib/search";
 
 type Props = { searchParams: Promise<{ q?: string }> };
@@ -50,21 +54,23 @@ export async function generateMetadata({
   };
 }
 
-function initials(name: string) {
-  return name
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((x) => x[0])
-    .join("")
-    .toUpperCase();
-}
-
 export default async function KeresesPage({ searchParams }: Props) {
   const { q } = await searchParams;
   const term = q?.trim() ?? "";
-  const results = term
-    ? searchCatalog(term, { limit: SEARCH_FULL_LIMIT })
-    : [];
+  const normalizedLen = normalizeSearchText(term).length;
+  const tooShort = term.length > 0 && normalizedLen < SEARCH_MIN_QUERY_LENGTH;
+  const catalog = buildSearchCatalog();
+  const results =
+    term && !tooShort
+      ? searchCatalog(term, { limit: SEARCH_FULL_LIMIT }).map((hit) => {
+          if (hit.type !== "product") return hit;
+          const p = getProductById(hit.id);
+          return {
+            ...hit,
+            preview: p?.editorialSummary ?? p?.sourceSummary,
+          };
+        })
+      : [];
 
   return (
     <main className="main">
@@ -81,58 +87,19 @@ export default async function KeresesPage({ searchParams }: Props) {
           technológiák, felületek, szakmai területek és tudástár.
         </p>
 
-        <form
-          className="search"
-          action="/kereses"
-          method="get"
-          style={{ marginBottom: 22, maxWidth: 640 }}
-        >
-          <input
-            name="q"
-            defaultValue={term}
-            placeholder="Keress cégre, márkára, termékre, technológiára…"
-            aria-label="Keresés"
-            autoComplete="off"
-          />
-          <button type="submit">Keresés</button>
-        </form>
+        <SearchBox
+          catalog={catalog}
+          initialQuery={term}
+          variant="page"
+          className="search-box--page-wrap"
+        />
 
         {!term ? (
           <p className="empty">Írj be legalább két karaktert a kereséshez.</p>
-        ) : results.length === 0 ? (
-          <p className="empty">Nincs találat a „{term}” kifejezésre.</p>
+        ) : tooShort ? (
+          <p className="empty">Írj be legalább 2 karaktert.</p>
         ) : (
-          <>
-            <div className="toolbar" style={{ marginLeft: 0, marginRight: 0 }}>
-              <h3>
-                {results.length} találat: „{term}”
-              </h3>
-            </div>
-            <div className="list-grid" role="list">
-              {results.map((hit) => {
-                const subtitle = [hit.typeLabelHu, hit.contextLabel]
-                  .filter(Boolean)
-                  .join(" · ");
-                return (
-                  <Link
-                    key={`${hit.type}:${hit.id}`}
-                    href={hit.href}
-                    className="row"
-                    role="listitem"
-                  >
-                    <div className="icon" aria-hidden>
-                      {initials(hit.displayName)}
-                    </div>
-                    <div>
-                      <b>{hit.displayName}</b>
-                      <small>{subtitle}</small>
-                    </div>
-                    <div className="kind">{hit.typeLabelHu}</div>
-                  </Link>
-                );
-              })}
-            </div>
-          </>
+          <SearchResultsList results={results} query={term} />
         )}
       </div>
     </main>

@@ -43,9 +43,24 @@ import {
   type SearchDocument,
   type SearchEntityType,
 } from "./types";
-import { normalizeSearchText } from "./normalize";
+import { foldAccents, normalizeSearchText } from "./normalize";
 
 const EXCLUDED_IDS = new Set(["brand_7016", "cat_all"]);
+
+/**
+ * Compact hyphenated identifiers for matching (e.g. S-31 → s31).
+ * Generic — not product-specific boosts.
+ */
+function hyphenCompactForms(text: string): string[] {
+  const matches = text.match(/[\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)+/gu) ?? [];
+  return matches
+    .map((m) => foldAccents(m.replace(/-/g, "").toLowerCase()))
+    .filter(Boolean);
+}
+
+function withHyphenCompacts(name: string, base: string[]): string[] {
+  return [...new Set([...base, ...hyphenCompactForms(name)])];
+}
 
 const FILLER_MARKERS = [
   "a festékindex adatbázisában",
@@ -93,13 +108,13 @@ function joinParts(parts: Array<string | undefined | null>): string {
 }
 
 function aliasesOf(entity: AnyEntity): string[] {
+  let base: string[] = [];
   if (entity.type === "technology" || entity.type === "surface") {
-    return [...entity.aliases];
+    base = [...entity.aliases];
+  } else if (entity.type === "product" && entity.aliases?.length) {
+    base = [...entity.aliases];
   }
-  if (entity.type === "product" && entity.aliases?.length) {
-    return [...entity.aliases];
-  }
-  return [];
+  return withHyphenCompacts(entity.name, base);
 }
 
 function productReachableCount(brandId: string): number {
@@ -291,7 +306,7 @@ function fromProduct(p: Product): SearchDocument {
 }
 
 function fromTechnology(t: Technology): SearchDocument {
-  const aliases = [...t.aliases];
+  const aliases = withHyphenCompacts(t.name, [...t.aliases]);
   return {
     id: t.id,
     type: "technology",
@@ -311,7 +326,7 @@ function fromTechnology(t: Technology): SearchDocument {
 }
 
 function fromSurface(s: Surface): SearchDocument {
-  const aliases = [...s.aliases];
+  const aliases = withHyphenCompacts(s.name, [...s.aliases]);
   return {
     id: s.id,
     type: "surface",

@@ -10,6 +10,9 @@ import type { SearchOptions, SearchResult } from "./types";
 export const SEARCH_COMPACT_LIMIT = 12;
 export const SEARCH_FULL_LIMIT = 40;
 export const SEARCH_MIN_QUERY_LENGTH = 2;
+/** Autocomplete suggestion caps (presentation only). */
+export const SEARCH_AUTOCOMPLETE_DESKTOP_LIMIT = 8;
+export const SEARCH_AUTOCOMPLETE_MOBILE_LIMIT = 6;
 
 /**
  * Universal mixed-entity search.

@@ -36,6 +36,12 @@ export type SearchDocument = {
   hasProducts?: boolean;
 };
 
+/**
+ * Presentation-only match classification derived from ranking tier.
+ * Never expose these labels in public UI copy.
+ */
+export type SearchMatchKind = "identity" | "context";
+
 export type SearchResult = {
   id: string;
   type: SearchEntityType;
@@ -45,6 +51,8 @@ export type SearchResult = {
   typeLabelHu: string;
   contextLabel?: string;
   score: number;
+  /** Derived from score tier for UI hierarchy — not a public label. */
+  matchKind: SearchMatchKind;
 };
 
 export type SearchOptions = {

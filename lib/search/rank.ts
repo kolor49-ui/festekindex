@@ -8,7 +8,12 @@ import {
   tokenizeSearchText,
   tokensCoveredByPrefix,
 } from "./normalize";
-import type { SearchDocument, SearchEntityType, SearchResult } from "./types";
+import type {
+  SearchDocument,
+  SearchEntityType,
+  SearchMatchKind,
+  SearchResult,
+} from "./types";
 
 /** Match-quality tiers (higher = better). */
 const TIER = {
@@ -20,6 +25,13 @@ const TIER = {
   CONTEXT: 30_000,
   LOW_WEIGHT: 10_000,
 } as const;
+
+/** Scores at/above this tier are identity matches for presentation. */
+export const IDENTITY_MATCH_SCORE_FLOOR = TIER.TOKEN_PREFIX_IDENTITY;
+
+export function matchKindFromScore(score: number): SearchMatchKind {
+  return score >= IDENTITY_MATCH_SCORE_FLOOR ? "identity" : "context";
+}
 
 /** Secondary type preference when match quality ties (identity entities first). */
 const TYPE_TIE: Record<SearchEntityType, number> = {
@@ -127,6 +139,7 @@ export function rankSearchDocuments(
       typeLabelHu: doc.typeLabelHu,
       contextLabel: doc.contextLabel,
       score,
+      matchKind: matchKindFromScore(score),
     });
   }
 

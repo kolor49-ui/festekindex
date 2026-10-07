@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { SearchBox } from "@/components/search/SearchBox";
 import type { EntityType, SearchHit } from "@/lib/data/types";
 import type { RelationPreview } from "@/lib/data/repository";
+import type { SearchDocument } from "@/lib/search";
 
 function initials(name: string) {
   return name
@@ -26,12 +28,12 @@ const QUICK = ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"];
 export function HomeExplorer({
   initialHits,
   relatedByEntityId,
+  searchCatalogDocs,
 }: {
   initialHits: SearchHit[];
   relatedByEntityId: Record<string, RelationPreview[]>;
+  searchCatalogDocs: SearchDocument[];
 }) {
-  const [query, setQuery] = useState("");
-  const [submitted, setSubmitted] = useState("");
   const [filterIdx, setFilterIdx] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(
     initialHits[0]?.id ?? null,
@@ -39,34 +41,15 @@ export function HomeExplorer({
 
   const filtered = useMemo(() => {
     const types = FILTERS[filterIdx]?.types;
-    const term = submitted.trim().toLowerCase();
     let list = initialHits;
-
-    if (term) {
-      list = list.filter((h) =>
-        [h.name, h.shortDescription, h.kindLabel, ...h.categoryNames]
-          .join(" ")
-          .toLowerCase()
-          .includes(term),
-      );
-    }
-
     if (types) {
       list = list.filter((h) => types.includes(h.type));
     }
-
     return list;
-  }, [initialHits, submitted, filterIdx]);
+  }, [initialHits, filterIdx]);
 
   const selected = filtered.find((h) => h.id === selectedId) ?? filtered[0];
   const related = selected ? (relatedByEntityId[selected.id] ?? []) : [];
-
-  function runSearch(value?: string) {
-    const next = value ?? query;
-    setQuery(next);
-    setSubmitted(next);
-    setSelectedId(null);
-  }
 
   return (
     <>
@@ -79,25 +62,11 @@ export function HomeExplorer({
         <p>
           Gyártók, márkák és technológiák egyetlen kereshető szakmai rendszerben.
         </p>
-        <form
-          className="search"
-          onSubmit={(e) => {
-            e.preventDefault();
-            if (query.trim()) {
-              window.location.href = `/kereses?q=${encodeURIComponent(query.trim())}`;
-            } else {
-              runSearch();
-            }
-          }}
-        >
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Keress cégre, márkára, technológiára vagy termékkörre…"
-            aria-label="Keresés"
-          />
-          <button type="submit">Keresés</button>
-        </form>
+        <SearchBox
+          catalog={searchCatalogDocs}
+          variant="hero"
+          placeholder="Keress cégre, márkára, technológiára vagy termékkörre…"
+        />
         <div className="quick">
           {QUICK.map((q) => (
             <Link
