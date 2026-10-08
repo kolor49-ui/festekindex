@@ -88,7 +88,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "VALMOR Homlokzatfesték diszperziós matt kültéri falfesték. A műszaki adatlap szerint vízzel hígítható; felhordás ecsettel, hengerrel vagy szórással.",
     sourceSummarySourceIds: ["src_valmor_facade", "src_valmor_facade_tds"],
     editorialSummary:
-      "Diszperziós matt kültéri falfesték. Homlokzati falak fedésére szánt, vízzel hígítható bevonat.",
+      "Diszperziós matt kültéri falfesték. Homlokzati ásványi felületekre; nagyobb igénybevételű beltéri falakra is jelölt; vízzel hígítható.",
   },
   {
     productId: "prod_valmor_plinth",
@@ -112,7 +112,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "VALMOR Garázsfesték oldószeres, selyemfényű bel- és kültéri padló-/garázsfesték uretán-alkid kötőanyaggal. A műszaki adatlap szerint hígítás és szerszámtisztítás COROR Szintetikus Hígítóval történik.",
     sourceSummarySourceIds: ["src_valmor_garage", "src_valmor_garage_tds"],
     editorialSummary:
-      "Oldószeres, selyemfényű uretán-alkid padlófesték garázs- és hasonló járófelületekre. Bel- és kültéri használatra.",
+      "Oldószeres, selyemfényű uretán-alkid padlófesték garázs- és hasonló járófelületekre. Bel- és kültéri használatra; COROR Szintetikus Hígítóval.",
   },
   {
     productId: "prod_valmor_floor",
@@ -208,7 +208,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "src_coror_rapid_primer_tds",
     ],
     editorialSummary:
-      "Oldószeres korróziógátló fémalapozó a COROR Rapid rendszerhez. Acél, alumínium, horganyzott és rézfelületek bel- és kültéri alapozására.",
+      "Oldószeres, matt korróziógátló fémalapozó a COROR Rapid rendszerhez. Acél, alumínium, horganyzott és rézfelületek bel- és kültéri alapozására.",
   },
   {
     productId: "prod_coror_rapid_enamel",

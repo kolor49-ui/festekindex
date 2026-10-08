@@ -31,12 +31,12 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
   },
   {
     "productId": "prod_coror_chlorinated_rubber",
-    "sourceSummary": "A COROR Klórkaucsuk bevonat alkalmas kül- és beltérben fa, fém, üvegszálas és oldószerálló kemény műanyagok (kivéve polipropilén), kerámia burkolatok (csempe), beton, tégla, vakolt falak felületeinek védelmére. A bevonat rugalmas és tartósan ellenáll az édes és sós víz, vegyi anyagok, híg savoldat, híg lúgoldat,.",
+    "sourceSummary": "COROR Klórkaucsuk Bevonat oldószeres, selyemfényű védőbevonat bel- és kültérre. A műszaki adatlap szerint többek között fa, fém, beton és kerámia felületekre (polipropilén kivételével); hígítás aromás hígítóval.",
     "sourceSummarySourceIds": [
       "src_coror_chlorinated_rubber",
       "src_coror_chlorinated_rubber_tds"
     ],
-    "editorialSummary": "A COROR Klórkaucsuk bevonat alkalmas kül- és beltérben fa, fém, üvegszálas és oldószerálló kemény műanyagok (kivéve polipropilén), kerámia burkolatok (csempe), beton, tégla, vakolt falak felületeinek védelmére. A."
+    "editorialSummary": "Oldószeres, selyemfényű klórkaucsuk bevonat medence- és vegyi igényű felületekre. Bel- és kültér; polipropilén kivételével többféle alapon; aromás hígítóval."
   },
   {
     "productId": "prod_valmor_safe_floor",
@@ -49,12 +49,12 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
   },
   {
     "productId": "prod_factor_2in1_lazur",
-    "sourceSummary": "A FACTOR „2in1” Vékonylazúr kül- és beltérben egyaránt használható a fafelületek alapozására, védelmére, impregnálására és díszítésére / színezésére. Használható kemény, ill. puha fafajtákból (borovi, lucfenyő) készült felületekre.",
+    "sourceSummary": "FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr oldószeres, selyemfényű faalapozó és vékonylazúr bel- és kültérre. A műszaki adatlap szerint kemény- és puhafára; hígítani tilos; szerszámtisztítás lakkbenzinnel.",
     "sourceSummarySourceIds": [
       "src_factor_2in1_lazur",
       "src_factor_2in1_lazur_tds"
     ],
-    "editorialSummary": "A FACTOR „2in1” Vékonylazúr kül- és beltérben egyaránt használható a fafelületek alapozására, védelmére, impregnálására és díszítésére / színezésére. Használható kemény, ill."
+    "editorialSummary": "Oldószeres, selyemfényű faalapozó és vékonylazúr egy termékben. Bel- és kültéri fára; impregnáló első réteggel; hígítani tilos."
   },
   {
     "productId": "prod_factor_floor_enamel",
@@ -94,21 +94,21 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
   },
   {
     "productId": "prod_valmor_bridge_primer",
-    "sourceSummary": "Valmor Hídképző Alapozó felhasználható kül- és beltérben, szinte bármilyen nedvszívó és nem nedvszívó felület alapozó festésére. Az alapozás célja, hogy a korlátozott tapadókészségű felületek, alapozás után könnyen festhetővé váljanak.(pl, csempe, üveg, műanyag, mázaskerámia, alumínium, horgany, inox acél, laminált.",
+    "sourceSummary": "VALMOR Hídképző Alapozó vizesbázisú, matt alapozó bel- és kültérre. A műszaki adatlap szerint korlátozott tapadású nedvszívó és nem nedvszívó felületekre; felhordás ecsettel vagy hengerrel.",
     "sourceSummarySourceIds": [
       "src_valmor_bridge_primer",
       "src_valmor_bridge_primer_tds"
     ],
-    "editorialSummary": "Valmor Hídképző Alapozó felhasználható kül- és beltérben, szinte bármilyen nedvszívó és nem nedvszívó felület alapozó festésére. Az alapozás célja, hogy a korlátozott tapadókészségű felületek, alapozás után könnyen."
+    "editorialSummary": "Vizesbázisú, matt hídképző alapozó korlátozott tapadású felületekre bel- és kültérre. Fedőfestés előtt tapadóhíd; beltérben színezve önálló matt bevonatként is jelölt."
   },
   {
     "productId": "prod_valmor_bond_bridge",
-    "sourceSummary": "A Valmor Tapadóhíd egy vízbázisú, oldószermentes alapozó, mely rendkívül erősen tapadó, érdes felületű bevonatot képez a felületen. Mikor használjuk? Szeretnénk járólapozni, csempézni, betonozni.",
+    "sourceSummary": "VALMOR Tapadóhíd vízbázisú, oldószermentes tapadóhíd érdes fogadóréteggel. A műszaki adatlap szerint burkolás, betonozás és festés előtt; felhordás ecsettel vagy hengerrel.",
     "sourceSummarySourceIds": [
       "src_valmor_bond_bridge",
       "src_valmor_bond_bridge_tds"
     ],
-    "editorialSummary": "A Valmor Tapadóhíd egy vízbázisú, oldószermentes alapozó, mely rendkívül erősen tapadó, érdes felületű bevonatot képez a felületen. Mikor használjuk?"
+    "editorialSummary": "Vízbázisú, oldószermentes tapadóhíd érdes, erősen tapadó közbenső réteggel. Burkolás, betonozás és festés előtt; szemcsés tapadásjavító."
   },
   {
     "productId": "prod_valmor_mold_paint",
@@ -121,12 +121,12 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
   },
   {
     "productId": "prod_valmor_qlassique",
-    "sourceSummary": "A VALMOR Qlassique Fehér Beltéri Falfesték újonnan kifejlesztett, környezetvédelmi előírásoknak megfelelő, speciális receptúrával rendelkező festék. A falfesték vízpára- és légáteresztő tulajdonsága révén megfelel a jelenkor technikai követelményeinek. Használható gipszes és cementes vakolatok, glettelt felületek,.",
+    "sourceSummary": "VALMOR Qlassique Fehér Beltéri Falfesték diszperziós matt fehér beltéri falfesték. A műszaki adatlap szerint gipszes/cementes vakolatra, glettelt felületre, gipszkartonra és diszperziós átvonásra; felhordás ecsettel, hengerrel vagy szórással; vízzel hígítható.",
     "sourceSummarySourceIds": [
       "src_valmor_qlassique",
       "src_valmor_qlassique_tds"
     ],
-    "editorialSummary": "A VALMOR Qlassique Fehér Beltéri Falfesték újonnan kifejlesztett, környezetvédelmi előírásoknak megfelelő, speciális receptúrával rendelkező festék. A falfesték vízpára- és légáteresztő tulajdonsága révén megfelel a."
+    "editorialSummary": "Matt, fehér diszperziós beltéri falfesték. Glettelt falra, gipszkartonra és diszperziós átvonásra; vízzel hígítható."
   },
   {
     "productId": "prod_valmor_touchline",
