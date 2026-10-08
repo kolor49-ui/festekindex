@@ -3,15 +3,21 @@ import type { AnyEntity } from "@/lib/data/types";
 import { SITE_ORIGIN } from "@/lib/data/repository";
 import { buildEntityPageModel } from "@/lib/seo/entityPageModel";
 
+/** Root layout template adds `| FESTÉKINDEX` once — strip duplicates here. */
+export function stripBrandTitleSuffix(title: string): string {
+  return title.replace(/\s*\|\s*FESTÉKINDEX\s*$/i, "").trim();
+}
+
 export function entityMetadata(entity: AnyEntity): Metadata {
   const page = buildEntityPageModel(entity);
+  const title = stripBrandTitleSuffix(page.title);
 
   return {
-    title: page.title,
+    title,
     description: page.metaDescription,
     alternates: { canonical: page.canonicalUrl },
     openGraph: {
-      title: page.title,
+      title,
       description: page.metaDescription,
       url: page.canonicalUrl,
       siteName: "FESTÉKINDEX",
@@ -30,12 +36,13 @@ export function listMetadata(
   path: string,
 ): Metadata {
   const url = `${SITE_ORIGIN}${path}`;
+  const pageTitle = stripBrandTitleSuffix(title);
   return {
-    title,
+    title: pageTitle,
     description,
     alternates: { canonical: url },
     openGraph: {
-      title,
+      title: pageTitle,
       description,
       url,
       siteName: "FESTÉKINDEX",

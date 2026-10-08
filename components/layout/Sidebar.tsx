@@ -22,15 +22,31 @@ export function Sidebar({
   categories,
   open,
   onNavigate,
+  dialogTitleId,
 }: {
   categories: NavCategory[];
   open: boolean;
   onNavigate?: () => void;
+  /** When set, sidebar acts as a mobile dialog. */
+  dialogTitleId?: string;
 }) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
 
   return (
-    <aside className={`sidebar${open ? " open" : ""}`} id="side">
+    <aside
+      className={`sidebar${open ? " open" : ""}`}
+      id="side"
+      {...(open
+        ? {
+            role: "dialog",
+            "aria-modal": true as const,
+            "aria-labelledby": dialogTitleId,
+            tabIndex: -1,
+          }
+        : {
+            "aria-label": "Fő navigáció",
+          })}
+    >
       <div className="brand">
         <Link href="/" onClick={onNavigate}>
           <div className="brandrow">
@@ -72,7 +88,11 @@ export function Sidebar({
             <Link
               key={link.href}
               href={link.href}
-              className="mainlink"
+              className={`mainlink${
+                pathname === link.href || pathname.startsWith(`${link.href}/`)
+                  ? " on"
+                  : ""
+              }`}
               onClick={onNavigate}
             >
               {link.label} <span>→</span>

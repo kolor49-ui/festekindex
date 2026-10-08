@@ -194,12 +194,14 @@ section("Home quick chips → Search v1");
       searchCatalogDocs: buildSearchCatalog(),
     }),
   );
-  for (const q of ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"]) {
+  // Manufacturer-neutral intent chips (not a single-manufacturer promo row)
+  for (const q of ["Airless", "Zománc", "Acél", "Homlokzat", "Hígító"]) {
     assert.ok(
       html.includes(`href="/kereses?q=${encodeURIComponent(q)}"`),
       `missing chip link for ${q}`,
     );
   }
+  assert.ok(html.includes("Termékek"), "home filter must expose Termékek");
   // Search engine ranking/normalization untouched; catalog grows with published Products
   assert.equal(
     buildSearchCatalog().length,

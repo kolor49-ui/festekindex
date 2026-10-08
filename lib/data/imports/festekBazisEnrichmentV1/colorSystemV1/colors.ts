@@ -724,7 +724,7 @@ export const colorsV1: Color[] = [
     "id": "color_coror_barsonybarack_2024_ev_szine",
     "colorSystemId": "color_system_coror",
     "code": "barsonybarack_2024_ev_szine",
-    "name": "Bársonybarack\" 2024 Év színe",
+    "name": "„Bársonybarack” 2024 Év színe",
     "sourceIds": []
   },
   {
@@ -752,7 +752,7 @@ export const colorsV1: Color[] = [
     "id": "color_coror_mocha_mousse_2025_ev_szine",
     "colorSystemId": "color_system_coror",
     "code": "mocha_mousse_2025_ev_szine",
-    "name": "Mocha Mousse\" 2025 Év színe",
+    "name": "„Mocha Mousse” 2025 Év színe",
     "sourceIds": []
   },
   {

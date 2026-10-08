@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/entity/EntityUI";
 import { SearchBox } from "@/components/search/SearchBox";
 import { SearchResultsList } from "@/components/search/SearchResultsList";
 import { getProductById, SITE_ORIGIN } from "@/lib/data/repository";
+import { stripBrandTitleSuffix } from "@/lib/seo/metadata";
 import {
   buildSearchCatalog,
   normalizeSearchText,
@@ -21,13 +22,14 @@ export async function generateMetadata({
   const canonical = `${SITE_ORIGIN}/kereses`;
 
   if (!term) {
+    const title = stripBrandTitleSuffix("Keresés | FESTÉKINDEX");
     return {
-      title: "Keresés | FESTÉKINDEX",
+      title,
       description:
         "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
       alternates: { canonical },
       openGraph: {
-        title: "Keresés | FESTÉKINDEX",
+        title,
         description:
           "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
         url: canonical,
@@ -38,13 +40,14 @@ export async function generateMetadata({
     };
   }
 
+  const title = stripBrandTitleSuffix(`Keresés: ${term} | FESTÉKINDEX`);
   return {
-    title: `Keresés: ${term} | FESTÉKINDEX`,
+    title,
     description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
     alternates: { canonical },
     robots: { index: false, follow: true },
     openGraph: {
-      title: `Keresés: ${term} | FESTÉKINDEX`,
+      title,
       description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
       url: canonical,
       siteName: "FESTÉKINDEX",

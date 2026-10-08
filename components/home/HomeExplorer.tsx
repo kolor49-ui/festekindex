@@ -6,6 +6,7 @@ import { SearchBox } from "@/components/search/SearchBox";
 import type { EntityType, SearchHit } from "@/lib/data/types";
 import type { RelationPreview } from "@/lib/data/repository";
 import type { SearchDocument } from "@/lib/search";
+import { isPublicListFiller } from "@/lib/seo/publicListCopy";
 
 function initials(name: string) {
   return name
@@ -20,10 +21,18 @@ const FILTERS: { label: string; types?: EntityType[] }[] = [
   { label: "Minden" },
   { label: "Cégek", types: ["organization"] },
   { label: "Márkák", types: ["brand"] },
+  { label: "Termékek", types: ["product"] },
   { label: "Technológiák", types: ["technology"] },
 ];
 
-const QUICK = ["Graco", "Dulux", "Airless", "Porfesték", "Csiszolás"];
+/** Diverse professional search intents — not a single-manufacturer promo row. */
+const QUICK = ["Airless", "Zománc", "Acél", "Homlokzat", "Hígító"];
+
+function hitDescription(hit: SearchHit): string {
+  const raw = hit.shortDescription?.trim() ?? "";
+  if (!raw || isPublicListFiller(raw)) return "";
+  return raw.length > 80 ? `${raw.slice(0, 80)}…` : raw;
+}
 
 export function HomeExplorer({
   initialHits,
@@ -39,14 +48,40 @@ export function HomeExplorer({
     initialHits[0]?.id ?? null,
   );
 
+  const productHitsFromCatalog = useMemo((): SearchHit[] => {
+    return searchCatalogDocs
+      .filter((d) => d.type === "product")
+      .slice(0, 12)
+      .map((d) => ({
+        id: d.id,
+        type: "product" as const,
+        slug: d.href.split("/").pop() ?? d.id,
+        name: d.displayName || d.name,
+        shortDescription: "",
+        href: d.href,
+        kindLabel: d.typeLabelHu || "Termék",
+        categoryNames: d.contextLabel ? [d.contextLabel] : [],
+      }));
+  }, [searchCatalogDocs]);
+
   const filtered = useMemo(() => {
     const types = FILTERS[filterIdx]?.types;
     let list = initialHits;
     if (types) {
       list = list.filter((h) => types.includes(h.type));
+      // Termékek: supplement from SearchDocuments when featured mix is sparse
+      if (types.includes("product") && list.length < 6) {
+        const seen = new Set(list.map((h) => h.id));
+        for (const extra of productHitsFromCatalog) {
+          if (seen.has(extra.id)) continue;
+          list = [...list, extra];
+          seen.add(extra.id);
+          if (list.length >= 10) break;
+        }
+      }
     }
     return list;
-  }, [initialHits, filterIdx]);
+  }, [initialHits, filterIdx, productHitsFromCatalog]);
 
   const selected = filtered.find((h) => h.id === selectedId) ?? filtered[0];
   const related = selected ? (relatedByEntityId[selected.id] ?? []) : [];
@@ -100,26 +135,27 @@ export function HomeExplorer({
           {filtered.length === 0 ? (
             <p className="empty">Nincs találat. Próbálj másik keresőkifejezést.</p>
           ) : (
-            filtered.map((hit) => (
-              <button
-                key={hit.id}
-                type="button"
-                className={`row${selected?.id === hit.id ? " selected" : ""}`}
-                onClick={() => setSelectedId(hit.id)}
-              >
-                <div className="icon">{initials(hit.name)}</div>
-                <div>
-                  <b>{hit.name}</b>
-                  <small>
-                    {hit.categoryNames[0] ?? hit.kindLabel}
-                    {hit.shortDescription
-                      ? ` · ${hit.shortDescription.slice(0, 80)}${hit.shortDescription.length > 80 ? "…" : ""}`
-                      : ""}
-                  </small>
-                </div>
-                <div className="kind">{hit.kindLabel}</div>
-              </button>
-            ))
+            filtered.map((hit) => {
+              const desc = hitDescription(hit);
+              return (
+                <button
+                  key={hit.id}
+                  type="button"
+                  className={`row${selected?.id === hit.id ? " selected" : ""}`}
+                  onClick={() => setSelectedId(hit.id)}
+                >
+                  <div className="icon">{initials(hit.name)}</div>
+                  <div>
+                    <b>{hit.name}</b>
+                    <small>
+                      {hit.categoryNames[0] ?? hit.kindLabel}
+                      {desc ? ` · ${desc}` : ""}
+                    </small>
+                  </div>
+                  <div className="kind">{hit.kindLabel}</div>
+                </button>
+              );
+            })
           )}
         </div>
 
@@ -128,7 +164,10 @@ export function HomeExplorer({
             <>
               <div className="dtype">{selected.kindLabel}</div>
               <h2>{selected.name}</h2>
-              <p>{selected.shortDescription}</p>
+              <p>
+                {hitDescription(selected) ||
+                  `${selected.kindLabel} a FESTÉKINDEX szakmai indexében.`}
+              </p>
               <div className="section">
                 <h4>Kapcsolódó elemek</h4>
                 {related.length ? (
@@ -153,7 +192,7 @@ export function HomeExplorer({
                 )}
               </div>
               <div className="section">
-                <h4>Kapcsolati háló</h4>
+                <h4>Kapcsolódó szakmai tartalmak</h4>
                 <div className="route">
                   <b>{selected.name}</b>
                   {related.length
@@ -163,7 +202,7 @@ export function HomeExplorer({
                           → {r.name}
                         </span>
                       ))
-                    : " → kapcsolódó entitások a relations rétegből"}
+                    : " — kapcsolódó elemek a kiválasztott találat alapján"}
                 </div>
               </div>
               <div className="section">
@@ -177,11 +216,11 @@ export function HomeExplorer({
               <div className="dtype">FESTÉKINDEX ADATLAP</div>
               <h2>Válassz egy találatot</h2>
               <p>
-                A részletes adatlap itt mutatja majd a céget vagy márkát és annak
-                teljes kapcsolati hálóját.
+                A részletes adatlap itt mutatja a kiválasztott céget, márkát,
+                terméket vagy technológiát és a kapcsolódó szakmai tartalmakat.
               </p>
               <div className="section">
-                <h4>Kapcsolati logika</h4>
+                <h4>Felfedezési útvonal</h4>
                 <div className="route">
                   <b>Cég</b> → márkák → technológiák → termékcsoportok → hazai
                   kapcsolat → szerviz → szakmai tudás

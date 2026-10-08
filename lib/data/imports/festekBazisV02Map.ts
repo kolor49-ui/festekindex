@@ -131,8 +131,9 @@ function meetsProductSeoThreshold(p: PackEntity): boolean {
   return true;
 }
 
-function structuralShort(name: string, kind: string): string {
-  return `${name} — ${kind} a FESTÉKINDEX adatbázisában (Festék Bázis v0.2).`;
+/** Empty when pack has no editorial short — public lists omit filler. */
+function structuralShort(_name: string, _kind: string): string {
+  return "";
 }
 
 function mapTechKind(kind: string | undefined): TechnologyKind {

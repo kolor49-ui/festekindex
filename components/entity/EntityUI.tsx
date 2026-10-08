@@ -5,6 +5,7 @@ import {
   getEntityHref,
   KIND_LABEL,
 } from "@/lib/data/repository";
+import { publicListDescription } from "@/lib/seo/publicListCopy";
 
 function initials(name: string) {
   return name
@@ -184,16 +185,19 @@ export function EntityList({ entities }: { entities: AnyEntity[] }) {
 
   return (
     <div className="list-grid">
-      {entities.map((entity) => (
-        <Link key={entity.id} href={getEntityHref(entity)} className="row">
-          <div className="icon">{initials(entity.name)}</div>
-          <div>
-            <b>{entity.name}</b>
-            <small>{entity.shortDescription}</small>
-          </div>
-          <div className="kind">{KIND_LABEL[entity.type]}</div>
-        </Link>
-      ))}
+      {entities.map((entity) => {
+        const description = publicListDescription(entity);
+        return (
+          <Link key={entity.id} href={getEntityHref(entity)} className="row">
+            <div className="icon">{initials(entity.name)}</div>
+            <div>
+              <b>{entity.name}</b>
+              {description ? <small>{description}</small> : null}
+            </div>
+            <div className="kind">{KIND_LABEL[entity.type]}</div>
+          </Link>
+        );
+      })}
     </div>
   );
 }

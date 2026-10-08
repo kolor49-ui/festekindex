@@ -35,7 +35,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A FACTOR Vastaglazúr felhasználásánál kérjük, tartsa be a festéssel kapcso latos ismereteket, hogy az Ön által kezelt felület megfelelő minőségű legyen. A munkálatokat csak 5–30 °C között végezze! A festett fa nedvességtartalma maximum 12% lehet. A terméket felhasználás előtt alaposan keverje fel!",
-          "A színek árnyalatban eltérhetnek a színkártya színeitől, amit befolyásol az Ön által kezelt fa alapszíne, szívóképessége és a festékek rétegszáma.festekbazis.hu oldalon!festekbazis.hu oldalról!"
+          "A színek árnyalatban eltérhetnek a színkártya színeitől, amit befolyásol az Ön által kezelt fa alapszíne, szívóképessége és a festékek rétegszáma."
         ],
         "sourceIds": [
           "src_factor_vastaglazur",
@@ -90,7 +90,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
           "A festést csak +10 °C felett végezzük! A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a két komponenst A+B alaposan keverjük össze, hígításképpen maximum 5%-ban vizet adhatunk hozzá (túlhígítás esetén a rendszer felhasználhatatlan lesz, mivel a vákuumgömbök felúsznak a festék tetejére).",
           "Csomómentes összekeverés érdekében: mindig a sűrűbb anyagot hígítjuk apránként. Gépi keverés csak alacsony fordulatszámon történhet, mert különben sérülhetnek a kerámiagömbök. Az első réteg felvitele után hagyjuk azt átszáradni, majd a 2. illetve 3. réteg felhordását víz hozzáadása nélkül végezzük.",
           "A festéket minden réteg felhordása előtt keverje át! A festék keverék 0,1 mm nagyságú kerámia gömböcskéket is tartalmaz, így az első réteg felhordásakor dorozsmásabb felületet kaphatunk. Figyelem! Csiszolni TILOS! Elvesztheti a hatékonyságát a bevonat. 1 liter festéket összeségében max.",
-          "3 négyzetméternyi felületre hordjunk fel. Ebben az esetben a bevonat vastagsága kb 0,3 mm lesz. Vastagabb réteg esetén a bevonat hatékonysága növekszik! (pl. 2 m2/liter kiadósság esetén).festekbazis.hu oldalról!"
+          "3 négyzetméternyi felületre hordjunk fel. Ebben az esetben a bevonat vastagsága kb 0,3 mm lesz. Vastagabb réteg esetén a bevonat hatékonysága növekszik! (pl. 2 m2/liter kiadósság esetén)."
         ],
         "sourceIds": [
           "src_valmor_airflow_heat_mirror_paint",
@@ -198,7 +198,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A festést csak +5 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet. Ne dolgozzunk esőben vagy tűző nyári napsütésben! Alaposan keverjük fel a terméket, majd kezdjük meg a festést ecsettel vagy hengerrel! Az első réteg felvitele előtt a terméket aromás hígítóval hígíthatjuk a felhordási konzisztencia eléréséig.",
-          "A második réteg esetén nem szükséges hígítani. A festések között legalább 1 óra száradási időt biztosítsunk!festekbazis.hu oldalról!"
+          "A második réteg esetén nem szükséges hígítani. A festések között legalább 1 óra száradási időt biztosítsunk!"
         ],
         "sourceIds": [
           "src_coror_chlorinated_rubber",
@@ -253,7 +253,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A festést csak +5°C felett végezzük, a felület hőmérséklete max. 25 °C lehet. Ne dolgozzunk esőben vagy tűző nyári napsütésben! A felhordást végezhetjük ecsettel, hengerrel, megfelelő szóróberendezéssel. Használat előtt a festéket alaposan keverjük fel. A nedvszívó felületek alapozását 20% Coror Aromás Hígító hozzáadásával, intenzív ecsetelésével végezzük!",
-          "Az első réteg felvitele előtt a terméket aromás hígítóval hígíthatjuk a felhordási konzisztencia eléréséig. A második réteg esetén nem szükséges hígítani. Aszfaltozott felületek festésénél az aromás hígító megoldhatja a felületet. Határozott mozdulatokkal visszanyúlás nélkül festendő.festekbazis.hu oldalról!"
+          "Az első réteg felvitele előtt a terméket aromás hígítóval hígíthatjuk a felhordási konzisztencia eléréséig. A második réteg esetén nem szükséges hígítani. Aszfaltozott felületek festésénél az aromás hígító megoldhatja a felületet. Határozott mozdulatokkal visszanyúlás nélkül festendő."
         ],
         "sourceIds": [
           "src_valmor_safe_floor",
@@ -307,7 +307,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A FACTOR „2in1” Vékonylazúr felhasználásánál kérjük, tartsa be a festéssel kapcsolatos ismereteket, hogy az Ön által kezelt felület megfelelő minőségű legyen. A munkálatokat csak 5–30 °C között végezze! A festett fa nedvességtartalma maximum 12% lehet. A terméket felhasználás előtt alaposan keverje fel!",
-          "A színek árnyalatban eltérhetnek a színkártya színeitől, amit befolyásol az Ön által kezelt fa alapszíne, szívóképessége és a festékek rétegszáma.festekbazis. hu oldalon!festekbazis.hu oldalról!"
+          "A színek árnyalatban eltérhetnek a színkártya színeitől, amit befolyásol az Ön által kezelt fa alapszíne, szívóképessége és a festékek rétegszáma."
         ],
         "sourceIds": [
           "src_factor_2in1_lazur",
@@ -359,7 +359,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "paragraphs": [
           "A festést csak +5°C felett végezzük, a felület hőmérséklete max. 25 °C lehet. A munkálatokat végezhetjük ecsettel, hengerrel vagy megfelelő szóróberendezéssel. Alaposan keverjük fel a terméket, majd kezdjük meg a festést a fa esetén szálirányával megegyező irányban!",
           "Használjunk jó minőségű ecsetet! Az első réteg esetén 5%-os hígítás javasolt. A nagy terheléseknek kitett felületeknél 3 réteg felhordása célszerű. A festések között legalább 16 óra száradási időt biztosítsunk, a következő réteg felhordása előtt győződjön meg az előző réteg megszáradásáról.",
-          "Nem járófelületek esetében 1 órán belül vagy a teljes száradást követően festhető át a felület. A festett fa nedvességtartalma maximum 12% lehet.festekbazis.hu oldalról!"
+          "Nem járófelületek esetében 1 órán belül vagy a teljes száradást követően festhető át a felület. A festett fa nedvességtartalma maximum 12% lehet."
         ],
         "sourceIds": [
           "src_factor_floor_enamel",
@@ -410,7 +410,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A munkálatokat csak +10 °C feletti hőmérsékleten kezdjük meg. A VALMOR AIR FLOW Fixatív Felületkezelőt NEM szabad hígítani! Felhordáshoz használhatunk ecsetet, hengert, kefét és szivacsot. Lehetőség szerint 1 maximum 2 rétegben hordjuk fel. A beszínezett fixatívot fel kell használni.festekbazis.hu oldalról!"
+          "A munkálatokat csak +10 °C feletti hőmérsékleten kezdjük meg. A VALMOR AIR FLOW Fixatív Felületkezelőt NEM szabad hígítani! Felhordáshoz használhatunk ecsetet, hengert, kefét és szivacsot. Lehetőség szerint 1 maximum 2 rétegben hordjuk fel. A beszínezett fixatívot fel kell használni."
         ],
         "sourceIds": [
           "src_valmor_airflow_fixative",
@@ -468,7 +468,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "paragraphs": [
           "A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25°C lehet! A munkálatokat végezhetjük ecsettel, hengerrel, megfelelő szóróberendezéssel. A vödör tartalmát gépi erővel alaposan keverjük fel! Az első rétegre szánt mennyiséget hígítsuk meg, maximum 15% víz hozzáadásával.",
           "Egyenletes rétegben, folyamatos ecsetelő mozdulatokkal fessük le a felületet! Az első réteg felvitele után hagyjunk legalább 10 óra száradási időt, amíg az járható nem lesz! A fedőbevonatot kb. 10% víz hozzáadásával hígítsuk, ezt követően– ügyelve a megfelelő szigetelés elvárásaira – hordjuk fel a felületre!",
-          "Tartós vízterhelésnek, lejtés nélküli, valamint nagy hőtágulásnak kitett 1 m2 felületre 1 kg (hígítatlan mennyiséggel számoljon) bevonatot, minimum 3 rétegben hordjunk fel! A bevonat repedésáthidaló képessége a rétegvastaggal arányos mértékben növekszik.festekbazis.hu oldalról!"
+          "Tartós vízterhelésnek, lejtés nélküli, valamint nagy hőtágulásnak kitett 1 m2 felületre 1 kg (hígítatlan mennyiséggel számoljon) bevonatot, minimum 3 rétegben hordjunk fel! A bevonat repedésáthidaló képessége a rétegvastaggal arányos mértékben növekszik."
         ],
         "sourceIds": [
           "src_valmor_aqua_tech",
@@ -520,7 +520,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Kültéri használat alkalmával a felület kezelését ne végezzük esőben, illetve tűző napon! A munkálatokat végezhetjük ecsettel vagy hengerrel. A vödör tartalmát alaposan keverjük fel, majd hígítsuk 5-10% víz hozzáadásával!",
-          "Az első réteg felvitele után hagyjuk azt legalább 4 órán át száradni, majd vigyük fel a második réteget! 10 óra száradási idő elteltével a felület burkolható.festekbazis.hu oldalról!"
+          "Az első réteg felvitele után hagyjuk azt legalább 4 órán át száradni, majd vigyük fel a második réteget! 10 óra száradási idő elteltével a felület burkolható."
         ],
         "sourceIds": [
           "src_valmor_liquid_foil",
@@ -662,7 +662,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük.festekbazis.hu oldalról."
+          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük."
         ],
         "sourceIds": [
           "src_valmor_mold_paint",
@@ -713,7 +713,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést, amennyiben szükséges, max.",
-          "5% víz hozzáadásával végezzük.festekbazis.hu oldalról!"
+          "5% víz hozzáadásával végezzük."
         ],
         "sourceIds": [
           "src_valmor_qlassique",
@@ -764,7 +764,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A munkálatokat csak 5–30 °C között végezze! A festék felhordható pályavonalazó géppel, ecsettel, hengerrel és megfelelő szóró berendezéssel. A felhasználást követően minimum 60 perc csapadékmentes száradási időt kell biztosítani. A használt szerszámokat a festést követően vízzel kell elmosni.festekbazis.hu weboldalról!"
+          "A munkálatokat csak 5–30 °C között végezze! A festék felhordható pályavonalazó géppel, ecsettel, hengerrel és megfelelő szóró berendezéssel. A felhasználást követően minimum 60 perc csapadékmentes száradási időt kell biztosítani. A használt szerszámokat a festést követően vízzel kell elmosni."
         ],
         "sourceIds": [
           "src_valmor_touchline",
@@ -816,7 +816,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük.festekbazis.hu oldalról"
+          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük."
         ],
         "sourceIds": [
           "src_valmor_immunetec_standard",
@@ -868,7 +868,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük.festekbazis.hu oldalról"
+          "A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük."
         ],
         "sourceIds": [
           "src_valmor_immunetec_premium",
@@ -920,7 +920,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! 7016 Akril Zománcfestéket alaposan keverjük fel, majd az előkészített felületre hordjuk fel két-három rétegben ecsettel, hengerrel, szivaccsal. A festékrétegek felvitele között az első réteg után 1 óra, a második réteg után 6 óra száradási időt kell biztosítani.",
-          "A nedves dörzsállóságot a festék csak 1 hét kötési idő letelte után éri el. A termék felhasználásra kész, hígítása nem szükséges. A festési kozisztencia beállításához azonban maximum 5% víz adható a rendszerhez.festekbazis.hu oldalról! Ne használja gyermekbútorok és játékok festésére, valamint olyan felületekre, amelyek közvetlenül érintkeznek élelmiszerrel, takarmánnyal, ivóvízzel."
+          "A nedves dörzsállóságot a festék csak 1 hét kötési idő letelte után éri el. A termék felhasználásra kész, hígítása nem szükséges. A festési kozisztencia beállításához azonban maximum 5% víz adható a rendszerhez.Ne használja gyermekbútorok és játékok festésére, valamint olyan felületekre, amelyek közvetlenül érintkeznek élelmiszerrel, takarmánnyal, ivóvízzel."
         ],
         "sourceIds": [
           "src_7016_enamel",
@@ -972,7 +972,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A festést csak +10 °C felett végezzük. Ne dolgozzunk esőben vagy tűző nyári napsütésben! A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, majd hígítsuk meg 10% víz hozzáadásával. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max.",
-          "5% víz hozzáadásával végezzük.festekbazis.hu oldalról!"
+          "5% víz hozzáadásával végezzük."
         ],
         "sourceIds": [
           "src_7016_exterior",
@@ -1027,7 +1027,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! 7016 Pergola Fafestéket alaposan keverjük fel, majd az előkészített felületre hordjuk fel két-három rétegben ecsettel, hengerrel. A festékrétegek felvitele között legalább 2-4 óra száradási időt kell biztosítani.",
-          "A termék felhasználásra kész, hígítása nem szükséges, de lehetséges, maximum 5% víz hozzáadásával. Felhívjuk figyelmét, hogy festékünk sok kötőanyagot és kevés töltőanyagot tartalmaz, így nagyon vékony rétegben is felhordható. Figyeljünk arra, hogy a kiszámolt festékmennyiség felkerüljön a felületre, mert így lesz tartós a bevonat.festekbazis.hu oldalról!"
+          "A termék felhasználásra kész, hígítása nem szükséges, de lehetséges, maximum 5% víz hozzáadásával. Felhívjuk figyelmét, hogy festékünk sok kötőanyagot és kevés töltőanyagot tartalmaz, így nagyon vékony rétegben is felhordható. Figyeljünk arra, hogy a kiszámolt festékmennyiség felkerüljön a felületre, mert így lesz tartós a bevonat."
         ],
         "sourceIds": [
           "src_7016_pergola",
@@ -1080,7 +1080,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "paragraphs": [
           "A vakolást +5 - +30 °C hőmérséklet tartományban végezzük, a felület hőmérséklete max. 25 °C lehet! A vakolatot alaposan keverjük fel, több vödör esetén ellenőrizzük a színazonosságot. A felhordást szemcsevastagságban, rozsdamentes acél simítóval végezzük! Szükség esetén a vakolat maximum 1,5% vízzel hígítható.",
           "A struktúrát 5-10 perc pihentetést követően műanyag simítóval dörzsöljük ki! Felületegység bevonása során a munkát nem szabad félbeszakítani. A határoló felületeket maszkoló szalaggal takarjuk ki, a szalagot a kidörzsölést követően azonnal távolítsuk el! A vakolat természetes ásványi anyagokat tartalmaz, ezért az épületek egyes oldalain azonos gyártási dátumú anyagot használjon.",
-          "Az eső, az erős szél, vagy a tűző nap a felhasználásra kedvezőtlen körülmények.festekbazis.hu oldalról!"
+          "Az eső, az erős szél, vagy a tűző nap a felhasználásra kedvezőtlen körülmények."
         ],
         "sourceIds": [
           "src_7016_plaster",
@@ -1124,7 +1124,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "paragraphs": [
           "A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Kültéri használat alkalmával a felület kezelését ne végezzük esőben, illetve tűző napon! A kezelendő részeket ecsettel, hengerrel, vagy kefével festhetjük. Hígítani szükség esetén, a felület nedvszívó képességének megfelelően maximum 1:1 víz hozzáadásával lehet.",
           "Impregnálószerként alaposan dolgozzuk be azt a kezelendő felületbe mindaddig, míg a nedvszívóképessége megszűnik, a felesleget töröljük le, hogy ne képezzen filmréteget. Bevonat képzés esetén nem kell hígítani az anyagot egyenletesen, egy vagy két vékony rétegben vigyük fel a felületre.",
-          "Járófelület esetén, csak nedvszívó felületeket impregnáljunk. Igénybevétel intenzitásától függően pótolni kell a kopást.festekbazis.hu oldalról!"
+          "Járófelület esetén, csak nedvszívó felületeket impregnáljunk. Igénybevétel intenzitásától függően pótolni kell a kopást."
         ],
         "sourceIds": [
           "src_valmor_stone_balm",
@@ -1175,7 +1175,7 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
         "heading": "Felhasználás",
         "paragraphs": [
           "“Ne ragasszunk vele, ha a ragasztandó elem és a helyiség hőmérséklete alacsonyabb, mint + 5 °C! Használata +10 °C és +25 °C közötti hőmérsékleten ajánlott. Kültéren ne dolgozzunk esőben vagy tűző nyári napsütésben! A munkaeszközöket használat után vízzel tisztítsuk ki.",
-          "Hőszigetelő fólia ragasztásakor spaklival hordjuk fel a ragasztót a falra, majd helyezzük rá az alátéttapétát és tapétázó hengerrel nyomjuk a felületre. Mennyezeti lapok és díszítő elemek esetében tegyünk 3-7 adag ragasztót a polisztirol felületre, majd nyomjuk könnyedén a kívánt helyre.festekbazis.hu oldalról.",
+          "Hőszigetelő fólia ragasztásakor spaklival hordjuk fel a ragasztót a falra, majd helyezzük rá az alátéttapétát és tapétázó hengerrel nyomjuk a felületre. Mennyezeti lapok és díszítő elemek esetében tegyünk 3-7 adag ragasztót a polisztirol felületre, majd nyomjuk könnyedén a kívánt helyre.",
           "Próbaragasztást minden esetben végezzünk!”"
         ],
         "sourceIds": [

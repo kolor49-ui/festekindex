@@ -318,17 +318,32 @@ export function getTechnicalDataForProduct(
   const items: (ProductTechDataItem & { displayOrder: number; uiGroup: SpecUiGroup })[] =
     [];
 
-  for (const spec of product.specifications) {
-    if (!isPublicSpec(spec)) continue;
+  const publicSpecs = product.specifications.filter(isPublicSpec);
+  const keyCounts = new Map<string, number>();
+  for (const spec of publicSpecs) {
+    keyCounts.set(spec.key, (keyCounts.get(spec.key) ?? 0) + 1);
+  }
+
+  for (const spec of publicSpecs) {
     const def = getSpecificationDefinition(spec.key);
     const value = formatSpecValue(spec.value);
     if (!value.trim()) continue;
-    const condition = spec.condition
+    const baseLabel = def?.labelHu ?? formatSpecLabel(spec.key);
+    const note = spec.condition?.note?.trim();
+    // When the same key appears multiple times with distinct notes (e.g. coat_count),
+    // promote the note into the label so rows are not identical "Rétegszám" lines.
+    const duplicateKey = (keyCounts.get(spec.key) ?? 0) > 1;
+    let label = baseLabel;
+    let condition = spec.condition
       ? formatSpecCondition(spec.condition)
       : undefined;
+    if (duplicateKey && note) {
+      label = `${baseLabel} (${note})`;
+      condition = formatSpecCondition({ ...spec.condition, note: undefined });
+    }
     items.push({
       key: spec.key,
-      label: def?.labelHu ?? formatSpecLabel(spec.key),
+      label,
       value,
       condition,
       displayOrder: def?.displayOrder ?? 999,

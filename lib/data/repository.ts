@@ -35,6 +35,7 @@ import {
   mergeSurfaces,
   mergeTechnologies,
 } from "./imports/merge";
+import { publicListDescription } from "@/lib/seo/publicListCopy";
 
 const SITE_ORIGIN = "https://festekindex.hu";
 
@@ -403,7 +404,7 @@ function toSearchHit(entity: AnyEntity): SearchHit {
     type: entity.type,
     slug: entity.slug,
     name: entity.name,
-    shortDescription: entity.shortDescription,
+    shortDescription: publicListDescription(entity) ?? "",
     href: getEntityHref(entity),
     kindLabel: KIND_LABEL[entity.type],
     categoryNames: categoryNamesFor(entity),
@@ -473,17 +474,18 @@ export function searchEntities(
 }
 
 export function getFeaturedHits(limit = 10): SearchHit[] {
+  // Manufacturer-neutral discovery mix: orgs, brands, tech, families, products.
   const featuredIds = [
     "org_graco_inc",
     "brand_graco",
-    "org_euroll_hungaria",
+    "org_festek_bazis_zrt",
     "tech_airless",
-    "pf_graco_mark",
-    "org_akzo_nobel_coatings",
-    "brand_dulux",
-    "brand_sikkens",
-    "brand_international",
-    "brand_wagner",
+    "prod_coror_rapid_enamel",
+    "brand_valmor",
+    "prod_valmor_airflow_interior",
+    "org_euroll_hungaria",
+    "pf_coror_rapid",
+    "surface_acel",
   ];
   const map = entityMap();
   return featuredIds

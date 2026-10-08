@@ -7,7 +7,9 @@ import {
 import { buildSearchCatalog } from "@/lib/search";
 
 export const metadata: Metadata = {
-  title: "FESTÉKINDEX — a festékipar szakmai indexe",
+  title: {
+    absolute: "FESTÉKINDEX — a festékipar szakmai indexe",
+  },
   description:
     "Gyártók, márkák és technológiák egyetlen kereshető szakmai rendszerben.",
   alternates: { canonical: "https://festekindex.hu/" },

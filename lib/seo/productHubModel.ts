@@ -132,6 +132,21 @@ function usableText(text: string | undefined): string | undefined {
   return t;
 }
 
+/**
+ * Strip scraped manufacturer-site citation orphans glued onto paragraphs
+ * (e.g. ".festekbazis.hu oldalról!") without removing legitimate www/https links.
+ */
+function sanitizeProfessionalParagraph(text: string): string {
+  let t = text
+    .replace(/festekbazis\.\s*hu oldalon!?\s*festekbazis\.hu oldalról!?\s*/gi, "")
+    .replace(/(?<![w\/])\.festekbazis\.hu (?:web)?oldalról!?\s*/gi, ".")
+    .replace(/(?<![w\/\.])festekbazis\.hu (?:web)?oldalról!?\s*/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/(?<!\.)\.\.(?!\.)/g, ".")
+    .trim();
+  return t;
+}
+
 function orgLabel(role: "owner" | "manufacturer" | undefined): string {
   if (role === "manufacturer") return "Gyártó";
   return "Tulajdonos";
@@ -223,7 +238,7 @@ export function buildProductHubModel(
       ?.map((s) => ({
         heading: s.heading.trim(),
         paragraphs: s.paragraphs
-          .map((p) => p.trim())
+          .map((p) => sanitizeProfessionalParagraph(p.trim()))
           .filter((p) => p.length > 0),
       }))
       .filter((s) => s.heading && s.paragraphs.length > 0) ?? [];
