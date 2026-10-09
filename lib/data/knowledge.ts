@@ -49,7 +49,7 @@ Jó airless eredmény csak akkor várható, ha a bevonat, a tip, a nyomás, a sz
 
 Az airless rendszerek folyadéknyomása olyan magas lehet, hogy a permet vagy egy szivárgás a bőrt áttörve a szövetekbe juttathat anyagot. Ez a magasnyomású injekciós sérülés súlyos, gyakran alábecsült munkahelyi veszély: a bemeneti nyílás kicsinek tűnhet, a következmény mégis súlyos lehet. Soha ne irányítsuk a pisztolyt magunkra vagy másra; soha ne tegyük a kezet vagy ujjat a tip elé; a tipvédőt és a ravaszbiztosítót használjuk. Tisztítás, tipcsere vagy karbantartás előtt a rendszer nyomását a gyártói nyomásmentesítési eljárás szerint teljesen le kell engedni — a motor kikapcsolása önmagában nem mindig elég.
 
-Gyanított injekció esetén azonnal orvosi ellátás szükséges; ne kezeljük „apró vágásként”. A kezelőorvosnak mondjuk el az anyagot és a körülményeket; a biztonsági adatlap (SDS) információi fontosak. Emellett a bevonat típusától függően kötelező a megfelelő egyéni védőeszköz, a szellőzés és az SDS szerinti óvintézkedések. A konkrét berendezés és bevonat biztonsági előírásait mindig a gyártói dokumentáció és a biztonsági adatlap alapján kell követni.
+Gyanított injekció esetén azonnal orvosi ellátás szükséges; ne kezeljük „apró vágásként”. A kezelőorvosnak mondjuk el az anyagot és a körülményeket; a Biztonsági adatlap információi fontosak. Emellett a bevonat típusától függően kötelező a megfelelő egyéni védőeszköz, a szellőzés és a Biztonsági adatlap szerinti óvintézkedések. A konkrét berendezés és bevonat biztonsági előírásait mindig a gyártói dokumentáció és a Biztonsági adatlap alapján kell követni.
 
 ## Mikor jó választás?
 

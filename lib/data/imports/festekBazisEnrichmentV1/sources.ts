@@ -31,7 +31,7 @@ export const enrichmentSourcesV1: Source[] = [
     id: "src_valmor_airflow_interior_sds",
     type: "manufacturer",
     documentKind: "sds",
-    title: "VALMOR AIR FLOW Lélegző Beltéri Falfesték — biztonsági adatlap",
+    title: "VALMOR AIR FLOW Lélegző Beltéri Falfesték — Biztonsági adatlap",
     url: "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=7187&type=safetydatasheet",
     publisher: PUBLISHER,
     publishedAt: "2024-03-03",
