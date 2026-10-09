@@ -108,7 +108,7 @@ export const airflowInteriorPatch: ProductEnrichmentPatch = {
     {
       key: "binder",
       value: { kind: "text", text: "diszperziós" },
-      note: "TDS: diszperziós jellegű; nem következett akril.",
+      note: "Műszaki adatlap: diszperziós jellegű; nem következett akril.",
       rawValue: "diszperziós jellegű matt, hófehér légáteresztő beltéri falfesték",
       sourceIds: [TDS],
       verifiedAt: V,

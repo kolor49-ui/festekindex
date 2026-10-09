@@ -128,7 +128,7 @@ export const airflowFacadePatch: ProductEnrichmentPatch = {
     {
       key: "application_environment",
       value: { kind: "multi_enum", values: ["exterior", "interior"] },
-      note: "Homlokzat/lábazat elsődleges; TDS/page: külső illetve belső felújítás is említve.",
+      note: "Homlokzat/lábazat elsődleges; Műszaki adatlap/page: külső illetve belső felújítás is említve.",
       rawValue:
         "homlokzat és lábazat; külső illetve belső felújítási munkálatokhoz",
       sourceIds: [TDS, PAGE],

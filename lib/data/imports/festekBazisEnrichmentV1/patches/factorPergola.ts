@@ -29,7 +29,7 @@ export const factorPergolaPatch: ProductEnrichmentPatch = {
     {
       key: "full_cure_time",
       value: {"kind":"duration_range","min":2,"max":4,"unit":"h"},
-      condition: {"note":"Teljes száradási idő — TDS"},
+      condition: {"note":"Teljes száradási idő — Műszaki adatlap"},
       rawValue: "Teljes száradási idő: 2-4 óra",
       sourceIds: ["src_factor_pergola_tds","src_factor_pergola"],
       verifiedAt: "2026-10-06",

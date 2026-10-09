@@ -35,20 +35,20 @@ prod_valmor_airflow_heat_mirror_paste,VALMOR AIR FLOW Kenhető Hőtükör,VALMOR
 prod_coror_chlorinated_rubber,COROR Klórkaucsuk Bevonat,COROR,,FAIL,116,0.992,26,PASS_BATCH_1,page+tds,medium,elevated,true,batch_1_done
 prod_valmor_safe_floor,VALMOR Biztonságos Padló- és Jelölőfesték,VALMOR,,FAIL,150,0.997,27,PASS_BATCH_2,page+tds,high,elevated,true,batch_2_local
 prod_factor_2in1_lazur,FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr,FACTOR,,FAIL,174,0.993,15,PASS_BATCH_1,page+tds,high,standard,true,batch_1_done
-prod_factor_floor_enamel,FACTOR Padlózománc,FACTOR,,FAIL,99,0.991,17,REMAINING_FAIL,page+tds,medium,elevated,true,later
-prod_valmor_airflow_fixative,VALMOR AIR FLOW Fixatív Felületkezelő,VALMOR,VALMOR AIR FLOW,FAIL,109,0.99,14,REMAINING_FAIL,page+tds,medium,standard,true,later
+prod_factor_floor_enamel,FACTOR Padlózománc,FACTOR,,FAIL,99,0.991,17,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,medium,elevated,true,batch_3_local
+prod_valmor_airflow_fixative,VALMOR AIR FLOW Fixatív Felületkezelő,VALMOR,VALMOR AIR FLOW,FAIL,109,0.99,14,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,medium,standard,true,batch_3_local
 prod_valmor_aqua_tech,VALMOR Aqua-Tech Kenhető Vízszigetelés,VALMOR,,FAIL,172,0.98,27,PASS_BATCH_2,page+tds,high,elevated,true,batch_2_local
-prod_valmor_liquid_foil,VALMOR Flexibilis Folyékony Fólia,VALMOR,,FAIL,106,0.996,16,REMAINING_FAIL,page+tds,medium,standard,true,later
+prod_valmor_liquid_foil,VALMOR Flexibilis Folyékony Fólia,VALMOR,,FAIL,106,0.996,16,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,medium,standard,true,batch_3_local
 prod_valmor_bridge_primer,VALMOR Hídképző Alapozó,VALMOR,,FAIL,153,0.995,27,PASS_BATCH_1,page+tds,high,standard,true,batch_1_done
 prod_valmor_bond_bridge,VALMOR Tapadóhíd,VALMOR,,FAIL,175,1,22,PASS_BATCH_1,page+tds,high,standard,true,batch_1_done
-prod_valmor_mold_paint,VALMOR Penészgátló Falfesték,VALMOR,,FAIL,82,0.991,13,REMAINING_FAIL,page+tds,standard,elevated,true,later
+prod_valmor_mold_paint,VALMOR Penészgátló Falfesték,VALMOR,,FAIL,82,0.991,13,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,standard,elevated,true,batch_3_local
 prod_valmor_qlassique,VALMOR Qlassique Fehér Beltéri Falfesték,VALMOR,,FAIL,62,0.989,12,PASS_BATCH_1,page+tds,standard,standard,true,batch_1_done
-prod_valmor_touchline,VALMOR Touchline pályafesték,VALMOR,,FAIL,64,0.994,15,REMAINING_FAIL,page+tds,standard,standard,true,later
+prod_valmor_touchline,VALMOR Touchline pályafesték,VALMOR,,FAIL,64,0.994,15,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,standard,standard,true,batch_3_local
 prod_valmor_immunetec_standard,Immunetec by VALMOR Standard Beltéri Falfesték,VALMOR,,FAIL,77,0.893,11,REMAINING_FAIL,page+tds,standard,standard,true,later
 prod_valmor_immunetec_premium,Immunetec by VALMOR Prémium Beltéri Falfesték,VALMOR,,FAIL,74,0.901,11,REMAINING_FAIL,page+tds,standard,standard,true,later
 prod_7016_enamel,7016™ Antracit Akril Zománc,,7016™,FAIL,82,0.989,18,REMAINING_FAIL,page+tds,standard,standard,true,later
-prod_7016_exterior,7016™ Antracit Kültéri Falfesték,,7016™,FAIL,71,0.995,17,REMAINING_FAIL,page+tds,standard,standard,true,later
-prod_7016_pergola,7016™ Antracit Pergola Fafesték,,7016™,FAIL,123,0.997,25,REMAINING_FAIL,page+tds,medium,standard,true,later
+prod_7016_exterior,7016™ Antracit Kültéri Falfesték,,7016™,FAIL,71,0.995,17,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,standard,standard,true,batch_3_local
+prod_7016_pergola,7016™ Antracit Pergola Fafesték,,7016™,FAIL,123,0.997,25,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,medium,standard,true,batch_3_local
 prod_7016_plaster,"7016™ Antracit Kapart 1,5 Vakolat",,7016™,FAIL,104,0.989,19,REMAINING_FAIL,page+tds,medium,standard,true,later
-prod_valmor_stone_balm,VALMOR Kőbalzsam,VALMOR,,FAIL,123,0.994,23,REMAINING_FAIL,page+tds,medium,standard,true,later
+prod_valmor_stone_balm,VALMOR Kőbalzsam,VALMOR,,FAIL,123,0.994,23,PASS_PENDING_INDEPENDENT_REVIEW,page+tds,medium,standard,true,batch_3_local
 prod_valmor_eps_adhesive,VALMOR Rapid Polisztirol Ragasztó,VALMOR,,FAIL,80,0.908,12,REMAINING_FAIL,page+tds,standard,standard,true,later

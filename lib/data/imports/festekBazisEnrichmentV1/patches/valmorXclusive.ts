@@ -30,7 +30,7 @@ export const valmorXclusivePatch: ProductEnrichmentPatch = {
       key: "full_cure_time",
       value: {"kind":"duration_range","min":2,"max":4,"unit":"h"},
       condition: {"temperatureC":25},
-      note: "Moshatóság 1 hét után (TDS).",
+      note: "Moshatóság 1 hét után.",
       rawValue: "Teljes száradási idő: (25 °C-on): 2-4 óra, moshatóság 1 hét után",
       sourceIds: ["src_valmor_xclusive_tds","src_valmor_xclusive"],
       verifiedAt: "2026-10-06",

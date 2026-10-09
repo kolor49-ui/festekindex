@@ -145,7 +145,7 @@ export const cororRapidPrimerPatch: ProductEnrichmentPatch = {
     {
       key: "binder",
       value: { kind: "text", text: "uretánizált alkid" },
-      note: "TDS összetétel: Alkidgyanta; page: uretanizált alkid kötőanyag",
+      note: "Műszaki adatlap összetétel: Alkidgyanta; page: uretanizált alkid kötőanyag",
       rawValue: "Uretanizált alkid kötőanyagának köszönhetően… Összetétel: Alkidgyanta…",
       sourceIds: [TDS, PAGE],
       verifiedAt: V,

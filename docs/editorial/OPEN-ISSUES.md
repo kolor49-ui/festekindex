@@ -48,7 +48,7 @@ TDS mentions >10 years under proper application — kept as manufacturer stateme
 **Product:** `prod_valmor_xclusive`  
 Lavender scent and optional antibacterial additive attributed to manufacturer.
 
-Batch 2 complete locally; no commit/deploy/SEO unlock; Batch 3 not started.
+Batch 2 published (production SHA c2d010b). Batch 3 in local review.
 
 
 ### B2-FQ — Final Quality Gate (local)
@@ -57,3 +57,27 @@ Three targeted corrections applied (weather átfesthetőség wording; heat-mirro
 
 ### B2-FC — Final Closure (local)
 Aqua-Tech minimum wait; Safe Floor 25°C+humidity; five PDF pages. Await lock before commit/deploy.
+
+
+## Batch 3 (local — not released)
+
+### B3-SCOPE — Eight REMAINING_FAIL Products rewritten locally
+**Products:** `prod_7016_pergola`, `prod_valmor_liquid_foil`, `prod_7016_exterior`, `prod_valmor_stone_balm`, `prod_valmor_touchline`, `prod_factor_floor_enamel`, `prod_valmor_mold_paint`, `prod_valmor_airflow_fixative`  
+**Status:** PASS_PENDING_INDEPENDENT_REVIEW  
+All eight leads REWRITE. Official page+TDS re-verified 2026-10-09. No commit/push/deploy until independent acceptance.
+
+### B3-NOTE-01 — Mold paint claim scope
+**Product:** `prod_valmor_mold_paint`  
+Manufacturer states the coating inhibits wall-mold formation. Public text must not claim medical benefit, structural moisture cure, or permanent prevention. Existing mold must be cleaned per TDS before painting.
+
+### B3-NOTE-02 — Liquid foil permanent water load
+**Product:** `prod_valmor_liquid_foil`  
+Not for permanent water load; TDS points to COROR chlorinated rubber or VALMOR Aqua-Tech instead. Under-tile use only.
+
+### B3-NOTE-03 — Floor enamel cure vs walkability
+**Product:** `prod_factor_floor_enamel`  
+Keep distinct: 16 h recoat/walkable at 25 °C; intensive use after 3 days; non-floor surfaces may recoat within 1 h or after full dry.
+
+### B3-NOTE-04 — 7016 Pergola five-year durability
+**Product:** `prod_7016_pergola`  
+Manufacturer durability mention retained as attribution, not FESTÉKINDEX warranty. Do not merge with FACTOR Pergola data.

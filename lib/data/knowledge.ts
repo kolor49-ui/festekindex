@@ -25,7 +25,7 @@ A nyomást nem érdemes „maximálisan” beállítani. Szakmai gyakorlat szeri
 
 Az airless eljárást gyakran választják nagyobb felületek, magasabb termelékenységű munkák és sokféle építőipari vagy ipari bevonat felhordására — például fal- és mennyezetfestékek, alapozók, bizonyos ipari bevonatok esetében. A gyorsabb lefedés és az egyenletesebb rétegképzés miatt kedvelt professzionális megoldás, ha a bevonat és a gép összehangolható.
 
-Fontos korlátozás: nem minden bevonat airless-kompatibilis, és nem minden gép alkalmas minden anyagra. A viszkozitás, a töltőanyag-tartalom, a szűrési igény és a gyártói ajánlás döntő. A konkrét termék műszaki adatlapját (TDS) és a berendezés kezelési útmutatóját mindig ellenőrizni kell a felhordás előtt.
+Fontos korlátozás: nem minden bevonat airless-kompatibilis, és nem minden gép alkalmas minden anyagra. A viszkozitás, a töltőanyag-tartalom, a szűrési igény és a gyártói ajánlás döntő. A konkrét termék Műszaki adatlapját és a berendezés kezelési útmutatóját mindig ellenőrizni kell a felhordás előtt.
 
 ## Előnyei
 

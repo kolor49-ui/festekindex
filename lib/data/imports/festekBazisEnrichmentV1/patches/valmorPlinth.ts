@@ -29,7 +29,7 @@ export const valmorPlinthPatch: ProductEnrichmentPatch = {
     {
       key: "full_cure_time",
       value: {"kind":"duration","value":4,"unit":"h"},
-      condition: {"note":"Teljes száradási idő — TDS; páratartalom befolyásolja"},
+      condition: {"note":"Teljes száradási idő — Műszaki adatlap; páratartalom befolyásolja"},
       rawValue: "Teljes száradási idő: 4 óra",
       sourceIds: ["src_valmor_plinth_tds","src_valmor_plinth"],
       verifiedAt: "2026-10-06",

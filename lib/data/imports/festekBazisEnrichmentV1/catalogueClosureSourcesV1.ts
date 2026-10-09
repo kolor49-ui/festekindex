@@ -15,7 +15,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_factor_vastaglazur_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "FACTOR Vastaglazúr — műszaki adatlap",
+    "title": "FACTOR Vastaglazúr — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=327&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -33,7 +33,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_airflow_heat_mirror_paint_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR AIR FLOW Beltéri Hőtükör-Festék — műszaki adatlap",
+    "title": "VALMOR AIR FLOW Beltéri Hőtükör-Festék — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=356&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -51,7 +51,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_airflow_heat_mirror_paste_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR AIR FLOW Kenhető Hőtükör — műszaki adatlap",
+    "title": "VALMOR AIR FLOW Kenhető Hőtükör — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=321&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -69,7 +69,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_coror_chlorinated_rubber_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "COROR Klórkaucsuk Bevonat — műszaki adatlap",
+    "title": "COROR Klórkaucsuk Bevonat — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=334&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -87,7 +87,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_safe_floor_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Biztonságos Padló- és Jelölőfesték — műszaki adatlap",
+    "title": "VALMOR Biztonságos Padló- és Jelölőfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=306&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -105,7 +105,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_factor_2in1_lazur_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr — műszaki adatlap",
+    "title": "FACTOR 2 in 1 Színezett Alapozó és Vékonylazúr — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=326&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -123,7 +123,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_factor_floor_enamel_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "FACTOR Padlózománc — műszaki adatlap",
+    "title": "FACTOR Padlózománc — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=330&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -141,7 +141,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_airflow_fixative_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR AIR FLOW Fixatív Felületkezelő — műszaki adatlap",
+    "title": "VALMOR AIR FLOW Fixatív Felületkezelő — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=355&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -159,7 +159,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_aqua_tech_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Aqua-Tech Kenhető Vízszigetelés — műszaki adatlap",
+    "title": "VALMOR Aqua-Tech Kenhető Vízszigetelés — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=310&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -177,7 +177,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_liquid_foil_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Flexibilis Folyékony Fólia — műszaki adatlap",
+    "title": "VALMOR Flexibilis Folyékony Fólia — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=308&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -195,7 +195,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_bridge_primer_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Hídképző Alapozó — műszaki adatlap",
+    "title": "VALMOR Hídképző Alapozó — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=342&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -213,7 +213,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_bond_bridge_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Tapadóhíd — műszaki adatlap",
+    "title": "VALMOR Tapadóhíd — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=309&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -231,7 +231,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_mold_paint_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Penészgátló Falfesték — műszaki adatlap",
+    "title": "VALMOR Penészgátló Falfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=316&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -249,7 +249,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_qlassique_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Qlassique Fehér Beltéri Falfesték — műszaki adatlap",
+    "title": "VALMOR Qlassique Fehér Beltéri Falfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=314&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -267,7 +267,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_touchline_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Touchline pályafesték — műszaki adatlap",
+    "title": "VALMOR Touchline pályafesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=465&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -285,7 +285,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_immunetec_standard_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "Immunetec by VALMOR Standard Beltéri Falfesték — műszaki adatlap",
+    "title": "Immunetec by VALMOR Standard Beltéri Falfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=362&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -303,7 +303,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_immunetec_premium_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "Immunetec by VALMOR Prémium Beltéri Falfesték — műszaki adatlap",
+    "title": "Immunetec by VALMOR Prémium Beltéri Falfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=363&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -321,7 +321,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_7016_enamel_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "7016™ Antracit Akril Zománc — műszaki adatlap",
+    "title": "7016™ Antracit Akril Zománc — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=345&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -339,7 +339,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_7016_exterior_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "7016™ Antracit Kültéri Falfesték — műszaki adatlap",
+    "title": "7016™ Antracit Kültéri Falfesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=347&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -357,7 +357,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_7016_pergola_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "7016™ Antracit Pergola Fafesték — műszaki adatlap",
+    "title": "7016™ Antracit Pergola Fafesték — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=344&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -375,7 +375,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_7016_plaster_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "7016™ Antracit Kapart 1,5 Vakolat — műszaki adatlap",
+    "title": "7016™ Antracit Kapart 1,5 Vakolat — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=346&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -393,7 +393,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_stone_balm_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Kőbalzsam — műszaki adatlap",
+    "title": "VALMOR Kőbalzsam — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=307&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"
@@ -411,7 +411,7 @@ export const catalogueClosureSourcesV1: Source[] =
     "id": "src_valmor_eps_adhesive_tds",
     "type": "manufacturer",
     "documentKind": "tds",
-    "title": "VALMOR Rapid Polisztirol Ragasztó — műszaki adatlap",
+    "title": "VALMOR Rapid Polisztirol Ragasztó — Műszaki adatlap",
     "url": "https://www.festekbazis.hu/tools/packages/etalon_gyartas/print?invoiceId=312&type=datasheet",
     "publisher": "FESTÉK BÁZIS Zrt.",
     "accessedAt": "2026-10-07"

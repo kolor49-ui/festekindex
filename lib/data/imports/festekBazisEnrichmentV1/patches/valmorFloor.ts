@@ -39,7 +39,7 @@ export const valmorFloorPatch: ProductEnrichmentPatch = {
       key: "full_cure_time",
       value: {"kind":"duration","value":24,"unit":"h"},
       condition: {"temperatureC":25},
-      note: "TDS: teljes száradás 24 óra (esőálló); 5. fokozat max. 24 óra",
+      note: "Műszaki adatlap: teljes száradás 24 óra (esőálló); 5. fokozat max. 24 óra",
       sourceIds: ["src_valmor_floor_tds"],
       rawValue: "Teljes száradási idő: 24 óra (esőálló)",
       verifiedAt: "2026-10-06",

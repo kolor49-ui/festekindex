@@ -9,7 +9,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_factor_vastaglazur",
       "src_factor_vastaglazur_tds"
     ],
-    "editorialSummary": "Oldószeres, selyemfényű vastaglazúr bel- és kültéri fára. A TDS szerint puhafára is; FACTOR 2 in 1 vékonylazúr impregnálás után javasolt."
+    "editorialSummary": "Oldószeres, selyemfényű vastaglazúr bel- és kültéri fára. A Műszaki adatlap szerint puhafára is; FACTOR 2 in 1 vékonylazúr impregnálás után javasolt."
   },
   {
     "productId": "prod_valmor_airflow_heat_mirror_paint",
@@ -18,7 +18,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_airflow_heat_mirror_paint",
       "src_valmor_airflow_heat_mirror_paint_tds"
     ],
-    "editorialSummary": "Kétkomponensű (AIR FLOW beltéri festék + kenhető hőtükör) matt beltéri bevonat. A TDS szerint mikronos kerámiagömböket tartalmaz; tipikusan hőhíd-zónákra és célzott belső felületekre."
+    "editorialSummary": "Kétkomponensű (AIR FLOW beltéri festék + kenhető hőtükör) matt beltéri bevonat. A Műszaki adatlap szerint mikronos kerámiagömböket tartalmaz; tipikusan hőhíd-zónákra és célzott belső felületekre."
   },
   {
     "productId": "prod_valmor_airflow_heat_mirror_paste",
@@ -27,7 +27,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_airflow_heat_mirror_paste",
       "src_valmor_airflow_heat_mirror_paste_tds"
     ],
-    "editorialSummary": "Mikronos kerámiagömbös, glettelhető hőtükör paszta bel- és kültérre. A TDS 1,5 mm javasolt rétegvastagságot ad; csiszolás tilos."
+    "editorialSummary": "Mikronos kerámiagömbös, glettelhető hőtükör paszta bel- és kültérre. A Műszaki adatlap 1,5 mm javasolt rétegvastagságot ad; csiszolás tilos."
   },
   {
     "productId": "prod_coror_chlorinated_rubber",
@@ -45,7 +45,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_safe_floor",
       "src_valmor_safe_floor_tds"
     ],
-    "editorialSummary": "Oldószeres, matt klórkaucsuk padló- és jelölőfesték bel- és kültérre. A TDS szerint MSZ EN 1504-2 szerinti targoncázható járófelületre; aromás hígítóval."
+    "editorialSummary": "Oldószeres, matt klórkaucsuk padló- és jelölőfesték bel- és kültérre. A Műszaki adatlap szerint MSZ EN 1504-2 szerinti targoncázható járófelületre; aromás hígítóval."
   },
   {
     "productId": "prod_factor_2in1_lazur",
@@ -63,7 +63,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_factor_floor_enamel",
       "src_factor_floor_enamel_tds"
     ],
-    "editorialSummary": "A FACTOR Padlózománc filmje rendkívül kopásálló, kemény és nem sárguló felületet képez. Olyan felületekre ajánljuk, ahol a bevonat mindennapi használatnak, kopásnak van kitéve: hajópadló, parketta, kerítés,."
+    "editorialSummary": "Oldószeres, fényes padlózománc fa, beton és más igénybevett járó- vagy oldalfelületekre bel- és kültérben. Lépésállóság és intenzív terhelés külön időzítéssel."
   },
   {
     "productId": "prod_valmor_airflow_fixative",
@@ -72,7 +72,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_airflow_fixative",
       "src_valmor_airflow_fixative_tds"
     ],
-    "editorialSummary": "A VALMOR AIR FLOW Fixatív Felületkezelő, egy kálium szilikát oldat, amely ásványi kötésű, porozitással rendelkező felületek fixálására, portalanítására és kopásállóság javításra alkalmazható, kül- és beltérben.."
+    "editorialSummary": "Kálium-szilikát fixatív ásványi, porózus felületek erősítésére és portalanítására kül- és beltérben. Hígítani tilos; tipikusan 1–2 réteg."
   },
   {
     "productId": "prod_valmor_aqua_tech",
@@ -81,7 +81,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_aqua_tech",
       "src_valmor_aqua_tech_tds"
     ],
-    "editorialSummary": "Vízbázisú, flexibilis kenhető vízszigetelő bevonat bel- és kültérre. Pozitív oldali nedvesség ellen; tartós vízterhelésnél a TDS vastagabb, több rétegű felhordást ír elő."
+    "editorialSummary": "Vízbázisú, flexibilis kenhető vízszigetelő bevonat bel- és kültérre. Pozitív oldali nedvesség ellen; tartós vízterhelésnél a Műszaki adatlap vastagabb, több rétegű felhordást ír elő."
   },
   {
     "productId": "prod_valmor_liquid_foil",
@@ -90,7 +90,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_liquid_foil",
       "src_valmor_liquid_foil_tds"
     ],
-    "editorialSummary": "A VALMOR Flexibilis Folyékony Fólia egy vízbázisú termék, mely speciális összetételének köszönhetően a száradást követően vízhatlan, rugalmas, szigetelő réteget képez a felületen. Rendkívül nagy kiadósságával."
+    "editorialSummary": "Vízbázisú, flexibilis folyékony fólia burkolat alatti párazárásra és vízszigetelésre bel- és kültérben. Állandó vízterhelésre a Műszaki adatlap nem javasolja."
   },
   {
     "productId": "prod_valmor_bridge_primer",
@@ -117,7 +117,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_mold_paint",
       "src_valmor_mold_paint_tds"
     ],
-    "editorialSummary": "A VALMOR Penészgátló Falfesték újonnan kifejlesztett, környezetvédelmi előírásoknak megfelelő, speciális receptúrával rendelkező festék, mely gátolja a falpenész kialakulását. A festék bevonat vízpára- és."
+    "editorialSummary": "Matt, diszperziós beltéri falfesték, amely a gyártó szerint gátolja a falpenész kialakulását. A meglévő penész eltávolítása és a nedvesség okának kezelése külön feladat."
   },
   {
     "productId": "prod_valmor_qlassique",
@@ -135,7 +135,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_touchline",
       "src_valmor_touchline_tds"
     ],
-    "editorialSummary": "A VALMOR Touchline Sportpálya Festék esőnek, időjárásnak és kopásnak ellenálló vonalazást tesz lehetővé. A termék környezetbarát, a növényzetet nem károsítja és levegőzését nem gátolja."
+    "editorialSummary": "Vízbázisú, oldószermentes pályafesték füves sportpályák vonalazására. Időjárásnak ellenálló vonalak; újravonalazás a fűnyírás üteméhez igazodik."
   },
   {
     "productId": "prod_valmor_immunetec_standard",
@@ -171,7 +171,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_7016_exterior",
       "src_7016_exterior_tds"
     ],
-    "editorialSummary": "A 7016 Kültéri Falfesték, matt festék, mely tartósan megvédi a felületet a légszennyeződés erodáló hatásaitól. Nagy kiadóssága folytán gazdaságos felhasználást biztosít."
+    "editorialSummary": "Matt antracit kültéri falfesték homlokzatra és lábazatra, nedvszívó ásványi felületekre. Tisztítható, nedves dörzsálló; javasolt két réteg."
   },
   {
     "productId": "prod_7016_pergola",
@@ -180,7 +180,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_7016_pergola",
       "src_7016_pergola_tds"
     ],
-    "editorialSummary": "A 7016 Pergola Fafesték kimondottan a kültéri faszerkezetek tartós időjárásálló védelmét szolgálja. Dekoratív, a natúr fa struktúráját meghagyva kiemeli a fa természetes szépségét."
+    "editorialSummary": "Selyemfényű, vízbázisú kültéri fafesték pergolákra és egyéb faszerkezetekre. Rugalmas, páraáteresztő film; tipikusan 2–3 réteg; hígítás legfeljebb 5% víz."
   },
   {
     "productId": "prod_7016_plaster",
@@ -198,7 +198,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_stone_balm",
       "src_valmor_stone_balm_tds"
     ],
-    "editorialSummary": "A VALMOR Kőbalzsam alkalmas kül-, és beltérben természetes kövek, tégla, cserép, díszkő, mészkő járó-, és falfelületek impregnálására. Színtelen, vagy fallazúrként használva, színes, rugalmas védőbevonat képzésére."
+    "editorialSummary": "Vízbázisú kőbalzsam természetes kő, tégla és hasonló felületek impregnálására vagy felületi védőbevonatára. Vízszigetelés pótlására nem alkalmas."
   },
   {
     "productId": "prod_valmor_eps_adhesive",

@@ -41,7 +41,7 @@ export const cororIndEnamelPatch: ProductEnrichmentPatch = {
       key: "full_cure_time",
       value: {"kind":"duration","value":2,"unit":"h"},
       condition: {"temperatureC":25},
-      note: "TDS: Teljes száradási idő 2 óra; 5. fokozat 60 perc",
+      note: "Műszaki adatlap: Teljes száradási idő 2 óra; 5. fokozat 60 perc",
       sourceIds: ["src_coror_ind_enamel_tds"],
       rawValue: "Teljes száradási idő 2 óra",
       verifiedAt: "2026-10-06",
