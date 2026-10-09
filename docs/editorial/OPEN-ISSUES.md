@@ -32,3 +32,28 @@ Batch 1 technical claim matrix still uses English claim summaries in parts of `e
 
 - Remaining original FAIL Products outside the 11 published descriptions: continue under Editorial Standard v1 in later batches.
 - Remaining REVIEW: `prod_coror_aromatic` (not rewritten in Batch 1).
+
+
+## Batch 2 (local — not released)
+
+### B2-NOTE-01 — Hőtükör manufacturer performance claims
+**Products:** `prod_valmor_airflow_heat_mirror_paint`, `prod_valmor_airflow_heat_mirror_paste`  
+Attributed as manufacturer statements (comfort / heat-loss / mould / savings). Do not convert into independent measured guarantees.
+
+### B2-NOTE-02 — Aqua-Tech durability wording
+**Product:** `prod_valmor_aqua_tech`  
+TDS mentions >10 years under proper application — kept as manufacturer statement, not warranty.
+
+### B2-NOTE-03 — Xclusive fragrance / antibacterial options
+**Product:** `prod_valmor_xclusive`  
+Lavender scent and optional antibacterial additive attributed to manufacturer.
+
+Batch 2 complete locally; no commit/deploy/SEO unlock; Batch 3 not started.
+
+
+### B2-FQ — Final Quality Gate (local)
+Three targeted corrections applied (weather átfesthetőség wording; heat-mirror-paste typo; aqua-tech átvonhatóság phrasing). Claim matrix rebuilt with exact HU quotations. Awaiting independent acceptance before commit/deploy.
+
+
+### B2-FC — Final Closure (local)
+Aqua-Tech minimum wait; Safe Floor 25°C+humidity; five PDF pages. Await lock before commit/deploy.

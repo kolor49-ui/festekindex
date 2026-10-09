@@ -493,24 +493,26 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Univerzális Mélyalapozó oldószermentes, alkalmas minden ásványi eredetű felületre kül- és beltérben: tégla, cserép, vakolat, homlokzat, lábazat, gipszkarton, beton, stb. impregnálására. Használható nedvszívó képességgel bíró felületek festés, illetve műgyanta alapú vakolat bevonás előtti alapozására.", "Alkalmazása során a port leköti, behatol a felület pórusaiba, így azt megerősítve, erős tapadóképes alapfelületet biztosít. Használatával megelőzhető a felületek esetleges festési foltosodása és optimális, egyenletes tapadást biztosít a rétegek közt."],
+        paragraphs: ["A VALMOR Univerzális Mélyalapozó oldószermentes bel- és kültéri impregnáló alapozó, hígítást igényel. A TDS szerint ásványi felületekre alkalmas (többek között tégla, cserép, vakolat, homlokzat, lábazat, gipszkarton, beton), valamint nedvszívó felületek festés vagy műgyanta alapú vakolat előtti alapozására.",
+        "A gyártó szerint a port leköti, a pórusokba hatol, erősíti a fogadófelületet és egyenletesebb tapadást segít a rétegek között; a festési foltosodás kockázatát is csökkenti. Három változat: 1:1, koncentrátum 1:4, eszencia 1:8. Kiadósság glettelt felületen: 8–10 m²/liter egy rétegben; javasolt rétegszám: 1. Fényesség: matt."],
         sourceIds: ["src_valmor_deep_primer", "src_valmor_deep_primer_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza, pergő részeket távolítsuk el, az olajos zsíros és egyéb szennyeződéseket tisztítsuk le, a foltos felületet izoláljuk Valmor Időjárásálló- és Szigetelőfestékkel. A felülethibás falakat glettelőanyaggal simítsuk le, majd csiszoljuk át."],
+        paragraphs: ["Laza, pergő részek és olajos/zsíros szennyeződések eltávolítása. Foltos felület izolálására a TDS a VALMOR Időjárásálló- és Szigetelőfestéket említi. Felülethibák: glettelés, majd csiszolás."],
         sourceIds: ["src_valmor_deep_primer", "src_valmor_deep_primer_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C feletti hőmérsékleten kezdjük meg. Kültéri használat alkalmával az alapozást ne végezzük esőben, illetve tűző napon! A terméket az alapfelület szívóképességétől függően hígítsuk, hogy a mélyalapozó ne képezzen a felületen fényes réteget, mert ez a túladagolásnak a jele.", "A VALMOR Univerzális Mélyalapozó 1:1 terméket kül- és beltéri általános felhasználás során a „frissen” glettelt felületre 1:1 arányban hígítva használjuk. Homlokzatok, palatetők, lábazatok, vakolatok alapozását, hígítás nélkül végezzük. A VALMOR Univerzális Mélyalapozó Koncentrátum 1:4 terméket kül- és beltéri általános felhasználás során a „frissen” glettelt felületre 1:4 arányban hígítva használjuk.", "Homlokzatok, palatetők, lábazatok, vakolatok alapozását 1:3 rész víz hozzáadásával végezzük. Garázs portalanítására, beton felületre, „régi” kőporos, elhasználódott, erősen szennyezett, nagyon porózus felületre 1:2 arányú hígítást javasolunk. A VALMOR Univerzális Mélyalapozó Eszencia 1:8 terméket kül- és beltéri általános felhasználás során a „frissen” glettelt felületre 1:8 arányban hígítva használjuk.", "Homlokzatok, palatetők, lábazatok, vakolatok alapozását 1:6 rész víz hozzáadásával végezzük. Garázs portalanítására, betonfelületre, „régi” kőporos, elhasználódott, erősen szennyezett, nagyon porózus felületre 1:4 arányú hígítást javasolunk. A következő munkafázist az alapozó teljes száradása előtt is megkezdhetjük („nedves a nedvesre”)."],
+        paragraphs: ["Csak +10 °C felett; kültéren esőben vagy tűző napon ne alapozzon. A hígítást a szívóképességhez igazítsa — fényes film a túladagolás jele. 1:1 változat: frissen glettelt felületen 1:1 vízzel; homlokzat, palatető, lábazat, vakolat: hígítás nélkül. Koncentrátum 1:4: frissen glettelt 1:4; homlokzat/pala/lábazat/vakolat 1:3 vízzel; garázs portalanítás, beton, régi kőporos/erősen porózus: 1:2. Eszencia 1:8: frissen glettelt 1:8; homlokzat stb. 1:6; garázs/beton/erősen porózus: 1:4.",
+        "A következő munkafázis az alapozó teljes száradása előtt is indítható („nedves a nedvesre”). Átfesthetőség önmagával 25 °C-on: 2 óra — magas páratartalom meghosszabbíthatja. Hígítás és szerszámtisztítás: vízzel. Biztonsági adatlap kötelező."],
         sourceIds: ["src_valmor_deep_primer", "src_valmor_deep_primer_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt"],
         sourceIds: ["src_valmor_deep_primer", "src_valmor_deep_primer_tds"],
-      },
+      }
     ],
   },
   {
@@ -701,24 +703,26 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["VALMOR Időjárásálló- és Szigetelőfesték vízzel hígítható kül- és beltérben használható rugalmas festék. 3×3 funkcióban alkalmazható: dekorációra (jól színezhető és mindenre tapad), izolációra (szigetelés és védelem), adhézióra (tapadóhíd, alapozó funkció-ra). A bevonat UV-álló, vízálló, enyhe sav és lúgálló, rugalmas.", "Megbízhatóan megtapad szinte minden, új és régi, kezeletlen vagy már festett felületen egyaránt. 1. Tartós védelem: ellenáll az időjárás káros hatásaival szemben, amit több éven át megőriz. Gyorsan száradó selyemmatt fényű fedőfesték, mely dekoratív bevonatot képez.", "Tartósan nyirkos, mohásodó, algásodó falak, lábazatok, fedőkövek festésére javasolt, mert a festék nehezen nedvesedik át, nem tapadnak a felülethez növények és könnyen tisztíthatóvá válik. Nem mérettartó fa szerkezetekre, széldeszkákra, falborításokra, kerítésekre, puha és keményfákra egyaránt használható.", "Könnyű- és színesfémekre, műanyag és gumi felületekre, csatornákra, vízelvezetőkre, bádogborításokra felhordható. Kiválóan használható füves és műfüves pályák vonalainak felfestésére. 2. Szigetelés: kormos, nikotinos, rozsdás, salétromos, penészes, enyhén zsíros- és vizes ázási foltokra felhordva megakadályozza az oldott sók következő rétegbe jutását.", "A megszáradt bevonat nem engedi át a korom és kátrány kellemetlen szagát. Izolációs problémákra használhatja a Coror Rapid Korroziógátló Alapozót is. 3. Alapozás: a tapadást elősegítő közbenső réteg kialakítására alkalmas, ahol az egymással nem harmonizáló felületek és festékek erős kapcsolata szükséges.", "Az alapfelület lehet: olajfesték, zománcfesték, OSB, CK-lap, gipszes felület. A következő festékréteg megfelelő tapadásához 1:3 arányban vízzel hígítva alapozóként használja. A megszáradt felület glettelhető gipszes, diszperziós, cementes, anyagokkal vagy közvetlen festhető vizes, oldószeres (lakkbenzin hígítású) festékekkel, lazúrokkal.", "A lakkal, zománcfestékkel bevont és a nem nedvszívó felületek alapozására használja a VALMOR Hídképző Alapozót!"],
+        paragraphs: ["A VALMOR Időjárásálló- és Szigetelőfesték felhasználásra kész, vízzel hígítható, rugalmas bel- és kültéri festék. A TDS három fő szerepkört jelöl: dekoratív fedőfesték, izoláló/szigetelő réteg, valamint tapadóhíd/alapozó funkció. A film UV-álló, vízálló, enyhén sav- és lúgálló, rugalmas; fényesség: selyem-matt.",
+        "Tartós védelemként a gyártó időjárásálló, selyemmatt fedőréteget ír le; tipikus területek közé tartoznak a tartósan nyirkos, mohásodó/algásodó falak, lábazatok, fedőkövek, továbbá nem mérettartó fa, könnyű- és színesfémek, műanyag/gumi, csatorna/bádog, valamint füves/műfüves pályavonalak. Izolációként kormos, nikotinos, rozsdás, salétromos, penészes, enyhén zsíros vagy vizes ázási foltokra hordva a TDS szerint gátolja az oldott sók továbbjutását; a megszáradt film a korom/kátrány szagát nem engedi át. Izolációs problémákra a COROR Rapid Korróziógátló Alapozót is említi.",
+        "Alapozóként 1:3 vízzel hígítva közbenső tapadórétegként javasolja (például olaj-/zománcfesték, OSB, CK-lap, gipszes felület). Lakkos/zománcos és nem nedvszívó felületeknél a VALMOR Hídképző Alapozót írja elő. Kiadósság: 4 m²/liter két rétegben, glettelt felületen; javasolt 1–2 réteg."],
         sourceIds: ["src_valmor_weather", "src_valmor_weather_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el és csiszolással érdesítsünk. A felületek alapozását 1:3 arányban vízzel hígított VALMOR Időjárásálló- és Szigetelőfesték felhasználásával, intenzív nyomó-ecsetelő mozdulatokkal végezzük el. Átvonhatóság a száradás függvényében, legalább 1-2 óra elteltével történhet meg.", "A felületek nedvességtartalma maximum 20% lehet! A festési munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: ["Laza, pergő részek eltávolítása, csiszolásos érdesítés. Alapozás: 1:3 vízzel hígított saját termék, intenzív nyomó-ecsetelés; a következő réteg a száradástól függően 1–2 óra után hordható fel. Felület nedvességtartalma max. 20%. Próbafestés javasolt."],
         sourceIds: ["src_valmor_weather", "src_valmor_weather_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25°C lehet! A munkálatokat végezhetjük ecsettel, hengerrel vagy megfelelő szóróberendezéssel. Festékként használva, felkeverés után nem szükséges hígítani, de lehetséges maximum 5% víz hozzáadásával.", "Az első réteg felvitele után, hagyjuk azt legalább 2-4 órán át száradni, majd vigyük fel a második réteget."],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C. Ecset, henger vagy megfelelő szórás. Festékként felkeverés után hígítás nem kötelező; max. 5% víz megengedett. A rétegek közötti átfesthetőség 25 °C-on 2–4 óra; az első réteg után várjuk meg ezt az intervallumot a második előtt. Magas páratartalom a száradást több órával is meghosszabbíthatja. 25 °C körül 1. fokozat max. 2 óra, 5. fokozat max. 24 óra; végső kötés max. 1 hét (időjárásfüggő). Szerszámtisztítás vízzel. Biztonsági adatlap kötelező."],
         sourceIds: ["src_valmor_weather", "src_valmor_weather_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["selyem-matt"],
         sourceIds: ["src_valmor_weather", "src_valmor_weather_tds"],
-      },
+      }
     ],
   },
   {
@@ -727,19 +731,25 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Xclusive Latex Matt Falfesték újonnan kifejlesztett, környezetvédelmi előírásoknak megfelelő, speciális receptúrával rendelkező beltéri falfesték. A Valmor Xclusive Latex Matt Falfestékkel festett felület sima, matt és elegáns megjelenésű. Kiváló fedőképességű, akár egy rétegben is.", "Jó terülőképességének köszönhetően pedig könnyen eldolgozható és cseppmentesen használható. A festék vízpára- és légáteresztő tulajdonsága, valamint tisztíthatósága révén megfelel a jelenkor magas technikai elvárásainak, valamint különösen ellenálló, mosás- és dörzsálló bevonatot biztosít.", "Teljesíti az MSZ-EN 13300:2001 szabvány osztályának követelményeit, nedves dörzsállósági besorolása: I. osztály. Használható gipszes és cementes vakolatok, glettelt felületek, gipszkarton valamint diszperziós vagy latex alapú korábbi festések átvonására, továbbá fűrészporos és üvegszövet tapéták, valamint EPS polisztirol elemek bevonására is.", "Nagy igénybevételnek kitett helyiségek festésére is kifejezetten ajánlott (óvoda, iskola, étterem, közintézmények stb.) A fehér levendula illatának nyugtató hatása a festékréteg száradása után is hosszan élvezhető. Antibakteriális, bakteriosztatikus adalékkal is rendelhető, így az adott beltéri helyiség baktérium számát is jelentősen csökkentheti."],
+        paragraphs: ["A VALMOR Xclusive Latex Matt felhasználásra kész, matt beltéri latex falfesték. A TDS szerint jó fedőképességű (akár egy rétegben is említi), jól terül, cseppmentesen dolgozható; vízpára- és légáteresztő, tisztítható, mosás- és dörzsálló film. Nedves dörzsállóság: MSZ-EN 13300:2001 szerinti I. osztály.",
+        "Fogadófelületek a gyártó szerint: gipszes és cementes vakolat, glettelt felület, gipszkarton, diszperziós/latex átfestés, fűrészporos és üvegszövet tapéta, EPS. Nagy igénybevételű beltéri helyiségekre is jelöli (például óvoda, iskola, étterem, közintézmény). A TDS fehér levendulaillatot és opcionális antibakteriális/bakteriosztatikus adalékot is említ — ezek gyártói állítások. Kiadósság: 12–13 m²/liter egy rétegben, glettelt felületen; javasolt 2 réteg. Körülbelül 25 °C-on a teljes száradás 2–4 óra — magas páratartalom meghosszabbíthatja; a moshatóság egy hét elteltével értendő."],
         sourceIds: ["src_valmor_xclusive", "src_valmor_xclusive_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos zsíros és egyéb szenynyeződéseket tisztítsuk le, a foltos felületet izoláljuk VALMOR Időjárásálló- és Szigetelőfestékkel. A felülethibás falakat glettelőanyaggal simítsuk le, majd csiszoljuk át. A tapadás növelése és az egyenletesen nedvszívó felület kialakítása érdekében VALMOR Univerzális Mélyalapozóval kezeljük a falfelületet a festés megkezdése előtt.", "A festési munkálatok meg kezdése előtt mindig javasolt a próbafestés elvégzése."],
+        paragraphs: ["Laza részek és szennyeződések eltávolítása; foltos felület izolálására VALMOR Időjárásálló- és Szigetelőfesték. Hibák: glettelés, csiszolás. Tapadás és egyenletes nedvszívás: VALMOR Univerzális Mélyalapozó. Próbafestés javasolt."],
         sourceIds: ["src_valmor_xclusive", "src_valmor_xclusive_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel vagy megfelelő szóró berendezéssel. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max.", "5% víz hozzáadásával végezzük."],
+        paragraphs: ["Csak +10 °C felett. Ecset, henger vagy megfelelő szórás. Felkeverés; első réteg max. 10% víz, fedőréteg max. 5% víz. Szerszámtisztítás vízzel. Biztonsági adatlap kötelező."],
         sourceIds: ["src_valmor_xclusive", "src_valmor_xclusive_tds"],
       },
+      {
+        heading: "Fényesség",
+        paragraphs: ["matt"],
+        sourceIds: ["src_valmor_xclusive", "src_valmor_xclusive_tds"],
+      }
     ],
   },
   ...catalogueClosureProfessionalDescriptionsV1,

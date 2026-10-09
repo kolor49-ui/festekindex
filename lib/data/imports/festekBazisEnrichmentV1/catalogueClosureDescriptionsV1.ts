@@ -9,7 +9,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_factor_vastaglazur",
       "src_factor_vastaglazur_tds"
     ],
-    "editorialSummary": "A FACTOR Vastaglazúr kül- és beltérben egyaránt használható a fafelületek védelmére, lazúrozására és díszítésére / színezésére. Könnyen felhordható, jól terülő és kiadós termék."
+    "editorialSummary": "Oldószeres, selyemfényű vastaglazúr bel- és kültéri fára. A TDS szerint puhafára is; FACTOR 2 in 1 vékonylazúr impregnálás után javasolt."
   },
   {
     "productId": "prod_valmor_airflow_heat_mirror_paint",
@@ -18,7 +18,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_airflow_heat_mirror_paint",
       "src_valmor_airflow_heat_mirror_paint_tds"
     ],
-    "editorialSummary": "A VALMOR AIR FLOW Hőtükör-Festék, 2 komponensből álló együttes A+B, A: VALMOR „AIR FLOW” Lélegző Beltéri Falfesték, B: VALMOR AIR FLOW Kenhető Hőtükör. A VALMOR AIR FLOW Hőtükör-Festék egy olyan anyag, amely."
+    "editorialSummary": "Kétkomponensű (AIR FLOW beltéri festék + kenhető hőtükör) matt beltéri bevonat. A TDS szerint mikronos kerámiagömböket tartalmaz; tipikusan hőhíd-zónákra és célzott belső felületekre."
   },
   {
     "productId": "prod_valmor_airflow_heat_mirror_paste",
@@ -27,7 +27,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_airflow_heat_mirror_paste",
       "src_valmor_airflow_heat_mirror_paste_tds"
     ],
-    "editorialSummary": "A VALMOR Kenhető Hőtükör egy mikroméretű kerámiagömböket tartalmazó, speciális összetételű glettelhető anyag. A kerámiagömbök belsejében vákuum van, amely a legjobb hővezetést gátló közeg."
+    "editorialSummary": "Mikronos kerámiagömbös, glettelhető hőtükör paszta bel- és kültérre. A TDS 1,5 mm javasolt rétegvastagságot ad; csiszolás tilos."
   },
   {
     "productId": "prod_coror_chlorinated_rubber",
@@ -45,7 +45,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_safe_floor",
       "src_valmor_safe_floor_tds"
     ],
-    "editorialSummary": "A VALMOR Biztonságos Padló- és Jelölőfesték egy klórkaucsuk tartalmú, egykomponensű festék. Ipari igénybevételnek kitehető MSZ EN 1504-2:2005 szabvány szerint TARGONCÁZHATÓ felületet biztosít."
+    "editorialSummary": "Oldószeres, matt klórkaucsuk padló- és jelölőfesték bel- és kültérre. A TDS szerint MSZ EN 1504-2 szerinti targoncázható járófelületre; aromás hígítóval."
   },
   {
     "productId": "prod_factor_2in1_lazur",
@@ -81,7 +81,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_valmor_aqua_tech",
       "src_valmor_aqua_tech_tds"
     ],
-    "editorialSummary": "VALMOR Aqua-Tech Kenhető Vízszigetelés vízbázisú termék, mely a Core-Shell emulziójának köszönhetően a felhordást és száradást követően vízálló, vízzáró, párazáró, UV-álló, enyhén sav- és."
+    "editorialSummary": "Vízbázisú, flexibilis kenhető vízszigetelő bevonat bel- és kültérre. Pozitív oldali nedvesség ellen; tartós vízterhelésnél a TDS vastagabb, több rétegű felhordást ír elő."
   },
   {
     "productId": "prod_valmor_liquid_foil",
