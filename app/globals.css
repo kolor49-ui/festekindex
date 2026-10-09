@@ -2171,6 +2171,7 @@ a {
 
   .detail {
     position: static;
+    scroll-margin-top: 16px;
   }
 
   .stats {

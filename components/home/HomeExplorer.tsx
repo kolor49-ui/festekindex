@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { SearchBox } from "@/components/search/SearchBox";
 import type { EntityType, SearchHit } from "@/lib/data/types";
 import type { RelationPreview } from "@/lib/data/repository";
@@ -47,6 +47,17 @@ export function HomeExplorer({
   const [selectedId, setSelectedId] = useState<string | null>(
     initialHits[0]?.id ?? null,
   );
+  const detailRef = useRef<HTMLElement>(null);
+
+  /** On stacked mobile layout the detail sits below the list — scroll it into view on select. */
+  function selectHit(id: string) {
+    setSelectedId(id);
+    if (typeof window === "undefined") return;
+    if (!window.matchMedia("(max-width: 980px)").matches) return;
+    requestAnimationFrame(() => {
+      detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 
   const productHitsFromCatalog = useMemo((): SearchHit[] => {
     return searchCatalogDocs
@@ -142,7 +153,7 @@ export function HomeExplorer({
                   key={hit.id}
                   type="button"
                   className={`row${selected?.id === hit.id ? " selected" : ""}`}
-                  onClick={() => setSelectedId(hit.id)}
+                  onClick={() => selectHit(hit.id)}
                 >
                   <div className="icon">{initials(hit.name)}</div>
                   <div>
@@ -159,7 +170,7 @@ export function HomeExplorer({
           )}
         </div>
 
-        <aside className="detail">
+        <aside className="detail" ref={detailRef} id="home-explorer-detail">
           {selected ? (
             <>
               <div className="dtype">{selected.kindLabel}</div>
