@@ -259,24 +259,24 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A FACTOR Aqua Parkettalakk polyuretan és akrilgyanta bázisú, beltéri felhasználásra ajánlott lakk. Oldószer- és formaldehidmentes, szagtalan, vízzel hígítható. Egykomponensű, könnyen felhordható, gyorsan szárad, ezért a lakkozott felület hamar igénybe vehető. Parketta és egyéb beltéri, fából készült felületek bútor, tornaszerek, lambéria, gerenda lakkozására alkalmas.", "Előzőleg már lakkozott, festett felületeket is átvonhatunk vele (oldószereseket is), valamint a VALMOR Flexibilis és Csúszásmentes padlófestékeinket is lakkozhatjuk. Ásványi felületek (tégla, kő, vakolat, beton, cserép) valamint tapéta, egyéb papír, gipszkarton lakkjellegű bevonására is alkalmazható.", "Csúszásmentes gresslap takaríthatóvá tehető használatával."],
+        paragraphs: ["A FACTOR Aqua Parkettalakk poliuretán és akrilgyanta bázisú, beltéri, felhasználásra kész lakk. A Műszaki adatlap szerint oldószer- és formaldehidmentes, szagtalan, vízzel hígítható, egykomponensű. Parketta és egyéb beltéri fa (bútor, tornaszer, lambéria, gerenda) lakkozására jelöli; korábbi lakk/festés (oldószeres is), valamint VALMOR flexibilis és csúszásmentes padlófestékek átvonására is.", "Ásványi felületek (tégla, kő, vakolat, beton, cserép), tapéta, papír, gipszkarton lakkjellegű bevonására, illetve csúszásmentes gresslap takaríthatóvá tételére is szerepel. Fényesség: matt, selyemfényű vagy magasfényű (színtelen). Kiadósság: 10–12 m²/liter egy rétegben. Javasolt 2–3 réteg; nagy terhelésnél 3 réteg."],
         sourceIds: ["src_factor_aqua_parquet", "src_factor_aqua_parquet_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A festendő felületről távolítsuk el maradéktalanul a szennyeződéseket, régi bevonatokat, majd dörzspapírral csiszoljuk át és portalanítsuk le! Az esetleges gyantakiválásokat nitrohígítóval távolítsuk el! A lemosott részeken a hígító teljes száradása után szabad csak festeni.", "FACTOR „2 in 1” Vékonylazúrral színezhetjük a lakkozás előtt a fa felületét. A festési munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: ["Szennyeződés és régi bevonat eltávolítása; csiszolás, portalanítás. Gyantakiválás: nitrohígító, majd teljes száradás. Színezéshez a Műszaki adatlap FACTOR „2 in 1” Vékonylazúrt említ a lakkozás előtt. Próbafestés javasolt."],
         sourceIds: ["src_factor_aqua_parquet", "src_factor_aqua_parquet_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Alaposan keverjük fel a terméket, majd kezdjük meg a festést a fa szálirányával megegyező irányban! Használjunk speciális lakkozó ecsetet, hengert vagy megfelelő szóróberendezést!", "Alapozó rétegként használhatjuk a termék 25%-ban vízzel hígított elegyét. Az első réteg esetén 5%-os hígítás javasolt. A rétegek közt finom csiszolás ajánlott. A nagy terheléseknek kitett felületeknél 3 réteg felhordása célszerű. A lakkrétegek felvitele között legalább 4 óra száradási időt biztosítsunk!", "A festett fa nedvességtartalma maximum 12% lehet."],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C. Alapos felkeverés; festés a fa szálirányában. Speciális lakkozó ecset, henger vagy megfelelő szórás. Alapozó rétegként: 25% vízzel hígított elegy; első réteg: kb. 5% víz. Rétegek között finom csiszolás. Rétegek között legalább 4 óra száradás 25 °C-on — magas páratartalom hosszabbíthat. Festett fa nedvességtartalma max. 12%. Szerszámtisztítás: víz. Fagyveszélyes — használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."],
         sourceIds: ["src_factor_aqua_parquet", "src_factor_aqua_parquet_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt|selyemfényű|magasfényű"],
         sourceIds: ["src_factor_aqua_parquet", "src_factor_aqua_parquet_tds"],
-      },
+      }
     ],
   },
   {
@@ -547,24 +547,24 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Flexibilis Padlóbevonat egy kiváló minőségű kopás-, olaj- és vízálló, bel- és kültérben használható termék. Alkalmas minden olyan felület bevonására, ahol a cél az átlagos felületi terhelés elvárásainak való megfelelés, családi házas környezetben (játszótéri rugalmas védőburkolat, autóbeálló, járda, műhely, veranda, lépcsők).", "Dekoratív, esztétikus felületet biztosít fa, vakolt vagy beton lábazatok, kerítések, palatetők, (azbesztes hullámpala nem festhető), bitumenes hullámlemezek állagmegóvó átfestése esetén. A bevonat ellenáll az átlagos, lakossági személygépkocsi terhelésből adódó igénybevételeknek, itt a festendő felület kizárólag jó nedvszívóképességgel rendelkező betonfelület lehet.", "A bevonat matt, finom kvarclisztet tartalmaz, ezért a felmosása nehézségekbe ütközik. Könnyebben tisztítható, ha FACTOR Aqua Parkettalakkal kezeljük beltérben a felületet. Amennyiben a könnyebb tisztántarthatóság fontos szempont, ajánljuk VALMOR Garázsfestékünket."],
+        paragraphs: ["A VALMOR Flexibilis Padlóbevonat felhasználásra kész, vízbázisú, matt bel- és kültéri bevonat. A Műszaki adatlap szerint kopás-, olaj- és vízálló; tipikus lakossági felhasználások: játszótéri rugalmas burkolat, autóbeálló, járda, műhely, veranda, lépcső.", "Dekoratív átfestésre jelöli fa, vakolt vagy beton lábazatot, kerítést, palatetőt és bitumenes hullámlemezt — azbesztes hullámpala nem festhető. Személygépkocsi-terhelésnél a fogadófelület kizárólag jó nedvszívású beton lehet. Finom kvarcliszt miatt a felmosás nehezebb; beltérben a Műszaki adatlap FACTOR Aqua Parkettalakk utókezelést említ a tisztíthatósághoz. Intenzívebb tisztíthatósághoz a gyártó a VALMOR Garázsfestéket javasolja. Kiadósság: kb. 3 m²/liter alapozás + két réteg, glettelt felületen. Javasolt 2–3 réteg; járófelületen javasolt nedves rétegvastagság 330 µm."],
         sourceIds: ["src_valmor_floor", "src_valmor_floor_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos zsíros szennyeződéseket tisztítsuk le. Az esetleges hibákat nagyszilárdságú járófelület javító anyaggal szüntessük meg. Az aljzat legyen szilárd, nem porlódó, nem felkarcolható, nyomószilárdsága minimum C20-minőségű.", "Festéket csak megfelelő vízszigeteléssel ellátott és max. 5%-os nedvességtartalmú aljzatokra hordjuk fel. A festési munkálatok megkezdése előtt javasolt próbafestés elvégzése."],
+        paragraphs: ["Laza, pergő részek és olajos/zsíros szennyeződés eltávolítása; hibák nagyszilárdságú járófelület-javítóval. Az aljzat legyen szilárd, nem porló, nem karcolható, nyomószilárdság legalább C20; megfelelő vízszigetelés és max. 5% nedvesség. Nem nedvszívó / alacsony porozitású felület: VALMOR Hídképző Alapozó. Próbafestés javasolt."],
         sourceIds: ["src_valmor_floor", "src_valmor_floor_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A festést csak +10 °C felett végezzük, a felület hőmérséklete maximum 25 °C lehet. Ne dolgozzunk esőben vagy tűző nyári napsütésben! A felhordást végezhetjük ecsettel, hengerrel. Használat előtt a festéket alaposan keverjük fel, a nedvszívó felületek alapozását 1:1 arányban vízzel hígított festék intenzív ecsetelésével végezzük.", "A nem nedvszívó, vagy alacsony porozitású felületek festése elött használjuk a VALMOR Hídképző Alapozót. Az első réteg felvitelét 10% víz hozzáadásával végezzük el, majd hagyjuk azt átszáradni, a fedőfestést 5%-os hígítással végezzük."],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C; esőben vagy tűző napon ne dolgozzon. Ecset vagy henger; alapos felkeverés. Nedvszívó alapozás: 1:1 vízzel hígított saját termék, intenzív ecsetelés. Első réteg: +10% víz; fedőréteg: +5% víz. 25 °C-on 1. fokozat max. 2 óra, 5. fokozat max. 24 óra; esőállóság / teljes száradás: 24 óra; önmagával átfestés / lépésállóság: 4 óra — magas páratartalom hosszabbíthat.", "Intenzív használat: 3–5 nap után. Szerszámtisztítás: víz. H412 és allergén figyelmeztetés — használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."],
         sourceIds: ["src_valmor_floor", "src_valmor_floor_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt"],
         sourceIds: ["src_valmor_floor", "src_valmor_floor_tds"],
-      },
+      }
     ],
   },
   {
@@ -625,24 +625,24 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Vakolat felhasználásra kész, műgyanta bázisú diszperziós vékonyvakolat, mely homlokzatok és belső falak védelmére és díszítésére alkalmas. Felhordható simított, vakolt, glettelt felületre, betonra vagy homlokzati hőszigetelő rendszerre zárórétegként. A bevonat algásodás elleni védelemmel ellátott, nagy strapabírású, víztaszító, tisztítható, ellenáll az időjárásnak, UV-sugárzásnak, dörzsölésnek."],
+        paragraphs: ["A VALMOR Vakolat felhasználásra kész, műgyanta bázisú diszperziós vékonyvakolat homlokzatok és belső falak védelmére és díszítésére. Fogadófelület: simított, vakolt, glettelt felület, beton, illetve homlokzati hőszigetelő rendszer zárórétege.", "A Műszaki adatlap algásodás elleni védelmet, víztaszítást, tisztíthatóságot, valamint időjárás-, UV- és dörzsállóságot említ. Szín: fehér. Szemcseméret: 1,5 mm. Kiadósság 1,5 mm kapart struktúránál: 2,4–2,9 kg/m², felhordástól és alaptól függően. Fényesség: matt."],
         sourceIds: ["src_valmor_plaster", "src_valmor_plaster_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza, pergő részeket távolítsuk el, az olajos, zsíros és egyéb szennyeződéseket tisztítsuk le, a foltos felületet izoláljuk VALMOR Időjárásálló- és Szigetelőfestékkel! A felülethibás falakat kültéri glettelőanyaggal simítsuk le, majd csiszoljuk át!", "A tapadás növelése és az egyenletesen nedvszívó felület kialakítása érdekében VALMOR Univerzális Mélyalapozóval vagy VALMOR Szemcsés Lábazat és Betonfestékkel (8 szín kínálatából választhat) kezeljük a falfelületet, 24 órával a vakolat felhordását megelőzően! A munkálatok megkezdése előtt javasolt a próbafelület felhordása."],
+        paragraphs: ["Laza, pergő részek és szennyeződés eltávolítása; foltos felület izolálása VALMOR Időjárásálló- és Szigetelőfestékkel. Felülethibák: kültéri glettelés, csiszolás. Tapadás / egyenletes nedvszívás: VALMOR Univerzális Mélyalapozó vagy VALMOR Szemcsés Lábazat- és Betonfesték, a vakolat előtt 24 órával. Próbafelület javasolt."],
         sourceIds: ["src_valmor_plaster", "src_valmor_plaster_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! A VALMOR Vakolatot alaposan keverjük fel és rozsdamentes acél simítóval, szemcsevastagságban hordjuk fel a felületre! A kívánt struktúrát 5-10 percen belül, egy műanyag simítóval dolgozzuk ki!", "Összefüggő felület bevonásának ideje alatt a munkát nem szabad félbeszakítani. A határoló felületeket ragasztószalaggal ragasszuk le, és a filmképződés beállta előtt távolítsuk el azt! Esőben, viharban vagy tűző napon ne végezzünk munkát!"],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C. Alapos felkeverés; felhordás rozsdamentes acél simítóval, szemcsevastagságban. Struktúra: 5–10 percen belül műanyag simítóval. Összefüggő felületnél a munka ne szakadjon meg; maszkolószalag a filmképződés előtt távolítandó. Esőben, viharban vagy tűző napon ne dolgozzon.", "25 °C-on 1. fokozat max. 2 óra, 5. fokozat max. 24 óra; önmagával átfestés: 10 óra — magas páratartalom hosszabbíthat. Színezés fehérnél max. 3% paszta. Szerszámtisztítás: víz. Fagyveszélyes — használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."],
         sourceIds: ["src_valmor_plaster", "src_valmor_plaster_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt"],
         sourceIds: ["src_valmor_plaster", "src_valmor_plaster_tds"],
-      },
+      }
     ],
   },
   {
@@ -651,24 +651,24 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Lábazatfesték jellemzően kültérben használható időjárásálló festék. Dekoratív bevonat kialakítására alkalmas lábazatokon és alapvakolattal ellátott felületeken. Alkalmazható továbbá nagy vagy kis nedvszívóképességgel rendelkező felületek festésére (beton, tégla, diszperziós homlokzat és lábazatfestékek, EPS, XPS ragasztók, stb..).", "Kiváló a képződött bevonatnak a felcsapódó vízzel szembeni ellenállósága és színtartósága. Teljes átszáradás után tisztítható bevonat képződik a kezelt felületen. Amennyiben a glettelésből, simításból adódó kisebb hibákat, vagy a hajszálrepedéseket szeretné eltűntetni, javasoljuk a VALMOR Szemcsés Lábazat- és Betonfestékünket, melynek használatával egységes, enyhén strukturált felület alakítható ki."],
+        paragraphs: ["A VALMOR Lábazatfesték jellemzően kültéri, időjárásálló matt festék lábazatra és alapvakolt felületre. A Műszaki adatlap szerint nagy vagy kis nedvszívású alapokra is hordható — többek között betonra, téglára, diszperziós homlokzat- és lábazatfestékre, EPS/XPS ragasztóra.", "A gyártó a felcsapódó vízzel szembeni ellenállást és színtartóságot emeli ki; teljes átszáradás után tisztítható filmet említ. Hajszálrepedés vagy kisebb glettelési hibák takarására a Műszaki adatlap a VALMOR Szemcsés Lábazat- és Betonfestéket javasolja. Kiadósság: 3,5–4,0 m²/liter két rétegben, glettelt felületen. Javasolt 2–3 réteg. Fényesség: matt."],
         sourceIds: ["src_valmor_plinth", "src_valmor_plinth_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos, zsíros szennyeződéseket tisztítsuk le! A kezelendő felület legyen száraz és pormentes. Az esetleges hibákat a fogadófelületnek és az igénybevételnek megfelelő anyaggal javítsuk ki. A festék a hordozó felület felől érkező vizesedési vagy salétromosodási folyamatoknak nem tud ellenállni, ezek megszűntetésére kérjen szaktanácsot.", "A festési munkálatok megkezdése előtt javasolt próbafestés elvégzése."],
+        paragraphs: ["Laza, pergő részek eltávolítása; olajos, zsíros szennyeződés tisztítása. A felület legyen száraz és pormentes; hibák a fogadófelületnek megfelelő javítóanyaggal. A festék a hordozó felől érkező vizesedésnek vagy salétromosodásnak nem áll ellen — ezeket a festés előtt meg kell szüntetni. Próbafestés javasolt."],
         sourceIds: ["src_valmor_plinth", "src_valmor_plinth_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A festést csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet. Ne dolgozzunk esőben vagy tűző nyári napsütésben! Használat előtt a festéket alaposan keverjük fel. A felület alapozásához VALMOR Lábazatfesték és víz 1:1 arányban hígított keverékét használjuk.", "Az alapozó keveréket intenzív ecsetelő mozdulatokkal hordjuk fel a felületre. A festéket legalább két rétegben fessük fel, nagy igénybevételnek kitett felületen három réteg felhordása javasolt. Festéket hígíthatjuk 5-10% víz hozzáadásával, a felhordás megkönnyítése érdekében."],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C; esőben vagy tűző napon ne dolgozzon. Alapos felkeverés. Alapozás: saját termék 1:1 vízzel, intenzív ecseteléssel. Legalább két réteg; nagy igénybevételnél három. Hígítás a felhordáshoz: 5–10% víz. Teljes száradás / önmagával átfestés 25 °C-on: 4 óra — magas páratartalom hosszabbíthat. Szerszámtisztítás: víz. Használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."],
         sourceIds: ["src_valmor_plinth", "src_valmor_plinth_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt"],
         sourceIds: ["src_valmor_plinth", "src_valmor_plinth_tds"],
-      },
+      }
     ],
   },
   {
@@ -677,24 +677,24 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Szemcsés Lábazat- és Betonfesték jellemzően kültérben használható kopás-, olaj- és időjárásálló festék. Dekoratív felületek kialakítására alkalmas beton, műkő, eternit, EPS, XPS és ezek ragasztóin, lábazatokon és alapvakolattal ellátott felületeken. Nagy előnye egy sima felületű festékkel szemben, hogy a kisebb glettelésből, simításból adódó hibákat, valamint a hajszálrepedéseket eltünteti és egységes, enyhén strukturált felületet eredményez.", "Olyan betonból készült járófelületek esetén is alkalmazható, ahol cél a csúszósság megszűntetése, mert a bevonat ellenáll az átlagos, lakossági gyalogos és személygépkocsi terhelésből adódó igénybevételeknek. Felhasználható homlokzatdíszítő elemek kérgesítésére és homlokzatokon hengerezhető vakolatként is.", "Nem nedvszívó felületeken tapadóhídként is használható. A bevonat matt, érdes felülete miatt tisztántarthatósága korlátokba ütközhet. Amennyiben a könnyű tisztántarthatóság és intenzív terhelés az igénye, kérjük, keresse VALMOR Garázsfestékünket vagy a VALMOR Biztonságos Padló- és Jelölőfestékünket."],
+        paragraphs: ["A VALMOR Szemcsés Lábazat- és Betonfesték felhasználásra kész, vízbázisú, kvarchomokkal dúsított, jellemzően kültéri, kopás-, olaj- és időjárásálló festék. Fogadófelületek a Műszaki adatlap szerint: beton, műkő, eternit, EPS, XPS és ragasztóik, lábazat, alapvakolat; homlokzatdíszítő elemek kérgesítése és hengerezhető vakolatként is jelöli.", "Előnye a sima festékkel szemben: kisebb glettelési hibák és hajszálrepedések takarása, enyhén strukturált felület. Beton járófelületen a csúszósság csökkentésére is szerepel; ellenáll az átlagos lakossági gyalogos és személygépkocsi terhelésnek. Nem nedvszívó felületen tapadóhídként is használható. Az érdes, matt felület tisztíthatósága korlátozott — intenzív tisztíthatósághoz a gyártó a VALMOR Garázsfestéket vagy a Biztonságos Padló- és Jelölőfestéket javasolja. Kiadósság: lábazaton 3–3,5 m²/liter két rétegben; járófelületen 2,5 m²/liter két rétegben (glettelt). Javasolt 2–3 réteg. Szemcseméret: 0–0,5 mm."],
         sourceIds: ["src_valmor_textured", "src_valmor_textured_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos, zsíros szennyeződéseket tisztítsuk le! Az esetleges hibákat nagy szilárdságú járófelület javító anyaggal szüntessük meg! Az aljzat legyen szilárd, nem porlódó, nem felkarcolható, nyomószilárdsága minimum C20-minőségű.", "Festéket csak megfelelő vízszigeteléssel ellátott és max. 5%-os nedvességtartalmú aljzatokra hordjuk fel. A nem nedvszívó felületek – előzetes érdesítés után – alapozást nem igényelnek. A festési munkálatok megkezdése előtt javasolt próbafestés elvégzése."],
+        paragraphs: ["Laza, pergő részek és olajos/zsíros szennyeződés eltávolítása; hibák nagyszilárdságú járófelület-javítóval. Aljzat: szilárd, nem porló, nem karcolható, legalább C20; megfelelő vízszigetelés és max. 5% nedvesség. Nem nedvszívó felület: előzetes érdesítés után alapozás nélkül. Próbafestés javasolt."],
         sourceIds: ["src_valmor_textured", "src_valmor_textured_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A festést csak +10 °C felett végezzük, a felület hőmérséklete max. 25°C lehet. Ne dolgozzunk esőben vagy tűző nyári napsütésben! A felhordást végezhetjük ecsettel, struktúr hengerrel. Használat előtt a festéket alaposan keverjük fel, a nedvszívó felületek alapozását 1:1 arányban vízzel hígított festék intenzív ecsetelésével végezzük.", "Használhatjuk még a VALMOR Univerzális Mélyalapozót, megfelelő hígításban. Az első réteg felvitelét 10% víz hozzáadásával végezzük el, majd hagyjuk azt átszáradni. A fedőfestést 5%-os hígítással végezzük."],
+        paragraphs: ["Csak +10 °C felett; felület max. 25 °C; esőben vagy tűző napon ne dolgozzon. Ecset vagy struktúrhenger; alapos felkeverés. Nedvszívó alapozás: 1:1 vízzel hígított saját termék intenzív ecseteléssel; alternatíva: VALMOR Univerzális Mélyalapozó megfelelő hígításban. Első réteg: +10% víz; fedőréteg: +5% víz.", "25 °C-on 1. fokozat max. 2 óra, 5. fokozat max. 24 óra; önmagával átfestés: min. 4 óra (lépésálló), tapadóhídként / burkolás előtt 24 óra — magas páratartalom hosszabbíthat. Szerszámtisztítás: víz. Használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."],
         sourceIds: ["src_valmor_textured", "src_valmor_textured_tds"],
       },
       {
         heading: "Fényesség",
         paragraphs: ["matt"],
         sourceIds: ["src_valmor_textured", "src_valmor_textured_tds"],
-      },
+      }
     ],
   },
   {

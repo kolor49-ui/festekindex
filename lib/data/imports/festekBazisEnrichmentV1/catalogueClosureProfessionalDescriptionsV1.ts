@@ -1002,8 +1002,8 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Alkalmazás",
         "paragraphs": [
-          "7016 Vakolat felhasználásra kész, műgyanta bázisú, akrilát kötőanyag tartalmú vékonyvakolat, mely jól alkalmas homlokzatok és belső falak védelmére és díszítésére. Felhordható simított, vakolt, glettelt felületre, betonra, vagy homlokzati hőszigetelő rendszer zárórétegeként.",
-          "Algásodás, penészedés elleni védelemmel ellátott, valamint vízállóságot fokozó adalékokat is tartalmaz. Ezért korai esőállósága van és rezisztens a levegőben lévő káros anyagokkal szemben. Nagy strapabírású, víztaszító, tisztítható, ellenáll az időjárásnak, UV-sugárzásnak."
+          "A 7016™ Antracit Kapart 1,5 Vakolat felhasználásra kész, műgyanta / akrilát kötőanyagú vékonyvakolat. A Műszaki adatlap szerint homlokzatok és belső falak védelmére és díszítésére alkalmas; fogadófelületként simított, vakolt, glettelt felület, beton, illetve homlokzati hőszigetelő rendszer zárórétege is szerepel.",
+          "A gyártó algásodás és penész elleni védelmet, valamint vízállóságot fokozó adalékokat említ; korai esőállóságot és a levegőbeli káros anyagokkal szembeni ellenállást is feltüntet. Víztaszító, tisztítható, időjárás- és UV-álló bevonatként jelöli. Szín: antracit és fehér. Kiadósság 1,5 mm kapart struktúránál: 2,4–2,9 kg/m², a felhordástól és az alaptól függően. Javasolt rétegszám: 1 vagy 2."
         ],
         "sourceIds": [
           "src_7016_plaster",
@@ -1013,8 +1013,8 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Előkészítés",
         "paragraphs": [
-          "A felületről a laza, pergő részeket távolítsuk el, az olajos, zsíros és egyéb szennyeződéseket tisztítsuk le. A foltos felületet izoláljuk VALMOR Időjárásálló- és Szigetelőfestékkel! A felület hibáit alkalmas glettelőanyaggal simítsuk be, majd csiszoljuk át! A vakolat tapadásának növelése és az egyenletes nedvszívás kialakítása érdekében a felületet alapozzuk le VALMOR Univerzális Mélyalapozóval, vagy a vakolat színéhez legközelebb álló színű VALMOR Szemcsés Lábazat és Betonfestékkel (8 szín).",
-          "A vakolást az alapozó száradását követően kezdhetjük meg. A munkálatok megkezdése előtt javasolt a próbabevonás végzése."
+          "Laza, pergő részek eltávolítása; olajos, zsíros és egyéb szennyeződés tisztítása. Foltos felület: izolálás VALMOR Időjárásálló- és Szigetelőfestékkel. Hibák: megfelelő glettelés, majd csiszolás.",
+          "Tapadás és egyenletes nedvszívás: VALMOR Univerzális Mélyalapozó, vagy a vakolat színéhez közeli VALMOR Szemcsés Lábazat- és Betonfesték. Vakolás csak az alapozó száradása után. Próbabevonás javasolt."
         ],
         "sourceIds": [
           "src_7016_plaster",
@@ -1024,9 +1024,8 @@ export const catalogueClosureProfessionalDescriptionsV1: ProductProfessionalDesc
       {
         "heading": "Felhasználás",
         "paragraphs": [
-          "A vakolást +5 - +30 °C hőmérséklet tartományban végezzük, a felület hőmérséklete max. 25 °C lehet! A vakolatot alaposan keverjük fel, több vödör esetén ellenőrizzük a színazonosságot. A felhordást szemcsevastagságban, rozsdamentes acél simítóval végezzük! Szükség esetén a vakolat maximum 1,5% vízzel hígítható.",
-          "A struktúrát 5-10 perc pihentetést követően műanyag simítóval dörzsöljük ki! Felületegység bevonása során a munkát nem szabad félbeszakítani. A határoló felületeket maszkoló szalaggal takarjuk ki, a szalagot a kidörzsölést követően azonnal távolítsuk el! A vakolat természetes ásványi anyagokat tartalmaz, ezért az épületek egyes oldalain azonos gyártási dátumú anyagot használjon.",
-          "Az eső, az erős szél, vagy a tűző nap a felhasználásra kedvezőtlen körülmények."
+          "Munkahőmérséklet: +5…+30 °C; felület max. 25 °C. Alapos felkeverés; több vödörnél színazonosság ellenőrzése. Felhordás szemcsevastagságban, rozsdamentes acél simítóval. Szükség esetén legfeljebb 1,5% víz. Struktúra: 5–10 perc pihentetés után műanyag simítóval kidörzsölés.",
+          "Összefüggő felületegységnél a munka ne szakadjon meg. Maszkolószalag a kidörzsölés után azonnal távolítandó. Természetes ásványi tartalom miatt azonos gyártási dátumú anyagot használjon épületenként / oldalonként. Eső, erős szél vagy tűző nap kedvezőtlen. Önmagával átfesthetőség 25 °C-on: kb. 10 óra — magas páratartalom hosszabbíthat. Szerszámtisztítás: víz. Használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."
         ],
         "sourceIds": [
           "src_7016_plaster",

@@ -189,7 +189,7 @@ export const catalogueClosureDescriptionsV1: ProductDescriptionEnrichment[] =
       "src_7016_plaster",
       "src_7016_plaster_tds"
     ],
-    "editorialSummary": "7016 Vakolat felhasználásra kész, műgyanta bázisú, akrilát kötőanyag tartalmú vékonyvakolat, mely jól alkalmas homlokzatok és belső falak védelmére és díszítésére. Felhordható simított, vakolt, glettelt felületre,."
+    "editorialSummary": "Felhasználásra kész, akrilát kötőanyagú, 1,5 mm kapart struktúrájú vékonyvakolat bel- és homlokzati falakra; algásodás és penész elleni adalékkal a Műszaki adatlap szerint."
   },
   {
     "productId": "prod_valmor_stone_balm",

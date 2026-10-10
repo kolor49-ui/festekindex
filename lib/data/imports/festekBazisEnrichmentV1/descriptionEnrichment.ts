@@ -95,16 +95,14 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
     sourceSummary:
       "VALMOR Lábazatfesték kültéri, időjárásálló lábazatfesték. A műszaki adatlap szerint vízzel hígítható; alapozáshoz erősebb vízhígítás is javasolt.",
     sourceSummarySourceIds: ["src_valmor_plinth", "src_valmor_plinth_tds"],
-    editorialSummary:
-      "Időjárásálló kültéri lábazatfesték. Épületlábazatok védelmére és fedezésére ajánlott.",
+    editorialSummary: "Matt, időjárásálló kültéri lábazatfesték lábazatra, alapvakolatra, betonra és téglára; felcsapódó víznek ellenálló, száradás után tisztítható bevonat.",
   },
   {
     productId: "prod_valmor_textured",
     sourceSummary:
       "VALMOR Szemcsés Lábazat- és Betonfesték vizes bázisú, kvarchomokkal dúsított bel- és kültéri bevonat. A műszaki adatlap szerint lábazatra és járófelületre is alkalmazható; felhordás ecsettel vagy struktúr hengerrel.",
     sourceSummarySourceIds: ["src_valmor_textured", "src_valmor_textured_tds"],
-    editorialSummary:
-      "Vizes bázisú, kvarchomokos szemcsés bevonat lábazatra és beton járófelületre. Bel- és kültéri használatra szánt struktúrált festék.",
+    editorialSummary: "Kvarchomokkal dúsított, matt bel- és kültéri lábazat- és betonfesték; enyhén strukturált film hajszálrepedések takarására és átlagos lakossági járóterhelésre.",
   },
   {
     productId: "prod_valmor_garage",
@@ -119,8 +117,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
     sourceSummary:
       "VALMOR Flexibilis Padlóbevonat vizes bázisú, matt bel- és kültéri padlóbevonat. A műszaki adatlap szerint felhordás ecsettel vagy hengerrel.",
     sourceSummarySourceIds: ["src_valmor_floor", "src_valmor_floor_tds"],
-    editorialSummary:
-      "Vizes bázisú, matt flexibilis padlóbevonat bel- és kültérre. Járófelületek fedezésére szánt bevonat.",
+    editorialSummary: "Vízbázisú, matt, flexibilis bel- és kültéri padlóbevonat átlagos lakossági terhelésre; olaj- és vízálló film, járófelületen szigorú aljzatfeltételekkel.",
   },
   {
     productId: "prod_valmor_weather",
@@ -135,8 +132,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
     sourceSummary:
       "VALMOR Vakolat műgyanta bázisú diszperziós vékonyvakolat bel- és homlokzati használatra. A műszaki adatlap szerint felhordás glettvassal vagy spaklival.",
     sourceSummarySourceIds: ["src_valmor_plaster", "src_valmor_plaster_tds"],
-    editorialSummary:
-      "Műgyanta bázisú diszperziós vékonyvakolat beltérre és homlokzatra. Struktúrált vakolatréteg kialakítására szolgál.",
+    editorialSummary: "Felhasználásra kész, fehér, matt műgyanta diszperziós vékonyvakolat bel- és homlokzati falakra; 1,5 mm kapart struktúra, algásodás elleni védelemmel a Műszaki adatlap szerint.",
   },
 
   // —— FACTOR ——
@@ -167,8 +163,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "src_factor_aqua_parquet",
       "src_factor_aqua_parquet_tds",
     ],
-    editorialSummary:
-      "Vizes bázisú beltéri parkettalakk. Beltéri parketták és fa járófelületek védelmére szánt Aqua-rendszerű fedőlakk.",
+    editorialSummary: "Vízbázisú, egykomponensű poliuretán–akril beltéri parkettalakk; matt, selyem- vagy magasfényű, oldószer- és formaldehidmentes változatokban.",
   },
   {
     productId: "prod_factor_aqua_glaze",
