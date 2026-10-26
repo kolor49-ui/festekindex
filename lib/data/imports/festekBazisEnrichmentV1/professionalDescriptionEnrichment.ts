@@ -13,19 +13,32 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A 7016 Egyrétegű Beltéri Falfesték újonnan kifejlesztett, környezetvédelmi előírásoknak megfelelő speciális receptúrával rendelkező festék. A falfesték vízpára- és légáteresztő tulajdonsága révén megfelel a jelenkor technikai követelményeinek. Használható gipszes és cementes vakolatok, glettelt felületek, fűrészporos és struktúra tapéták, valamint diszperziós alapú korábbi festések átvonására.", "A termék kiadós, egyrétegben felhordva elfedi a korábbi festés színeit"],
+        paragraphs: [
+          "A 7016 Antracit Egyrétegű Beltéri Falfesték beltéri falfesték; vízpára- és légáteresztő tulajdonságot említ. Fogadó: gipszes/cementes vakolat, glett, fűrészporos és struktúra tapéta, diszperziós átvonás. Egy rétegben felhordva elfedheti a korábbi festés színeit a lap szerint; javasolt 1 vagy 2 réteg. Kiadósság glettelten: 10–11 m²/liter. Szín: antracit. Kiszerelés: 1 l, 2,5 l."
+        ],
         sourceIds: ["src_7016_wall", "src_7016_wall_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos zsíros és egyéb szennyeződéseket tisztítsuk le. A felülethibás falakat glettelőanyaggal simítsuk le, majd csiszoljuk át. A tapadás növelése és az egyenletesen nedvszívó felület kialakítása érdekében VALMOR Univerzális Mélyalapozóval kezeljük a falfelületet a festés megkezdése előtt.", "A festési munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: [
+          "Laza részek és szennyeződés eltávolítása; hibák glettelése, csiszolás. Tapadás/egyenletes szívás: VALMOR Univerzális Mélyalapozó. Próbafestés."
+        ],
         sourceIds: ["src_7016_wall", "src_7016_wall_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A festést csak +10 °C felett végezzük. A felhordást végezhetjük ecsettel, hengerrel és szórással. Használat előtt a festéket alaposan keverjük fel, hígításképpen maximum 10%-ban vizet adhatunk hozzá. Az első réteg felvitele után hagyjuk azt átszáradni, majd a fedőfestést max. 5% víz hozzáadásával végezzük."],
+        paragraphs: [
+          "Csak +10 °C felett. Ecset, henger, szórás; alapos keverés. Hígítás: max. 10% víz; fedőréteg max. 5% víz. Első réteg átszáradása után fedő. Átfesthetőség önmagával 25 °C-on: 4 óra — páratartalom hosszabbíthat. Szerszám: víz. Fagyveszélyes. Használat előtt Műszaki és Biztonsági adatlap."
+        ],
         sourceIds: ["src_7016_wall", "src_7016_wall_tds"],
       },
+      {
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "EUH208 allergén izotiazolinonok. Gyermekektől elzárva; szembe/bőrre ne. VOC A/a max. 30 g/l. Nem tűzveszélyes, fagyveszélyes."
+        ],
+        sourceIds: ["src_7016_wall", "src_7016_wall_tds"],
+      }
     ],
   },
   {
@@ -285,24 +298,33 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A FACTOR Aqua Impregnáló Alapozó oldószermentes termék, mely alkalmas kül- és beltéri fafelületek (faház, épületasztalos ipari termék, kerti építmények, kerítés, fűrészáru, stb.) lazúrozás előtti, pórustömítő alapozására. A készítmény beszívódik a fa felszín alatti rétegébe, így fejti ki impregnáló hatását.", "Az alapozás hatására a fedőlazúr tapadása megnövekszik a felületen, így azt átfestve FACTOR Aqua Akril Vastaglazúrral hosszantartó esztétikai hatás érhető el."],
+        paragraphs: [
+          "A FACTOR Aqua Impregnáló Alapozó felhasználásra kész, vizes bázisú, oldószermentes, színtelen bel- és kültéri faalapozó. Pórustömítő, tapadásjavító impregnálás lazúrozás előtt (faház, asztalos termék, kerti építmény, kerítés, fűrészáru stb.). A beszívódó alapozó után FACTOR Aqua Akril Vastaglazúrral hosszabb esztétikai hatás érhető el a lap szerint.",
+          "Kiadósság: 12–14 m²/liter egy rétegben. Rétegszám — két külön gyártói közlés (nem egyesítve): (1) minőségi táblázat, 1. oldal: „Javasolt rétegszám 1 réteg”; (2) Felhasználás, 2. oldal: ecset/henger/mártás „1-2 rétegben”. Fényesség: matt. Kiszerelés: 0,75 l, 2,5 l."
+        ],
         sourceIds: ["src_factor_aqua_primer", "src_factor_aqua_primer_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A festendő felületről távolítsuk el maradéktalanul a szennyeződéseket, régi bevonatokat, majd dörzspapírral csiszoljuk át és portalanítsuk le. Az esetleges gyantakiválásokat nitrohígítóval távolítsuk el. A lemosott részeken a hígító teljes száradása után szabad csak festeni.", "A festési munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: [
+          "Szennyeződés és régi bevonat eltávolítása; csiszolás, portalanítás. Gyanta: nitrohígító, majd teljes száradás. Próbafestés javasolt."
+        ],
         sourceIds: ["src_factor_aqua_primer", "src_factor_aqua_primer_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Alaposan keverjük fel, majd kezdjük meg az impregnálást. Ecseteléssel, hengerrel vagy mártott technikával, 1-2 rétegben. Újabb réteg felvitele előtt legalább 4 óra száradási időt kell biztosítani, valamint finom szálirányú csiszolás javasolt.", "A termék felhasználásra kész, hígítása nem szükséges. A festett fa nedvességtartalma maximum 12% lehet."],
+        paragraphs: [
+          "Csak +10 °C felett; felület max. 25 °C. Alapos felkeverés; ecset, henger vagy mártás, 1–2 rétegben a Felhasználás szerint. Újabb réteg előtt legalább 4 óra és finom szálirányú csiszolás. Hígítani nem szabad. Festett fa nedvesség max. 12%. Átfesthetőség önmagával 25 °C-on: 4 óra — páratartalom hosszabbíthat. Szerszám: víz. Fagyveszélyes. Használat előtt Műszaki és Biztonsági adatlap."
+        ],
         sourceIds: ["src_factor_aqua_primer", "src_factor_aqua_primer_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["matt"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Hígítás tilos. Allergén izotiazolinonok (EUH208). Gyermekektől elzárva; szembe/bőrre ne. VOC A/h max. 30 g/l."
+        ],
         sourceIds: ["src_factor_aqua_primer", "src_factor_aqua_primer_tds"],
-      },
+      }
     ],
   },
   {
@@ -311,24 +333,33 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A FACTOR Csónaklakk kül- és beltérben egyaránt felhasználható oldószer bázisú különleges Alkid – Poliuretán gyanták keveréke. UV szűrőket, víztaszító viaszokat és speciális adalékanyagokat tartalmaz, így növeli a fa nedvességgel szembeni ellenállóságát és időjárásállóságát.", "Kültérben alkalmas édesvíznek kitett csónakok védelmére, valamint kemény és nemes fából készült kerti bútorok, teraszok, épületrészek lakkozására. Beltérben puha és keményfából készült fürdőszoba bútorok nedvesség elleni védelmére használjuk. Ne használja olyan felületeken, amelyek közvetlen érintkezésbe kerülnek élelmiszerekkel, takarmányokkal, ivóvízzel."],
+        paragraphs: [
+          "A FACTOR Csónaklakk oldószeres alkid–poliuretán keverék, UV-szűrőkkel és víztaszító viaszokkal. Kültér: édesvíznek kitett csónak, kemény/nemes fa kerti bútor, terasz, épületrész. Beltér: puha/keményfa fürdőszoba bútor nedvesség ellen. Ne használja élelmiszerrel, takarmánnyal vagy ivóvízzel közvetlenül érintkező felületen.",
+          "Kiadósság: 12–14 m²/liter egy rétegben. Beltér 1–2, kültér 2–3 réteg. Fényesség: magasfényű színtelen. Kiszerelés: 0,75 l, 2,5 l."
+        ],
         sourceIds: ["src_factor_boat", "src_factor_boat_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A festendő felületről távolítsuk el maradéktalanul a szennyeződéseket, régi bevonatokat, majd dörzspapírral csiszoljuk át és portalanítsuk le! Az esetleges gyantakiválásokat és bitumen maradványokat nitro hígítóval távolítsuk el! A lemosott részeken a hígító teljes száradása után szabad csak festeni.", "A festett fa nedvességtartalma maximum 10% lehet. A lakkozási munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: [
+          "Szennyeződés/régi bevonat eltávolítása; csiszolás, portalanítás. Gyanta/bitumen: nitrohígító, teljes száradás. Festett fa nedvesség max. 10%. Próbafestés."
+        ],
         sourceIds: ["src_factor_boat", "src_factor_boat_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Távolítsuk el a lakk felületéről az esetleges bőrréteget, majd alaposan keverjük fel a terméket. Használjunk speciális lakkozó ecsetet, hengert vagy megfelelő szóróberendezést! Alapozó rétegként használjuk a FACTOR Csónaklakk 3:1 arányban Coror Szintetikus Hígítóval készült elegyét.", "5 óra elteltével 180-as finom csiszolás után kezdjük meg a felület lakkozását. Beltérben 1-2 lakkréteg, kültérben 2-3 réteg felvitele javasolt 8 órás időközönként. Az optimális felhordási konzisztencia eléréséhez használhatunk kb. 5% mértékben hígítót."],
+        paragraphs: [
+          "Csak +10 °C felett; felület max. 25 °C. Bőrréteg eltávolítása, alapos keverés. Alapozó: FACTOR Csónaklakk 3:1 COROR Szintetikus Hígítóval; 5 óra után 180-as csiszolás, majd lakkozás. Rétegek között 8 óra. Konzisztencia: kb. 5% hígító. Víz terhelés: 3 nap után. Szerszám: COROR Szintetikus Hígító. Tűzveszélyes (UN 1263). Használat előtt Műszaki és Biztonsági adatlap."
+        ],
         sourceIds: ["src_factor_boat", "src_factor_boat_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["fényes"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Élelmiszer/takarmány/ivóvíz érintkezés tilos. Fa nedvesség max. 10% (nem 12%). Tűzveszélyességi osztály a lap szerint."
+        ],
         sourceIds: ["src_factor_boat", "src_factor_boat_tds"],
-      },
+      }
     ],
   },
   {
@@ -337,24 +368,32 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A FACTOR Parkettalakk elsősorban parketta, de egyéb kemény fafelületek, bútor, íróasztal, iskolabútor, tornaszerek lakkozására szolgál. Ecseteléssel és szórással egyaránt felhordható. A lakkozott felület rendkívül kopásálló, kemény és csillogó. Egykomponensű, ellenálló termék, ami a felhasználás szempontjából, kiemelkedő előnyt jelent."],
+        paragraphs: [
+          "A FACTOR Parkettalakk felhasználásra kész, oldószeres, beltéri selyem- vagy magasfényű parkettalakk. Elsősorban parketta, továbbá kemény fa, bútor, íróasztal, iskolabútor, tornaszer lakkozására. Egykomponensű, kemény, kopásálló film. Kiadósság: 10–12 m²/liter egy rétegben; 2–3 réteg (nagy terhelésnél 3). Kiszerelés: 0,75 / 2,5 / 5 l (a lapon 20 l is)."
+        ],
         sourceIds: ["src_factor_parquet", "src_factor_parquet_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A festendő felületről távolítsuk el maradéktalanul a szennyeződéseket, régi bevonatokat, majd dörzspapírral csiszoljuk át és portalanítsuk le. Az esetleges gyantakiválásokat nitrohígítóval távolítsuk el. A lemosott részeken a hígító teljes száradása után szabad csak festeni.", "FACTOR „2 in 1” Vékonylazúrral színezhetjük a lakkozás előtt a fa felületét. A festési munkálatok megkezdése előtt javasolt a próbafestés elvégzése."],
+        paragraphs: [
+          "Szennyeződés és régi bevonat eltávolítása; csiszolás, portalanítás. Gyanta: nitrohígító, teljes száradás. Előzetes színezés: FACTOR „2 in 1” Vékonylazúr. Próbafestés."
+        ],
         sourceIds: ["src_factor_parquet", "src_factor_parquet_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C felett végezzük, a felület hőmérséklete max. 25 °C lehet! Alaposan keverjük fel a terméket, majd kezdjük meg a festést a fa szálirányával megegyező irányba. Használjunk speciális lakkozó ecsetet, hengert vagy megfelelő szóró berendezést.", "Az első réteg esetén 5%-os hígítás javasolt. A nagy terheléseknek kitett felületeknél 3 réteg felhordása célszerű. A lakkrétegek felvitele között legalább 12 óra száradási időt biztosítsunk. A festett fa nedvességtartalma maximum 12% lehet."],
+        paragraphs: [
+          "Csak +10 °C felett; felület max. 25 °C. Szálirányban; lakkozó ecset, henger vagy szórás. Első réteg: kb. 5% hígítás. Rétegek között legalább 12 óra (25 °C átfesthetőség a táblázatban is 12 óra). Fa nedvesség max. 12%. Hígítás/szerszám: COROR Szintetikus Hígító. Használat előtt Műszaki és Biztonsági adatlap."
+        ],
         sourceIds: ["src_factor_parquet", "src_factor_parquet_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["selyemfényű|magasfényű"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Tűzveszélyes folyadék és gőz (H226). Gyermekektől elzárva; hő/szikra/nyílt láng tilos; gőz belégzése tilos; védőkesztyű/szemvédő. VOC legfeljebb 500 g/l (A/i) a lap szerint. Intenzív járhatósági nap a TDS „Terhelhetőség” mezőjében nem olvasható ki egyértelműen (UFI szerepel) — nem állítunk ilyet."
+        ],
         sourceIds: ["src_factor_parquet", "src_factor_parquet_tds"],
-      },
+      }
     ],
   },
   {
@@ -441,24 +480,34 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR AIR FLOW Lélegző Mélyalapozó 1:1 oldószermentes, kül- és beltérben használható, magas páraáteresztő képességgel rendelkező, környezetbarát termék. Nedvszívó felületek alapozására ajánljuk, ahol a felület „lélegzése” fontos szempont. A VALMOR AIR FLOW Lélegző Beltéri Falfesték felhordása előtt a használata kifejezetten javasolt.", "Alkalmas minden ásványi eredetű felületre: szárító- felújító vakolatrendszerekre, normál vakolatra, gipszkartonra, mész-cement alapú felület simító anyagokra, valamint meszelt és nedvszívó képességgel bíró festett felületekre. Alkalmazása során a port leköti, behatol a felület pórusaiba, így erős tapadóképes alapfelületet biztosít.", "Használatával megelőzhető a felületek esetleges festési foltosodása."],
+        paragraphs: [
+          "A VALMOR AIR FLOW Lélegző Mélyalapozó 1:1 oldószermentes, bel- és kültéri mélyalapozó. A Műszaki adatlap magas páraáteresztést és környezetbarát jelleget említ — ez gyártói megfogalmazás. Nedvszívó felületekre ajánlja, ahol a felület „lélegzése” szempont; a VALMOR AIR FLOW Lélegző Beltéri Falfesték előtt kifejezetten javasolja.",
+          "Fogadófelületek a lapon: ásványi eredetű alapok — szárító-/felújító vakolatrendszer, normál vakolat, gipszkarton, mész-cement simító, meszelt és nedvszívó festett felület. A gyártó szerint a port leköti, a pórusokba behatol, tapadóképes alapot ad, és segíthet a festési foltosodás megelőzésében. Kiadósság hígítva, glettelt felületen: 8–10 m²/liter egy rétegben. Javasolt 1–2 réteg. Fényesség: matt. Kiszerelés: 1 l, 5 l."
+        ],
         sourceIds: ["src_valmor_airflow_primer", "src_valmor_airflow_primer_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos zsíros és egyéb szennyeződéseket tisztítsuk le. A foltos felületet izoláljuk VALMOR Időjárásálló- és Szigetelőfestékkel. A felülethibás falakat páraáteresztő glettelő anyaggal (NE használjon gipsz alapú glettet, helyette válasszon meszes vagy fehér cement bázisút.) simítsuk le, majd csiszoljuk át."],
+        paragraphs: [
+          "Laza, pergő részek eltávolítása; olajos, zsíros és egyéb szennyeződés tisztítása. Foltos felület: izolálás VALMOR Időjárásálló- és Szigetelőfestékkel. Felülethiba: páraáteresztő glett — a Műszaki adatlap szerint NE gipsz alapú glettet, hanem meszes vagy fehér cement bázisút. Csiszolás utána."
+        ],
         sourceIds: ["src_valmor_airflow_primer", "src_valmor_airflow_primer_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C feletti hőmérsékleten kezdjük meg. Az alapozót nem szükséges hígítani, de az alapfelület szívóképességétől függően hígíthatjuk maximum ugyanannyi víz hozzáadásával 1:1 arányban. A következő munkafázist az alapozó teljes száradása előtt is megkezdhetjük („nedves a nedvesre”) VALMOR Air Flow Lélegző Beltéri Falfestékkel.", "Az alapozott felületet a teljes átszáradás után, hagyományos lélegző diszperziós vagy szilikon falfestékekkel is átfesthetők. Mész vagy mészfestékkel festett felületek alapozásánál figyelni kell arra, hogy a festés 6 hónapnál régebbi legyen."],
+        paragraphs: [
+          "Csak +10 °C felett. Az alapozó önmagában nem kötelezően hígítandó; a felület szívóképességétől függően legfeljebb azonos mennyiségű vízzel (1:1) hígítható. Felhordás: henger vagy ecset.",
+          "A következő fázis a Műszaki adatlap szerint az alapozó teljes száradása előtt is indítható („nedves a nedvesre”) VALMOR AIR FLOW Lélegző Beltéri Falfestékkel. Teljes átszáradás után hagyományos lélegző diszperziós vagy szilikon falfestékkel is átfesthető. Mész-/mészfesték alapnál: a festés legyen 6 hónapnál régebbi. Átfesthetőség önmagával 25 °C-on: min. 2 óra — magas páratartalom hosszabbíthat. Szerszámtisztítás: víz. Fagyveszélyes. Használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."
+        ],
         sourceIds: ["src_valmor_airflow_primer", "src_valmor_airflow_primer_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["matt"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Gyermekektől elzárva; szembe, bőrre, ruhára ne kerüljön. Nem tűzveszélyes, fagyveszélyes. EU VOC: A/h max. 30 g/l a termékre vonatkozóan a lap szerint."
+        ],
         sourceIds: ["src_valmor_airflow_primer", "src_valmor_airflow_primer_tds"],
-      },
+      }
     ],
   },
   {
@@ -467,24 +516,33 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["VALMOR AIR FLOW Sóglett, egy törtfehér színű porkeverék. Vízzel keverve egy magas konyhasó tartalmú, beltéri, rusztikus hatású felületképző anyag. Felhordható beltéri helyiségekben mész-, vagy cementkötésű ásványi vakolatokra. A gipszkarton, gipszes glett és egyéb felületek nem alkalmasak.", "Ezeket a felületeket behálózott EPS ragasztóval tudja alkalmassá tenni az anyag felhordására. Tetszőleges színek is kialakíthatók lúgálló porpigmentek keverékével. (vasoxid pigmentek, krómoxid zöld, kobaltkék stb.) Legfeljebb 1 %-ban anyagában színezhető. A VALMOR AIR FLOW Sóglett bevonására nem alkalmasak a filmképző anyagot tartalmazó diszperziós festékek, lakkok."],
+        paragraphs: [
+          "A VALMOR AIR FLOW Sóglett törtfehér porkeverék; vízzel keverve magas konyhasó-tartalmú, beltéri, rusztikus felületképző. Felhordható beltérben mész- vagy cementkötésű ásványi vakolatra. Közvetlen alkalmazás gipszkartonra, gipszes glettre és egyéb (nem ásványi vakolat) felületre kizárt. A Műszaki adatlap ugyanakkor leír előkészítési megoldást: ezek a felületek behálózott EPS ragasztóval tehetők alkalmassá a sóglett felhordására — tehát a kizárás a közvetlen felhordásra vonatkozik, nem zárja ki a gyártói előkészítési utat.",
+          "Filmképző diszperziós festék, lakk a bevonására nem alkalmas. Színezés: lúgálló porpigmentekkel legfeljebb 1%. Javasolt rétegvastagság: 3–6 mm. Kiadósság: 1 mm-hez 1,4–1,5 kg/m². Kiszerelés: 8,5 kg. Feldolgozhatóság: 2 óra. Száradás: 1 mm ≈ 1 nap, 6 mm ≈ 6 nap (páratartalom függvényében)."
+        ],
         sourceIds: ["src_valmor_airflow_salt", "src_valmor_airflow_salt_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A VALMOR AIR FLOW Sóglett felhordása előtt a felületet portalanítani, a felület porozitásának függvényében 1 – 3 dl/m2 csapvízzel nedvesíteni kell. A sóglett megtámadja a fémeket, ezeket takarással védeni kell. A VALMOR AIR FLOW Sóglett nem alkalmas filmképző anyagokkal bevont felületekre, (diszperziós, latex festékek, lakkok,) ezeket az anyagokat le kell csiszolni."],
+        paragraphs: [
+          "Portalanítás; a porozitás függvényében 1–3 dl/m² csapvízzel nedvesítés. A sóglett megtámadja a fémeket — takarással védendők. Filmképző bevonatok (diszperziós, latex, lakk) csiszolással eltávolítandók."
+        ],
         sourceIds: ["src_valmor_airflow_salt", "src_valmor_airflow_salt_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A munkálatokat csak +10 °C feletti hőmérsékleten kezdjük meg. 8,5kg sóglettet kb. 1,4 liter vízzel alacsony fordulatú keverővel homogén csomómentes masszává kell keverni. 5 perc pihentetést követő, ismételt átkeverés után használatra kész. A felhasználási konzisztencia további kis mennyiségű víz adagolásával módosítható.", "A minimum 3mm rétegvasagság eléréséhez használjunk saválló glettvasat és spaklit. A vízzel bekevert sóglettet fel kell használni. A szerszámokat és a glettes vödröt, használat után vízzel el lehet mosni. Kérjük, töltse le és olvassa el a termék műszaki és biztonsági adatlapját a www.festekbazis.hu oldalról!"],
+        paragraphs: [
+          "Csak +10 °C felett. 8,5 kg sóglett ≈ 1,4 liter vízzel, alacsony fordulatú keverővel csomómentes masszává; 5 perc pihentetés, újraátkeverés. Konzisztencia kis vízadaggal módosítható. Min. 3 mm: saválló glettvas és spakli. A bekevert anyagot fel kell használni. Szerszám/vödör: víz. Használat előtt olvassa el a Műszaki adatlapot és a Biztonsági adatlapot."
+        ],
         sourceIds: ["src_valmor_airflow_salt", "src_valmor_airflow_salt_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["matt"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Közvetlen felhordás gipszkartonra / gipszes glettre kizárt; a gyártó behálózott EPS ragasztós előkészítést ír le. Nem filmképző festékre/lakkre; fémeket támad. Beltéri alkalmazás a lap szerint."
+        ],
         sourceIds: ["src_valmor_airflow_salt", "src_valmor_airflow_salt_tds"],
-      },
+      }
     ],
   },
   {
@@ -599,24 +657,33 @@ export const productProfessionalDescriptionEnrichmentsV1: ProductProfessionalDes
     sections: [
       {
         heading: "Alkalmazás",
-        paragraphs: ["A VALMOR Kontrol diszperziós matt falfesték bel- és fedett kültéri felületekre. Alkalmas falazó anyagon, betonon, gipszes, cementes, vakolt vagy glettelt felületeken, valamint diszperziós, latex, meszelt vagy zománcozott fogadófelületeken is.", "Festhető fűrészporos és üvegszövet tapétára, valamint EPS polisztirolra és kemény műanyagokra. Mosható és súrolható; ellenáll a hígított háztartási tisztítószereknek, és páraáteresztő. Egy rétegben is jó fedőképességet biztosít; cseppmentes és színezhető."],
+        paragraphs: [
+          "A VALMOR Kontrol felhasználásra kész, diszperziós, matt, hófehér, mosható, nedves dörzsálló (I. osztály) falfesték; antibakteriális adalékkal is rendelhető, levendulaillatú, légáteresztő — a Műszaki adatlap szerint bel- és kültéri. Sokféle fogadófelületet említ: falazóanyag, beton, gipsz, cement, vakolat, glett, diszperziós/latex/mész/zománc átvonás, fűrészporos és üvegszövet tapéta, EPS és kemény műanyag.",
+          "Mosható, hígított háztartási tisztítószernek ellenálló; magas páraáteresztést említ. Antibakteriális/bakteriosztatikus adalék opcionális gyártói kínálat — nem FESTÉKINDEX egészségügyi állítás. Kiadósság: 12–13 m²/liter egy rétegben; 1–2 réteg. Kiszerelés: 2 l, 4 l, 10 l."
+        ],
         sourceIds: ["src_valmor_kontrol", "src_valmor_kontrol_tds"],
       },
       {
         heading: "Előkészítés",
-        paragraphs: ["A felületről a laza pergő részeket távolítsuk el, az olajos zsíros és egyéb szennyeződéseket tisztítsuk le. A felülethibás falakat glettel simítsuk le, majd csiszoljuk át. A tapadás növelése és az egyenletes nedvszívó felület kialakítása érdekében VALMOR Air Flow lélegző mélyalapozóval kezeljük a porózus felületet."],
+        paragraphs: [
+          "Laza részek és szennyeződés eltávolítása; hibák glettelése, csiszolás. Porózus felületen VALMOR AIR FLOW lélegző mélyalapozó a lap szerint. Használat előtt Műszaki és Biztonsági adatlap."
+        ],
         sourceIds: ["src_valmor_kontrol", "src_valmor_kontrol_tds"],
       },
       {
         heading: "Felhasználás",
-        paragraphs: ["A termék felhasználásra kész; a gyártói dokumentáció szerint hígítani nem szükséges. Felhordás ecsettel, hengerrel vagy szórással."],
+        paragraphs: [
+          "Felhordás: ecset, henger, szórás. Felhasználásra kész, hígítás nem szükséges; szerszám: víz. Színezés: pasztell, max. 5% paszta. 25 °C-on 1. fokozat max. 2 óra, 5. fokozat max. 24 óra; átfestés: száraz 2 óra, átfesthető 2–4 óra; moshatóság 1 hét — páratartalom hosszabbíthat. Fagyveszélyes."
+        ],
         sourceIds: ["src_valmor_kontrol", "src_valmor_kontrol_tds"],
       },
       {
-        heading: "Fényesség",
-        paragraphs: ["matt"],
+        heading: "Fontos korlátok és biztonság",
+        paragraphs: [
+          "Gyermekektől elzárva; szembe/bőrre/ruhára ne. Nem tűzveszélyes, fagyveszélyes. VOC A/a max. 30 g/l a lap szerint. Antibakteriális hatás csak rendelhető adalék esetén, gyártói tájékoztatás szerint."
+        ],
         sourceIds: ["src_valmor_kontrol", "src_valmor_kontrol_tds"],
-      },
+      }
     ],
   },
   {

@@ -29,7 +29,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "src_valmor_airflow_primer_tds",
     ],
     editorialSummary:
-      "Oldószermentes, páraáteresztő mélyalapozó nedvszívó ásványi felületekre. Az AIR FLOW rendszer alapozója bel- és kültérre.",
+      "Oldószermentes, magas páraáteresztő bel- és kültéri mélyalapozó nedvszívó ásványi felületekre; a Műszaki adatlap szerint max. 1:1 vízzel hígítható, AIR FLOW beltéri festék előtt különösen javasolt.",
   },
   {
     productId: "prod_valmor_airflow_facade",
@@ -51,7 +51,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "src_valmor_airflow_salt_tds",
     ],
     editorialSummary:
-      "Beltéri rusztikus felületképző porkeverék az AIR FLOW rendszerből. Mész- vagy cementkötésű ásványi vakolatra kell felhordani; gipszkarton önmagában nem megfelelő aljzat.",
+      "Beltéri, vízzel keverendő magas sótartalmú porkeverék rusztikus ásványi vakolatra; min. 3 mm; gipszkartonra/gipszes glettre közvetlenül nem, de behálózott EPS ragasztós előkészítés a gyártó szerint lehetséges; filmképző festék/lakk fogadóként kizárt.",
   },
 
   // —— VALMOR standalone ——
@@ -69,7 +69,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "VALMOR Kontrol diszperziós matt falfesték bel- és fedett kültérre. A műszaki adatlap szerint akril kötőanyagú; felhasználásra kész, hígítani nem szükséges; felhordás ecsettel, hengerrel vagy szórással.",
     sourceSummarySourceIds: ["src_valmor_kontrol", "src_valmor_kontrol_tds"],
     editorialSummary:
-      "Akril diszperziós matt falfesték beltérre és fedett kültérre. Felhasználásra kész; hígítás nélkül hordható fel.",
+      "Matt, mosható, nedves dörzsálló (I. o.) bel- és fedett kültéri falfesték; a Műszaki adatlap szerint egy rétegben is jól fed, max. 5% pasztával színezhető, hígítás nélkül.",
   },
   {
     productId: "prod_valmor_deep_primer",
@@ -153,7 +153,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "src_factor_aqua_primer_tds",
     ],
     editorialSummary:
-      "Oldószermentes, vizes bázisú impregnáló faalapozó bel- és kültérre. A FACTOR Aqua rendszer első rétege; hígítás nélkül használandó.",
+      "Vízbázisú, oldószermentes, színtelen bel- és kültéri fa-impregnáló alapozó lazúr előtt; hígítani tilos, max. 12% fanedvesség, +10…25 °C.",
   },
   {
     productId: "prod_factor_aqua_parquet",
@@ -182,7 +182,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "FACTOR Parkettalakk oldószeres beltéri parkettalakk módosított alkidgyanta kötőanyaggal. A műszaki adatlap szerint hígítás és tisztítás COROR Szintetikus Hígítóval történik.",
     sourceSummarySourceIds: ["src_factor_parquet", "src_factor_parquet_tds"],
     editorialSummary:
-      "Oldószeres beltéri parkettalakk módosított alkidgyantával. Beltéri parketták védelmére; hígításhoz COROR Szintetikus Hígító javasolt.",
+      "Oldószeres, egykomponensű beltéri selyem- vagy magasfényű parkettalakk; 12 óra rétegközi száradás, max. 12% fanedvesség, COROR Szintetikus Hígító — tűzveszélyes.",
   },
   {
     productId: "prod_factor_boat",
@@ -190,7 +190,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "FACTOR Csónaklakk oldószeres alkid–poliuretán lakk bel- és kültérre. A műszaki adatlap szerint fényes; hígítás COROR Szintetikus Hígítóval.",
     sourceSummarySourceIds: ["src_factor_boat", "src_factor_boat_tds"],
     editorialSummary:
-      "Oldószeres alkid–poliuretán lakk bel- és kültérre. Fényes fedőlakk fa- és hasonló felületekre; hígításhoz COROR Szintetikus Hígító javasolt.",
+      "Oldószeres, magasfényű alkid–poliuretán csónaklakk; édesvízi kültér és nedves beltér; alapozó 3:1 hígítás, 5 óra, majd 8 órás rétegköz; víz terhelés 3 nap; max. 10% fanedvesség; élelmiszer-érintkezés tilos.",
   },
 
   // —— COROR Rapid ——
@@ -296,7 +296,7 @@ export const productDescriptionEnrichmentsV1: ProductDescriptionEnrichment[] = [
       "7016™ Antracit Egyrétegű Beltéri Falfesték matt beltéri falfesték. A gyártói termékoldal és műszaki adatlap szerint vakolatra és glettelt felületekre alkalmazható; felhordás ecsettel, hengerrel vagy szórással.",
     sourceSummarySourceIds: ["src_7016_wall", "src_7016_wall_tds"],
     editorialSummary:
-      "Matt beltéri falfesték a 7016™ termékcsaládból. Vakolat és glettelt felületekre szánt egyrétegű antracit beltéri bevonat.",
+      "7016™ antracit beltéri diszperziós falfesték; egy rétegben is takarhat korábbi színt a Műszaki adatlap szerint; +10 °C, max. 10% majd 5% víz, átfestés 4 óra.",
   },
   ...catalogueClosureDescriptionsV1,
 ];
