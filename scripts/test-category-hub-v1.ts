@@ -302,14 +302,11 @@ section("Homlokzat company navigation");
     createElement(CategoryHubPage, { model }),
   );
   assert.ok(html.includes("Cégek"));
-  assert.equal(
-    (html.match(/FESTÉK BÁZIS Zrt\./g) ?? []).length,
-    1,
-    "FB appears once in company chips",
-  );
   assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
-  assert.ok(!html.includes("id=\"gyartok-szereplok\""));
   assert.ok(html.includes("id=\"cegek\""));
+  assert.ok(!html.includes("id=\"gyartok-szereplok\""));
+  // Company chip section present (FB may also appear in product meta)
+  assert.ok(html.includes("FESTÉK BÁZIS Zrt."));
   // Section order: Márkák before Cégek
   const markak = html.indexOf("id=\"markak\"");
   const cegek = html.indexOf("id=\"cegek\"");
@@ -352,6 +349,17 @@ section("Dekor / 7016 safety");
   assert.ok(html.includes("Egyéb cégek"));
   assert.ok(!html.includes("Tulajdonos"));
   assert.ok(!html.includes("Képviselet"));
+  // Filterable browser: no family-group dump / Termékcsaládok secondary
+  assert.ok(html.includes("category-product-browser"));
+  assert.ok(html.includes("category-product-filters"));
+  assert.ok(!html.includes("id=\"termekcsaladok\""));
+  assert.ok(!html.includes("Egyéb termékek"));
+  // Meta is brand · manufacturer (not family echo)
+  const wallCard = model.products.find((x) => x.id === "prod_7016_wall");
+  assert.ok(wallCard);
+  assert.equal(wallCard!.familyId, "pf_7016");
+  assert.equal(wallCard!.manufacturerId, "org_festek_bazis_zrt");
+  assert.equal(wallCard!.brandId, undefined);
 }
 console.log("7016 OK");
 

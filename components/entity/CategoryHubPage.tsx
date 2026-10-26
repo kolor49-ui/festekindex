@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/entity/EntityUI";
+import { CategoryProductBrowser } from "@/components/entity/CategoryProductBrowser";
 import {
   HubPrimarySection,
   HubSecondaryCluster,
-  HubSecondarySection,
   HubSupportingCluster,
   HubSupportingSection,
   RelatedPillGroup,
@@ -16,7 +16,7 @@ import {
 
 /**
  * Category Hub v1 — SSR HTML.
- * Phase B: Products primary → families/brands/companies secondary →
+ * Phase B: Products primary (filterable) → brands/companies secondary →
  * tech/surface/knowledge supporting → sources.
  * Never renders internal enums, relation types, readiness grades, or graph jargon.
  */
@@ -24,10 +24,6 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
   const jsonLd = buildCategoryHubJsonLd(model);
   const hasTechSurfaces =
     model.technologies.length > 0 || model.surfaces.length > 0;
-  const grouped =
-    model.productGroups.length > 1 ||
-    (model.productGroups.length === 1 &&
-      !!model.productGroups[0]?.familyName);
 
   const brands = model.brandPresentation;
   const hasBrands =
@@ -36,8 +32,7 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
       : brands.unified.length > 0;
 
   const orgCtx = model.organizationContext;
-  const hasSecondary =
-    model.families.length > 0 || hasBrands || !!orgCtx;
+  const hasSecondary = hasBrands || !!orgCtx;
 
   return (
     <main className="main">
@@ -57,103 +52,12 @@ export function CategoryHubPage({ model }: { model: CategoryHubModel }) {
 
           {model.products.length > 0 ? (
             <HubPrimarySection id="kapcsolodo-termekek" heading="Termékek">
-              {grouped
-                ? model.productGroups.map((group) => (
-                    <div
-                      key={group.familyId ?? group.familyName ?? "flat"}
-                      className="surface-product-group"
-                    >
-                      {group.familyName ? (
-                        <h3 className="surface-product-group-title">
-                          {group.familyHref ? (
-                            <Link href={group.familyHref}>
-                              {group.familyName}
-                            </Link>
-                          ) : (
-                            group.familyName
-                          )}
-                        </h3>
-                      ) : null}
-                      <ul className="surface-product-list brand-product-grid">
-                        {group.products.map((p) => (
-                          <li key={p.id} className="brand-product-item">
-                            <Link
-                              href={p.href}
-                              className="brand-product-name"
-                            >
-                              {p.name}
-                            </Link>
-                            {p.brandName || p.familyName ? (
-                              <div className="brand-product-meta">
-                                {p.brandName ? (
-                                  p.brandHref ? (
-                                    <Link href={p.brandHref}>{p.brandName}</Link>
-                                  ) : (
-                                    <span>{p.brandName}</span>
-                                  )
-                                ) : null}
-                                {p.brandName && p.familyName ? (
-                                  <span aria-hidden="true"> · </span>
-                                ) : null}
-                                {p.familyName ? (
-                                  p.familyHref ? (
-                                    <Link href={p.familyHref}>
-                                      {p.familyName}
-                                    </Link>
-                                  ) : (
-                                    <span>{p.familyName}</span>
-                                  )
-                                ) : null}
-                              </div>
-                            ) : null}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))
-                : (
-                  <ul className="surface-product-list brand-product-grid">
-                    {model.products.map((p) => (
-                      <li key={p.id} className="brand-product-item">
-                        <Link href={p.href} className="brand-product-name">
-                          {p.name}
-                        </Link>
-                        {p.brandName || p.familyName ? (
-                          <div className="brand-product-meta">
-                            {p.brandName ? (
-                              p.brandHref ? (
-                                <Link href={p.brandHref}>{p.brandName}</Link>
-                              ) : (
-                                <span>{p.brandName}</span>
-                              )
-                            ) : null}
-                            {p.brandName && p.familyName ? (
-                              <span aria-hidden="true"> · </span>
-                            ) : null}
-                            {p.familyName ? (
-                              p.familyHref ? (
-                                <Link href={p.familyHref}>{p.familyName}</Link>
-                              ) : (
-                                <span>{p.familyName}</span>
-                              )
-                            ) : null}
-                          </div>
-                        ) : null}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+              <CategoryProductBrowser products={model.products} />
             </HubPrimarySection>
           ) : null}
 
           {hasSecondary ? (
             <HubSecondaryCluster>
-              {model.families.length > 0 ? (
-                <HubSecondarySection id="termekcsaladok" heading="Termékcsaládok">
-                  <RelatedPillGroup items={model.families} />
-                </HubSecondarySection>
-              ) : null}
-
               {hasBrands ? (
                 <section className="seo-section hub-secondary-section" id="markak">
                   {brands.mode === "split" ? (

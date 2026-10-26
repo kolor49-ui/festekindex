@@ -27,6 +27,7 @@ import {
   getCanonicalFamilyManufacturer,
   getCanonicalProductBrand,
   getCanonicalProductFamily,
+  resolveHierarchyParents,
 } from "@/lib/navigation/entityNavigation";
 import {
   getSurfacesForProduct,
@@ -71,11 +72,16 @@ export type CatProductCard = {
   id: string;
   name: string;
   href: string;
+  brandId?: string;
   brandName?: string;
   brandHref?: string;
   familyName?: string;
   familyHref?: string;
   familyId?: string;
+  /** Brand owner or family manufacturer — never conflated with Brand. */
+  manufacturerId?: string;
+  manufacturerName?: string;
+  manufacturerHref?: string;
 };
 
 export type CatProductGroup = {
@@ -158,15 +164,20 @@ export function getProductsForCategory(categoryId: string): Product[] {
 function enrichProduct(p: Product): CatProductCard {
   const brand = getCanonicalProductBrand(p.id);
   const family = getCanonicalProductFamily(p.id);
+  const org = resolveHierarchyParents(p).organization;
   return {
     id: p.id,
     name: p.name,
     href: getEntityHref(p),
+    brandId: brand?.id,
     brandName: brand?.name,
     brandHref: brand ? getEntityHref(brand) : undefined,
     familyName: family?.name,
     familyHref: family ? getEntityHref(family) : undefined,
     familyId: family?.id,
+    manufacturerId: org?.id,
+    manufacturerName: org?.name,
+    manufacturerHref: org ? getEntityHref(org) : undefined,
   };
 }
 
