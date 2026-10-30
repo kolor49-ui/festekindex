@@ -2274,6 +2274,20 @@ a {
 }
 
 /* —— Surface Hub v1 —— */
+.surface-hub .surface-discovery {
+  margin: 4px 0 22px;
+}
+
+.surface-hub .surface-discovery-search {
+  margin-bottom: 12px;
+  max-width: 100%;
+}
+
+.surface-hub .surface-discovery .search-mfr {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
 .surface-hub .surface-product-group {
   margin-top: 18px;
 }

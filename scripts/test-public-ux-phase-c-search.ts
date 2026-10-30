@@ -196,14 +196,21 @@ section("Featured manufacturers from ranked hits");
   const tabsHtml = renderToStaticMarkup(
     createElement(SearchManufacturerTabs, {
       manufacturers: mfr,
-      query: "Fa",
       activeSlug: top.slug,
+      buildHref: (gyartoSlug) => {
+        const params = new URLSearchParams({ q: "Fa" });
+        if (gyartoSlug) params.set("gyarto", gyartoSlug);
+        return `/kereses?${params.toString()}`;
+      },
     }),
   );
   assert.ok(tabsHtml.includes("Kiemelt gyártók"));
   assert.ok(tabsHtml.includes("Mind"));
   assert.ok(tabsHtml.includes(top.name));
-  assert.ok(tabsHtml.includes(`gyarto=${encodeURIComponent(top.slug)}`) || tabsHtml.includes(`gyarto=${top.slug}`));
+  assert.ok(
+    tabsHtml.includes(`gyarto=${encodeURIComponent(top.slug)}`) ||
+      tabsHtml.includes(`gyarto=${top.slug}`),
+  );
   assert.ok(!INTERNAL.test(tabsHtml));
   console.log("featured manufacturers OK", mfr.map((m) => m.name).join(", "));
 }

@@ -160,6 +160,9 @@ assert.deepEqual(
   fa.brands.map((b) => b.name).sort(),
   ["COROR", "FACTOR"],
 );
+assert.ok(fa.organizations.length >= 1, "Fa should expose manufacturers");
+assert.ok(fa.organizations.every((o) => o.slug && o.productCount >= 1));
+assert.ok(fa.products.every((p) => !p.organizationId || p.organizationSlug));
 
 const acel = getSurfacePortfolio("surface_acel")!;
 assert.equal(acel.brands.length, 1);
@@ -262,6 +265,33 @@ for (const model of refs) {
   }
 }
 console.log("leakage OK");
+
+section("Fa surface discovery chrome");
+{
+  const faModel = buildSurfaceHubModel(getSurfaceById("surface_fa")!)!;
+  const faOrgs = faModel.organizations;
+  const faHtml = renderToStaticMarkup(
+    createElement(SurfaceHubPage, {
+      model: faModel,
+      discoveryCatalog: [],
+      manufacturers: faOrgs.map((o) => ({
+        id: o.id,
+        name: o.name,
+        slug: o.slug,
+        hitCount: o.productCount,
+      })),
+      surfacePath: "/feluletek/fa",
+    }),
+  );
+  assert.ok(faHtml.includes("Kiemelt gyártók"));
+  assert.ok(faHtml.includes("Mind"));
+  assert.ok(faHtml.includes('href="/feluletek/fa"'));
+  if (faOrgs[0]) {
+    assert.ok(faHtml.includes(faOrgs[0].name));
+    assert.ok(faHtml.includes(`gyarto=${encodeURIComponent(faOrgs[0].slug)}`));
+  }
+  console.log("Fa discovery OK", faOrgs.map((o) => o.name).join(", "));
+}
 
 section("populated MDF / Tegla section HTML");
 const mdfHtml = renderToStaticMarkup(

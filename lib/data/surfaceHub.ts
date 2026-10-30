@@ -35,6 +35,10 @@ export type SurfaceProductCard = {
   brandHref?: string;
   familyName?: string;
   familyHref?: string;
+  /** Canonical manufacturer / brand owner when known. */
+  organizationId?: string;
+  organizationSlug?: string;
+  organizationName?: string;
   /** First canonical category for adaptive grouping assignment. */
   primaryCategoryId?: string;
   primaryCategoryName?: string;
@@ -63,8 +67,11 @@ export type SurfaceBrandLink = {
 export type SurfaceOrgLink = {
   id: string;
   name: string;
+  slug: string;
   href: string;
   label: "Gyártó" | "Tulajdonos";
+  /** Products on this surface linked to the organization. */
+  productCount: number;
 };
 
 export type SurfaceCategoryLink = {
@@ -124,6 +131,12 @@ export function getProductsForSurface(surfaceId: string): Product[] {
 function enrichProduct(p: Product): SurfaceProductCard {
   const brand = getCanonicalProductBrand(p.id);
   const family = getCanonicalProductFamily(p.id);
+  const owner = brand ? getCanonicalBrandOwner(brand.id) : undefined;
+  const mfr =
+    !brand && family
+      ? getCanonicalFamilyManufacturer(family.id)
+      : undefined;
+  const org = owner ?? mfr;
   const categories = getCategoriesForProduct(p.id);
   const primary = categories[0];
 
@@ -135,6 +148,9 @@ function enrichProduct(p: Product): SurfaceProductCard {
     brandHref: brand ? getEntityHref(brand) : undefined,
     familyName: family?.name,
     familyHref: family ? getEntityHref(family) : undefined,
+    organizationId: org?.id,
+    organizationSlug: org?.slug,
+    organizationName: org?.name,
     primaryCategoryId: primary?.id,
     primaryCategoryName: primary?.name,
   };
@@ -243,7 +259,10 @@ export function getBrandsForSurface(surfaceId: string): SurfaceBrandLink[] {
 export function getOrganizationsForSurface(
   surfaceId: string,
 ): SurfaceOrgLink[] {
-  const map = new Map<string, SurfaceOrgLink>();
+  const map = new Map<
+    string,
+    { org: Organization; label: "Gyártó" | "Tulajdonos"; count: number }
+  >();
 
   for (const p of getProductsForSurface(surfaceId)) {
     const brand = getCanonicalProductBrand(p.id);
@@ -267,18 +286,26 @@ export function getOrganizationsForSurface(
     }
 
     if (!org) continue;
-    // Prefer first-seen label; do not invent on conflict
-    if (!map.has(org.id)) {
-      map.set(org.id, {
-        id: org.id,
-        name: org.name,
-        href: getEntityHref(org),
-        label,
-      });
+    const prev = map.get(org.id);
+    if (!prev) {
+      map.set(org.id, { org, label, count: 1 });
+    } else {
+      prev.count += 1;
     }
   }
 
-  return [...map.values()].sort((a, b) => huSort(a.name, b.name));
+  return [...map.values()]
+    .map(({ org, label, count }) => ({
+      id: org.id,
+      name: org.name,
+      slug: org.slug,
+      href: getEntityHref(org),
+      label,
+      productCount: count,
+    }))
+    .sort(
+      (a, b) => b.productCount - a.productCount || huSort(a.name, b.name),
+    );
 }
 
 export function getCategoriesForSurface(
@@ -389,5 +416,24 @@ export function getSurfacePortfolio(
     categories: getCategoriesForSurface(surfaceId),
     technologies: getTechnologiesForSurface(surfaceId),
     knowledge: getKnowledgeForSurface(surfaceId),
+  };
+}
+
+/** Filter product list/groups by manufacturer slug; empty slug → unchanged. */
+export function filterSurfaceProductsByManufacturer(
+  products: SurfaceProductCard[],
+  organizationSlug?: string,
+): { products: SurfaceProductCard[]; productGroups: SurfaceProductGroup[] } {
+  const slug = organizationSlug?.trim();
+  if (!slug) {
+    return {
+      products,
+      productGroups: groupSurfaceProducts(products),
+    };
+  }
+  const filtered = products.filter((p) => p.organizationSlug === slug);
+  return {
+    products: filtered,
+    productGroups: groupSurfaceProducts(filtered),
   };
 }

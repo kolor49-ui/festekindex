@@ -8,11 +8,17 @@ import {
   HubSupportingSection,
   RelatedPillGroup,
 } from "@/components/entity/HubHierarchy";
+import { SearchBox } from "@/components/search/SearchBox";
+import {
+  SearchManufacturerTabs,
+  type ManufacturerTabItem,
+} from "@/components/search/SearchManufacturerTabs";
 import { JsonLdScript } from "@/lib/seo/jsonld";
 import {
   buildSurfaceHubJsonLd,
   type SurfaceHubModel,
 } from "@/lib/seo/surfaceHubModel";
+import type { SearchDocument } from "@/lib/search";
 
 /**
  * Surface Hub v1 — SSR HTML, graph-derived.
@@ -21,7 +27,21 @@ import {
  * Phase A zero-product recovery preserved.
  * Never renders internal enums, relation types, or readiness grades.
  */
-export function SurfaceHubPage({ model }: { model: SurfaceHubModel }) {
+export function SurfaceHubPage({
+  model,
+  discoveryCatalog = [],
+  manufacturers = [],
+  activeManufacturerSlug,
+  surfacePath,
+}: {
+  model: SurfaceHubModel;
+  /** Scoped catalog for manufacturer / brand / product suggestions. */
+  discoveryCatalog?: SearchDocument[];
+  manufacturers?: ManufacturerTabItem[];
+  activeManufacturerSlug?: string;
+  /** Canonical path for this surface, e.g. /feluletek/fa */
+  surfacePath?: string;
+}) {
   const jsonLd = buildSurfaceHubJsonLd(model);
   const hasCatTech =
     model.categories.length > 0 || model.technologies.length > 0;
@@ -35,6 +55,10 @@ export function SurfaceHubPage({ model }: { model: SurfaceHubModel }) {
     hasCatTech ||
     !!model.manufacturerContext ||
     model.knowledge.length > 0;
+  const showDiscovery =
+    !!surfacePath &&
+    (discoveryCatalog.length > 0 || manufacturers.length > 0);
+  const path = surfacePath ?? `/feluletek/${model.surface.slug}`;
 
   return (
     <main className="main">
@@ -52,7 +76,32 @@ export function SurfaceHubPage({ model }: { model: SurfaceHubModel }) {
           <h1>{model.h1}</h1>
           {model.lead ? <p className="page-lead">{model.lead}</p> : null}
 
-          {model.products.length === 0 ? (
+          {showDiscovery ? (
+            <section
+              className="surface-discovery"
+              aria-label="Gyártó és márka keresés"
+            >
+              {discoveryCatalog.length > 0 ? (
+                <SearchBox
+                  catalog={discoveryCatalog}
+                  variant="page"
+                  className="search-box--page-wrap surface-discovery-search"
+                  placeholder="Keress gyártóra, márkára vagy termékre ezen a felületen…"
+                  label="Keresés a felületen"
+                />
+              ) : null}
+              <SearchManufacturerTabs
+                manufacturers={manufacturers}
+                activeSlug={activeManufacturerSlug}
+                buildHref={(gyartoSlug) => {
+                  if (!gyartoSlug) return path;
+                  return `${path}?gyarto=${encodeURIComponent(gyartoSlug)}`;
+                }}
+              />
+            </section>
+          ) : null}
+
+          {model.products.length === 0 && !activeManufacturerSlug ? (
             <section
               className="seo-section surface-empty-recovery"
               id="felulet-allapot"
@@ -73,6 +122,20 @@ export function SurfaceHubPage({ model }: { model: SurfaceHubModel }) {
                   className="pill pill-link"
                 >
                   Keresés: {model.surface.name}
+                </Link>
+              </div>
+            </section>
+          ) : null}
+
+          {model.products.length === 0 && activeManufacturerSlug ? (
+            <section className="seo-section" id="gyarto-szures-ures">
+              <p className="org-section-note">
+                Ehhez a gyártóhoz ezen a felületen jelenleg nincs listázott
+                termék.
+              </p>
+              <div className="seo-links">
+                <Link href={path} className="pill pill-link">
+                  Összes termék a felületen
                 </Link>
               </div>
             </section>

@@ -121,8 +121,13 @@ export default async function KeresesPage({ searchParams }: Props) {
         {term && !tooShort ? (
           <SearchManufacturerTabs
             manufacturers={manufacturers}
-            query={term}
             activeSlug={activeOrgId ? activeOrg?.slug : undefined}
+            buildHref={(gyartoSlug) => {
+              const params = new URLSearchParams();
+              params.set("q", term);
+              if (gyartoSlug) params.set("gyarto", gyartoSlug);
+              return `/kereses?${params.toString()}`;
+            }}
           />
         ) : null}
 
