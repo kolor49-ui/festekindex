@@ -283,7 +283,7 @@ section("Fa surface discovery chrome");
       surfacePath: "/feluletek/fa",
     }),
   );
-  assert.ok(faHtml.includes("Kiemelt gyártók"));
+  assert.ok(faHtml.includes("Kiemelt márkák és cégek"));
   assert.ok(faHtml.includes("Mind"));
   assert.ok(faHtml.includes('href="/feluletek/fa"'));
   if (faOrgs[0]) {

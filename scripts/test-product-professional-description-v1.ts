@@ -110,6 +110,11 @@ section("Coverage + provenance");
           ),
           `${sid} PPG official URL`,
         );
+      } else if (p.id.startsWith("prod_jub_")) {
+        assert.ok(
+          /jub\.(hu|si)|jub\.com/i.test(src.url || ""),
+          `${sid} JUB official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),

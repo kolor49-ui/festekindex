@@ -23,6 +23,11 @@ import {
   ppgTrilak42Products,
 } from "../lib/data/imports/ppgTrilak42V1";
 import {
+  applyJub95V1,
+  jub95Brands,
+  jub95Products,
+} from "../lib/data/imports/jub95V1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -38,16 +43,19 @@ const organizations = mergeById(
   festekBazisV02Seed.organizations,
 );
 const brands = mergeById(
-  [...brandsBase, festekBazisV02Seed.archivedBrand7016],
-  festekBazisV02Seed.brands,
+  mergeById(
+    [...brandsBase, festekBazisV02Seed.archivedBrand7016],
+    festekBazisV02Seed.brands,
+  ),
+  jub95Brands,
 );
 const productFamilies = mergeById(
   productFamiliesBase,
   festekBazisV02Seed.productFamilies,
 );
 const productsMerged = mergeById(
-  mergeById(productsBase, festekBazisV02Seed.products),
-  ppgTrilak42Products,
+  mergeById(mergeById(productsBase, festekBazisV02Seed.products), ppgTrilak42Products),
+  jub95Products,
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
@@ -74,9 +82,10 @@ const ppg42 = applyPpgTrilak42V1(
   enriched.sources,
   enriched.relations,
 );
-const products = ppg42.products;
-const relations = ppg42.relations;
-const sources = ppg42.sources;
+const jub95 = applyJub95V1(ppg42.products, ppg42.sources, ppg42.relations);
+const products = jub95.products;
+const relations = jub95.relations;
+const sources = jub95.sources;
 
 const entities: AnyEntity[] = [
   ...organizations,

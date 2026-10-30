@@ -50,12 +50,14 @@ export const categories: Category[] = [
     parentId: null,
     sortOrder: 2,
     status: "published",
-    indexable: true,
+    // v8.2 release-gate: keep noindex until category has unique substantive
+    // professional copy (current body/seoDescription are generic boilerplate).
+    indexable: false,
     seoTitle: "Építési vegyipar | FESTÉKINDEX",
     seoDescription:
       "Építési vegyipari anyagok, rendszerek és kapcsolódó cégek.",
     sourceIds: [],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
   },
   {
     id: "cat_homlokzat",

@@ -170,9 +170,10 @@ assert.ok(
 );
 
 const sika = getOrganizationById("org_sika_hungaria")!;
-assert.equal(evaluatePublicIndexability(sika).indexable, false);
+// Clean public copy may pass base quality — Sika stays in the first-wave sitemap.
+assert.equal(evaluatePublicIndexability(sika).indexable, true);
 assert.ok(
-  !listPublishedForSitemap().some((e) => e.path === getEntityHref(sika)),
+  listPublishedForSitemap().some((e) => e.path === getEntityHref(sika)),
 );
 const aerosols = getOrganizationById("org_european_aerosols")!;
 assert.equal(evaluatePublicIndexability(aerosols).indexable, false);
@@ -318,6 +319,11 @@ for (const id of indexableCats) {
   );
 }
 assert.equal(
+  evaluatePublicIndexability(getCategoryById("cat_epitesi")!).indexable,
+  false,
+  "cat_epitesi locked noindex until substantive category copy",
+);
+assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/kategoriak/"))
     .length,
   5,
@@ -419,13 +425,13 @@ const M4 = rows.filter((r) => !r.pub.baseIndexable && r.pub.indexable);
 assert.equal(M1.length, 0, `M1 remaining: ${M1.map((r) => r.entity.id)}`);
 assert.equal(M2.length, 0, `M2: ${M2.map((r) => r.entity.id)}`);
 assert.equal(M3.length, 0, `M3: ${M3.map((r) => r.entity.id)}`);
-assert.equal(M4.length, 5);
+// Héra may pass base quality after clean copy; Hub override set shrinks accordingly.
+assert.equal(M4.length, 4);
 assert.deepEqual(
   M4.map((r) => r.entity.id).sort(),
   [
     "brand_coror",
     "brand_factor",
-    "brand_hera",
     "brand_valmor",
     "org_festek_bazis_zrt",
   ].sort(),

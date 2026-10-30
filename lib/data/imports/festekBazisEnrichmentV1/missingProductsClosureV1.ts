@@ -100,6 +100,12 @@ export const MISSING_PRODUCTS_CLOSURE_V1_BASELINE = {
 /** PPG Trilak v8.1 local catalogue overlay (PASS-only; REVIEW/HOLD excluded). */
 export const PPG_TRILAK_42_PASS_COUNT = 42;
 
+/** JUB v8.2 local catalogue overlay (approved 95 PASS roster; REVIEW/HOLD excluded). */
+export const JUB_95_PASS_COUNT = 95;
+
+/** JUB sub-brands added in v8.2 (umbrella brand_jub already present). */
+export const V82_JUB_NEW_BRAND_COUNT = 8;
+
 /**
  * Official manufacturer website sources added in v8.1 (sources.ts),
  * outside Festék Bázis enrichment overlays.
@@ -114,7 +120,9 @@ export const V81_NEW_ORG_COUNT = 7;
 
 export function expectedProductCountAfterClosure(): number {
   return (
-    expectedProductCountAfterCatalogueClosure() + PPG_TRILAK_42_PASS_COUNT
+    expectedProductCountAfterCatalogueClosure() +
+    PPG_TRILAK_42_PASS_COUNT +
+    JUB_95_PASS_COUNT
   );
 }
 
@@ -145,8 +153,10 @@ export function expectedSearchDocumentsAfterClosure(): number {
   return (
     expectedSearchDocumentsAfterCatalogueClosure() +
     PPG_TRILAK_42_PASS_COUNT +
+    JUB_95_PASS_COUNT +
     V81_NEW_BRAND_COUNT +
-    V81_NEW_ORG_COUNT
+    V81_NEW_ORG_COUNT +
+    V82_JUB_NEW_BRAND_COUNT
   );
 }
 
@@ -180,7 +190,8 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.productCategoryBaseline +
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
     CATALOGUE_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
-    PPG_TRILAK_42_PASS_COUNT
+    PPG_TRILAK_42_PASS_COUNT +
+    JUB_95_PASS_COUNT
   );
 }
 

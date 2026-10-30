@@ -33,6 +33,8 @@ section("53-Product audit coverage");
 
   const auditIds = new Set(festekBazisColorAuditV1.map((a) => a.productId));
   for (const p of products) {
+    // Color audit covers Festék Bázis 53 only; PPG/JUB overlays are out of scope.
+    if (p.id.startsWith("prod_trilak_") || p.id.startsWith("prod_jub_")) continue;
     assert.ok(auditIds.has(p.id), `missing audit ${p.id}`);
   }
   assert.equal(auditIds.size, 53);
@@ -104,6 +106,7 @@ section("SPECIFIC / GENERIC evidence + no inheritance");
   // identical colorId sets unless both have independent availability records
   // (allowed) — but a Product without audit SPECIFIC must not gain colors.
   for (const p of listProducts()) {
+    if (p.id.startsWith("prod_trilak_") || p.id.startsWith("prod_jub_")) continue;
     const brand = getCanonicalProductBrand(p.id);
     const family = getCanonicalProductFamily(p.id);
     const audit = festekBazisColorAuditV1.find((a) => a.productId === p.id)!;

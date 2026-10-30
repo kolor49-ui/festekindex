@@ -204,7 +204,7 @@ section("Featured manufacturers from ranked hits");
       },
     }),
   );
-  assert.ok(tabsHtml.includes("Kiemelt gyártók"));
+  assert.ok(tabsHtml.includes("Kiemelt márkák és cégek"));
   assert.ok(tabsHtml.includes("Mind"));
   assert.ok(tabsHtml.includes(top.name));
   assert.ok(

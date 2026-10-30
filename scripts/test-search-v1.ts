@@ -65,7 +65,11 @@ section("eligibility");
   assert.equal(counts.product, expectedProductCountAfterClosure(), "all FB products searchable");
   assert.equal(counts.surface, 15, "all surfaces searchable");
   assert.equal(counts.organization, 16, "v8.1 manufacturer expansion");
-  assert.equal(counts.brand, 22, "published brands only (incl. PPG + new makers)");
+  assert.equal(
+    counts.brand,
+    30,
+    "published brands only (incl. PPG + JUB sub-brands)",
+  );
   assert.equal(counts.productFamily, 8);
   assert.equal(counts.technology, 9);
   assert.equal(counts.category, 19, "cat_all excluded");

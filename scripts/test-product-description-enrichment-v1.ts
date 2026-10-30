@@ -70,8 +70,8 @@ section("Coverage — FESTÉK BÁZIS Products");
   for (const p of products) {
     assert.ok(p.editorialSummary, `${p.id} editorialSummary`);
     assert.ok(p.sourceSummary, `${p.id} sourceSummary`);
-    // Festék Bázis overlay file covers closure cohort; PPG 42 uses ppgTrilak42V1.
-    if (!p.id.startsWith("prod_trilak_")) {
+    // Festék Bázis overlay covers closure cohort; PPG/JUB use dedicated overlays.
+    if (!p.id.startsWith("prod_trilak_") && !p.id.startsWith("prod_jub_")) {
       assert.ok(descIds.has(p.id), `missing description for ${p.id}`);
     }
   }
