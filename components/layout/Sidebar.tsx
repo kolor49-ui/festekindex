@@ -56,7 +56,6 @@ export function Sidebar({
               FESTÉK<span>INDEX</span>
             </div>
           </div>
-          <div className="tagline">A festékipar szakmai indexe</div>
         </Link>
       </div>
 

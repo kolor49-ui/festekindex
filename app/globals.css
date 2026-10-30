@@ -64,8 +64,9 @@ a {
 
 .brand {
   display: block;
-  height: 108px;
-  padding: 24px 25px;
+  height: auto;
+  min-height: 72px;
+  padding: 22px 25px;
   border-bottom: 1px solid #27323c;
   box-sizing: border-box;
 }
@@ -137,14 +138,6 @@ a {
 
 .name span {
   color: #72b4dc;
-}
-
-.tagline {
-  margin: 10px 0 0 44px;
-  font-size: 9px;
-  letter-spacing: 1.6px;
-  color: #9aa8b4;
-  text-transform: uppercase;
 }
 
 .sidebody {
