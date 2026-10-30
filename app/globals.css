@@ -312,7 +312,9 @@ a {
   min-height: 340px;
   box-shadow: none;
   position: relative;
-  overflow: hidden;
+  /* visible so search suggestions can paint over the results below */
+  overflow: visible;
+  z-index: 5;
 }
 
 .hero:after {
@@ -324,6 +326,8 @@ a {
   border-radius: 50%;
   right: -190px;
   top: -220px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero .heroEyebrow {
@@ -362,6 +366,10 @@ a {
   z-index: 20;
   max-width: 900px;
   width: 100%;
+}
+
+.hero .search-box {
+  z-index: 6;
 }
 
 .search-box--page-wrap {
@@ -781,6 +789,8 @@ a {
   grid-template-columns: minmax(0, 1fr) 390px;
   gap: 12px;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
 .results {
