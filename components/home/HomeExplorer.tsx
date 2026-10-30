@@ -51,13 +51,17 @@ export function HomeExplorer({
   /** Detail mark tiles only animate after scroll-into-view has settled. */
   const [logoBuilding, setLogoBuilding] = useState(false);
   const detailRef = useRef<HTMLElement>(null);
+  /** Only user taps on the list may scroll the page (not home load / return). */
+  const userSelectedRef = useRef(false);
 
   function selectHit(id: string) {
+    userSelectedRef.current = true;
     setSelectedId(id);
   }
 
   /**
-   * Mobile (stacked): scroll the adatlap into view, then build the logo.
+   * Mobile (stacked): after a user pick, scroll the adatlap into view, then
+   * build the logo. Do not auto-scroll on home load / return from a subpage.
    * Desktop (side-by-side): sticky keeps the detail top in place — do not
    * scroll the page, or the selected list row leaves the viewport.
    */
@@ -71,13 +75,14 @@ export function HomeExplorer({
     const frame = window.requestAnimationFrame(() => {
       const el = detailRef.current;
       const mobile = window.matchMedia("(max-width: 980px)").matches;
+      const userPicked = userSelectedRef.current;
 
       if (el) {
         el.scrollTop = 0;
       }
 
       let needsScroll = false;
-      if (mobile && el) {
+      if (mobile && el && userPicked) {
         needsScroll = true;
         el.scrollIntoView({
           behavior: "smooth",
