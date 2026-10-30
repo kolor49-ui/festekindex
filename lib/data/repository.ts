@@ -30,6 +30,10 @@ import { technologies as technologiesBase } from "./technologies";
 import { festekBazisV02Seed } from "./imports/festekBazisV02Map";
 import { festekBazisEnrichmentV1, applyFestekBazisEnrichmentV1 } from "./imports/festekBazisEnrichmentV1";
 import {
+  applyPpgTrilak42V1,
+  ppgTrilak42Products,
+} from "./imports/ppgTrilak42V1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -51,7 +55,10 @@ const productFamilies = mergeById(
   productFamiliesBase,
   festekBazisV02Seed.productFamilies,
 );
-const productsMerged = mergeById(productsBase, festekBazisV02Seed.products);
+const productsMerged = mergeById(
+  mergeById(productsBase, festekBazisV02Seed.products),
+  ppgTrilak42Products,
+);
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
   technologiesBase,
@@ -70,9 +77,14 @@ const enriched = applyFestekBazisEnrichmentV1(
   relationsMerged,
   festekBazisEnrichmentV1,
 );
-const products = enriched.products;
-const relations = enriched.relations;
-const sources = enriched.sources;
+const ppg42 = applyPpgTrilak42V1(
+  enriched.products,
+  enriched.sources,
+  enriched.relations,
+);
+const products = ppg42.products;
+const relations = ppg42.relations;
+const sources = ppg42.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

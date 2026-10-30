@@ -179,7 +179,9 @@ section("AppShell — not fake breadcrumb");
   );
   assert.ok(!html.includes("Minden terület"));
   assert.ok(html.includes("site-scope"));
-  assert.ok(html.includes("A festékipar szakmai indexe"));
+  assert.ok(html.includes("site-scope-brand"));
+  assert.ok(html.includes("FESTÉK"));
+  assert.ok(html.includes("INDEX"));
   assert.ok(html.includes('href="/"'));
   console.log("AppShell OK");
 }

@@ -27,6 +27,7 @@ import {
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import {
   getCanonicalProductBrand,
   getCanonicalProductFamily,
@@ -318,15 +319,19 @@ section("Search / SEO / ranking unchanged policy");
 
 section("Description coverage intact + extended");
 {
+  // Festék Bázis overlay stays at catalogue-closure size; PPG Trilak 42 uses a separate overlay.
   assert.equal(
     productDescriptionEnrichmentsV1.length,
-    expectedProductCountAfterClosure(),
+    expectedProductCountAfterCatalogueClosure(),
   );
   for (const p of listProducts()) {
     assert.ok(p.sourceSummary, p.id);
     assert.ok(p.editorialSummary, p.id);
   }
-  console.log("descriptions OK", productDescriptionEnrichmentsV1.length);
+  console.log("descriptions OK", {
+    festekBazisOverlay: productDescriptionEnrichmentsV1.length,
+    productsWithEditorial: listProducts().length,
+  });
 }
 
 console.log("\nALL Missing Products Closure v1 checks passed.");
