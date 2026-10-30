@@ -47,6 +47,9 @@ export {
   normalizeSearchText,
   tokenizeSearchText,
   foldAccents,
+  isShortFuzzyQuery,
+  MIN_FUZZY_QUERY_LENGTH,
+  tokenMatchesQueryToken,
 } from "./normalize";
 export type {
   SearchDocument,
