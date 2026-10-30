@@ -42,6 +42,7 @@ import {
   expectedUsesTechnologyAfterClosure,
   expectedApplicableToSurfaceAfterClosure,
   expectedSearchDocumentsAfterClosure,
+  V81_MANUFACTURER_SOURCE_DELTA,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 
 import { festekBazisV02Seed } from "../lib/data/imports/festekBazisV02Map";
@@ -64,7 +65,7 @@ function section(name: string) {
 
 const BODY_HASH: Record<string, string> = {
   know_airless_alapok:
-    "ed4993e9910def4bac1ac9d059df20ee6f1cbcc737aa16d00b8b9fc80ac44ce5",
+    "0fde3a843a1f81896ea0618b869139034fbb55a671b261ab400f0d87065644e2",
   know_porfestek_vs_folyadek:
     "f324d4d5e4b3863b6bedb63bf4d38a6f3fd9bf679eae6a1a21501b76c80943ee",
 };
@@ -605,7 +606,10 @@ const globalSources = mergeById(
   festekBazisEnrichmentV1.sources,
 );
 console.log(`global merged Source count: ${globalSources.length}`);
-assert.equal(globalSources.length, expectedMergedSourcesAfterClosure());
+assert.equal(
+  globalSources.length,
+  expectedMergedSourcesAfterClosure() + V81_MANUFACTURER_SOURCE_DELTA,
+);
 
 assert.equal(products.filter((p) => p.indexable).length, 0);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);

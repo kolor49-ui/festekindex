@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { SearchBox } from "@/components/search/SearchBox";
 import type { EntityType, SearchHit } from "@/lib/data/types";
@@ -48,30 +48,59 @@ export function HomeExplorer({
   const [selectedId, setSelectedId] = useState<string | null>(
     initialHits[0]?.id ?? null,
   );
+  /** Detail mark tiles only animate after scroll-into-view has settled. */
+  const [logoBuilding, setLogoBuilding] = useState(false);
   const detailRef = useRef<HTMLElement>(null);
 
-  /**
-   * Keep the detail panel top (logo + title) in view on every selection.
-   * Desktop sticky can leave the panel top above the viewport after list scrolling;
-   * mobile stacks the detail below the list.
-   */
   function selectHit(id: string) {
     setSelectedId(id);
+  }
+
+  /**
+   * On every selection: bring the adatlap top into view, then start the
+   * logo colour build (especially important on mobile after smooth scroll).
+   */
+  useEffect(() => {
+    setLogoBuilding(false);
     if (typeof window === "undefined") return;
-    requestAnimationFrame(() => {
+
+    let cancelled = false;
+    let playTimer = 0;
+
+    const frame = window.requestAnimationFrame(() => {
       const el = detailRef.current;
-      if (!el) return;
+      if (!el) {
+        playTimer = window.setTimeout(() => {
+          if (!cancelled) setLogoBuilding(true);
+        }, 120);
+        return;
+      }
+
       el.scrollTop = 0;
       const rect = el.getBoundingClientRect();
       const clearance = 88;
       const mobile = window.matchMedia("(max-width: 980px)").matches;
       const topHidden = rect.top < clearance;
       const topTooLow = rect.top > window.innerHeight * 0.4;
-      if (mobile || topHidden || topTooLow) {
+      const needsScroll = mobile || topHidden || topTooLow;
+
+      if (needsScroll) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
+
+      // Wait for smooth scroll to finish before revealing tiles.
+      const delay = needsScroll ? (mobile ? 580 : 220) : 100;
+      playTimer = window.setTimeout(() => {
+        if (!cancelled) setLogoBuilding(true);
+      }, delay);
     });
-  }
+
+    return () => {
+      cancelled = true;
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(playTimer);
+    };
+  }, [selectedId]);
 
   const productHitsFromCatalog = useMemo((): SearchHit[] => {
     return searchCatalogDocs
@@ -191,7 +220,9 @@ export function HomeExplorer({
             className="detail-body"
             key={selected?.id ?? "empty"}
           >
-            <BrandMark className="brand-mark--detail" />
+            <BrandMark
+              className={`brand-mark--detail${logoBuilding ? " is-building" : ""}`}
+            />
             {selected ? (
               <>
                 <div className="dtype">{selected.kindLabel}</div>
