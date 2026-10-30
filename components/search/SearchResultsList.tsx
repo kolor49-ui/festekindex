@@ -73,7 +73,7 @@ export function SearchResultsList({
               </div>
               <div className="search-result-body">
                 <b>{hit.displayName}</b>
-                {meta ? <small className="search-result-meta">{meta}</small> : null}
+                {meta ? <small>{meta}</small> : null}
                 {preview ? (
                   <small className="search-result-preview">{preview}</small>
                 ) : null}
