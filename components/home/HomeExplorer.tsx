@@ -57,8 +57,9 @@ export function HomeExplorer({
   }
 
   /**
-   * On every selection: bring the adatlap top into view, then start the
-   * logo colour build (especially important on mobile after smooth scroll).
+   * Mobile (stacked): scroll the adatlap into view, then build the logo.
+   * Desktop (side-by-side): sticky keeps the detail top in place — do not
+   * scroll the page, or the selected list row leaves the viewport.
    */
   useEffect(() => {
     setLogoBuilding(false);
@@ -69,24 +70,15 @@ export function HomeExplorer({
 
     const frame = window.requestAnimationFrame(() => {
       const el = detailRef.current;
-      if (!el) {
-        playTimer = window.setTimeout(() => {
-          if (!cancelled) setLogoBuilding(true);
-        }, 120);
-        return;
+      const mobile = window.matchMedia("(max-width: 980px)").matches;
+
+      if (el) {
+        el.scrollTop = 0;
       }
 
-      el.scrollTop = 0;
-      const rect = el.getBoundingClientRect();
-      const clearance = 88;
-      const mobile = window.matchMedia("(max-width: 980px)").matches;
-      // Desktop sticky: only correct when the top is clipped above the viewport.
-      // Do not jump the page just because the panel sits mid-screen (that was
-      // shifting the layout sideways via scrollIntoView).
-      const topHidden = rect.top < clearance;
-      const needsScroll = mobile || topHidden;
-
-      if (needsScroll) {
+      let needsScroll = false;
+      if (mobile && el) {
+        needsScroll = true;
         el.scrollIntoView({
           behavior: "smooth",
           block: "start",
@@ -94,8 +86,7 @@ export function HomeExplorer({
         });
       }
 
-      // Wait for smooth scroll to finish before revealing tiles.
-      const delay = needsScroll ? (mobile ? 580 : 220) : 100;
+      const delay = needsScroll ? 580 : 100;
       playTimer = window.setTimeout(() => {
         if (!cancelled) setLogoBuilding(true);
       }, delay);
