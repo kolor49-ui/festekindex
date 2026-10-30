@@ -9,6 +9,7 @@ import {
   useState,
   type KeyboardEvent as ReactKeyboardEvent,
 } from "react";
+import { BrandMark } from "./BrandMark";
 import { Sidebar } from "./Sidebar";
 
 type NavCategory = {
@@ -168,7 +169,10 @@ export function AppShell({
           </button>
           {/* Global site scope — not a page breadcrumb (those live in each Hub). */}
           <div className="crumb site-scope">
-            <Link href="/">FESTÉKINDEX</Link>
+            <Link href="/" className="site-scope-brand">
+              <BrandMark className="brand-mark--topbar" />
+              <span>FESTÉKINDEX</span>
+            </Link>
             <span className="site-scope-tag">A festékipar szakmai indexe</span>
           </div>
           <div className="toplinks">

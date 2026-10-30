@@ -82,23 +82,52 @@ a {
   gap: 12px;
 }
 
-.mark {
-  width: 31px;
-  height: 31px;
-  transform: rotate(45deg);
-  border: 1px solid #657582;
-  position: relative;
+/* C1 light — 2×2 colour palette next to brand wordmark */
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  border: 1px solid #cfd8df;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  padding: 3px;
   flex-shrink: 0;
-  /* rotated diamond needs inset so corners stay inside brand padding */
-  margin: 5px 0 5px 5px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(14, 25, 35, 0.12);
 }
 
-.mark:after {
-  content: "";
-  position: absolute;
-  inset: 7px;
+.brand-mark i {
+  display: block;
+  border-radius: 2.5px;
+  min-height: 0;
+}
+
+.brand-mark i:nth-child(1) {
+  background: #e24b3b;
+}
+.brand-mark i:nth-child(2) {
+  background: #f0b429;
+}
+.brand-mark i:nth-child(3) {
+  background: #2f9e6b;
+}
+.brand-mark i:nth-child(4) {
   background: #1c79b4;
-  border: 1px solid #69b0dc;
+}
+
+.brand-mark--topbar {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  gap: 2px;
+  padding: 2px;
+  box-shadow: 0 1px 4px rgba(14, 25, 35, 0.1);
+}
+
+.brand-mark--topbar i {
+  border-radius: 1.5px;
 }
 
 .name {
@@ -114,7 +143,7 @@ a {
 }
 
 .tagline {
-  margin: 10px 0 0 48px;
+  margin: 10px 0 0 44px;
   font-size: 9px;
   letter-spacing: 1.6px;
   color: #9aa8b4;
@@ -242,8 +271,24 @@ a {
   text-transform: uppercase;
 }
 
+.crumb.site-scope a.site-scope-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .crumb.site-scope a:hover,
 .crumb.site-scope a:focus-visible {
+  text-decoration: underline;
+}
+
+.crumb.site-scope a.site-scope-brand:hover,
+.crumb.site-scope a.site-scope-brand:focus-visible {
+  text-decoration: none;
+}
+
+.crumb.site-scope a.site-scope-brand:hover span,
+.crumb.site-scope a.site-scope-brand:focus-visible span {
   text-decoration: underline;
 }
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BrandMark } from "./BrandMark";
 
 type NavCategory = {
   id: string;
@@ -50,7 +51,7 @@ export function Sidebar({
       <div className="brand">
         <Link href="/" onClick={onNavigate}>
           <div className="brandrow">
-            <div className="mark" aria-hidden />
+            <BrandMark />
             <div className="name">
               FESTÉK<span>INDEX</span>
             </div>
