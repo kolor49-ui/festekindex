@@ -30,19 +30,60 @@ export function tokenizeSearchText(input: string): string[] {
 }
 
 /**
- * Below this length, bare prefix / substring matching is too greedy
- * (e.g. "fa" → "falfesték"). Exact tokens still match; known short
- * queries may allow compound prefixes except blocked stems.
+ * Below this length, open prefix / raw substring matching is too greedy
+ * (e.g. "fa" → "falfesték", or every product that merely mentions a surface).
+ * Short queries use stricter token rules + identity-only ranking.
  */
 export const MIN_FUZZY_QUERY_LENGTH = 3;
 
 /**
- * Short query → longer stems that share the same letters but mean
- * something else (Hungarian). "fa" (wood) must not hit "fal…" (wall).
+ * Short domain roots that should still hit productive compounds.
+ * Only listed stems (plus the exact root token) may prefix-match.
+ * Add new roots here when a 2-letter professional query needs compounds
+ * without pulling in false friends.
+ */
+const SHORT_COMPOUND_ALLOW: Record<string, readonly string[]> = {
+  // fa (wood) — not fal / falfesték / farbe / factor
+  fa: [
+    "fa",
+    "faanyag",
+    "faved",
+    "fafest",
+    "faipari",
+    "farost",
+    "fabol",
+    "fapad",
+    "facsisz",
+    "famazo",
+    "faszer",
+  ],
+};
+
+/**
+ * Fallback false stems when a short root is not on the allowlist
+ * (or as an extra guard). Prefer extending SHORT_COMPOUND_ALLOW.
  */
 const BLOCKED_SHORT_STEMS: Record<string, readonly string[]> = {
   fa: ["fal", "farbe", "factor"],
 };
+
+export function isShortFuzzyQuery(queryNorm: string): boolean {
+  return queryNorm.length > 0 && queryNorm.length < MIN_FUZZY_QUERY_LENGTH;
+}
+
+function allowedShortCompound(queryToken: string, haystackToken: string): boolean {
+  const stems = SHORT_COMPOUND_ALLOW[queryToken];
+  if (!stems) return false;
+  for (const stem of stems) {
+    // The bare root only matches as an exact token ("fa" ≠ "factor" / "fal…").
+    if (stem === queryToken) {
+      if (haystackToken === queryToken) return true;
+      continue;
+    }
+    if (haystackToken === stem || haystackToken.startsWith(stem)) return true;
+  }
+  return false;
+}
 
 function isBlockedShortPrefix(queryToken: string, haystackToken: string): boolean {
   const blocked = BLOCKED_SHORT_STEMS[queryToken];
@@ -50,7 +91,7 @@ function isBlockedShortPrefix(queryToken: string, haystackToken: string): boolea
   return blocked.some((stem) => haystackToken.startsWith(stem));
 }
 
-/** Exact token, or allowed prefix (with short-query false-stem guard). */
+/** Exact token, or allowed prefix (short-query compound / false-stem rules). */
 export function tokenMatchesQueryToken(
   queryToken: string,
   haystackToken: string,
@@ -58,13 +99,21 @@ export function tokenMatchesQueryToken(
   if (!queryToken || !haystackToken) return false;
   if (haystackToken === queryToken) return true;
   if (!haystackToken.startsWith(queryToken)) return false;
+
   if (queryToken.length >= MIN_FUZZY_QUERY_LENGTH) return true;
+
+  // Short query with an allowlist: only productive compounds.
+  if (Object.prototype.hasOwnProperty.call(SHORT_COMPOUND_ALLOW, queryToken)) {
+    return allowedShortCompound(queryToken, haystackToken);
+  }
+
+  // Other short queries (zo, al, gx…): open prefix, minus any false stems.
   return !isBlockedShortPrefix(queryToken, haystackToken);
 }
 
 /**
- * Fuzzy haystack check for short queries: token match only (no raw
- * `includes`, which would still hit "falfestek").
+ * Fuzzy haystack check: long queries may use substring; short queries
+ * only token-level matches (no raw `includes("fa")` inside "falfestek").
  */
 export function normalizedContainsQuery(
   haystackNorm: string,

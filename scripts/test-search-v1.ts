@@ -115,7 +115,7 @@ section("short query fa vs fal");
   const fa = searchCatalog("fa", { limit: SEARCH_FULL_LIMIT });
   assert.ok(fa.some((r) => r.id === "surface_fa" || /^fa$/i.test(r.name)));
   assert.ok(
-    fa.some((r) => /faanyag|fav[eé]d|faipari|farost/i.test(r.name)),
+    fa.some((r) => /faanyag|fav[eé]d|faipari|farost|fafest/i.test(r.name)),
     "wood compounds should still match fa",
   );
   assert.ok(
@@ -126,6 +126,12 @@ section("short query fa vs fal");
     !fa.some((r) => r.type === "brand" && /^factor$/i.test(r.name)),
     "fa must not prefix-match the FACTOR brand entity",
   );
+  // Short queries are identity-only — no weak context/low noise.
+  assert.ok(
+    fa.every((r) => r.matchKind === "identity"),
+    "short fa hits must be identity-tier only",
+  );
+  assert.ok(fa.length < 25, "fa should stay a tight relevant set");
   console.log("fa vs fal OK", fa.length);
 }
 

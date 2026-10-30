@@ -4,6 +4,7 @@
 
 import {
   allTokensPresent,
+  isShortFuzzyQuery,
   MIN_FUZZY_QUERY_LENGTH,
   normalizeSearchText,
   normalizedContainsQuery,
@@ -72,6 +73,9 @@ function scoreDocument(
   let coverage = 0;
 
   const nameLead = tokenizeSearchText(nameNorm)[0] ?? nameNorm;
+  // Short queries ("fa", "zo"): identity/name only — context/low text is too
+  // noisy (every product linked to a surface, or "fa- és fém" in blurbs).
+  const shortQuery = isShortFuzzyQuery(queryNorm);
 
   if (nameNorm === queryNorm) {
     tier = TIER.EXACT_NAME;
@@ -100,6 +104,7 @@ function scoreDocument(
     tier = TIER.TOKEN_PREFIX_IDENTITY;
     coverage = nameTokenCoverage(queryTokens, nameNorm);
   } else if (
+    !shortQuery &&
     queryTokens.length > 0 &&
     (allTokensPresent(queryTokens, contextTokens) ||
       tokensCoveredByPrefix(queryTokens, contextTokens) ||
@@ -109,6 +114,7 @@ function scoreDocument(
     tier = TIER.CONTEXT;
     coverage = 0.2;
   } else if (
+    !shortQuery &&
     lowNorm &&
     queryTokens.length > 0 &&
     ((queryNorm.length >= 2 &&
