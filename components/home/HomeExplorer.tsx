@@ -172,74 +172,80 @@ export function HomeExplorer({
         </div>
 
         <aside className="detail" ref={detailRef} id="home-explorer-detail">
-          {selected ? (
-            <>
-              <div className="dtype">{selected.kindLabel}</div>
-              <h2>{selected.name}</h2>
-              <p>
-                {hitDescription(selected) ||
-                  `${selected.kindLabel} a FESTÉKINDEX szakmai indexében.`}
-              </p>
-              <div className="section">
-                <h4>Kapcsolódó elemek</h4>
-                {related.length ? (
-                  <div className="agg-links">
-                    {related.map((r) => (
-                      <div key={r.entityId} className="agg-link">
-                        <Link
-                          href={r.href}
-                          className="pill pill-link"
-                          title={r.relationLabel}
-                        >
-                          {r.name}
-                        </Link>
-                        {r.relationLabel ? (
-                          <span className="agg-roles">{r.relationLabel}</span>
-                        ) : null}
-                      </div>
-                    ))}
+          <div className="detail-panel-label">Adatlap</div>
+          <div
+            className="detail-body"
+            key={selected?.id ?? "empty"}
+          >
+            {selected ? (
+              <>
+                <div className="dtype">{selected.kindLabel}</div>
+                <h2>{selected.name}</h2>
+                <p>
+                  {hitDescription(selected) ||
+                    `${selected.kindLabel} a FESTÉKINDEX szakmai indexében.`}
+                </p>
+                <div className="section">
+                  <h4>Kapcsolódó elemek</h4>
+                  {related.length ? (
+                    <div className="agg-links">
+                      {related.map((r) => (
+                        <div key={r.entityId} className="agg-link">
+                          <Link
+                            href={r.href}
+                            className="pill pill-link"
+                            title={r.relationLabel}
+                          >
+                            {r.name}
+                          </Link>
+                          {r.relationLabel ? (
+                            <span className="agg-roles">{r.relationLabel}</span>
+                          ) : null}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <span className="pill">Nincs rögzített kapcsolat</span>
+                  )}
+                </div>
+                <div className="section">
+                  <h4>Kapcsolódó szakmai tartalmak</h4>
+                  <div className="route">
+                    <b>{selected.name}</b>
+                    {related.length
+                      ? related.slice(0, 4).map((r) => (
+                          <span key={`${r.entityId}-route`}>
+                            {" "}
+                            → {r.name}
+                          </span>
+                        ))
+                      : " — kapcsolódó elemek a kiválasztott találat alapján"}
                   </div>
-                ) : (
-                  <span className="pill">Nincs rögzített kapcsolat</span>
-                )}
-              </div>
-              <div className="section">
-                <h4>Kapcsolódó szakmai tartalmak</h4>
-                <div className="route">
-                  <b>{selected.name}</b>
-                  {related.length
-                    ? related.slice(0, 4).map((r) => (
-                        <span key={`${r.entityId}-route`}>
-                          {" "}
-                          → {r.name}
-                        </span>
-                      ))
-                    : " — kapcsolódó elemek a kiválasztott találat alapján"}
                 </div>
-              </div>
-              <div className="section">
-                <Link href={selected.href} className="pill pill-link">
-                  Teljes adatlap →
-                </Link>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="dtype">FESTÉKINDEX ADATLAP</div>
-              <h2>Válassz egy találatot</h2>
-              <p>
-                A részletes adatlap itt mutatja a kiválasztott céget, márkát,
-                terméket vagy technológiát és a kapcsolódó szakmai tartalmakat.
-              </p>
-              <div className="section">
-                <h4>Felfedezési útvonal</h4>
-                <div className="route">
-                  <b>Cég</b> → márkák → technológiák → termékcsoportok → hazai
-                  kapcsolat → szerviz → szakmai tudás
+                <div className="section">
+                  <Link href={selected.href} className="pill pill-link">
+                    Teljes adatlap →
+                  </Link>
                 </div>
-              </div>
-            </>
-          )}
+              </>
+            ) : (
+              <>
+                <div className="dtype">FESTÉKINDEX ADATLAP</div>
+                <h2>Válassz egy találatot</h2>
+                <p>
+                  A részletes adatlap itt mutatja a kiválasztott céget, márkát,
+                  terméket vagy technológiát és a kapcsolódó szakmai tartalmakat.
+                </p>
+                <div className="section">
+                  <h4>Felfedezési útvonal</h4>
+                  <div className="route">
+                    <b>Cég</b> → márkák → technológiák → termékcsoportok → hazai
+                    kapcsolat → szerviz → szakmai tudás
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
         </aside>
       </div>
     </>
