@@ -82,52 +82,49 @@ a {
   gap: 12px;
 }
 
-/* C1 light — 2×2 colour palette next to brand wordmark */
+/* V3 modular bevel — 2×2 fields, no outer frame */
 .brand-mark {
   width: 32px;
   height: 32px;
-  border-radius: 7px;
-  border: 1px solid #cfd8df;
-  background: #fff;
+  border: 0;
+  background: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3px;
-  padding: 3px;
+  gap: 4px;
+  padding: 0;
   flex-shrink: 0;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(14, 25, 35, 0.12);
+  box-shadow: none;
 }
 
 .brand-mark i {
   display: block;
-  border-radius: 2.5px;
   min-height: 0;
+  /* asymmetric micro-corners — technical, not soft/decorative */
+  border-radius: 1px 4px 1px 4px;
 }
 
 .brand-mark i:nth-child(1) {
-  background: #e24b3b;
+  background: #c62828;
 }
 .brand-mark i:nth-child(2) {
-  background: #f0b429;
+  background: #e6a700;
 }
 .brand-mark i:nth-child(3) {
-  background: #2f9e6b;
+  background: #2e7d4f;
 }
 .brand-mark i:nth-child(4) {
-  background: #1c79b4;
+  background: #1a6fa3;
 }
 
 .brand-mark--topbar {
   width: 26px;
   height: 26px;
-  border-radius: 6px;
-  gap: 2px;
-  padding: 2px;
-  box-shadow: 0 1px 4px rgba(14, 25, 35, 0.1);
+  gap: 3px;
 }
 
 .brand-mark--topbar i {
-  border-radius: 1.5px;
+  border-radius: 1px 3px 1px 3px;
 }
 
 .name {
