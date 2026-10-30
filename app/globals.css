@@ -667,6 +667,12 @@ a {
   flex-wrap: wrap;
 }
 
+/* Home explorer: type filters sit with the result list, left-aligned */
+.results > .filters {
+  margin-left: 0;
+  margin-bottom: 2px;
+}
+
 .filter {
   border: 1px solid var(--line);
   background: #fff;

@@ -126,23 +126,24 @@ export function HomeExplorer({
         </div>
       </section>
 
-      <div className="toolbar">
-        <div className="filters">
-          {FILTERS.map((f, i) => (
-            <button
-              key={f.label}
-              type="button"
-              className={`filter${filterIdx === i ? " on" : ""}`}
-              onClick={() => setFilterIdx(i)}
-            >
-              {f.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
       <div className="layout">
         <div className="results">
+          <div
+            className="filters"
+            role="toolbar"
+            aria-label="Szűrés típus szerint"
+          >
+            {FILTERS.map((f, i) => (
+              <button
+                key={f.label}
+                type="button"
+                className={`filter${filterIdx === i ? " on" : ""}`}
+                onClick={() => setFilterIdx(i)}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
           {filtered.length === 0 ? (
             <p className="empty">Nincs találat. Próbálj másik keresőkifejezést.</p>
           ) : (
