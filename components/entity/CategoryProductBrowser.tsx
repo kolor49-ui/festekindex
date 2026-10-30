@@ -41,13 +41,66 @@ function matchesQuery(p: CatProductCard, qNorm: string): boolean {
   return hay.includes(qNorm);
 }
 
+function facetName(options: FacetOption[], id: string): string | null {
+  if (!id) return null;
+  return options.find((o) => o.id === id)?.name ?? null;
+}
+
 type Props = {
   products: CatProductCard[];
 };
 
+function FacetChip({
+  label,
+  value,
+  selectedName,
+  idleValueLabel,
+  onChange,
+  options,
+}: {
+  label: string;
+  value: string;
+  selectedName: string | null;
+  idleValueLabel: string;
+  onChange: (next: string) => void;
+  options: FacetOption[];
+}) {
+  const active = !!value;
+  return (
+    <label
+      className={
+        active
+          ? "category-filter-field category-filter-chip is-active"
+          : "category-filter-field category-filter-chip"
+      }
+    >
+      <span className="category-filter-label">{label}</span>
+      <span className="category-filter-chip-face" aria-hidden="true">
+        <span className="category-filter-chip-text">
+          {selectedName ?? label}
+        </span>
+        <span className="category-filter-chip-chevron" />
+      </span>
+      <select
+        value={value}
+        aria-label={label}
+        onChange={(e) => onChange(e.target.value)}
+      >
+        <option value="">{idleValueLabel}</option>
+        {options.map((o) => (
+          <option key={o.id} value={o.id}>
+            {o.name}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
 /**
  * Category product browser — search + Brand / Family / Manufacturer filters,
  * flat list with progressive reveal. Brand ≠ manufacturer.
+ * Mobile: facet chips open the native picker; desktop keeps labeled selects.
  */
 export function CategoryProductBrowser({ products }: Props) {
   const [q, setQ] = useState("");
@@ -75,6 +128,8 @@ export function CategoryProductBrowser({ products }: Props) {
   const showBrandFilter = allBrands.length >= 2;
   const showFamilyFilter = familyOptions.length >= 2;
   const showManufacturerFilter = allManufacturers.length >= 2;
+  const showFacets =
+    showBrandFilter || showFamilyFilter || showManufacturerFilter;
 
   const filtered = useMemo(() => {
     const qNorm = normalizeQuery(q);
@@ -138,55 +193,41 @@ export function CategoryProductBrowser({ products }: Props) {
             />
           </label>
 
-          {showBrandFilter ? (
-            <label className="category-filter-field">
-              <span className="category-filter-label">Márka</span>
-              <select
-                value={brandId}
-                onChange={(e) => onBrandChange(e.target.value)}
-              >
-                <option value="">Összes márka</option>
-                {allBrands.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ) : null}
+          {showFacets ? (
+            <div className="category-filter-facets">
+              {showBrandFilter ? (
+                <FacetChip
+                  label="Márka"
+                  value={brandId}
+                  selectedName={facetName(allBrands, brandId)}
+                  idleValueLabel="Összes márka"
+                  onChange={onBrandChange}
+                  options={allBrands}
+                />
+              ) : null}
 
-          {showFamilyFilter ? (
-            <label className="category-filter-field">
-              <span className="category-filter-label">Termékcsalád</span>
-              <select
-                value={familyId}
-                onChange={(e) => onFamilyChange(e.target.value)}
-              >
-                <option value="">Összes család</option>
-                {familyOptions.map((f) => (
-                  <option key={f.id} value={f.id}>
-                    {f.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ) : null}
+              {showFamilyFilter ? (
+                <FacetChip
+                  label="Termékcsalád"
+                  value={familyId}
+                  selectedName={facetName(familyOptions, familyId)}
+                  idleValueLabel="Összes család"
+                  onChange={onFamilyChange}
+                  options={familyOptions}
+                />
+              ) : null}
 
-          {showManufacturerFilter ? (
-            <label className="category-filter-field">
-              <span className="category-filter-label">Gyártó</span>
-              <select
-                value={manufacturerId}
-                onChange={(e) => onManufacturerChange(e.target.value)}
-              >
-                <option value="">Összes gyártó</option>
-                {allManufacturers.map((m) => (
-                  <option key={m.id} value={m.id}>
-                    {m.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+              {showManufacturerFilter ? (
+                <FacetChip
+                  label="Gyártó"
+                  value={manufacturerId}
+                  selectedName={facetName(allManufacturers, manufacturerId)}
+                  idleValueLabel="Összes gyártó"
+                  onChange={onManufacturerChange}
+                  options={allManufacturers}
+                />
+              ) : null}
+            </div>
           ) : null}
 
           {hasActiveFilters ? (

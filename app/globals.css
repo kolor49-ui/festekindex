@@ -2810,6 +2810,10 @@ a.row {
   align-items: flex-end;
 }
 
+.category-hub .category-filter-facets {
+  display: contents;
+}
+
 .category-hub .category-filter-field {
   display: flex;
   flex-direction: column;
@@ -2828,6 +2832,10 @@ a.row {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #5a6b78;
+}
+
+.category-hub .category-filter-chip-face {
+  display: none;
 }
 
 .category-hub .category-filter-field input,
@@ -2864,6 +2872,125 @@ a.row {
 .category-hub .category-filter-reset:hover,
 .category-hub .category-filter-reset:focus-visible {
   color: #0f4f7a;
+}
+
+/* Mobile: facet chips — native picker behind a compact button face */
+@media (max-width: 720px) {
+  .category-hub .category-product-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+  }
+
+  .category-hub .category-filter-search {
+    flex: none;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .category-hub .category-filter-facets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    width: 100%;
+  }
+
+  .category-hub .category-filter-chip {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .category-hub .category-filter-chip .category-filter-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .category-hub .category-filter-chip-face {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    max-width: 100%;
+    min-height: 2.35rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #c5d0d8;
+    border-radius: 6px;
+    background: #fff;
+    color: #243743;
+  }
+
+  .category-hub .category-filter-chip-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 9.5rem;
+  }
+
+  .category-hub .category-filter-chip-chevron {
+    flex: 0 0 auto;
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-top: -0.12rem;
+    border-right: 1.5px solid #5a6b78;
+    border-bottom: 1.5px solid #5a6b78;
+    transform: rotate(45deg);
+    opacity: 0.85;
+  }
+
+  .category-hub .category-filter-chip select {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    opacity: 0;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .category-hub .category-filter-chip.is-active .category-filter-chip-face {
+    border-color: #176fa8;
+    background: #eef5fa;
+    color: #0f4f7a;
+  }
+
+  .category-hub .category-filter-chip.is-active .category-filter-chip-chevron {
+    border-color: #0f4f7a;
+  }
+
+  .category-hub .category-filter-chip:focus-within .category-filter-chip-face {
+    outline: 2px solid #176fa8;
+    outline-offset: 1px;
+  }
+
+  .category-hub .category-filter-reset {
+    align-self: flex-start;
+    min-height: 0;
+    padding: 0.15rem 0;
+  }
 }
 
 .category-hub .category-product-empty {
