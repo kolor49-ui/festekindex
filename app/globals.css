@@ -140,6 +140,65 @@ a {
   color: #72b4dc;
 }
 
+/*
+ * Sidebar brand build on load (~1.3s total):
+ * pause 200ms → tiles every 200ms → wordmark after colours.
+ */
+@keyframes brand-tile-in {
+  from {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes brand-name-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.brand .brand-mark i {
+  opacity: 0;
+  transform: scale(0.55);
+  animation: brand-tile-in 0.28s ease-out forwards;
+}
+
+.brand .brand-mark i:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.brand .brand-mark i:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.brand .brand-mark i:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.brand .brand-mark i:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.brand .name {
+  opacity: 0;
+  animation: brand-name-in 0.3s ease-out 1.05s forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand .brand-mark i,
+  .brand .name {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
 .sidebody {
   padding: 18px 16px 30px;
 }
