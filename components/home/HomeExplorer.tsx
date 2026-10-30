@@ -80,12 +80,18 @@ export function HomeExplorer({
       const rect = el.getBoundingClientRect();
       const clearance = 88;
       const mobile = window.matchMedia("(max-width: 980px)").matches;
+      // Desktop sticky: only correct when the top is clipped above the viewport.
+      // Do not jump the page just because the panel sits mid-screen (that was
+      // shifting the layout sideways via scrollIntoView).
       const topHidden = rect.top < clearance;
-      const topTooLow = rect.top > window.innerHeight * 0.4;
-      const needsScroll = mobile || topHidden || topTooLow;
+      const needsScroll = mobile || topHidden;
 
       if (needsScroll) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       }
 
       // Wait for smooth scroll to finish before revealing tiles.
