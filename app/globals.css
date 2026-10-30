@@ -145,25 +145,27 @@ a {
 }
 
 .sidetitle {
-  font-size: 8px;
-  color: #657480;
-  letter-spacing: 1.7px;
+  font-size: 11px;
+  color: #9aa8b4;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   font-weight: 800;
-  margin: 7px 10px 9px;
+  margin: 8px 10px 11px;
 }
 
 .cat {
   width: 100%;
   border: 0;
   background: transparent;
-  color: #cbd4db;
+  color: #e8eef3;
   text-align: left;
   border-radius: 7px;
-  padding: 9px 10px;
-  font-size: 11px;
+  padding: 11px 12px;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.35;
   cursor: pointer;
-  margin: 1px 0;
+  margin: 2px 0;
   transition: 0.14s;
   display: block;
 }
@@ -189,9 +191,11 @@ a {
 .mainlink {
   display: flex;
   justify-content: space-between;
-  padding: 9px 10px;
-  font-size: 10px;
-  color: #aebac3;
+  padding: 11px 12px;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.35;
+  color: #e8eef3;
   cursor: pointer;
   border-radius: 7px;
 }
