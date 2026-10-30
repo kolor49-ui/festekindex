@@ -24,7 +24,6 @@ import {
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
-import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import { getCanonicalBrandOwner } from "../lib/navigation/entityNavigation";
 import { buildProductHubModel } from "../lib/seo/productHubModel";
 import { evaluatePublicIndexability } from "../lib/seo/publicIndexability";
@@ -34,9 +33,8 @@ function section(name: string) {
   console.log(`\n=== ${name} ===`);
 }
 
-/** Invented fluff only — brand-line „Prémium” and TDS „tökéletesen” are source-faithful. */
 const MARKETING =
-  /kiváló|kiemelkedő|forradalmi|nagyszerű|ideális választás|kimagasló|csúcskategóriás|legjobb a piacon/i;
+  /kiváló|kiemelkedő|prémium|forradalmi|tökéletes|nagyszerű|ideális választás|kimagasló|csúcskategóriás/i;
 
 const INTERNAL =
   /belongsToCategory|hasProduct|partOfSystem|dilutedWith|\bentity\b|\bgraph\b|sourceIds|rawValue|NOINDEX|\bVÉKONY\b|\bHIÁNYOS\b|brand_7016/i;
@@ -46,11 +44,7 @@ section("Coverage — FESTÉK BÁZIS Products");
   const products = listProducts();
   const expected = expectedProductCountAfterClosure();
   assert.equal(products.length, expected);
-  // Festék Bázis description overlay covers the closure cohort only (not PPG 42).
-  assert.equal(
-    productDescriptionEnrichmentsV1.length,
-    expectedProductCountAfterCatalogueClosure(),
-  );
+  assert.equal(productDescriptionEnrichmentsV1.length, expected);
 
   const ids = new Set(products.map((p) => p.id));
   for (const d of productDescriptionEnrichmentsV1) {
@@ -68,12 +62,9 @@ section("Coverage — FESTÉK BÁZIS Products");
     productDescriptionEnrichmentsV1.map((d) => d.productId),
   );
   for (const p of products) {
+    assert.ok(descIds.has(p.id), `missing description for ${p.id}`);
     assert.ok(p.editorialSummary, `${p.id} editorialSummary`);
     assert.ok(p.sourceSummary, `${p.id} sourceSummary`);
-    // Festék Bázis overlay file covers closure cohort; PPG 42 uses ppgTrilak42V1.
-    if (!p.id.startsWith("prod_trilak_")) {
-      assert.ok(descIds.has(p.id), `missing description for ${p.id}`);
-    }
   }
   console.log("coverage OK");
 }

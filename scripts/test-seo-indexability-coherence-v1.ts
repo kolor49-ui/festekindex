@@ -38,7 +38,6 @@ import {
   expectedUsesTechnologyAfterClosure,
   expectedApplicableToSurfaceAfterClosure,
   expectedSearchDocumentsAfterClosure,
-  V81_MANUFACTURER_SOURCE_DELTA,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 
 import { sources as sourcesBase } from "../lib/data/sources";
@@ -206,8 +205,6 @@ for (const id of [
   "brand_dulux",
   "brand_sikkens",
   "brand_international",
-  // Héra remains publicly indexable; Trinát/Lazurán locked noindex until SEO unlock
-  "brand_hera",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, true, id);
@@ -217,9 +214,8 @@ for (const id of [
   "brand_mirka",
   "brand_interpon",
   "brand_milesi",
+  "brand_hera",
   "brand_sika",
-  "brand_trinat",
-  "brand_lazuran",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, false, id);
@@ -334,15 +330,15 @@ console.log("Tech/Category/Knowledge OK");
 
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
-assert.equal(sm.length, 36, `expected 36 sitemap URLs, got ${sm.length}`);
+assert.equal(sm.length, 35, `expected 35 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
 const detailBrands = sm.filter(
   (e) => e.path.startsWith("/markak/") && e.path !== "/markak",
 );
-assert.equal(detailOrgs.length, 7, "pre-existing orgs only (v8.1 makers locked noindex)");
-assert.equal(detailBrands.length, 9, "pre-existing brands + Héra (new brands locked noindex)");
+assert.equal(detailOrgs.length, 7);
+assert.equal(detailBrands.length, 8);
 assert.ok(sm.some((e) => e.path === "/cegek/festek-bazis-zrt"));
 assert.ok(sm.some((e) => e.path === "/markak/valmor"));
 assert.ok(sm.some((e) => e.path === "/markak/factor"));
@@ -419,13 +415,12 @@ const M4 = rows.filter((r) => !r.pub.baseIndexable && r.pub.indexable);
 assert.equal(M1.length, 0, `M1 remaining: ${M1.map((r) => r.entity.id)}`);
 assert.equal(M2.length, 0, `M2: ${M2.map((r) => r.entity.id)}`);
 assert.equal(M3.length, 0, `M3: ${M3.map((r) => r.entity.id)}`);
-assert.equal(M4.length, 5);
+assert.equal(M4.length, 4);
 assert.deepEqual(
   M4.map((r) => r.entity.id).sort(),
   [
     "brand_coror",
     "brand_factor",
-    "brand_hera",
     "brand_valmor",
     "org_festek_bazis_zrt",
   ].sort(),
@@ -518,10 +513,7 @@ const globalSources = mergeById(
   mergeById(sourcesBase, festekBazisV02Seed.sources),
   festekBazisEnrichmentV1.sources,
 );
-assert.equal(
-  globalSources.length,
-  expectedMergedSourcesAfterClosure() + V81_MANUFACTURER_SOURCE_DELTA,
-);
+assert.equal(globalSources.length, expectedMergedSourcesAfterClosure());
 assert.equal(
   allRelations.filter(
     (r) =>

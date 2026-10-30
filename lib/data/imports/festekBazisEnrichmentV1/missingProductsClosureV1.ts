@@ -97,25 +97,8 @@ export const MISSING_PRODUCTS_CLOSURE_V1_BASELINE = {
   mergedSources: 77,
 } as const;
 
-/** PPG Trilak v8.1 local catalogue overlay (PASS-only; REVIEW/HOLD excluded). */
-export const PPG_TRILAK_42_PASS_COUNT = 42;
-
-/**
- * Official manufacturer website sources added in v8.1 (sources.ts),
- * outside Festék Bázis enrichment overlays.
- */
-export const V81_MANUFACTURER_SOURCE_DELTA = 8;
-
-/** New brand SearchDocuments in v8.1 (Trinát, Lazurán + 7 manufacturer brands). */
-export const V81_NEW_BRAND_COUNT = 9;
-
-/** New organization SearchDocuments in v8.1 (7 manufacturer orgs; PPG already present). */
-export const V81_NEW_ORG_COUNT = 7;
-
 export function expectedProductCountAfterClosure(): number {
-  return (
-    expectedProductCountAfterCatalogueClosure() + PPG_TRILAK_42_PASS_COUNT
-  );
+  return expectedProductCountAfterCatalogueClosure();
 }
 
 export function expectedSpecCountAfterClosure(): number {
@@ -142,12 +125,7 @@ export function expectedEnrichmentSourcesAfterClosure(): number {
 
 /** Likely SearchDocument delta: +1 published Product SearchDocument each. */
 export function expectedSearchDocumentsAfterClosure(): number {
-  return (
-    expectedSearchDocumentsAfterCatalogueClosure() +
-    PPG_TRILAK_42_PASS_COUNT +
-    V81_NEW_BRAND_COUNT +
-    V81_NEW_ORG_COUNT
-  );
+  return expectedSearchDocumentsAfterCatalogueClosure();
 }
 
 /**
@@ -179,8 +157,7 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
   return (
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.productCategoryBaseline +
     MISSING_PRODUCTS_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
-    CATALOGUE_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
-    PPG_TRILAK_42_PASS_COUNT
+    CATALOGUE_CLOSURE_V1_RELATION_DELTAS.belongsToCategory
   );
 }
 

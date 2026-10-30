@@ -350,24 +350,18 @@ assert.equal(
   expectedUsesTechnologyAfterClosure(),
 );
 assert.equal(withTech.size, 48);
-const festekBazisWithoutTech = [
+assert.equal(products.length - withTech.size, 5);
+const without = products
+  .filter((p) => !withTech.has(p.id))
+  .map((p) => p.id)
+  .sort();
+assert.deepEqual(without, [
   "prod_coror_aromatic",
   "prod_coror_ind_s31",
   "prod_coror_synthetic",
   "prod_valmor_deep_primer",
   "prod_valmor_plinth",
-];
-const without = products
-  .filter((p) => !withTech.has(p.id))
-  .map((p) => p.id)
-  .sort();
-const trilakWithoutTech = without.filter((id) => id.startsWith("prod_trilak_"));
-assert.equal(trilakWithoutTech.length, 42);
-assert.equal(products.length - withTech.size, 5 + 42);
-assert.deepEqual(
-  without.filter((id) => !id.startsWith("prod_trilak_")),
-  festekBazisWithoutTech.sort(),
-);
+].sort());
 
 const surfaces = listSurfaces();
 assert.equal(surfaces.length, 15);

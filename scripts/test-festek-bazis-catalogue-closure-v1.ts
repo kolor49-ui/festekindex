@@ -15,12 +15,9 @@ import {
   expectedMergedSourcesAfterCatalogueClosure,
   expectedPackagingCountAfterCatalogueClosure,
   expectedProductCountAfterCatalogueClosure,
+  expectedSearchDocumentsAfterCatalogueClosure,
   expectedSpecCountAfterCatalogueClosure,
 } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
-import {
-  expectedProductCountAfterClosure,
-  expectedSearchDocumentsAfterClosure,
-} from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   getActiveRelationsForEntity,
   getEntityHref,
@@ -157,18 +154,8 @@ section("Mandatory candidates");
 section("Baselines / counts");
 {
   const products = listProducts();
-  const festekBazisProducts = products.filter(
-    (p) => !p.id.startsWith("prod_trilak_"),
-  );
-  assert.equal(
-    festekBazisProducts.length,
-    expectedProductCountAfterCatalogueClosure(),
-  );
-  assert.equal(
-    festekBazisProducts.length,
-    CATALOGUE_CLOSURE_V1_BASELINE.products + 23,
-  );
-  assert.equal(products.length, expectedProductCountAfterClosure());
+  assert.equal(products.length, expectedProductCountAfterCatalogueClosure());
+  assert.equal(products.length, CATALOGUE_CLOSURE_V1_BASELINE.products + 23);
 
   let specs = 0;
   let packs = 0;
@@ -186,7 +173,7 @@ section("Baselines / counts");
   assert.equal(diluted, 8);
   assert.equal(
     buildSearchCatalog().length,
-    expectedSearchDocumentsAfterClosure(),
+    expectedSearchDocumentsAfterCatalogueClosure(),
   );
   assert.equal(expectedMergedSourcesAfterCatalogueClosure(), 129);
   console.log("counts OK", { specs, packs, diluted, products: products.length });
