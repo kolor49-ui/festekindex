@@ -118,9 +118,9 @@ a {
 }
 
 .brand-mark--topbar {
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
   gap: 2px;
   padding: 2px;
   box-shadow: 0 1px 4px rgba(14, 25, 35, 0.1);
@@ -235,10 +235,16 @@ a {
 .topbar {
   display: none;
   align-items: center;
-  min-height: 52px;
-  padding: 0 16px;
+  min-height: 56px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--line);
   background: #f7f9fb;
+}
+
+.topbar-balance {
+  display: none;
+  width: 36px;
+  height: 36px;
 }
 
 .crumb {
@@ -255,18 +261,18 @@ a {
 /* Global topbar site scope — not a page breadcrumb */
 .crumb.site-scope {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 12px;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
   text-transform: none;
   letter-spacing: 0;
 }
 
 .crumb.site-scope a {
-  color: #1d6f9f;
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 0.4px;
+  color: #15212b;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.8px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -274,7 +280,11 @@ a {
 .crumb.site-scope a.site-scope-brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+}
+
+.crumb.site-scope .site-scope-index {
+  color: #1d6f9f;
 }
 
 .crumb.site-scope a:hover,
@@ -287,16 +297,9 @@ a {
   text-decoration: none;
 }
 
-.crumb.site-scope a.site-scope-brand:hover span,
-.crumb.site-scope a.site-scope-brand:focus-visible span {
+.crumb.site-scope a.site-scope-brand:hover > span,
+.crumb.site-scope a.site-scope-brand:focus-visible > span {
   text-decoration: underline;
-}
-
-.site-scope-tag {
-  font-size: 10px;
-  color: #71808c;
-  letter-spacing: 0.2px;
-  text-transform: none;
 }
 
 .toplinks {
@@ -2288,10 +2291,33 @@ a {
 
   .mobileMenu {
     display: block;
+    margin-right: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    justify-self: start;
   }
 
   .topbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    column-gap: 8px;
+    align-items: center;
+  }
+
+  .topbar .crumb.site-scope {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .topbar-balance {
+    display: block;
+    grid-column: 3;
+    justify-self: end;
+  }
+
+  .topbar .toplinks {
+    display: none;
   }
 
   .main {

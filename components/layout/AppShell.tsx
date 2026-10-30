@@ -171,10 +171,13 @@ export function AppShell({
           <div className="crumb site-scope">
             <Link href="/" className="site-scope-brand">
               <BrandMark className="brand-mark--topbar" />
-              <span>FESTÉKINDEX</span>
+              <span>
+                FESTÉK<span className="site-scope-index">INDEX</span>
+              </span>
             </Link>
-            <span className="site-scope-tag">A festékipar szakmai indexe</span>
           </div>
+          {/* Balances the menu button so the brand sits optically centered. */}
+          <div className="topbar-balance" aria-hidden />
           <div className="toplinks">
             <Link href="/cegek">Cégek</Link>
             <Link href="/markak">Márkák</Link>
