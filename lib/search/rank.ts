@@ -4,8 +4,11 @@
 
 import {
   allTokensPresent,
+  MIN_FUZZY_QUERY_LENGTH,
   normalizeSearchText,
+  normalizedContainsQuery,
   tokenizeSearchText,
+  tokenMatchesQueryToken,
   tokensCoveredByPrefix,
 } from "./normalize";
 import type {
@@ -68,13 +71,20 @@ function scoreDocument(
   let tier = 0;
   let coverage = 0;
 
+  const nameLead = tokenizeSearchText(nameNorm)[0] ?? nameNorm;
+
   if (nameNorm === queryNorm) {
     tier = TIER.EXACT_NAME;
     coverage = 1;
   } else if (doc.normalizedAliases.some((a) => a === queryNorm)) {
     tier = TIER.EXACT_ALIAS;
     coverage = 1;
-  } else if (nameNorm.startsWith(queryNorm) && queryNorm.length >= 2) {
+  } else if (
+    queryNorm.length >= 2 &&
+    nameNorm.startsWith(queryNorm) &&
+    (queryNorm.length >= MIN_FUZZY_QUERY_LENGTH ||
+      tokenMatchesQueryToken(queryNorm, nameLead))
+  ) {
     tier = TIER.NAME_PREFIX;
     coverage = nameTokenCoverage(queryTokens, nameNorm);
   } else if (
@@ -93,14 +103,16 @@ function scoreDocument(
     queryTokens.length > 0 &&
     (allTokensPresent(queryTokens, contextTokens) ||
       tokensCoveredByPrefix(queryTokens, contextTokens) ||
-      (queryNorm.length >= 2 && contextNorm.includes(queryNorm)))
+      (queryNorm.length >= 2 &&
+        normalizedContainsQuery(contextNorm, queryNorm)))
   ) {
     tier = TIER.CONTEXT;
     coverage = 0.2;
   } else if (
     lowNorm &&
     queryTokens.length > 0 &&
-    ((queryNorm.length >= 2 && lowNorm.includes(queryNorm)) ||
+    ((queryNorm.length >= 2 &&
+      normalizedContainsQuery(lowNorm, queryNorm)) ||
       allTokensPresent(queryTokens, tokenizeSearchText(lowNorm)))
   ) {
     tier = TIER.LOW_WEIGHT;

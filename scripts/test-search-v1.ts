@@ -110,6 +110,25 @@ assert.ok(searchCatalog("Fa").length > 0);
 assert.ok(searchCatalog("GX").some((r) => /gx/i.test(r.name)));
 console.log("empty/min OK");
 
+section("short query fa vs fal");
+{
+  const fa = searchCatalog("fa", { limit: SEARCH_FULL_LIMIT });
+  assert.ok(fa.some((r) => r.id === "surface_fa" || /^fa$/i.test(r.name)));
+  assert.ok(
+    fa.some((r) => /faanyag|fav[eé]d|faipari|farost/i.test(r.name)),
+    "wood compounds should still match fa",
+  );
+  assert.ok(
+    !fa.some((r) => /falfest|falfix|\bfal\b/i.test(r.name)),
+    "fa must not return fal / falfesték wall hits",
+  );
+  assert.ok(
+    !fa.some((r) => r.type === "brand" && /^factor$/i.test(r.name)),
+    "fa must not prefix-match the FACTOR brand entity",
+  );
+  console.log("fa vs fal OK", fa.length);
+}
+
 section("ranking identity");
 {
   const valmor = searchCatalog("valmor", { limit: 12 });
