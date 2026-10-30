@@ -63,9 +63,10 @@ export const brands: Brand[] = [
     status: "published",
     indexable: true,
     seoTitle: "Dulux | FESTÉKINDEX",
-    seoDescription: "Dulux dekoratív festékek és AkzoNobel kapcsolatok.",
+    seoDescription:
+      "Dulux dekoratív festékek az Akzo Nobel Coatings magyarországi portfóliójában — szervezeti kapcsolattal a FESTÉKINDEX-en.",
     sourceIds: ["src_akzonobel_hu"],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
     verifiedAt: "2026-09-15",
   },
   {
@@ -79,9 +80,10 @@ export const brands: Brand[] = [
     status: "published",
     indexable: true,
     seoTitle: "Sikkens | FESTÉKINDEX",
-    seoDescription: "Sikkens bevonatok és AkzoNobel kapcsolatok.",
+    seoDescription:
+      "Sikkens professzionális ipari és faipari bevonatok — Akzo Nobel Coatings szervezeti kapcsolattal a FESTÉKINDEX-en.",
     sourceIds: ["src_akzonobel_hu"],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
     verifiedAt: "2026-09-15",
   },
   {
@@ -94,9 +96,10 @@ export const brands: Brand[] = [
     status: "published",
     indexable: true,
     seoTitle: "International | FESTÉKINDEX",
-    seoDescription: "International ipari bevonatok és AkzoNobel kapcsolatok.",
+    seoDescription:
+      "International ipari és tengeri bevonatok, korrózióvédelem — Akzo Nobel Coatings kapcsolattal a FESTÉKINDEX-en.",
     sourceIds: ["src_akzonobel_hu"],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
     verifiedAt: "2026-09-15",
   },
   {
@@ -138,9 +141,10 @@ export const brands: Brand[] = [
     status: "published",
     indexable: true,
     seoTitle: "Héra | FESTÉKINDEX",
-    seoDescription: "Héra falfestékek és PPG TRILAK kapcsolat.",
+    seoDescription:
+      "Héra falfestékek és homlokzati rendszerek a PPG TRILAK portfóliójában — ellenőrzött gyártói kapcsolattal a FESTÉKINDEX-en.",
     sourceIds: ["src_ppg_trilak"],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
   },
   {
     id: "brand_trinat",

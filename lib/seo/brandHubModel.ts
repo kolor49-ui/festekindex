@@ -60,6 +60,10 @@ function isStructuralCopy(text: string): boolean {
   if (lower.includes("owns relation")) return true;
   if (lower.includes("hasproduct")) return true;
   if (lower.includes("márkaidentitás")) return true;
+  // Seed/template metas — prefer portfolio-derived copy instead.
+  if (/^.+ márka a festékindex-en\.?$/i.test(t)) return true;
+  if (/^.+ a festékindex-en\.?$/i.test(t) && t.length < 48) return true;
+  if (/kapcsolat\.?$/i.test(t) && t.length < 55) return true;
   return false;
 }
 

@@ -33,9 +33,10 @@ export const technologies: Technology[] = [
     status: "published",
     indexable: true,
     seoTitle: "Porfesték bevonatolás | FESTÉKINDEX",
-    seoDescription: "Porfesték technológia és kapcsolódó márkák.",
+    seoDescription:
+      "Porfesték bevonatolás (powder coating): elektrosztatikus felhordás és hőkezelés — kapcsolódó márkákkal a FESTÉKINDEX-en.",
     sourceIds: ["src_akzonobel_hu"],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-10-30",
   },
   {
     id: "tech_csiszolas",

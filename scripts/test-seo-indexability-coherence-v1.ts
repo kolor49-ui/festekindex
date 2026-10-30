@@ -185,8 +185,8 @@ console.log("Organization OK");
 section("Brands");
 for (const [id, source] of [
   ["brand_valmor", "brand_editorial_override"],
-  ["brand_factor", "brand_substantive_portfolio"],
-  ["brand_coror", "brand_substantive_portfolio"],
+  ["brand_factor", "brand_editorial_override"],
+  ["brand_coror", "brand_editorial_override"],
 ] as const) {
   const b = getBrandById(id)!;
   assert.equal(evaluateIndexability(b).indexable, false, id);

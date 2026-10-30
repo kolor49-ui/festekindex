@@ -45,6 +45,18 @@ export const BRAND_HUB_SEO: Record<string, BrandHubSeoOverride> = {
     metaDescription:
       "VALMOR festékek és bevonatok: termékcsaládok, termékek és szakmai kapcsolatok a FESTÉKINDEX-en.",
   },
+  coror: {
+    title: "COROR ipari bevonatok | FESTÉKINDEX",
+    lead: "Ipari és korrózióvédelmi bevonatmárka a Festék Bázis Zrt. portfóliójában.",
+    metaDescription:
+      "COROR ipari bevonatok a Festék Bázis Zrt. portfóliójában: termékek, kategóriák és szakmai kapcsolatok a FESTÉKINDEX-en.",
+  },
+  factor: {
+    title: "FACTOR faipari bevonatok | FESTÉKINDEX",
+    lead: "Faipari bevonatmárka a Festék Bázis Zrt. portfóliójában.",
+    metaDescription:
+      "FACTOR faipari bevonatok a Festék Bázis Zrt. portfóliójában: termékek, felületek és szakmai kapcsolatok a FESTÉKINDEX-en.",
+  },
 };
 
 export function hasOrganizationEditorialIndexOverride(slug: string): boolean {
