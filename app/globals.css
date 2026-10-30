@@ -365,8 +365,8 @@ a {
 }
 
 .search-box--page-wrap {
-  margin-bottom: 22px;
-  max-width: 640px;
+  margin-bottom: 14px;
+  max-width: 900px;
 }
 
 .search-box--page-wrap .search {
@@ -544,6 +544,52 @@ a {
 
 .search-empty-nav a:hover {
   text-decoration: underline;
+}
+
+.search-mfr {
+  margin: 0 0 18px;
+  max-width: 900px;
+}
+
+.search-mfr-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #7d8993;
+  font-weight: 750;
+  margin: 0 0 8px;
+}
+
+.search-mfr-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.search-mfr-tab {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #4a5864;
+  border-radius: 6px;
+  padding: 7px 11px;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.search-mfr-tab:hover,
+.search-mfr-tab:focus-visible {
+  border-color: #8fa6b7;
+  color: #15212b;
+}
+
+.search-mfr-tab.on {
+  background: #15212b;
+  border-color: #15212b;
+  color: #fff;
 }
 
 @media (max-width: 640px) {

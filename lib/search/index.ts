@@ -23,6 +23,13 @@ export { rankSearchDocuments, matchKindFromScore, IDENTITY_MATCH_SCORE_FLOOR } f
 
 export { formatSearchResultMeta, clampSearchPreview } from "./present";
 
+export {
+  deriveFeaturedManufacturers,
+  searchHitBelongsToManufacturer,
+  SEARCH_FEATURED_MANUFACTURERS_LIMIT,
+} from "./featuredManufacturers";
+export type { FeaturedManufacturer } from "./featuredManufacturers";
+
 export type {
   SearchDocument,
   SearchResult,

@@ -7,16 +7,20 @@ import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { SearchBox } from "../components/search/SearchBox";
+import { SearchManufacturerTabs } from "../components/search/SearchManufacturerTabs";
 import { SearchResultsList } from "../components/search/SearchResultsList";
 import {
   buildSearchCatalog,
+  deriveFeaturedManufacturers,
   formatSearchResultMeta,
   matchKindFromScore,
   normalizeSearchText,
   rankSearchDocuments,
   searchCatalog,
+  searchHitBelongsToManufacturer,
   SEARCH_AUTOCOMPLETE_DESKTOP_LIMIT,
   SEARCH_AUTOCOMPLETE_MOBILE_LIMIT,
+  SEARCH_FULL_LIMIT,
   SEARCH_MIN_QUERY_LENGTH,
   SEARCH_TYPE_LABEL_HU,
 } from "../lib/search";
@@ -171,6 +175,37 @@ section("New Product search");
     assert.equal(doc!.typeLabelHu, "Termék");
   }
   console.log("new products searchable OK");
+}
+
+section("Featured manufacturers from ranked hits");
+{
+  const fa = searchCatalog("Fa", { limit: SEARCH_FULL_LIMIT });
+  assert.ok(fa.length > 0);
+  const mfr = deriveFeaturedManufacturers(fa);
+  assert.ok(mfr.length >= 1, "Fa should surface at least one manufacturer");
+  assert.ok(mfr.every((m) => m.slug && m.href.startsWith("/cegek/")));
+  assert.ok(mfr.every((m) => m.hitCount >= 1));
+
+  const top = mfr[0]!;
+  const filtered = fa.filter((h) =>
+    searchHitBelongsToManufacturer(h, top.id),
+  );
+  assert.ok(filtered.length >= 1);
+  assert.ok(filtered.length <= fa.length);
+
+  const tabsHtml = renderToStaticMarkup(
+    createElement(SearchManufacturerTabs, {
+      manufacturers: mfr,
+      query: "Fa",
+      activeSlug: top.slug,
+    }),
+  );
+  assert.ok(tabsHtml.includes("Kiemelt gyártók"));
+  assert.ok(tabsHtml.includes("Mind"));
+  assert.ok(tabsHtml.includes(top.name));
+  assert.ok(tabsHtml.includes(`gyarto=${encodeURIComponent(top.slug)}`) || tabsHtml.includes(`gyarto=${top.slug}`));
+  assert.ok(!INTERNAL.test(tabsHtml));
+  console.log("featured manufacturers OK", mfr.map((m) => m.name).join(", "));
 }
 
 section("SearchBox SSR smoke + leakage");

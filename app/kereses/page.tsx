@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/entity/EntityUI";
 import { SearchBox } from "@/components/search/SearchBox";
+import { SearchManufacturerTabs } from "@/components/search/SearchManufacturerTabs";
 import { SearchResultsList } from "@/components/search/SearchResultsList";
-import { getProductById, SITE_ORIGIN } from "@/lib/data/repository";
+import {
+  getOrganizationBySlug,
+  getProductById,
+  SITE_ORIGIN,
+} from "@/lib/data/repository";
 import { stripBrandTitleSuffix } from "@/lib/seo/metadata";
 import {
   buildSearchCatalog,
+  deriveFeaturedManufacturers,
   normalizeSearchText,
   searchCatalog,
+  searchHitBelongsToManufacturer,
   SEARCH_FULL_LIMIT,
   SEARCH_MIN_QUERY_LENGTH,
 } from "@/lib/search";
 
-type Props = { searchParams: Promise<{ q?: string }> };
+type Props = { searchParams: Promise<{ q?: string; gyarto?: string }> };
 
 export async function generateMetadata({
   searchParams,
@@ -58,22 +65,35 @@ export async function generateMetadata({
 }
 
 export default async function KeresesPage({ searchParams }: Props) {
-  const { q } = await searchParams;
+  const { q, gyarto } = await searchParams;
   const term = q?.trim() ?? "";
+  const gyartoSlug = gyarto?.trim() || undefined;
   const normalizedLen = normalizeSearchText(term).length;
   const tooShort = term.length > 0 && normalizedLen < SEARCH_MIN_QUERY_LENGTH;
   const catalog = buildSearchCatalog();
-  const results =
+  const ranked =
     term && !tooShort
-      ? searchCatalog(term, { limit: SEARCH_FULL_LIMIT }).map((hit) => {
-          if (hit.type !== "product") return hit;
-          const p = getProductById(hit.id);
-          return {
-            ...hit,
-            preview: p?.editorialSummary ?? p?.sourceSummary,
-          };
-        })
+      ? searchCatalog(term, { limit: SEARCH_FULL_LIMIT })
       : [];
+  const manufacturers = deriveFeaturedManufacturers(ranked);
+  const activeOrg = gyartoSlug
+    ? getOrganizationBySlug(gyartoSlug)
+    : undefined;
+  const activeOrgId =
+    activeOrg?.status === "published" ? activeOrg.id : undefined;
+  const filtered = activeOrgId
+    ? ranked.filter((hit) =>
+        searchHitBelongsToManufacturer(hit, activeOrgId),
+      )
+    : ranked;
+  const results = filtered.map((hit) => {
+    if (hit.type !== "product") return hit;
+    const p = getProductById(hit.id);
+    return {
+      ...hit,
+      preview: p?.editorialSummary ?? p?.sourceSummary,
+    };
+  });
 
   return (
     <main className="main">
@@ -95,7 +115,16 @@ export default async function KeresesPage({ searchParams }: Props) {
           initialQuery={term}
           variant="page"
           className="search-box--page-wrap"
+          placeholder="Keress cégre, márkára, technológiára vagy termékkörre…"
         />
+
+        {term && !tooShort ? (
+          <SearchManufacturerTabs
+            manufacturers={manufacturers}
+            query={term}
+            activeSlug={activeOrgId ? activeOrg?.slug : undefined}
+          />
+        ) : null}
 
         {!term ? (
           <p className="empty">Írj be legalább két karaktert a kereséshez.</p>
