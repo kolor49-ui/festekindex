@@ -9,7 +9,7 @@ import {
   useRef,
   useState,
   type CSSProperties,
-  type ReactNode,
+  type RefObject,
 } from "react";
 import {
   formatSearchResultMeta,
@@ -52,8 +52,15 @@ function useIsNarrow(breakpoint = 640) {
   return narrow;
 }
 
-/** Keep a fixed bottom sheet above the on-screen keyboard via visualViewport. */
-function useKeyboardSheetStyle(active: boolean): CSSProperties {
+/**
+ * Cap dropdown height to the space between the search box and the
+ * visual viewport bottom (above the on-screen keyboard). Panel stays
+ * anchored under the box — no bottom sheet / backdrop.
+ */
+function useSuggestMaxHeight(
+  active: boolean,
+  anchorRef: RefObject<HTMLElement | null>,
+): CSSProperties {
   const [style, setStyle] = useState<CSSProperties>({});
 
   useEffect(() => {
@@ -63,20 +70,14 @@ function useKeyboardSheetStyle(active: boolean): CSSProperties {
     }
 
     function update() {
+      const el = anchorRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
       const vv = window.visualViewport;
-      if (!vv) {
-        setStyle({ bottom: 0, maxHeight: "45dvh" });
-        return;
-      }
-      const insetBottom = Math.max(
-        0,
-        window.innerHeight - vv.height - vv.offsetTop,
-      );
-      const maxHeight = Math.max(160, Math.min(Math.round(vv.height * 0.48), 340));
-      setStyle({
-        bottom: insetBottom,
-        maxHeight,
-      });
+      const visibleBottom = vv ? vv.offsetTop + vv.height : window.innerHeight;
+      const space = Math.floor(visibleBottom - rect.bottom - 10);
+      const maxHeight = Math.max(120, Math.min(space, 420));
+      setStyle({ maxHeight });
     }
 
     update();
@@ -84,12 +85,16 @@ function useKeyboardSheetStyle(active: boolean): CSSProperties {
     vv?.addEventListener("resize", update);
     vv?.addEventListener("scroll", update);
     window.addEventListener("resize", update);
+    window.addEventListener("scroll", update, true);
+    const poll = window.setInterval(update, 100);
     return () => {
       vv?.removeEventListener("resize", update);
       vv?.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
+      window.removeEventListener("scroll", update, true);
+      window.clearInterval(poll);
     };
-  }, [active]);
+  }, [active, anchorRef]);
 
   return style;
 }
@@ -124,8 +129,7 @@ export function SearchBox({
   }, [catalog, query, eligible, limit]);
 
   const showPanel = open && eligible;
-  const useSheet = showPanel && narrow;
-  const sheetStyle = useKeyboardSheetStyle(useSheet);
+  const suggestStyle = useSuggestMaxHeight(showPanel, rootRef);
 
   const goFullSearch = useCallback((q: string) => {
     const term = q.trim();
@@ -205,65 +209,6 @@ export function SearchBox({
       ? `${listboxId}-opt-${activeIndex}`
       : undefined;
 
-  const panelBody: ReactNode =
-    suggestions.length === 0 ? (
-      <div className="search-suggest-empty">
-        <p>Nincs közvetlen javaslat.</p>
-        <Link
-          href={`/kereses?q=${encodeURIComponent(query.trim())}`}
-          className="search-suggest-footer"
-          onClick={() => setOpen(false)}
-        >
-          Keresés erre: „{query.trim()}”
-        </Link>
-      </div>
-    ) : (
-      <>
-        <ul className="search-suggest-list">
-          {suggestions.map((hit, index) => {
-            const meta = formatSearchResultMeta(hit);
-            const active = index === activeIndex;
-            return (
-              <li key={`${hit.type}:${hit.id}`} role="presentation">
-                <button
-                  type="button"
-                  id={`${listboxId}-opt-${index}`}
-                  role="option"
-                  aria-selected={active}
-                  className={`search-suggest-item${active ? " is-active" : ""}${
-                    hit.matchKind === "identity"
-                      ? " is-identity"
-                      : " is-context"
-                  }`}
-                  onMouseEnter={() => setActiveIndex(index)}
-                  onMouseDown={(e) => {
-                    // Prevent input blur from closing before click.
-                    e.preventDefault();
-                  }}
-                  onClick={() => goEntity(hit.href)}
-                >
-                  <span className="search-suggest-name">
-                    {hit.displayName}
-                  </span>
-                  {meta ? (
-                    <span className="search-suggest-meta">{meta}</span>
-                  ) : null}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-        <Link
-          href={`/kereses?q=${encodeURIComponent(query.trim())}`}
-          className="search-suggest-footer"
-          onMouseDown={(e) => e.preventDefault()}
-          onClick={() => setOpen(false)}
-        >
-          Összes találat erre: „{query.trim()}”
-        </Link>
-      </>
-    );
-
   return (
     <div
       ref={rootRef}
@@ -303,37 +248,71 @@ export function SearchBox({
         <button type="submit">Keresés</button>
       </form>
 
-      {useSheet ? (
-        <>
-          <button
-            type="button"
-            className="search-suggest-backdrop"
-            aria-label="Javaslatok bezárása"
-            onPointerDown={(e) => {
-              e.preventDefault();
-              setOpen(false);
-              setActiveIndex(-1);
-            }}
-          />
-          <div
-            className="search-suggest search-suggest--sheet"
-            id={listboxId}
-            role="listbox"
-            aria-label="Keresési javaslatok"
-            style={sheetStyle}
-          >
-            <div className="search-suggest-sheet-handle" aria-hidden />
-            {panelBody}
-          </div>
-        </>
-      ) : showPanel ? (
+      {showPanel ? (
         <div
           className="search-suggest"
           id={listboxId}
           role="listbox"
           aria-label="Keresési javaslatok"
+          style={suggestStyle}
         >
-          {panelBody}
+          {suggestions.length === 0 ? (
+            <div className="search-suggest-empty">
+              <p>Nincs közvetlen javaslat.</p>
+              <Link
+                href={`/kereses?q=${encodeURIComponent(query.trim())}`}
+                className="search-suggest-footer"
+                onClick={() => setOpen(false)}
+              >
+                Keresés erre: „{query.trim()}”
+              </Link>
+            </div>
+          ) : (
+            <>
+              <ul className="search-suggest-list">
+                {suggestions.map((hit, index) => {
+                  const meta = formatSearchResultMeta(hit);
+                  const active = index === activeIndex;
+                  return (
+                    <li key={`${hit.type}:${hit.id}`} role="presentation">
+                      <button
+                        type="button"
+                        id={`${listboxId}-opt-${index}`}
+                        role="option"
+                        aria-selected={active}
+                        className={`search-suggest-item${active ? " is-active" : ""}${
+                          hit.matchKind === "identity"
+                            ? " is-identity"
+                            : " is-context"
+                        }`}
+                        onMouseEnter={() => setActiveIndex(index)}
+                        onMouseDown={(e) => {
+                          // Prevent input blur from closing before click.
+                          e.preventDefault();
+                        }}
+                        onClick={() => goEntity(hit.href)}
+                      >
+                        <span className="search-suggest-name">
+                          {hit.displayName}
+                        </span>
+                        {meta ? (
+                          <span className="search-suggest-meta">{meta}</span>
+                        ) : null}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+              <Link
+                href={`/kereses?q=${encodeURIComponent(query.trim())}`}
+                className="search-suggest-footer"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => setOpen(false)}
+              >
+                Összes találat erre: „{query.trim()}”
+              </Link>
+            </>
+          )}
         </div>
       ) : null}
     </div>
