@@ -667,10 +667,47 @@ a {
   flex-wrap: wrap;
 }
 
-/* Home explorer: type filters sit with the result list, left-aligned */
+/* Home explorer: type filters as list chrome (not floating chips) */
 .results > .filters {
   margin-left: 0;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  gap: 2px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid var(--line);
+}
+
+.results > .filters .filter {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 5px 9px 7px;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: #7d8993;
+  position: relative;
+}
+
+.results > .filters .filter:hover,
+.results > .filters .filter:focus-visible {
+  color: #15212b;
+}
+
+.results > .filters .filter.on {
+  background: transparent;
+  color: #15212b;
+  border-color: transparent;
+}
+
+.results > .filters .filter.on::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  bottom: -8px;
+  height: 2px;
+  background: #15212b;
 }
 
 .filter {
@@ -692,6 +729,7 @@ a {
 .layout {
   margin-left: 38px;
   margin-right: 38px;
+  margin-top: 18px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 390px;
   gap: 12px;
