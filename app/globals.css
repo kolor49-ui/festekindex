@@ -369,10 +369,10 @@ a {
 }
 
 .hero .heroEyebrow {
-  font-size: 9px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 2.2px;
-  color: #72b4dc;
+  letter-spacing: 2px;
+  color: #8ec4e3;
   font-weight: 850;
   margin-bottom: 16px;
 }
@@ -388,12 +388,12 @@ a {
 
 .hero h1 span {
   display: block;
-  color: #aebbc6;
+  color: #c5ced6;
 }
 
 .hero > p {
-  font-size: 12px;
-  color: #aab6bf;
+  font-size: 15px;
+  color: #c5ced6;
   margin: 0 0 20px;
   line-height: 1.55;
   max-width: 730px;
@@ -658,7 +658,7 @@ a {
   outline: 0;
   flex: 1;
   padding: 12px 14px;
-  font-size: 12px;
+  font-size: 15px;
   background: transparent;
   color: var(--ink);
 }
@@ -669,7 +669,7 @@ a {
   color: white;
   border-radius: 6px;
   padding: 0 23px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 800;
   cursor: pointer;
 }
@@ -687,10 +687,10 @@ a {
 .quick a {
   border: 1px solid #334755;
   background: #121e27;
-  color: #b7c3cc;
+  color: #d0d8df;
   border-radius: 5px;
-  padding: 6px 10px;
-  font-size: 9px;
+  padding: 7px 11px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -773,12 +773,12 @@ a {
   border: 0;
   background: transparent;
   border-radius: 0;
-  padding: 5px 9px 7px;
-  font-size: 9px;
+  padding: 6px 10px 8px;
+  font-size: 11px;
   font-weight: 750;
-  letter-spacing: 0.55px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #7d8993;
+  color: #5c6b78;
   position: relative;
 }
 
@@ -880,8 +880,18 @@ a {
   font-weight: 850;
 }
 
+.layout .icon {
+  font-size: 12px;
+}
+
 .row b {
   font-size: 11.5px;
+}
+
+.layout .row b {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
 }
 
 .row small {
@@ -891,6 +901,13 @@ a {
   margin-top: 4px;
 }
 
+.layout .row small {
+  font-size: 12px;
+  color: #5a6874;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
 .kind {
   font-size: 8px;
   color: #75828c;
@@ -898,6 +915,12 @@ a {
   letter-spacing: 0.7px;
   max-width: 130px;
   text-align: right;
+}
+
+.layout .kind {
+  font-size: 10px;
+  color: #5a6874;
+  letter-spacing: 0.6px;
 }
 
 .detail {
@@ -922,10 +945,10 @@ a {
 
 .detail-panel-label {
   display: none;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
-  color: #7a8791;
+  color: #5a6874;
   font-weight: 750;
   margin: 0 0 10px;
 }
@@ -953,14 +976,30 @@ a {
   font-weight: 850;
 }
 
+.layout .dtype {
+  font-size: 10px;
+  letter-spacing: 1.1px;
+}
+
 .detail h2 {
   font-size: 20px;
   margin: 6px 0 7px;
 }
 
+.layout .detail h2 {
+  font-size: 22px;
+  letter-spacing: -0.4px;
+}
+
 .detail p {
   font-size: 10px;
   color: #6f7c87;
+  line-height: 1.55;
+}
+
+.layout .detail p {
+  font-size: 13px;
+  color: #4f5d69;
   line-height: 1.55;
 }
 
@@ -978,6 +1017,11 @@ a {
   margin: 0 0 9px;
 }
 
+.layout .section h4 {
+  font-size: 10px;
+  color: #5a6874;
+}
+
 .pill {
   display: inline-block;
   border: 1px solid #dce3e8;
@@ -989,6 +1033,12 @@ a {
   margin: 0 3px 4px 0;
 }
 
+.layout .pill {
+  font-size: 12px;
+  color: #33424e;
+  padding: 6px 9px;
+}
+
 .pill-link:hover {
   border-color: #8fa6b7;
   color: #176fa8;
@@ -998,6 +1048,12 @@ a {
   font-size: 9px;
   line-height: 1.9;
   color: #51616d;
+}
+
+.layout .route {
+  font-size: 13px;
+  color: #3d4c58;
+  line-height: 1.7;
 }
 
 .route b {
@@ -1104,6 +1160,11 @@ a {
   color: #6f7c87;
   letter-spacing: 0.2px;
   line-height: 1.35;
+}
+
+.layout .agg-roles {
+  font-size: 12px;
+  color: #5a6874;
 }
 
 .hub-link-list {
