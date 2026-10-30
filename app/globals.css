@@ -12,6 +12,12 @@
   --blue2: #58a5d3;
   --silver: #aeb9c3;
   --meta: #4f5d69;
+  /* Catalogue list type — category hub is the source of truth */
+  --list-name-size: 1rem;
+  --list-name-weight: 600;
+  --list-name-color: #0f1c27;
+  --list-meta-size: 13px;
+  --list-meta-color: #5a6b78;
 }
 
 * {
@@ -623,13 +629,12 @@ a {
   min-width: 0;
 }
 
-/* /kereses rows use the shared .row type scale; keep meta/preview explicit
-   so Tailwind’s `small { font-size: 80% }` cannot shrink them. */
+/* /kereses — same meta scale as category hub (beat Tailwind small { 80% }) */
 .search-result-meta,
 .search-results-list .row small {
   display: block;
-  font-size: 12px;
-  color: #5a6874;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   margin-top: 5px;
   line-height: 1.4;
 }
@@ -639,8 +644,8 @@ a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 12px;
-  color: #5a6874;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   margin-top: 4px;
   line-height: 1.4;
   font-weight: 400;
@@ -970,26 +975,26 @@ a.row {
   font-weight: 850;
 }
 
-/* Shared hit-row type scale (home explorer, /kereses, any .row list) */
+/* Hit-row type — match category-hub product list */
 .row b {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--ink);
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  color: var(--list-name-color);
   letter-spacing: -0.01em;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .row small {
   display: block;
-  font-size: 12px;
-  color: #5a6874;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   margin-top: 5px;
   line-height: 1.4;
 }
 
 .kind {
-  font-size: 10px;
-  color: #5a6874;
+  font-size: 11px;
+  color: var(--list-meta-color);
   text-transform: uppercase;
   letter-spacing: 0.6px;
   max-width: 130px;
@@ -1643,13 +1648,14 @@ a.row {
 .org-hub .org-product-list {
   margin: 0;
   padding-left: 18px;
-  font-size: 13px;
+  font-size: var(--list-name-size);
   line-height: 1.75;
-  color: #2a3640;
+  color: var(--list-name-color);
 }
 
 .org-hub .org-product-list a {
-  color: #243240;
+  font-weight: var(--list-name-weight);
+  color: var(--list-name-color);
   text-decoration: none;
 }
 
@@ -1947,10 +1953,10 @@ a.row {
 .brand-hub .brand-product-name,
 .product-family-hub .brand-product-name {
   display: inline-block;
-  font-size: 13px;
-  font-weight: 650;
-  line-height: 1.45;
-  color: #243240;
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  line-height: 1.35;
+  color: var(--list-name-color);
   text-decoration: none;
 }
 
@@ -1965,14 +1971,14 @@ a.row {
 .brand-hub .brand-product-meta,
 .product-family-hub .brand-product-meta {
   margin-top: 3px;
-  font-size: 11px;
-  color: #6f7c87;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   line-height: 1.4;
 }
 
 .brand-hub .brand-product-meta a,
 .product-family-hub .brand-product-meta a {
-  color: #6f7c87;
+  color: var(--list-meta-color);
   text-decoration: none;
 }
 
@@ -2393,9 +2399,9 @@ a.row {
 }
 
 .product-hub .product-related-name {
-  font-size: 13px;
-  font-weight: 650;
-  color: #243240;
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  color: var(--list-name-color);
   text-decoration: none;
 }
 
@@ -2580,10 +2586,10 @@ a.row {
 
 .surface-hub .brand-product-name {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 650;
-  line-height: 1.45;
-  color: #243240;
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  line-height: 1.35;
+  color: var(--list-name-color);
   text-decoration: none;
 }
 
@@ -2595,13 +2601,13 @@ a.row {
 
 .surface-hub .brand-product-meta {
   margin-top: 3px;
-  font-size: 12px;
-  color: #5a6b78;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   line-height: 1.4;
 }
 
 .surface-hub .brand-product-meta a {
-  color: #5a6b78;
+  color: var(--list-meta-color);
   text-decoration: none;
 }
 
@@ -2703,10 +2709,10 @@ a.row {
 
 .technology-hub .brand-product-name {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 650;
-  line-height: 1.45;
-  color: #243240;
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  line-height: 1.35;
+  color: var(--list-name-color);
   text-decoration: none;
 }
 
@@ -2718,13 +2724,13 @@ a.row {
 
 .technology-hub .brand-product-meta {
   margin-top: 3px;
-  font-size: 12px;
-  color: #5a6b78;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   line-height: 1.4;
 }
 
 .technology-hub .brand-product-meta a {
-  color: #5a6b78;
+  color: var(--list-meta-color);
   text-decoration: none;
 }
 
@@ -2907,9 +2913,10 @@ a.row {
   display: inline-block;
   max-width: 100%;
   overflow-wrap: anywhere;
-  color: #0f1c27;
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  color: var(--list-name-color);
   text-decoration: none;
-  font-weight: 600;
 }
 
 .category-hub .brand-product-name:hover,
@@ -2920,8 +2927,8 @@ a.row {
 
 .category-hub .brand-product-meta {
   margin-top: 0.2rem;
-  font-size: 13px;
-  color: #5a6b78;
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
   overflow-wrap: anywhere;
 }
 
@@ -2984,6 +2991,32 @@ a.row {
   .category-hub .org-tech-surface-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/*
+ * Shared catalogue list type (category hub = source of truth).
+ * Scoped to .main so .sidebar / .mainlink stay unchanged.
+ */
+.main .brand-product-name,
+.main .org-product-list a,
+.main .product-related-name,
+.main .row b,
+.main .surface-coverage-item a {
+  font-size: var(--list-name-size);
+  font-weight: var(--list-name-weight);
+  color: var(--list-name-color);
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.main .brand-product-meta,
+.main .brand-product-meta a,
+.main .row small,
+.main .search-result-preview,
+.main .search-results-list .row small {
+  font-size: var(--list-meta-size);
+  color: var(--list-meta-color);
+  line-height: 1.4;
 }
 
 /* —— Knowledge Hub v1 — professional article measure —— */
