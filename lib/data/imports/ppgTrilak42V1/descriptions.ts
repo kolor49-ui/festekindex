@@ -3,9 +3,9 @@ import type { ProductDescriptionEnrichment } from "../festekBazisEnrichmentV1/ty
 export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   {
     productId: "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
-    sourceSummary: "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfest ékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el.",
+    sourceSummary: "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfestékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el.",
     sourceSummarySourceIds: ["src_trilak_12640DHH1900_tds"],
-    editorialSummary: "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfest ékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el.",
+    editorialSummary: "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfestékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el.",
   },
   {
     productId: "prod_trilak_12640dhh3000_hera_bacteria_resist_bakteriumokkal_es_penesszel_szemben_ellenall",
@@ -15,9 +15,9 @@ export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   },
   {
     productId: "prod_trilak_12640dhh7800_hera_falfix_diszperzios_melyalapozo",
-    sourceSummary: "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal - és homlokzatfestékek alá egyar ánt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó - képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást, valamint megfelelő…",
+    sourceSummary: "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal- és homlokzatfestékek alá egyaránt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó-képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást.",
     sourceSummarySourceIds: ["src_trilak_12640DHH7800_tds"],
-    editorialSummary: "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal - és homlokzatfestékek alá egyar ánt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó - képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást, valamint megfelelő…",
+    editorialSummary: "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal- és homlokzatfestékek alá egyaránt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó-képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást.",
   },
   {
     productId: "prod_trilak_12640dhhay00_hera_thermotek_silicate_vekonyvakolat",
@@ -27,9 +27,9 @@ export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   },
   {
     productId: "prod_trilak_12640dhhba00_hera_matt_feher_belteri_falfestek",
-    sourceSummary: "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történtő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető.",
+    sourceSummary: "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető.",
     sourceSummarySourceIds: ["src_trilak_12640DHHBA00_tds"],
-    editorialSummary: "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történtő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető.",
+    editorialSummary: "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető.",
   },
   {
     productId: "prod_trilak_12640dhhbo00_hera_folttakaro_alapozo",
@@ -39,9 +39,9 @@ export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   },
   {
     productId: "prod_trilak_12640dhhcm00_hera_dryvit_siloxan_vizlepergeto_vekonyvakolat",
-    sourceSummary: "A Héra Dryvit Siloxan vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
+    sourceSummary: "A Héra Dryvit Siloxan vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és 2 mm-es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
     sourceSummarySourceIds: ["src_trilak_12640DHHCM00_tds"],
-    editorialSummary: "A Héra Dryvit Siloxan vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
+    editorialSummary: "A Héra Dryvit Siloxan vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és 2 mm-es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
   },
   {
     productId: "prod_trilak_12640dhhed00_hera_peneszgatlo_belso_falfestek",
@@ -57,45 +57,45 @@ export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   },
   {
     productId: "prod_trilak_12640dhhgm00_hera_thermotek_universal_vakolatalapozo",
-    sourceSummary: "A Héra Thermotek Universal vakolatalapozó a Műszaki adatlap szerint matt, érdes hatású pigmentált vakolatalapozó. Kiváló fedőképességű, diszperzió kötőanyagú, érdes felületet biztosító, matt alapozófesték a Héra hőszigetelő rendszerakril és szilikonos dekorációs vakolatai alá. Növeli a hőszigetelő rendszer mechanikai szilárdságát és homogén megjelenést biztosít a fedővakolatok számára.",
+    sourceSummary: "A Héra Thermotek Universal vakolatalapozó a Műszaki adatlap szerint matt, érdes hatású pigmentált vakolatalapozó. Kiváló fedőképességű, diszperzió kötőanyagú, érdes felületet biztosító, matt alapozófesték a Héra hőszigetelő rendszer akril és szilikonos dekorációs vakolatai alá. Növeli a hőszigetelő rendszer mechanikai szilárdságát és homogén megjelenést biztosít a fedővakolatok számára.",
     sourceSummarySourceIds: ["src_trilak_12640DHHGM00_tds"],
-    editorialSummary: "A Héra Thermotek Universal vakolatalapozó a Műszaki adatlap szerint matt, érdes hatású pigmentált vakolatalapozó. Kiváló fedőképességű, diszperzió kötőanyagú, érdes felületet biztosító, matt alapozófesték a Héra hőszigetelő rendszerakril és szilikonos dekorációs vakolatai alá. Növeli a hőszigetelő rendszer mechanikai szilárdságát és homogén megjelenést biztosít a fedővakolatok számára.",
+    editorialSummary: "A Héra Thermotek Universal vakolatalapozó a Műszaki adatlap szerint matt, érdes hatású pigmentált vakolatalapozó. Kiváló fedőképességű, diszperzió kötőanyagú, érdes felületet biztosító, matt alapozófesték a Héra hőszigetelő rendszer akril és szilikonos dekorációs vakolatai alá. Növeli a hőszigetelő rendszer mechanikai szilárdságát és homogén megjelenést biztosít a fedővakolatok számára.",
   },
   {
     productId: "prod_trilak_12640dhhhp00_hera_my_color_belteri_falfestek",
-    sourceSummary: "A Héra MY color beltéri falfesték a Műszaki adatlap szerint kiváló minőségű, tartós matt festék beltéri falfelületek festésére. A Héra MyColor beltéri matt falfesték kiváló fedőképességű, mosható, pára - és legáteresztő bevonatot képez, színei pedig élénkek és tartósak. Egyszerű használatának és illatosított formulájának köszönhetően széles körben alkalmazható.",
+    sourceSummary: "A Héra MY color beltéri falfesték a Műszaki adatlap szerint kiváló minőségű, tartós matt festék beltéri falfelületek festésére. A Héra MyColor beltéri matt falfesték kiváló fedőképességű, mosható, pára- és légáteresztő bevonatot képez, színei pedig élénkek és tartósak. Egyszerű használatának és illatosított formulájának köszönhetően széles körben alkalmazható.",
     sourceSummarySourceIds: ["src_trilak_12640DHHHP00_tds"],
-    editorialSummary: "A Héra MY color beltéri falfesték a Műszaki adatlap szerint kiváló minőségű, tartós matt festék beltéri falfelületek festésére. A Héra MyColor beltéri matt falfesték kiváló fedőképességű, mosható, pára - és legáteresztő bevonatot képez, színei pedig élénkek és tartósak. Egyszerű használatának és illatosított formulájának köszönhetően széles körben alkalmazható.",
+    editorialSummary: "A Héra MY color beltéri falfesték a Műszaki adatlap szerint kiváló minőségű, tartós matt festék beltéri falfelületek festésére. A Héra MyColor beltéri matt falfesték kiváló fedőképességű, mosható, pára- és légáteresztő bevonatot képez, színei pedig élénkek és tartósak. Egyszerű használatának és illatosított formulájának köszönhetően széles körben alkalmazható.",
   },
   {
     productId: "prod_trilak_12640dhhih00_hera_super_matt_belteri_falfestek",
-    sourceSummary: "A Héra Super Matt Beltéri Falfesték a Műszaki adatlap szerint matt, belső falfesték vakolt, beton, gipszkarton és glettelt felületekre. A Héra Super Matt egy kiváló minőségű hófehér, mély matt belső falfesték, amely az ANTI -REFLEX technológiának és a nagy fedőképességnek köszönhetően optikailag elnyomja a tükröződést, és így elfedi az alap tökéletlenségeit. Mosható* (az MSZ-EN 13300 szabvány szerinti 3.",
+    sourceSummary: "A Héra Super Matt Beltéri Falfesték a Műszaki adatlap szerint matt, belső falfesték vakolt, beton, gipszkarton és glettelt felületekre. A Héra Super Matt egy kiváló minőségű hófehér, mély matt belső falfesték, amely az ANTI-REFLEX technológiának és a nagy fedőképességnek köszönhetően optikailag elnyomja a tükröződést, és így elfedi az alap tökéletlenségeit. Mosható* (az MSZ-EN 13300 szabvány szerinti 3.",
     sourceSummarySourceIds: ["src_trilak_12640DHHIH00_tds"],
-    editorialSummary: "A Héra Super Matt Beltéri Falfesték a Műszaki adatlap szerint matt, belső falfesték vakolt, beton, gipszkarton és glettelt felületekre. A Héra Super Matt egy kiváló minőségű hófehér, mély matt belső falfesték, amely az ANTI -REFLEX technológiának és a nagy fedőképességnek köszönhetően optikailag elnyomja a tükröződést, és így elfedi az alap tökéletlenségeit. Mosható* (az MSZ-EN 13300 szabvány szerinti 3.",
+    editorialSummary: "A Héra Super Matt Beltéri Falfesték a Műszaki adatlap szerint matt, belső falfesték vakolt, beton, gipszkarton és glettelt felületekre. A Héra Super Matt egy kiváló minőségű hófehér, mély matt belső falfesték, amely az ANTI-REFLEX technológiának és a nagy fedőképességnek köszönhetően optikailag elnyomja a tükröződést, és így elfedi az alap tökéletlenségeit. Mosható* (az MSZ-EN 13300 szabvány szerinti 3.",
   },
   {
     productId: "prod_trilak_12640dhhii00_hera_diszperzit_mennyezet_es_falfestek",
-    sourceSummary: "A Héra DISZPERZIT mennyezet- és falfesték a Műszaki adatlap szerint diszperzit mennyezet. A jó fedőképességű, könnyen felhordható Héra Diszperzit mennyezet - és falfesték költséghatékony megoldást jelent a festési feladatok so rán. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen színezhető…",
+    sourceSummary: "A Héra DISZPERZIT mennyezet- és falfesték a Műszaki adatlap szerint diszperziós mennyezet- és falfesték. A jó fedőképességű, könnyen felhordható Héra Diszperzit mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára- és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen színezhető…",
     sourceSummarySourceIds: ["src_trilak_12640DHHII00_tds"],
-    editorialSummary: "A Héra DISZPERZIT mennyezet- és falfesték a Műszaki adatlap szerint diszperzit mennyezet. A jó fedőképességű, könnyen felhordható Héra Diszperzit mennyezet - és falfesték költséghatékony megoldást jelent a festési feladatok so rán. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen színezhető…",
+    editorialSummary: "A Héra DISZPERZIT mennyezet- és falfesték a Műszaki adatlap szerint diszperziós mennyezet- és falfesték. A jó fedőképességű, könnyen felhordható Héra Diszperzit mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára- és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen színezhető…",
   },
   {
     productId: "prod_trilak_12640dhhii02_hera_mennyezet_es_falfestek",
-    sourceSummary: "A Héra Mennyezet- és falfesték a Műszaki adatlap szerint matt fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A jó fedőképességű, könnyen felhordható, magas fehérségű Héra Mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen…",
+    sourceSummary: "A Héra Mennyezet- és falfesték a Műszaki adatlap szerint matt fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A jó fedőképességű, könnyen felhordható, magas fehérségű Héra Mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára- és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen…",
     sourceSummarySourceIds: ["src_trilak_12640DHHII02_tds"],
-    editorialSummary: "A Héra Mennyezet- és falfesték a Műszaki adatlap szerint matt fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A jó fedőképességű, könnyen felhordható, magas fehérségű Héra Mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen…",
+    editorialSummary: "A Héra Mennyezet- és falfesték a Műszaki adatlap szerint matt fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A jó fedőképességű, könnyen felhordható, magas fehérségű Héra Mennyezet- és falfesték költséghatékony megoldást jelent a festési feladatok során. A pára- és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, a Héra Színezőpasztáknak köszönhetően pedig bármilyen pasztell árnyalatra egyszerűen…",
   },
   {
     productId: "prod_trilak_12640dhhir00_hera_dryvit_easy_vizlepergeto_vekonyvakolat",
-    sourceSummary: "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
+    sourceSummary: "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és 2 mm-es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
     sourceSummarySourceIds: ["src_trilak_12640DHHIR00_tds"],
-    editorialSummary: "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
+    editorialSummary: "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és 2 mm-es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
   },
   {
     productId: "prod_trilak_12640dhhka00_hera_diszperzit_belteri_falfestek",
-    sourceSummary: "A Héra DISZPERZIT beltéri falfesték a Műszaki adatlap szerint matt, fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A kiváló fedőképességű, könnyen felhordható Héra Diszper zit Beltéri falfesték. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, egyenletes, esztétikus felületet biztosít. • Kiváló fedőképességű • Könnyen felhordható • Pára- és légáteresztő •…",
+    sourceSummary: "A Héra DISZPERZIT beltéri falfesték a Műszaki adatlap szerint matt, fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A kiváló fedőképességű, könnyen felhordható Héra Diszperzit Beltéri falfesték. A pára- és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, egyenletes, esztétikus felületet biztosít. • Kiváló fedőképességű • Könnyen felhordható • Pára- és légáteresztő •…",
     sourceSummarySourceIds: ["src_trilak_12640DHHKA00_tds"],
-    editorialSummary: "A Héra DISZPERZIT beltéri falfesték a Műszaki adatlap szerint matt, fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A kiváló fedőképességű, könnyen felhordható Héra Diszper zit Beltéri falfesték. A pára - és légáteresztő matt bevonat a fal természetes légzését nem akadályozza, egyenletes, esztétikus felületet biztosít. • Kiváló fedőképességű • Könnyen felhordható • Pára- és légáteresztő • Színezhető.",
+    editorialSummary: "A Héra DISZPERZIT beltéri falfesték a Műszaki adatlap szerint matt, fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A kiváló fedőképességű, könnyen felhordható Héra Diszperzit beltéri falfesték pára- és légáteresztő matt bevonatot képez, amely a fal természetes légzését nem akadályozza, és egyenletes, esztétikus felületet biztosít.",
   },
   {
     productId: "prod_trilak_12640dhhlh00_hera_studio_latex_matt_belteri_falfestek",
@@ -105,9 +105,9 @@ export const ppgTrilak42Descriptions: ProductDescriptionEnrichment[] = [
   },
   {
     productId: "prod_trilak_12640dhhus00_hera_meszfestek",
-    sourceSummary: "A Héra mészfesték a Műszaki adatlap szerint beltérben és kültérben is használható mész kötőanyagű festék. A kiváló pára - és légáteresztő bevonatot képző, biocidmentes Héra Mészfesték kül - és beltérre is alkalmazható, jó fedőképességű, könnyen hengerelhető főként mész kötőanyagű fehér színű festék.",
+    sourceSummary: "A Héra mészfesték a Műszaki adatlap szerint beltérben és kültérben is használható mész kötőanyagú festék. A kiváló pára- és légáteresztő bevonatot képző, biocidmentes Héra Mészfesték kül- és beltérre is alkalmazható, jó fedőképességű, könnyen hengerelhető főként mész kötőanyagú fehér színű festék.",
     sourceSummarySourceIds: ["src_trilak_12640DHHUS00_tds"],
-    editorialSummary: "A Héra mészfesték a Műszaki adatlap szerint beltérben és kültérben is használható mész kötőanyagű festék. A kiváló pára - és légáteresztő bevonatot képző, biocidmentes Héra Mészfesték kül - és beltérre is alkalmazható, jó fedőképességű, könnyen hengerelhető főként mész kötőanyagű fehér színű festék.",
+    editorialSummary: "A Héra mészfesték a Műszaki adatlap szerint beltérben és kültérben is használható mész kötőanyagú festék. A kiváló pára- és légáteresztő bevonatot képző, biocidmentes Héra Mészfesték kül- és beltérre is alkalmazható, jó fedőképességű, könnyen hengerelhető főként mész kötőanyagú fehér színű festék.",
   },
   {
     productId: "prod_trilak_12650dhhch00_lazuran_vastaglazur",

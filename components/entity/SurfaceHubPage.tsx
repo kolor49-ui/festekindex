@@ -79,7 +79,7 @@ export function SurfaceHubPage({
           {showDiscovery ? (
             <section
               className="surface-discovery"
-              aria-label="Gyártó és márka keresés"
+              aria-label="Cég és márka keresés"
             >
               {discoveryCatalog.length > 0 ? (
                 <SearchBox

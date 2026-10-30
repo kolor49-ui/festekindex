@@ -10,7 +10,7 @@ export const technologies: Technology[] = [
     kind: "spray_process",
     shortDescription:
       "Nagy nyomású, levegő nélküli festékszórási eljárás — gépek, anyagok, márkák.",
-    body: "Az airless festékszórás nagy nyomáson, sűrített levegő nélkül juttatja a festéket a felületre. A FESTÉKINDEX-en a Graco és Wagner márkák, a Graco gépcsaládok, valamint a magyarországi forgalmazók relations hálóban kapcsolódnak.",
+    body: "Az airless festékszórás nagy nyomáson, sűrített levegő nélkül juttatja a festéket a felületre. Kapcsolódó márkák például a Graco és a Wagner; a magyarországi forgalmazói kapcsolatok a márka- és cégadatlapokon érhetők el.",
     status: "published",
     indexable: true,
     seoTitle: "Airless festékszórás | FESTÉKINDEX",
@@ -33,7 +33,7 @@ export const technologies: Technology[] = [
     status: "published",
     indexable: true,
     seoTitle: "Porfesték bevonatolás | FESTÉKINDEX",
-    seoDescription: "Porfesték (powder coating) technológia és kapcsolódó márkák.",
+    seoDescription: "Porfesték technológia és kapcsolódó márkák.",
     sourceIds: ["src_akzonobel_hu"],
     updatedAt: "2026-10-05",
   },

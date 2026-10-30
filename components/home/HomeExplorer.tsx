@@ -151,7 +151,7 @@ export function HomeExplorer({
           <span>Rendszerezve.</span>
         </h1>
         <p>
-          Gyártók, márkák és technológiák egyetlen kereshető szakmai rendszerben.
+          Cégek, márkák és technológiák egyetlen kereshető szakmai rendszerben.
         </p>
         <SearchBox
           catalog={searchCatalogDocs}

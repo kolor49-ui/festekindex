@@ -12,7 +12,7 @@ export function SearchManufacturerTabs({
   manufacturers,
   activeSlug,
   buildHref,
-  label = "Kiemelt gyártók",
+  label = "Kiemelt márkák és cégek",
 }: {
   manufacturers: ManufacturerTabItem[];
   activeSlug?: string;

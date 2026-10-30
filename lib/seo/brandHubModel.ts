@@ -53,8 +53,13 @@ export type BrandHubModel = {
 function isStructuralCopy(text: string): boolean {
   const t = text.trim();
   if (!t) return true;
-  if (t.includes("a FESTÉKINDEX adatbázisában")) return true;
-  if (t.includes("Festék Bázis v0.")) return true;
+  const lower = t.toLowerCase();
+  if (lower.includes("a festékindex adatbázisában")) return true;
+  if (lower.includes("festék bázis v0.")) return true;
+  if (lower.includes("entitás")) return true;
+  if (lower.includes("owns relation")) return true;
+  if (lower.includes("hasproduct")) return true;
+  if (lower.includes("márkaidentitás")) return true;
   return false;
 }
 

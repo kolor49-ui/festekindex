@@ -116,7 +116,7 @@ function buildMetaDescription(
   const existing = publicSafeTechnologyCopy(technology.seoDescription);
   if (existing) return existing.slice(0, 160);
   if (lead) return lead.slice(0, 160);
-  return `${technology.name} — festékipari technológia a FESTÉKINDEX-en.`.slice(
+  return `${technology.name} — festékipari technológia / eljárás.`.slice(
     0,
     160,
   );

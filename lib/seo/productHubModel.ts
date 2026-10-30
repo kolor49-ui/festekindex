@@ -118,8 +118,11 @@ function isStructuralCopy(text: string): boolean {
   if (!t) return true;
   const lower = t.toLowerCase();
   if (lower.includes("a festékindex adatbázisában")) return true;
+  if (lower.includes("festékindex adatbázisában")) return true;
   if (lower.includes("festék bázis v0.")) return true;
   if (lower.includes("termékadatbázisában")) return true;
+  if (lower.includes("termékadat a")) return true;
+  if (lower.includes("hivatalos forrásokkal ellenőrzött termékadat")) return true;
   if (lower.includes("konkrét termék / modell")) return true;
   if (lower === "termékadatlap") return true;
   if (lower === "termék") return true;

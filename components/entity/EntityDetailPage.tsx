@@ -90,7 +90,7 @@ export function EntityDetailPage({ entity }: { entity: AnyEntity }) {
 
           {page.relationGroups.length > 0 ? (
             <section className="seo-section" id="kapcsolatok">
-              <h2 className="seo-heading">Kapcsolati háló</h2>
+              <h2 className="seo-heading">Kapcsolódó elemek</h2>
               {page.relationGroups.map((group) => (
                 <div key={group.label} className="seo-subsection">
                   <h3 className="seo-subheading">{group.label}</h3>

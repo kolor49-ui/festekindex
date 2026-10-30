@@ -190,7 +190,7 @@ function buildTypeSections(
     if (body) {
       sections.push({
         id: "mi-ez",
-        heading: `Mi a ${entity.name}?`,
+        heading: `${entity.name} bemutatása`,
         headingLevel: 2,
         paragraphs: [body],
         links: [],
@@ -203,10 +203,10 @@ function buildTypeSections(
     if (owners.length) {
       sections.push({
         id: "gyarto",
-        heading: "Gyártói szervezet",
+        heading: "Gyártó / tulajdonos",
         headingLevel: 2,
         paragraphs: [
-          "A márka és a gyártói / jogi szervezet a FESTÉKINDEX-en külön entitás. Az alábbi szervezet a tulajdonosi (owns) kapcsolat alapján kapcsolódik.",
+          "A márka gyártója / jogi tulajdonosa az alábbi szervezet.",
         ],
         links: linkify(owners),
       });
@@ -249,7 +249,7 @@ function buildTypeSections(
         heading: "Gépcsaládok",
         headingLevel: 2,
         paragraphs: [
-          `A ${entity.name} gépcsaládjai ProductFamily entitásokként. A rövid jellemzés csak ellenőrzött leírásból jelenik meg.`,
+          `A ${entity.name} gép- és termékcsaládjai:`,
         ],
         links: linkify(families),
       });
@@ -267,7 +267,7 @@ function buildTypeSections(
         heading: "Termékek",
         headingLevel: 2,
         paragraphs: [
-          "Család nélküli (önálló) termékek — Brand → Product hasProduct él alapján.",
+          "Önálló termékek (nem termékcsaládhoz sorolva):",
         ],
         links: linkify(directProducts),
       });
@@ -275,11 +275,11 @@ function buildTypeSections(
   } else if (entity.type === "organization") {
     sections.push({
       id: "mi-ez",
-      heading: `Mi a ${entity.name}?`,
+      heading: `${entity.name} bemutatása`,
       headingLevel: 2,
       paragraphs: [
         entity.body?.trim() ||
-          `${entity.name} festékipari szervezet a FESTÉKINDEX-en.`,
+          `${entity.name} festékipari szervezet.`,
       ],
       links: [],
     });
@@ -344,7 +344,7 @@ function buildTypeSections(
   if (entity.type === "technology") {
     sections.push({
       id: "mi-ez",
-      heading: `Mi az a ${entity.name}?`,
+      heading: `${entity.name} — áttekintés`,
       headingLevel: 2,
       paragraphs: [
         entity.body?.trim() ||
@@ -387,11 +387,11 @@ function buildTypeSections(
   if (entity.type === "productFamily") {
     sections.push({
       id: "mi-ez",
-      heading: `Mi a ${entity.name}?`,
+      heading: `${entity.name} bemutatása`,
       headingLevel: 2,
       paragraphs: [
         entity.body?.trim() ||
-          `${entity.name} termékcsalád / gépcsalád a FESTÉKINDEX-en.`,
+          `${entity.name} termékcsalád / gépcsalád.`,
       ],
       links: [],
     });
@@ -470,7 +470,7 @@ function buildTypeSections(
     if (members.length) {
       sections.push({
         id: "entitasok",
-        heading: "Kapcsolódó entitások ebben a kategóriában",
+        heading: "Kapcsolódó elemek ebben a kategóriában",
         headingLevel: 2,
         paragraphs: [],
         links: linkify(members),
@@ -496,7 +496,7 @@ function buildTypeSections(
     if (documented.length) {
       sections.push({
         id: "dokumentalt",
-        heading: "Dokumentált entitások",
+        heading: "Kapcsolódó témák",
         headingLevel: 2,
         paragraphs: [],
         links: linkify(documented),
@@ -562,7 +562,7 @@ function buildTypeSections(
         heading: "Kapcsolódó termékek és családok",
         headingLevel: 2,
         paragraphs: [
-          "A lista applicableToSurface relation alapján épül — nem a márka marketing-navigációjából.",
+          "A lista a gyártói alkalmazási megadások alapján épül, nem a marketing-kategóriákból.",
         ],
         links: linkify(applicable),
       });
@@ -642,7 +642,8 @@ export function buildEntityPageModel(entity: AnyEntity): EntityPageModel {
     entity.seoTitle?.trim() || `${entity.name} | FESTÉKINDEX`;
   const metaDescription = (
     entity.seoDescription?.trim() ||
-    `${entity.shortDescription} — ${meta.intentVerb} a FESTÉKINDEX szakmai indexében.`
+    entity.shortDescription?.trim() ||
+    `${entity.name}: ${meta.intentVerb}.`
   ).slice(0, 160);
 
   const searchIntent = `${entity.name} — ${meta.intentVerb}: gyártók, forgalmazók, technológiák és kapcsolatok Magyarországon`;

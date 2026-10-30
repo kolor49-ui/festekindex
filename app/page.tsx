@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "FESTÉKINDEX — a festékipar szakmai indexe",
   },
   description:
-    "Gyártók, márkák és technológiák egyetlen kereshető szakmai rendszerben.",
+    "Cégek, márkák és technológiák egyetlen kereshető szakmai rendszerben.",
   alternates: { canonical: "https://festekindex.hu/" },
 };
 

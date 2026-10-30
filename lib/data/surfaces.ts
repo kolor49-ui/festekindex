@@ -13,12 +13,12 @@ export const surfaces: Surface[] = [
     aliases: ["fafelület", "faanyag", "wood"],
     shortDescription:
       "Fa és faszerkezetek bevonatolása: lazúrok, lakkok, fafestékek és impregnálók.",
-    body: "A fa felület a FESTÉKINDEX-en önálló Surface entitás. Ide tartoznak a kültéri és beltéri fafelületek, faszerkezetek és faipari bevonatok alkalmazási köre. A konkrét termékek applicableToSurface relationnel kapcsolódnak — a márka marketingje (pl. „A fára”) nem helyettesíti ezt a szakmai dimenziót.",
+    body: "A fa felület a FESTÉKINDEX-en önálló felülettípus. Ide tartoznak a kültéri és beltéri fafelületek, faszerkezetek és faipari bevonatok alkalmazási köre. A konkrét termékek gyártói alkalmazási megadás alapján kapcsolódnak — a márka marketingje (pl. „A fára”) nem helyettesíti ezt a szakmai dimenziót.",
     status: "published",
     indexable: true,
     seoTitle: "Festék fára | Fa felületek | FESTÉKINDEX",
     seoDescription:
-      "Fa felületekre alkalmazható festékek, lazúrok és lakkok a FESTÉKINDEX Surface hálójában.",
+      "Fa felületekre alkalmazható festékek, lazúrok és lakkok a FESTÉKINDEX felületkatalógusában.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -30,7 +30,7 @@ export const surfaces: Surface[] = [
     aliases: ["vas", "acélszerkezet", "steel"],
     shortDescription:
       "Acél és vasszerkezetek: korróziógátló alapozók, ipari zománcok és fémbevonatok.",
-    body: "Az acél Surface a korrózióvédelem és az ipari fémbevonatok egyik központi dimenziója. Termékek (pl. alapozó, zománc) applicableToSurface éllel kapcsolódnak; a felhordási mód (airless, air-mix, ecset) külön Technology relation.",
+    body: "Az acél a korrózióvédelem és az ipari fémbevonatok egyik központi felülettípusa. Ide kapcsolódnak például a korróziógátló alapozók és zománcok; a felhordási mód (airless, air-mix, ecset) külön technológiai adatlapokon szerepel.",
     status: "published",
     indexable: true,
     seoTitle: "Festék acélra | Acél felületek | FESTÉKINDEX",
@@ -47,12 +47,12 @@ export const surfaces: Surface[] = [
     aliases: ["alu", "aluminum"],
     shortDescription:
       "Alumínium felületek bevonatolása: tapadás, előkészítés és megfelelő rendszer.",
-    body: "Az alumínium Surface olyan termékekhez kapcsolódik, amelyeket a gyártó kifejezetten alumíniumra is megad. A marketing-kategória nem korlátozza: ha a termék adatlapja alumíniumot is felsorol, applicableToSurface él keletkezik.",
+    body: "Az alumínium felület olyan termékekhez kapcsolódik, amelyeket a gyártó kifejezetten alumíniumra is megad. A marketing-kategória nem korlátozza: ha a termék adatlapja alumíniumot is felsorol, alkalmazási kapcsolat keletkezik.",
     status: "published",
     indexable: true,
     seoTitle: "Festék alumíniumra | FESTÉKINDEX",
     seoDescription:
-      "Alumínium felületekre alkalmazható festékek és bevonatok a FESTÉKINDEX Surface hálójában.",
+      "Alumínium felületekre alkalmazható festékek és bevonatok a FESTÉKINDEX felületkatalógusában.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -64,7 +64,7 @@ export const surfaces: Surface[] = [
     aliases: ["horganyzott", "Zn", "galvanized steel", "horgany"],
     shortDescription:
       "Horganyzott acél: speciális tapadás és korrózióvédelmi rétegrendek.",
-    body: "A horganyzott acél Surface SEO- és szakmai szempontból is fontos (festék horganyzott acélra). A kapcsolódó termékek csak ellenőrzött gyártói alkalmazási megadások alapján kapnak applicableToSurface élt.",
+    body: "A horganyzott acél felület SEO- és szakmai szempontból is fontos (festék horganyzott acélra). A kapcsolódó termékek csak ellenőrzött gyártói alkalmazási megadások alapján kapnak alkalmazási kapcsolatot.",
     status: "published",
     indexable: true,
     seoTitle: "Festék horganyzott acélra | FESTÉKINDEX",
@@ -81,7 +81,7 @@ export const surfaces: Surface[] = [
     aliases: ["betonfelület", "concrete"],
     shortDescription:
       "Beton és ásványi aljzatok: padlóbevonatok, betonvédelem, speciális rendszerek.",
-    body: "A beton Surface a padlóbevonatok, betonvédelem és egyes speciális bevonatok (pl. klórkaucsuk) közös dimenziója. Külön Category (pl. Padlóbevonatok) mellett a Surface a „mire megy” kérdést válaszolja meg SEO-szinten is.",
+    body: "A beton felület a padlóbevonatok, betonvédelem és egyes speciális bevonatok (pl. klórkaucsuk) közös dimenziója. A padlóbevonatok kategóriája mellett ez a felülettípus a „mire megy” kérdést válaszolja meg.",
     status: "published",
     indexable: true,
     seoTitle: "Festék betonra | Beton felületek | FESTÉKINDEX",
@@ -98,12 +98,12 @@ export const surfaces: Surface[] = [
     aliases: ["vakolt felület", "ásványi vakolat"],
     shortDescription:
       "Vakolt falak és homlokzatok: falfestékek, homlokzatfestékek, vékonyvakolatok.",
-    body: "A vakolat Surface a dekoratív és homlokzati bevonatok gyakori aljzata. Beltéri falfestékek és homlokzati rendszerek applicableToSurface éllel kapcsolódhatnak ide, a Category dimenziótól függetlenül.",
+    body: "A vakolat felület a dekoratív és homlokzati bevonatok gyakori aljzata. Beltéri falfestékek és homlokzati rendszerek gyártói alkalmazási megadás alapján kapcsolódhatnak ide, a marketing-kategóriáktól függetlenül.",
     status: "published",
     indexable: true,
     seoTitle: "Festék vakolatra | FESTÉKINDEX",
     seoDescription:
-      "Vakolt felületekre alkalmazható festékek a FESTÉKINDEX Surface hálójában.",
+      "Vakolt felületekre alkalmazható festékek a FESTÉKINDEX felületkatalógusában.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -115,7 +115,7 @@ export const surfaces: Surface[] = [
     aliases: ["gipszkarton lap", "GK", "drywall"],
     shortDescription:
       "Gipszkarton: beltéri falfestékek, alapozók és felületképző rendszerek.",
-    body: "A gipszkarton Surface tipikusan beltéri dekoratív bevonatokhoz kapcsolódik. Alapozók és falfestékek applicableToSurface relationnel jelennek meg itt, ha a gyártó megadja az aljzatot.",
+    body: "A gipszkarton felület tipikusan beltéri dekoratív bevonatokhoz kapcsolódik. Alapozók és falfestékek gyártói alkalmazási megadás alapján jelennek meg itt, ha a gyártó megadja az aljzatot.",
     status: "published",
     indexable: true,
     seoTitle: "Festék gipszkartonra | FESTÉKINDEX",
@@ -132,7 +132,7 @@ export const surfaces: Surface[] = [
     aliases: ["MDF lap", "közepes sűrűségű farostlemez"],
     shortDescription:
       "MDF: tapadóhidak, alapozók és bevonatok bútor- és beltéri alkalmazásokhoz.",
-    body: "Az MDF Surface a faipari és beltéri speciális alapozók gyakori célfelülete. A termék marketingje helyett a gyártói alkalmazási lista dönti el az applicableToSurface élt.",
+    body: "Az MDF felület a faipari és beltéri speciális alapozók gyakori célfelülete. A termék marketingje helyett a gyártói alkalmazási lista dönti el az alkalmazási kapcsolatot.",
     status: "published",
     indexable: true,
     seoTitle: "Festék MDF-re | FESTÉKINDEX",
@@ -148,7 +148,7 @@ export const surfaces: Surface[] = [
     aliases: ["OSB lap", "oriented strand board"],
     shortDescription:
       "OSB: tapadásjavító alapozók és bevonatok szerkezeti / beltéri felületekre.",
-    body: "Az OSB Surface olyan termékekhez kapcsolódik, amelyeket a gyártó OSB-re is megad (pl. tapadóhíd). A Surface dimenzió lehetővé teszi a „festék OSB-re” jellegű SEO hubokat.",
+    body: "Az OSB felület olyan termékekhez kapcsolódik, amelyeket a gyártó OSB-re is megad (pl. tapadóhíd). A felülettípus lehetővé teszi a „festék OSB-re” jellegű szakmai áttekintést.",
     status: "published",
     indexable: true,
     seoTitle: "Festék OSB-re | FESTÉKINDEX",
@@ -164,7 +164,7 @@ export const surfaces: Surface[] = [
     aliases: ["csempe", "kerámia", "tile", "mázas kerámia"],
     shortDescription:
       "Kerámia és csempe: speciális tapadású alapozók és átvonó rendszerek.",
-    body: "A kerámia/csempe Surface a nehezen tapadó, mázas felületek szakmai dimenziója. Ide tartoznak a hídképző / tapadó alapozók, ha a gyártó csempét vagy kerámiát is felsorol.",
+    body: "A kerámia/csempe felület a nehezen tapadó, mázas felületek szakmai dimenziója. Ide tartoznak a hídképző / tapadó alapozók, ha a gyártó csempét vagy kerámiát is felsorol.",
     status: "published",
     indexable: true,
     seoTitle: "Festék csempére | Kerámia felületek | FESTÉKINDEX",
@@ -181,7 +181,7 @@ export const surfaces: Surface[] = [
     aliases: ["műanyag felület", "PVC", "plastic"],
     shortDescription:
       "Műanyag és PVC jellegű felületek: speciális tapadás és megfelelő rendszer.",
-    body: "A műanyag Surface olyan termékekhez kapcsolódik, amelyeket a gyártó műanyagra, PVC-re vagy hasonló aljzatra is megad. A FACTOR „A fára” marketing nem zárja ki a Surface-kapcsolatot, ha az adatlap műanyagot is tartalmaz.",
+    body: "A műanyag felület olyan termékekhez kapcsolódik, amelyeket a gyártó műanyagra, PVC-re vagy hasonló aljzatra is megad. A FACTOR „A fára” marketing nem zárja ki a műanyag felületre való alkalmazást, ha a gyártói adatlap műanyagot is tartalmaz.",
     status: "published",
     indexable: true,
     seoTitle: "Festék műanyagra | FESTÉKINDEX",
