@@ -140,10 +140,7 @@ a {
   color: #72b4dc;
 }
 
-/*
- * Sidebar brand build on load (~1.3s total):
- * pause 200ms → tiles every 200ms → wordmark after colours.
- */
+/* Home detail panel: rebuild mark colours on every selection */
 @keyframes brand-tile-in {
   from {
     opacity: 0;
@@ -155,44 +152,35 @@ a {
   }
 }
 
-@keyframes brand-name-in {
-  from {
-    opacity: 0;
-    transform: translateX(-6px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.brand-mark--detail {
+  width: 28px;
+  height: 28px;
+  gap: 3px;
+  margin-bottom: 14px;
 }
 
-.brand .brand-mark i {
+.brand-mark--detail i {
+  border-radius: 1px 3px 1px 3px;
   opacity: 0;
   transform: scale(0.55);
   animation: brand-tile-in 0.28s ease-out forwards;
 }
 
-.brand .brand-mark i:nth-child(1) {
-  animation-delay: 0.2s;
+.brand-mark--detail i:nth-child(1) {
+  animation-delay: 0.12s;
 }
-.brand .brand-mark i:nth-child(2) {
-  animation-delay: 0.4s;
+.brand-mark--detail i:nth-child(2) {
+  animation-delay: 0.3s;
 }
-.brand .brand-mark i:nth-child(3) {
-  animation-delay: 0.6s;
+.brand-mark--detail i:nth-child(3) {
+  animation-delay: 0.48s;
 }
-.brand .brand-mark i:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.brand .name {
-  opacity: 0;
-  animation: brand-name-in 0.3s ease-out 1.05s forwards;
+.brand-mark--detail i:nth-child(4) {
+  animation-delay: 0.66s;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .brand .brand-mark i,
-  .brand .name {
+  .brand-mark--detail i {
     opacity: 1;
     transform: none;
     animation: none;
@@ -997,14 +985,7 @@ a {
   min-height: 430px;
 }
 
-.detail:before {
-  content: "";
-  display: block;
-  width: 34px;
-  height: 3px;
-  background: linear-gradient(90deg, #1978b4, #aebac4);
-  margin-bottom: 14px;
-}
+/* Accent bar replaced by animated BrandMark in the detail panel */
 
 .detail-panel-label {
   display: none;

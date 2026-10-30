@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
+import { BrandMark } from "@/components/layout/BrandMark";
 import { SearchBox } from "@/components/search/SearchBox";
 import type { EntityType, SearchHit } from "@/lib/data/types";
 import type { RelationPreview } from "@/lib/data/repository";
@@ -177,6 +178,7 @@ export function HomeExplorer({
             className="detail-body"
             key={selected?.id ?? "empty"}
           >
+            <BrandMark className="brand-mark--detail" />
             {selected ? (
               <>
                 <div className="dtype">{selected.kindLabel}</div>
