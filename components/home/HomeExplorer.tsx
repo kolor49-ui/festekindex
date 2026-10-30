@@ -50,13 +50,26 @@ export function HomeExplorer({
   );
   const detailRef = useRef<HTMLElement>(null);
 
-  /** On stacked mobile layout the detail sits below the list — scroll it into view on select. */
+  /**
+   * Keep the detail panel top (logo + title) in view on every selection.
+   * Desktop sticky can leave the panel top above the viewport after list scrolling;
+   * mobile stacks the detail below the list.
+   */
   function selectHit(id: string) {
     setSelectedId(id);
     if (typeof window === "undefined") return;
-    if (!window.matchMedia("(max-width: 980px)").matches) return;
     requestAnimationFrame(() => {
-      detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const el = detailRef.current;
+      if (!el) return;
+      el.scrollTop = 0;
+      const rect = el.getBoundingClientRect();
+      const clearance = 88;
+      const mobile = window.matchMedia("(max-width: 980px)").matches;
+      const topHidden = rect.top < clearance;
+      const topTooLow = rect.top > window.innerHeight * 0.4;
+      if (mobile || topHidden || topTooLow) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   }
 

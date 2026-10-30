@@ -983,6 +983,7 @@ a {
   position: sticky;
   top: 78px;
   min-height: 430px;
+  scroll-margin-top: 88px;
 }
 
 /* Accent bar replaced by animated BrandMark in the detail panel */
