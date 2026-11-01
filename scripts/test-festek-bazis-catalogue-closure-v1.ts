@@ -161,7 +161,8 @@ section("Baselines / counts");
     (p) =>
       !p.id.startsWith("prod_trilak_") &&
       !p.id.startsWith("prod_jub_") &&
-      !p.id.startsWith("prod_poli_farbe_"),
+      !p.id.startsWith("prod_poli_farbe_") &&
+      !p.id.startsWith("prod_remmers_"),
   );
   assert.equal(
     festekBazisProducts.length,

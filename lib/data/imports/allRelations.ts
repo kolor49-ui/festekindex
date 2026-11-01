@@ -11,20 +11,24 @@ import { ppgTrilak42Relations } from "./ppgTrilak42V1/relations";
 import { jub95Relations } from "./jub95V1/relations";
 import { poli6Relations } from "./poli6V1/relations";
 import { poli65ReviewRelations } from "./poli65ReviewV1/relations";
+import { remmersRelations } from "./remmersV1/relations";
 
 export const allRelations = mergeRelationsByCanonicalKey(
   mergeRelationsByCanonicalKey(
     mergeRelationsByCanonicalKey(
       mergeRelationsByCanonicalKey(
         mergeRelationsByCanonicalKey(
-          mergeRelationsByCanonicalKey(relationsBase, festekBazisV02Seed.relations),
-          festekBazisEnrichmentV1.relations,
+          mergeRelationsByCanonicalKey(
+            mergeRelationsByCanonicalKey(relationsBase, festekBazisV02Seed.relations),
+            festekBazisEnrichmentV1.relations,
+          ),
+          ppgTrilak42Relations,
         ),
-        ppgTrilak42Relations,
+        jub95Relations,
       ),
-      jub95Relations,
+      poli6Relations,
     ),
-    poli6Relations,
+    poli65ReviewRelations,
   ),
-  poli65ReviewRelations,
+  remmersRelations,
 );

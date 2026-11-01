@@ -120,6 +120,11 @@ section("Coverage + provenance");
           /polifarbe\.hu/i.test(src.url || ""),
           `${sid} Poli-Farbe official URL`,
         );
+      } else if (p.id.startsWith("prod_remmers_")) {
+        assert.ok(
+          /remmers\.hu|media\.remmers\.com/i.test(src.url || ""),
+          `${sid} Remmers official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),

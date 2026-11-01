@@ -1,0 +1,10 @@
+export { remmersProducts } from "./products";
+export { remmersSources } from "./sources";
+export { remmersRelations } from "./relations";
+export { remmersDescriptions } from "./descriptions";
+export { remmersProfessionalDescriptions } from "./professionalDescriptions";
+export { remmersBrands } from "./brands";
+export { applyRemmersV1 } from "./apply";
+export const REMMERS_V1_COUNT = 91;
+export const REMMERS_V1_PASS_COUNT = 45;
+export const REMMERS_V1_REVIEW_COUNT = 46;

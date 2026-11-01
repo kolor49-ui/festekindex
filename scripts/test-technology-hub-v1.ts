@@ -366,16 +366,21 @@ const jubWithoutTech = without.filter((id) => id.startsWith("prod_jub_"));
 const poliWithoutTech = without.filter((id) =>
   id.startsWith("prod_poli_farbe_"),
 );
+const remmersWithoutTech = without.filter((id) =>
+  id.startsWith("prod_remmers_"),
+);
 assert.equal(trilakWithoutTech.length, 42);
 assert.equal(jubWithoutTech.length, 95);
 assert.equal(poliWithoutTech.length, 71);
-assert.equal(products.length - withTech.size, 5 + 42 + 95 + 71);
+assert.equal(remmersWithoutTech.length, 91);
+assert.equal(products.length - withTech.size, 5 + 42 + 95 + 71 + 91);
 assert.deepEqual(
   without.filter(
     (id) =>
       !id.startsWith("prod_trilak_") &&
       !id.startsWith("prod_jub_") &&
-      !id.startsWith("prod_poli_farbe_"),
+      !id.startsWith("prod_poli_farbe_") &&
+      !id.startsWith("prod_remmers_"),
   ),
   festekBazisWithoutTech.sort(),
 );

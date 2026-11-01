@@ -37,7 +37,8 @@ section("53-Product audit coverage");
     if (
       p.id.startsWith("prod_trilak_") ||
       p.id.startsWith("prod_jub_") ||
-      p.id.startsWith("prod_poli_farbe_")
+      p.id.startsWith("prod_poli_farbe_") ||
+      p.id.startsWith("prod_remmers_")
     ) {
       continue;
     }
@@ -115,7 +116,8 @@ section("SPECIFIC / GENERIC evidence + no inheritance");
     if (
       p.id.startsWith("prod_trilak_") ||
       p.id.startsWith("prod_jub_") ||
-      p.id.startsWith("prod_poli_farbe_")
+      p.id.startsWith("prod_poli_farbe_") ||
+      p.id.startsWith("prod_remmers_")
     ) {
       continue;
     }

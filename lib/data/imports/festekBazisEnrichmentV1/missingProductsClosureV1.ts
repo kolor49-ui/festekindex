@@ -118,6 +118,9 @@ export const POLI_65_REVIEW_COUNT = 65;
 /** Prakticolor sub-brand added in v8.4 REVIEW wave. */
 export const V84_POLI_REVIEW_NEW_BRAND_COUNT = 1;
 
+/** Remmers wood+construction overlay (PASS+REVIEW; HOLD excluded; noindex). */
+export const REMMERS_V1_COUNT = 91;
+
 /**
  * Official manufacturer website sources added in v8.1 (sources.ts),
  * outside Festék Bázis enrichment overlays.
@@ -136,7 +139,8 @@ export function expectedProductCountAfterClosure(): number {
     PPG_TRILAK_42_PASS_COUNT +
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
-    POLI_65_REVIEW_COUNT
+    POLI_65_REVIEW_COUNT +
+    REMMERS_V1_COUNT
   );
 }
 
@@ -170,6 +174,7 @@ export function expectedSearchDocumentsAfterClosure(): number {
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
+    REMMERS_V1_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
@@ -211,7 +216,8 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     PPG_TRILAK_42_PASS_COUNT +
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
-    POLI_65_REVIEW_COUNT
+    POLI_65_REVIEW_COUNT +
+    REMMERS_V1_COUNT
   );
 }
 
