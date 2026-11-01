@@ -67,8 +67,8 @@ section("eligibility");
   assert.equal(counts.organization, 16, "v8.1 manufacturer expansion");
   assert.equal(
     counts.brand,
-    35,
-    "published brands only (incl. PPG + JUB + Poli sub-brands)",
+    36,
+    "published brands only (incl. PPG + JUB + Poli + Düfa sub-brands)",
   );
   assert.equal(counts.productFamily, 8);
   assert.equal(counts.technology, 9);

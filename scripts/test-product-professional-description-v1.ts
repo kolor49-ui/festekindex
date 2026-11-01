@@ -125,6 +125,11 @@ section("Coverage + provenance");
           /remmers\.hu|media\.remmers\.com/i.test(src.url || ""),
           `${sid} Remmers official URL`,
         );
+      } else if (p.id.startsWith("prod_dufa_")) {
+        assert.ok(
+          /dufa-hungary\.hu/i.test(src.url || ""),
+          `${sid} Düfa official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),

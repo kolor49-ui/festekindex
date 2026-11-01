@@ -54,6 +54,11 @@ import {
   remmersProducts,
 } from "./imports/remmersV1";
 import {
+  applyDufaV1,
+  dufaBrands,
+  dufaProducts,
+} from "./imports/dufaV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -72,16 +77,19 @@ const brands = mergeById(
     mergeById(
       mergeById(
         mergeById(
-          [...brandsBase, festekBazisV02Seed.archivedBrand7016],
-          festekBazisV02Seed.brands,
+          mergeById(
+            [...brandsBase, festekBazisV02Seed.archivedBrand7016],
+            festekBazisV02Seed.brands,
+          ),
+          jub95Brands,
         ),
-        jub95Brands,
+        poli6Brands,
       ),
-      poli6Brands,
+      poli65ReviewBrands,
     ),
-    poli65ReviewBrands,
+    remmersBrands,
   ),
-  remmersBrands,
+  dufaBrands,
 );
 const productFamilies = mergeById(
   productFamiliesBase,
@@ -91,14 +99,17 @@ const productsMerged = mergeById(
   mergeById(
     mergeById(
       mergeById(
-        mergeById(mergeById(productsBase, festekBazisV02Seed.products), ppgTrilak42Products),
-        jub95Products,
+        mergeById(
+          mergeById(mergeById(productsBase, festekBazisV02Seed.products), ppgTrilak42Products),
+          jub95Products,
+        ),
+        poli6Products,
       ),
-      poli6Products,
+      poli65ReviewProducts,
     ),
-    poli65ReviewProducts,
+    remmersProducts,
   ),
-  remmersProducts,
+  dufaProducts,
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
@@ -127,9 +138,10 @@ const jub95 = applyJub95V1(ppg42.products, ppg42.sources, ppg42.relations);
 const poli6 = applyPoli6V1(jub95.products, jub95.sources, jub95.relations);
 const poli65 = applyPoli65ReviewV1(poli6.products, poli6.sources, poli6.relations);
 const remmers = applyRemmersV1(poli65.products, poli65.sources, poli65.relations);
-const products = remmers.products;
-const relations = remmers.relations;
-const sources = remmers.sources;
+const dufa = applyDufaV1(remmers.products, remmers.sources, remmers.relations);
+const products = dufa.products;
+const relations = dufa.relations;
+const sources = dufa.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

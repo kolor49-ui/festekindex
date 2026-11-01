@@ -75,7 +75,8 @@ section("Coverage — FESTÉK BÁZIS Products");
       !p.id.startsWith("prod_trilak_") &&
       !p.id.startsWith("prod_jub_") &&
       !p.id.startsWith("prod_poli_farbe_") &&
-      !p.id.startsWith("prod_remmers_")
+      !p.id.startsWith("prod_remmers_") &&
+      !p.id.startsWith("prod_dufa_")
     ) {
       assert.ok(descIds.has(p.id), `missing description for ${p.id}`);
     }

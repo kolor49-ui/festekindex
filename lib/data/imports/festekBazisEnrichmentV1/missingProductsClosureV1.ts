@@ -121,6 +121,9 @@ export const V84_POLI_REVIEW_NEW_BRAND_COUNT = 1;
 /** Remmers wood+construction overlay (PASS+REVIEW; HOLD excluded; noindex). */
 export const REMMERS_V1_COUNT = 91;
 
+/** Düfa / Meffert Hungária overlay (REVIEW wave; HOLD excluded; noindex). */
+export const DUFA_V1_COUNT = 57;
+
 /**
  * Official manufacturer website sources added in v8.1 (sources.ts),
  * outside Festék Bázis enrichment overlays.
@@ -140,7 +143,8 @@ export function expectedProductCountAfterClosure(): number {
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
-    REMMERS_V1_COUNT
+    REMMERS_V1_COUNT +
+    DUFA_V1_COUNT
   );
 }
 
@@ -175,11 +179,13 @@ export function expectedSearchDocumentsAfterClosure(): number {
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
     REMMERS_V1_COUNT +
+    DUFA_V1_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
     V83_POLI_NEW_BRAND_COUNT +
-    V84_POLI_REVIEW_NEW_BRAND_COUNT
+    V84_POLI_REVIEW_NEW_BRAND_COUNT +
+    1 // brand_profitec
   );
 }
 
@@ -217,7 +223,8 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
-    REMMERS_V1_COUNT
+    REMMERS_V1_COUNT +
+    DUFA_V1_COUNT
   );
 }
 

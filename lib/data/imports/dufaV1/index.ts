@@ -1,0 +1,10 @@
+export { dufaProducts } from "./products";
+export { dufaSources } from "./sources";
+export { dufaRelations } from "./relations";
+export { dufaDescriptions } from "./descriptions";
+export { dufaProfessionalDescriptions } from "./professionalDescriptions";
+export { dufaBrands } from "./brands";
+export { applyDufaV1 } from "./apply";
+export const DUFA_V1_COUNT = 57;
+export const DUFA_V1_PASS_COUNT = 0;
+export const DUFA_V1_REVIEW_COUNT = 57;
