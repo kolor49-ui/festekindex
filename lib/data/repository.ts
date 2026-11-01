@@ -44,6 +44,11 @@ import {
   poli6Products,
 } from "./imports/poli6V1";
 import {
+  applyPoli65ReviewV1,
+  poli65ReviewBrands,
+  poli65ReviewProducts,
+} from "./imports/poli65ReviewV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -60,12 +65,15 @@ const organizations = mergeById(
 const brands = mergeById(
   mergeById(
     mergeById(
-      [...brandsBase, festekBazisV02Seed.archivedBrand7016],
-      festekBazisV02Seed.brands,
+      mergeById(
+        [...brandsBase, festekBazisV02Seed.archivedBrand7016],
+        festekBazisV02Seed.brands,
+      ),
+      jub95Brands,
     ),
-    jub95Brands,
+    poli6Brands,
   ),
-  poli6Brands,
+  poli65ReviewBrands,
 );
 const productFamilies = mergeById(
   productFamiliesBase,
@@ -73,10 +81,13 @@ const productFamilies = mergeById(
 );
 const productsMerged = mergeById(
   mergeById(
-    mergeById(mergeById(productsBase, festekBazisV02Seed.products), ppgTrilak42Products),
-    jub95Products,
+    mergeById(
+      mergeById(mergeById(productsBase, festekBazisV02Seed.products), ppgTrilak42Products),
+      jub95Products,
+    ),
+    poli6Products,
   ),
-  poli6Products,
+  poli65ReviewProducts,
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
@@ -103,9 +114,10 @@ const ppg42 = applyPpgTrilak42V1(
 );
 const jub95 = applyJub95V1(ppg42.products, ppg42.sources, ppg42.relations);
 const poli6 = applyPoli6V1(jub95.products, jub95.sources, jub95.relations);
-const products = poli6.products;
-const relations = poli6.relations;
-const sources = poli6.sources;
+const poli65 = applyPoli65ReviewV1(poli6.products, poli6.sources, poli6.relations);
+const products = poli65.products;
+const relations = poli65.relations;
+const sources = poli65.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

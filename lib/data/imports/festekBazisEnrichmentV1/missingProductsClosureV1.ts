@@ -112,6 +112,12 @@ export const POLI_6_PASS_COUNT = 6;
 /** Poli-Farbe sub-brands added in v8.3 (umbrella brand_poli_farbe already present). */
 export const V83_POLI_NEW_BRAND_COUNT = 4;
 
+/** Poli-Farbe v8.4 REVIEW wave (65 products; HOLD still excluded). */
+export const POLI_65_REVIEW_COUNT = 65;
+
+/** Prakticolor sub-brand added in v8.4 REVIEW wave. */
+export const V84_POLI_REVIEW_NEW_BRAND_COUNT = 1;
+
 /**
  * Official manufacturer website sources added in v8.1 (sources.ts),
  * outside Festék Bázis enrichment overlays.
@@ -129,7 +135,8 @@ export function expectedProductCountAfterClosure(): number {
     expectedProductCountAfterCatalogueClosure() +
     PPG_TRILAK_42_PASS_COUNT +
     JUB_95_PASS_COUNT +
-    POLI_6_PASS_COUNT
+    POLI_6_PASS_COUNT +
+    POLI_65_REVIEW_COUNT
   );
 }
 
@@ -162,10 +169,12 @@ export function expectedSearchDocumentsAfterClosure(): number {
     PPG_TRILAK_42_PASS_COUNT +
     JUB_95_PASS_COUNT +
     POLI_6_PASS_COUNT +
+    POLI_65_REVIEW_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
-    V83_POLI_NEW_BRAND_COUNT
+    V83_POLI_NEW_BRAND_COUNT +
+    V84_POLI_REVIEW_NEW_BRAND_COUNT
   );
 }
 
@@ -201,7 +210,8 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     CATALOGUE_CLOSURE_V1_RELATION_DELTAS.belongsToCategory +
     PPG_TRILAK_42_PASS_COUNT +
     JUB_95_PASS_COUNT +
-    POLI_6_PASS_COUNT
+    POLI_6_PASS_COUNT +
+    POLI_65_REVIEW_COUNT
   );
 }
 

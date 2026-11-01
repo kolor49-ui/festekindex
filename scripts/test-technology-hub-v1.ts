@@ -368,8 +368,8 @@ const poliWithoutTech = without.filter((id) =>
 );
 assert.equal(trilakWithoutTech.length, 42);
 assert.equal(jubWithoutTech.length, 95);
-assert.equal(poliWithoutTech.length, 6);
-assert.equal(products.length - withTech.size, 5 + 42 + 95 + 6);
+assert.equal(poliWithoutTech.length, 71);
+assert.equal(products.length - withTech.size, 5 + 42 + 95 + 71);
 assert.deepEqual(
   without.filter(
     (id) =>

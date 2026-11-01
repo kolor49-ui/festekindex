@@ -150,13 +150,13 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 18, f: 2, b: 4, o: 4, t: 4, s: 1, k: 0 },
-  cat_homlokzat: { p: 34, f: 2, b: 5, o: 3, t: 4, s: 5, k: 0 },
-  cat_dekor: { p: 61, f: 2, b: 9, o: 4, t: 4, s: 5, k: 0 },
-  cat_epitesi: { p: 40, f: 0, b: 7, o: 1, t: 0, s: 0, k: 0 },
-  cat_ipari: { p: 25, f: 2, b: 4, o: 3, t: 5, s: 11, k: 0 },
+  cat_faipar: { p: 21, f: 2, b: 4, o: 4, t: 4, s: 1, k: 0 },
+  cat_homlokzat: { p: 50, f: 2, b: 8, o: 4, t: 4, s: 5, k: 0 },
+  cat_dekor: { p: 95, f: 2, b: 11, o: 4, t: 4, s: 5, k: 0 },
+  cat_epitesi: { p: 49, f: 0, b: 9, o: 2, t: 0, s: 0, k: 0 },
+  cat_ipari: { p: 27, f: 2, b: 4, o: 3, t: 5, s: 11, k: 0 },
   cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
-  cat_padlo: { p: 5, f: 0, b: 1, o: 1, t: 3, s: 2, k: 0 },
+  cat_padlo: { p: 6, f: 0, b: 2, o: 2, t: 3, s: 2, k: 0 },
   cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
   cat_tuzvedo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
 };
@@ -244,7 +244,7 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 18);
+  assert.equal(p.products.length, 21);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_lazuran"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_poli_boroka"));
@@ -308,12 +308,13 @@ section("Homlokzat company navigation");
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_ppg_trilak"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_jub_hu"));
-  assert.equal(p.derivedOrganizations.length, 3);
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_poli_farbe"));
+  assert.equal(p.derivedOrganizations.length, 4);
   assert.equal(p.directOrganizations.length, 0);
   const model = buildCategoryHubModel(p.category)!;
   assert.ok(model.organizationContext, "Homlokzat must expose Cégek");
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 3);
+  assert.equal(model.organizationContext!.unified.length, 4);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.href === "/cegek/festek-bazis-zrt",
@@ -326,6 +327,11 @@ section("Homlokzat company navigation");
   );
   assert.ok(
     model.organizationContext!.unified.some((o) => o.href === "/cegek/jub-kft"),
+  );
+  assert.ok(
+    model.organizationContext!.unified.some(
+      (o) => o.href === "/cegek/poli-farbe",
+    ),
   );
   const html = renderToStaticMarkup(
     createElement(CategoryHubPage, { model }),
