@@ -34,9 +34,11 @@ export function listMetadata(
   title: string,
   description: string,
   path: string,
+  options?: { indexable?: boolean },
 ): Metadata {
   const url = `${SITE_ORIGIN}${path}`;
   const pageTitle = stripBrandTitleSuffix(title);
+  const indexable = options?.indexable ?? true;
   return {
     title: pageTitle,
     description,
@@ -49,5 +51,8 @@ export function listMetadata(
       locale: "hu_HU",
       type: "website",
     },
+    robots: indexable
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   };
 }

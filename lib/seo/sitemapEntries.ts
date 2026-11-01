@@ -11,6 +11,8 @@ import {
 import { isPubliclyIndexable } from "@/lib/seo/publicIndexability";
 
 export function listPublishedForSitemap(): SitemapEntry[] {
+  // /termekek and /feluletek stay out of the sitemap while all child detail
+  // pages are noindex (list hubs themselves are also noindex).
   const entries: SitemapEntry[] = [
     { path: "/", lastModified: "2026-10-05" },
     { path: "/cegek", lastModified: "2026-10-05" },
@@ -19,8 +21,6 @@ export function listPublishedForSitemap(): SitemapEntry[] {
     { path: "/kategoriak", lastModified: "2026-10-05" },
     { path: "/tudastar", lastModified: "2026-10-05" },
     { path: "/termekcsaladok", lastModified: "2026-10-05" },
-    { path: "/termekek", lastModified: "2026-10-05" },
-    { path: "/feluletek", lastModified: "2026-10-05" },
   ];
 
   for (const entity of listAllEntities()) {

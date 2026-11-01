@@ -7,6 +7,7 @@ export const metadata: Metadata = listMetadata(
   "Felületek | FESTÉKINDEX",
   "Festékipari felületek és aljzatok: fa, acél, beton, vakolat és további felületek termékekkel és bevonatokkal.",
   "/feluletek",
+  { indexable: false },
 );
 
 export default function FeluletekPage() {

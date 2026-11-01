@@ -5,8 +5,9 @@ import { EntityList, Breadcrumbs } from "@/components/entity/EntityUI";
 
 export const metadata: Metadata = listMetadata(
   "Termékek | FESTÉKINDEX",
-  "Festékipari termékek a FESTÉKINDEX adatbázisában.",
+  "Festékipari termékek márkákhoz, termékcsaládokhoz, felületekhez és technológiákhoz kötve.",
   "/termekek",
+  { indexable: false },
 );
 
 export default function TermekekPage() {

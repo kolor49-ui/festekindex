@@ -35,6 +35,7 @@ export async function generateMetadata({
       description:
         "Globális keresés cégek, márkák, technológiák, kategóriák és tudástár között.",
       alternates: { canonical },
+      robots: { index: false, follow: true },
       openGraph: {
         title,
         description:
@@ -48,14 +49,15 @@ export async function generateMetadata({
   }
 
   const title = stripBrandTitleSuffix(`Keresés: ${term} | FESTÉKINDEX`);
+  const description = `Találatok a „${term}” kifejezésre cégek, márkák, technológiák és tudástár között.`;
   return {
     title,
-    description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
+    description,
     alternates: { canonical },
     robots: { index: false, follow: true },
     openGraph: {
       title,
-      description: `Találatok a „${term}” kifejezésre a FESTÉKINDEX adatbázisában.`,
+      description,
       url: canonical,
       siteName: "FESTÉKINDEX",
       locale: "hu_HU",

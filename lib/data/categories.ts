@@ -35,7 +35,7 @@ export const categories: Category[] = [
     indexable: true,
     seoTitle: "Dekor- és falfesték | FESTÉKINDEX",
     seoDescription:
-      "Dekoratív és falfesték rendszerek, gyártók és márkák.",
+      "Dekoratív és falfesték rendszerek: beltéri és kültéri falfestékek, gyártók és márkák a FESTÉKINDEX-en.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -73,7 +73,7 @@ export const categories: Category[] = [
     indexable: true,
     seoTitle: "Homlokzat és hőszigetelés | FESTÉKINDEX",
     seoDescription:
-      "Homlokzati bevonatok és hőszigetelő rendszerek, márkák és anyagok.",
+      "Homlokzati bevonatok és hőszigetelő rendszerek: márkák, anyagok és szakmai kapcsolatok a FESTÉKINDEX-en.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -91,7 +91,7 @@ export const categories: Category[] = [
     indexable: true,
     seoTitle: "Ipari bevonat és korrózióvédelem | FESTÉKINDEX",
     seoDescription:
-      "Ipari bevonatrendszerek, korrózióvédelem, gyártók és technológiák.",
+      "Ipari bevonatrendszerek és korrózióvédelem: gyártók, márkák és technológiák a FESTÉKINDEX-en.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },
@@ -158,7 +158,8 @@ export const categories: Category[] = [
     status: "published",
     indexable: true,
     seoTitle: "Porfesték | FESTÉKINDEX",
-    seoDescription: "Porfesték rendszerek, márkák és szakmai tudásanyag.",
+    seoDescription:
+      "Porfesték rendszerek, ipari porbevonatok, márkák és szakmai tudásanyag a FESTÉKINDEX-en.",
     sourceIds: [],
     updatedAt: "2026-10-05",
   },

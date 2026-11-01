@@ -340,15 +340,25 @@ console.log("Tech/Category/Knowledge OK");
 
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
-assert.equal(sm.length, 36, `expected 36 sitemap URLs, got ${sm.length}`);
+// 7 list/home + entity details; /termekek+/feluletek omitted while children noindex.
+// PPG TRILAK unlocked after body quality pass → 8 orgs.
+assert.equal(sm.length, 35, `expected 35 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
 const detailBrands = sm.filter(
   (e) => e.path.startsWith("/markak/") && e.path !== "/markak",
 );
-assert.equal(detailOrgs.length, 7, "pre-existing orgs only (v8.1 makers locked noindex)");
+assert.equal(detailOrgs.length, 8, "pre-existing orgs + PPG TRILAK; v8.1 makers locked noindex");
 assert.equal(detailBrands.length, 9, "pre-existing brands + Héra (new brands locked noindex)");
+assert.ok(
+  !sm.some((e) => e.path === "/termekek" || e.path === "/feluletek"),
+  "locked-child list hubs must stay out of sitemap",
+);
+assert.ok(
+  sm.some((e) => e.path === "/cegek/ppg-trilak"),
+  "PPG TRILAK must be in sitemap after body quality pass",
+);
 assert.ok(sm.some((e) => e.path === "/cegek/festek-bazis-zrt"));
 assert.ok(sm.some((e) => e.path === "/markak/valmor"));
 assert.ok(sm.some((e) => e.path === "/markak/factor"));

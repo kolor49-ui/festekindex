@@ -60,7 +60,7 @@ export const organizations: Organization[] = [
     indexable: true,
     seoTitle: "Wagner Group | FESTÉKINDEX",
     seoDescription:
-      "Wagner Group gyártó szervezet és szórástechnikai kapcsolatok.",
+      "Wagner Group: szórástechnikai gyártó szervezet, Wagner márka és magyarországi forgalmazói kapcsolatok.",
     sourceIds: ["src_wagner_official"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-10-01",
@@ -96,11 +96,12 @@ export const organizations: Organization[] = [
     roles: ["manufacturer"],
     website: "https://www.trilak.hu",
     shortDescription: "Magyarországi festékgyártó — Héra márkakapcsolat.",
-    body: "A PPG TRILAK Kft. a Héra márka magyarországi gyártója; a márka külön adatlapja a kapcsolódó márkaoldalon érhető el.",
+    body: "A PPG TRILAK Kft. a Héra dekoratív festékmárka magyarországi gyártója; a márka részletes adatlapja a kapcsolódó márkaoldalon érhető el.",
     status: "published",
     indexable: true,
     seoTitle: "PPG TRILAK Kft. | FESTÉKINDEX",
-    seoDescription: "PPG TRILAK és Héra — magyar festékgyártó adatlap.",
+    seoDescription:
+      "PPG TRILAK Kft.: magyar festékgyártó, Héra márkakapcsolattal és szakmai adatlap a FESTÉKINDEX-en.",
     sourceIds: ["src_ppg_trilak"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-09-10",
@@ -121,7 +122,7 @@ export const organizations: Organization[] = [
     indexable: true,
     seoTitle: "Sika Hungária Kft. | FESTÉKINDEX",
     seoDescription:
-      "Sika Hungária: betonvédelem, vízszigetelés, ipari bevonatok.",
+      "Sika Hungária: betonvédelem, vízszigetelés, ipari bevonatok és padlórendszerek a FESTÉKINDEX-en.",
     sourceIds: ["src_sika_hu"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-09-10",
@@ -140,7 +141,8 @@ export const organizations: Organization[] = [
     status: "published",
     indexable: true,
     seoTitle: "M.L.S. Magyarország | FESTÉKINDEX",
-    seoDescription: "M.L.S. Magyarország: Wagner és Milesi forgalmazás.",
+    seoDescription:
+      "M.L.S. Magyarország: Wagner és Milesi forgalmazás, szórástechnika és faipari bevonatok.",
     sourceIds: ["src_wagner_official"],
     updatedAt: "2026-10-05",
   },

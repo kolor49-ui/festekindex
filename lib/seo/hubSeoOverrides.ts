@@ -41,19 +41,19 @@ export const ORG_HUB_SEO: Record<string, OrgHubSeoOverride> = {
 export const BRAND_HUB_SEO: Record<string, BrandHubSeoOverride> = {
   valmor: {
     title: "VALMOR festékek és bevonatok | FESTÉKINDEX",
-    lead: "Festék- és bevonatmárka a Festék Bázis Zrt. portfóliójában.",
+    lead: "Festék- és bevonatmárka a Festék Bázis Zrt. portfóliójában. A FESTÉKINDEX-en termékcsaládokkal, termékekkel és szakmai kapcsolatokkal jelenik meg; a gyártói háttér a Festék Bázis Zrt. adatlapján érhető el.",
     metaDescription:
-      "VALMOR festékek és bevonatok: termékcsaládok, termékek és szakmai kapcsolatok a FESTÉKINDEX-en.",
+      "VALMOR festékek és bevonatok: termékcsaládok, termékek és szakmai kapcsolatok a Festék Bázis Zrt. portfóliójában — FESTÉKINDEX.",
   },
   coror: {
     title: "COROR ipari bevonatok | FESTÉKINDEX",
-    lead: "Ipari és korrózióvédelmi bevonatmárka a Festék Bázis Zrt. portfóliójában.",
+    lead: "Ipari és korrózióvédelmi bevonatmárka a Festék Bázis Zrt. portfóliójában. A FESTÉKINDEX-en termékekkel, kategóriákkal és szakmai kapcsolatokkal jelenik meg; a gyártói háttér a Festék Bázis Zrt. adatlapján érhető el.",
     metaDescription:
       "COROR ipari bevonatok a Festék Bázis Zrt. portfóliójában: termékek, kategóriák és szakmai kapcsolatok a FESTÉKINDEX-en.",
   },
   factor: {
     title: "FACTOR faipari bevonatok | FESTÉKINDEX",
-    lead: "Faipari bevonatmárka a Festék Bázis Zrt. portfóliójában.",
+    lead: "Faipari bevonatmárka a Festék Bázis Zrt. portfóliójában. A FESTÉKINDEX-en termékekkel, felületekkel és szakmai kapcsolatokkal jelenik meg; a gyártói háttér a Festék Bázis Zrt. adatlapján érhető el.",
     metaDescription:
       "FACTOR faipari bevonatok a Festék Bázis Zrt. portfóliójában: termékek, felületek és szakmai kapcsolatok a FESTÉKINDEX-en.",
   },

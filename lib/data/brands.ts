@@ -32,7 +32,7 @@ export const brands: Brand[] = [
     indexable: true,
     seoTitle: "Wagner | FESTÉKINDEX",
     seoDescription:
-      "Wagner márka, Wagner Group és magyarországi forgalmazói kapcsolatok.",
+      "Wagner szórástechnikai márka: Wagner Group gyártó, M.L.S. Magyarország forgalmazás a FESTÉKINDEX-en.",
     sourceIds: ["src_wagner_official"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-10-01",

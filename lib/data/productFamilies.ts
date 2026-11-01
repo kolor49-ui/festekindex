@@ -34,7 +34,8 @@ export const productFamilies: ProductFamily[] = [
     status: "published",
     indexable: true,
     seoTitle: "Graco Ultra gépcsalád | FESTÉKINDEX",
-    seoDescription: "Graco Ultra kompakt airless festékszóró gépcsalád.",
+    seoDescription:
+      "Graco Ultra kompakt airless festékszóró gépcsalád — Graco márka és szórástechnika a FESTÉKINDEX-en.",
     sourceIds: ["src_graco_official"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-10-01",
@@ -50,7 +51,8 @@ export const productFamilies: ProductFamily[] = [
     status: "published",
     indexable: true,
     seoTitle: "Graco GX gépcsalád | FESTÉKINDEX",
-    seoDescription: "Graco GX belépő- és középkategóriás airless gépcsalád.",
+    seoDescription:
+      "Graco GX belépő- és középkategóriás airless gépcsalád — Graco márka a FESTÉKINDEX-en.",
     sourceIds: ["src_graco_official"],
     updatedAt: "2026-10-05",
     verifiedAt: "2026-10-01",
