@@ -150,11 +150,11 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 17, f: 2, b: 3, o: 3, t: 4, s: 1, k: 0 },
+  cat_faipar: { p: 18, f: 2, b: 4, o: 4, t: 4, s: 1, k: 0 },
   cat_homlokzat: { p: 34, f: 2, b: 5, o: 3, t: 4, s: 5, k: 0 },
-  cat_dekor: { p: 57, f: 2, b: 6, o: 3, t: 4, s: 5, k: 0 },
+  cat_dekor: { p: 61, f: 2, b: 9, o: 4, t: 4, s: 5, k: 0 },
   cat_epitesi: { p: 40, f: 0, b: 7, o: 1, t: 0, s: 0, k: 0 },
-  cat_ipari: { p: 24, f: 2, b: 3, o: 2, t: 5, s: 11, k: 0 },
+  cat_ipari: { p: 25, f: 2, b: 4, o: 3, t: 5, s: 11, k: 0 },
   cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
   cat_padlo: { p: 5, f: 0, b: 1, o: 1, t: 3, s: 2, k: 0 },
   cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
@@ -244,12 +244,14 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 17);
+  assert.equal(p.products.length, 18);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_lazuran"));
+  assert.ok(p.derivedBrands.some((b) => b.id === "brand_poli_boroka"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_ppg_trilak"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_jub_hu"));
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_poli_farbe"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_sikkens"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_milesi"));
   assert.equal(p.brandPresentation.mode, "split");
@@ -277,7 +279,7 @@ section("Faipari Brand separation");
   // Product-derived company navigation (not omitted beside Brands)
   assert.ok(model.organizationContext);
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 3);
+  assert.equal(model.organizationContext!.unified.length, 4);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.id === "org_festek_bazis_zrt",
@@ -288,6 +290,9 @@ section("Faipari Brand separation");
   );
   assert.ok(
     model.organizationContext!.unified.some((o) => o.id === "org_jub_hu"),
+  );
+  assert.ok(
+    model.organizationContext!.unified.some((o) => o.id === "org_poli_farbe"),
   );
   assert.ok(html.includes("Cégek"));
   assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));

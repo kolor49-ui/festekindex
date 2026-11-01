@@ -115,6 +115,11 @@ section("Coverage + provenance");
           /jub\.(hu|si)|jub\.com/i.test(src.url || ""),
           `${sid} JUB official URL`,
         );
+      } else if (p.id.startsWith("prod_poli_farbe_")) {
+        assert.ok(
+          /polifarbe\.hu/i.test(src.url || ""),
+          `${sid} Poli-Farbe official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),
