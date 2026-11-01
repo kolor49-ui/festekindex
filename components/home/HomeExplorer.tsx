@@ -29,10 +29,47 @@ const FILTERS: { label: string; types?: EntityType[] }[] = [
 /** Diverse professional search intents — not a single-manufacturer promo row. */
 const QUICK = ["Airless", "Zománc", "Acél", "Homlokzat", "Hígító"];
 
+/** Type tabs must reflect the live catalogue — never a hand-maintained manufacturer list. */
+const TYPE_TAB_LIMIT: Partial<Record<EntityType, number>> = {
+  organization: 100,
+  brand: 100,
+  technology: 100,
+  product: 12,
+};
+
 function hitDescription(hit: SearchHit): string {
   const raw = hit.shortDescription?.trim() ?? "";
   if (!raw || isPublicListFiller(raw)) return "";
   return raw.length > 80 ? `${raw.slice(0, 80)}…` : raw;
+}
+
+function catalogDocToHit(doc: SearchDocument): SearchHit {
+  return {
+    id: doc.id,
+    type: doc.type as EntityType,
+    slug: doc.href.split("/").pop() ?? doc.id,
+    name: doc.displayName || doc.name,
+    shortDescription: doc.contextLabel ?? "",
+    href: doc.href,
+    kindLabel: doc.typeLabelHu || doc.type,
+    categoryNames: doc.contextLabel ? [doc.contextLabel] : [],
+  };
+}
+
+function hitsForTypeTab(
+  types: EntityType[],
+  featuredHits: SearchHit[],
+  catalog: SearchDocument[],
+): SearchHit[] {
+  const typeSet = new Set(types);
+  const featuredOfType = featuredHits.filter((h) => typeSet.has(h.type));
+  const seen = new Set(featuredOfType.map((h) => h.id));
+  const rest = catalog
+    .filter((d) => typeSet.has(d.type as EntityType) && !seen.has(d.id))
+    .map(catalogDocToHit)
+    .sort((a, b) => a.name.localeCompare(b.name, "hu"));
+  const limit = Math.max(...types.map((t) => TYPE_TAB_LIMIT[t] ?? 12));
+  return [...featuredOfType, ...rest].slice(0, limit);
 }
 
 export function HomeExplorer({
@@ -104,40 +141,12 @@ export function HomeExplorer({
     };
   }, [selectedId]);
 
-  const productHitsFromCatalog = useMemo((): SearchHit[] => {
-    return searchCatalogDocs
-      .filter((d) => d.type === "product")
-      .slice(0, 12)
-      .map((d) => ({
-        id: d.id,
-        type: "product" as const,
-        slug: d.href.split("/").pop() ?? d.id,
-        name: d.displayName || d.name,
-        shortDescription: "",
-        href: d.href,
-        kindLabel: d.typeLabelHu || "Termék",
-        categoryNames: d.contextLabel ? [d.contextLabel] : [],
-      }));
-  }, [searchCatalogDocs]);
-
   const filtered = useMemo(() => {
     const types = FILTERS[filterIdx]?.types;
-    let list = initialHits;
-    if (types) {
-      list = list.filter((h) => types.includes(h.type));
-      // Termékek: supplement from SearchDocuments when featured mix is sparse
-      if (types.includes("product") && list.length < 6) {
-        const seen = new Set(list.map((h) => h.id));
-        for (const extra of productHitsFromCatalog) {
-          if (seen.has(extra.id)) continue;
-          list = [...list, extra];
-          seen.add(extra.id);
-          if (list.length >= 10) break;
-        }
-      }
-    }
-    return list;
-  }, [initialHits, filterIdx, productHitsFromCatalog]);
+    // "Minden" keeps the curated discovery mix; typed tabs = live catalogue.
+    if (!types) return initialHits;
+    return hitsForTypeTab(types, initialHits, searchCatalogDocs);
+  }, [initialHits, filterIdx, searchCatalogDocs]);
 
   const selected = filtered.find((h) => h.id === selectedId) ?? filtered[0];
   const related = selected ? (relatedByEntityId[selected.id] ?? []) : [];

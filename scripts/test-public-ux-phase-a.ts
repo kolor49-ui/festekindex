@@ -204,9 +204,22 @@ section("Home quick chips → Search v1");
     );
   }
   assert.ok(html.includes("Termékek"), "home filter must expose Termékek");
+  assert.ok(html.includes("Cégek"), "home filter must expose Cégek");
+  // Type tabs are catalogue-backed: new manufacturers appear without featured-list edits.
+  const homeCatalog = buildSearchCatalog();
+  const homeOrgs = homeCatalog.filter((d) => d.type === "organization");
+  assert.ok(
+    homeOrgs.some((d) => d.id === "org_poli_farbe"),
+    "Poli-Farbe must be in live org catalogue for Cégek tab",
+  );
+  assert.ok(
+    homeOrgs.some((d) => d.id === "org_jub_hu"),
+    "JUB must be in live org catalogue for Cégek tab",
+  );
+  assert.ok(homeOrgs.length >= 16, "org catalogue must stay complete");
   // Search engine ranking/normalization untouched; catalog grows with published Products
   assert.equal(
-    buildSearchCatalog().length,
+    homeCatalog.length,
     expectedSearchDocumentsAfterClosure(),
   );
   assert.equal(
