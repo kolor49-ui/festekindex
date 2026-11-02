@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** Baumit HU PASS+REVIEW overlay. indexable locked false. */
+/** Baumit HU overlay. indexable unlocked after enrich (FB-parity + GO). */
 export const baumitProducts: Product[] = [
   {
     id: "prod_baumit_baumit_aluminium_sarokvedo_szegely_uvegszovettel",

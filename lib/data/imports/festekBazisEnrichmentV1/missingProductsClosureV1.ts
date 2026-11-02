@@ -156,13 +156,17 @@ export const JUB_PRODUCT_SEO_UNLOCK_COUNT = 95;
 /** KEMIKÁL 107 product Google unlock (FB-parity PASS + operator GO). */
 export const KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT = 107;
 
+/** Baumit 165 product Google unlock (FB-parity PASS + operator GO). */
+export const BAUMIT_PRODUCT_SEO_UNLOCK_COUNT = 165;
+
 /** Publicly indexable products (FB + unlocked PASS_PARITY cohorts). */
 export function expectedPublicProductCount(): number {
   return (
     FB_PRODUCT_SEO_UNLOCK_COUNT +
     PPG_PRODUCT_SEO_UNLOCK_COUNT +
     JUB_PRODUCT_SEO_UNLOCK_COUNT +
-    KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT
+    KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT +
+    BAUMIT_PRODUCT_SEO_UNLOCK_COUNT
   );
 }
 
