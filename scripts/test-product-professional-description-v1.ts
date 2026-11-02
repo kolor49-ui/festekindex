@@ -163,6 +163,16 @@ section("Coverage + provenance");
           /kemikal\.hu/i.test(src.url || ""),
           `${sid} KEMIKÁL official URL`,
         );
+      } else if (p.id.startsWith("prod_sika_")) {
+        assert.ok(
+          /sika\.com/i.test(src.url || ""),
+          `${sid} Sika official URL`,
+        );
+      } else if (p.id.startsWith("prod_mapei_")) {
+        assert.ok(
+          /mapei\.com/i.test(src.url || ""),
+          `${sid} Mapei official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),

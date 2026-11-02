@@ -44,7 +44,10 @@ section("53-Product audit coverage");
       p.id.startsWith("prod_caparol_") ||
       p.id.startsWith("prod_baumit_") ||
       p.id.startsWith("prod_revco_") ||
-      p.id.startsWith("prod_egrokorr_")
+      p.id.startsWith("prod_egrokorr_") ||
+      p.id.startsWith("prod_kemikal_") ||
+      p.id.startsWith("prod_sika_") ||
+      p.id.startsWith("prod_mapei_")
     ) {
       continue;
     }
@@ -129,7 +132,10 @@ section("SPECIFIC / GENERIC evidence + no inheritance");
       p.id.startsWith("prod_caparol_") ||
       p.id.startsWith("prod_baumit_") ||
       p.id.startsWith("prod_revco_") ||
-      p.id.startsWith("prod_egrokorr_")
+      p.id.startsWith("prod_egrokorr_") ||
+      p.id.startsWith("prod_kemikal_") ||
+      p.id.startsWith("prod_sika_") ||
+      p.id.startsWith("prod_mapei_")
     ) {
       continue;
     }

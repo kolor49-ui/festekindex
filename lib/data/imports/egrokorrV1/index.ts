@@ -5,6 +5,6 @@ export { egrokorrDescriptions } from "./descriptions";
 export { egrokorrProfessionalDescriptions } from "./professionalDescriptions";
 export { egrokorrBrands } from "./brands";
 export { applyEgrokorrV1 } from "./apply";
-export const EGROKORR_V1_COUNT = 15;
+export const EGROKORR_V1_COUNT = 41;
 export const EGROKORR_V1_PASS_COUNT = 0;
-export const EGROKORR_V1_REVIEW_COUNT = 15;
+export const EGROKORR_V1_REVIEW_COUNT = 41;

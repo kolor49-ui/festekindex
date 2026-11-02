@@ -130,6 +130,10 @@ def main() -> None:
         result = json.loads(result_path.read_text(encoding="utf-8"))
         pid = result.get("product_id") or result_path.parent.name
         status = result.get("status")
+        # Schuller reseller tools are not EGROKORR-manufactured coatings.
+        if "_sch_" in str(pid) or str(pid).startswith("prod_egrokorr_sch_"):
+            skipped.append(f"{pid}:schuller_reseller_excluded")
+            continue
         if status in {"HOLD", "ERROR"} or status not in {"PASS", "REVIEW"}:
             skipped.append(f"{pid}:{status}")
             continue

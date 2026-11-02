@@ -381,6 +381,8 @@ const egrokorrWithoutTech = without.filter((id) =>
 const kemikalWithoutTech = without.filter((id) =>
   id.startsWith("prod_kemikal_"),
 );
+const sikaWithoutTech = without.filter((id) => id.startsWith("prod_sika_"));
+const mapeiWithoutTech = without.filter((id) => id.startsWith("prod_mapei_"));
 assert.equal(trilakWithoutTech.length, 42);
 assert.equal(jubWithoutTech.length, 95);
 assert.equal(poliWithoutTech.length, 71);
@@ -390,11 +392,13 @@ assert.equal(akzoWithoutTech.length, 14);
 assert.equal(caparolWithoutTech.length, 122);
 assert.equal(baumitWithoutTech.length, 165);
 assert.equal(revcoWithoutTech.length, 26);
-assert.equal(egrokorrWithoutTech.length, 15);
+assert.equal(egrokorrWithoutTech.length, 41);
 assert.equal(kemikalWithoutTech.length, 107);
+assert.equal(sikaWithoutTech.length, 20);
+assert.equal(mapeiWithoutTech.length, 9);
 assert.equal(
   products.length - withTech.size,
-  5 + 42 + 95 + 71 + 91 + 57 + 14 + 122 + 165 + 26 + 15 + 107,
+  5 + 42 + 95 + 71 + 91 + 57 + 14 + 122 + 165 + 26 + 41 + 107 + 20 + 9,
 );
 assert.deepEqual(
   without.filter(
@@ -409,7 +413,9 @@ assert.deepEqual(
       !id.startsWith("prod_baumit_") &&
       !id.startsWith("prod_revco_") &&
       !id.startsWith("prod_egrokorr_") &&
-      !id.startsWith("prod_kemikal_"),
+      !id.startsWith("prod_kemikal_") &&
+      !id.startsWith("prod_sika_") &&
+      !id.startsWith("prod_mapei_"),
   ),
   festekBazisWithoutTech.sort(),
 );

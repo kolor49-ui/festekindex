@@ -169,7 +169,9 @@ section("Baselines / counts");
       !p.id.startsWith("prod_baumit_") &&
       !p.id.startsWith("prod_revco_") &&
       !p.id.startsWith("prod_egrokorr_") &&
-      !p.id.startsWith("prod_kemikal_"),
+      !p.id.startsWith("prod_kemikal_") &&
+      !p.id.startsWith("prod_sika_") &&
+      !p.id.startsWith("prod_mapei_"),
   );
   assert.equal(
     festekBazisProducts.length,

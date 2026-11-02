@@ -130,8 +130,8 @@ export const AKZO_V1_COUNT = 14;
 /** REVCO / Saint-Gobain overlay (REVIEW; HOLD excluded; noindex). */
 export const REVCO_V1_COUNT = 26;
 
-/** EGROKORR overlay (REVIEW; HOLD excluded; noindex; encrypted-PDF SKUs held out). */
-export const EGROKORR_V1_COUNT = 15;
+/** EGROKORR overlay (REVIEW; Schuller reseller SKUs excluded; noindex). */
+export const EGROKORR_V1_COUNT = 41;
 
 /** Baumit HU overlay (REVIEW; HOLD excluded; noindex). */
 export const BAUMIT_V1_COUNT = 165;
@@ -268,7 +268,7 @@ export function expectedSearchDocumentsAfterClosure(): number {
     V84_POLI_REVIEW_NEW_BRAND_COUNT +
     1 + // brand_profitec
     2 + // brand_sadolin + brand_hammerite
-    2 + // egrokorr sub-brands shipped: dunaplaszt + sziloplaszt
+    5 + // egrokorr sub-brands: alvikorr, dunaplaszt, izofix, renova, sziloplaszt
     1 + // brand_baumit
     1 + // org_baumit_hungary search doc
     1 + // brand_kemikal
