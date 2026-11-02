@@ -39,7 +39,12 @@ function meetsEnrichedProductSeoThreshold(product: Product): boolean {
   return true;
 }
 
-/** Explicit FB cohort Google unlock after editorial+professional enrichment. */
+/**
+ * Explicit FB cohort Google unlock after editorial+professional enrichment.
+ * SEO text threshold only here (avoid circular import with fbParity/allRelations).
+ * Full FB-parity gate: `scripts/test-fb-parity-v1.ts` — must stay green for unlockeds.
+ * Future cohorts: add allowlist id + PASS parity test before GO.
+ */
 export function unlockFestekBazisProductIndexability(
   products: Product[],
 ): Product[] {
