@@ -3,33 +3,20 @@ import type { ProductProfessionalDescriptionEnrichment } from "../festekBazisEnr
 export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichment[] = [
   {
     productId: "prod_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2",
-    sourceIds: ["src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
+    sourceIds: ["src_prod_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_page", "src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Acryl - Seidenmattlack - Akril selyemfényű zománcfesték A termék időjárásálló-, selyemmatt fényességű-, a nagy igénybevételnek kitett beltéri felületeken kopásálló bevonatot képez..Előnyös tulajdonságai a könnyű felhasználás és gyors száradás. Fényállóság: Minden színárnyalatnál nagyon jó. Vegyszerállóság: Ipari légkörrel szemben ellenálló, elszappanosodásálló. Időjárásállóság, felületi tapadás, elaszticitás, kopásállóság: Megfelel a DIN-feltételeinek. Alapfelület: Az Acryl-Seidenmattlack szinte minden felületre alkalmas a pincétől a t.",
+          "A gyártó nyilvános leírása szerint a(z) Acryl Seidenmattlack – Akril selyemfényű zománcfesték jellemzői: Leírás – Selyemfényű – Vízzel hígítható (100%-os akrilfesték) – Kül- és beltéri (időjárásálló) – Gyorsan száradó – Könnyen felhordható Vízzel hígítható, selyemfényű, kül- és beltéri zománcfesték zsírmentes felületre. Gyorsan száradó, könnyen felhordható, 100%-os akrilfesték. Kiválóan megtapad a festett felületen, tartósan rugalmas és időjárásálló selyemfényű bevonatot ad a legkülönbözőbb alapokon, mint pl. fa, alapozott vas és acél, előkezelt vakolat, beton és azbesztcement lapokon. Továbbá alkalmas mindenféle kül- és beltéri szilárd, régi festések felújítására. Színes változatai fűtőtestek, radiátorok festésére is alkalmasak. Kiadósság: kb. 11 m 2 /l Biztonságtechnikai adatlap letöltés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_inf",
+          "A gyártó nyilvános leírása szerint a(z) Acryl Seidenmattlack – Akril selyemfényű zománcfesték jellemzői: – Selyemfényű – Vízzel hígítható (100%-os akrilfesték) – Kül- és beltéri (időjárásálló) – Gyorsan száradó – Könnyen felhordható",
         ],
         sourceIds: ["src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: A termék időjárásálló-, selyemmatt fényességű-, a nagy igénybevételnek kitett beltéri felületeken kopásálló bevonatot képez..Előnyös tulajdonságai a könnyű felhasználás és gyors száradás.",
-        ],
-        sourceIds: ["src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i javaslat: Faalapok (nem mérettartó) 1. Impregnáljuk düfa-Holzgrund-dal (lombhullató és tűlevelű fákra kültéren használjuk). 2. Alapozzuk düfa Acryl-Vorlack-kal. 3. Fed őrétegként Acryl-Seidenmattlack-ot hordjunk fel. Faalapok (mérettartó, pl. ablakok és ajtók) 1. Impregnáljuk düfa-Holzgrund-dal (lombhullató és tűlevelű fákra kültéren használjuk). 2. Közbens ő rétegként düfa Acryl-Vorlack-ot használjunk. 3. Fed őrétegként hígítatlanul Acryl-Seidenmattlack-kal fessük le a felületet. --- PAGE 2 --- Vas, acél, horganyzott acél, könnyűfém és kemény-PVC A vas- és acélfelületeket rozsdátalanítsuk és zsírtalanítsuk, majd beltéren egyszer, kültéren kétszer düfa Rostschutzg.",
-        ],
-        sourceIds: ["src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 750 ml és 2,5l.; Kiadósság: Kb. 100 ml/ m²..",
+          "Alkalmazási terület a gyártói leírás alapján: – Selyemfényű – Vízzel hígítható (100%-os akrilfesték) – Kül- és beltéri (időjárásálló) – Gyorsan száradó – Könnyen felhordható",
         ],
         sourceIds: ["src_dufa_acryl_seidenmattlack_akril_selyemfenyu_zomancfestek_2_tds"],
       }
@@ -37,26 +24,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_boots_klarlack_csonaklakk",
-    sourceIds: ["src_dufa_boots_klarlack_csonaklakk_tds"],
+    sourceIds: ["src_prod_dufa_boots_klarlack_csonaklakk_page", "src_dufa_boots_klarlack_csonaklakk_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Boots - Klarlack - Színtelen csónaklakk Színtartósság és vízállóság: nagyon jó . Vegyszerállóság: gyenge savak, lúgok és háztartási tisztítószerekkel szemben jó. Felületi tapadás, elaszticitás és ütésállóság tekintetében teljesíti a VOB- és DIN szab- ványok feltételeit. Hőállóság: + 80 °C-ig. Alapfelület: Az új, még nem festett kültéri fafelületet düfa Holzgrund –dal alapozzuk le, majd 10-15%- ban Terpentin-Ersatz vagy Kunstharz-Verdünnung hígítóval hígított Boots-Klarlack-ot hordjunk fel.",
+          "A gyártó nyilvános leírása szerint a(z) Boots-Klarlack – Csónaklakk jellemzői: Leírás – Magasfényű – Kül- és beltéri – Színtelen lakkfelületet képez fa csónakokon, bútorokon – Egyenletesen elterülő, ütésálló festékbevonat Magasfényű, kül- és beltéri színtelen lakkfesték. Gyorsan száradó, minőségi műgyanta lakkfesték. Időjárásálló, színtelen lakkfelületet képez fa csónakokon, ajtókon, lambériákon, bútorokon. Egyenletesen elterülő, ütésálló festékbevonat. Higítás: Aromamentes higító. Kiadósság: kb 10 m2 / l Biztonságtechnikai adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Boots-Klarlack – Csónaklakk jellemzői: – Magasfényű – Kül- és beltéri – Színtelen lakkfelületet képez fa csónakokon, bútorokon – Egyenletesen elterülő, ütésálló festékbevonat",
         ],
         sourceIds: ["src_dufa_boots_klarlack_csonaklakk_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb.4-6 órás száradás után hígítatlan Boots-Klarlack –ot alklamazzunk. A régi, színtelen. festékréteget csiszoljuk meg csiszolópapírral , majd egy vagy két rétegben lakkozzuk. A régi színes festéket maradéktalanul távolítsuk el düfa Abbeizer –rel majd hígítatlan Boots-Klarlack –kal alapozzunk és végül szintén hígítatlanul lakkozzunk. Hígítás a mázoláshoz: Kunstharz-Verdünnung vagy Terpentin-Ersatz hígítóval. Hígítás a szóráshoz: Kunstharz-Verdünnung hígító. Megjegyzés: A Boots-Klarlack különösen kiváló minőségű, strapabíró, kemény felületet adó lakkozást biztosít. A Boots-Klarlack –kal történő lakkozás ütés- és karcolásálló. A Boots-Klarlack vízálló, így csónakok lakkozására is h.",
-        ],
-        sourceIds: ["src_dufa_boots_klarlack_csonaklakk_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 375 ml, 750 ml és 2,5 l.; Kiadósság: Kb. 10 m² / l, az alap tulajdonságától függõen..",
+          "Alkalmazási terület a gyártói leírás alapján: – Magasfényű – Kül- és beltéri – Színtelen lakkfelületet képez fa csónakokon, bútorokon – Egyenletesen elterülő, ütésálló festékbevonat",
         ],
         sourceIds: ["src_dufa_boots_klarlack_csonaklakk_tds"],
       }
@@ -64,40 +45,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dnp_kulteri_falazur",
-    sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
+    sourceIds: ["src_prod_dufa_dnp_kulteri_falazur_page", "src_dufa_dnp_kulteri_falazur_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 4 +8°C Kötőanyag Akrilát diszperzió tulajdonságok Kötőanyag Akrilát diszperzió.",
+          "A gyártó nyilvános leírása szerint a(z) DNP Kültéri Falazúr jellemzői: Leírás Dekoratív kültéri fabevonat. Mélyen behatol a fa felületébe, impregnálja és megóvja a fát az időjárás okozta károktól. Alkalmazható minden szívóképes, nem mérettartó kültéri fafelületre, pl. apácarács, zsalugáter, vesszőfonat, pergola stb. Nem alkalmas beltéri használatra, kerti bútorhoz vagy világos színű homlokzaton lévő faborításhoz. Kiszerelések kiadósság egy réteg / nm Színek 5l 50 Fenyő 5l 50 Dió 5l 50 Paliszander 5l 50 Mahagóni 5l 50 Teak Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) DNP Kültéri Falazúr jellemzői: Dekoratív kültéri fabevonat. Mélyen behatol a fa felületébe, impregnálja és megóvja a fát az időjárás okozta károktól.",
         ],
         sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Vízbázisú, nyitott pórusú fapác fából készült elemek átlátszó, dekoratív és szennye - ződéstaszító bevonataihoz. Támogatja a fa természetes ellenállóképességét, mélyen behatol a fába és nem hámlik le. Ezért csiszolás nélkül könnyen átfesthető. Használható minden nedvszívó, nem méretstabil és korlátozottan méretstabil fa alapanyagon, pl. pavilonok, pergolák, kerítések, autóbeállók. Nem használható teraszpadlódeszkán , kerti bútorokon vagy világos homlokzatra rögzített faanyagon.  Vízbázisú  Intenzív színfrissítő  Időjárásálló  Könnyű bedolgozni  Mélyen behatoló  Tixotrop, zselés állagú --- PAGE 2 --- 2 / 4 Bedolgozás Felhordás Rétegfelépítés Felületek szakszerű előké.",
-        ],
-        sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: éhez. --- PAGE 4 --- 4 / 4.",
-        ],
-        sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i célra a mindenkori objektumfeltételek között való alkalmasság szempontjából (pl. próbafestés, stb.). Azoknál az alkalmazásoknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624.",
-        ],
-        sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Dekoratív kültéri fabevonat. Mélyen behatol a fa felületébe, impregnálja és megóvja a fát az időjárás okozta károktól.",
         ],
         sourceIds: ["src_dufa_dnp_kulteri_falazur_tds"],
       }
@@ -105,33 +66,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_diamond_premium_minosegu_belteri_falfestek",
-    sourceIds: ["src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
+    sourceIds: ["src_prod_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_page", "src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Diamond falfesték oldal 1/ 4 • Mosásálló felület • Könnyen bedolgozható • Jó a kiadóssága Jellegadatok a DIN EN 13 300 szerint • Nedves dörzsállóképesség: 2. osztály (megfelel a DIN 53778 szerinti mosásálló képességnek) • Kontrasztarány: 2. osztály 9m²/liter kiadósság esetén • Fényességi fok: tompa matt • Maximális szemcseméret: finom (ca. 200μm) A termékjellemzők adatai átlagértékek. A természetes anyagok használata miatt csekély eltérések lehetnek, melyek a termék tulajdonságait nem befolyá- solják.",
-        ],
-        sourceIds: ["src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek Jól fedő, ragyogóan fehér, profi minőségű, strapabíró, tompa matt belté- ri diszperziós festék, fal- és mennyezet bevonatok készítésére bármely lakó- vagy dolgozótérben. Használható minden beltérben előforduló aljzatra, mint például a vakolatokra, betonra, gipszkartonra, téglafalra, papír- és nyersszálas tapétákra, továbbá ép régi diszperziós bázisú bevonatok átfestésére. A szobalevegőre ártalmatlan, mert a kibocsátása minimalizált, hígító- és lágyítószer mentes.",
-        ],
-        sourceIds: ["src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 110 ml/m² rétegenként sima, enyhén nedvszívó aljzatokon. Nyers aljzatokon megfelelően több. A pontos anyagszükségleti értékeket min- tafelület készítésével kell megállapítani. Hígítás Szükség esetén hígítsa max. 5% vízzel. Szerszámok tisztítása A munkaeszközökből a használatot követően azonnal ki kell kenni, illetve ki kell hengerezni a festéket, majd azokat vízzel, esetleg moso- gatószer hozzáadásával meg kell tisztítani.",
-        ],
-        sourceIds: ["src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 110 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Diamond – Prémium minőségű beltéri falfesték jellemzői: Leírás A düfa Diamond egy kiváló minőségű, káros anyagoktól mentes, környezetbarát falfesték, mely a legújabb technológiai fejlesztéseknek köszönhetően kiemelkedő tulajdonságokkal rendelkezik. Magas fehérség – letisztult, ragyogó felületek, esztétikus megjelenés, akár már egy rétegben is Káros anyagoktól mentes összetétel – VOC-mentes, környezet- és egészségbarát formula Ragyogó fehérség, kiemelkedő fedőképesség és tartósság – hosszú távú védelem, elegáns megjelenés Könnyű feldolgozhatóság – gyors száradás, kiváló fedés és tapadás Kiváló páraáteresztő képesség, ugyanakkor mosható felület Nincs szaghatás a festéskor, ideális gyerekszobák festésére is Alkalmas vakolatra, betonra, gipszkartonra, téglafalra, tapétára és régi diszperziós festékek átfestésére is lakossági és professzionális fel",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Diamond – Prémium minőségű beltéri falfesték jellemzői: A düfa Diamond egy kiváló minőségű, káros anyagoktól mentes, környezetbarát falfesték, mely a legújabb technológiai fejlesztéseknek köszönhetően kiemelkedő tulajdonságokkal rendelkezik.",
         ],
         sourceIds: ["src_dufa_dufa_diamond_premium_minosegu_belteri_falfestek_tds"],
       }
@@ -139,26 +80,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_int_voll_und_abtonfarbe_d230",
-    sourceIds: ["src_dufa_dufa_int_voll_und_abtonfarbe_d230_tds"],
+    sourceIds: ["src_prod_dufa_dufa_int_voll_und_abtonfarbe_d230_page", "src_dufa_dufa_int_voll_und_abtonfarbe_d230_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Vollton- und Abtönfarbe D 230 - Színes- és színezőfesték Időjárásálló, súrolásálló, kiemelten fényálló, mészálló, nagy fedőképességű, erős színhatású, diffúzióképes, védi a felületet a csapóeső és az agresszív kipuffogó gázok ellen.",
-        ],
-        sourceIds: ["src_dufa_dufa_int_voll_und_abtonfarbe_d230_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: A ’Vollton- und Abtönfarbe Színes- és szinezőfesték’ a vízzel hígítható festéktermékek, a disz- perzós-, latex-, enyves- és mészfestékek és a műgyanta -vakolatok színezésére is alkalmazható. Használatával a homlokzatok és a belső felületek modern színkialakítását érhetjük el A termék ön- magában is felhordható falfestmények színezésére és falfeiratok készítésére. Különleges tudnivalók: Az átlapolási problémák elkerülése érdekében nedvest a nedvesre festőtechnjkával horjuk fel. Vízszintes irányú, állandó vízterhelésnek kitett felületek bevonataként nem alkalmazható. A színkár- tyán csillaggal jelzett színek fakulásra hajlamosan ezért kültérben használatuk nem ajánlott.",
-        ],
-        sourceIds: ["src_dufa_dufa_int_voll_und_abtonfarbe_d230_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 250 ml; 500 ml és 750 ml minden színárnyalatban; Kiadósság: Kb. 5-7 m²/l, az alapfelület adottságai szerint..",
+          "A gyártó nyilvános leírása szerint a(z) Düfa INT Voll- und Abtönfarbe D230 jellemzői: Leírás Időjárásálló, színtartó, jó fedőképességű, matt, súrolásálló falfesték. Kítűnő műgyanta diszperziós festék diszperziós-, latex-, meszes-, enyves falfestékek, kötőanyagok, műgyanta vakolatok színezéséhez, homlokzatok és belső felületek színes festéséhez, időjárás- és súrolásálló, színtartó, lég- és páraáteresztő képességű bevonásához. Hígítás nélkül, színes festékként is felhasználható, pl. feliratok készítéséhez. 40 féle színbenkapható, a színek egymással keverhetők. Biztonsági adatlap letöltés/megtekintés Műszaki adatlap letöltése Termék neve Termék leírása Kiszerelések kiadósság egy réteg / nm Színek Dufa színezőfestékek düfa INT Voll- und Abtönfarbe D 230 100 goldgelb Színes- és színezőfesték 0,25l aranysárga düfa INT Voll- und Abtönfarbe D 230 101 gelb 0,25l sárga düfa INT Voll- und Abtönfarb",
+          "A gyártó nyilvános leírása szerint a(z) Düfa INT Voll- und Abtönfarbe D230 jellemzői: Időjárásálló, színtartó, jó fedőképességű, matt, súrolásálló falfesték. Kítűnő műgyanta diszperziós festék diszperziós-, latex-, meszes-, enyves falfestékek, kötőanyagok, műgyanta vakolatok színezéséhez, homlokzatok és belső felületek színes festéséhez, időjárás- és súrolásálló, színtartó, lég- és páraáteresztő képességű bevonásához. Hígítás nélkül, színes festékként is felhasználható, pl. feliratok készítéséhez. 40 féle színbenkapható, a színek egymással keverhetők.",
         ],
         sourceIds: ["src_dufa_dufa_int_voll_und_abtonfarbe_d230_tds"],
       }
@@ -166,33 +94,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj",
-    sourceIds: ["src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
+    sourceIds: ["src_prod_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_page", "src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Terrassenboden-Öl 1 / 3 oldal  Oldószertartalmú, aromásmentes  Kültéri alkalmazásra  Felfrissíti a színeket  Mélyen behatol a fába  Vízlepergető  Kellemesen bedolgozható Színárnyalat Bangkirai, duglászfenyő.",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Premium Terrassenboden-Öl – Teraszpadló olaj jellemzői: Leírás Teraszpadlóápoló olaj. Újratermelődő nyersanyagok bázisán készült, oldószer tartalmú, természetes faápoló és színfelfrissítő olaj, értékes kültéri keményfákhoz pl. kerti hajópadlók, facsempék, palánkok. Mélyen behatol a felületekbe, impregnálja védi illetve visszaállítja annak eredeti védelmét. Kiadósság egy réteg / nm: 0,75l – 9 2,5 l – 25 Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Premium Terrassenboden-Öl – Teraszpadló olaj jellemzői: Teraszpadlóápoló olaj. Újratermelődő nyersanyagok bázisán készült, oldószer tartalmú, természetes faápoló és színfelfrissítő olaj, értékes kültéri keményfákhoz pl. kerti hajópadlók, facsempék, palánkok. Mélyen behatol a felületekbe, impregnálja védi illetve visszaállítja annak eredeti védelmét.",
         ],
         sourceIds: ["src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek Természetes faápolás újratermelődő nyersanyagok bázisán. bangkirai és duglászfenyőből, valamint egyéb fafajtákból készült terasz pallók impregnálására, felfrissítésére és ápolására, mint például teraszon fektetett hajópadlók, kerti parketták.",
-        ],
-        sourceIds: ["src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 80 - 120 ml/m² rétegenként. A pontos anyagszükségleti értékeket mintafelületek készítésével lehet megállapítani. Bedolgozási hőmérséklet Min. +5°C aljzat - és környezeti hőmérséklet a bedolgozás és a száradás alatt. Nem szabad bedolgozni +25°C feletti hőmérsékleten és közvetlen napsugárzásban. Bedolgozás Aljzat Az aljzatnak mentesnek kell lennie a szennyeződésektől, az elválasztó anyagoktól, tisztának, száraznak, teherviselőnek kell lennie, és meg kell felelnie a technika aktuális állásának. Be kell tartani az aktuális BFS adatlapokban, valamint a VOB, C részében és a DIN 18363 Festési és lakkozási munkák szabványban foglaltakat. Figyelembe kell venni kültérben a sz.",
-        ],
-        sourceIds: ["src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 120 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Teraszpadlóápoló olaj. Újratermelődő nyersanyagok bázisán készült, oldószer tartalmú, természetes faápoló és színfelfrissítő olaj, értékes kültéri keményfákhoz pl. kerti hajópadlók, facsempék, palánkok. Mélyen behatol a felületekbe, impregnálja védi illetve visszaállítja annak eredeti védelmét.",
         ],
         sourceIds: ["src_dufa_dufa_premium_terrassenboden_ol_teraszpadlo_olaj_tds"],
       }
@@ -200,33 +115,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_silikon_fassadenfarbe",
-    sourceIds: ["src_dufa_dufa_silikon_fassadenfarbe_tds"],
+    sourceIds: ["src_prod_dufa_dufa_silikon_fassadenfarbe_page", "src_dufa_dufa_silikon_fassadenfarbe_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) düfa Szilikonos Homlokzatfesték oldal 1/ 3 ▪ Kiválóan fed ▪ Kiemelkedően magas fehérségi fokozatú ▪ Jól töltő, nagyon jó kúposodása ▪ Kapilláris hidrofób, nagyon jó víztaszító ▪ Időjárási viszontagságoknak kiválóan ellenáll ▪ Kitűnő nedvességvédelem ▪ Kiváló vízpára áteresztő képességgel rendelkezik Jellegadatok a DIN EN 1062.",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Szilikonos Homlozatfesték (Silikon Fassadenfarbe) jellemzői: Leírás Kitűnő fedőképességű, időjárásálló, vízlepergető, lég- és páraáteresztő, lúg- és kopásálló, vízzel hígítható, illatszegény, kül- és beltérbe alkalmazható, színezhető, fehér, prémium minőségű, szilikonos homlokzatfesték. Kiválóan alkalmas, mindenfajta vakolat, mész-cement, diszperziós, szilikát-, szilikon, valamint régi diszperziós, szilikát- és szilikon- bevonatok festésére, felújítására, valamint a kőzetgyapot és EPS hőszigetelő rendszerek vakolatának festésére, illetve felújítására. Az erősen szívó alapokat düfa szilikons mélyalapozó-val elő kell készíteni. Kiadósság egy réteg / nm: 10l – 75 15 l – 110 Színkeverő gépen színezhető Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entr",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Szilikonos Homlozatfesték (Silikon Fassadenfarbe) jellemzői: Kitűnő fedőképességű, időjárásálló, vízlepergető, lég- és páraáteresztő, lúg- és kopásálló, vízzel hígítható, illatszegény, kül- és beltérbe alkalmazható, színezhető, fehér, prémium minőségű, szilikonos homlokzatfesték.",
         ],
         sourceIds: ["src_dufa_dufa_silikon_fassadenfarbe_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek Magas minőségű műgyanta bázisú tiszta akrilát homlokzatfesték nagy- fokú fedőképességgel és fehérségi fokkal. Rendkívül jó nedvességvé- delmet nyújt, és egyidejűleg kiváló vízpára áteresztő képességgel ren- delkezik. Algásodás- és gombás fertőzések elleni megelőzés érdeké- ben konzerváló filmréteggel van ellátva. Időjárási viszontagságoknak kiválóan ellenáll.",
-        ],
-        sourceIds: ["src_dufa_dufa_silikon_fassadenfarbe_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 140 ml/m² rétegenként sima, enyhén nedvszívó aljzatokon. Nyers aljzatokon megfelelően több. A pontos anyagszükségleti értékeket min- tafelület készítésével kell megállapítani. --- PAGE 3 --- Műszaki Adatlap düfa Szilikonos Homlokzatfesték oldal 3/ 3 Szerszámok tisztítása A munkaeszközökből a használatot követően azonnal ki kell kenni, illet- ve ki kell hengerezni a festéket, majd azokat vízzel, esetleg mosogató- szer hozzáadásával meg kell tisztítani. Tudnivalók Jelölés/.",
-        ],
-        sourceIds: ["src_dufa_dufa_silikon_fassadenfarbe_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: matt G3; Kiadósság: 140 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Kitűnő fedőképességű, időjárásálló, vízlepergető, lég- és páraáteresztő, lúg- és kopásálló, vízzel hígítható, illatszegény, kül- és beltérbe alkalmazható, színezhető, fehér, prémium minőségű, szilikonos homlokzatfesték.",
         ],
         sourceIds: ["src_dufa_dufa_silikon_fassadenfarbe_tds"],
       }
@@ -234,26 +136,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato",
-    sourceIds: ["src_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_tds"],
+    sourceIds: ["src_prod_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_page", "src_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 3 BEDOLGOZÁS Felhordás Felhordás ecsettel, kefével, hengerrel vagy légtelenített permetezéssel. kal rendelkező alapozó ásványi aljzatok megszilárdítására és erősen vagy egyenetlenül nedvszívó aljzatok kiegyenlítésére. Megfelelőe a P II és P III habarcs-csoport vakolataihoz, a P IV gipszvakolataihoz, beton- / szálas cementlemezekhez, gipszkartonokhoz, mészkőhöz, téglához, betonhoz és pórusbetonhoz, valamint kissé krétásodó, de még hordozóképes régi bevonatokhoz.",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Tiefgrund LF Vakolat erősítő mélyalapozókül- és beltérre jellemzői: Leírás Vízzel hígítható, kül- és beltéri akrilhidroszol alapozó, a felületbe mélyen beszívódik. Száradás után színtelen, különlegesen finom részecskeméretű, akrilhidroszol vizes diszperziót tartalmazó biztonsági alapozó. A felületbe kapilláris úton mélyen felszívódik, a kül- és beltéri szívóképes alapfelületeket (gipszvakolat, beton, gázbeton, krétásodó régi bevonatok, alapfelületek stb.) megszilárdítja, az eltérő szívóképességet kiegyenlíti. Kiváló pára- és légáteresztő tulajdonságú. Az alapfelület nedvszívásának függvényében 1:4 arányig vízzel hígítható. Kiszerelések kiadósság egy réteg / nm Színek 1l 10 színtelen 5l 50 színtelen 10l 100 színtelen Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_info",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Tiefgrund LF Vakolat erősítő mélyalapozókül- és beltérre jellemzői: Vízzel hígítható, kül- és beltéri akrilhidroszol alapozó.",
         ],
         sourceIds: ["src_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Tiefgrund LF Állapot: 14.02.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 100-150 m/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 6 – 8 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Általános tudnivalók  A lehetséges aljzatok és egyéb befolyásoló tényezők nagy száma miatt ajánlott a felhordás megkezdése előtt egy tesztfelületet felhordani.  Javaslat kültéri ha.",
+          "Alkalmazási terület a gyártói leírás alapján: Vízzel hígítható, kül- és beltéri akrilhidroszol alapozó.",
         ],
         sourceIds: ["src_dufa_dufa_tiefgrund_lf_d14_szintelen_melyalapozo_14_aranyban_higithato_tds"],
       }
@@ -261,33 +157,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato",
-    sourceIds: ["src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
+    sourceIds: ["src_prod_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_page", "src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) düfa Szilikonos Mélyalapozó oldal 1 / 4 ▪ Mélyen behatol az aljzatba, ▪ Gyorsan és színtelenül szárad ▪ Illatanyag mentes ▪ Könnyű bedolgozni ▪ Oldószermentes Színárnyalat Fehér – tejes jellegű, száradás után átlátszó Sűrűség kb. 1,0 g/cm³ Kötőanyag Akril diszperzió Tartalmazott anyagok műanyag diszperzió, additív anyagok, víz, szilikon emulzió, tartó- sítószer.",
-        ],
-        sourceIds: ["src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek Használatra kész, oldószermentes, nedvszívó képesség szabályo- zó, alga és gombaálló, átlátszóra száradó, illatanyagmentes, va- kolaterősítő, kültéri szilikonos mélyalapozó. Mélyen behatol az aljzatba, alkáli anyagokkal szemben ellenálló, páraáteresztő és tapadássegítő. Szilikon-, és szilikátbázisú vakolatok, falfestékek, gipsztartalmú alapfelületek, gyári kész vakolattípusok, szálas ce- mentlapok, mészkő és klinkertégla kül- és beltéri festések alapo- zására, valamint a felületek nedvességfelvevő képességének csökkentésére javasolt, illetve minden olyan porózus, szervetlen alapú anyagra, ahol szükséges a felület víz és nedvesség elleni védelem.",
-        ],
-        sourceIds: ["src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: sima, enyhén nedvszívó aljzaton kb. 100 - 150 ml/m² bevonaton- ként. A fogyasztás a felület nedvszívó képességétől függően változhat Szerszámok tisztítása használat után azonnal, vízzel kell tisztítani. --- PAGE 3 --- Műszaki Adatlap düfa Szilikonos Mélyalapozó oldal 3 / 4 Tudnivalók.",
-        ],
-        sourceIds: ["src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 150 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Tiefgrund szilikonos mélyalapozó jellemzői: Leírás Akrilát, szilikon- és szilikátbázisú vakolatok festésekor, falfestékek, gipsztartalmú alapfelületek, gyári kész vakolattípusok, szálas cementlapok, mészkő és klinkertégla kül- és beltéri festések alapozására, valamint a felületek nedvességfelvevő képességének csökkentésére javasolt. Minden porózusos, szervetlen alapú anyag esetében használható, ahol szükséges a felület víz és nedvesség elleni védelem. Az alapozó önmagában, bevonati rendszer elemként is alkalmazható. A hígítás arányát, az alapfelület szívóképességének függvényében határozzuk meg. Kiszerelések kiadósság egy réteg / nm 5l 50 10l 100 Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Tiefgrund szilikonos mélyalapozó jellemzői: Akrilát, szilikon- és szilikátbázisú vakolatok festésekor…",
         ],
         sourceIds: ["src_dufa_dufa_tiefgrund_szilikonos_melyalapozo_14_aranyban_higithato_tds"],
       }
@@ -295,33 +171,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufa_trend_matt_feher_falfestek",
-    sourceIds: ["src_dufa_dufa_trend_matt_feher_falfestek_tds"],
+    sourceIds: ["src_prod_dufa_dufa_trend_matt_feher_falfestek_page", "src_dufa_dufa_trend_matt_feher_falfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 5 Trend Beltéri diszperziós fal- és mennyezetfesték. ban. Állapot: 02.11.2021 | HU | www.dufa-hungary.hu Műszaki adatlap --- PAGE 2 --- 2 / 5 BEDOLGOZÁS Felhordás Bedolgozás ecsettel, hengerrel vagy szórásos tehnikával. Felhordás hengerrel: A szokásos, hengerrel történő felhordáshoz 12 mm szálhosszúságú festőhengertajánlunk. Felhordás szórással: Állítsa be az anyag szórási sűrűségét. Vegye figyelembe a készülék gyártójánakinformációit. Az egyenletes záróréteg elérése érdekében javasoljuk, hogy utólag menjen áthengerrel a felületen. F e l h o.",
-        ],
-        sourceIds: ["src_dufa_dufa_trend_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i folyamathoz Festés és hengerlés: Először a sarkokat és a széleket fesse be ecsettel és kis hengerrel. Ezután egy nagyobb hengerrel dolgozza át a fennmaradó nagy területeket. Belső használatra alkalmas festőhengerrel dolgozzon. A foltok elkerülése érdekében szünet nélkül, egybefüggő területeken, megszakítás nélkűl dolgozzon. Mindig 2-3 csíkot kezdjen el görgetni felülről lefelé. Ezután a felhordott festéket keresztben eloszlatjuk, és végül felülről lefelé újra áthúzzuk. A festék keresztirányú felhordásakor fogja elérni a legjobb eredményt. Minden munkát úgy végezzen el, hogy ne gyakoroljon túl nagy nyomást a szerszámra. Farosttapétához, sima vagy finoman strukturált felületekhez v.",
-        ],
-        sourceIds: ["src_dufa_dufa_trend_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 125 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 3% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A falfelület jav.",
-        ],
-        sourceIds: ["src_dufa_dufa_trend_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 125 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Trend – Matt fehér falfesték jellemzői: Leírás Jó fedőképességű, műgyanta alapú, vízbázisú, diszperziós, fehér selyem-matt fal és mennyezetfesték. Színakrilát alapú kötőanyagot tartalmaz(műanyag diszperzió). Kiemelten ajánlott alapozó: Tiefgrund LF Kiadósság egy réteg / nm: 5L – 40 14L – 112 Biztonsági adatlap letöltés/megtekintés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Düfa Trend – Matt fehér falfesték jellemzői: Jó fedőképességű, műgyanta alapú, vízbázisú, diszperziós, fehér selyem-matt fal és mennyezetfesték. Színakrilát alapú kötőanyagot tartalmaz(műanyag diszperzió).",
         ],
         sourceIds: ["src_dufa_dufa_trend_matt_feher_falfestek_tds"],
       }
@@ -329,26 +185,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat",
-    sourceIds: ["src_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_tds"],
+    sourceIds: ["src_prod_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_page", "src_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) „düfa“ Putz Silicon SK 1,5; 2,0 Szilikonos Szemcsés vakolat Oldal 1/3 Időjárásálló, a DIN 4108 szabvány szerint vízlepergető, érzéketlen az agresszív ipari gázokkal szemben, kiemelkedően strapabíró, jól kötődő, páraáteresztő, lúgálló, könnyen és maradék nélkül felhord- ható. Vízzel hígítható, környezetbarát és illatanyagokban szegény. Vizsgálati adatok Kritérium Vizsgálat Érték Egység Vízfelvételi érték w DIN EN 1062 0,05 kg/(m2h) Vízpára diffúzió sd DIN EN ISO 7783  0,3 m Ph-érték PA-L 002 8 - 9 Az adatok közlésénél középértékeket vettünk figy.",
+          "A gyártó nyilvános leírása szerint a(z) Düfaputz Silicon SK1,5- műgyanta alapú szilikonos szemcsés homlokzati vakolat jellemzői: Leírás Tulajdonságok: ütés – és karcálló rugalmas pára- és légáteresztő időjárásálló kiváló vízlepergető rendkívül tartós védelem könnyű alkalmazás düfa MIX szinkeverő rendszerben színezhető Kiváló vízlepergető tulajdonságok: A szilikonos vakolat kiváló vízlepergető képességgel rendelkezik, így falazata mindig száraz marad, és védve lesz a nedvesség és a penész kialakulása ellen. Tartós védelem: Ellenáll az időjárási viszontagságoknak, mint az eső, hó, erős napfény, és magas hőmérséklet-ingadozások, így hosszú távú védelmet biztosít. Légáteresztő: A szilikonos vakolat lehetővé teszi a falak „lélegzését”, így a pára könnyedén távozik, miközben a hőmérsékletet is optimalizálja, csökkentve ezzel a hőveszteséget. Széles színválaszték: Különféle színekben elérhető, ",
+          "A gyártó nyilvános leírása szerint a(z) Düfaputz Silicon SK1,5- műgyanta alapú szilikonos szemcsés homlokzati vakolat jellemzői: Homogén felületű szilikonos, műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikusszemcsés (kapart) jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, beton/szálascement lapokra, gipszkartron felületekre stb. A düfa Putz Silicon szemcsés vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi.",
         ],
         sourceIds: ["src_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Homogén felületü szilikonos, műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikus- szemcsés (kapart) jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, be- ton/szálascement lapokra, gipszkartron felületekre stb. A düfa Putz Silicon Szemcsés vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi.",
-        ],
-        sourceIds: ["src_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i terület Homogén felületü szilikonos, műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikus- szemcsés (kapart) jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, be- ton/szálascement lapokra, gipszkartron felületekre stb. A düfa Putz Silicon Szemcsés vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi.",
+          "Alkalmazási terület a gyártói leírás alapján: Homogén felületű szilikonos, műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikusszemcsés (kapart) jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, beton/szálascement lapokra, gipszkartron felületekre stb. A düfa Putz Silicon szemcsés vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi.",
         ],
         sourceIds: ["src_dufa_dufaputz_silicon_sk15_mugyanta_alapu_szilikonos_szemcses_homlokzati_vakolat_tds"],
       }
@@ -356,40 +206,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_favedo_alapozo_premium_holzschutzgrund",
-    sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
+    sourceIds: ["src_prod_dufa_favedo_alapozo_premium_holzschutzgrund_page", "src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 3 Rétegfelépítés Felületek szakszerű előkészítése: Lásd az „Aljzatok és előkezelésük” fejezetet. tulajdonságok Színárnyalat Színtelen.",
-        ],
-        sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felhasználásra kész, vízbázisú impregnálószer minden k ültéri puhafához, pl. homlokzatburkolatok, ablakok, redőnyök, külső ajtók, pergolák, kerítések, külső burkolatok stb. Ne használja a talajjal érintkező területeken ! --- PAGE 2 --- 2 / 3 Bedolgozási hőmérséklet A felületnek és a környezeti hőmérsékletnek, legalább +8 °C –nak kell lennie, a felhordás és a száradás során. Bedolgozási tudnivalók  Használat előtt alaposan felkeverni.  A kifröccsent anyagot azonnal mossa le tiszta vízzel.  Vegye figyelembe a rétegek közötti megfelelő száradási időt.  Minden szomszédos épület- és rendszerelemet, pl. berendezési tárgyakat, padlófelületeket, korlátokat, ajtókat, ablakokat stb.",
-        ],
-        sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 100 ml/m² bevonatonként. A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás A termék felhasználásra kész. Hígítani nem szükséges. Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 1 óra elteltével Átfesthető 12 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Általános tudnivalók  Fedőlakknak nem alkalmas. 48 órán belül megfelelő termékkel történő fedőlakkozás szükséges. Ezen időszak alatt kerülje a vízzel való érintkezés.",
-        ],
-        sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Ne használja a talajjal.",
-        ],
-        sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Favédő alapozó – Premium Holzschutzgrund jellemzői: Leírás Terméktulajdonságok – Nedvesség- és eső elleni védelme által, fizikailag megakadályozza a gombásodást. – Vízbázisú – Csak kültéren használható – Impregnálás puhafákhoz – Nyitott pórusú Alkalmazási terület Felhasználásra kész, vízbázisú impregnálószer minden kültéri puhafához, pl. homlokzatburkolatok, ablakok, redőnyök, külső ajtók, pergolák, kerítések, külső burkolatok stb. Ne Kiszerelés: 0,75 I / 2,5 I / 5,0 I Kiadósság: 10 m2/ l Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Favédő alapozó – Premium Holzschutzgrund jellemzői: Hatékony nedvesség elleni védelem minden puhafa esetében.",
         ],
         sourceIds: ["src_dufa_favedo_alapozo_premium_holzschutzgrund_tds"],
       }
@@ -397,26 +220,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_feher_magasfenyu_zomancfestek",
-    sourceIds: ["src_dufa_feher_magasfenyu_zomancfestek_tds"],
+    sourceIds: ["src_prod_dufa_feher_magasfenyu_zomancfestek_page", "src_dufa_feher_magasfenyu_zomancfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Düfa fehér zománcfesték A düfa Fehér műgyanta alapú zománcfesték, kiváló felhasználási tulajdonságokkal rendel- kezik. Karcolás- és ütésálló, kiválóan terül, jó fedőképesséfű, átlagon felüli időjárásllóság- gal és fénytartósságal rendelkezik. Alapfelület: A hordképes, szilárd, száraz és tiszta, valamint szakszerűen előkezelt alapfelületekre alkalmazható.",
+          "A gyártó nyilvános leírása szerint a(z) Fehér magasfényű zománcfesték jellemzői: Leírás Gyorsan száradó, ütésálló, kül- és beltéri fehér színű zománcfesték Fa- és fémfelületek, valamint radiátorok festésére egyaránt használható. Nagyon kiadós, erős igénybevételnek kitehető, időjárásálló, jól takaró, stabilfényű. Biztonsági adatlap letöltés/megtekintés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Fehér magasfényű zománcfesték jellemzői: Gyorsan száradó, ütésálló, kül- és beltéri fehér színű zománcfesték Fa- és fémfelületek, valamint radiátorok festésére egyaránt használható.",
         ],
         sourceIds: ["src_dufa_feher_magasfenyu_zomancfestek_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i hőmérséklet: +20°C hőmérsékleten 4 - 6 óra után porszáraz és kb. 8 - 12 óra elteltével tapintható. Átfesthető 24 óra után. Legalább + 5°C hőmérsékletű legyen a festendő felület és a környezeti hőmérséklet is mind a használat, mind a száradás ideje alatt. Megsemmisítés: A festékmaradványokat hagyjuk beszáradni a vödörbe, majd a háztartási szeméttel együtt távolítsuk el. A teljesen kiürített festéktartályokat az újrahasznosítható anyagok gyűjtőjébe tegyük. --- PAGE 2 ---.",
-        ],
-        sourceIds: ["src_dufa_feher_magasfenyu_zomancfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 750 ml és 2,5 l.; Kiadósság: 10 m²/l.",
+          "Alkalmazási terület a gyártói leírás alapján: Gyorsan száradó, ütésálló, kül- és beltéri fehér színű zománcfesték Fa- és fémfelületek, valamint radiátorok festésére egyaránt használható.",
         ],
         sourceIds: ["src_dufa_feher_magasfenyu_zomancfestek_tds"],
       }
@@ -424,26 +241,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher",
-    sourceIds: ["src_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_tds"],
+    sourceIds: ["src_prod_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_page", "src_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Rauhfaser flüssig, D 225 - Fűrészporos tapéta hatású festék Jó légáteresztő, nagy a tapadási szilárdsága, jó fedőerő és kiváló felhordási tulajdonságok jellemzik. A felülete bármely düfa diszperziós fetékkel átfesthető, mivel kiemelkedő tapadási képességet biztosít a rákövetkező rétegeknek. Alapfelület: Alkalmas minden vakolatfajtára, falazatra, betonra, gipszkartonlapra, szálascement-lapra, továbbá különféle kemény-, és lágyszálas építőipari burkolólapokra, forgácslapokra és a régi, hordozóképes tapétázott felületekre. Az alapfelületnek tisztának.",
-        ],
-        sourceIds: ["src_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Felhasználásra kész, farosttartalmú festék. Különösen alkalmas összefüggő nagy felületek bevonataként ahol az összefutó sarkok, élek megnehezítik a munkát és az átlapolásokat észrevétlenül kell megoldani.",
-        ],
-        sourceIds: ["src_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 5 l és 10 l.; Kiadósság: Kb. 1,5 - 3 m²/l, az alapfelület illetve a kívánt struktúrahatás függvényében..",
+          "A gyártó nyilvános leírása szerint a(z) Fűrészporos tapéta hatású falfesték (Rauhfaser flüssig D25) – Matt fehér jellemzői: Leírás Különösen ajánlott nagy felületekhez és mindenütt, ahol ferde felületek, sarkok és kiszögelések nehezítik a munkát és teljesen átmenetmentes felületképzés a cél. Alapként szolgálhat bármely vakolat, falazat, beton, gipszkarton, aszbesztcement-, kemény és puha pozdorja- és farostlemez, valamint régi, szilárdan tapadó tapéta is. Kiadósság egy réteg / nm: 5l – 20 m2 10l – 40 m2 Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Fűrészporos tapéta hatású falfesték (Rauhfaser flüssig D25) – Matt fehér jellemzői: Különösen ajánlott nagy felületekhez és mindenütt, ahol ferde felületek, sarkok és kiszögelések nehezítik a munkát és teljesen átmenetmentes felületképzés a cél.",
         ],
         sourceIds: ["src_dufa_fureszporos_tapeta_hatasu_falfestek_rauhfaser_flussig_d25_matt_feher_tds"],
       }
@@ -451,26 +255,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_gold_aranyszinu_zomancfestek",
-    sourceIds: ["src_dufa_gold_aranyszinu_zomancfestek_tds"],
+    sourceIds: ["src_prod_dufa_gold_aranyszinu_zomancfestek_page", "src_dufa_gold_aranyszinu_zomancfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Gold – Aranyszínű zománcfesték Fémhatású aranyszínű festék, brilliánsan fényes, gyorsan száradó. Alapfelület: Az alap hordképes, száraz, laza részektől, por-, olaj-, zsír és oldószerként ható anyagoktól mentes legyen. Az alapfelület ne legyen túlságosan nedvszívó, ha szükséges alapozzunk.",
+          "A gyártó nyilvános leírása szerint a(z) Gold – Aranyszínű zománcfesték jellemzői: Leírás – Fémesen csillogó – Aranybronz színű – Beltéri használatra – Metállfényű bevonat fémre, fára, kemény PVC-re, kerámiára, üvegre Fémesen csillogó, aranybronz színű, jól takaró zománcfesték, beltéri használatra. Gyorsan száradó, mutatós metállfényű bevonat fémre, fára, kemény PVC-re, kerámiára, üvegre, pl. díszítőlécekre, képkeretekre, dísztárgyakra. Higítás: Nitro higító. Kiadósság: kb 2,5 m 2 /doboz Biztonságtechnikai adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Gold – Aranyszínű zománcfesték jellemzői: – Fémesen csillogó – Aranybronz színű – Beltéri használatra – Metállfényű bevonat fémre, fára, kemény PVC-re, kerámiára, üvegre",
         ],
         sourceIds: ["src_dufa_gold_aranyszinu_zomancfestek_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Gyakran és jól keverjük fel. Hígítatlanul használjuk. Szerszámok tisztítása: Használat után azonnal düfa Nitro-Universal-Verdünner hígítóval.",
-        ],
-        sourceIds: ["src_dufa_gold_aranyszinu_zomancfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 125 ml.; Kiadósság: Kb. 2,5 m² / Kiszerelés..",
+          "Alkalmazási terület a gyártói leírás alapján: – Fémesen csillogó – Aranybronz színű – Beltéri használatra – Metállfényű bevonat fémre, fára, kemény PVC-re, kerámiára, üvegre",
         ],
         sourceIds: ["src_dufa_gold_aranyszinu_zomancfestek_tds"],
       }
@@ -478,26 +276,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_kreativ_labazati_vakolat",
-    sourceIds: ["src_dufa_kreativ_labazati_vakolat_tds"],
+    sourceIds: ["src_prod_dufa_kreativ_labazati_vakolat_page", "src_dufa_kreativ_labazati_vakolat_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Kreatív lábazati vakolat jellemzői: Leírás Színes quartz szemcsés, dekoratív fal- és lábazati vakolat, bel- és kültéri használatra. Bel- és kültérben alkalmazható, időjárásálló, rugalmas, ütés és karcolásálló, páraáteresztő, ellenáll az agresszív környezeti hatásoknak, jó tapadással rendelkező, illatszegény, színes quartz szemcsés, vízbázisú, műanyag diszperziós falbevonat. Alkalmazás: Dekoratív, erős vakolatbevonat karakteres struktúrával és színárnyalatokkal rendelkezik. Felhordás után egyedi záróréteget biztosít, ezért különösen alkalmas erősen terhelt falfelületek bevonására, pl. lépcsőházak, folyosók, csarnokok, illetve időjárásálló lábazati vakolatként. Anyagszükséglet: 1,2-1,8 mm szemcsenagyság esetében kb 3-4 kg/nm, egyenlőtlen felület esetén, célszerű próbafelhúzást végezni. Elkészítési útmutató: A vakolatos színminta dossziéból kiválasztj",
+          "A gyártó nyilvános leírása szerint a(z) Kreatív lábazati vakolat jellemzői: Színes quartz szemcsés, dekoratív fal- és lábazati vakolat, bel- és kültéri használatra.",
+        ],
+        sourceIds: ["src_dufa_kreativ_labazati_vakolat_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Kreatív Lábazati Vakolat Állapot:29.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_kreativ_labazati_vakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 3 – 4 kg/m² A felhasználási mennyiség próbafestéssel állapítható meg. A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. Száradási idő +20 °C és 65 % rel. páratartalom: teljes kikeményedés kb. 3-4 nap múlva Száraz 6 – 8 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Műszaki adatlap — Kreatív Lábazati Vakolat Állapot:29.03.2022 | HU | www.dufa-hungary.hu --- PAGE 4 --- 4 / 5 Általános tudnivalók  A műveletek között ügyeljen az elegendő száradási időre.  Nem alkalmas vízszintes vagy ferde, időjárásnak.",
-        ],
-        sourceIds: ["src_dufa_kreativ_labazati_vakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "Alkalmazási terület a gyártói leírás alapján: Színes quartz szemcsés, dekoratív fal- és lábazati vakolat, bel- és kültéri használatra.",
         ],
         sourceIds: ["src_dufa_kreativ_labazati_vakolat_tds"],
       }
@@ -505,19 +297,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito",
-    sourceIds: ["src_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito_tds"],
+    sourceIds: ["src_prod_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito_page", "src_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Gyorsan száradó, plaszto-elasztikus diszperziós hézagtömítő. Alapozó nélkül tapad számos anyaghoz, még nedves aljzaton is. Gyorsan átdolgozható. Nagyon jó kompatibilitású a PROFITEC homlokzati és beltéri festékekkel. Alacsony tágulási igénybevételű csatlakozási és tömítési hézagokhoz, pl. redőnydobozokon, lépcsőkön, ajtókon és lábazatokon vagy díszítőprofilokon. Repedések és hézagok tömítésére vakolaton, pórusbetonon, gipszkartonon, szálcementen, ásványi aljzatokon, polisztirolon® és fán.",
+          "A gyártó nyilvános leírása szerint a(z) P581 Acryl Express – Gyorsan száradó diszperziós hézagtömítő jellemzői: Leírás Terméktulajdonságok: Gyorsan átdolgozható Nedves felületeken is megtapad Nagyon alacsony zsugorodás, minimális repedésképződés Fehér, beltérre és kültérre egyaránt alkalmas Plasztoelasztikus Csapóesőálló Kitűnő fehérség Festék kompatibilis (DIN 52452-4) Száradás után a legtöbb kereskedelemben kapható emulziós festékkel alapozó nélkül átfesthető. Oldószer- és szilikonmentes Különösen alacsony károsanyag kibocsátás Alkalmazási terület: Gyorsan száradó, plasztoelasztikus diszperziós hézagtömítő. Alapozó nélkül tapad számos anyaghoz, még nedves aljzaton is. Gyorsan átdolgozható. Nagyon jó kompatibilitású a PROFITEC homlokzati és beltéri festékekkel. Ajánlott az alacsony tágulási igénybevételű csatlakozási és tömítési hézagokhoz, pl. redőnydobozokon, lépcsőkön, ajtókon és láb",
+          "A gyártó nyilvános leírása szerint a(z) P581 Acryl Express – Gyorsan száradó diszperziós hézagtömítő jellemzői: Gyorsan száradó, plasztoelasztikus diszperziós hézagtömítő. Alapozó nélkül tapad számos anyaghoz, még nedves aljzaton is. Gyorsan átdolgozható. Nagyon jó kompatibilitású a PROFITEC homlokzati és beltéri festékekkel. Ajánlott az alacsony tágulási igénybevételű csatlakozási és tömítési hézagokhoz, pl. redőnydobozokon, lépcsőkön, ajtókon és lábazatokon vagy díszítőprofilokon. Repedések és hézagok tömítésére is alkalmas vakolaton, pórusbetonon, gipszkartonon, szálcementen, ásványi aljzatokon, polisztirolon és fán. Kiszerelés: 0,310 l Színárnyalat: fehér",
         ],
         sourceIds: ["src_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito_tds"],
       },
       {
-        heading: "Korlátozások",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmasak alapozónak. Nem alkalmas a fokozott mozgási igénybevételű dilatációs hézagokhoz és a. Nem alkalmas márvány és természetes.",
+          "Alkalmazási terület a gyártói leírás alapján: Gyorsan száradó, plasztoelasztikus diszperziós hézagtömítő. Alapozó nélkül tapad számos anyaghoz, még nedves aljzaton is. Gyorsan átdolgozható. Nagyon jó kompatibilitású a PROFITEC homlokzati és beltéri festékekkel. Ajánlott az alacsony tágulási igénybevételű csatlakozási és tömítési hézagokhoz, pl. redőnydobozokon, lépcsőkön, ajtókon és lábazatokon vagy díszítőprofilokon. Repedések és hézagok tömítésére is alkalmas vakolaton, pórusbetonon, gipszkartonon, szálcementen, ásványi aljzatokon, polisztirolon és fán. Kiszerelés: 0,310 l Színárnyalat: fehér",
         ],
         sourceIds: ["src_dufa_p581_acryl_express_gyorsan_szarado_diszperzios_hezagtomito_tds"],
       }
@@ -525,26 +318,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe",
-    sourceIds: ["src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
+    sourceIds: ["src_prod_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_page", "src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Penész elleni beltéri falfesték (Bad- + Küchenfarbe) jellemzői: Leírás Magas minőségű, mosásálló, gombaölő és baktériumölő beltéri matt fehér falfesték. Különösen alkalmas a nedves ipari körülményekhez, mint pl. sörgyárak, tejgyárak, borpincék, posztógyárak, vágóhidak, konzervgyárak falfelületeinek védelmére, továbbá a helyiséghigénia elősegítése céljából a konyhák-, fürdők- és kórházak falfelületeinek gombaölő bevonataként. Fiziólógiailag hatástalan, diffuzióképes, szorpcióképes, illatanyaban szegény, oldószermentes, A használatos fertőtlenítőszereknek ellenálló, mint pl, 3%-os Sagrotan-nak. Kiadósság: 10l – 60 m2 2,5l – 15 m2 Régi név: Schimmelschutzfarbe Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Penész elleni beltéri falfesték (Bad- + Küchenfarbe) jellemzői: Magas minőségű, mosásálló, gombaölő és baktériumölő beltéri matt fehér falfesték.",
+        ],
+        sourceIds: ["src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i folyamathoz Festés és hengerlés: Először a sarkokat és a széleket fesse be ecsettel és kis hengerrel. Ezután egy nagyobb hengerrel dolgozza át a fennmaradó nagy területeket. Belső használatra alkalmas festőhengerrel dolgozzon. A foltok elkerülése érdekében szünet nélkül, egybefüggő területeken, megszakítás nélkűl dolgozzon. Mindig 2-3 csíkot kezdjen el görgetni felülről lefelé. Ezután a felhordott festéket keresztben eloszlatjuk, és végül felülről lefelé újra áthúzzuk. A festék keresztirányú felhordásakor fogja elérni a legjobb eredményt. Minden munkát úgy végezzen el, hogy ne gyakoroljon túl nagy nyomást a szerszámra. Farosttapétához, sima vagy finoman strukturált felületekhez vá.",
-        ],
-        sourceIds: ["src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i utasításait be kell tartani. A szórópára (túlpermetezés) csökkentése a kis nyomással történő permetezés. Ehhez a festéket kis nyomással permetezik, éppen csak annyira, hogy a festék a falra kerüljön. Ezután a festék egyenletes eloszlásához és a kívánt textúra eléréséhez a festék felhordásakor újra kell tekerni. Egy nagyobb fúvóka is használható a hatás fokozására. Célszerű kétfős csapatokban is permetezni, az egyik alkalmazott permetez, a másik pedig azonnal hengerrel gördít. Ennek a technikának az az előnye, hogy a kisebb üzemi nyomás miatt sokkal kevesebb festékköd képződik. Mindig 10-15 cm távolságból és a bevonandó felületre merőlegesen permetezzen. Mindig maradjon kényelmes t.",
-        ],
-        sourceIds: ["src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: R-Osztály 3; Kiadósság: 165 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Magas minőségű, mosásálló, gombaölő és baktériumölő beltéri matt fehér falfesték.",
         ],
         sourceIds: ["src_dufa_penesz_elleni_belteri_falfestek_schimmelschutzfarbe_tds"],
       }
@@ -552,40 +339,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_premium_multigrund",
-    sourceIds: ["src_dufa_premium_multigrund_tds"],
+    sourceIds: ["src_prod_dufa_premium_multigrund_page", "src_dufa_premium_multigrund_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 5 PREMIUM Multigrund  Kiváló tapadásfokozó kritikus aljzatokon tulajdonságok  Kiváló tapadásfokozó kritikus aljzatokon  Univerzálisan átfesthető  Nagyon jó fedőképesség  Jó töltőképességű  Vízbázisú Szinezés Szinezhető a düfa mix System rendszerben. Bedolgozás előtt ellenőrizze a festék színárnyalat pontosságát – cserére nincs lehetőség. A felhordás után bekövetkezett színeltérésekből eredő kártérítési igényeket nem tudunk elfogadni. Összefüggő felületeken csak azonos gyártmány / szín / tétel árnyalatát használja. Kötőanyag Akrilát disz.",
+          "A gyártó nyilvános leírása szerint a(z) Premium Multigrund jellemzői: Leírás Professzionális alapozó PU hibrid alapon Vízbázisú, matt univerzális alapozó beltéri és kültéri használatra. Az egy termékből álló megoldás a teljes körű aljzatelőkészítéshez. Alapozó rétegek alapozásához méretstabil és nem méretstabil faelemeken. Kiváló tapadásfokozó kritikus aljzatokon, mint például cink, horganyzott acél, réz, alumínium, kemény PVC. Univerzálisan újrafesthető minden düfa műgyanta és PU lakkkal. Kiszerelés: 0,75l, 2,5l Kiadósság: 11 m2/l Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Premium Multigrund jellemzői: Professzionális alapozó PU hibrid alapon Vízbázisú, matt univerzális alapozó beltéri és kültéri használatra. Az egy termékből álló megoldás a teljes körű aljzatelőkészítéshez. Alapozó rétegek alapozásához méretstabil és nem méretstabil faelemeken. Kiváló tapadásfokozó kritikus aljzatokon, mint például cink, horganyzott acél, réz, alumínium, kemény PVC. Univerzálisan újrafesthető minden düfa műgyanta és PU lakkkal. Kiszerelés: 0,75l, 2,5l Kiadósság: 11 m2/l Biztonsági adatlap letöltése/megtekintése",
         ],
         sourceIds: ["src_dufa_premium_multigrund_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: mérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert AG Farbwerke Sandweg 15 55543 Bad Kreuznach Németország Telefon: +49 671/870-0 E-mail: info@meffert.com www.meffert.com Állapot:18.09.2023 | HU | www.duefa.de GISCODE BSW30 anwendungstechnik@meffert.com.",
-        ],
-        sourceIds: ["src_dufa_premium_multigrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 100 ml/m² bevonatonként. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. A felhasználási mennyiség próbafestéssel állapítható meg. Rétegfelépítés Szerszámok tisztítása Hígítás A szóráshoz, állítsa be a viszkozitást, max. 10% tiszta csapvízzel hígítva. BEDOLGOZÁS --- PAGE 3 --- 3 / 5 Műszaki adatlap PREMIUM Multigrund Általános tudnivalók  A jelen adatlapon említett termékek műszaki előírásait be kell tartani.  Nem alkalmas befejező bevonatként. Befejező bevonatként, arra megfelelő.",
-        ],
-        sourceIds: ["src_dufa_premium_multigrund_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas befejező bevonatként.",
-        ],
-        sourceIds: ["src_dufa_premium_multigrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Professzionális alapozó PU hibrid alapon Vízbázisú, matt univerzális alapozó beltéri és kültéri használatra. Az egy termékből álló megoldás a teljes körű aljzatelőkészítéshez. Alapozó rétegek alapozásához méretstabil és nem méretstabil faelemeken. Kiváló tapadásfokozó kritikus aljzatokon, mint például cink, horganyzott acél, réz, alumínium, kemény PVC. Univerzálisan újrafesthető minden düfa műgyanta és PU lakkkal. Kiszerelés: 0,75l, 2,5l Kiadósság: 11 m2/l Biztonsági adatlap letöltése/megtekintése",
         ],
         sourceIds: ["src_dufa_premium_multigrund_tds"],
       }
@@ -593,19 +360,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat",
-    sourceIds: ["src_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat_tds"],
+    sourceIds: ["src_prod_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat_page", "src_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Premiumputz K 1,5 Állapot:29.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "A gyártó nyilvános leírása szerint a(z) Premiumputz K 1,5 – prémium minőségű vékony nemesvakolat jellemzői: Leírás Üvegszálerősített, struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikus-dörzsölt (kapart) jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, beton/szálascement lapokra, gipszkarton felületekre stb. A Premiumputz szemcsés vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi. Időjárásálló, a DIN 4108 szabvány szerint vízlepergető, érzéketlen az agresszív ipari gázokkal szemben, kiemelkedően strapabíró, üveg-szál erősített, jól kötődő, páraáteresztő, lúgálló, könnyen és maradék nélkül felhordható. Vízzel hígítható, környezetbarát és illatanyagokban szegény. Kiadósság: kb. 0,5 nm /kg Biztonsági adatlap letöltés/megtekinté",
+          "A gyártó nyilvános leírása szerint a(z) Premiumputz K 1,5 – prémium minőségű vékony nemesvakolat jellemzői: Üvegszálerősített, struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal.",
         ],
         sourceIds: ["src_dufa_premiumputz_k_15_premium_minosegu_vekony_nemesvakolat_tds"],
       }
@@ -613,26 +374,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_fa_sanierlosung_p870",
-    sourceIds: ["src_dufa_profi_tec_fa_sanierlosung_p870_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_fa_sanierlosung_p870_page", "src_dufa_profi_tec_fa_sanierlosung_p870_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Vízbázisú mikrobiocid oldat fertőtlenítésre és támogatásra az algák és penészfertőzöttség tisztítása után, a későbbi bevonatok előtt.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fa_sanierlosung_p870_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i mennyiség próbafestéssel állapítható meg. Hígítás A termék felhasználásra kész. Hígítani nem szükséges. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 10 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. A Szövetségi Környezetvédelmi Hivatal utasítása: Gomba / alga elleni hatóanyagot tartalmazó termékek esetében, az öblítővizet külön kell összegyűjteni és ártalmatlanítani. Műszaki adatlap P 870 Sanierlösung FA Állapot: 27.09.2022 | HU | www.profitec.de --- PAGE 3 --- 3 / 4 Általános tudnivalók  A lehetséges aljzatok és egyéb befolyásoló tényezők nag.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fa_sanierlosung_p870_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 125 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Profi Tec FA Sanierlösung P870 jellemzői: Leírás Vízalapú biocid oldat bel-és kültérre. Vízalapú mikrobiocid oldat algák és penész eltávolításhoz a következő bevonatok előtt. Kiadósság: kb. 6m2/l Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Profi Tec FA Sanierlösung P870 jellemzői: Vízalapú biocid oldat bel-és kültérre. Vízalapú mikrobiocid oldat algák és penész eltávolításhoz a következő bevonatok előtt. Alapozó festék",
         ],
         sourceIds: ["src_dufa_profi_tec_fa_sanierlosung_p870_tds"],
       }
@@ -640,26 +388,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_fassadensilicon_fa_p411",
-    sourceIds: ["src_dufa_profi_tec_fassadensilicon_fa_p411_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_fassadensilicon_fa_p411_page", "src_dufa_profi_tec_fassadensilicon_fa_p411_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kiváló minőségű szilikongyanta homlokzatfesték vízlepergető, nagymértékben diffúzív homlokzati bevonatokhoz ásványi aljzatokon, műgyanta vakolatokon, valamint felújítási bevonatokhoz szilárdan tapadó szilikát-, szilikongyanta- és emulziós festékeken. Kiváló fizikai tulajdonságainak köszönhetően ideális felületi bevonat a ProfiTec Therm ETIC rendszerekhez.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fassadensilicon_fa_p411_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i mennyiség próbafestéssel állapítható meg. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 – 6 óra elteltével Száraz 3 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. A Szövetségi Környezetvédelmi Hivatal utasítása: Gomba / alga elleni hatóanyagot tartalmazó termékek esetében, az öblítővizet külön kell összegyűjteni és ártalmatlanítani. Műszaki adatlap P 411 Fassadensilicon FA Állapot: 27.09.2022.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fassadensilicon_fa_p411_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: G3 osztály (matt) ≤ 10; Kiadósság: 170 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Fassadensilicon FA P411 jellemzői: Leírás Kiváló minőségű szilikongyanta homlokzati festék víztaszító, nagyon jó áteresztő képességű ásványi aljzatokhoz, műgyanta vakolatokhoz és felújító festésekhez, szilárdan tapadó szilikát-, szilikongyanta- és diszperziós rétegeken. Kiváló fizikai tulajdonságai miatt, ideális felületbevonat ProfiTec Therm ETICS rendszerekhez. Kiadósság: kb. 6 m2/l Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Fassadensilicon FA P411 jellemzői: Kiváló minőségű szilikongyanta homlokzati festék víztaszító, nagyon jó áteresztő képességű ásványi aljzatokhoz, műgyanta vakolatokhoz és felújító festésekhez, szilárdan tapadó szilikát-, szilikongyanta- és diszperziós rétegeken. Kiváló fizikai tulajdonságai miatt, ideális felületbevonat ProfiTec Therm ETICS rendszerekhez. Homlokzat festék",
         ],
         sourceIds: ["src_dufa_profi_tec_fassadensilicon_fa_p411_tds"],
       }
@@ -667,33 +402,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_fassadensilikat_p451",
-    sourceIds: ["src_dufa_profi_tec_fassadensilikat_p451_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_fassadensilikat_p451_page", "src_dufa_profi_tec_fassadensilikat_p451_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Kötőanyag Jellemzők a DIN EN 1062 szerint leírás Kötőanyag.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fassadensilikat_p451_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Jellemzők a DIN EN 1062 szerint.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fassadensilikat_p451_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szerszámok tisztítása Bedolgozási tudnivalók Bedolgozási hőmérséklet A felületnek és a környezeti hőmérsékletnek, legalább +8 °C –nak kell lennie, a felhordás és a száradás során. Gondosan takarja le a bevonandó felületek környékét, különösen az üveg, kerámia, lakkok, klinker-tégla, természetes kövek, fém, valamint a kezeletlen vagy pácolt fa anyagok esetén. A kifröccsent anyagot azonnal mossa le tiszta vízzel. Használat előtt alaposan keverje fel. A kívánt sűrűség elérése érdekében, az anyag hígítható. Ha az anyag túl híg, negatívan befolyásolhatja a tulajdonságait (pl. fedőképesség, színárnyalat, ellenállás). Vegye figyelembe a rétegek közötti megfelelő száradási időt. A s.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_fassadensilikat_p451_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: mattG3.",
+          "A gyártó nyilvános leírása szerint a(z) Profi Tec Fassadensilikat P451 jellemzői: Leírás Szilikát homlokzatfesték Matt fehér, rendkívül jó páraáteresztés, kiváló fedőképességű szilikát homlokzatfesték. Kiváló fedőképességű, rendkívüli lég- és páraáteresztő képességű homlokzatfesték. A festék felületén nem képződik filmréteg. Alkalmas minden szilárd, festetlen ásványi felületre, vakolatra, kőre, mészhomokkőre (gipsz- és gipsztartalmú építőanyagokra nem alkalmas), továbbá régi ásványi és szilikátfestékek felújítására. Könnyen és gyorsan feldolgozható, kis feszültségű, ellenálló az ipari gázokkal szemben. Alapozó: Profi Tec Silikatkonzentrat P460 Kiadósság: kb. 5,5 m2/l Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Profi Tec Fassadensilikat P451 jellemzői: Szilikát homlokzatfesték Matt fehér, rendkívül jó páraáteresztés, kiváló fedőképességű szilikát homlokzatfesték. Kiváló fedőképességű, rendkívüli lég- és páraáteresztő képességű homlokzatfesték. A festék felületén nem képződik filmréteg. Alkalmas minden szilárd, festetlen ásványi felületre, vakolatra, kőre, mészhomokkőre (gipsz- és gipsztartalmú építőanyagokra nem alkalmas), továbbá régi ásványi és szilikátfestékek felújítására. Könnyen és gyorsan feldolgozható, kis feszültségű, ellenálló az ipari gázokkal szemben. Homlokzat festék",
         ],
         sourceIds: ["src_dufa_profi_tec_fassadensilikat_p451_tds"],
       }
@@ -701,26 +416,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_matt_plus_p144",
-    sourceIds: ["src_dufa_profi_tec_matt_plus_p144_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_matt_plus_p144_page", "src_dufa_profi_tec_matt_plus_p144_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Matt plus P144 jellemzői: Leírás Tökéletes, erős fényhatás esetén Felújításhoz és újrafestéshez erősen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Kiadósság: kb. 6 m2/l Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Matt plus P144 jellemzői: Tökéletes, erős fényhatás esetén Felújításhoz és újrafestéshez erősen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Beltéri falfesték",
+        ],
+        sourceIds: ["src_dufa_profi_tec_matt_plus_p144_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_matt_plus_p144_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 165 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 5 % vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_matt_plus_p144_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 165 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Tökéletes, erős fényhatás esetén Felújításhoz és újrafestéshez erősen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Beltéri falfesték",
         ],
         sourceIds: ["src_dufa_profi_tec_matt_plus_p144_tds"],
       }
@@ -728,26 +437,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_mattlatex_01_p143",
-    sourceIds: ["src_dufa_profi_tec_mattlatex_01_p143_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_mattlatex_01_p143_page", "src_dufa_profi_tec_mattlatex_01_p143_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Mattlatex 01 P143 jellemzői: Leírás Tompa matt beltéri latexfesték Felújításhoz és újrafestéshez közepesen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Kiadósság: kb. 7 m2/l Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Mattlatex 01 P143 jellemzői: Tompa matt beltéri latexfesték Felújításhoz és újrafestéshez közepesen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Beltéri falfesték",
+        ],
+        sourceIds: ["src_dufa_profi_tec_mattlatex_01_p143_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen közepes igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_mattlatex_01_p143_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 145 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_mattlatex_01_p143_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 145 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Tompa matt beltéri latexfesték Felújításhoz és újrafestéshez közepesen igénybevett lakó- és munkaterületen. Alkalmas P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Beltéri falfesték",
         ],
         sourceIds: ["src_dufa_profi_tec_mattlatex_01_p143_tds"],
       }
@@ -755,26 +458,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_objektweis_p104",
-    sourceIds: ["src_dufa_profi_tec_objektweis_p104_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_objektweis_p104_page", "src_dufa_profi_tec_objektweis_p104_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Objektweiß P104 jellemzői: Leírás Emisszió-csökkentett beltéri falfesték Sokoldalú és könnyen bedolgozható beltéri festék fal és mennyezet felületekhez. Alkalmas minden beltéri aljzathoz, mint például a P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára. Kiadósság: kb. 7 m2/l Biztonsági adatlap letöltés/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Objektweiß P104 jellemzői: Emisszió-csökkentett beltéri falfesték Sokoldalú és könnyen bedolgozható beltéri festék fal és mennyezet felületekhez. Alkalmas minden beltéri aljzathoz, mint például a P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára.",
+        ],
+        sourceIds: ["src_dufa_profi_tec_objektweis_p104_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Sokoldalú és könnyen használható belső festék kereskedelmi épületek falainak és mennyezetének bevonására. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_objektweis_p104_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 145 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Műszaki adatlap P 104 Objektweiß Ál.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_objektweis_p104_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 145 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Emisszió-csökkentett beltéri falfesték Sokoldalú és könnyen bedolgozható beltéri festék fal és mennyezet felületekhez. Alkalmas minden beltéri aljzathoz, mint például a P II és P III habarcscsoportok vakolatai, P IV habarcscsoport gipszvakolatai, beton/szál cementlemezek, gipszkarton, üvegszövet, fűrészporos, valamint vinil-habból vagy papírból készült struktúr-tapéták, valamint a diszperzión alapuló ép régi festékek bevonatára.",
         ],
         sourceIds: ["src_dufa_profi_tec_objektweis_p104_tds"],
       }
@@ -782,26 +479,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_silicon_fassadenputz_p436",
-    sourceIds: ["src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_silicon_fassadenputz_p436_page", "src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Silicon-Fassadenputz P436 jellemzői: Leírás Kiváló minőségű homlokzati festék dekoratív, rendkívül strapabíró bevonatokhoz, dörzs jellegű vakolatszerkezettel. Alkalmas és jóváhagyott P II és P III habarcscsoportok kültéri ásványi aljzataihoz a DIN 18 550 szerint, valamint a ProfiTec Therm ETICS rendszerekhez. Szemcseméret: K1,5 K2,00 K3,00 Kiadósság: kb. 3 kg/m2 Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Silicon-Fassadenputz P436 jellemzői: Kiváló minőségű homlokzati festék dekoratív, rendkívül strapabíró bevonatokhoz, dörzs jellegű vakolatszerkezettel. Alkalmas és jóváhagyott P II és P III habarcscsoportok kültéri ásványi aljzataihoz a DIN 18 550 szerint, valamint a ProfiTec Therm ETICS rendszerekhez. Homlokzat vakolat",
+        ],
+        sourceIds: ["src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kiváló minőségű homlokzati bevonat dekoratív, rendkívül strapabíró bevonatokhoz szemcsés vakolatszerkezetben. Alkalmas és engedélyezett a DIN 18 550 szerinti P II és P III habarcscsoportba tartozó külső ásványi aljzatokra, valamint a ProfiTec Therm ETIC-rendszerekben.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szemcseméret 2,0 mm: kb. 3,0 kg / m² Szemcseméret 3,0 mm: kb. 4,0 kg / m² A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás Max. 2% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 24 óra elteltével Átfesthető 72 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. A Szövetségi Környezetvédelmi Hivatal utasítása: Gomba / alga elleni hatóanyagot tartalmazó termékek esetében, az öblítővizet külön kell összegyűjteni és á.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "Alkalmazási terület a gyártói leírás alapján: Kiváló minőségű homlokzati festék dekoratív, rendkívül strapabíró bevonatokhoz, dörzs jellegű vakolatszerkezettel. Alkalmas és jóváhagyott P II és P III habarcscsoportok kültéri ásványi aljzataihoz a DIN 18 550 szerint, valamint a ProfiTec Therm ETICS rendszerekhez. Homlokzat vakolat",
         ],
         sourceIds: ["src_dufa_profi_tec_silicon_fassadenputz_p436_tds"],
       }
@@ -809,26 +500,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profi_tec_silikat_fassadenputz_p476",
-    sourceIds: ["src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
+    sourceIds: ["src_prod_dufa_profi_tec_silikat_fassadenputz_p476_page", "src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Silikat-Fassadenputz P476 jellemzői: Leírás Kültéri dörzs szilikátvakolat Szerves kötésű szilikátvakolat a DIN 18363 szerint. Kiváló minőségű, dekoratív és strapabíró homlokzati bevonatokhoz használható dörzs jellegű vakolatszerkezettel minden ásványi aljzatra, valamint stabil, matt régi bevonatokhoz. Különösen alkalmas műemléképületekhez, valamint a P Ic, P II és P III habarcscsoport vakolatainak strukturált festéséhez a DIN 18 550 szerint. Szemcseméret: K1,5 K2,00 Kiadósság: kb. 3 kg/m2 Biztonsági adatlap letöltése/megtekintése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFI Tec Silikat-Fassadenputz P476 jellemzői: Kültéri dörzs szilikátvakolat Szerves kötésű szilikátvakolat a DIN 18363 szerint. Kiváló minőségű, dekoratív és strapabíró homlokzati bevonatokhoz használható dörzs jellegű vakolatszerkezettel minden ásványi aljzatra, valamint stabil, matt régi bevonatokhoz. Különösen alkalmas műemléképületekhez, valamint a P Ic, P II és P III habarcscsoport vakolatainak strukturált festéséhez a DIN 18 550 szerint. Homlokzat vakolat",
+        ],
+        sourceIds: ["src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Szerves kötésű szilikátvakolat, kiváló minőségű, dekoratív és strapabíró homlokzati bevonatokhoz, szemcsés rétegszerkezetben. Alkalmas és engedélyezett szerves és ásványi aljzatokra a DIN 18 550 szerinti P II és P III habarcscsoportok külső területein, valamint a ProfiTec Therm ETIC rendszerekben.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: 2,0 mm szemcseméret: kb. 3,0 kg / m² A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. A felhasználási mennyiség próbafestéssel állapítható meg. Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 24 óra elteltével Átfesthető 72 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Műszaki adatlap P 476 Silikat-Fassadenputz Állapot: 26.09.2022 | HU | www.profitec.de --- PAGE 4 --- 4 / 6 Általános tudnivalók  A jelen adatlapon említett termékek műszaki adatlapjait be kell tartani.  A műveletek kö.",
-        ],
-        sourceIds: ["src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "Alkalmazási terület a gyártói leírás alapján: Kültéri dörzs szilikátvakolat Szerves kötésű szilikátvakolat a DIN 18363 szerint. Kiváló minőségű, dekoratív és strapabíró homlokzati bevonatokhoz használható dörzs jellegű vakolatszerkezettel minden ásványi aljzatra, valamint stabil, matt régi bevonatokhoz. Különösen alkalmas műemléképületekhez, valamint a P Ic, P II és P III habarcscsoport vakolatainak strukturált festéséhez a DIN 18 550 szerint. Homlokzat vakolat",
         ],
         sourceIds: ["src_dufa_profi_tec_silikat_fassadenputz_p476_tds"],
       }
@@ -836,33 +521,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_4in1_primer_alapozo_p817",
-    sourceIds: ["src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
+    sourceIds: ["src_prod_dufa_profitec_4in1_primer_alapozo_p817_page", "src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kötőanyag Színárnyalat.",
-        ],
-        sourceIds: ["src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Általános tudnivalók Szerszámok tisztítása Bedolgozási tudnivalók Bedolgozási hőmérséklet Bedolgozás ecsettel, hengerrel vagy szórásos tehnikával. Felhordás airles eljárással: Permetezési szög: 50°; Fúvóka: 0,018 - 0,024”; Permetezési nyomás: 120 - 180 bar Felületek szakszerű előkészítése: Lásd az „Aljzatok és előkezelésük” fejezetet. Legalább +5 ° C tárgy- és környezeti hőmérséklet a bedolgozás és száradás során. Használat előtt alaposan felkeverni. A foltosodás elkerülése érdekében nedves-nedves technikát kell alkalmazni. Ecsettel való festés esetén jól simítsa el a réteget. Végül az utolsó felhordás után, gördítse át felületet egy irányba hengerrel. Vegye figyelembe a rétegek.",
-        ],
-        sourceIds: ["src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas befejező bevonatként.",
-        ],
-        sourceIds: ["src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec 4in1 Primer alapozó P817 jellemzői: Leírás Sokoldalú fehér színű alapozó. Terméktulajdonságok Alapozó és köztes bevonat Megnövelt fényvédelemmel és meghosszabbított nyitott idővel Rendkívül sima felületek kialakítására Színtónus kiegyenlítő Beltéri használatra Alkalmazási terület Fehér pigmentált alapozó funkcionális tulajdonságokkal. Ideálisan alkalmas sima falfelületek kialakítására. Ép, nagy nedvszívó képességű régi rétegek kiegyenlítésére. Használható minden belső aljzaton, mint például II. és III. csoportba tartozó habarcsvakolatok, szálcement és gipszkarton, nem szőtt tapéta, üvegszövet, faforgács és vinilhabból vagy papírból készült textúrált tapéta. Színárnyalat: fehér Kiadósság: kb. 100 ml/m2 Hígítás: felhasználásra kész. Kiszerelés: 12,5l Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel wo",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec 4in1 Primer alapozó P817 jellemzői: Sokoldalú fehér színű alapozó. Kiadósság: kb. 100 ml/m2 Hígítás: felhasználásra kész.",
         ],
         sourceIds: ["src_dufa_profitec_4in1_primer_alapozo_p817_tds"],
       }
@@ -870,19 +535,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_decomarmor_p744",
-    sourceIds: ["src_dufa_profitec_decomarmor_p744_tds"],
+    sourceIds: ["src_prod_dufa_profitec_decomarmor_p744_page", "src_dufa_profitec_decomarmor_p744_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Dekoratív, szerves kötésű színes kővakolat a DIN EN 15824 szabvány szerint, dekoratív, strapabíró belső falburkolatokhoz és időjárásálló külső burkolatokhoz. Színben összehangolt kvarc- vagy márványszemcsékkel lépcsőházak, folyosók, előterek és pultcsarnokok falfelületeinek robusztus bevonataihoz, valamint lábazati területek időjárásálló bevonataihoz, ETIC-rendszereken is. Alkalmas bevonatként szerves és ásványi aljzatokra. A DecoMarmor színezett kővakolat megfelel az A2 -s1 d0 tűzvédelmi viselkedési osztálynak ásványi aljzatokon. Szerves kötésű színes kővakolat a DIN 15824 szerint. Színben összehangolt kvarc- vagy márványgranulátumokkal dekoratív, robusztus bevonatokhoz belső fal.",
-        ],
-        sourceIds: ["src_dufa_profitec_decomarmor_p744_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész diszperziós színezett kővakolat beltéri és kültéri felhasználásra Műszaki adatlap P744 Decomarmor --- PAGE 2 --- Állapot: 20.11.2023 | HU | www.profitec.de 2 / 7 Kötőanyag Verziók Színárnyalat.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Decomarmor P744 jellemzői: Leírás Felhasználásra kész színes szemcsés diszperziós lábazati vakolat. Terméktulajdonságok: Oldószer mentes Időjárásálló és víztaszító Ütés- és karcálló Öntapadós Páraáteresztő Alkáli sóknak ellenáll Bedolgozásra kész Környezetbarát és enyhén szaglik DIN EN 13501 szerinti Tűzveszélyességi osztály A2-s1, d0 (nem éghető) Alkalmazási terület: Dekoratív, szerves kötésű színes kővakolat a DIN EN 15824 szabvány szerint, dekoratív, strapabíró belső falburkolatokhoz és időjárásálló külső burkolatokhoz. Színben összehangolt kvarc- vagy márványszemcsékkel lépcsőházak, folyosók, előterek és pultcsarnokok falfelületeinek robusztus bevonataihoz, valamint lábazati területek időjárásálló bevonataihoz, ETIC-rendszereken is. Alkalmas bevonatként szerves és ásványi aljzatokra. A DecoMarmor színezett kővakolat megfelel az A2 -s1 ",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Decomarmor P744 jellemzői: Felhasználásra kész színes szemcsés diszperziós lábazati vakolat. Szemcseméret: 1: 0,7-1,2 mm 2: 1,2-1,8 mm Kiadósság: Szemcseméret 1 (0,7 – 1,2 mm): kb. 2,5 kg/m² Szemcseméret 2 (1,2 – 1,8 mm): kb. 4,5 – 5,0 kg/m² Színárnyalat: több féle",
         ],
         sourceIds: ["src_dufa_profitec_decomarmor_p744_tds"],
       }
@@ -890,12 +549,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_farbzusatz_fa_p872",
-    sourceIds: ["src_dufa_profitec_farbzusatz_fa_p872_tds"],
+    sourceIds: ["src_prod_dufa_profitec_farbzusatz_fa_p872_page", "src_dufa_profitec_farbzusatz_fa_p872_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kötőanyag Színárnyalat.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Farbzusatz FA P872 jellemzői: Leírás Speciális adalékanyag festékekhez, vakolatokhoz, fafestékekhez, gombásodás és algásodás ellen. Terméktulajdonságok Megakadályozza a gomba-, penész- és algafertőzést Hosszan tartó hatás Csak kültéri használatra Illatszegény Alkalmazási terület: Speciális adalékanyag minden PROFITEC homlokzati festékhez és vakolathoz szilikát-, szilikon- és diszperziós alapon kültéri területeken az algásodás, és gombásodás megelőzésére. Az adalék megbízható és hosszan tartó védőhatást ér el az algák és gombafertőzés ellen. Szinárnyalat: színtelen Kiadósság: kb. 1 db 12,5 l-hez vagy 25 kg-hoz elegendő Kiszerelés: 0,25l Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Farbzusatz FA P872 jellemzői: Speciális adalékanyag festékekhez, vakolatokhoz, fafestékekhez, gombásodás és algásodás ellen. Kiadósság: kb. 1 db 12,5 l-hez vagy 25 kg-hoz elegendő",
         ],
         sourceIds: ["src_dufa_profitec_farbzusatz_fa_p872_tds"],
       }
@@ -903,26 +563,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_grundierfarbe_alapozo_p818",
-    sourceIds: ["src_dufa_profitec_grundierfarbe_alapozo_p818_tds"],
+    sourceIds: ["src_prod_dufa_profitec_grundierfarbe_alapozo_p818_page", "src_dufa_profitec_grundierfarbe_alapozo_p818_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kötőanyag Színárnyalat.",
-        ],
-        sourceIds: ["src_dufa_profitec_grundierfarbe_alapozo_p818_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i mennyiség próbafestéssel állapítható meg. Max. 5 % vízzel. +20 °C és 65 % rel. páratartalom: Átfesthető 12 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Max. 5 % diszperziós bázisú színes és szinező festék (kérjük, ellenőrizze a kompatibilitást) adalékkal színezhető. Géppel PROFITEC Color-Mix-rendszer színezhető Javaslat: A spektrum kritikus színeihez, pl. sárga, narancs, piros és részben a zöld, javasoljuk a színes alapozófestést, a megfelelő BaseColor színnel. A fent említett keverőben lehetőség van a két BaseColor színárnyalat színezésére. Bedolgozás előtt ellenőrizze a festék színárnyalat pontosságát – cserére nincs lehetőség. A felhordás után bekövetke.",
-        ],
-        sourceIds: ["src_dufa_profitec_grundierfarbe_alapozo_p818_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas befejező bevonatként. Ne használja gipszalapú, hidraulikusan megkötő kiegyenlítő anyagokkal.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Grundierfarbe alapozó P818 jellemzői: Leírás Remineralizáló és pigmentált. Terméktulajdonságok: Finom töltetű Tapadást elősegítő előbevonat szilicifikációra nem képes sima aljatokra Beltéri és kültéri használatra Alkalmazási terület: Fehér pigmentált tapadásfokozó nem nedvszívó vagy enyhén nedvszívó aljzatokon, például betonon, valamint diszperziós vagy fényes régi bevonatokon történő utólagos bevonatokhoz. Használható diszperziós szilikátfestékek előtt nem szilikátos aljzatokon és tapétázás előtt csúszásmentes alapozóként is. Színárnyalat: fehér Kiadósság: kb. 160 ml/m2 Hígítás: max. 5% vízzel Kiszerelés: 5l, 12,5l Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Grundierfarbe alapozó P818 jellemzői: Remineralizáló és pigmentált. Kiadósság: kb. 160 ml/m2 Hígítás: max. 5% vízzel",
         ],
         sourceIds: ["src_dufa_profitec_grundierfarbe_alapozo_p818_tds"],
       }
@@ -930,19 +577,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_innenputz_k_p756",
-    sourceIds: ["src_dufa_profitec_innenputz_k_p756_tds"],
+    sourceIds: ["src_prod_dufa_profitec_innenputz_k_p756_page", "src_dufa_profitec_innenputz_k_p756_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kötőanyag Színárnyalat.",
-        ],
-        sourceIds: ["src_dufa_profitec_innenputz_k_p756_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész diszperziós vakolat dekoratív, strapabíró belső térburkolatokhoz, kapart vakolat textúrával. Alkalmas olyan belső aljzatokhoz, mint a P II és P III habarcscsoportba tartozó vakolatok, a P IV habarcscsoportba tartozó gipszvakolatok, beton/rostcementlapok és gipszkartonlapok. Kibocsátás-csökkentett és oldószermentes Ütés- és karcálló Kiváló feldolgozási tulajdonságok Légáteresztő Használatra kész Polivinil-acetát diszperzió Fehér 25, 0 kg Ca. 1,86 - 1,89 g/cm³ Diszperziós dekoratív kapart vakolat a DIN EN 15824 szabvány szerint Műszaki adatlap P756 Innenputz K --- PAGE 2 --- Állapot: 20.11.2023 | HU | www.profitec.de 2 / 5 Szinezés Felhordás Rétegfelépítés Bedolgozási hőmér.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Innenputz K P756 jellemzői: Leírás DIN EN 15824 szabvány szerinti diszperziós szemcsés jellegű dekoratív vakolat. Terméktulajdonságok Kibocsátás-csökkentett és oldószermentes Ütés- és karcálló Könnyen felhordható Légáteresztő Használatra kész Alkalmazási terület Felhasználásra kész diszperziós vakolat dekoratív, strapabíró, barázdált vakolatjellegű beltéri bevonatokhoz. Kiváló feldolgozási tulajdonságok, könnyen alkalmazható és szerkezet. Alkalmas olyan belső aljzatokhoz, mint a P II és P III habarcscsoportba tartozó vakolatok, a P IV habarcscsoportba tartozó gipszvakolatok, beton/rostcementlapok és gipszkartonlapok. Színárnyalat: fehér Szemcseméret: 1,5 mm, 2,00 mm Kiadósság: Szemcseméret 1,5 mm: kb. 3,0 kg/m² Szemcseméret 2,0 mm: kb. 3,8 kg/m² Kiszerelés: 25 kg Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerc",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Innenputz K P756 jellemzői: DIN EN 15824 szabvány szerinti diszperziós szemcsés jellegű dekoratív vakolat. Szemcseméret: 1,5 mm, 2,00 mm Kiadósság: Szemcseméret 1,5 mm: kb. 3,0 kg/m² Szemcseméret 2,0 mm: kb. 3,8 kg/m²",
         ],
         sourceIds: ["src_dufa_profitec_innenputz_k_p756_tds"],
       }
@@ -950,19 +591,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_innenputz_r_p751",
-    sourceIds: ["src_dufa_profitec_innenputz_r_p751_tds"],
+    sourceIds: ["src_prod_dufa_profitec_innenputz_r_p751_page", "src_dufa_profitec_innenputz_r_p751_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felhasználásra kész diszperziós vakolat dekoratív, strapabíró, barázdált vakolatjellegű beltéri bevonatokhoz. Kiváló feldolgozási tulajdonságok, könnyen alkalmazható és szerkezet. Alkalmas olyan belső aljzatokhoz, mint a P II és P III habarcscsoportba tartozó vakolatok, a P IV habarcscsoportba tartozó gipszvakolatok, beton/rostcementlapok és gipszkartonlapok.",
-        ],
-        sourceIds: ["src_dufa_profitec_innenputz_r_p751_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szemcseméret 1,5 mm: kb. 2,3 kg/m² Szemcseméret 2,0 mm: kb. 3,1 kg/m² A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás Max. 2% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 24 óra elteltével Átfesthető 72 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Általános tudnivalók  A jelen adatlapon említett termékek műszaki adatlapjait be kell tartani.  A műveletek között ügyeljen az elegendő száradási időre. Műsza.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Innenputz R P751 jellemzői: Leírás Diszperziós dekoratív dörzsvakolat a DIN EN 15824 szabvány szerint. Terméktulajdonságok Kibocsátás-csökkentett és oldószermentes Ütés- és karcálló Könnyen felhordható Légáteresztő Használatra kész Alkalmazási terület Felhasználásra kész diszperziós vakolat dekoratív, strapabíró, barázdált vakolatjellegű beltéri bevonatokhoz. Kiváló feldolgozási tulajdonságok, könnyen alkalmazható és szerkezet. Alkalmas olyan belső aljzatokhoz, mint a P II és P III habarcscsoportba tartozó vakolatok, a P IV habarcscsoportba tartozó gipszvakolatok, beton/rostcementlapok és gipszkartonlapok. Színárnyalat: fehér Szemcseméret: 1,5 mm, 2,00 mm Kiadósság: Szemcseméret 1,5 mm: kb. 2,3 kg/m² Szemcseméret 2,0 mm: kb. 3,1 kg/m² Kiszerelés: 25 kg Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-pane",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Innenputz R P751 jellemzői: Diszperziós dekoratív dörzsvakolat a DIN EN 15824 szabvány szerint. Színárnyalat: fehér Szemcseméret: 1,5 mm, 2,00 mm",
         ],
         sourceIds: ["src_dufa_profitec_innenputz_r_p751_tds"],
       }
@@ -970,26 +605,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_p118_rapid_plus",
-    sourceIds: ["src_dufa_profitec_p118_rapid_plus_tds"],
+    sourceIds: ["src_prod_dufa_profitec_p118_rapid_plus_page", "src_dufa_profitec_p118_rapid_plus_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P118+ Rapid Plus jellemzői: Leírás Sokoldalú, egyrétegű beltéri falfesték. Terméktulajdonságok: Súrlófény esetén Nagyon jó javítás Kiváló kivitelezés Ellenállónak bizonyult a fertőtlenítőszerekkel szemben Páraáteresztő Csekély károsanyag kibocsátás, oldószer és lágyítószer mentes Vízzel hígítható és enyhén szaglik Ködképző hatóanyagtól mentes Alkalmazási terület: Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Kiadósság: kb. 125 ml/m2 Színárnyalat:",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P118+ Rapid Plus jellemzői: Sokoldalú, egyrétegű beltéri falfesték. Kiadósság: kb. 125 ml/m2 Színárnyalat: fehér, bázis 2, bázis 3 Fényfokozat: Tompamatt",
+        ],
+        sourceIds: ["src_dufa_profitec_p118_rapid_plus_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profitec_p118_rapid_plus_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 125 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profitec_p118_rapid_plus_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 125 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Sokoldalú, egyrétegű beltéri falfesték. Kiadósság: kb. 125 ml/m2 Színárnyalat: fehér, bázis 2, bázis 3 Fényfokozat: Tompamatt",
         ],
         sourceIds: ["src_dufa_profitec_p118_rapid_plus_tds"],
       }
@@ -997,26 +626,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_p119_ratio_top",
-    sourceIds: ["src_dufa_profitec_p119_ratio_top_tds"],
+    sourceIds: ["src_prod_dufa_profitec_p119_ratio_top_page", "src_dufa_profitec_p119_ratio_top_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profitec_p119_ratio_top_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 165 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profitec_p119_ratio_top_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Matt; Kiadósság: 165 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P119 Ratio Top jellemzői: Leírás Nagymértékben fedő, strapabíró belső falfesték Terméktulajdonságok Tartósítószermentes Első osztályú bedolgozás Egységes felületkezelés Páraáteresztő Csekély károsanyag kibocsátás, oldószer és lágyítószer mentes Vízzel hígítható és enyhén szaglik Ködképző hatóanyagtól mentes Alkalmazási terület: Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Kiadósság: kb. 165 ml/m2 Színárnyalat: fehér Fényfokozat: matt Kiszerelés:",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P119 Ratio Top jellemzői: Nagymértékben fedő, strapabíró belső falfesték Kiadósság: kb. 165 ml/m2 Színárnyalat: fehér Fényfokozat: matt Kiszerelés: 12,5 l",
         ],
         sourceIds: ["src_dufa_profitec_p119_ratio_top_tds"],
       }
@@ -1024,33 +640,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_p140_ratio_matt",
-    sourceIds: ["src_dufa_profitec_p140_ratio_matt_tds"],
+    sourceIds: ["src_prod_dufa_profitec_p140_ratio_matt_page", "src_dufa_profitec_p140_ratio_matt_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 6 Alkalmazási terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen közepes ban. Műszaki adatlap P140 Ratio MATT Állapot: 20.11.2023 | HU | www.profitec.de --- PAGE 3 --- 3 / 6 Bedolgozás Felhordás Bedolgozás ecsettel, hengerrel vagy szórásos tehnikával. Felhordás hengerrel: A szokásos, hengerrel történő felhordáshoz 12 mm szálhosszúságú festőhengertajánlunk. Felhordás szórással: Állítsa be az anyag szórási sűrűségét. Vegye figyelembe a készülék gyártójánakinformációit. Felhordás airles eljárással: szórás szöge: 50°; fúvóka: 0,018 - 0,021”; szórásnyomás: 1.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P140 Ratio MATT jellemzői: Leírás Tompa matt beltéri falfesték Terméktulajdonságok Jól terül Könnyű bedolgozni Egységes felületkezelés Páraáteresztő Csekély károsanyag kibocsátás, oldószer és lágyítószer mentes Vízzel hígítható és enyhén szaglik Ködképző hatóanyagtól mentes Alkalmazási terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen közepes igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Színárnyalat: fehér Fényfokozat: Tompa matt Kiadósság: kb. 145 ml/ m2 Kiszerelés: 12,5l Műszaki adatlap letölt",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec P140 Ratio MATT jellemzői: Tompa matt beltéri falfesték. Fényfokozat: Tompa matt Kiadósság: kb. 145 ml/ m2",
         ],
         sourceIds: ["src_dufa_profitec_p140_ratio_matt_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen közepes igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profitec_p140_ratio_matt_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 145 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profitec_p140_ratio_matt_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 145 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Tompa matt beltéri falfesték. Fényfokozat: Tompa matt Kiadósság: kb. 145 ml/ m2",
         ],
         sourceIds: ["src_dufa_profitec_p140_ratio_matt_tds"],
       }
@@ -1058,33 +661,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_ratio_pro_p117",
-    sourceIds: ["src_dufa_profitec_ratio_pro_p117_tds"],
+    sourceIds: ["src_prod_dufa_profitec_ratio_pro_p117_page", "src_dufa_profitec_ratio_pro_p117_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 7 Alkalmazási terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott ban. Műszaki adatlap P117 Ratio PRO Állapot: 20.11.2023 | HU | www.profitec.de --- PAGE 3 --- 3 / 7 Bedolgozás Felhordás Bedolgozás ecsettel, hengerrel vagy szórásos tehnikával. Felhordás hengerrel: A szokásos, hengerrel történő felhordáshoz 12 mm szálhosszúságú festőhengertajánlunk. Sima felületekre hengerrel való felvitel esetén a legjobb eredmény eléréséhez használjon sima felületekhez való festőhengert. Így csökkenthető a felületi struktúra, a csíkozódás és a kifényesedés kockázata.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Ratio PRO P117 jellemzői: Leírás Sokoldalúan felhasználható matt beltéri falfesték. Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Tulajdonságok: Kiváló minőségű bevonat Elegáns, matt felületkezelés Zökkenőmentes feldolgozás Kitűnő fehérség Páraáteresztő Csekély károsanyag kibocsátás, oldószer és lágyítószer mentes Ködképző hatóanyagtól mentes Vízzel hígítható és enyhén szaglik Kiadósság: kb. 145ml/m2 Fényfokozat: Tompa matt Színárnyalat: fehér Ki",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Ratio PRO P117 jellemzői: Sokoldalúan felhasználható matt beltéri falfesték. Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére.",
         ],
         sourceIds: ["src_dufa_profitec_ratio_pro_p117_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profitec_ratio_pro_p117_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 145 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A jelen adat.",
-        ],
-        sourceIds: ["src_dufa_profitec_ratio_pro_p117_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Tompa matt; Kiadósság: 145 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Sokoldalúan felhasználható matt beltéri falfesték. Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére.",
         ],
         sourceIds: ["src_dufa_profitec_ratio_pro_p117_tds"],
       }
@@ -1092,26 +682,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_seidenlatex_20_p156",
-    sourceIds: ["src_dufa_profitec_seidenlatex_20_p156_tds"],
+    sourceIds: ["src_prod_dufa_profitec_seidenlatex_20_p156_page", "src_dufa_profitec_seidenlatex_20_p156_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Seidenlatex 20 P156 jellemzői: Leírás Terméktulajdonságok: Szerkezetmegőrző Könnyen tisztítható Ellenállónak bizonyult a fertőtlenítőszerekkel szemben Egyenletes terülés Vizsgált PCB visszatartási kapacitás Vízzel hígítható és enyhén szaglik Páraáteresztő Csekély károsanyag kibocsátás, oldószer és lágyítószer mentes Ködképző hatóanyagtól mentes Alkalmazási terület: Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Kiadósság: kb. 145 ml/m2 Színárnyala",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Seidenlatex 20 P156 jellemzői: Selyemfényű beltéri latexfesték. Kiadósság: kb. 145 ml/m2 Fényfokozat: selyemfényű",
+        ],
+        sourceIds: ["src_dufa_profitec_seidenlatex_20_p156_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Felújításhoz és új bevonatokhoz az egész lakó- és munkaterületen fokozott igénybevétel mellett. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint texturált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újrafestésére.",
-        ],
-        sourceIds: ["src_dufa_profitec_seidenlatex_20_p156_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 145 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 10% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A felület ja.",
-        ],
-        sourceIds: ["src_dufa_profitec_seidenlatex_20_p156_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Fényesség: Közepes fényű; Kiadósság: 145 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Selyemfényű beltéri latexfesték. Kiadósság: kb. 145 ml/m2 Fényfokozat: selyemfényű",
         ],
         sourceIds: ["src_dufa_profitec_seidenlatex_20_p156_tds"],
       }
@@ -1119,19 +703,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_silicon_duogrund_p421",
-    sourceIds: ["src_dufa_profitec_silicon_duogrund_p421_tds"],
+    sourceIds: ["src_prod_dufa_profitec_silicon_duogrund_p421_page", "src_dufa_profitec_silicon_duogrund_p421_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Kötőanyag Színárnyalat.",
-        ],
-        sourceIds: ["src_dufa_profitec_silicon_duogrund_p421_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szerszámok tisztítása Bedolgozási tudnivalók Bedolgozási hőmérséklet Bedolgozás ecsettel vagy hengerrel. Felületek szakszerű előkészítése: Lásd az „Aljzatok és előkezelésük”fejezetet. Hígítás vízzel, a felvitel módjától és az aljzat nedvszívó képességétől függően, legfeljebb 10% -ig. Erősen elnyelő vagy enyhén homokos szubsztrátumokon a telítettségig dolgozza fel az anyagot nedvesen. Több alapozóra lehet szükség, az egyenletesen nedvszívó felületek eléréséhez. Legalább +5 ° C tárgy- és környezeti hőmérséklet a bedolgozás és száradás során. Használat előtt alaposan felkeverni. Algásodás vagy gombásodás esetén - a törvényi előírások betartása mellett-, a felületeket először vízsugár.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Silicon DuoGrund P421 jellemzői: Leírás 2 az 1-bn speciális alapozó Terméktulajdonságok: Gombaölőt és algicidet tartalmaz Konszolidáló, hidrofób Vízzel hígítható Kültéri Alkalmazási terület: Kész Hydrosol alapozó hígítási tartalékkal, erősen vagy különböző mértékben nedvszívó, csiszolható aljzatok mélyalapozásához és megszilárdításához. Alkalmas P II, P III és P IV habarcscsoportba tartozó vakolatokhoz, beton/rostcementlapokhoz, mészhomokos téglához, téglához, betonhoz és pórusbetonhoz, valamint enyhén meszesedő, de stabil régi festékrétegekhez. Kiadósság: kb. 100-150 ml/m2 Hígítás: max. 10% vízzel Színárnyalat: Sárga-transzparens Kiszerelés: 10l Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Silicon DuoGrund P421 jellemzői: 2 az 1-bn speciális alapozó Kiadósság: kb. 100-150 ml/m2 Hígítás: max. 10% vízzel Színárnyalat: Sárga-transzparens",
         ],
         sourceIds: ["src_dufa_profitec_silicon_duogrund_p421_tds"],
       }
@@ -1139,26 +717,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_silicon_impragnierkonzentrat_p880",
-    sourceIds: ["src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
+    sourceIds: ["src_prod_dufa_profitec_silicon_impragnierkonzentrat_p880_page", "src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Silicon-Imprägnierkonzentrat P880 jellemzői: Leírás Vízzel hígítható speciális hidrofób koncentrátum bel- és kültéri használatra. Terméktulajdonságok: Csökkenti a vízfelvételt Hidrofób UV- és lúgálló Nem filmképző Alkalmazási terület: Nedvszívó, ásványi aljzatok (pl. beton- és vakolt felületek, természetes és műkő, fagyálló mészhomokos tégla, téglafalazat, szálcement, ásványi festékrétegek stb.) impregnálására. Kiadósság: Hígítatlanul kb. 20 – 40 ml/m2 Hígítás: max.: 1:9 arányban vízzel Kiszerelés: 1l Színárnyalat: színtelen Műszaki adatlap letöltése Biztonsági adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Silicon-Imprägnierkonzentrat P880 jellemzői: Vízzel hígítható speciális hidrofób koncentrátum bel- és kültéri használatra. Kiadósság: Hígítatlanul kb. 20 – 40 ml/m2 Hígítás: max.: 1:9 arányban vízzel",
+        ],
+        sourceIds: ["src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Nedvszívó, ásványi aljzatok (pl. beton- és vakolt felületek, természetes és műkő, fagyálló mészhomokos tégla, téglafalazat, szálcement, ásványi festékrétegek stb.) impregnálására.",
-        ],
-        sourceIds: ["src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. A felhasználási mennyiség próbafestéssel állapítható meg. Hígítás Legfeljebb 9 rész vízzel (pl. 100 ml koncentrátum : 900 ml víz). Használat előtt azonnal hígítsa vízzel. Olyan anyagkeveréket eredményez, amelyet tizenkét órán belül fel kell dolgozni. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 12 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Használat után azonnal tisztítsa meg vízzel, esetleg mosószer hozzáadásával. Általános tudnivalók  A lehetséges aljzatok és egyéb befolyásoló tényezők nagy száma miatt aj.",
-        ],
-        sourceIds: ["src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas olyan felületekre, ahol nedvesség hatol be, pl.",
+          "Alkalmazási terület a gyártói leírás alapján: Vízzel hígítható speciális hidrofób koncentrátum bel- és kültéri használatra. Kiadósság: Hígítatlanul kb. 20 – 40 ml/m2 Hígítás: max.: 1:9 arányban vízzel",
         ],
         sourceIds: ["src_dufa_profitec_silicon_impragnierkonzentrat_p880_tds"],
       }
@@ -1166,33 +738,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_trendweiss_p113_matt_belteri_falfestek",
-    sourceIds: ["src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
+    sourceIds: ["src_prod_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_page", "src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Beschichtungen für Profis 1000 leírás Kötőanyag.",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Trendweiss P113 – Matt beltéri falfesték jellemzői: Leírás Felújításra és új burkolatokra a teljes kis forgalmú lakó- és munkaterületen. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/ rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Tulajdonságok: Sokoldalú Könnyen felhordható Páraáteresztő Minimális károsanyag kibocsájtás Oldószer és lágyítószer mentes Vízzel hígítható, enyhén szaglik Ködképző hatóanyagtól mentes Kiadósság: kb. 145 ml/m2 Fényfokozat: Matt Színárnyalat: fehér, bázis2, bázis 3 Kiszerelés: Fehér: 12,5 l Bázis 2: 1l, 2,5l, 5l, 7,5l, 12,5l Biztonsági adatlap letöltése Műszaki",
+          "A gyártó nyilvános leírása szerint a(z) PROFITec Trendweiss P113 – Matt beltéri falfesték jellemzői: Felújításra és új burkolatokra a teljes kis forgalmú lakó- és munkaterületen. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/ rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Kiadósság: kb. 145 ml/m2 Fényfokozat: Matt Színárnyalat: fehér, bázis2, bázis 3",
         ],
         sourceIds: ["src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i célra a mindenkori objektumfeltételek között való alkalmasság szempontjából (pl. próbafestés, stb.). Azoknál az alkalmazásoknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Sandweg 15 55543 Bad Kreuznach Németország Telefon: +49 671/870-0 E-mail: info@meffert.com www.meffert.com Meffert AG Farbwerke MŰSZAKI ADATLAP 1000 Dachbeschichtung.",
-        ],
-        sourceIds: ["src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas agyagcserepek és természetes palacserepek bevonására.",
-        ],
-        sourceIds: ["src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 150 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Felújításra és új burkolatokra a teljes kis forgalmú lakó- és munkaterületen. Alkalmas minden belső aljzatra, mint például a P II és P III habarcscsoportba tartozó vakolatokra, a P IV habarcscsoportba tartozó gipszvakolatokra, beton/ rostcementlapokra, gipszkartonlapokra, üvegszövetekre, üveg- és cellulózvászonra, faforgácsra, valamint textúrált vagy papírtapétákra, valamint ép régi diszperziós alapú bevonatok újra festésére. Kiadósság: kb. 145 ml/m2 Fényfokozat: Matt Színárnyalat: fehér, bázis2, bázis 3",
         ],
         sourceIds: ["src_dufa_profitec_trendweiss_p113_matt_belteri_falfestek_tds"],
       }
@@ -1200,33 +759,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez",
-    sourceIds: ["src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
+    sourceIds: ["src_prod_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_page", "src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) düfa Weissgrund oldal 1 / 3  Behatol az aljzatba  Kitűnő fedőképességgel rendelkezik  Gyorsanl szárad  Fehér színű  Könnyű bedolgozni  Erős tapadóhídat képez Színárnyalat Fehér Sűrűség kb. 1,45 g/cm³ Kötőanyag Akril diszperzió Tartalmazott anyagok A VdL-irányvonalak szerinti festékanyagok: Akril diszperzió, víz, adalékok, metil- és benzil-izotiazolinon. Allergiás reakciókat válthat ki. Allergiások információt kérhetnek az alábbi telefonszámon: +36-80-20-11-99.",
+          "A gyártó nyilvános leírása szerint a(z) Profitec Weissgrund – Műgyantás fehér alapozó gipszkarton felületekhez jellemzői: Leírás Fehéren pigmentált, ásványi töltetű, kül- és beltéri speciális alapozófesték. Az alapfelületre felhordva száradás után érdes felületet képez, mely megkönnyíti a műgyantás vékonyvakolatok felhordását. Alkalmazásával homogén nedvszívású és színű felületet nyerhetünk. A választott vékonyvakolat színére színezhető így különösen a gördülőszemcsés vakolattípusoknál jelentősen lecsökkenti a foltosodás veszélyét. Elsősorban ásványi alapfelületekre, de gipszkarton lapokra és különféle fa alapfelületekre is alkalmazható. Biztonsági adatlap letöltés/megtekintés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Profitec Weissgrund – Műgyantás fehér alapozó gipszkarton felületekhez jellemzői: Fehéren pigmentált, ásványi töltetű, kül- és beltéri speciális alapozófesték.",
         ],
         sourceIds: ["src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek Speciálisan pigmentált fehérapozó . Az ásványi eredetű alapfelületek, valamint gipszkarton alapozásához használható ( préselt építőipari la- pokra, gipszkartonra, különféle préselt fa lemezekre. Minden kültéren és beltérben előforduló felületre pl. vakolat, beton, téglafal, gipszkarton, papír és fűrészporos tapéták valamint ép, diszperziós festékkel kent régi alapra alkalmazható. Alkáli anyagokkal szemben ellenálló, páraáteresz- tő. A gipszkartonok esetében a telibe glettelés elhagyható!!.",
-        ],
-        sourceIds: ["src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Használat előtt jól fel kell keverni. Kiemelkedő vakolaterősítő hatását ecsettel vagy hengerrel történő bedolgozással lehet elérni. Záróréteg Minden düfa diszperziós festék alá használható! Szerszámjavaslat Bedolgozás ecsettel, kefével vagy hengerrel. Bedolgozási hőmérséklet A felhasználása során az alapfelületnek és a környezeti hőmérsékletnek min. +5°C-nak kell lennie. Száradási idő + 20°C és max. 65% relatív páratartalom esetén 12 óra elteltével terhelhető. Alacsonyabb hőmérsékletek és magasabb páratartalmak megnövelik ezeket az időket.",
-        ],
-        sourceIds: ["src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 170 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Fehéren pigmentált, ásványi töltetű, kül- és beltéri speciális alapozófesték.",
         ],
         sourceIds: ["src_dufa_profitec_weissgrund_mugyantas_feher_alapozo_gipszkarton_feluletekhez_tds"],
       }
@@ -1234,26 +780,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_putzgrund_univerzalis_rendszer_alapozo",
-    sourceIds: ["src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
+    sourceIds: ["src_prod_dufa_putzgrund_univerzalis_rendszer_alapozo_page", "src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Putzgrund – Univerzális rendszer alapozó jellemzői: Leírás Tulajdonságok: – Kvarccal töltött, fehér pigmentált – Kontraszt kiegyenlítés – Jóváhagyva az ETICS számára – Beltéri és kültéri használatra Kiszerelés: 18 kg Anyagszükséglet: kb. 250 – 300 g/m² Szín: fehér/színezhető MIX rendszerben Hígítás: vízzel 2:1-ig Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Putzgrund – Univerzális rendszer alapozó jellemzői: Nagy tapadású és kitöltő vakolatalapozó beltéri és kültéri használatra. Elsősorban a ProfiTec ásványi, szilikát-,diszperziós és szilikongyanta vakolatokkal történő későbbi befejező rétegek kontrasztos alapozásához. Rendszeralapozó a ProfiTec P 744 Decomarmor és az ETIC rendszerekhez.",
+        ],
+        sourceIds: ["src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Nagy tapadású és kitöltő vakolatalapozó a ProfiTec ásványi, szilikát-, diszperziós és szilikongyanta vakolatokkal történő későbbi befejező rétegek kontrasztos alapozásához. Rendszeralapozó az ProfiTec P 744Decomarmor és az ETIC rendszerekhez.",
-        ],
-        sourceIds: ["src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i mennyiség próbafestéssel állapítható meg. Hígítás Max. 30% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 12 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A jelen adatlapon említett termékek műszaki adatlapjait be kell tartani.  A lehetséges aljzatok és egyéb befolyásoló tényezők nagy száma miatt ajánlott a felhordás megkezdése előtt egy tesztfelületet felhordani.  Javaslat kültéri haszná.",
-        ],
-        sourceIds: ["src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas befejező bevonatként.",
+          "Alkalmazási terület a gyártói leírás alapján: Nagy tapadású és kitöltő vakolatalapozó beltéri és kültéri használatra. Elsősorban a ProfiTec ásványi, szilikát-,diszperziós és szilikongyanta vakolatokkal történő későbbi befejező rétegek kontrasztos alapozásához. Rendszeralapozó a ProfiTec P 744 Decomarmor és az ETIC rendszerekhez.",
         ],
         sourceIds: ["src_dufa_putzgrund_univerzalis_rendszer_alapozo_tds"],
       }
@@ -1261,33 +801,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek",
-    sourceIds: ["src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
+    sourceIds: ["src_prod_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_page", "src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Rostschutzgrund – Korróziógátló alapozófesték Kiváló tapadóképesség a “problémás“ alapfelületeken is. A megfelelelő száradási idő után tapadást biztosít a következő rétegeknek. Alapfelület: Az alapfelületet gondosan rozsdátlanítsuk, távolítsuk el a laza rétegeket, zsírtalanítsunk. A homokszórással kezelt felületek esetében a hegesztési varratoknál ügyeljünk a festékréteg gondos felvitelére.",
+          "A gyártó nyilvános leírása szerint a(z) Rostschutzgrund – Rozsda ellen védő alapozófesték jellemzői: Leírás – Korrózió elleni kül- és beltéri alapozó – Gyorsan száradó – A záró festékréteg tapadását elősegítő alapozó és közbenső festék – Vas, acél lapokra, pl.: csövekre, rácsokra, fűtőtestekre, radiátorokra – Több színárnyalat Korrózió elleni kül- és beltéri alapozó, nitró hígítású festékekkel lefesthető. Gyorsan száradó, a záró festékréteg tapadását elősegítő alapozó és közbenső festék. Alkalmas vas, acél alapokra, mint pl. csövekre, ajtókra, rácsokra, fűtőtestekre, radiátorokra. Különféle színekben kapható. Higítás: Aromamentes higító. Kiadósság: 10 m 2 /l Biztonságtechnikai Adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Rostschutzgrund – Rozsda ellen védő alapozófesték jellemzői: – Korrózió elleni kül- és beltéri alapozó – Gyorsan száradó – A záró festékréteg tapadását elősegítő alapozó és közbenső festék – Vas, acél lapokra, pl.: csövekre, rácsokra, fűtőtestekre, radiátorokra – Több színárnyalat",
         ],
         sourceIds: ["src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Kiváló tapadóképesség a “problémás“ alapfelületeken is.",
-        ],
-        sourceIds: ["src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Gyorsan száradó, jó tapadóképességű korróziógátló alapozó alap, – és közbenső ré- tegeként vas, – és acél alapfelületekre, mint pl.: csövekre, ajtókra, rácsokra, valamint me- legvízes fűtési rendszerekre stb.",
-        ],
-        sourceIds: ["src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 375 ml, 750 ml, 2,5 l és 15 kg.; Kiadósság: Kb. 10 m²/l, az alapfelület tulajdonságaitól függõen..",
+          "Alkalmazási terület a gyártói leírás alapján: – Korrózió elleni kül- és beltéri alapozó – Gyorsan száradó – A záró festékréteg tapadását elősegítő alapozó és közbenső festék – Vas, acél lapokra, pl.: csövekre, rácsokra, fűtőtestekre, radiátorokra – Több színárnyalat",
         ],
         sourceIds: ["src_dufa_rostschutzgrund_rozsda_ellen_vedo_alapozofestek_tds"],
       }
@@ -1295,33 +822,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_schultafellack_tablafestek",
-    sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
+    sourceIds: ["src_prod_dufa_schultafellack_tablafestek_page", "src_dufa_schultafellack_tablafestek_tds"],
     sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Schultafellack- Táblafesték jellemzői: Leírás Speciális, alkid-gyanta alapú, oldószeres, matt aromamentes betéri zománcfesték. Alkalmas iskolai táblák, ár táblák, pingpongasztalok, valamint fa és fém dekorációs elemek festésére belső terekben. Az átfestett felületek szabványos táblakrétával írhatók. Kiadósság: 10m2/l Cikkszám Terméknév Kiszerelés EAN 3400606650000200375 ALB Schultafellack zöld 0,3750 4002364311040 3400606650000200750 ALB Schultafellack zöld 0,7500 4002364311064 3400606650000300375 ALB Schultafellack fekete 0,3750 4002364311033 3400606650000300750 ALB Schultafellack fekete 0,7500 4002364311057 Biztonsági adatlap letöltése (fekete) Biztonsági adatlap letöltése (zöld) Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Schultafellack- Táblafesték jellemzői: Speciális, alkid-gyanta alapú, oldószeres, matt aromamentes betéri zománcfesték. Alkalmas iskolai táblák, ár táblák, pingpongasztalok, valamint fa és fém dekorációs elemek festésére belső terekben. Az átfestett felületek szabványos táblakrétával írhatók.",
+        ],
+        sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
+      },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület Funkcionális matt speciális alkidgyanta lakk újraírható felületek létrehozására. Alkalmas táblák, ártáblák és pingpongasztalok átdolgozására, valamint fa és fém dekorációs elemek áttervezésére belső terekben, amelyek szabványos táblakréta krétával írhatók.",
-        ],
-        sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i mennyiség próbafestéssel állapítható meg. Hígítás A termék felhasználásra kész. Hígítani nem szükséges. Műszaki adatlap Schultafellack Állapot: 09.02.2024 | HU | www.lack-albrecht.de --- PAGE 3 --- E in U n te r n e h m e n d e r L a c k fa b r ik J . A lb r e c h t G m b H + C o . K G In d u s tr ie s tr a ß e 2 4 1 2 6 M 5 5 1 2 0 M a in z T e l . + 4 9 6 1 3 1 6 2 0 9 1 0 M F a x + 4 9 6 1 3 1 6 2 0 9 1 4 0 G L N 4 0 0 2 3 6 4 0 0 0 0 0 5 w w w .l a c k 1 a lb r e c h t .d e M in fo @ la c k 1 a lb r e c h t .d e R e g is te r g e r ic h t M a in z 1 4 H R A 0 3 7 0 P e r s ö n lic h h a f te n d e G e s e l ls c h a f te r in : L a c k 1 A lb r e c h t G m b H , S it z M a in z M R e.",
-        ],
-        sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Ne használjon súrolószivacsot, súrolótejet stb.",
-        ],
-        sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "Alkalmazási terület a gyártói leírás alapján: Speciális, alkid-gyanta alapú, oldószeres, matt aromamentes betéri zománcfesték. Alkalmas iskolai táblák, ár táblák, pingpongasztalok, valamint fa és fém dekorációs elemek festésére belső terekben. Az átfestett felületek szabványos táblakrétával írhatók.",
         ],
         sourceIds: ["src_dufa_schultafellack_tablafestek_tds"],
       }
@@ -1329,26 +843,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu",
-    sourceIds: ["src_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_tds"],
+    sourceIds: ["src_prod_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_page", "src_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Seidenlatex, D 101 - Selyem-latexfesték A DIN 53 778 szabvány szerint súrolásálló, oldószermentes, könnyen feldolgozható, nagy fed őképesség ű, jól tisztítható és diffuzióképes. A bels őtéri er ős igénybevételeknek kitett falfelületek jó fed őképesség ű, nagyon kiadós, selyemfény ű, súrolásálló véd őbevonata. Alapfelület: A Seidenlatex D 101 minden hordképes aljzatra felhordható. Az alapfelületnek száraznak, tisztának és szilárdnak kell lennie. A régi enyves festékrétegeket teljesen el kell távolítani. A friss cementvakolatot.",
+          "A gyártó nyilvános leírása szerint a(z) Seidenlatex D 101 – Beltéri fehér latexfesték, selyemfényű jellemzői: Leírás Selyemfényű, súrolásálló, beltéri fehér, műgyanta alapú latex-falfesték. Jó fedőképeségű, rendkívül kiadós, műgyanta alapú, selyemfényű, súrolásálló, jó lég- és páraáteresztő képességű latexfesték, nagy igénybevételnek kitett mennyezetek és falfelületek festésére. Felhordható vakolatra, beton- és gipszfelületekre, fűrészporos-, üvegfátyol-, dombormintás tapétákra, és fa alapokra is. A fekete tetővel rendelkező a mix, a színkeverő rendszer része, bázis termék kétféle van, B1 és B2. A 2,5 l-es kiszerelés ebben elérhető csak, a simában nincs. Kiadósság egy réteg / nm: 5l – 30 10l – 60 Biztonsági adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Seidenlatex D 101 – Beltéri fehér latexfesték, selyemfényű jellemzői: Selyemfényű, súrolásálló, beltéri fehér, műgyanta alapú latex-falfesték. Jó fedőképeségű, rendkívül kiadós, műgyanta alapú, selyemfényű, súrolásálló, jó lég- és páraáteresztő képességű latexfesték, nagy igénybevételnek kitett mennyezetek és falfelületek festésére.",
         ],
         sourceIds: ["src_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Súrolásálló m űanyag-diszperziós festék a bels ő falfelületek bevonataként. Küls ő homlokzati felületek, üvegszövet tapéták, durvaszálas-, és dombornyomásos tapéták, gipsztartalmú aljzatok, vakolt- és betonfelületek, valamint könny űszerkezetes épít őelemek bevonására is alkalmazható.",
-        ],
-        sourceIds: ["src_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 2,5 l, 5 l és 10 l.; Kiadósság: Kb. 6 m²/l. Az alapfelület adottságai szerint..",
+          "Alkalmazási terület a gyártói leírás alapján: Selyemfényű, súrolásálló, beltéri fehér, műgyanta alapú latex-falfesték. Jó fedőképeségű, rendkívül kiadós, műgyanta alapú, selyemfényű, súrolásálló, jó lég- és páraáteresztő képességű latexfesték, nagy igénybevételnek kitett mennyezetek és falfelületek festésére.",
         ],
         sourceIds: ["src_dufa_seidenlatex_d_101_belteri_feher_latexfestek_selyemfenyu_tds"],
       }
@@ -1356,26 +864,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek",
-    sourceIds: ["src_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_tds"],
+    sourceIds: ["src_prod_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_page", "src_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Seidenmattlack - Selyemmatt-fényű zománcfesték A Seidenmattlack műgyanta alapú, kitűnő feldolgozási tulajdonságú zománcfesték. Ütés- és karcolásálló, kitűnő terülő- és magas fedőképességű, átlagon felüli időjárás-, és fényállóságú. Alapfelület: A hordképes, szilárd, száraz és tiszta, valamint szakszerűen előkezelt alapokra alkalmazható. Kérjük vegyék figyelembe a VOB szabvány C részének DIN 18363-as rendelkezését.",
+          "A gyártó nyilvános leírása szerint a(z) Seidenmattlack – Selyemmatt-fényű zománcfesték jellemzői: Leírás – Gyorsan száradó – Ütésálló – Időjárásálló (kül- és beltéri) – Számtalan területen használható (fa, fém felületek) – Színes változatai fűtőtestek festésére is alkalmasak Gyorsan száradó, ütésálló, kül-és beltéri zománcfesték. Időjárásálló, selyemfényét megtartó zománcfesték. Nagyon kiadós, erős igénybevételnek kitehető, jól takaró, számtalan területen felhasználható. Fa és fémfelületek, mint pl. bútorok, ajtók, ablakok, rácsok, csővezetékek, garázsajtók és lábazatok stb. festésére alkalmas. Színes változatai fűtőtestek, radiátorok festésére is alkalmasak. Higítás: Aromamentes higító. Kiadósság: 11 m 2 / l Biztonságtechnikai adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Seidenmattlack – Selyemmatt-fényű zománcfesték jellemzői: – Gyorsan száradó – Ütésálló – Időjárásálló (kül- és beltéri) – Számtalan területen használható (fa, fém felületek) – Színes változatai fűtőtestek festésére is alkalmasak",
         ],
         sourceIds: ["src_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i hőmérséklet: Legalább + 5°C hőmérsékletű legyen a festendő felület és a környezeti hőmérséklet is mind a.",
-        ],
-        sourceIds: ["src_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 375 ml, 750 ml és 2,5 l mind a 20 színárnyalatnál; Kiadósság: Kb. 11 m²/l, az alapfelület tulajdonságától függően..",
+          "Alkalmazási terület a gyártói leírás alapján: – Gyorsan száradó – Ütésálló – Időjárásálló (kül- és beltéri) – Számtalan területen használható (fa, fém felületek) – Színes változatai fűtőtestek festésére is alkalmasak",
         ],
         sourceIds: ["src_dufa_seidenmattlack_selyemmatt_fenyu_zomancfestek_tds"],
       }
@@ -1383,26 +885,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_silber_extra_ezustszinu_zomancfestek",
-    sourceIds: ["src_dufa_silber_extra_ezustszinu_zomancfestek_tds"],
+    sourceIds: ["src_prod_dufa_silber_extra_ezustszinu_zomancfestek_page", "src_dufa_silber_extra_ezustszinu_zomancfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Silber Extra - Ezüstszínű zománcfesték Hőálló, rozsdásodás ellen védő festékbevonat. Alapfelület: Az aljzatnak hordképesnek, száraznak, laza részektől, portól, olajtól, zsírtól, és egyéb elválasztószerként működő anyagtól mentesnek kell lennie. Felhordás: A doboz tartalmát jól fel kell keverni és azt az aljzat adottságainak megfelelően egyszer vagy kétszer kell felhordani. Kültéri felhordáshoz, vas felületre düfa Rostschutzgrund-os alapozás szükséges. Megjegyzés: Kályhák és fűtőkészülékek bevonását követően.",
+          "A gyártó nyilvános leírása szerint a(z) Silber Extra – Ezüstszínű zománcfesték jellemzői: Leírás – Fémesen csillogó felület – Rendkívül hőálló alumíniumfesték – Beltéri használatra – Kályhákra, fűtőtestekre, csővezetékekre, motor alkatrészekre, kipufogókra Fémesen csillogó, rendkívül hőálló alumíniumfesték, beltéri használatra. Tartós, rozsdavédő festékbevonat, kályhákra, fűtőberendezésekre, csővezetékekre, kipufogórendszerekre, motoralkatrészekre, stb. Füst és szagmentesen „ég” a befestett felületbe. Higítás: Nitro higító. Kiadósság: kb 2 m 2 /doboz Biztonságtechnikai adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Silber Extra – Ezüstszínű zománcfesték jellemzői: – Fémesen csillogó felület – Rendkívül hőálló alumíniumfesték – Beltéri használatra – Kályhákra, fűtőtestekre, csővezetékekre, motor alkatrészekre, kipufogókra",
         ],
         sourceIds: ["src_dufa_silber_extra_ezustszinu_zomancfestek_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Kiváló minőségű, időjárásálló és széles körben alkalmazható zománcfesték, fémre, fára és műanyagra, továbbá hőálló bevonatként kályhákra, fűtő-, kipuffugóegységekre és egyéb magas hőhatásnak kitett felületekre.",
-        ],
-        sourceIds: ["src_dufa_silber_extra_ezustszinu_zomancfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 125 ml.; Kiadósság: Kb. 3,5 m² / kiszerelés..",
+          "Alkalmazási terület a gyártói leírás alapján: – Fémesen csillogó felület – Rendkívül hőálló alumíniumfesték – Beltéri használatra – Kályhákra, fűtőtestekre, csővezetékekre, motor alkatrészekre, kipufogókra",
         ],
         sourceIds: ["src_dufa_silber_extra_ezustszinu_zomancfestek_tds"],
       }
@@ -1410,26 +906,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto",
-    sourceIds: ["src_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_tds"],
+    sourceIds: ["src_prod_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_page", "src_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) düfa Polisztirolhab ragasztó oldal 1 / 2 leírás Felhordás A Polisztirol ragasztót pont-, és festésszerűen kell az alapfelületre felhordani, a ragasztandó anyag nagyságától és súlyától függően. A ragasztandó anyagot egy léccel az alapfelületre jól rá kell nyomni.",
-        ],
-        sourceIds: ["src_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Styropor-, depron-, dekorlapok és tapéták ragasztásához.",
-        ],
-        sourceIds: ["src_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: kb. 250 - 650 g/m² - a munkamódszertől és az aljzattól függően. Nyers aljzatokon több. A pontos anyagszükségleti adatokat mintafelület készí- tésével lehet megállapítani. Szerszámok tisztítása A munkaeszközöket közvetlenül használatukat követően vízzel, esetleg mosogatószer hozzáadásával alaposan meg kell tisztítani. Tudnivalók.",
+          "A gyártó nyilvános leírása szerint a(z) Styroporkleber – PT-D18 Polisztirolhab ragasztó jellemzői: Leírás Felhasználáskész, beltéri ragasztó nikecell dekorlapokhoz. Oldószermentes, műgyanta alapú diszperziós ragasztó, polisztirolhab dekorlapok, mennyezeti borítások vakolat-, beton-, gázbeton-, gipsz és gipszkartonlemez-, pozdorjalap felületekhez való rögzítéséhez. Kiadósság: kb 3 m 2 /l Biztonságtechnikai adatlap letöltése Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Styroporkleber – PT-D18 Polisztirolhab ragasztó jellemzői: Akryl-diszperziós bázisú ragasztó, beltérre.",
         ],
         sourceIds: ["src_dufa_styroporkleber_pt_d18_polisztirolhab_ragaszto_tds"],
       }
@@ -1437,26 +920,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_trendputz_k_minosegi_vekony_nemesvakolat",
-    sourceIds: ["src_dufa_trendputz_k_minosegi_vekony_nemesvakolat_tds"],
+    sourceIds: ["src_prod_dufa_trendputz_k_minosegi_vekony_nemesvakolat_page", "src_dufa_trendputz_k_minosegi_vekony_nemesvakolat_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Trendputz K Állapot: 30.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_trendputz_k_minosegi_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész, jó minőségű, dekoratív homlokzati vakolat, kiváló minőségű homlokzatburkolatokhoz. Keményen kopó, karcolásmentes bevonatszerkezet, könnyen alkalmazható és ellenáll az agresszív időjárás viszontagságainak.",
-        ],
-        sourceIds: ["src_dufa_trendputz_k_minosegi_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz K-minőségi vékony nemesvakolat jellemzői: Leírás Szemcseméret: 1,5mm* és 2,0 mm** Kül- és beltéri kapart jellegű, üvegszálerősített, jól színezhető, műgyanta kötőanyagú vékonyvakolat, rugalmas, ütés-és karcolásálló, csapóesőálló, páraáteresztő, ellenáll az agresszív időjárási körülményeknek, könnyen felhúzható. Általánosan minden kézi és gépi mész-cement és gipszes alapvakolatokra, utólagos hőszigetelő rendszerek záró rétegeként, beton felületre, gipszkarton és farostlemez aljzatokra, hordozóképes, mosás – vagy súrolásálló régi bevonatokra is alkalmazható. Ajánlott alapozó: düfa Putzgrundierfarbe. Kiadósság: 0,5 nm /kg Biztonsági adatlap letöltés/telepítés (1,5 mm) Biztonsági adatlap letöltés/telepítés (2,0 mm) Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content w",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz K-minőségi vékony nemesvakolat jellemzői: Sajnáljuk, ez a termék nem elérhető. Kérlek, válassz egy másik kombinációt.",
         ],
         sourceIds: ["src_dufa_trendputz_k_minosegi_vekony_nemesvakolat_tds"],
       }
@@ -1464,26 +934,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_trendputz_r_minosegi_vekony_nemesvakolat",
-    sourceIds: ["src_dufa_trendputz_r_minosegi_vekony_nemesvakolat_tds"],
+    sourceIds: ["src_prod_dufa_trendputz_r_minosegi_vekony_nemesvakolat_page", "src_dufa_trendputz_r_minosegi_vekony_nemesvakolat_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Trendputz R Állapot:30.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_trendputz_r_minosegi_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész, jó minőségű homlokzati vakolat dekoratív, kiváló minőségű homlokzatburkolatokhoz. Keményen kopó, dörzs jellegű vakolatszerkezet, könnyen felhordható és ellenáll az agresszív időjárásnak.",
-        ],
-        sourceIds: ["src_dufa_trendputz_r_minosegi_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz R-minőségi vékony nemesvakolat jellemzői: Leírás Szemcseméret: 2,0 mm** Kül- és beltéri gördülőszemcsés, üvegszálerősített, jól színezhető, műgyanta kötőanyagú vékonyvakolat, rugalmas, ütés-és karcolásálló, csapóesőálló, páraáteresztő, ellenáll az agresszív időjárási körülményeknek, könnyen felhúzható. Általánosan minden kézi és gépi mész-cement és gipszes alapvakolatokra, utólagos hőszigetelő rendszerek záró rétegeként, beton felületre, gipszkarton és farostlemez aljzatokra, hordozóképes, mosás – vagy súrolásálló régi bevonatokra is alkalmazható. Ajánlott alapozó: düfa Putzgrundierfarbe. Kiadósság: 0,5 nm /kg Biztonsági adatlap letöltés/megtekintés (2,0 mm) Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz R-minőségi vékony nemesvakolat jellemzői: Sajnáljuk, ez a termék nem elérhető. Kérlek, válassz egy másik kombinációt.",
         ],
         sourceIds: ["src_dufa_trendputz_r_minosegi_vekony_nemesvakolat_tds"],
       }
@@ -1491,26 +948,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat",
-    sourceIds: ["src_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_tds"],
+    sourceIds: ["src_prod_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_page", "src_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Trendputz Silicon SK Állapot:29.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: K1,5: ab 2,4 kg/m² | K2: ab 3,0 kg/m². A felhasználási mennyiség próbafestéssel állapítható meg. A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. Hígítás Max. 2% vízzel. Műszaki adatlap — Trendputz Silicon SK Állapot:29.03.2022 | HU | www.dufa-hungary.hu --- PAGE 3 --- 3 / 5 Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 24 óra elteltével Átfesthető 72 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása A Szövetségi Környezetvédelmi Hivatal utasítása: Gomba / alga elleni hatóanyagot tartalmazó termékek esetében, az öblítővizet külön kell összegyűjteni és ártalmatlan.",
-        ],
-        sourceIds: ["src_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz Silicon SK – szilikonos vékony nemesvakolat jellemzői: Leírás Szemcseméret: 1,5mm* és 2,0 mm** Struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához, rusztikus kapart jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII vakolatcsoportba sorolt alapvakolatra, beton/szálascement lapokra, gipszkartron felületekre stb. A Trendputz Silicon vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi. Időjárásálló, a DIN 4108 szabvány szerint vízlepergető, érzéketlen az agresszív ipari gázokkal szemben, kiemelkedően strapabíró, üveg-szál erősített, jól kötődő, páraáteresztő, lúgálló, öntisztuló könnyen és maradék nélkül felhordható. Vízzel hígítható, környezetbarát és illatanyagokban szegény. Kiadósság: kb. 0,5 nm /kg Biztonsági adatlap letöltése ",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz Silicon SK – szilikonos vékony nemesvakolat jellemzői: Struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal.",
         ],
         sourceIds: ["src_dufa_trendputz_silicon_sk_szilikonos_vekony_nemesvakolat_tds"],
       }
@@ -1518,26 +962,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat",
-    sourceIds: ["src_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_tds"],
+    sourceIds: ["src_prod_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_page", "src_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_tds"],
     sections: [
       {
-        heading: "Alkalmazás",
+        heading: "Termékleírás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: oknál, amelyek nem egyértelműen szerepelnek az adatlapban, nem vállalunk felelősséget. A munka megkezdése előtt kérjük, forduljon alkalmazásmérnöki osztályunkhoz. Ez különösen igaz más termékekkel való kombinációkra. Új kiadás közzétételekor az összes korábbi Műszaki adatlap érvényességét elveszíti. Meffert Hungária Kft. Rákóczi út 6 2651 Rétság Magyarország Tel. +36 35 350 624 Műszaki adatlap — Trendputz Silicon SR Állapot:30.03.2022 | HU | www.dufa-hungary.hu.",
-        ],
-        sourceIds: ["src_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: K1,5: ab 2,4 kg/m² | K2: ab 3,0 kg/m². A felhasználási mennyiség próbafestéssel állapítható meg. A felhasználási mennyiség a felület jellegétől és textúrájától, valamint a felhordási módtól függően változhat. Hígítás Max. 2% vízzel. Műszaki adatlap — Trendputz Silicon SR Állapot:30.03.2022 | HU | www.dufa-hungary.hu --- PAGE 3 --- 3 / 5 Száradási idő +20 °C és 65 % rel. páratartalom: Felületszáraz 24 óra elteltével Átfesthető 72 óra elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása A Szövetségi Környezetvédelmi Hivatal utasítása: Gomba / alga elleni hatóanyagot tartalmazó termékek esetében, az öblítővizet külön kell összegyűjteni és ártalmatlan.",
-        ],
-        sourceIds: ["src_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes vagy ferde, időjárásnak kitett felületekhez.",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz Silicon SR – szilikonos vékony nemesvakolat jellemzői: Leírás Szemcseméret: 2,0 mm Sokoldalúan struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal, az egyedi felületek kialakításához,rusztikusdörzsölt- jellegű karakterrel. Alkalmazható minden ásványi eredetű PI és PII va-kolatcsoportba sorolt alapvakolatra, beton/szálascement lapokra, gipszkartron felületekre stb. A düfa Trendputz SR 1,5; 2,0 vakolattal bevont felületet különlegesen magas terhelési fok és igényes felületi megjelenés jellemzi. Időjárásálló, a DIN 4108 szabvány szerint vízlepergető, érzéketlen az agresszív ipari gázokkal szemben, kiemelkedően strapabíró, üvegszál erősített, jól kötődő, páraáteresztő, lúgálló, öntisztuló, könnyen és maradék nélkül felhordható. Vízzel hígítható, környezetbarát és illatanyagokban szegény. Kiadósság: kb. 0,5 nm /kg Biztonsági adatlap",
+          "A gyártó nyilvános leírása szerint a(z) Trendputz Silicon SR – szilikonos vékony nemesvakolat jellemzői: Sokoldalúan struktúrálható műgyantás vékonyvakolat, szerves kötőanyagokkal.",
         ],
         sourceIds: ["src_dufa_trendputz_silicon_sr_szilikonos_vekony_nemesvakolat_tds"],
       }
@@ -1545,33 +976,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_trendweiss_matt_feher_falfestek",
-    sourceIds: ["src_dufa_trendweiss_matt_feher_falfestek_tds"],
+    sourceIds: ["src_prod_dufa_trendweiss_matt_feher_falfestek_page", "src_dufa_trendweiss_matt_feher_falfestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) 1 / 5 Trendweiss Beltéri diszperziós fal- és mennyezetfesték. ban. Állapot: 03.11.2021 | HU | www.dufa-hungary.hu Műszaki adatlap --- PAGE 2 --- 2 / 5 BEDOLGOZÁS Felhordás Bedolgozás ecsettel, hengerrel vagy szórásos tehnikával. Felhordás hengerrel: A szokásos, hengerrel történő felhordáshoz 12 mm szálhosszúságú festőhengertajánlunk. Felhordás szórással: Állítsa be az anyag szórási sűrűségét. Vegye figyelembe a készülék gyártójánakinformációit. Az egyenletes záróréteg elérése érdekében javasoljuk, hogy utólag menjen áthengerrel a felületen. F e l h o.",
-        ],
-        sourceIds: ["src_dufa_trendweiss_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i folyamathoz Festés és hengerlés: Először a sarkokat és a széleket fesse be ecsettel és kis hengerrel. Ezután egy nagyobb hengerrel dolgozza át a fennmaradó nagy területeket. Belső használatra alkalmas festőhengerrel dolgozzon. A foltok elkerülése érdekében szünet nélkül, egybefüggő területeken, megszakítás nélkűl dolgozzon. Mindig 2-3 csíkot kezdjen el görgetni felülről lefelé. Ezután a felhordott festéket keresztben eloszlatjuk, és végül felülről lefelé újra áthúzzuk. A festék keresztirányú felhordásakor fogja elérni a legjobb eredményt. Minden munkát úgy végezzen el, hogy ne gyakoroljon túl nagy nyomást a szerszámra. Farosttapétához, sima vagy finoman strukturált felületekhez v.",
-        ],
-        sourceIds: ["src_dufa_trendweiss_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ca. 125 ml/m² rétegenként sima, enyhén nedvszívó felületekre. A durva felületeken ennek megfelelően több. A felhasználási mennyiség próbafestéssel állapítható meg. Az anyagszükséglet az alapfelület szívóképességétől és a felhordás módjától függ. Hígítás Max. 3% vízzel. Száradási idő +20 °C és 65 % rel. páratartalom: Átfesthető 4 óra elteltével Száraz 4 nap elteltével Ügyeljen a műveletek között az elegendő száradási időre. Szerszámok tisztítása Közvetlenül használat után alaposan húzza le az anyagot az ecsetről vagy hengerről, ezután vízzel, esetleg mosószer hozzáadásával tisztítsa meg. A szóróberendezést ugyancsak egyszerűen vízzel öblítse át. Általános tudnivalók  A jelen adatlapo.",
-        ],
-        sourceIds: ["src_dufa_trendweiss_matt_feher_falfestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 125 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Trendweiss matt fehér falfesték jellemzői: Leírás Jó fedőképességű, műgyanta alapú, vízbázisú, diszperziós, fehér selyem-matt fal és mennyezetfesték. Színakrilát alapú kötőanyagot tartalmaz(műanyag diszperzió). Kiemelten ajánlott alapozó: Tiefgrund LF Kiadósság egy réteg / nm: 5L – 40 m2 14L – 112 m2 Biztonsági adatlap letöltése Műszaki adatalap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Trendweiss matt fehér falfesték jellemzői: Jó fedőképességű, műgyanta alapú, vízbázisú, diszperziós, fehér selyem-matt fal és mennyezetfesték. Színakrilát alapú kötőanyagot tartalmaz(műanyag diszperzió).",
         ],
         sourceIds: ["src_dufa_trendweiss_matt_feher_falfestek_tds"],
       }
@@ -1579,33 +990,13 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_unterwasserfarbe_medencefestek",
-    sourceIds: ["src_dufa_unterwasserfarbe_medencefestek_tds"],
+    sourceIds: ["src_prod_dufa_unterwasserfarbe_medencefestek_page", "src_dufa_unterwasserfarbe_medencefestek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Unterwasserfarbe oldal 1 / 3 § Oldószertartalmú. § Vízálló. § Elasztikus. § Ellenáll az ózonkezelt és klórozott víznek, valamint a kereske- delemben kapható úszómedence tisztító szereknek. Színárnyalatok Tengerzöld, tengerkék.",
-        ],
-        sourceIds: ["src_dufa_unterwasserfarbe_medencefestek_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek A düfa Unterwasserfarbe festék egy klórkaucsuk bázisú műanyag fes- ték beton úszómedencék, dísz- és halastavak vízálló bevonatának elkészítésére kültérben.",
-        ],
-        sourceIds: ["src_dufa_unterwasserfarbe_medencefestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 90-100 ml/m² rétegenként sima, enyhén nedvszívó aljzatokon. Nyers aljzatokon megfelelően több. A pontos anyagszükségleti adato- kat mintafelület készítésével lehet megállapítani. Szerszámok tisztítása A munkaeszközöket közvetlenül használatukat követően düfa Nitro- Universalverdünner univerzális hígítóval kell megtisztítani. Utasítások.",
-        ],
-        sourceIds: ["src_dufa_unterwasserfarbe_medencefestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiadósság: 100 ml/m².",
+          "A gyártó nyilvános leírása szerint a(z) Unterwasserfarbe – Medencefesték jellemzői: Leírás – Iőjárás és vízálló – gyors száradású – UV-álló – Selyemfényű Unterwasserfarbe – Medencefesték Időjárás és vízálló, kiváló minőségű, műanyag bevonat. Az ásványi eredetű alapfelületek, medencék, kerti tavak UV-álló, gyors száradású bevonata. A tartós víznyomásnak ellenáll, selyemfényű filmje pára- és vízzáró tulajdonságú. A bevonni kívánt felület talaj felé eső oldalát, talajnedvesség ellen a megfelelő módon szigetelni kell! Higítás: Nitro higító Kiadósság: 10 m 2 /l Biztonsági adatlap letöltés/megtekintés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Unterwasserfarbe – Medencefesték jellemzői: – Iőjárás és vízálló – gyors száradású – UV-álló – Selyemfényű",
         ],
         sourceIds: ["src_dufa_unterwasserfarbe_medencefestek_tds"],
       }
@@ -1613,26 +1004,20 @@ export const dufaProfessionalDescriptions: ProductProfessionalDescriptionEnrichm
   },
   {
     productId: "prod_dufa_vorstreichfarbe_alapozo_festek",
-    sourceIds: ["src_dufa_vorstreichfarbe_alapozo_festek_tds"],
+    sourceIds: ["src_prod_dufa_vorstreichfarbe_alapozo_festek_page", "src_dufa_vorstreichfarbe_alapozo_festek_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) Vorstreichfarbe - Alapozó festék Könnyen felhasználható, jól terülő, gyorsan száradó alapozófesték magas tömítő- és fedési tulajdonsággal. Alapfelület: Nyers és alapozott fa, keményrost-, faforgács-, rétegelt lemez, vas-, horgany-, alumínium felületekre az általános felületelőkészítő munkák után; száraz, semleges vakolt-, falfelületekre stb. Rétegfelépítés: Kültéri fafelületek: - düfa Holzgrund (tűlevelűknél) - düfa Vorstreichfarbe - düfa Vorlack - düfa Buntlack. Beltéri fafelületek: - düfa Vorstreic.",
+          "A gyártó nyilvános leírása szerint a(z) Vorstreichfarbe – Alapozó festék jellemzői: Leírás – Matt fehér – Oldószeres – Kül- és beltéri – Zománcfestékkel bevonandó felületekre – Fémre, fára, semleges kémhatású falazatra Matt fehér, kül- és beltéri oldószeres alapozó festék. Könnyen felhordható, jól terülő, gyorsan száradó, a különféle zománcfestékekkel bevonandó felületeket jól előkészítő, alkidgyanta alapú univerzális alapozó és közbenső festék fára, fémre és semleges kémhatású falazatra. Higítás: aromamentes higító. Kiadósság: kb. 13 m 2 / l Biztonságtechnikai adatlap letöltés Műszaki adatlap letöltése (div class=’woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab’",
+          "A gyártó nyilvános leírása szerint a(z) Vorstreichfarbe – Alapozó festék jellemzői: – Matt fehér – Oldószeres – Kül- és beltéri – Zománcfestékkel bevonandó felületekre – Fémre, fára, semleges kémhatású falazatra",
         ],
         sourceIds: ["src_dufa_vorstreichfarbe_alapozo_festek_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i hőmérséklet: Legalább +5°C hőmérsékletű legyen a festendő felület és a környezeti hőmérsékelt is mind a.",
-        ],
-        sourceIds: ["src_dufa_vorstreichfarbe_alapozo_festek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 375 ml, 750 ml, 2,5 l és 15 kg.; Kiadósság: Kb. 13 m²/ l/réteg..",
+          "Alkalmazási terület a gyártói leírás alapján: – Matt fehér – Oldószeres – Kül- és beltéri – Zománcfestékkel bevonandó felületekre – Fémre, fára, semleges kémhatású falazatra",
         ],
         sourceIds: ["src_dufa_vorstreichfarbe_alapozo_festek_tds"],
       }

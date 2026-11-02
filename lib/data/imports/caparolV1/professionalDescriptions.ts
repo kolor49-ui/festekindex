@@ -3,35 +3,1283 @@ import type { ProductProfessionalDescriptionEnrichment } from "../festekBazisEnr
 export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnrichment[] = [
   {
     productId: "prod_caparol_acrylstar",
-    sourceIds: ["src_caparol_acrylstar_tds"],
+    sourceIds: ["src_prod_caparol_acrylstar_page", "src_caparol_acrylstar_tds"],
     sections: [
       {
         heading: "Termékleírás",
         paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Diszperziós termékek leírás Műszaki információ Nr. A130 Felületkiegyenlítő, agresszív légszennyeződések ellen jól védő homlokzati bevonat- okhoz. Alkalmas vastag rétegű festésre és durván lehúzott vakolatfelületek optikai kiegyenlítésére. Beltérben igen jól alkalmazható súrolásálló, erős igénybevételnek ellenálló, sima és finoman strukturált felületű bevonatok készítésére. ■ Vízzel hígítható, környezetkímélő és nincs kellemetlen szaga ■ Időjárásálló a VOB szerint ■ Víztaszító a DIN 4108 szerint ■ Súrolásálló a DIN.",
+          "A gyártó nyilvános leírása szerint a(z) AcrylStar jellemzői: Felületkiegyenlítő, agresszív légszennyeződések ellen jól védő homlokzati bevonatokhoz. Alkalmas vastag rétegű festésre és durván lehúzott vakolatfelületek optikai kiegyenlítésére.Beltérben igen jól alkalmazható súrolásálló, erős igénybevételnek ellenálló, sima és finoman strukturált felületű bevonatok készítésére.",
         ],
         sourceIds: ["src_caparol_acrylstar_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_amphisilan_plus",
+    sourceIds: ["src_prod_caparol_amphisilan_plus_page", "src_caparol_amphisilan_plus_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) AmphiSilan-plus jellemzői: vízzel hígítható, környezetbarát, enyhe szagú időjárásálló jó víztaszító alacsony feszültségű, nem termoplasztikus minimált szennyeződésre való hajlam, a homlokzatot hosszú ideig tisztán tartja filmet nem képez, mikroporózus aktív kapilláris szárazzóna-képző kiváló esővédelem a DIN EN 1062 szerint „alacsony vízáteresztő lépességű” w-érték 0,08 [kg/(m2 x h0,5)]. jó vízgőzáteresztő tulajdonságú a DIN EN 1062 szerint „magas vízgőzdiffúziójú -CO2 áteresztő jó fedőképességű ellenáll az agresszív légszennyező anyagoknak könnyedén feldolgozható",
+        ],
+        sourceIds: ["src_caparol_amphisilan_plus_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_aquasperrgrund_fein",
+    sourceIds: ["src_prod_caparol_aquasperrgrund_fein_page", "src_caparol_aquasperrgrund_fein_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) AquaSperrgrund fein jellemzői: Vízzel hígítható, környezetbarát, alacsony szagú Magas szigetelő hatás. Alapozó-szigetelőanyag a német VOB szerint Diffúzióképes (sd-érték Hatékony tapadási jellemzők Alacsony feszültség Lúgokkal szemben ellenálló",
+          "A gyártó nyilvános leírása szerint a(z) AquaSperrgrund fein jellemzői: Beltérben alkalmazható festékbevonat nikotin-, korom- és megszáradt vízfoltokkal szennyezet falfelületek lekötésére és szigetelésre a rákövetkezendő fedőbevonatot megelőzően. Hatékonyan megköti az oldható, elszínező tulajdonságú és anilin tartalmú foltokat. Felhasználható foltgátló alapozó bevonatként tapétázást vagy fali dekorációt megelőzően. Ezen kívül szigetelő hatással rendelkező alapozóként faanyagokon vagy származékos fa tartalmú anyagokon, amennyiben azokat diszperziós festékkel kell bevonni.",
+        ],
+        sourceIds: ["src_caparol_aquasperrgrund_fein_tds"],
       },
       {
         heading: "Alkalmazás",
         paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek:.",
+          "Alkalmazási terület a gyártói leírás alapján: Beltérben alkalmazható festékbevonat nikotin-, korom- és megszáradt vízfoltokkal szennyezet falfelületek lekötésére és szigetelésre a rákövetkezendő fedőbevonatot megelőzően. Hatékonyan megköti az oldható, elszínező tulajdonságú és anilin tartalmú foltokat. Felhasználható foltgátló alapozó bevonatként tapétázást vagy fali dekorációt megelőzően. Ezen kívül szigetelő hatással rendelkező alapozóként faanyagokon vagy származékos fa tartalmú anyagokon, amennyiben azokat diszperziós festékkel kell bevonni.",
         ],
-        sourceIds: ["src_caparol_acrylstar_tds"],
+        sourceIds: ["src_caparol_aquasperrgrund_fein_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_arte_lasur",
+    sourceIds: ["src_prod_caparol_arte_lasur_page", "src_caparol_arte_lasur_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Arte-Lasur jellemzői: Vízzel hígítható, környezetkímélő és szagtalan Oldószermentes Nedvestisztíthatósági osztály 2 a DIN EN 13300 alapján, súrolhatóság a DIN 53778 szerint. Vízzel és semleges háztartási tisztítószerekkel tisztítható (ca. 20 nappal a felhordás után) A ColorExpress színezőrendszerrel színezhető",
+        ],
+        sourceIds: ["src_caparol_arte_lasur_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capacryl_holz_isogrund",
+    sourceIds: ["src_prod_caparol_capacryl_holz_isogrund_page", "src_caparol_capacryl_holz_isogrund_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capacryl Holz-Isogrund jellemzői: -vízzel hígítható-környezetbarát-a faanyagokban található vízoldható, elszínező összetevők elleni kationos szigetelő hatás-kiváló tapadás és jó átfesthetőség-diffúzióképes-az EN 71-3 szerint gyermekjátékokra alkalmas",
+        ],
+        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_artetwin_basic",
+    sourceIds: ["src_prod_caparol_capadecor_artetwin_basic_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor ArteTwin Basic jellemzői: 5 l 250-300 ml/m2 10 l 250-300 ml/m2 szines Open colorpicker",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor ArteTwin Basic jellemzői: Akril+aacute;t diszperzi+oacute;alap+uacute; glettmassza, feh+eacute;r r+eacute;szecsk+eacute;kkel, a m+eacute;g különlegesebb +eacute;s dekorat+iacute;vabb belt+eacute;ri falfelületek kialak+iacute;t+aacute;s+aacute;ra. Sz+iacute;nezhető +eacute;s azonnal feldolgozhat+oacute;",
+        ],
+        sourceIds: ["src_prod_caparol_capadecor_artetwin_basic_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_artetwin_effect_gold_silber",
+    sourceIds: ["src_prod_caparol_capadecor_artetwin_effect_gold_silber_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor ArteTwin Effect Gold / Silber jellemzői: 2,5 l 50-150 ml/m2 Arany Ezüst Open colorpicker",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor ArteTwin Effect Gold / Silber jellemzői: +Aacute;ttetsző glettmassza, arany v. ezüst selyemf+eacute;nyű pigmentekkel, +eacute;s feh+eacute;r r+eacute;szecsk+eacute;kkel.",
+        ],
+        sourceIds: ["src_prod_caparol_capadecor_artetwin_effect_gold_silber_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_artetwin_spezialkelle",
+    sourceIds: ["src_prod_caparol_capadecor_artetwin_spezialkelle_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor ArteTwin Spezialkelle jellemzői: Speci+aacute;lis műanyag glettelő az ArteTwin belt+eacute;ri dekor+aacute;ci+oacute;s anyag feldolgoz+aacute;s+aacute;ra. A lekerek+iacute;tett sark+uacute; glettlap könnyen cser+eacute;lhető.",
+        ],
+        sourceIds: ["src_prod_caparol_capadecor_artetwin_spezialkelle_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_calcino_decor",
+    sourceIds: ["src_prod_caparol_capadecor_calcino_decor_page", "src_caparol_capadecor_calcino_decor_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Calcino Decor jellemzői: tiszta ásványi anyag rendkívül diffúzió- és szorpcióképes oldószermentes és szinte szagtalan könnyen feldolgozható",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Calcino Decor jellemzői: Tiszta +aacute;sv+aacute;nyi fal +eacute;s mennyezetbevon+oacute; anyag oltott m+eacute;szből, m+aacute;rv+aacute;nylisztből +eacute;s v+iacute;zből belső felületekhez alkalmazva. Calcino-Decor különösen alkalmas belső felületek kiv+aacute;l+oacute; minős+eacute;gű kialak+iacute;t+aacute;s+aacute;hoz, mint pl. reprezentat+iacute;v irod+aacute;khoz, fogad+oacute; +eacute;s konferenciatermekhez, sz+aacute;llod+aacute;khoz, bankokhoz, szabad-idős l+eacute;tes+iacute;tm+eacute;nyekhez, hivatalokhoz, valamint mag+aacute;nc+eacute;lokra +eacute;s m+eacute;g sok m+aacute;s egy+eacute;bre. A tiszt+aacute;n +aacute;sv+aacute;nyi anyagok miatt a Calcino-Decor alkalmaz+aacute;s+aacute;val a m+aacute;rv+aacute;nyhoz hasonl+oacute; term+eacute;k k+eacute;sz+iacute;thető, amely a feldolgoz+aacute;s ut+aacute;n kőszerű felületet",
+        ],
+        sourceIds: ["src_caparol_capadecor_calcino_decor_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_calcino_impraegnierpaste",
+    sourceIds: ["src_prod_caparol_capadecor_calcino_impraegnierpaste_page", "src_caparol_capadecor_calcino_impraegnierpaste_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Calcino Imprägnierpaste jellemzői: zsírmentes, festékmentes és szagtalan tiszta ásványi véd a foltosodás ellen rendkívül diffúzió- és szorpcióképes oldószermentes",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Calcino Imprägnierpaste jellemzői: +Aacute;sv+aacute;nyi anyag paszta form+aacute;j+aacute;ban, amely alkalmas a tömör+iacute;tett Calcino-Decor felület impregn+aacute;l+aacute;s+aacute;hoz. A Calcino impregn+aacute;l+oacute; paszta nem v+aacute;ltoztatja meg a Calcino-Decor tulajdons+aacute;gait (nincs sz+iacute;nv+aacute;ltoz+aacute;s, nincs s+aacute;rg+aacute;s kifakul+aacute;s), hanem gondoskodik a k+eacute;sz felület nagyobb tömörs+eacute;g+eacute;ről, +eacute;s ez +aacute;ltal megakad+aacute;lyozza a szennyező r+eacute;szecsk+eacute;k bejut+aacute;s+aacute;t. Mivel a karbon+aacute;tosod+aacute;si folyamat (m+eacute;sz-alap+uacute; term+eacute;kek kikem+eacute;nyed+eacute;se CO2 levegőből tört+eacute;nő felv+eacute;tele +aacute;ltal) hosszabb időt vesz ig+eacute;nybe +eacute;s ez idő alatt a sz+iacute;nezett Calcino-Decor fest+eacute",
+        ],
+        sourceIds: ["src_caparol_capadecor_calcino_impraegnierpaste_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_capagold",
+    sourceIds: ["src_prod_caparol_capadecor_capagold_page", "src_caparol_capadecor_capagold_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor CapaGold jellemzői: A CapaGold-dal történő festéssel, különösen GoldGrund-dal való alapozás után, strukturált felületeken tiszta, természetes arany szín hozható létre. Különböző technikákkal, mint pl. kefe, simítóvas, henger, struktúrlap, egyéni és optikailag különleges hatás érhető el.",
+        ],
+        sourceIds: ["src_caparol_capadecor_capagold_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_decolasur_glaenzend",
+    sourceIds: ["src_prod_caparol_capadecor_decolasur_glaenzend_page", "src_caparol_capadecor_decolasur_glaenzend_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor DecoLasur Glänzend jellemzői: jó diffúziós képességűvízzel hígíthatókörnyezetkímélőgyenge szagú",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor DecoLasur Glänzend jellemzői: F+eacute;nyes, feldolgoz+aacute;sra k+eacute;sz, diszperzi+oacute;s kötőanyag+uacute; laz+uacute;r, dekorat+iacute;v külső +eacute;s belső felületek kialakit+aacute;s+aacute;ra alkalmas, +aacute;sv+aacute;nyi vagy diszperzi+oacute;s felületeken, üvegszövet vagy fűr+eacute;szporos tap+eacute;t+aacute;n egyar+aacute;nt.",
+        ],
+        sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_metallocryl_exterior",
+    sourceIds: ["src_prod_caparol_capadecor_metallocryl_exterior_page", "src_caparol_capadecor_metallocryl_exterior_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Metallocryl Exterior jellemzői: Capadecor Metallocryl Exteriör selyemfényű, fémhatású kültéri diszperziós festék. Igényes, időjárásálló effektbevonat olyan struktúrált homlokzatfelületekre, amelyeken a jelenlegi trendnek megfelelően fémhatást kívánnak elérni. Nem alkalmas hőszigetelő rendszerekre.",
+        ],
+        sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_metallocryl_interior",
+    sourceIds: ["src_prod_caparol_capadecor_metallocryl_interior_page", "src_caparol_capadecor_metallocryl_interior_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor Metallocryl Interior jellemzői: • Vízzel hígítható• Környezetkímélő és enyhe szagú• Fémes hatású• Nedves dörzsállósága EN 13300 szerint 1. osztályú. a DIN 53778 szerint súrolásálló.• Diffúzióképes, sd értéke kb. 0,6 m",
+        ],
+        sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_multistruktur",
+    sourceIds: ["src_prod_caparol_capadecor_multistruktur_page", "src_caparol_capadecor_multistruktur_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor MultiStruktur jellemzői: Old+oacute;szer +eacute;s l+aacute;gy+iacute;t+oacute;szer mentes, magas fedők+eacute;pess+eacute;gű, elsőoszt+aacute;ly+uacute; feldolgozhat+oacute;s+aacute;gi tulajdons+aacute;g+uacute;. G+eacute;ppel sz+oacute;rhat+oacute;, de k+eacute;zzel is könnyen feldolgozhat+oacute;. Nagy ellen+aacute;ll+oacute; k+eacute;pess+eacute;gű bevonat, j+oacute;l tiszt+iacute;that+oacute; felület, nedves tiszt+iacute;that+oacute;s+aacute;g 2. oszt+aacute;ly, nem +eacute;ghető, DIN 4102, A2. Szemcsenagys+aacute;g: kb 200 +mu;m",
+        ],
+        sourceIds: ["src_prod_caparol_capadecor_multistruktur_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_stuccodecor_di_luce",
+    sourceIds: ["src_prod_caparol_capadecor_stuccodecor_di_luce_page", "src_caparol_capadecor_stuccodecor_di_luce_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor StuccoDecor Di Luce jellemzői: vízzel hígítható magasfény kiegészítő bevonat felhordása nélkül gazdaságos és biztonságos feldolgozási technika ColorExpress rendszerben géppel színezhető könnyen tisztítható diffúzióra és szorpcióra képes",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor StuccoDecor Di Luce jellemzői: Diszperzi+oacute;s sim+iacute;t+oacute;tapasz dekorat+iacute;v glettel+eacute;si technik+aacute;k elő+aacute;ll+iacute;t+aacute;s+aacute;hoz belt+eacute;rben.",
+        ],
+        sourceIds: ["src_caparol_capadecor_stuccodecor_di_luce_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_variochips",
+    sourceIds: ["src_prod_caparol_capadecor_variochips_page", "src_caparol_capadecor_variochips_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor VarioChips jellemzői: • érzéketlen a szennyeződésre• kopásálló a DIN 52778 alapján• karcolás- és lökésálló• a lehető legjobban színtartó• szorpcióképes; vizsgálati jel: PA-III 2.2876• az alapfelület enyhe szín-különbségeit alapozás nélkül semlegesíti• kisebb felületi repedéseket áthidal• modern és többszínű• gazdaságos és hosszú élettartamú• könnyen és kedvező költséggel felhordható, mivel a felületre ideálisan tapad és egyszerűen, kevés munkafázisban kell felhordani.",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor VarioChips jellemzői: A Capafloc Vario-rendszer a piac trendj+eacute;be eső többsz+iacute;nű attrakt+iacute;v r+eacute;tegbevonat, erősen ig+eacute;nybevett belsőt+eacute;ri falakhoz. A nagyon gazdas+aacute;gos feldolgoz+aacute;si technika +eacute;s a különleges technikai +eacute;s optikai tulajdons+aacute;gai miatt a Capafloc Vario-rendszer ide+aacute;lis bevonat renov+aacute;l+aacute;sokn+aacute;l +eacute;s +uacute;j +eacute;p+iacute;tkez+eacute;sek eset+eacute;n. Struktur+aacute;lt r+eacute;gi alapoz+aacute;sok, mint tapad+oacute; durva sz+aacute;lk+aacute;s, üvegszövet +eacute;s műgyanta vakolatokat költs+eacute;ges előmunk+aacute;latok n+eacute;lkül lehet fel+uacute;j+iacute;tani, +eacute;s az eddigi strukt+uacute;ra +eacute;s a többsz+iacute;nű Chips-bevonat kombin+aacute;ci+oacute;j+aacute;val ön+aacute;ll+oacute; nagyon attrakt+ia",
+        ],
+        sourceIds: ["src_caparol_capadecor_variochips_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_variofloc",
+    sourceIds: ["src_prod_caparol_capadecor_variofloc_page", "src_caparol_capadecor_variofloc_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor VarioFloc jellemzői: könnyen száradó, selyemfényű vízzel hígítható, szagtalan és környezetbarát oldószermentes fénnyel szemben ellenálló szennytaszító tisztítható Nedves tisztíthatósági osztály 2 (DIN EN 13 300 szerint) rendkívül gazdaságos nem éghető a DIN 4102 szerint, A2 nem éghető a DIN 4102",
+          "A gyártó nyilvános leírása szerint a(z) Capadecor VarioFloc jellemzői: Többsz+iacute;nű, könnyen struktur+aacute;lhat+oacute;, rendk+iacute;vül tart+oacute;s falbevonat belső felületekhez. Kiv+aacute;l+oacute;an alkalmas belső falfelületek bevonatainak elk+eacute;sz+iacute;t+eacute;s+eacute;hez (p+eacute;ld+aacute;ul irod+aacute;kban, l+eacute;pcsőh+aacute;zakban, folyos+oacute;kon).",
+        ],
+        sourceIds: ["src_caparol_capadecor_variofloc_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadecor_varioputz",
+    sourceIds: ["src_prod_caparol_capadecor_varioputz_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadecor VarioPutz jellemzői: Hengerezhető finomvakolat, extra strapab+iacute;r+oacute; belt+eacute;ri finomszemcs+eacute;s bevonatk+eacute;nt 17 sz+iacute;nkombin+aacute;ci+oacute;ban.",
+        ],
+        sourceIds: ["src_prod_caparol_capadecor_varioputz_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadur_decorlasur",
+    sourceIds: ["src_prod_caparol_capadur_decorlasur_page", "src_caparol_capadur_decorlasur_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadur DecorLasur jellemzői: Vízzel hígítható Környezetkímélő Szerkezettartó Rendkívül rugalmas Gombaölőszert nem tartalmaz Nagyon rugalmas Rendkívül diffúzióképes",
+        ],
+        sourceIds: ["src_caparol_capadur_decorlasur_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadur_parkettlack_hgsm",
+    sourceIds: ["src_prod_caparol_capadur_parkettlack_hgsm_page", "src_caparol_capadur_parkettlack_hgsm_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadur Parkettlack HG/SM jellemzői: Vízzel hígítható Egykomponensű Nagyon strapabíró Jól töltő Gyorsan száradó Nagyon rugalmas Szokványos háztartási tisztítószereknek ellenáll Nagyobb felületeken is egyenletesen felhordható",
+        ],
+        sourceIds: ["src_caparol_capadur_parkettlack_hgsm_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capadur_universallasur",
+    sourceIds: ["src_prod_caparol_capadur_universallasur_page", "src_caparol_capadur_universallasur_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capadur UniversalLasur jellemzői: Aromamentes oldószer, vékonyrétegű, nyíltpórusú, magas UV védelemmel, magas diffúzióképességű, víztaszító, tixotróp és cseppenésmentes, könnyen feldolgozható, egyszerűen felújítható.",
+        ],
+        sourceIds: ["src_caparol_capadur_universallasur_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capafixx",
+    sourceIds: ["src_prod_caparol_capafixx_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) CapaFiXX jellemzői: ködmentesen feldolgozható Nespri szórógéppel emissziócsökkentett, oldószer és lágyítóanyagmentes vizesbázisú diffúzióképes sd érték jó fedőképességű a legtöbb esetben egy rétegben használhatóAz EN 13 300 szerint: 3 kategóriájú súrolásállóság 1 kategóriájú fedőképesség (5,5 m 2 /liter esetén) fényességi osztály: matt maximális szemcsenagyság: finom (",
+        ],
+        sourceIds: ["src_prod_caparol_capafixx_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_allgrund",
+    sourceIds: ["src_prod_caparol_capalac_allgrund_page", "src_caparol_capalac_allgrund_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Allgrund jellemzői: Teljes értékű korróziógátló alapozó vas- és acélfelületeken (DIN 18363 szerint) Kiváló tapadás Gyorsan szárad Hatékony időjárás elleni védelem Kül- és beltérben történő alkalmazhatóság Aromamentes",
+          "A gyártó nyilvános leírása szerint a(z) Capalac Allgrund jellemzői: Gyorsan száradó, sokoldalúan alkalmazható kiváló tapadással rendelkező korróziógátló alapozó kül- és beltérben.",
+        ],
+        sourceIds: ["src_caparol_capalac_allgrund_tds"],
       },
       {
-        heading: "Felhasználás",
+        heading: "Alkalmazás",
         paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alap-, ill. köztes réteg: Caparol AkrylStar homlokzatfesték, legfeljebb 10% vízzel hígítva. Záróréteg: Caparol AkrylStar homlokzatfesték, legfeljebb 5% vízzel hígítva. A felhordást ecsettel, hengerrel vagy szórógéppel kell végezni. Airless-szórás esetén: Szórási kúpszög: 50° Fúvóka átmérő: 0,021” Nyomás: 150 bar A finom felületstruktúra kialakításához a frissen felhordott réteget azonnal, szőr-, vagy műanyag hab -felületű hengerrel kell átdolgozni. A munkaeszközöket haszná- lat után vízzel kell tisztára mosni. Sima alapfelületen rétegenként kb. 200 g/m 2. Durva felületeken értelemszerűen több. Finoman strukturált felületképzés esetén a felhasználást próbafestéssel kell meghatározni. A pon.",
+          "Alkalmazási terület a gyártói leírás alapján: Kiváló tapadású és gyorsan száradó alapozó teljeskörű korrózióvédelemmel vas- és acélfelületeken, valamint tapadás javító alapozó alumínium, réz, cink, kemény-PVC, fa és faalapú anyagokon, kül- és beltérben.",
         ],
-        sourceIds: ["src_caparol_acrylstar_tds"],
+        sourceIds: ["src_caparol_capalac_allgrund_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_classic_hg",
+    sourceIds: ["src_prod_caparol_capalac_classic_hg_page", "src_caparol_capalac_classic_hg_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Classic HG jellemzői: Kiváló szín- és fénystabilitás Hosszú nyitott idő Nagyon tartós Jól fedő, jó élfedő Jó ütőszilárdságú Könnyen feldolgozható Gyorsan száradó Kiválóan terülő Háztartási tisztítószereknek és rövid ideig gyenge savaknak és lúgoknak is ellenálló. Rendkívül időjárás- és fényálló",
+        ],
+        sourceIds: ["src_caparol_capalac_classic_hg_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_effektlack_metallic_fenyes",
+    sourceIds: ["src_prod_caparol_capalac_effektlack_metallic_fenyes_page", "src_caparol_capalac_effektlack_metallic_fenyes_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac effektlack Metallic, fényes jellemzői: 0,75 lit 80-100 ml/m2 silber gold kupfer",
+        ],
+        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_holz_impraegniergrund",
+    sourceIds: ["src_prod_caparol_capalac_holz_impraegniergrund_page", "src_caparol_capalac_holz_impraegniergrund_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Holz-Imprägniergrund jellemzői: Rövid száradási idejű, vízháztartást szabályozó, kiválóan felszívódó, követő bevonatok tapadását elősegítő. A roncsoló és elszínező gombák hatásának ellenáll. A Capalac Holz-Imprägniergrund minden Capalac alapozó és fedő anyaggal együtt használható. A követő réteget legkésőbb 4 héten belül fel kell hordani",
+        ],
+        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_korrogrund",
+    sourceIds: ["src_prod_caparol_capalac_korrogrund_page", "src_caparol_capalac_korrogrund_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac KorroGrund jellemzői: Ólom- és kromátmentes Kiváló korrózióvédő hatású – aktív rozsdavédő pigmentek révén Kiválóan tapad Jó fedőképességű Gyorsan száradó Könnyen feldolgozható",
+        ],
+        sourceIds: ["src_caparol_capalac_korrogrund_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_lackspachtel_weiss",
+    sourceIds: ["src_prod_caparol_capalac_lackspachtel_weiss_page", "src_caparol_capalac_lackspachtel_weiss_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Lackspachtel, weiß jellemzői: -Gyorsan szárad-Jól töltő-Csekély zsugorodás-Fedőlakkal közvetlen átfesthető",
+        ],
+        sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_profi_compact",
+    sourceIds: ["src_prod_caparol_capalac_profi_compact_page", "src_caparol_capalac_profi_compact_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Profi Compact jellemzői: -Kiváló tapadás-Magas fedőképesség az éleken is-Nagyon jó időjárásállósága révén több évre védelmet nyújt-Magas száraz rétegvastagság nagy szilárdanyagtartalom révén-Egy ugyanazon termék használható alapozásra, közbenső és fedő festésre-Vizsgálati bizonylat szerint alkalmas acél és horganyzott acél hosszantartó védelmére EN ISO 12944 6.rész, korrózióskategória C4.-Lakk és vascsillám változatban kapható-ColorExpress szerint nagy színválasztékban színezhető.-Aromás oldószert nem tartalmaz.",
+        ],
+        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_profi_hg",
+    sourceIds: ["src_prod_caparol_capalac_profi_hg_page", "src_caparol_capalac_profi_hg_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Profi HG jellemzői: -aromamentes oldószer-magas fehérség-nemes selyemfény-jó rugalmasság-sokáig feldolgozható-tartós-kiváló fedőképesség, jó élfedés-jó ütésállóság-könnyű feldolgozhatóság-gyors száradás-kitűnő önterülés-ellenáll a különböző háztartási tisztítószereknek, rövid ideig gyenge savaknak és lúgoknak-magas időjárás- és fényállóság",
+        ],
+        sourceIds: ["src_caparol_capalac_profi_hg_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capalac_profi_sm",
+    sourceIds: ["src_prod_caparol_capalac_profi_sm_page", "src_caparol_capalac_profi_sm_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capalac Profi SM jellemzői: -aromamentes oldószer-magas fehérség-nemes selyemfény-jó rugalmasság-sokáig feldolgozható-tartós-kiváló fedőképesség, jó élfedés-jó ütésállóság-könnyű feldolgozhatóság-gyors száradás-kitűnő önterülés-ellenáll a különböző háztartási tisztítószereknek, rövid ideig gyenge savaknak és lúgoknak-magas időjárás- és fényállóság",
+        ],
+        sourceIds: ["src_caparol_capalac_profi_sm_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_caparol_glett",
+    sourceIds: ["src_prod_caparol_caparol_glett_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Caparol Glett jellemzői: Krémes állagú Extra fehér színű Gipszbázisú Könnyen felhordható Jól csiszolható",
+        ],
+        sourceIds: ["src_prod_caparol_caparol_glett_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_caparolcolor_amphisilan_szinezofestek",
+    sourceIds: ["src_prod_caparol_caparolcolor_amphisilan_szinezofestek_page", "src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) CaparolColor AmphiSilan színezőfesték jellemzői: Vízzel hígítható, környezetkímélő, semleges szagú, VOB szerint időjárásálló, magas víztaszító képességű, nem filmképző, mikroporózus, kiváló vízpára áteresztő (sd ca. ( 0,05 m), kiváló CO2-áteresztő, jól takaró, agresszív légszennyező anyagokkal szemben ellenálló, gombák, algák és moha megtelepedését akadályozza, feszültségmentes, nem termoplasztikus, könnyen feldolgozható.",
+        ],
+        sourceIds: ["src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capastone_a",
+    sourceIds: ["src_prod_caparol_capastone_a_page", "src_caparol_capastone_a_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capastone A jellemzői: Ellenáll a karcolásnak, ütésnek, fénynek, időjárásnak, csapóesőnek, kémiai vegyületeknek.Vízgőz és CO2 áteresztő, gyengén szennyeződik, könnyen tisztítható, elasztikus vakolat.",
+        ],
+        sourceIds: ["src_caparol_capastone_a_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla",
+    sourceIds: ["src_prod_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_page", "src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Dalmatiner homlokzati hőszigetelő tábla jellemzői: -éghetőségi osztály B1-nehezen éghető-páraáteresztő-blokkban habosított-előtárolt-nem zsugorodik-időálló-diffúzióképes-nem mérgező-FCKW, HFCKW, HFKW-mentes-formaldehidmentes-könnyen feldolgozható",
+        ],
+        sourceIds: ["src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_faschenputz",
+    sourceIds: ["src_prod_caparol_capatect_faschenputz_page", "src_caparol_capatect_faschenputz_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Faschenputz jellemzői: Rendkívül diffúzióképes Víztaszító Szennyeződésnek ellenálló Időjárásnak ellenálló és víztaszító Ipari gázoknak és mikroorganizmusoknak ellenáll",
+        ],
+        sourceIds: ["src_caparol_capatect_faschenputz_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_haftmoertel_fein",
+    sourceIds: ["src_prod_caparol_capatect_haftmoertel_fein_page", "src_caparol_capatect_haftmoertel_fein_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Haftmörtel fein jellemzői: Nagyon jó feldolgozhatóság Kézzel és géppel is feldolgozható Nem éghető Ásványi kötőanyag Műgyantával javított Jó vízpára áteresztő képesség Az időjárásnak jól ellenáll, víztaszító ONORM B 6121 szerint bevizsgált Legnagyobb szemcse: 1,2 mm Frisshabarcs sűrűség: 1,68 m3 Vízfelvételi tényező W",
+        ],
+        sourceIds: ["src_caparol_capatect_haftmoertel_fein_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600",
+    sourceIds: ["src_prod_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_page", "src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect homlokzati hőszigetelő tábla EPS 600 jellemzői: -éghetőségi osztály B1, nehezen éghető-hatóságilag ellenőrzött minőség-blokkban habosított-előtárolt-nem zsugorodik-nem öregedik-diffúzióképes-nem mérgező-FCKW-mentes-formaldehidmentes-könnyen feldolgozható-élkialakítás: tompa",
+        ],
+        sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_meldorfer_ansatzmoertel_080",
+    sourceIds: ["src_prod_caparol_capatect_meldorfer_ansatzmoertel_080_page", "src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Meldorfer Ansatzmörtel 080 jellemzői: „Nehezen gyulladó” Magas kezdeti tapadás Feldolgozásra kész Kiváló vízpára áteresztő képesség pigmentált Időjárásálló, víztaszító DIN 18 550 szerint Alakítható és könnyen feldolgozható Rendkívül feszültségszegény, nagyon jól formázható Cementmentes, műgyantakötésű Ásványi töltőanyag kombináció",
+        ],
+        sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok",
+    sourceIds: ["src_prod_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_page", "src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Meldorfer Eckverblender Classic 1/1-es sarok jellemzői: „Nehezen gyulladó” Szervesen kötött Túlnyomórészt ásványi alapanyagokból Időjárásálló Vízpára diffúzióképes Strapabíró, mechanikus behatásoknak ellenáll Ütés-, és karcálló Tisztítószereknek ellenáll Kézzel formázott dekoratív UV-ellenálló Vastagság: Kb. 4-6 mm",
+        ],
+        sourceIds: ["src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_meldorfer_fugenmoertel_081",
+    sourceIds: ["src_prod_caparol_capatect_meldorfer_fugenmoertel_081_page", "src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Meldorfer Fugenmörtel 081 jellemzői: „Nehezen gyulladó” Kiváló vízpára áteresztő képesség Időjárásálló, víztaszító DIN 18 550 szerint Alakítható és könnyen feldolgozható Rendkívül feszültségszegény, nagyon jól formázható Alkáli- und UV-ellenálló Pigmentált Cementmentes, műgyantakötésű Ásványi töltőanyag kombináció",
+        ],
+        sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_mk_reibputz_20_30",
+    sourceIds: ["src_prod_caparol_capatect_mk_reibputz_20_30_page", "src_caparol_capatect_mk_reibputz_20_30_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect MK-Reibputz 20, 30 jellemzői: időjárásálló és víztaszító kiválóan vízpára áteresztő különösen gazdaságos az előnyös anyagfelhasználási értékei miatt könnyen feldolgozható feszültségmentes mechanikusan terhelhető környezetkímélő kötőanyag: fehércement és fehér mészhidrát, ásványi kötőanyagok kevés szerves adalékkal optimális, időjárás- és fényálló pigmens-töltőanyag-granulátum kombináció hidrofób és tapadást segítő adalékok",
+        ],
+        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_pulverkleber_190",
+    sourceIds: ["src_prod_caparol_capatect_pulverkleber_190_page", "src_caparol_capatect_pulverkleber_190_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Pulverkleber 190 jellemzői: -nem éghető, a Capatect Mineral-System hőszigetelő rendszeren belül-nehezen éghető a Capatect polisztirol hőszigetelő rendszereken belül-időjárásálló, víztaszító DIN 18 550 szerint-kiváló vízpára áteresztő-kiválóan tapad minden ásványi eredetű alapon és polisztirolon-hosszú feldolgozhatósági idő-tartós-optimális szemcseösszetétel-környezetkímélő-ásványi eredetű kötőanyag plasztifikáló adalékokkal-kvarc, kalcit és tisztán ásványi eredetű könnyűadalékok optimális keveréke-nedvesítő, lágyító és tapadást elősegítő adalékok",
+        ],
+        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_putzgrund",
+    sourceIds: ["src_prod_caparol_capatect_putzgrund_page", "src_caparol_capatect_putzgrund_tds"],
+    sections: [
+      {
+        heading: "Alkalmazás",
+        paragraphs: [
+          "Alkalmazási terület a gyártói leírás alapján: „Minden festékbevonat annyira lesz tartós, mint az alapozásának minősége” Napjainkban ez az ismeretlen festőtől származó idézet aktuálisabb, mint korábban bármikor. A különféle tulajdonságokkal rendelkező modern építőanyagok sokasága, valamint a bekövetkező környezeti hatások gyakorisága miatt, egyre inkább fontosabbá válik a megfelelő típusú alapozó kiválasztása és alkalmazása. Az alapozás minden festék-, vakolat- és egyéb építőipari bevonat alapvető alapját képezi. A Caparol az alapozók széles skáláját kínálja, amelyek összhangot alkotnak az alapfelület tulajdonságaival és a különböző anyagok műszaki tartalmával. A választékunkban megtalálhatók a sima és texturált beltéri és homlokzatfestékek, vékonyvakolatok és fakonzerváló bevonatok alapozó termékei. Ebben a műszaki adatlapban a leggyakoribb kül- és beltéri alapfelületek kerülnek bemutatá",
+        ],
+        sourceIds: ["src_caparol_capatect_putzgrund_tds"],
       },
       {
-        heading: "Műszaki adatok",
+        heading: "Termékleírás",
         paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---; Fényesség: Szín:.",
+          "A gyártó nyilvános leírása szerint a(z) Capatect PutzGrund jellemzői: „Minden festékbevonat annyira lesz tartós, mint az alapozásának minősége” Napjainkban ez az ismeretlen festőtől származó idézet aktuálisabb, mint korábban bármikor. A különféle tulajdonságokkal rendelkező modern építőanyagok sokasága, valamint a bekövetkező környezeti hatások gyakorisága miatt, egyre inkább fontosabbá válik a megfelelő típusú alapozó kiválasztása és alkalmazása. Az alapozás minden festék-, vakolat- és egyéb építőipari bevonat alapvető alapját képezi. A Caparol az alapozók széles skáláját kínálja, amelyek összhangot alkotnak az alapfelület tulajdonságaival és a különböző anyagok műszaki tartalmával. A választékunkban megtalálhatók a sima és texturált beltéri és homlokzatfestékek, vékonyvakolatok és fakonzerváló bevonatok alapozó termékei. Ebben a műszaki adatlapban a leggyakoribb kül- és beltéri alapfel",
         ],
-        sourceIds: ["src_caparol_acrylstar_tds"],
+        sourceIds: ["src_prod_caparol_capatect_putzgrund_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_rollkleber_615",
+    sourceIds: ["src_prod_caparol_capatect_rollkleber_615_page", "src_caparol_capatect_rollkleber_615_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect Rollkleber 615 jellemzői: Nehezen éghető, nagyon jól tapad fa felületen, polisztirol keményhabon, és egyéb ásványi alapfelületeken. Víztaszító, vízgőz-áteresztő, vízzel hígítható, feszültségszegény, feldolgozásra kész.",
+        ],
+        sourceIds: ["src_caparol_capatect_rollkleber_615_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_si_rillenputz_20_30",
+    sourceIds: ["src_prod_caparol_capatect_si_rillenputz_20_30_page", "src_caparol_capatect_si_rillenputz_20_30_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect SI-Rillenputz 20, 30 jellemzői: Capatect SI-Rillenputz 20 Capatect SI-Rillenputz 30",
+        ],
+        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capatect_zf_spachtelmasse_690",
+    sourceIds: ["src_prod_caparol_capatect_zf_spachtelmasse_690_page", "src_caparol_capatect_zf_spachtelmasse_690_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capatect ZF-Spachtelmasse 690 jellemzői: -nehezen éghető Capatect-Systems EPS 600-on és a Capatect-Meldorfer-System-en belül-nagyon jó tapadás polisztirol keményhabon-időjárásálló, víztaszító-vízgőz-áteresztő-vízzel hígítható-feszültségszegény-feldolgozásra kész-jó állóképesség-műanyag-diszperzió kötőanyag plasztifikált adalékokkal-speciálisan egyeztetett kvarc- és kalcit-adalékanyagok.",
+        ],
+        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capaver_akkordvlies_g",
+    sourceIds: ["src_prod_caparol_capaver_akkordvlies_g_page", "src_caparol_capaver_akkordvlies_g_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capaver AkkordVlies G jellemzői: Rendkívül vízálló Áthidalja a repedéseket Stabil dimenziójú Nem duzzad és nem korhad Nehezen éghető Bevonattól függően 1, 2 vagy 3-as nedves súrolásállósági osztály DIN EN 13 300 szerint.",
+          "A gyártó nyilvános leírása szerint a(z) Capaver AkkordVlies G jellemzői: Speci+aacute;lis üvegf+aacute;tyol kiv+aacute;l+oacute; minős+eacute;gű kötőanyag-impregn+aacute;l+aacute;ssal, amely biztos+iacute;tja a könnyű feldolgozhat+oacute;s+aacute;got +eacute;s megakad+aacute;lyozza, hogy a rostsz+aacute;lak a felületen felsz+aacute;lasodjanak",
+        ],
+        sourceIds: ["src_caparol_capaver_akkordvlies_g_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capaver_capacoll_gk",
+    sourceIds: ["src_prod_caparol_capaver_capacoll_gk_page", "src_caparol_capaver_capacoll_gk_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capaver Capacoll GK jellemzői: • magas fokú kezdeti tapadás;• oldószermentes, vízzel hígítható;• enyhén tixotróp könnyen eloszlat-ható;• optimális összehangolás Capaver üvegszálas falbevonattal, kielégítõ ’nyitott idõ”: esetenként az alapozástól és a helyiség klimatikus viszonyaitól függõen mintegy 10–15 perc.• csekély felhasználás• nedves helyiségben történõ ragasztásokhoz is alkalmas• nehezen gyulladó a DIN 4102, B1 szerint a Capaver üvegszövettel kapcsolatban az alábbi vizsgálati igazolások szerint: Z-PA-III 2.2436, Z-PA-III 2.2446, Z-PA-III 2.2447, PA-III 2.2273, Z-PA-III 2.704, illetõleg Capaver és Capaclass falburkolatokkal az alábbi vizsgálati igazolás szerint: Z-PA-III 2.1662, valamint Multifloc-kal kapcsolatban a PA-III 2.2413 vizsgálati igazolás szerint.• nem éghetõ anyag a DIN 4102, A2 szerint a Capaver és Capaclass festékekkel kapcsolat",
+          "A gyártó nyilvános leírása szerint a(z) Capaver Capacoll GK jellemzői: Felhaszn+aacute;l+aacute;sra k+eacute;sz diszperzi+oacute;s ragaszt+oacute;anyag üvegszövet (Capaver Capaquarz, üvegf+aacute;yol, Fantastic Fleece) belsõt+eacute;ri falakra tört+eacute;nõ felragaszt+aacute;s+aacute;hoz.",
+        ],
+        sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capaver_fantasticfleece",
+    sourceIds: ["src_prod_caparol_capaver_fantasticfleece_page", "src_caparol_capaver_fantasticfleece_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capaver FantasticFleece jellemzői: Feh+eacute;r sz+iacute;nű sima üvegf+aacute;tyol alapon különböző attrakt+iacute;v mint+aacute;j+uacute; tap+eacute;ta. Kiv+aacute;l+oacute;an alkalmas Deco-Lasur matt vagy glänzend (f+eacute;nyes) laz+uacute;rfest+eacute;kekkel val+oacute; bevon+aacute;sra. Mint+aacute;zatok: Antimo, Aronda, Belura, Leano, Legra, Lino (kvarccal), Lukida, Miko, Sario, Tira (kvarccal), Tisano, Xora",
+        ],
+        sourceIds: ["src_prod_caparol_capaver_fantasticfleece_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capaver_glasgewebe",
+    sourceIds: ["src_prod_caparol_capaver_glasgewebe_page", "src_caparol_capaver_glasgewebe_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Capaver Glasgewebe jellemzői: Nem duzzad és korhadásálló Méretstabil Nedvességálló a kétoldali speciális kiképzésnek köszönhetően és ezáltal ragasztásnál az elhelyezése eltolással korrigálható. Tapétázógéppel felhordható kivéve: K 1100, VB1100, K 1110,K 1142. Kisebb felületi repedéseket elfedi és növeli az alapfelület mechanikai terhelésekkel szembeni védelmét. Nyomásérzékeny felületek stabilabbak lesznek. Csavarozással és szögeléssel rögzített alapoknál nincs szükség külön vakolatrétegre. Durvább felületű és erősebb mintázatú tapéta esetén munkadíj és anyagmegtakarítás érhető el a glettelés és csiszolás elhagyhatósága miatt. Rétegfelépítéstől függően:Termékleírás Súrolásállósági osztál 1,2 vagy 3 a fedőrétegtől függően az MSZ EN 13 300 szerint. fertőtlenítő szereknek ellenáll DIN 53168 szerint dekontaminálható DIN 25415 szerint nehezen gyulladó DI",
+          "A gyártó nyilvános leírása szerint a(z) Capaver Glasgewebe jellemzői: Belt+eacute;ri falburkolatok bor+iacute;t+aacute;s+aacute;ra, elsősorban nagy ig+eacute;nybev+eacute;telnek kitett felületekre. A szövetstrukt+uacute;ra vari+aacute;ci+oacute;i +eacute;s a r+eacute;tegek minős+eacute;g+eacute;nek, sz+iacute;n+eacute;nek, +eacute;s f+eacute;nyess+eacute;gi fok+aacute;nak különbözős+eacute;ge lehetőv+eacute; teszi az ig+eacute;nyeknek megfelelő ön+aacute;ll+oacute; kiv+aacute;laszt+aacute;st is. Magas+eacute;rt+eacute;kű bevonatokkal (latexfest+eacute;kek, akrillakk-fest+eacute;kek) költs+eacute;gk+iacute;m+eacute;lő fel+uacute;j+iacute;t+aacute;sok is v+eacute;gezhetők. A m+aacute;r meglevő üvegszövet r+eacute;tegekn+eacute;l a k+iacute;v+aacute;ns+aacute;gnak +eacute;s az ig+eacute;nybevett felületeknek megfelelően is v+aacute;laszthat+oacute; bevonat.",
+        ],
+        sourceIds: ["src_caparol_capaver_glasgewebe_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capawood_performance",
+    sourceIds: ["src_prod_caparol_capawood_performance_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) CapaWood Performance jellemzői: Alkalmas mérsékelten mérettartó és nem mérettartó fa felületekre. Mélyen beszívódó. Aromamentes oldószer tartalmú. Vékonyrétegű, nyíltporusú, lélegző képes. Magas diffúzió képesség. Magas UV-védelem. Filmképző védelem gombásodás ellen. Könnyű és kellemes feldolgozás. Egyszerű a felújításban.",
+        ],
+        sourceIds: ["src_prod_caparol_capawood_performance_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_capawood_protectplus",
+    sourceIds: ["src_prod_caparol_capawood_protectplus_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) CapaWood ProtectPlus jellemzői: Alkalmas a fa szerkezetekre, mint pl. Ablak, Ajtó, Erkély burkolatok, Pergolák, Fa homlokzat burkolatok bevonására. Speciális kötőanyag kombinációnak köszönhetően mélyen beszívódik és hosszú védelmet biztosít. Aromamentes oldószert tartalmaz. Nyíltporusú, lélegző képes, magas diffúzió képesség. A Hydroperl effekt hatására víz taszító hatású. Magas UV-védelem. Gombásodás elleni film védelem. Könnyen és kellemesen felhordható. Könnyen felújítható.",
+        ],
+        sourceIds: ["src_prod_caparol_capawood_protectplus_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_danske_falazurok",
+    sourceIds: ["src_prod_caparol_danske_falazurok_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Danske Falazurok jellemzői: Részletes tájékoztatás a Caparol termékcsalád összes termékének műszaki jellemzőiről. További információk a Műszaki Információkban, és a biztonsági adatlapokban.",
+        ],
+        sourceIds: ["src_prod_caparol_danske_falazurok_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_deko_stone",
+    sourceIds: ["src_prod_caparol_deko_stone_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Deko-stone jellemzői: Old+oacute;szermentes, feldolgoz+aacute;sra k+eacute;sz belt+eacute;ri bevonat nagy felületek +eacute;s előregy+aacute;rtott +eacute;pületr+eacute;szek fest+eacute;s+eacute;re.",
+        ],
+        sourceIds: ["src_prod_caparol_deko_stone_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_502_protect_plus",
+    sourceIds: ["src_prod_caparol_disbocret_502_protect_plus_page", "src_caparol_disbocret_502_protect_plus_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboCRET 502 Protect Plus jellemzői: • Korrózióvédelem és tapadóréteg egyben; • Egyszerű feldolgozás - csak vízzel kell keverni; • Előnyös feldolgozhatósági idő; • Rövid várakozási idők az egyes rétegek felhordása között; • Vizes alapfelületeken is alkalmazható; • Fagyálló; • Kitűnő tapadás minden betonfajtán;",
+        ],
+        sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_504_feinmoertel",
+    sourceIds: ["src_prod_caparol_disbocret_504_feinmoertel_page", "src_caparol_disbocret_504_feinmoertel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboCRET 504 Feinmörtel jellemzői: ∗ Egyszerű előkészítés∗ Kiváló feldolgozhatóság∗ Kiváló állóképesség∗ Kiadós∗ Előnyös feldolgozhatósági idő",
+        ],
+        sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_505_feinspachtel",
+    sourceIds: ["src_prod_caparol_disbocret_505_feinspachtel_page", "src_caparol_disbocret_505_feinspachtel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboCRET 505 Feinspachtel jellemzői: Egyszerű előkészítés Kiváló feldolgozhatóság Kiváló állóképesség Kiadós Előnyös feldolgozhatósági idő",
+        ],
+        sourceIds: ["src_caparol_disbocret_505_feinspachtel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_506_planspachtel",
+    sourceIds: ["src_prod_caparol_disbocret_506_planspachtel_page", "src_caparol_disbocret_506_planspachtel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboCRET 506 Planspachtel jellemzői: Egyszerű előkészítés Kiváló feldolgozhatóság Rendkívül vékonyra lehúzható Kiadós Előnyös feldolgozhatósági idő",
+        ],
+        sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_507_multitec_moertel",
+    sourceIds: ["src_prod_caparol_disbocret_507_multitec_moertel_page", "src_caparol_disbocret_507_multitec_moertel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboCRET 507 Multitec-Mörtel jellemzői: Korrózióvédelem nem szükséges Kiváló feldolgozhatóság Gyors megkeményedés Gyorsan átvonható Rendkívül jó állóképesség Kiadós Egyszerű előkészítés",
+        ],
+        sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_510_fuellschicht",
+    sourceIds: ["src_prod_caparol_disbocret_510_fuellschicht_page", "src_caparol_disbocret_510_fuellschicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbocret 510 Füllschicht jellemzői: Kenhető Gazdaságos és egyszerű felhasználás Plaszto-elasztikus Elfedi a 0,2 mm-nél kisebb, nem mozgó repedéseket Alkálirezisztens Környezetkímélő Vízpára áteresztő A fedő bevonatokkal CO2 és SO2 gázokkal szemben tömör.",
+        ],
+        sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbocret_515_betonfarbe",
+    sourceIds: ["src_prod_caparol_disbocret_515_betonfarbe_page", "src_caparol_disbocret_515_betonfarbe_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbocret 515 Betonfarbe jellemzői: Repedéstöltő betonvédő festék Kül- és beltéri alkalmazásra - időjárásálló, alkálirezisztens, ultraibolya sugárzásnak ellenáll. Jól tapadó régi bevonatokon is alkalmazható. Jól töltő, magas fedőképességű.",
+        ],
+        sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboflex_204_silikon_fugendicht",
+    sourceIds: ["src_prod_caparol_disboflex_204_silikon_fugendicht_page", "src_caparol_disboflex_204_silikon_fugendicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboflex 204 Silikon-Fugendicht jellemzői: Elasztikus Termikusan és kémiailag terhel-hető Gombásodásgátlógátló (fungicid tulajdonságú)",
+        ],
+        sourceIds: ["src_caparol_disboflex_204_silikon_fugendicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbofug_225_acryl_fugendicht",
+    sourceIds: ["src_prod_caparol_disbofug_225_acryl_fugendicht_page", "src_caparol_disbofug_225_acryl_fugendicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbofug 225 Acryl-Fugendicht jellemzői: • Plasztoelasztikus• Minden Caparol diszperziós festékekkel átfesthetô",
+        ],
+        sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbon_404_acryl_bodensiegel",
+    sourceIds: ["src_prod_caparol_disbon_404_acryl_bodensiegel_page", "src_caparol_disbon_404_acryl_bodensiegel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbon 404 Acryl-BodenSiegel jellemzői: Sz+eacute;nsz+aacute;lerős+iacute;t+eacute;sű egykomponensű metakril+aacute;t-diszperzi+oacute;s bevonat külső +eacute;s belső aljzatfelületek fest+eacute;s+eacute;re. Selyemmatt, strapab+iacute;r+oacute; +eacute;s időj+aacute;r+aacute;s+aacute;ll+oacute;.",
+        ],
+        sourceIds: ["src_prod_caparol_disbon_404_acryl_bodensiegel_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbon_405_klarsiegel",
+    sourceIds: ["src_prod_caparol_disbon_405_klarsiegel_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbon 405 Klarsiegel jellemzői: V+iacute;zzel h+iacute;g+iacute;that+oacute;, selyemf+eacute;nyű, sz+iacute;ntelen diszperzi+oacute;s bevonat a sima ill. cs+uacute;szos alapfelületekhez belt+eacute;ri felhaszn+aacute;l+aacute;sra.",
+        ],
+        sourceIds: ["src_prod_caparol_disbon_405_klarsiegel_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbon_pu_aquasiegel_458",
+    sourceIds: ["src_prod_caparol_disbon_pu_aquasiegel_458_page", "src_caparol_disbon_pu_aquasiegel_458_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbon PU-Aquasiegel 458 jellemzői: Selyemmatt, transzparens, v+iacute;zzel h+iacute;g+iacute;that+oacute;, k+eacute;tkomponensű epoxigyanta bevonat bel- +eacute;s kült+eacute;ri felhaszn+aacute;l+aacute;sra. Vegyi anyagoknak, karcol+aacute;soknak ellen+aacute;ll, optikai egyenetlens+eacute;geket kiegyenl+iacute;ti.",
+        ],
+        sourceIds: ["src_prod_caparol_disbon_pu_aquasiegel_458_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbopox_442_garagen_siegel",
+    sourceIds: ["src_prod_caparol_disbopox_442_garagen_siegel_page", "src_caparol_disbopox_442_garagen_siegel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbopox 442 Garagen Siegel jellemzői: • Páraáteresztő• Időjárásálló• Kemikáliákkal szemben ellenálló• Lágyító kivándorlás nincs",
+          "A gyártó nyilvános leírása szerint a(z) Disbopox 442 Garagen Siegel jellemzői: Alkalmazhat+oacute; minden +aacute;sv+aacute;nyi erede-tű alapfelületen, melyen g+eacute;pj+aacute;rműfor-galom ill. t+aacute;rol+aacute;s folyik, mint gar+aacute;-zsokban, g+eacute;pkocsi +aacute;tj+aacute;r+oacute;kban, ker+eacute;k-p+aacute;rt+aacute;rol+oacute;kban, g+eacute;pkocsi be+aacute;ll+oacute;kban, parkol+oacute; h+aacute;zakban, m+eacute;lygar+aacute;zsokban.",
+        ],
+        sourceIds: ["src_caparol_disbopox_442_garagen_siegel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbothan_221_fugendicht",
+    sourceIds: ["src_prod_caparol_disbothan_221_fugendicht_page", "src_caparol_disbothan_221_fugendicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbothan 221 Fugendicht jellemzői: Elasztikus Diszperziós festékekkel, alkid és akrilgyantalakkokkal átfesthető Higított lúgoknak és sóoldatoknak és vizes tisztítószereknek ellenáll Ásványi olajnak, üzemanyagnak, növényi és állati zsírnak rövid ideig ellenáll",
+        ],
+        sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disbothan_235_pu_fugendicht",
+    sourceIds: ["src_prod_caparol_disbothan_235_pu_fugendicht_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disbothan 235 PU-Fugendicht jellemzői: Teljes átszáradás után minden diszperziós homlokzatfestékkel átfesthető.",
+        ],
+        sourceIds: ["src_prod_caparol_disbothan_235_pu_fugendicht_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxan_450_fassadenschutz",
+    sourceIds: ["src_prod_caparol_disboxan_450_fassadenschutz_page", "src_caparol_disboxan_450_fassadenschutz_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboXAN 450 Fassadenschutz jellemzői: Egyszerrű vízel történő hígítás Szagtalan és környezetkímélő Lecsökkenti a vízfelvételt Javítja a szerkezet lefagyásokkal és sókivirágzással szembeni ellenállóképességét Védelmet nyújt az alga-, mohabenövéssel, előre nem látható nedvességfoltok és kivirágzásokkal szemben Nem filmképző Diffúzióképes Alkáliáknak és UV sugárzásnak ellenáll",
+        ],
+        sourceIds: ["src_caparol_disboxan_450_fassadenschutz_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxan_452_wetterschutz",
+    sourceIds: ["src_prod_caparol_disboxan_452_wetterschutz_page", "src_caparol_disboxan_452_wetterschutz_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) DisboXAN 452 Wetterschutz jellemzői: Alacsony viszkozitás, kitűnő behatolási képesség és víztaszítás. Javítja a lefagyásokkal szembeni ellenállóképességet, metakrilgyanta fedőrétegek használatánál. Védelmet nyújt a porlerakódás, algásodás, mohásodás, előre nem látható nedvességfoltokkal és kivirágzásokkal szemben.",
+        ],
+        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_422_emi_clearcoat",
+    sourceIds: ["src_prod_caparol_disboxid_422_emi_clearcoat_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 422 EMI-Clearcoat jellemzői: F+eacute;nyes, k+eacute;tkomponensű foly+eacute;kony epoxigyanta Disboxid Arte Flor-rendszerhez +eacute;s Disboxid 948 Color Chips-el bevont felületekhez belt+eacute;ri felhaszn+aacute;l+aacute;sra.",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_422_emi_clearcoat_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_430_ep_rollschicht",
+    sourceIds: ["src_prod_caparol_disboxid_430_ep_rollschicht_page", "src_caparol_disboxid_430_ep_rollschicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 430 EP-Rollschicht jellemzői: • Vegyszereknek jól ellenáll• Az anyag hengerelhető• Szakvélemény tanúsítja, hogy az élelmiszerekre élettani szempontból káros hatása nincs.• A réteg szárazon 150 °C-ig, nedvesen 40 °C-ig",
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 430 EP-Rollschicht jellemzői: Közepes, illetve fokozott mechanikai +eacute;s vegyi ig+eacute;nybev+eacute;telnek kitett +aacute;sv+aacute;nyi alap+uacute; padl+oacute;burkolatok fedőr+eacute;tege, pl.: +bull; Tejgazdas+aacute;gokban, sajtk+eacute;sz+iacute;tő üzemekben, v+aacute;g+oacute;hidakon, p+eacute;ks+eacute;gekben +bull; Ital-, +eacute;s konzervüzemekben +bull; Nagykonyh+aacute;kban +eacute;s hűtőh+aacute;zakban",
+        ],
+        sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_443_ep_impraegnierung",
+    sourceIds: ["src_prod_caparol_disboxid_443_ep_impraegnierung_page", "src_caparol_disboxid_443_ep_impraegnierung_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 443 EP-Imprägnierung jellemzői: Disbopox 443 EP-Imprägnierung növeli az ásványi eredetű szívóképes felületek vegyszerállóságát és szilárdságát. Megakadályozza a porképződést és a káros anyagok felszívódását. Felhordható a még nedves beton- és esztrichfelületekre, megakadályozva így a túl gyors kiszáradást és utókezeli a friss felületet. A jó vízpára áteresztő képesség miatt anhidrit- és megnezitesztrich felületekre is alkalmazható. Ellenálló hígított lúgokkal, gyenge savakkal, benzinnel, vízzel és vizes sóoldatokkal szemben.",
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 443 EP-Imprägnierung jellemzői: +Aacute;sv+aacute;nyi belt+eacute;ri alapokra +eacute;s kem+eacute;ny bevonatokra kis +eacute;s közepes terhel+eacute;sű helyis+eacute;gekben a h+aacute;z körül, az iparban +eacute;s a kereskedelemben, mint old.: műhelyekben, rakt+aacute;rakban, +eacute;tkezőkben, ki+aacute;ll+iacute;t+aacute;si csarnokokban, üzletekben.",
+        ],
+        sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_444_dickschicht",
+    sourceIds: ["src_prod_caparol_disboxid_444_dickschicht_page", "src_caparol_disboxid_444_dickschicht_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 444 Dickschicht jellemzői: vegyi anyagoknak és mechanikus terhelésnek kíválóan ellenáll nedvesen terhelhető 40°C-ig tartós nedvességnek kitehető",
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 444 Dickschicht jellemzői: Fedőbevonat vegyileg +eacute;s mechanikusan erősen ig+eacute;nybevett +aacute;sv+aacute;nyi +eacute;s f+eacute;mfelületekre kül-+eacute;s belt+eacute;ren, mint pl.: - ipari padl+oacute;k vill+aacute;s targonca közleked+eacute;ssel - v+eacute;dőbevonat agressz+iacute;v vegyi környezetben l+eacute;vő +eacute;pületszerkezetekre (galvaniz+aacute;l+oacute; csarnokok akkumul+aacute;tor helyis+eacute;gek, stb.) - szennyv+iacute;ztiszt+iacute;t+oacute;kban",
+        ],
+        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_462_ep_siegel",
+    sourceIds: ["src_prod_caparol_disboxid_462_ep_siegel_page", "src_caparol_disboxid_462_ep_siegel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 462 EP-Siegel jellemzői: hohes Penetrationsvermögen Flügelglättbar gut chemikalienbeständig dauernassbelastbar mechanisch extrem belastbar erfüllt die Anforderungen der DIN EN 1504-2 und der DIN V 18026: Oberflächenschutzsysteme für Beton emissionsminimiert, zugelassen vom Deutschen Institut für Bautechnik geprüft gegen rückwärtiger Feuchteeinwirkung frei von lackbenetzungsstörenden Substanzen",
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 462 EP-Siegel jellemzői: -Alapoz+oacute; vagy önterülő sim+iacute;t+oacute; r+eacute;teg ipari padl+oacute;bevonatok al+aacute;. -Alapoz+oacute; a Disboxid Parkol+oacute;h+aacute;z (OS 8) rendszerhez. -Disboxid 946 Mörtelquarz kvarchomok kötőanyagak+eacute;nt rendk+iacute;vül kop+aacute;s+aacute;ll+oacute; ipari padl+oacute;k, padl+oacute;- +eacute;s fal+aacute;tmenetek k+eacute;sz+iacute;t+eacute;s+eacute;re valamint kitör+eacute;sek jav+iacute;t+aacute;s+aacute;ra. -Sima vagy cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;s+eacute;hez -Reped+eacute;sek kiönt+eacute;s+eacute;re",
+        ],
+        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
+      },
+      {
+        heading: "Alkalmazás",
+        paragraphs: [
+          "Alkalmazási terület a gyártói leírás alapján: Als Grundierung und Kratzspachte­lung unter Bodenbeschichtungen auch in den Disbon Parkhaus-Systemen OS 8 IV, OS 11a+b Neu. Als Bindemittel für Disboxid 946 Mör­tel­quarz zur Herstellung von hoch­ver­schleiß­festen Industriebelägen, Hohl­kehlen und zum Reprofilieren von Aus­bruchstellen. Als glatte oder rutschhemmende Ver­sie­gelung. Zum Vergießen von Rissen. Geprüft und zugelassen nach den AgBB-Prüfktiterien für VOC-Emissionen aus innenraumrelevanten Bauprodukten. Das Bewertungsschema des AgBB ( A usschuß zur g esundheitlichen B ewertung von B auprodukten) wurde von den Umwelt- und Gesundheitsbehörden für die Verwendung von Baumaterialien in sensiblen Bereichen wie z.B. Aufenthaltsräumen abgeleitet.",
+        ],
+        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_463_ep_grund_sr",
+    sourceIds: ["src_prod_caparol_disboxid_463_ep_grund_sr_page", "src_caparol_disboxid_463_ep_grund_sr_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 463 EP-Grund SR jellemzői: • 10 ◦C-on is jól keményedik• Időjárásálló• Tartós nedvességnek ellenáll• Vegyszereknek ellenáll• Élelmiszeripar területén is alkalmazható",
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 463 EP-Grund SR jellemzői: +bull; Alapoz+oacute;k+eacute;nt, vagy önterülő sim+iacute;t+oacute;k+eacute;nt padl+oacute;bevonatok al+aacute;. +bull; Disboxid 946 Mörtelquarz kvarchomok kötőanyagak+eacute;nt rendk+iacute;vül kop+aacute;s+aacute;ll+oacute; ipari padl+oacute;k, padl+oacute;-, +eacute;s fal+aacute;tmenetek kialak+iacute;t+aacute;s+aacute;ra, illetve kitör+eacute;sek jav+iacute;t+aacute;s+aacute;ra. +bull; Sima, vagy cs+uacute;sz+aacute;sg+aacute;tl+oacute; bevonatokhoz +bull; Reped+eacute;sek kiönt+eacute;s+eacute;re +bull; Kötőanyag +eacute;s önterülő bevonat sz+iacute;nes kvarcbetonokhoz",
+        ],
+        sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_464_ep_decksiegel",
+    sourceIds: ["src_prod_caparol_disboxid_464_ep_decksiegel_page", "src_caparol_disboxid_464_ep_decksiegel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 464 EP-Decksiegel jellemzői: +Aacute;sv+aacute;nyi eredetű padl+oacute;k közepes +eacute;s rendk+iacute;vül magas mechanikus ig+eacute;nybev+eacute;tellel: - Rakt+aacute;rak +eacute;s g+eacute;pipari üzemcsarnokok targonca haszn+aacute;lattal - Felhajt+oacute;- +eacute;s rakod+oacute; r+aacute;mp+aacute;k - V+aacute;s+aacute;rcsarnokok. Z+aacute;r+oacute;bevonat a Disboxid Parkhaus-System OS 8-ban.",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_464_ep_decksiegel_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_942_mischquarz",
+    sourceIds: ["src_prod_caparol_disboxid_942_mischquarz_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 942 Mischquarz jellemzői: Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,1 - 0,4 mm",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_942_mischquarz_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_943_einstreuquarz",
+    sourceIds: ["src_prod_caparol_disboxid_943_einstreuquarz_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 943 Einstreuquarz jellemzői: Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,4 - 0,8 mm",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_943_einstreuquarz_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_944_einstreuquarz",
+    sourceIds: ["src_prod_caparol_disboxid_944_einstreuquarz_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 944 Einstreuquarz jellemzői: Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,7 - 1,2 mm",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_944_einstreuquarz_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_946_moertelquarz",
+    sourceIds: ["src_prod_caparol_disboxid_946_moertelquarz_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 946 Mörtelquarz jellemzői: Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. Speci+aacute;lisan epoxibeton k+eacute;sz+iacute;t+eacute;s+eacute;hez. Szemcsem+eacute;ret: 0,25 - 2 mm",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_946_moertelquarz_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_947_slidestop",
+    sourceIds: ["src_prod_caparol_disboxid_947_slidestop_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 947 Slidestop jellemzői: Cs+uacute;sz+aacute;sg+aacute;tl+oacute; kieg+eacute;sz+iacute;tőanyag Disbon 405 Klarsiegel +eacute;s Disbon PU-Aquasiegel 458-hoz.",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_947_slidestop_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_disboxid_948_color_chips",
+    sourceIds: ["src_prod_caparol_disboxid_948_color_chips_page"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Disboxid 948 Color Chips jellemzői: Műanyagchips az egyedi felületek kialak+iacute;t+aacute;s+aacute;hoz a Disbon padl+oacute;bevonatokkal bel- +eacute;s kült+eacute;ri felhaszn+aacute;l+aacute;sra.",
+        ],
+        sourceIds: ["src_prod_caparol_disboxid_948_color_chips_page"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_fibrosil",
+    sourceIds: ["src_prod_caparol_fibrosil_page", "src_caparol_fibrosil_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) FibroSil jellemzői: -vízzel hígítható, környezetbarát, enyhe szagú-időjárásálló aktív kapilláris szárazzóna-képző kiváló esővédelem a DIN EN 1062 szerint „alacsony vízáteresztő lépességű” w-érték 0,03[kg/(m2 x h0,5)].-jó vízgőzáteresztő tulajdonságú a DIN EN 1062 szerint „magas vízgőzdiffúziójú”Sd-érték ( 0,35 m értékkel-CO2 áteresztő-jó fedőképességű-ellenáll az agresszív légszennyező anyagoknak-könnyedén feldolgozható",
+        ],
+        sourceIds: ["src_caparol_fibrosil_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_indeko_w",
+    sourceIds: ["src_prod_caparol_indeko_w_page", "src_caparol_indeko_w_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Indeko-W jellemzői: Vízzel hígítható és enyhe szagú.MSZ EN 13 300 szerint mosásálló, 3. osztály.Oldószermentes.Diffúzióképes (sd(0,1 m)Hosszantartó fungicid és baktericid tulajdonságú.Élettanilag ártalmatlan.Vizes fertőtlenítő és tisztítószereknek ellenáll.",
+        ],
+        sourceIds: ["src_caparol_indeko_w_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_isodeck",
+    sourceIds: ["src_prod_caparol_isodeck_page", "src_caparol_isodeck_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Isodeck jellemzői: Vízzel hígítható, környezetkímélő, oldószermentes, nem kellemetlen szagú, mosás- és súrolásálló ÖNORM C2357 szerint, vízpára áteresztő, jól takar és szigetel.",
+        ],
+        sourceIds: ["src_caparol_isodeck_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_kd_rillenputz",
+    sourceIds: ["src_prod_caparol_kd_rillenputz_page", "src_caparol_kd_rillenputz_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) KD-Rillenputz jellemzői: Capatect KD-Rillenputz 20 Capatect KD-Rillenputz 30",
+        ],
+        sourceIds: ["src_caparol_kd_rillenputz_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_meradur_innenkalkfarbe",
+    sourceIds: ["src_prod_caparol_meradur_innenkalkfarbe_page", "src_caparol_meradur_innenkalkfarbe_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Meradur Innenkalkfarbe jellemzői: 25 kg 300-400 g/m2/2 réteg fehérI. színcsoport",
+        ],
+        sourceIds: ["src_caparol_meradur_innenkalkfarbe_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_permasilan_nqg",
+    sourceIds: ["src_prod_caparol_permasilan_nqg_page", "src_caparol_permasilan_nqg_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) PermaSilan NQG jellemzői: – Vízzel hígítható, környezetkímélő és enyhe szagú.– Időjárásálló.– Kiváló esővédelmet nyújt, megfelel az „alacsony vízátbocsátó képesség’ besorolásának a DIN EN 1062 szabvány szerint 0,03 (kg/m2 · h0,5) w – értékkel.– Jó diffúzióképes, megfelel a „közepes vízpára diffúziónak’ a DIN EN 1062 előírása szerint 0,35 m sd-H2O-értékkel.– Könnyű feldolgozni.– Ásványi felületi megjelenés– Oldószermentes.– Feszültség mentes.– Elasztikus.– Magas tapadó szilárdságú.– Repedésáthidaló.– Alkálirezisztens, ezért nem szappanosodik.– PermaSilan véd az algásodás és a gombásodás ellen.",
+        ],
+        sourceIds: ["src_caparol_permasilan_nqg_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_silitol_fassadenspachtel",
+    sourceIds: ["src_prod_caparol_silitol_fassadenspachtel_page", "src_caparol_silitol_fassadenspachtel_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Silitol Fassadenspachtel jellemzői: A Sylitol Fassadenspachtelnek köny-nyen feldolgozható, egyenletesen száradás, jó kitöltő képességű. Maximálisan felhordható vastagság 15 mm. Sűrűség: 0,8 kg/ liter.",
+        ],
+        sourceIds: ["src_caparol_silitol_fassadenspachtel_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_silitol_homlokzatfestek",
+    sourceIds: ["src_prod_caparol_silitol_homlokzatfestek_page", "src_caparol_silitol_homlokzatfestek_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Silitol Homlokzatfesték jellemzői: környezetkímélő, kiválóan vízpára áteresztő, időjárásálló. (Sd(0,1 m)",
+        ],
+        sourceIds: ["src_caparol_silitol_homlokzatfestek_tds"],
+      }
+    ],
+  },
+  {
+    productId: "prod_caparol_sylitolr_minera",
+    sourceIds: ["src_prod_caparol_sylitolr_minera_page", "src_caparol_sylitolr_minera_tds"],
+    sections: [
+      {
+        heading: "Termékleírás",
+        paragraphs: [
+          "A gyártó nyilvános leírása szerint a(z) Sylitol® Minera jellemzői: OÉSZ szerint időtálló.Repedéseket eltömő, nagy tömörségű.Vízpára- és CO2 -áteresztő. Kiváló eső elleni védelem, víztaszító.Ásványi eredetű alapfelületekkel kovásodik, ezáltal jó tapadás.Tömör, sima alapfelületeken tapadó rétegként alkalmazható.Vízzel hígítható, környezetkímélő.",
+        ],
+        sourceIds: ["src_caparol_sylitolr_minera_tds"],
       }
     ],
   },
@@ -59,87 +1307,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Alkalmazási tudnivalók a Műszaki adatlap szerint: át. A házon belüli vegyészek biztosítják ezt a minőséget a beérkező árutól a kimenő árukig. Az AvenariusAgro a TÜV által bevizsgált és tanúsított ISO 9001-2015 minőségirányítási rendszer szerint gyárt, és elnyerte a Responsible Care tanúsítványt.",
         ],
         sourceIds: ["src_caparol_agrosit_sb_schwimbadfarbe_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_amphisilan_plus",
-    sourceIds: ["src_caparol_amphisilan_plus_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Szilikon termékek leírás Műszaki információ Nr. A145 Egy új szilikongyanta kötőanyag és egy nanostruktúrált töltőanyag kifejlesztésével jelentősen lecsökkentették a szennyeződésre való hajlamot. Vakolatok és ásványi alapok víztaszító és vízgőzátersztő bevonata, valamint renoválandó jól tapadó szi- likátfestékek, matt diszperziós festékek, műgyanta vakola-tok hordképes és sérü- lésmentes felületű hőszigetelő rendszerek homlokzatfestéke. Az AmphiSilan ásványi szerkezetű, nem filmképező, jó vízgőz- és CO 2 áteresz.",
-        ],
-        sourceIds: ["src_caparol_amphisilan_plus_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alap, ill. köztes bevonat: Max. 10% vízzel hígított AmphiSilan homlokzatfestékkel. Amennyiben az alapfelület minősége megköveteli, a köztes és a záró bevonatot valamivel hígabbra lehet készíteni és azzal a felületet jól átfesteni. A hígítás mértékét próbabevonat készítésével lehet meghatározni. Az egyenetlenül felhordott vakola- tok és kisebb repedések kiegyenlítéséhez a köztes réteget max. 5-10%-os vizes hígítású AmphiSilan-Compact-tal lehet készíteni. Záróréteg készítése: AmphiSilan homlokzatfestékkel, max. 5-10% vízzel hígítva.Az egyes rétegek között legalább 12 óra száradási idő javasolt. Ecset, henger, Airless szórás. Airless AmphiSilan/AmphiSilan-Compact: Szórási szög: 50° Szórófej.",
-        ],
-        sourceIds: ["src_caparol_amphisilan_plus_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes, nedvességnek kitett felületek bevonására.",
-        ],
-        sourceIds: ["src_caparol_amphisilan_plus_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Sűrűség:.",
-        ],
-        sourceIds: ["src_caparol_amphisilan_plus_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_aquasperrgrund_fein",
-    sourceIds: ["src_caparol_aquasperrgrund_fein_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) MűSZ kal. T er mékleír ás Belt ér ben alk almazhat ó f es t ékbe v onat nik o tin-, k or om- és megszár adt vízf olt okk al sz enn y ez e t f alf elüle t ek lek ö t és ér e és szig e t elésr e a r ák ö v e tk ez endő f edőbe v onat o t meg előzően. Hat ék on y an megk ö ti az oldhat ó, elszínező tula jdonságú és anilin t ar t almú f olt ok at. F elhasználhat ó f oltgátló alapozó be v onatk ént t apé t ázás t v agy f ali dek or ációt meg előzően. Ez en kí vül szig e t elő hat ással r endelk ező alapoz.",
-        ],
-        sourceIds: ["src_caparol_aquasperrgrund_fein_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_arte_lasur",
-    sourceIds: ["src_caparol_arte_lasur_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Fallazúrok, lazúrok gyöngyházpigmentekkel leírás Műszaki információ Nr. 859 Speciálisan kifejlesztett attraktív lazúr beltéri felületek festésére. A lazúr fehér színű festékcseppeket tartalmaz, melyek színezés után más festék- cseppekkel nem keverednek és világos alapfelületen kiváló minőségű és különösen differenciált optikát ad. A Capadecor Arte-Lasur szabadalmaztatott termék. (Nr. E93830019.1/TO98A000997). ■ Vízzel hígítható, környezetkímélő és szagtalan ■ Oldószermentes ■ Nedvestisztíthatósági osztály 2 a DIN EN 13300 alapján, súr.",
-        ],
-        sourceIds: ["src_caparol_arte_lasur_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Különlegessége:.",
-        ],
-        sourceIds: ["src_caparol_arte_lasur_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész akril bázisú fal-lazúr fehér festékcseppekkel.",
-        ],
-        sourceIds: ["src_caparol_arte_lasur_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Száradási idő:.",
-        ],
-        sourceIds: ["src_caparol_arte_lasur_tds"],
       }
     ],
   },
@@ -239,776 +1406,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_capacryl_holz_isogrund",
-    sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vízes mázolóanyagok )) Capacryl család leírás Műszaki információ Nr. 961 Szigetelő alapozó vízoldható, barnára szinező anyagokat tartalmazó fákra és fa- anyagokra Capacryl akrillakkokkal vagy Capadur Color-ral való átfestés előtt. ■ Vízzel hígítható ■ Környezetbarát ■ A faanyagokban található vízoldható, elszínező összetevők elleni kationos szigetelő hatás ■ Kiváló tapadás és jó átfesthetőség ■ Diffúzióképes ■ Az EN 71-3 szerint gyermekjátékokra alkalmas Akrildiszperzió. A termék VOC tartalma szerint megfelel az EU 2004/42/EG számú.",
-        ],
-        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: Impregnálás Alapozás Köztes réteg Fedőréteg Korlátozot- tan és nem mérettartó fa épületszer- kezetek kültéri megcsiszolni, megtisztítani, gyantát, gyan- tázó részeket eltávolítani Capacryl Holzschutz- Grund vagy Capadur Impregnáló Lazúr Capacryl Holz- IsoGrund1 Capadur Color Wetterschutz- farbe Capadur Color Wetterschutz- farbe Mérettartó fa épületszer- kezetek kültéri megcsiszolni, megtisztítani, gyantát, gyan- tázó részeket eltávolítani, éleket lecsi- szolni Capacryl Holzschutz- Grund vagy Capadur Impregnáló Lazúr Capacryl Holz- IsoGrund1 Capacryl PU Vorlack vagy Capacryl PU Gloss/PU Satin Capacryl PU Gloss/PU Satin Fa épület- szerkezetek beltéri megcsiszolni, me.",
-        ],
-        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A Capacryl Holz-IsoGrund ecsettel, hengerrel és szórással is felvihető. Használat előtt alaposan fel kell keverni és szükség szerint max. 5% vízzel hígítani. Fa épületszerkezetek, amelyeket vízzel hígítható akrilfestékkel kell lefesteni és ame- lyeknél annak veszélye állhat fenn, hogy a vízoldható faanyagok feloldódnak és a fedőfestést elszínezik. Alkalmas alapfelületek: --- PAGE 2 --- 322 Műszaki információ Nr. 961 Az alapfelületnek tisztának, hordképesnek, száraznak és tapadást gátló anyagoktól mentesnek kell lenne. A fa nedvességtartalma lombos fáknál az átlagos 12%-ot, tűlevelű fáknál a 15%-ot nem haladhatja meg. A szerkezeti faanyag-védelem alapelveit be kell tartani, mivel ezek a.",
-        ],
-        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capacryl_holz_isogrund_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_artetwin_basic",
-    sourceIds: ["src_prod_caparol_capadecor_artetwin_basic_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "5 l 250-300 ml/m2 10 l 250-300 ml/m2 szines Open colorpicker",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_artetwin_basic_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_artetwin_effect_gold_silber",
-    sourceIds: ["src_prod_caparol_capadecor_artetwin_effect_gold_silber_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "2,5 l 50-150 ml/m2 Arany Ezüst Open colorpicker",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_artetwin_effect_gold_silber_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_artetwin_spezialkelle",
-    sourceIds: ["src_prod_caparol_capadecor_artetwin_spezialkelle_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Speci+aacute;lis műanyag glettelő az ArteTwin belt+eacute;ri dekor+aacute;ci+oacute;s anyag feldolgoz+aacute;s+aacute;ra. A lekerek+iacute;tett sark+uacute; glettlap könnyen cser+eacute;lhető.",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_artetwin_spezialkelle_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_calcino_decor",
-    sourceIds: ["src_prod_caparol_capadecor_calcino_decor_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "tiszta ásványi anyag rendkívül diffúzió- és szorpcióképes oldószermentes és szinte szagtalan könnyen feldolgozható",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_calcino_decor_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_calcino_impraegnierpaste",
-    sourceIds: ["src_prod_caparol_capadecor_calcino_impraegnierpaste_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "zsírmentes, festékmentes és szagtalan tiszta ásványi véd a foltosodás ellen rendkívül diffúzió- és szorpcióképes oldószermentes",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_calcino_impraegnierpaste_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_capagold",
-    sourceIds: ["src_caparol_capadecor_capagold_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capadecor leírás Műszaki információ Nr. 815 A CapaGold-dal történő festéssel, különösen GoldGrund-dal való alapozás után, strukturált felületeken tiszta, természetes arany szín hozható létre. Különböző tech- nikákkal, mint pl. kefe, simítóvas, henger , struktúrlap, egyéni és optikailag különleges hatás érhető el. A szükséges rétegfelépítéssel (alapozás, ill. köztes réteg GoldGrund, záróréteg CapaGold) egy erősen igénybevehető felület jön létre. A CapaGoldot lehetőleg struk- turált felületen alkalmazzuk.",
-        ],
-        sourceIds: ["src_caparol_capadecor_capagold_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Kb. 100-150 ml/m2 rétegenként. A szükséges mennyiség nagy mértékben függ a felület szívóképességétől és struktúrájától, a munka megkezdése előtt próbafestést kell végezni. Használat után vízzel. +20 °C és 65 % relatív páratartalomnál kb. 1 óra után porszáraz és kb. 12 óra múlva átfesthető. Köztes réteg: A Capadecor GoldGrund-ot átlósan kell felvinni majd egy irányba hengerelni. Erősen szívóképes felületeket előtte OptiGrund E.L.F vagy CapaSol LF alapozóval kell alapozni. Záróréteg: A Capadecor CapaGold-ot hígítatlanul kétszer kell felhordani, majd a sima felületen egy kefével vagy más kreatív eszközzel lehet kialakítani a végleges felületet. S2 - Gyermekek kezébe nem kerülhet. S26 - H.",
-        ],
-        sourceIds: ["src_caparol_capadecor_capagold_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capadecor_capagold_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_decolasur_glaenzend",
-    sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Fallazúrok, lazúrok gyöngyházpigmentekkel leírás Műszaki információ Díszítő lazúr belső falfelületekre. Alkalmas sima alapozáson, szerkezeti vakolato- kon, valamint PII és PIII csoporthoz tartozó habarcsból készült vakolatokhoz és betonhoz. Belső felületen ezen felül dekoratív kialakításhoz szálkás felületű tapé- tákhoz és üvegszövetekhez. Nem alkalmazható vízszintes felületeken víz-terheléssel. Transzparens védő- fedő- bevonatként alkalmazva pedig az alapfelület nedvszívásától, a rétegvastagságtól, a felhordás módjától függően változ.",
-        ],
-        sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: leírás Műszaki információ Díszítő lazúr belső falfelületekre.",
-        ],
-        sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész lazúr festék diszperziós bázison belső használatra.",
-        ],
-        sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmasak átvonásra.",
-        ],
-        sourceIds: ["src_caparol_capadecor_decolasur_glaenzend_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_metallocryl_exterior",
-    sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Diszperziós termékek leírás Műszaki információ Nr. 812 Capadecor Metallocryl Exteriör selyemfényű, fémhatású kültéri diszperziós festék. Igényes, időjárásálló effektbevonat olyan struktúrált homlokzatfelületekre, amelye- ken a jelenlegi trendnek megfelelően fémhatást kívánnak elérni. Nem alkalmas hő- szigetelő rendszerekre. A Capadecor Metallocryl Exteriör előnyösen struktúrált felületeken alkalmazható. Sima, finoman struktúrált alapfelületek, valamint előnytelen fényviszonyok esetén a felületek hengernyomok nélk.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A 3D színkártya szerinti színű, közbenső Amphibolin rétegeknek a következő Capadecor Metallocryl EXTERIÖR-fedőréteghez illeszkedni kell. (az Amphibolinra vonatkozó Műszaki Információnak figyelembevételével). Közbenső rétegként matt festék alkalmazása nem javasolt! Záróréteg: Capadecor Metallocryl Exteriör-rel hí- gítás nélkül. Capadecor Metallocryl Exteriör-t feldolgozás előtt alaposan fel kell keverni. A fel- dolgozás ideje alatt rendszeresen újból felkeverni. A Capadecor Metallocryl Exteriör ecsettel vagy hengerrel dolgozható fel. Átlapolásokat át kell hengerelni. A henge- rezéshez olyan közepes (12-16 mm) hengert kell használni, amely nem hajlamos a két végén nagyobb festékmennyiség.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem javasolt! Záróréteg: Capadecor Metallocryl Exteriör-rel hí-. nem alkalmas csapóesőnek kitett vízszintes. Nem alkalmas olyan alapfelületekre, mint hőszigetelő rendszerek, új plasztoelasztikus.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_exterior_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_metallocryl_interior",
-    sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Beltéri falfestékek )) Diszperziós termékek leírás Műszaki információ Nr. 811 Capadecor Metallocryl INTERIÖR speciális metál pigmenteket tartalmazó fényes diszperziós festék belső falfelületekre. Különösen alkalmas reprezentatív- és köz- épületekre, mint pl. bevásárlóközpontok, irodaépületek, bankok, biztosító intéze- tek, pályaudvarok és hasonló objektumok. A Capadecor Metallocryl INTERIÖR olyan struktúrált felületeken alkalmazható, mint: ■ Fűrészporos tapéta ■ Üvegszövet tapéta ■ Capadecor Capaquarz ■ Struktúrvakolat. Sima, finoman str.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A feldolgozás alsó hőmérséklethatára: Száradás: Figyelem! Alkalmas alapfelületek Az alapfelületnek hordképesnek, szennyeződésektől és tapadást gátló anyagoktól mentesnek és száraznak kell lenniük. A felület előkészítés módja a szóban forgó alapfelülettől és annak tulajdonságaitól függ. Ehhez az Amphibolin-ra, ill. a Caparol Seidenlatexre vonatkozó Műszaki infor- mációkat figyelembe kell venni. Megjegyzések: Műszaki tanácsok: --- PAGE 3 --- 102 Műszaki információ Nr. 811 • Állapot: 2007. december Ez a műszaki információ a technika legújabb állása és a mi tapasztalataink alapján lett összeállítva. T ekintettel az alapfelületek és az objektumok sokszínűségére, a felhasználó nem menthető fel.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmas csapadéknak kitett vízsszintes.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capadecor_metallocryl_interior_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_multistruktur",
-    sourceIds: ["src_caparol_capadecor_multistruktur_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capadecor leírás Műszaki információ Nr. 897 Dekoratív beltéri felületek kialakításához, finom, közép és durva szemcsézettel. A Multi-StructurStyle ideális lazúr és effekt-bevonatok alapjaként. ■ Vizes hígítású ■ Emissziócsökkentett ■ Oldószer- és lágyítómentes ■ Magas fehérségi fok ■ Magas fedőképesség ■ Sokrétűen struktúrálható ■ Homogén felületű ■ Colorexpress berendezéssel és színezőfestékkel is színezhető ■ Hidrofobizált, ezért hosszú nyitott idővel rendelkezik ■ Jól tisztítható ■ Nem éghető (DIN 410.",
-        ],
-        sourceIds: ["src_caparol_capadecor_multistruktur_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Az anyagot feldolgozás előtt, alaposan fel kell keverni, aztán hengerrel vagy kefével felhordani. Hengerezés esetén középszőrű (14-18 mm) hengert használjunk, hogy egyenletes anyagfelhordást érjünk el. A MultiStructurStyle finom anyagot glettelési technikával is fel lehet hordani. Az anyag szórással is felhordható. Szórófej: 4-6 mm, szórási nyomás: 2,0-2,5 bar. A felületet finoman lehet struktúrálni, ehhez speciális glettelővasat vagy lágy kefét használjunk. Fedőrétegként Deco-Lasur matt vagy fényes, Arte-Lasur, Arte-Lasur Color vagy Metallocryl Interiör használható. A MultiStructurStyle hidrofób tulajdonságának na- gyobb felületek, vagy kritikus klimatikus viszonyok mellett nagy jelen.",
-        ],
-        sourceIds: ["src_caparol_capadecor_multistruktur_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:; Kiadósság: Feldolgozási hőmérséklet:.",
-        ],
-        sourceIds: ["src_caparol_capadecor_multistruktur_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_stuccodecor_di_luce",
-    sourceIds: ["src_caparol_capadecor_stuccodecor_di_luce_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capadecor leírás Műszaki információ Nr. 561 Diszperziós simítótapasz dekoratív glettelési technikák előállításához beltérben. ■ Vízzel hígítható ■ Magasfény kiegészítő bevonat felhordása nélkül ■ Gazdaságos és biztonságos feldolgozási technika ■ ColorExpress rendszerben géppel színezhető ■ Könnyen tisztítható ■ Diffúzióra és szorpcióra képes Kb. 1,45 g/ml Selyemmattól fényesig, a feldolgozástól függően Fehéres, féltranszparens Színezhető ColorExpress géppel kb. 1300 3D és CaparolColor színben. Hűvös, fagy.",
-        ],
-        sourceIds: ["src_caparol_capadecor_stuccodecor_di_luce_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alapozás Caparol Haftgrunddal. Állapotnak megfelelően 1-2 teljes felületű glettelés szükséges Caparol-Akkordspachtel fein-nal, majd száradás után köztes csiszolás, illetve a porosodás lekötése. A szívóképesség beállítása után alapozás CapaSol LF-fel. A glettelés végrehajtásához rozsdamentes kézi glettspatulyát (duplalapos rugalmas spatulya) ajánlunk alkalmazni a StuccoDecor DI LUCE gazdaságos felhordásához. A spatulyát használat előtt 400-600-as nedves csiszolópapírral szárazon becsi- szolva be kell avatni. Felhordás: --- PAGE 2 --- 147 Műszaki információ Nr. 561 Műszaki információ Nr. 561 • Állapot: 2010. szeptember Ez a műszaki információ a technika legújabb állása és a mi tapasztalat.",
-        ],
-        sourceIds: ["src_caparol_capadecor_stuccodecor_di_luce_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capadecor_stuccodecor_di_luce_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_variochips",
-    sourceIds: ["src_caparol_capadecor_variochips_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capafloc rendszer leírás Műszaki információ Nr. 867 A Capafloc Vario-rendszer a piac trendjébe eső többszínű attraktív rétegbevonat, erősen igénybevett belsőtéri falakhoz. A nagyon gazdaságos feldolgozási technika és a különleges technikai és optikai tulajdonságai miatt a Capafloc Vario-rendszer ideális bevonat renoválásoknál és új építkezések esetén. Strukturált régi alapozások, mint tapadó durva szálkás, üvegszövet és műgyanta vakolatokat költséges előmunkálatok nélkül lehet felújítani, és az eddigi struktú.",
-        ],
-        sourceIds: ["src_caparol_capadecor_variochips_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: A rendszer meggyőző tulajdonságai: --- PAGE 2 --- 198 Műszaki információ Nr. 857 A rendszer összetevői CAPAFLOC-COLL RAGASZTó Vízzel hígítható, illatszegény, oldószermentes és fehéren pigmentált speci- ális beágyazó massza Capafloc-Chipsek számára. Műgyanta-diszperzió a DIN 55 945 szerint. Belsőtéri, Capafloc-Chips-szel kapcsolatban, ragasztáshoz. Hosszú nyitott idő (15–20 perc), egyszerű, problémamentes feldolgozás, kopásálló, lúgálló. A hosszabb nyitott idő és ezzel az alapozás vízben oldódó anyagai miatt csak probléma mentes alapozás esetén szabad alkalmazni. Egyébként szigetelni kell Caparol Filtergrunddal. Fehér. Hengerezéssel, mázolással, „Airless” szórással. (Dugattyús szivattyúk.",
-        ],
-        sourceIds: ["src_caparol_capadecor_variochips_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Az alapozásnak tisztának, száraznak és hordképesnek kell lennie. Lásd ennek a Műszaki információnak a 6. oldalát is. A Capafloc-Coll-t telítetten és egyenlő mértékben kell felhordani, hogy a szük- séges rétegvastagságot a Chipsek beágyazásához elérjük. A felhordást közepes szálhosszúságú profi minőségű hengerrel vagy Airless eljárással kell elvégezni. A Capafloc-Chips-eket a kartonból a Capafloc-készlettartályba kell kirázni és ennek során kézzel valamelyest föllazítani. A tartályt a pisztollyal össze kell köt- ni. A pisztolyt egy légkompresszorhoz kell csatlakoztatni, amely legalább 400 l/ perc szívóteljesítménnyel rendelkezik. A Chipseket egészen a telítettségig a nedves Capafloc-Coll.",
-        ],
-        sourceIds: ["src_caparol_capadecor_variochips_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szerszámok tisztítása:.",
-        ],
-        sourceIds: ["src_caparol_capadecor_variochips_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_variofloc",
-    sourceIds: ["src_prod_caparol_capadecor_variofloc_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "könnyen száradó, selyemfényű vízzel hígítható, szagtalan és környezetbarát oldószermentes fénnyel szemben ellenálló szennytaszító tisztítható Nedves tisztíthatósági osztály 2 (DIN EN 13 300 szerint) rendkívül gazdaságos nem éghető a DIN 4102 szerint, A2 nem éghető a DIN 4102",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_variofloc_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadecor_varioputz",
-    sourceIds: ["src_prod_caparol_capadecor_varioputz_page"],
-    sections: [
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "350 g/m2, 800-1100 g/m2 szórásnál Szín klf. színek",
-        ],
-        sourceIds: ["src_prod_caparol_capadecor_varioputz_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadur_decorlasur",
-    sourceIds: ["src_caparol_capadur_decorlasur_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vízes mázolóanyagok )) Capadur lazúrok leírás Műszaki információ Nr. 187 Mérettartó fa elemek, úgy mint ablakok, vagy ajtók, illetve korlátozottan mérettartó fa szerkezeti elemek pl. nutféderes és hornyolt lambériák, spaletták, kapuk, favázas szerkezetek és nem mérettartó fa elemek, pl. deszkázatok, kerítések, zsindelyek, erkélykorlátok, zsaluk, lugasok színes- és védőrétegének felhordására kül-, és beltérben. Gyerekjátékok festésére alkalmas. ■ Vízzel hígítható ■ Környezetkímélő ■ Szerkezettartó ■ Rendkívül rugalmas ■ Gombaölősz.",
-        ],
-        sourceIds: ["src_caparol_capadur_decorlasur_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai: Kötőanyag: Sűrűség: Szilárdanyag tartalom:.",
-        ],
-        sourceIds: ["src_caparol_capadur_decorlasur_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadur_parkettlack_hgsm",
-    sourceIds: ["src_caparol_capadur_parkettlack_hgsm_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vízes mázolóanyagok )) Színtelen lakkok leírás Műszaki információ Nr. 186 Átlagosan, vagy erősen igénybevett beltéri fa padlóburkolatok színtelen védőbevo- natára. Parafa padlóburkolatok és készre gyártott parketta, ill. laminát padlóburko- latok védőrétegeként is alkalmas. ■ Vízzel hígítható, egykomponensű ■ Nagyon strapabíró, rugalmas ■ Jól töltő, gyorsan száradó ■ Szokványos háztartási tisztítószereknek ellenáll ■ Nagyobb felületeken is egyenletesen felhordható Egykomponensű poliuretán, vízzel hígítható. Kb. 1,0 g/cm3 Kb. 30 súly%.",
-        ],
-        sourceIds: ["src_caparol_capadur_parkettlack_hgsm_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai: Kötőanyag: Sűrűség: Szilárdanyag tartalom:.",
-        ],
-        sourceIds: ["src_caparol_capadur_parkettlack_hgsm_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Hulladékelhelyezés:.",
-        ],
-        sourceIds: ["src_caparol_capadur_parkettlack_hgsm_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capadur_universallasur",
-    sourceIds: ["src_caparol_capadur_universallasur_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vízes mázolóanyagok )) Capadur lazúrok leírás Műszaki információ Mérettartó faszerkezetek (ablakok, ajtók), korlátozottan mérettartó faszerkezetek (nutféderes lambériák, kapuk, virágládák, stb) és nem mérettartó faszerkezetekre (lambériák, kerítések, zsindelyek, zsaluzatok, pergolák, stb) védelmére és színesé- sére szolgál. ■ Aromamentes oldószer ■ Vékonyrétegű ■ Nyíltpórusú, magas UV védelemmel ■ Magas diffúzióképességű ■ Víztaszító ■ Tixotróp és cseppenésmentes ■ Könnyen feldolgozható, egyszerűen felújítható. Selyemmatt. Fenyő, t.",
-        ],
-        sourceIds: ["src_caparol_capadur_universallasur_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Sima alapfelületre kb. 80-120 ml/m². Kezeletlen fa esetében legalább 3 réteg fel- vitele ajánlott az optimális UV védelem érdekében. Használat előtt keverjük fel a lazúrt. Felhordása ecsettel történik. Az alapfelületnek tisztának, száraznak és tapa- dást gátló anyagoktól mentesnek kell lennie. A fa nedvességtartalma nem halad- hatja meg mérettartó faszerkezeteknél a 13%-ot korlátozottan és nem mérettartó faszerkezeteknél pedig a 15%-ot. A faszerkezetek védelmére szolgáló alapelveket be kell tartani, ez az alapja a lazúrrétegekkel bevont tartós favédelemnek. +20 °C-on és 65 % relatív páratartalom mellett 12-16 óra múlva átfesthető, 24 óra múlva teljesen száraz. Alacsonyabb hőmérséklet és.",
-        ],
-        sourceIds: ["src_caparol_capadur_universallasur_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: tilos: azonnal orvoshoz kell fordulni és megmutatni az.",
-        ],
-        sourceIds: ["src_caparol_capadur_universallasur_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
-        ],
-        sourceIds: ["src_caparol_capadur_universallasur_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capafixx",
-    sourceIds: ["src_prod_caparol_capafixx_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "ködmentesen feldolgozható Nespri szórógéppel emissziócsökkentett, oldószer és lágyítóanyagmentes vizesbázisú diffúzióképes sd érték jó fedőképességű a legtöbb esetben egy rétegben használhatóAz EN 13 300 szerint: 3 kategóriájú súrolásállóság 1 kategóriájú fedőképesség (5,5 m 2 /liter esetén) fényességi osztály: matt maximális szemcsenagyság: finom (",
-        ],
-        sourceIds: ["src_prod_caparol_capafixx_page"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "175 ml/m2 Fényességi fok Matt Szín FehérCaparolColor, AVA, Amphibolin színezőfestékkel színezhető. CE keveréssel világos színekben színezhető.",
-        ],
-        sourceIds: ["src_prod_caparol_capafixx_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_allgrund",
-    sourceIds: ["src_caparol_capalac_allgrund_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Festőmesterek Profi termékei leírás Műszaki információ Nr. 010 Gyorsan száradó, kiválóan tapadó univerzális alapozó festék vas-, alumínium-, ke- mény PVC, fa- és réz felületekre. ■ T eljes korrózióvédelem DIN 18363 szerint ■ Gyorsan szárad. Kb. 3 óra elteltével minden Capalac termékkel átvonható ■ Univerzálisan átvonható ■ Nitróálló ■ Kiválóan tapad ■ Időjárásálló Speciális műgyanta kombináció és aktív rozsdavédő pigmensek keveréke. Oldó- szertartalmú. Kb. 1,27-1,33 g/cm³ színtől függően. Selyemmatt. Fehér (RAL 9010), oxidv.",
-        ],
-        sourceIds: ["src_caparol_capalac_allgrund_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség:.",
-        ],
-        sourceIds: ["src_caparol_capalac_allgrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Fa, vas, acél, cink, alumínium, horgany, hordképes régi bevonatok. Az alapfelület legyen száraz, hordképes és tapadást gátló anyagoktól mentes. Fanedvesség: ■ Lombos fa: max. 12 % ■ Tűlevelű: max. 15 % Felületet szálirányba lecsiszolni, alaposan megtisztítani és az egyéb alkotóeleme- ket, pl. gyanta eltávolítani. Éleket lecsiszolni. Fémtisztára megtisztítani, rozsdamentesíteni. Ammóniakális nedvesítőszerrel megtisztítani és felérdesíteni. Megtisztítani, zsírtalanítani (pld. nitróhígítóval). A korrózió réteget perlon dörzsölővel (pld. Scotch-Brite) eltávolítani. Nem hordképes régi bevonatokat el kell távolítani. ■ Fa: Capalac Holz-Imprägniergrund ■ Fa: Capalac Unigrund ■ Vas, acél: Capalac.",
-        ],
-        sourceIds: ["src_caparol_capalac_allgrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
-        ],
-        sourceIds: ["src_caparol_capalac_allgrund_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_classic_hg",
-    sourceIds: ["src_prod_caparol_capalac_classic_hg_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Kiváló szín- és fénystabilitás Hosszú nyitott idő Nagyon tartós Jól fedő, jó élfedő Jó ütőszilárdságú Könnyen feldolgozható Gyorsan száradó Kiválóan terülő Háztartási tisztítószereknek és rövid ideig gyenge savaknak és lúgoknak is ellenálló. Rendkívül időjárás- és fényálló",
-        ],
-        sourceIds: ["src_prod_caparol_capalac_classic_hg_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_effektlack_metallic_fenyes",
-    sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Speciális mázolóanyagok leírás Műszaki információ Nr. D051 Hatástkeltő metál- és elegáns gyöngyfényű lakk a különleges felületek kialakítására mérettartó épületelemekre, fém és kemény PVC felületekre kül- és beltéri felhasz- nálásra. ■ Értékes, nemes felület ■ Aromamentes ■ Ellenáll a szokásos háztartási tisztítószereknek ■ Magas időjárás- és fényállóságú Alkidgyanta aromásoktól mentes oldószerben. Kb. 0,9 -1,1 g/cm³, szín szerint. Capalac Effektlack Metallic: ezüst kb. RAL 9006, fényes és selyemmatt arany, réz: fénye.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség:.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: e Impregnálás Alapozás Köztes réteg Fedőréteg Fa, fa anyagok beltér Csiszolás/ tisztítás - Capalac Profi Grund Capalac Profi Grund a fedőréteg szí- nével egyező színben Capalac Effektlack Metallic vagy Perlglanz Fa kültér Repedések javítása, csiszolás, tisztítás Capalac Holz- Imprägnier- grund Capalac Profi Grund Vas, acél beltér rozsdátlanítás/ tisztítás - Capalac AllGrund vagy rozsdagátló alapozó Vas, acél kültér rozsdátlanítás/ tisztítás - 2 x Capalac AllGrund vagy rozsdagátló alapozó Horgany beltér/kültér Szalmiákos nedve- sítőszeres tisztítás műanyag csiszoló paddal - Disbon 481 EP-Uniprimer Alumínium beltér/kültér Nitrohígítós vagy foszforsavas tisztítás műanyag csis.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alapozott és előlakkozott mérettartó fa, fém és kemény PVC. Az alapfelületnek tisztának, hordképesnek, száraznak és tapadást gátló anyagoktól mentesnek kell lennie. A fa nedvességtartalma lombos fáknál az átlagos 12%-ot, tűlevelű fáknál az átlagos 15%-ot nem haladhatja meg. Fa, faanyagok: A fa felületét szálirányban megcsiszolni, alaposan megtisztítani és az esetleg kilépő gyantát és gyanta ereket eltávolítani. Éles éleket lekerekíteni. Vas, acél: Szórással vagy csiszolással fémtisztára tisztítani. Horgany, kemény PVC: Szalmiákos nedvesítőszeres tisztítás. Csiszolás műanyag csiszoló paddal (Scotch brite). Alumínium: Nitrohígítós vagy foszforsavas tisztítás műanyag csiszoló paddal (Scot.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Tilos a dohányzás. tilos: azonnal orvoshoz kell fordulni és megmutat-.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás; Fényesség: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capalac_effektlack_metallic_fenyes_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_holz_impraegniergrund",
-    sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Capalac család leírás Műszaki információ Nr. 025 Speciális favédő alapozó a fa szerkezetet roncsoló és elszínező gombák ellen. Szer- kezet erősítő hatású. Ablakokra, bejárati ajtókra, deszkázatra, kerítésre, faházakra. ■ Rövid száradási idejű, vízháztartást szabályozó, kiválóan felszívódó ■ Követő bevonatok tapadását elősegítő ■ A roncsoló és elszínező gombák hatásának ellenáll ■ A Capalac Holz-Imprägniergrund minden Capalac alapozó és fedő anyaggal együtt használható. (A követő réteget legkésőbb 4 héten belü.",
-        ],
-        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Tulajdonságai: Kötőanyag: Szín: Hulladék elhelyezés:.",
-        ],
-        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: Alapozó és közbülső rétegek: Fedő bevonat: --- PAGE 2 --- 356 Műszaki információ Nr. 025 Műszaki információ Nr. 025 • Állapot: 2007. november Ez a műszaki információ a technika legújabb állása és a mi tapasztalataink alapján lett összeállítva. T ekintettel az alapfelületek és az objektumok sokszínűségére, a felhasználó nem menthető fel azon kötelessége alól, hogy az adott felületen próbafelhordást végezzen. Új kiadás esetén ez a nyomtatvány elveszti érvényességét. Caparol Hungária Kereskedelmi Kft. • H-1108 Budapest, Gyömrői út 140. T el.: 1/264-8914, 265-1594 • Fax: 1/262-0467 • Internet: www.caparol.hu • e-mail: caparol@caparol.hu Ecsettel, a szálirányban bőven átitatva, majd azonnal e.",
-        ],
-        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Az alap legyen tiszta és száraz. A szennyeződéseket és tapadást rontó anya- gokat el kell távolítani. A fa nedvességtartalma nem haladhatja meg a 15%-ot. A szívóképesség és az elérni kívánt hatás függvényében esetleg többszöri Capalac Holz-Imprägniergrund felhordása is lehetséges. Capalac Profi Allgrund, Capalac Profi Grund vagy Capalac Venti Capalac lakkok.",
-        ],
-        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capalac_holz_impraegniergrund_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_korrogrund",
-    sourceIds: ["src_caparol_capalac_korrogrund_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Capalac család leírás Műszaki információ Nr. MOE2 Kül- és beltéri vas és acél felületek rozsdavédő alapozására. ■ Ólom- és kromátmentes ■ Kiváló korrózióvédő hatású - aktív rozsdavédő pigmentek révén ■ Kiválóan tapad ■ Jó fedőképességű ■ Gyorsan száradó ■ Könnyen feldolgozható Alkidgyanta, oldószertartalmú. Kb. 1,5 g/ cm3 Matt. Világosszürke. Jól lezárva hűvös helyen tároljuk. 1 liter, 2,5 liter és 10 liter.",
-        ],
-        sourceIds: ["src_caparol_capalac_korrogrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Vas és acél. A vas és acél felületeket a rozsdától fémtisztára meg kell tisztítani. Szennyeződése- ket és tapadástgátló anyagokat, mint olajat és zsírt eltávolítani.",
-        ],
-        sourceIds: ["src_caparol_capalac_korrogrund_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Tilos a dohányzás, S 23 – A keletkező gőzt/permetet nem. tilos: azonnal orvoshoz kell fordulni és.",
-        ],
-        sourceIds: ["src_caparol_capalac_korrogrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capalac_korrogrund_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_lackspachtel_weiss",
-    sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Kiegészítő termékek leírás Műszaki információ Nr. 094 Fa-, alapozott fém és régi vakolatok spaklizására. ■ Gyorsan szárad ■ Jól töltő ■ Csekély zsugorodás ■ Fedőlakkal közvetlen átfesthető Műgyanta kombináció. 1,9 g/cm³ Fehér Száraz, hűvös és fagymentes helyen. 3,0 kg Oldószert tartalmaz (Lakkbenzin) Gyermekektől elzárva kell tárolni. Tűz- és szikraforrásoktól távol tartani. Dohányozni tilos. Kerüljük a bőrre vagy szembe kerülését. Bőrrel való érintkezésnél azonnal bő vízzel és szappannal lemosni. Nem kerülhet a.",
-        ],
-        sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Fa-, fém és régi vakolatok, kül és beltéren. Magas nedvességtartalmú faszerkeze- tek esetében nem alkalmazható. Az alapfelület, száraz, hordképes és tiszta legyen. Alapfelület Alapozás Nyers fa Kültér Capalac Profi Grund Beltér Capalac Holz-Impägniergrund Hordképes régi lakkozott felület Capalac Profi Grund vagy Disbon 481 Vas, acél Capalac Korrogrund vagy Capalac Profi Allgrund Régi vakolatok Capalac Mélyalapozó LF A Capalac LackSpachtel glettszerszámmal hordható fel nedves a nedvesre tech- nikával, több rétegben, naponta többször. A 700 μm-es nedves rétegvastagságot (rétegenként) nem szabad túllépni. Foltszerű javításoknál fedőlakkozás előtti elő- lakkozás ajánlatos. A Capalac LackSpacht.",
-        ],
-        sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Biztonsági előírások:.",
-        ],
-        sourceIds: ["src_caparol_capalac_lackspachtel_weiss_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_profi_compact",
-    sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Festőmesterek Profi termékei leírás Műszaki információ Nr. 091 Vastag réteget képező speciális lakk vas-, acél-, horgany, alumínium-, réz-, kemény PVC-és fafelületek színessé tételére és védelmére kül-és beltéren. Vas és acél kor- rózió elleni védelmére. Nem alkalmas tető felületek és eloxált alumínium festésére. A fehér színeket nem szabad fűtőberendezések festésére alkalmazni, mert megsár- gulhat. (Ilyen esetben Capalac Heizkörperlack használata javasolt.) ■ Kiváló tapadás ■ Magas fedőképesség az éleken is ■ Nagyon jó i.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség:.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: mellett értendők és a megrendelőket segíthetik egy gazdasági szem- pontok szerinti felújítási program meghatározásában. Időtartam Védelem időtartama évben Rövid 2-5 Közepes 5-15 Hosszú 15 felett Acélfelületek korrózió- védelme Capalac Profi Compact-tal: ** Tájékoztatás: A védelem időtartama az EN ISO 12944-1 és 5 szerint: Bevonatrendszer száma Alapozóréteg Előírt rétegvastagság (μm) Köztes réteg Előírt rétegvastagság (μm) Fedő réteg Előírt rétegvastagság (μm) Együttes előírt rétegvastagság (μm) Korróziós igénybevételi kategóriák C2 csekély C3 mérsékelt C4 erős rövid közepes hosszú rövid közepes hosszú rövid közepes hosszú 1 Capalac Profi Compact pl. RAL 7036 60 Capalac Profi C.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: /rétegvastagság: Horganyzott acél korrózióvédelme Capalac Profi Compact-tal: Alapfelület Felhasználás Felületelőkészítés Impregnálás Alapozás Köztes réteg Fedő réteg Fa, faanyagok beltéri megcsiszolni - Capalac Profi Compact Ha szükséges Capalac Profi Compact Capalac Profi Compact Mérettartó fa épületelemek kültéri megcsiszolni, meg- tisztítani, gyantát, gyantázó helyeket eltávolítani Capalac Holz- Imprägnier- Grund Vas, acél beltéri/kültéri rozsdátlanítani, zsírtalanítani - Horgany beltéri/kültéri szalmiákos, nedvesí- tőszeres tisztítás - Alumínium beltéri/kültéri nitrohígítós, vagy foszforsavas tisztítás 120 120 - Kemény PVC beltéri/kültéri szalmiákos, nedvesí- tőszeres tisztí.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas tető felületek és eloxált alumínium festésére. Nem alkalmas tetőfelületek. Tilos a dohányzás.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_compact_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_profi_hg",
-    sourceIds: ["src_caparol_capalac_profi_hg_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Festőmesterek Profi termékei leírás Műszaki információ Nr. D043 Fa-, fém és kemény PVC kül- és beltéri felületek fedő lakkozására. ■ Aromamentes oldószer ■ Magas fehérség ■ Nemes selyemfény ■ Jó rugalmasság ■ Sokáig feldolgozható ■ T artós ■ Kiváló fedőképesség, jó élfedés ■ Jó ütésállóság ■ Könnyű feldolgozhatóság ■ Gyors száradás ■ Kitűnő önterülés ■ Ellenáll a különböző háztartási tisztítószereknek, rövid ideig gyenge savaknak és lúgoknak ■ Magas időjárás- és fényállóság Aromamentes alkidgyanta kombináció, oldószertarta.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_hg_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_hg_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: előtt alaposan fel kell keverni. Szükség esetén Dupa-inn Verflüssiger- rel (aromamentes) vagy Capalac Kunstharz-Verdünner-rel hígítani. Ecsettel, hengerrel vagy szórással. Anyag-, levegő-, alap min.+5°C. Magasnyomású szórás: ■ szórófej: 1,5-2,0 mm ■ nyomás: 2-4 bar ■ hígítás: 5-15 Vol.% ■ DIN 4mm konzisztencia: 30-50 sec Alacsony nyomású szórás: ■ szórófej: 1,5 mm ■ nyomás: 0,2-0,5 bar ■ hígítás: 5-20 Vol.% ■ DIN 4mm konzisztencia: 30-40 sec AIRLESS: ■ szórószög: 25°-65° ■ szórófej: 0,009-0,011 incs ■ nyomás: 180-200 bar ■ hígítás: − ■ DIN 4mm konzisztencia: szállítási viszkozitás Használat után azonnal terpentines hígítóval. Gyúlékony. Gyermekektől elzárva kell tárolni. Az edényt jól lezárv.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_hg_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---; Fényesség: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_hg_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capalac_profi_sm",
-    sourceIds: ["src_caparol_capalac_profi_sm_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Oldószeres mázolóanyagok )) Festőmesterek Profi termékei leírás Műszaki információ Nr. D055 Fa-, fém és kemény PVC kül- és beltéri felületek fedő lakkozására. ■ Aromamentes oldószer ■ Magas fehérség ■ Nemes selyemfény ■ Jó rugalmasság ■ Sokáig feldolgozható ■ T artós ■ Kiváló fedőképesség, jó élfedés ■ Jó ütésállóság ■ Könnyű feldolgozhatóság ■ Gyors száradás ■ Kitűnő önterülés ■ Ellenáll a különböző háztartási tisztítószereknek, rövid ideig gyenge savaknak és lúgoknak ■ Magas időjárás- és fényállóság Aromamentes alkidgyanta kombináció, oldószertarta.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_sm_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Sűrűség: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_sm_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: előtt alaposan fel kell keverni. Szükség esetén Dupa-inn Verflüssiger- rel (aromamentes) vagy Capalac Kunstharz-Verdünner-rel hígítani. Ecsettel, hengerrel vagy szórással. Anyag-, levegő-, alap min.+5 °C. Magasnyomású szórás: ■ szórófej: 1,5-2,0 mm ■ nyomás: 2-4 bar ■ hígítás: 5-15 Vol.% ■ DIN 4mm konzisztencia: 30-50 sec Alacsony nyomású szórás: ■ szórófej: 1,5 mm ■ nyomás: 0,2-0,5 bar ■ hígítás: 5-20 Vol.% ■ DIN 4mm konzisztencia: 30-40 sec AIRLESS: ■ szórószög: 25°-65° ■ szórófej: 0,009-0,011 incs ■ nyomás: 180-200 bar ■ hígítás: − ■ DIN 4mm konzisztencia: szállítási viszkozitás Használat után azonnal terpentines hígítóval. Gyúlékony. Gyermekektől elzárva kell tárolni. Az edényt jól lezár.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_sm_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---; Fényesség: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capalac_profi_sm_tds"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_capalac_profi_venti",
     sourceIds: ["src_caparol_capalac_profi_venti_tds"],
     sections: [
@@ -1046,46 +1443,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
         ],
         sourceIds: ["src_caparol_capalac_profi_venti_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_caparol_glett",
-    sourceIds: ["src_prod_caparol_caparol_glett_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Krémes állagú Extra fehér színű Gipszbázisú Könnyen felhordható Jól csiszolható",
-        ],
-        sourceIds: ["src_prod_caparol_caparol_glett_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_caparolcolor_amphisilan_szinezofestek",
-    sourceIds: ["src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Színezőfestékek leírás Műszaki információ Nr. 145 Vízzel hígítható, környezet-kímélő, színtartó, szilikongyanta bázisú színezőfesték AmphiSilan homlokzatfesték színezésére valamint intenzív színhatású falbevonatok és festmények készítéséhez. ■ Vízzel hígítható, semleges szagú, környezetkímélő ■ VOB szerint időjárásálló, magas víztaszító képességű ■ Nem filmképző, mikroporózus, kiváló vízpára áteresztő (sd ca. ( 0,05m) ■ Kiváló CO2-áteresztő, agresszív légszennyező anyagokkal szemben ellenálló ■ Gombák, algák é.",
-        ],
-        sourceIds: ["src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai: Alapanyag: Sűrűség: Anyagfelhasználás: Száradási idő: Színek: Fény: --- PAGE 2 --- 204 Műszaki információ Nr. 145.",
-        ],
-        sourceIds: ["src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Biztonsági előírások:.",
-        ],
-        sourceIds: ["src_caparol_caparolcolor_amphisilan_szinezofestek_tds"],
       }
     ],
   },
@@ -1138,101 +1495,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_capastone_a",
-    sourceIds: ["src_caparol_capastone_a_tds"],
-    sections: [
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Különösen alkalmas er ősen igénybe- vett, dekoratív bevonatok készítésé- hez. Lábazatoknál, oszlopoknál, ablak- és ajtókeretek bevonásához, stb. Beltérben lépcs őházak, el őterek és folyosók, irodák és üzlethelyiségek, iskolák, óvodák, közigazgatási intéz- ményekben, laktanyákban, szállo- dákban, éttermekben, bárokban, stb. Kötőanyag: Műgyanta diszperzió Szín: 11 színárnyalatban: bergbraun, steingrau, schiefergrau, basaltgrau, pazifikblau, dolomitbraun, granitschwarz, islandgrün, kaffeebraun, klinkerrot, marmorbraun.",
-        ],
-        sourceIds: ["src_caparol_capastone_a_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i sűrűségűre beállítani. Anyagfelhasználás: kb. 5,5 kg/m2 Az anyagfelhasználás nagymérték- ben függ az alapfelület min őségétől. Az adatok tájékoztató jelleg űek, pon- tos értékeket a helyszínen, próbafel- hordással kell meghatározni.",
-        ],
-        sourceIds: ["src_caparol_capastone_a_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmas nagyobb felületi egye-. Nem alkalmas vízszintes, csapadék-.",
-        ],
-        sourceIds: ["src_caparol_capastone_a_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 30 kg.",
-        ],
-        sourceIds: ["src_caparol_capastone_a_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla",
-    sourceIds: ["src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Hőszigetelő táblák leírás Műszaki információ Nr. 160 Alkalmas Capatect T op-Line hőszigetelő rendszerben való beépítésre. ■ Éghetőségi osztály B1, nehezen éghető ■ Fokozott hőszigetelő tulajdonságú ■ Nem égve csepegő ■ Blokkban habosított ■ Nem öregedik ■ Pihentetett ■ Formastabil ■ Diffúzióképes ■ Nem mérgező ■ FCKW, HFCKW, HFKW-mentes ■ Formaldehidmentes ■ Könnyen feldolgozható ■ Sűrűség: kb. 20 kg/m³ ■ Hővezetési osztály: 032 ■ Hővezetési érték: 0,032 W/(m K) ■ Húzószilárdság: ≥ 0,1 N/mm² ■ Vízpára diffúziós té.",
-        ],
-        sourceIds: ["src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Ásványi új építésű alapfelületek, hordképes régi vakolatok vagy bevonatok valamint egyéb hordképes, sima alapfelületek. Az alapfelületnek tisztának, hordképesnek, száraznak, leváló részektől mentes- nek kell lennie. Egyenletlen és sérült, leváló vakolatrészeket távolítsuk el, majd Capatect Klebe-und Spachtelmasse 190 grob-bal javítsuk ki a sérült részeket. Le- váló, lisztesedő ásványi alapfelületeket alaposan az erős rétegig megtisztítani és Primalon Tiefgrund LF-el alapozni. A ragasztóhabarcsot a lapok hátlapjára a széleken kb. 5 cm széles csíkban körben vigyük fel és a tábla közepén még 3 pontban helyezzünk el ragasztót. A ragasz- tó mennyiségét és magasságát az alapfelület adottságána.",
-        ],
-        sourceIds: ["src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_dalmatiner_homlokzati_hoszigetelo_tabla_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_faschenputz",
-    sourceIds: ["src_caparol_capatect_faschenputz_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vékonyvakolatok )) Szilikon termékek leírás Műszaki információ Nr. H002 Valamennyi bevonatlan vakolat, illetve beton, és jól tapadó, nem krétásodó ásványi és diszperziós alapok külső rétegfelhordására és egyéb dekorációs elemek kiala- kítására. ■ Rendkívül diffúzióképes ■ Víztaszító ■ Szennyeződésnek ellenálló ■ Időjárásnak ellenálló és víztaszító ■ Ipari gázoknak és mikroorganizmusoknak ellenáll Szemcsenagyság: 1 mm Kötőanyagbázis: sziloxánnal erősített műgyanta diszperzió Fehér, raktárról Hűvös, fagymentes helyen. Eredeti, zárt.",
-        ],
-        sourceIds: ["src_caparol_capatect_faschenputz_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alapozzunk Capatect Putzgrund vakolatalapozóval legfeljebb 5%-ban vízzel hígít- va, a vakolatréteggel megegyező színben. Kb. 12 óra száradási idő után Capatect Faschenputz vakolatot hordjunk fel. Amennyiben szükséges az anyagot legfeljebb 3%-ban vízzel hígítva állítsuk be a si- mítókanálnak megfelelő konzisztenciára, egy rozsdamentes acél glettvassal húzzuk fel, szemcsevastagságra húzzuk le és még nedvesen műanyag, vagy acél simítóval érdesítsük. Kb. 1,8 kg/m2 (A környezet, az anyag és az alap feldolgozási és száradási hőmérséklete) +5°C alatt legyen, közvetlen napsugárzásban, esőben, vagy erős szélben ne használjuk. Ügyeljünk az éjszakai fagyveszélyre. A száradási idő alatt az eső elle.",
-        ],
-        sourceIds: ["src_caparol_capatect_faschenputz_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: ne használjuk olyan vízszintes.",
-        ],
-        sourceIds: ["src_caparol_capatect_faschenputz_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Hulladékkezelés:.",
-        ],
-        sourceIds: ["src_caparol_capatect_faschenputz_tds"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_capatect_glasgewebe",
     sourceIds: ["src_caparol_capatect_glasgewebe_tds"],
     sections: [
@@ -1263,60 +1525,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
         ],
         sourceIds: ["src_caparol_capatect_glasgewebe_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_haftmoertel_fein",
-    sourceIds: ["src_caparol_capatect_haftmoertel_fein_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Ragasztó és beágyazó anyagok leírás Műszaki információ A Capatect Haftmörtel fein ásványi, mész/cement kötésű habarcs Capatect MF- és LS-szigetelőtáblákhoz. Az ETAG 004 szerint MINERA-Line rendszerben bevizsgált.",
-        ],
-        sourceIds: ["src_caparol_capatect_haftmoertel_fein_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Általános érvényű a Capatect hőszigetelő rendszerekre és tartozékaira vonatkozó.",
-        ],
-        sourceIds: ["src_caparol_capatect_haftmoertel_fein_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600",
-    sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Hőszigetelő táblák leírás Műszaki információ Nr. 600 Capatect hőszigetelő rendszerekben alkalmazható homlokzati hőszigetelő lapok alkalmas alapokra történő ragasztáshoz ■ éghetőségi osztály B1, nehezen éghető ■ hatóságilag ellenőrzött minőség ■ blokkban habosított ■ előtárolt ■ nem zsugorodik ■ nem öregedik ■ diffúzióképes ■ nem mérgező ■ FCKW-mentes ■ formaldehidmentes ■ könnyen feldolgozható ■ élkialakítás: tompa Legkisebb sűrűség: 15 kg/m3 Hővezetési érték: 0,04 W/(mK) Nyírószilárdság: )0,16 N/mm2 Húzószilárds.",
-        ],
-        sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Új ásványi alapok, falazatok, hordképes régi vakolatok, bevonatok valamint egyéb hordképes gyengén szívó felületek, úm. cementkötésű faforgácslapok. A tégla, beton vagy jól tapadó bevonattal rendelkező alapfelület legyen tiszta, szá- raz és hordképes. A szennyező anyagokat (pld. zsaluolaj) és kiugró habarcséleket el kell távolítani. A hibás, pergő régi bevonatokat és vakolatokat el kell távolítani. A laza vakolat rétegeket le kell verni és síkban kijavítani. Az erősen szívó, málló és porló felületeket az erős rétegig meg kell tisztítani és Caparol Tiefgrund LF vizes alapozóval erősíteni. A ragasztót a lapok hátlapjára a szélén kb. 5 cm-es csíkban körben, középre 3 kis- tányér nagyságú k.",
-        ],
-        sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_homlokzati_hoszigetelo_tabla_eps_600_tds"],
       }
     ],
   },
@@ -1402,101 +1610,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_capatect_meldorfer_ansatzmoertel_080",
-    sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Meldorfer rendszer leírás Műszaki információ Nr. 080.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A termék felhasználható: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Ne használjuk közvetlen napfénynél, erős szélben, ködben.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_ansatzmoertel_080_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok",
-    sourceIds: ["src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Meldorfer rendszer leírás Műszaki információ Nr. 071 Felületi rétegfelhordás a Capatect-WDVS B egyéni kialakítására és egyéb egyenle- tes, szilárd és hordképes alapok számára. ■ „Nehezen gyulladó” ■ Szervesen kötött ■ Túlnyomórészt ásványi alapanyagokból ■ Időjárásálló ■ Vízpára diffúzióképes ■ Strapabíró, mechanikus behatásoknak ellenáll ■ Ütés-, és karcálló ■ Tisztítószereknek ellenáll ■ Kézzel formázott ■ Dekoratív ■ UV-ellenálló ■ Vastagság: Kb. 4-6 mm ■ Hővezető képesség (számított érték): 0,70 W/(m·K) DIN 41.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Ne használjuk napfénytől felmelegedett felületen, erős szél-.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_eckverblender_classic_11_es_sarok_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_meldorfer_fugenmoertel_081",
-    sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Meldorfer rendszer leírás Műszaki információ Nr. 081 Azonnal felhasználható hézagoló habarcs Meldorfer Flachverblender burkolókövek illesztő- és fekvőhézagai felületmegkötő tömítésére. ■ „Nehezen gyulladó” ■ Kiváló vízpára áteresztő képesség ■ Időjárásálló, víztaszító DIN 18 550 szerint ■ Alakítható és könnyen feldolgozható ■ Rendkívül feszültségszegény, na-gyon jól formázható ■ Alkáli- und UV-ellenálló ■ Pigmentált ■ Cementmentes, műgyantakötésű ■ Ásványi töltőanyag kombináció Vízfelvételi tényező: w(0,5 kg/(m²·.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Ne használjuk napfénytől felmelegedett felületen, erős szél-.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_meldorfer_fugenmoertel_081_tds"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_capatect_minera_carbon",
     sourceIds: ["src_caparol_capatect_minera_carbon_tds"],
     sections: [
@@ -1527,47 +1640,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
         ],
         sourceIds: ["src_caparol_capatect_minera_carbon_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_mk_reibputz_20_30",
-    sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vékonyvakolatok )) Ásványi termékek leírás Műszaki információ Nr. A600 Ásványi vakolat elsősorban a Capatect Mineral-System hőszigetelő rendszerhez és a felsorolt alapokra: ■ Capatect Mineral-System rendszerben ■ Capatect Sanierputz vakolatjavító rendszerben ■ Beton, ásványi eredetű vakolat, mészhabarcs és javított mézhabarcs alap vakolatokon (simítást követően) ■ Márványgranulátum ■ Márványfinomhomok ■ Cement ■ Fehérmészhidrát ■ Hidrofobizáló anyag ■ Víztaszító anyagok ■ Feldolgozási segédanyagok ■ Kötőanyag erősítő anyagok ■ O.",
-        ],
-        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alkotóelemek: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Az alapfelület legyen száraz, sima, tiszta, hordképes és tapadást gátló anyagoktól mentes. Az új alapvakolatoknak legalább 2-4 heti kötési időt kell hagyni. A Capatect hőszigetelő vagy vakolatjavító rendszeren belüli alkalmazásakor az üvegszövettel erősített simító rétegnek megfelelően kötöttnek kell lennie. A Capatect simító és ragasztó 190 üvegszövet erősítésű alapfelületeket folyama- tos munkavégzés esetén nem kell alapozni. Csak hosszabb állásidő esetén kell Capatect vakolatalapozó 610 alapozóval alapozni. Keverővel vagy motoros keverőgéppel tiszta víz hozzáadásával, minden más ada- lék nélkül hígítani. Az egyenletes szín- és szerkezetelosztás érdekében 8-10 zsákot együtt még egysze.",
-        ],
-        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmasak hőszigetelő rend-. nem alkalmas vízszintes, csapadékvíznek kitett felületek.",
-        ],
-        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capatect_mk_reibputz_20_30_tds"],
       }
     ],
   },
@@ -1708,47 +1780,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_capatect_pulverkleber_190",
-    sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Ragasztó és beágyazó anyagok leírás Műszaki információ Nr. A190 Speciális ragasztó anyag a Capatect hőszigetelő rendszerekben homlokzati hő- szigetelő lapok ragasztására, Capatect üvegszövet beágyazására valamint a Capatect homlokzati javító programon belül homlokzati simításra. ■ Nem éghető, a Capatect Mineral-System hőszigetelő rendszeren belül ■ Nehezen éghető a Capatect polisztirol hőszigetelő rendszereken belül ■ Időjárásálló, víztaszító DIN 18 550 szerint ■ Kiváló vízpára áteresztő ■ Kiválóan tapad minden ásványi ere.",
-        ],
-        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: A tégla, beton vagy jól tapadó bevonattal rendelkező alapfelület legyen tiszta, szá- raz és hordképes. A szennyező anyagokat (pld. zsaluolaj) és kiugró habarcséleket el kell távolítani. A hibás, pergő régi bevonatokat és vakolatokat el kell távolítani. A laza vakolat rétegeket le kell verni és síkban kijavítani. Az erősen szívó, málló és porló felületeket az erős rétegig meg kell tisztítani és Sylitol Koncentrátum alapo- zóval erősíteni. A zsákonként szükséges vízmennyiséget (5-6 lit) egy megfelelő edénybe önteni és a szárazhabarcsot lassan hozzáadni. Erős, lassan forgó keverővel csomómentes masszává keverni. 10 percig dagadni hagyni, majd ismét átkeverni. Ha szükséges, a sűrűséget ezt.",
-        ],
-        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmasak a pergő, laza régi bevonatok: A megfelelően.",
-        ],
-        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
-        ],
-        sourceIds: ["src_caparol_capatect_pulverkleber_190_tds"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_capatect_pulverkleber_190_grob",
     sourceIds: ["src_caparol_capatect_pulverkleber_190_grob_tds"],
     sections: [
@@ -1786,67 +1817,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: --- PAGE 2 ---.",
         ],
         sourceIds: ["src_caparol_capatect_pulverkleber_190_grob_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_putzgrund",
-    sourceIds: ["src_caparol_capatect_putzgrund_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Alapozók )) Vizes alapú, pigmentált leírás Műszaki információ Nr. A650 Kiváló tapadást és egyenletes szívóképességet biztosító alapozófesték Capatect struktúrvakolatokhoz. Akrilátkopolimer, szilikongyanta és szilikátok (ASS-speciális kötőanyag) kombiná- ciójából. ■ Elegáns feldolgozhatóság ■ Vízzel higítható ■ Diffúzióképes ■ Feszültségmentes ■ Környezetbarát ■ Víztaszító ■ Felületmegkötő hatású 1,5 kg/ dm3 Pasztózus. Fehér. A struktúrvakolat kívánt színéhez való közelítés gyár által is lehetséges. Hűvös, de fagymentes helyen. Er.",
-        ],
-        sourceIds: ["src_caparol_capatect_putzgrund_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Kötőanyag:.",
-        ],
-        sourceIds: ["src_caparol_capatect_putzgrund_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Műszaki tanácsadás: Műszaki információ Nr. A650 • Állapot: 2007. november Ez a műszaki információ a technika legújabb állása és a mi tapasztalataink alapján lett összeállítva. T ekintettel az alapfelületek és az objektumok sokszínűségére, a felhasználó nem menthető fel azon kötelessége alól, hogy az adott felületen próbafelhordást végezzen. Új kiadás esetén ez a nyomtatvány elveszti érvényességét. Caparol Hungária Kereskedelmi Kft. • H-1108 Budapest, Gyömrői út 140. T el.: 1/264-8914, 265-1594 • Fax: 1/262-0467 • Internet: www.caparol.hu • e-mail: caparol@caparol.hu.",
-        ],
-        sourceIds: ["src_caparol_capatect_putzgrund_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Biztonsági előírás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_putzgrund_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_rollkleber_615",
-    sourceIds: ["src_caparol_capatect_rollkleber_615_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Ragasztó és beágyazó anyagok leírás Műszaki információ Nr. 615.",
-        ],
-        sourceIds: ["src_caparol_capatect_rollkleber_615_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szín: Konzisztencia:.",
-        ],
-        sourceIds: ["src_caparol_capatect_rollkleber_615_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_rollkleber_615_tds"],
       }
     ],
   },
@@ -1987,229 +1957,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_capatect_si_rillenputz_20_30",
-    sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vékonyvakolatok )) Szilikát termékek leírás Műszaki információ Nr. A03 Rusztikális struktúrvakolat dekoratív dörzsölt struktúrájú homlokzati vagy beltéri fe- lületek kialakításához. Alkalmas Capatect hőszigetelő rendszerek és vakolatjavító rendszerek felületképzésére. Kálivízüveg szerves stabilizátorokkal. 20 (2,0 mm) 30 (3,0 mm) Fehér, raktárról Hűvös, de fagymentes helyen. Eredeti, lezárt edényben 24 hónapig tárolható. Veszélyes hulladék tárolóban. Nem szabad a háztartási hulladékkal együtt elhelyez- ni. Csatornarendszerbe, nyíl.",
-        ],
-        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Kötőanyag: Szemcseméretek: Szín:.",
-        ],
-        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alapozás: Sylitol-vakolatalapozóval, max. 5 %-ban vízzel hígítva, a vakolat színé- hez közeli színárnyalatban. Fedő bevonat: Sylitol-rusztikvakolat a megfelelő szemcseméretben. Sylitol-rusztikvakolatot, ha szükséges max. 2-3 %-ban vízzel hígítva simítóval történő felhordáshoz megfelelő sűrűségűre beállítani és rozsdamentes simítóval egyenlete- sen felhordani. A felhordott réteget a szemcseméretnek megfelelően lehúzni és még nedvesen műanyag simítóval körkörösen, vízszintesen vagy függőlegesen eldolgozni. Rozsdamentes acél és műanyag simítók. Rétegfelépítés: Felhordás: Szerszámok: --- PAGE 2 --- 264 Műszaki információ Nr. A03 Az alapfelület és a környezet egyaránt min. +7°C legyen. Közvetle.",
-        ],
-        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem alkalmasak lakkozott, diszperziós bázisú ter -. Nem alkalmas vízszintes, csapadékvíznek kitett felületek bevonására.",
-        ],
-        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_capatect_si_rillenputz_20_30_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capatect_zf_spachtelmasse_690",
-    sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Capatect hőszigetelő rendszerek )) Ragasztó és beágyazó anyagok leírás Műszaki információ Nr. A690.",
-        ],
-        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: I. Erősítő rétegként polisztirol homlokzati szigetelő lemezen: II. Homlokzat-renoválás esetén:.",
-        ],
-        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szín: Konzisztencia:.",
-        ],
-        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmasak a duzzadásra képes festékek és magasan kötött csillogó mázolá-.",
-        ],
-        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capatect_zf_spachtelmasse_690_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capaver_akkordvlies_g",
-    sourceIds: ["src_caparol_capaver_akkordvlies_g_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capaver üvegszövet rendszer leírás Műszaki információ Nr. 858/857 Capadecor AkkordVlies-G (858) Speciális üvegfátyol kiváló minőségű kötőanyag-impregnálással, amely biztosítja a könnyű feldolgozhatóságot és megakadályozza, hogy a rostszálak a felületen felszálasodjanak. Zsugorodási-, és száradási repedések áthidalására a PII, PIII és PVI habarcs-cso- portoknál, beton és gipszkarton- illetve gipszrostlemezeknél történő felhasználásra. Követő rétegek ideális hordozóanyaga. ■ Rendkívül vízálló ■ Áthidalja a repedéseket ■ S.",
-        ],
-        sourceIds: ["src_caparol_capaver_akkordvlies_g_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Tulajdonságai: Figyelem:.",
-        ],
-        sourceIds: ["src_caparol_capaver_akkordvlies_g_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capaver_capacoll_gk",
-    sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capaver üvegszövet rendszer leírás Műszaki információ Nr. 895.",
-        ],
-        sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Kötőanyag-bázis:.",
-        ],
-        sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ra kész diszperziós ragasztóanyag üvegszövet (Capaver Capaquarz, üvegfáyol, Fantastic Fleece) belsőtéri falakra történő felragasztásához. Műanyag-diszperzió ■ Magas fokú kezdeti tapadás ■ Oldószermentes, vízzel hígítható ■ Enyhén tixotróp könnyen eloszlatható ■ Optimális összehangolás Capaver üvegszálas falbevonattal, kielégítő “nyitott idő”: esetenként az alapozástól és a helyiség klimatikus viszonyaitól függően mintegy 10–15 perc ■ Csekély felhasználás ■ Nedves helyiségben történő ragasztásokhoz is alkalmas ■ Nehezen gyulladó a DIN 4102, B1 szerint a Capaver üvegszövettel kapcso- latban az alábbi vizsgálati igazolások szerint: Z-PA-III 2.2436, Z-PA-III 2.2446, Z-PA-III 2.2447, PA-III 2.",
-        ],
-        sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_capaver_capacoll_gk_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capaver_fantasticfleece",
-    sourceIds: ["src_caparol_capaver_fantasticfleece_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capaver leírás Műszaki információ Nr. 891 A design, típus, szín, fényességi fok és a felhordási technika változtatásával a bevo- nat a Capaver üvegfátyollal attraktív, kiváló minőségű és egyéni falfelületet hoz létre. Az ízlésirány megváltozásakor vagy új használati követelmények megjelenésekor a bevonat gyorsan és gazdaságosan megvalósítható. Különlegessége: Az első oldalon speciálisan impregnált és finoman bevont üvegfátyol egy színe- zett lazúrréteg felhordása után kifinomult, sok színben megjelenő.",
-        ],
-        sourceIds: ["src_caparol_capaver_fantasticfleece_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i terület: Anyagbázis:.",
-        ],
-        sourceIds: ["src_caparol_capaver_fantasticfleece_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: nem ajánlott a sarkokon keresz-.",
-        ],
-        sourceIds: ["src_caparol_capaver_fantasticfleece_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capaver_glasgewebe",
-    sourceIds: ["src_caparol_capaver_glasgewebe_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Ambiente-Dekoratív beltéri rendszerek )) Capaver üvegszövet rendszer leírás Műszaki információ Nr. 870 Beltéri falburkolatok borítására, elsősorban nagy igénybevételnek kitett felületekre. A szövetstruktúra variációi és a rétegek minőségének, színének, és fényességi fo- kának különbözősége lehetővé teszi az igényeknek megfelelő önálló kiválasztást is. Magasértékű bevonatokkal (latexfestékek, akrillakk-festékek) költségkímélő felújí- tások is végezhetők. A már meglevő üvegszövet rétegeknél a kívánságnak és az igénybevett felületeknek megfelelően is választható b.",
-        ],
-        sourceIds: ["src_caparol_capaver_glasgewebe_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Finom szövet: ca. 200-250 g/m2 Közepes szövet: ca. 250-350 g/m2 Durva szövet: ca. 300-350 g/m2 vagy Capaver Matt-Finish vagy Capaver Silk-Finish 5 %-ban hígítva.",
-        ],
-        sourceIds: ["src_caparol_capaver_glasgewebe_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capawood_performance",
-    sourceIds: ["src_prod_caparol_capawood_performance_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Alkalmas mérsékelten mérettartó és nem mérettartó fa felületekre. Mélyen beszívódó. Aromamentes oldószer tartalmú. Vékonyrétegű, nyíltporusú, lélegző képes. Magas diffúzió képesség. Magas UV-védelem. Filmképző védelem gombásodás ellen. Könnyű és kellemes feldolgozás. Egyszerű a felújításban.",
-        ],
-        sourceIds: ["src_prod_caparol_capawood_performance_page"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "14 m2/l (70 ml/m2) Fényességi fok Selyemmatt",
-        ],
-        sourceIds: ["src_prod_caparol_capawood_performance_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_capawood_protectplus",
-    sourceIds: ["src_prod_caparol_capawood_protectplus_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Alkalmas a fa szerkezetekre, mint pl. Ablak, Ajtó, Erkély burkolatok, Pergolák, Fa homlokzat burkolatok bevonására. Speciális kötőanyag kombinációnak köszönhetően mélyen beszívódik és hosszú védelmet biztosít. Aromamentes oldószert tartalmaz. Nyíltporusú, lélegző képes, magas diffúzió képesség. A Hydroperl effekt hatására víz taszító hatású. Magas UV-védelem. Gombásodás elleni film védelem. Könnyen és kellemesen felhordható. Könnyen felújítható.",
-        ],
-        sourceIds: ["src_prod_caparol_capawood_protectplus_page"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "20 m2/l (50 ml/m2) Fényességi fok Selyemmatt",
-        ],
-        sourceIds: ["src_prod_caparol_capawood_protectplus_page"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_carbon_spachtel",
     sourceIds: ["src_caparol_carbon_spachtel_tds"],
     sections: [
@@ -2271,856 +2018,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_danske_falazurok",
-    sourceIds: ["src_prod_caparol_danske_falazurok_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Részletes tájékoztatás a Caparol termékcsalád összes termékének műszaki jellemzőiről. További információk a Műszaki Információkban, és a biztonsági adatlapokban.",
-        ],
-        sourceIds: ["src_prod_caparol_danske_falazurok_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_deko_stone",
-    sourceIds: ["src_prod_caparol_deko_stone_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Old+oacute;szermentes, feldolgoz+aacute;sra k+eacute;sz belt+eacute;ri bevonat nagy felületek +eacute;s előregy+aacute;rtott +eacute;pületr+eacute;szek fest+eacute;s+eacute;re.",
-        ],
-        sourceIds: ["src_prod_caparol_deko_stone_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_502_protect_plus",
-    sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 502 Fémtiszta betonacél korrózióvédelmére és tapadóréteg a javítóhabarcs ill. a be- tonfelület között. Műanyaggal modifikált cementhabarcs 25 kg zsák 10 kg vödör Száraz helyen, legalább 9 hónapig eltartható. ■ Korrózióvédelem és tapadóréteg egyben ■ Egyszerű feldolgozás - csak vízzel kell keverni ■ Előnyös feldolgozhatósági idő ■ Rövid várakozási idők az egyes rétegek felhordása között ■ Vizes alapfelületeken is alkalmazható ■ Fagyálló ■ Kitűnő tapadás minden betonf.",
-        ],
-        sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Fémtiszta betonacél, normál, nehéz és könnyű beton. Az alapfelület legyen hordképes, tiszta, laza részektől és tapadást rontó anyagoktól mentes. A laza és porló valamint a korrozív anyagokat (pld kloridokat) tartalmazó be- tont és vasbetont és a felületen lévő tapadást gátló anyagokat (zsaluolaj, festékma- radványok) el kell távolítani. A beton finom rétegét olyan mélységig el kell távolítani, hogy a tapadó réteg és a javító habarcs a nagyobb szemcséjű betonhoz tudjon köt- ni. A kijavítandó felületek éleit 45-60°-ban kell letörni. Az alapfelületet előnedvesíteni. Alkalmas alapok: Az alapfelület előkészítése: --- PAGE 2 --- 540 Műszaki információ Nr. 502 Műszaki információ Nr. 502 • Állapot.",
-        ],
-        sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_502_protect_plus_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_504_feinmoertel",
-    sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 504 Beton szerkezetek javítására. Kitörések részleges javítására és teljes felületű javításra. Műanyaggal modifikált cementhabarcs Disbocret 504 Feinmörtel finomhabarcsot a következő tulajdonságok jellemzik: ■ Egyszerű előkészítés ■ Kiváló feldolgozhatóság ■ Kiváló állóképesség ■ Kiadós ■ Előnyös feldolgozhatósági idő Legnagyobb szemcseméret: 2 mm Rétegvastagság munkafázisonként: helyi javítások: 5-40 mm teljes felületi javítás: 5-20 mm Keverési arány: Disbocret 504.",
-        ],
-        sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Alapanyag: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton és vasbeton, Disbocret 503 Haftschlämme tapadó réteggel előkezelve. Disbocret 504 Feinmörtel finomhabarcsot kézi felhordás esetén Disbocret 502 Antirost M ((0,1 m²-nél kisebb kitöréseknél) korrózióvédő tapadó alapozóval elő- kezelt beton felületekre lehet felhordani. Ügyeljünk arra, hogy a tapadó réteg matt- nedves legyen. Ha a tapadó réteg kiszáradt, felhordását meg kell ismételni. A kike- ményedett tapadó réteget homokszórással fel kell érdesíteni. A gépi nedves vagy száraz szórási eljárás esetén elegendő a felület előnedvesítése. Öntsünk 3,1-3,2 liter vizet egy megfelelő méretű edénybe. Lassú forgású keverővel folyamatos keverés mellett lassan adjuk hozzá a teljes zsák tartalmát.",
-        ],
-        sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_504_feinmoertel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_505_feinspachtel",
-    sourceIds: ["src_caparol_disbocret_505_feinspachtel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 505 Beton szerkezetek javítására. Legfeljebb 5 mm-es kitörések részleges javítására és teljes felületű javításra, pórusok és zárványlyukak eltömésére, a felület egyenetlen- ségeinek javítására. Műanyaggal modifikált cementhabarcs. Disbocret 505 Feinspachtel finomsimító a következő tulajdonságok jellemzik: ■ Egyszerű előkészítés ■ Kiváló feldolgozhatóság ■ Kiváló állóképesség ■ Kiadós ■ Előnyös feldolgozhatósági idő Legnagyobb szemcseméret: 0,4 mm Rétegvastagság: le.",
-        ],
-        sourceIds: ["src_caparol_disbocret_505_feinspachtel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alapanyag: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_505_feinspachtel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton és vasbeton, valamint Disbocret javítóhabarccsal kezelt felületek. Az alapfelület legyen hordképes, tiszta, laza részektől és tapadást rontó anyagoktól mentes. A laza és porló valamint a korrozív anyagokat (pld kloridokat) tartalmazó betont és vasbetont és a felületen lévő tapadást gátló anyagokat (zsaluolaj, fes- tékmaradványok) el kell távolítani. A beton finom rétegét olyan mélységig el kell távolítani, hogy a tapadó réteg és a javító habarcs a nagyobb szemcséjű betonhoz tudjon kötni. A betonacélt Sa 2 1/2 tisztasági fokozatig megtisztítjuk, rozsdátlanítjuk. Ezt köve- tően azonnal Disbocret 501 Rostschutz vagy Disbocret 502 Antirost M korrózióvé- dővel a gyári előírás szerint be.",
-        ],
-        sourceIds: ["src_caparol_disbocret_505_feinspachtel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_506_planspachtel",
-    sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 506 Beton szerkezetek javítására. Legfeljebb 3 mm-es kitörések részleges javítására és teljes felületű javításra, pórusok eltömésére, valamint strukturált felületek készítésére. Műanyaggal modifikált cementhabarcs. 25 kg zsák. Száraz helyen, legalább 9 hónapig eltartható. ■ Egyszerű előkészítés ■ Kiváló feldolgozhatóság ■ Rendkívül vékonyra lehúzható ■ Kiadós ■ Előnyös feldolgozhatósági idő Legnagyobb szemcseméret: 0,2 mm Rétegvastagság: legalább rendkívül vékonyra.",
-        ],
-        sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton és vasbeton, valamint Disbocret javítóhabarccsal kezelt felületek. Az alapfelület legyen hordképes, tiszta, laza részektől és tapadást rontó anyagoktól mentes. A laza és porló valamint a korrozív anyagokat (pld kloridokat) tartalmazó betont és vasbetont és a felületen lévő tapadást gátló anyagokat (zsaluolaj, fes- tékmaradványok) el kell távolítani. Az alapfelületet előnedvesíteni, a felhordás előtt viszont csak mattnedves legyen. Öntsünk 8,25 liter vizet egy megfelelő méretű edénybe. Lassú forgású keverővel folyamatos keverés mellett lassan adjuk hozzá a teljes zsák tartalmát. Addig kever- jük, míg egy csomómentes anyagot nem kapunk, de legalább 3 percig. 3 perces dagadási idő ut.",
-        ],
-        sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_506_planspachtel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_507_multitec_moertel",
-    sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 507 Korrózióvédelem nélküli beton szerkezetek javítására, hibás és sérült részek pót- lására. Min. 1 cm betonvastagság szükséges. Ha a betonréteg (1 cm, akkor Disbocret 521 Antirost WS korrózióvédő anyaggal le kell kezelni. ■ Korrózióvédelem nem szükséges ■ Kiváló feldolgozhatóság ■ Gyors megkeményedés ■ Gyorsan átvonható ■ Rendkívül jó állóképesség ■ Kiadós ■ Egyszerű előkészítés Műanyaggal modifikált cementhabarcs. 25 kg zsák 10 kg vödör Száraz helyen, legalább 6.",
-        ],
-        sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton, vasbeton és könnyűbeton. Szakítószilárdság min. 1,5 N/mm² legyen. A felületet 2½ tisztasági fokúra rozsdamentesen megtisztítani. A már rozsdamente- sített felületet por és zsírmentesíteni is kell. A beton legyen hordképes, tiszta, laza részektől és tapadást rontó anyagoktól men- tes. A felületi tapadást gátló anyagokat (festékmaradványok, olaj, zsír) és a korrozív anyagokat (pld kloridokat) el kell távolítani. A finom habarcs réteget olyan mélységig el kell távolítani, hogy a habarcs a nagyobb szemcséken tudjon tapadni. A kitörések éleit 45-60°-ban le kell törni. Az alapfelületet előnedvesíteni, a felhordás előtt viszont a Miltitec-Mörtel csak mattnedves legyen. A kimért vizmennyis.",
-        ],
-        sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_507_multitec_moertel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_510_fuellschicht",
-    sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 510 ■ Beton felületek pórusainak és zárványlyukainak töltésére, 0,2 mm-nél kisebb felületi repedések javítására. ■ Póruszáró alapozó a Disbocret betonvédő bevonatok előtt. ■ Jól tapadó régi bevonatokra, diszperziós és lakkfestésekre is alkalmazható. Sztirol-akrilát-diszperzió töltő anyagokkal. A Disbocret 510 Füllschicht alapozót a következő tulajdonságok jellemzik: ■ Kenhető, gazdaságos és egyszerű felhasználás ■ Plaszto-elasztikus, elfedi a 0,2 mm-nél kisebb, nem.",
-        ],
-        sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alapanyag: Tulajdonságai:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton, cementvakolatok, jól tapadó diszperziós és lakk bevonatok. 1. Hordképes felületek: (tapadó-húzószilárdság )1,0 N/mm²) A szennyeződé- seket magasnyomású mosó vagy gőzborotvás berendezéssel eltávolítani. 2. Nem hordképes felületek: Az erősen szennyezett, algás, mohás, erősen por- ló vagy fényes felületeket homokszórással meg kell tisztítani. 3. Bevont felületek: A nem jól tapadó bevonatokat homokszórással el kell tá- volítani. A hordképes bevonatokat a megfelelő tisztító eljárással, vízzel vagy gőzborotvával meg kell tisztítani. A régi bevonatok tapadását ellenőrizni kell (tapadó-húzószilárdság ) 1,0 N/mm²). 4. Sérülések: Az egyenletes és elegendő vastagságú védőbevonat érdekében a s.",
-        ],
-        sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_510_fuellschicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbocret_515_betonfarbe",
-    sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Fém- és betonkorrozióvédelmi anyagok leírás Műszaki információ Nr. 515 ■ Víz és károsanyag felszívódása ellen védő bevonat új, és régi, javított beton felületeken. ■ Felületi repedések eltömésére sima vagy durva betonfelületeken. ■ Sima beton felületek finom felületi strukturálására. ■ Felületi simító rétegekre és régi hordképes bevonatokra. ■ Kül- és beltérben is alkalmazható. Sztirol-akrilát-diszperzió. A termék gyártása belső és hatósági felügyelet mellett történik. 15 liter műanyag vödör. Ezen túl fehér anyag 12 literes fém ka.",
-        ],
-        sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: ra - időjárásálló, alkálirezisztens, ultraibolya sugárzásnak ellenáll. Jól tapadó régi bevonatokon is alkalmazható. Jól töltő, magas fedőképességű.",
-        ],
-        sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szívóképes ásványi alapok, úm. beton, Disbocret habarcsok, simítók és vakolatok. Hordképes, tapadó régi bevonatok. 1. Hordképes felületek (tapadó-húzószilárdság ) 1,0 N/mm²): A szennyeződé- seket magasnyomású mosó vagy gőzborotvás berendezéssel eltávolítani. 2. Nem hordképes felületek: Az erősen szennyezett, algás, mohás, erősen porló vagy fényes felületeket homokszórással meg kell tisztítani. 3. Bevont felületek: A nem jól tapadó bevonatokat homokszórással el kell távolítani. A hordképes bevonatokat a megfelelő tisztító eljárással, vízzel vagy gőzborotvával meg kell tisztítani. A régi bevonatok tapadását ellenőrizni kell (tapadó-húzószilárdság ) 1,0 N/mm²) 4. Sérülések: Az egyenletes és.",
-        ],
-        sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disbocret_515_betonfarbe_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboflex_204_silikon_fugendicht",
-    sourceIds: ["src_caparol_disboflex_204_silikon_fugendicht_tds"],
-    sections: [
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján:  Szaniter és nedves felületek fugázásához  Beltéri csomópontok fugázásához  Gépjárm űvek, lakókocsik, hajók és egyéb tömítésekhez. Márványhoz nem alkalmas! Nem átfesthető! Tulajdonságai:  Elasztikus  Termikusan és kémiailag terhel- hető  Gombásodásgátlógátló (fungicid tulajdonságú) Alapanyag: Szilikonkaucsuk, acetát- térhálósodású.",
-        ],
-        sourceIds: ["src_caparol_disboflex_204_silikon_fugendicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: 10x10 mm-es fugaméret: kb. 100 ml/m.",
-        ],
-        sourceIds: ["src_caparol_disboflex_204_silikon_fugendicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: 310 ml-es műanyag kartus.",
-        ],
-        sourceIds: ["src_caparol_disboflex_204_silikon_fugendicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbofug_225_acryl_fugendicht",
-    sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Tomítők, elasztikus fugakitöltők leírás Műszaki információ Nr. 225 Ablakok és ajtók zárófugáinál, ablakpárkányoknál, beépített szekrényeknél és bur - kolatoknál. ■ Plasztoelasztikus ■ Minden Caparol diszperziós festékekkel átfesthető Akril diszperzió. 310 ml-es kartus (20 db/ karton) 400 ml (12 db/ karton) 600 ml (12 db/ karton) 310 ml: fehér (Weiß), fekete (Schwarz), szürke (Grau), barna (Braun) 400 ml: fehér (Weiß) 600 ml: fehér (Weiß) Hűvös és fagymentes helyen. Eredeti, lezárt edény 12 hónapig eltartható. ■ Sűrűség: 1,5 g/c.",
-        ],
-        sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alumínium, azbesztcement, beton, nemesacél, szálerősítésű cement, fa, tégla, mészkő, pórusbeton, polisztirol-keményhab, vakolat, kemény PVC, kőcserép, hor- ganyzott acél. Az alapfelület legyen tiszta, hordképes, és tapadást gátló anyagoktól mentes. A tömítőanyag mélységét egy nem szívó zsineggel állapíthatjuk meg. Fugaszélesség: fugázómélység 1:1 Az anyag feldolgozásra kész. Az anyagot egyenletesen a fugába adagolni. A fugázóanyag nem tapadhat a fuga- alaphoz. A felületet vízzel benedvesített szerszámmal lehet simára húzni. 10x10 mm-es fugamélység: kb. 100 ml/m. Anyag, környezet, alapfelület hőmérséklete min. 5 °C, max 40 °C legyen. Kb. 1,5 mm/ 24 óra, 20 °C hőmérsékleten és 60 % relatív pá.",
-        ],
-        sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disbofug_225_acryl_fugendicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbon_404_acryl_bodensiegel",
-    sourceIds: ["src_caparol_disbon_404_acryl_bodensiegel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Egykomponensű termékek leírás Műszaki információ Nr. 404 Aljzat festék kül- és beltéri cementkötésű alapokra, normál terhelhetőséggel. ■ Padlók: pincék, raktárszobák, tárolók, hobbyhelyiségek ■ Irodákban és kiállítási helyiségekben ■ Balkonok, teraszok aljzatára. ■ Nem használható folyamatosan vízben álló aljzatokra. ■ Beton, vakolat és esztrich felületek esetében fűtőolaj, trafóolaj álló bevonatot lehet késszíteni kül- és beltéren. A minimális anyagfelhasználás szigorúan betartandó! Metachryl-polimer-diszperzió 2 kg.",
-        ],
-        sourceIds: ["src_caparol_disbon_404_acryl_bodensiegel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbon_404_acryl_bodensiegel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Beton-, cement-, magnezit- és anhidritesztrichek, (beltérben) vakolatok. Az alapfe- lület legyen száraz, erős, hordképes, stabil és tapadást gátló anyagoktól mentes. A maximális nedvesség tartalom 5 %. A tapadási húzószilárdság átlagban legalább 1,5 N/mm², a legkisebb egyedi érték legalább 1,0 N/mm² legyen. 1. A hordképes, szennyezett (por, szennyeződések) felületeket vízzel vagy gőz- borotvával meg kell tisztítani. 2. A nem hordképes, erősen szennyezett felületeket, melyek olaj, zsír, guminyo- mok, által szennyezettek, valamint a porló és üvegszerű cementkővel borított felületeket sörétezéssel vagy hasonló eljárással kell előkészíteni. 3. Bevonatok: az egykomponensű és nem tapadó kétkomp.",
-        ],
-        sourceIds: ["src_caparol_disbon_404_acryl_bodensiegel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Fényességi fok:.",
-        ],
-        sourceIds: ["src_caparol_disbon_404_acryl_bodensiegel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbon_405_klarsiegel",
-    sourceIds: ["src_prod_caparol_disbon_405_klarsiegel_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "V+iacute;zzel h+iacute;g+iacute;that+oacute;, selyemf+eacute;nyű, sz+iacute;ntelen diszperzi+oacute;s bevonat a sima ill. cs+uacute;szos alapfelületekhez belt+eacute;ri felhaszn+aacute;l+aacute;sra.",
-        ],
-        sourceIds: ["src_prod_caparol_disbon_405_klarsiegel_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbon_pu_aquasiegel_458",
-    sourceIds: ["src_caparol_disbon_pu_aquasiegel_458_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 458 Beltéri EP és PU bevonatok miatt fedőrétege, a Disboxid Stone Color rendszer - eleme bel-és kültérben, fedőréteg a Disboxid Multicolor rendszerekhez, és az ArteFloor padlóbevonatokhoz. Transzparens. Matt. 4 kg kombi.",
-        ],
-        sourceIds: ["src_caparol_disbon_pu_aquasiegel_458_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disbon_pu_aquasiegel_458_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: ■ Sima felületek: 80-120 g/m² ■ Érdes felületen: 130 g/m² + 4 kg/m² Disbon 947 Slidestop. A pontos anyagfelhasználást próbafelület készítésével kell megállapítani. Száraz, hűvös helyen, eredeti felbontatlan edényben 6 hónap. Az edzőt az alapmasszára öntjük és lassú fordulatú keverővel intenzíven átkeverjük. Keverési arány: alapmassza : edző = 5 : 1 20 °C-on és 60 % relatív páratartalom esetén: 90 perc. Magasabb hőmérséklet csökkenti, alacsonyabb hőmérséklet növeli a feldolgozási időt. 20 °C és 60 % relatív páratartalom esetén ■ 1 nap múlva járható és átdolgozható, ■ 3 nap múlva mechanikusan terhelhető, ■ 7 nap múlva kikeményedett. +10 °C és +30 °C között a relatív páratartalom max. 80 %.",
-        ],
-        sourceIds: ["src_caparol_disbon_pu_aquasiegel_458_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_disbon_pu_aquasiegel_458_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbopox_442_garagen_siegel",
-    sourceIds: ["src_caparol_disbopox_442_garagen_siegel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 442 Alkalmazható minden ásványi eredetű alapfelületen, melyen gépjárműforgalom ill.",
-        ],
-        sourceIds: ["src_caparol_disbopox_442_garagen_siegel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Minden ásványi felület (mint beton, cement, anhidrit, magnezitesztrih), illetve beltéren bármely keményaszfalt. Az alapfelület legyen száraz, erős, hordképes, stabil és tapadást gátló anyagoktól (por, olaj, zsírok) mentes. A tapadási húzószilárdság legalább 1,5 N/mm² legyen. Beton és cementaljzat: max 5 súly % Anhidrit: max 1,0 súly % Magnezitesztrih max 2-4 súly % Xilolit: max 4-8 súly % Ásványi eredetű alapoknál: 1. A hordképes, szennyezett (por, szennyeződések) felületeket vízzel vagy gőz- borotvával meg kell tisztítani. 2. A nem hordképes, erősen szennyezett felületeket, melyek olaj, zsír, gumi- abroncsnyomok, által szennyezettek, valamint a porló és üveges cement bevonattal rendelkez.",
-        ],
-        sourceIds: ["src_caparol_disbopox_442_garagen_siegel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disbopox_442_garagen_siegel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbothan_221_fugendicht",
-    sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Tomítők, elasztikus fugakitöltők leírás Műszaki információ Nr. 221 ■ Hosszváltozásnak kitett magasépítészeti fugáknál ■ Fa-, fém- és műanyag ablakok tömítéseihez ■ Homlokzatok fugáinál ■ Ablakok és ajtók zárófugáinál ■ Szaniter berendezések fugázásához ■ T ermészetes kőzetek fuázásához (pl. gránit és márvány) ■ Elasztikus ■ Diszperziós festékekkel, alkid és akrilgyantalakkokkal átfesthető ■ Higított lúgoknak és sóoldatoknak és vizes tisztítószereknek ellenáll ■ Ásványi olajnak, üzemanyagnak, növényi és állati zsírnak rövid idei.",
-        ],
-        sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alumínium, azbesztcement, beton, nemesacél, zománc, szálerősítésű cement, glasal, üveg, fa, kerámia, tégla, mészkő, márvány, természetes kő, pórusbeton, polisztirol kemény-hab, porcelán, vakolat, kemény PVC, keménycserép, kőcserép, horganyzott acél. Az alapfelület legyen tiszta, száraz, hordképes, és tapadást gátló anyagoktól mentes. Régi tömítéseket maradéktalanul eltávolítani, adott esetben a fugaszéleket lemarat- ni vagy lecsiszolni, anyagmaradékot eltávolítani. A szívóképes fugarészeket Disbothan 221 Fugenprimer-rel alapozzuk. A tömítőa- nyag mélységét egy nem szívó zsineggel állapíthatjuk meg. Az anyag feldolgozásra kész. Az anyagot egyenletesen a fugába adagolni. A fugázóanyag nem.",
-        ],
-        sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disbothan_221_fugendicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disbothan_235_pu_fugendicht",
-    sourceIds: ["src_prod_caparol_disbothan_235_pu_fugendicht_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Teljes átszáradás után minden diszperziós homlokzatfestékkel átfesthető.",
-        ],
-        sourceIds: ["src_prod_caparol_disbothan_235_pu_fugendicht_page"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "100 ml/fm (10x10-es fuga esetén) Szín Fehér, világosszürke, betonszürke",
-        ],
-        sourceIds: ["src_prod_caparol_disbothan_235_pu_fugendicht_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxan_450_fassadenschutz",
-    sourceIds: ["src_caparol_disboxan_450_fassadenschutz_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Impregnáló anyagok leírás Műszaki információ Nr. 450 Hidrofóbizáló impregnálóként, szívóképes és ásványi falfelületekre. Hidrofóbizáló alapozóként megnöveli a szerkezet lefagyásokkal és sókivirágzással szembeni ellenállóképességét. Nem filmképző. Puha és málló felületek megerősítése nem szükséges. ■ Egyszerrű vízel történő hígítás ■ Szagtalan és környezetkímélő ■ Lecsökkenti a vízfelvételt ■ Javítja a szerkezet lefagyásokkal és sókivirágzással szembeni ellenállóképességét ■ Védelmet nyújt az alga-, mohabenövéss.",
-        ],
-        sourceIds: ["src_caparol_disboxan_450_fassadenschutz_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szívóképes ásványi alapfelületek, valamint téglafalazat, mészkő, beton, betonfala- zat, cement és mészvakolatok. Világos alapfelületen színsötétedés lehetséges. Az alapfelület tiszta, száraz fagyálló és idegen anyagtól mentes legyen. Repedés, fuga vagy pórus átal előidézett nedvesség kizárandó. Régi, máló, rossz minőségű téglafalazatok bevonására nem alkalmas! Az alapfelületet a tapasztalatoknak megfelelően kell előkészíteni, laza és elváló al- kotóelemektől mentesnek kell lennie. Fedőrétegek felhordása előtt az alapfelület megfelelő hordképességére ügyelni kell. 1:9 arányban keverndő a koncentrátum a tiszta vízzel. Csak annyi anyagot kever - jünk be, ami 12 órán belül felhasználásra kerü.",
-        ],
-        sourceIds: ["src_caparol_disboxan_450_fassadenschutz_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxan_450_fassadenschutz_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxan_452_wetterschutz",
-    sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Impregnáló anyagok leírás Műszaki információ Nr. 452 Hidrofóbizáló impregnálóként, ásványi és szilikáttartalmú homlokzatfelüle- tekre. Hidrofóbizáló alapozóként megnöveli a felület lefagyásokkal szembeni ellenállóképességét, metakrilgyanta fedőrétegek használatánál. Polisztirol hőszigetelő anyagot tartalmazó egyrétegű falakon oldószeres impreg- nálást nem szabad végezni, az oldószertartalom miatt. Bizonyos előfeltételek ese- tén az oldószergőzök a belső helységekbe vándorolhatnak. Polisztirol hőszigetelő anyagot.",
-        ],
-        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Figyelem:.",
-        ],
-        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szívóképes és száraz ásványi szilikáttartalmú alapfelületek, mint téglaburkolat, mészhomokkő, beton, betonfalazat, cement -és mészvakolatok. Világos alapfelü- leten a szín sötétedése lehetséges. Az alapfelület tiszta, fagyálló és idegen anyagtól mentes legyen. Repedés, fuga vagy pórus átal előidézett átnedvesedés kizárandó. Az alapfelületet megfelelő eljárással úgy kell előkészíteni, hogy laza részektől és tapadást gátló anyagoktól mentes legyen. A termék nem filmképző tulajdonságú. Porló és málló alapfelület esetén a felület erősítése nem érhető el. Fedőrétegek felhordása előtt az alapfelület megfelelő hordképességére ügyelni kell. A termék feldolgozásra kész. Impregnálás: A Disboxan 4.",
-        ],
-        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Tilos a dohányzás S 23 – A keletke-.",
-        ],
-        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxan_452_wetterschutz_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_422_emi_clearcoat",
-    sourceIds: ["src_prod_caparol_disboxid_422_emi_clearcoat_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "F+eacute;nyes, k+eacute;tkomponensű foly+eacute;kony epoxigyanta Disboxid Arte Flor-rendszerhez +eacute;s Disboxid 948 Color Chips-el bevont felületekhez belt+eacute;ri felhaszn+aacute;l+aacute;sra.",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_422_emi_clearcoat_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_430_ep_rollschicht",
-    sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 430 Közepes, illetve fokozott mechanikai és vegyi igénybevételnek kitett ásványi alapú padlóburkolatok fedőrétege, pl.: ■ T ejgazdaságokban, sajtkészítő üzemekben, vágóhidakon, pékségekben ■ Ital-, és konzervüzemekben ■ Nagykonyhákban és hűtőházakban ■ Vegyszereknek jól ellenáll ■ Az anyag hengerelhető ■ Szakvélemény tanúsítja, hogy az élelmiszerekre élettani szempontból káros hatása nincs. ■ A réteg szárazon 150 °C-ig, nedvesen 40 °C-ig terhelhető, rövid ideig (p.",
-        ],
-        sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Anyagjellemzők: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Minden ásványi eredetű alap. Az alapnak hordképesnek, formatartónak, szilárdnak, szennyeződéstől, portól, olajtól, zsírtól, guminyomoktól és egyéb elváló anyagoktól mentesnek kell lennie. Az alap felületi szakítószilárdsága átlagban 1,5 N/mm² le- gyen. A legkisebb egyedi érték nem lehet kisebb, mint 1,0 N/mm². Az alapoknak a kiegyenlítő nedvességüket el kell érniük: ■ Beton-, és cementbevonat legfeljebb 4 Súly % ■ Anhidrit bevonat legfeljebb 0,5 Súly % ■ Magnezit bevonat 2-4 súly % ■ Xilolit bevonat 4-8 súly % A felszálló nedvesség ellen szigetelni kell. Anhidrit és magnezit bevonatoknál sür - gősen földszigetelni kell. Az alapot a megfelelő eljárásokkal, pl. sörétezéssel, vagy maratással.",
-        ],
-        sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_430_ep_rollschicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_443_ep_impraegnierung",
-    sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 443 Ásványi beltéri alapokra és kemény bevonatokra kis és közepes terhelésű helyi- ségekben a ház körül, az iparban és a kereskedelemben, mint old.: műhelyekben, raktárakban, étkezőkben, kiállítási csarnokokban, üzletekben. ■ Disbopox 443 EP-Imprägnierung növeli az ásványi eredetű szívóképes felüle- tek vegyszerállóságát és szilárdságát. ■ Megakadályozza a porképződést és a káros anyagok felszívódását. ■ Felhordható a még nedves beton- és esztrichfelületekre, megak.",
-        ],
-        sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Szívóképes, ásványi eredetű alapfelületek, mint pld. beton, és cement-, anhidrit- és magnezitesztrichek valamint cementvakolatok.. Az alapfelület legyen száraz, erős, hordképes, stabil és tapadást rontó anyagoktól mentes. A tapadási húzószilárdság legalább 1,5 N/mm² legyen. A friss beton és esztrich felületi matt száraz legyen, a felületén nem lehet fénylő vízfilm. Az alapfelületet szükség szerint megfelelő eljárásokkal - mint pld. gőzborotva, ho - mokszórás vagy sörétezés - meg kell tisztítani, hogy megfeleljen a fenti előírásoknak. Az edzőt az alapmasszához öntjük és lassú keverővel (max. 400 ford./perc) intenzí- ven átkeverjük. Áttöltjük egy másik edénybe és újból átkeverjük, míg egy.",
-        ],
-        sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_443_ep_impraegnierung_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_444_dickschicht",
-    sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 444 Fedőbevonat vegyileg és mechanikusan erősen igénybevett ásványi és fémfelüle- tekre kül-és beltéren, mint pl.: ■ ipari padlók villás targonca közlekedéssel ■ Védőbevonat agresszív vegyi környezetben lévő épületszerkezetekre (galvani- záló csarnokok akkumulátor helyiségek, stb.) ■ Szennyvíztisztítókban ■ Vegyi anyagoknak és mechanikus terhelésnek kíválóan ellenáll ■ Nedvesen terhelhető 40°C-ig ■ T artós nedvességnek kitehető Kétkomponensű folyékony epoxigyanta.,.",
-        ],
-        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: --- PAGE 4 --- 508 Műszaki információ Nr. 444 Az egyes munkafolyamatok közötti várakozási idő 20 °C-on legalább 16 és maxi- mum 24 óra legyen. Hosszabb várakozási idő esetén a megelőző munkafolyamat felületét ha nem lett homokkal beszórva át kell csiszolni. A megadott időtartam ma- gasabb hőmérsékleten megrövidül, alacsonyabb hőmérskleten meghosszabbodik. Az anyag-, a környező levegő és az alapfelület hőmérséklete legalább +10°C, max. +30 °C legyen. A relatív páratartalom a 80%-os értéket nem haladhatja meg. Az alapfelület hőmérséklete legalább 3°C-al legyen a harmatponti hőmérséklet fölött. 20 °C-on és 60 %-os relatív páratartalom esetén 16 óra múlva a felület járható, kb. 3 nap múlva m.",
-        ],
-        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Tilos a dohányzás.",
-        ],
-        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Színek:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_444_dickschicht_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_462_ep_siegel",
-    sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 462 ■ Alapozó vagy önterülő simító réteg ipari padlóbevonatok alá. ■ Alapozó a Disboxid Parkolóház (OS 8) rendszerhez. ■ Disboxid 946 Mörtelquarz kvarchomok kötőanyagaként rendkívül kopásálló ipari padlók, padló- és falátmenetek készítésére valamint kitörések javítására. ■ Sima vagy csúszásmentes bevonatok készítéséhez ■ Repedések kiöntésére ■ Magas penetrációs képesség ■ Időjárásállóság ■ Kémiai vegyianyagokkal szemben ellenálló ■ T artósan nedvességálló ■ Hosszú.",
-        ],
-        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Tulajdonságai: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Minden ásványi eredetű alapfelület. Az alapfelület legyen hordképes, stabil, laza részektől, úgymint por, olaj, zsírok, gumimaradványok és más tapadást rontó anya- goktól mentes. A tapadási húzószilárdság átlagban legalább 1,5 N/mm², a legki- sebb egyedi érték legalább 1,0 N/mm² legyen. Az alapfelületeknek el kell érniük az egyensúlyi nedvesség tartalmukat: ■ Beton és cementesztrich max. 4 súly - % ■ Anhydritesztrich max. 0,5 súly - % ■ Magnezitesztrich max. 2-4 súly - % ■ Fabeton 4-8 súly-% Anhydrit és Magnezit esztrich- padlók esetén vizszintes nedvesség-szigetelést kell alkalmazni. Az alapfelületet, az annak megfelelő eljárással, mint pl. sörétezés vagy felületmarás elő kell készíteni.",
-        ],
-        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_462_ep_siegel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_463_ep_grund_sr",
-    sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 463 ■ Alapozóként, vagy önterülő simítóként padlóbevonatok alá. ■ Disboxid 946 Mörtelquarz kvarchomok kötőanyagaként rendkívül kopásálló ipari padlók, padló-, és falátmenetek kialakítására, illetve kitörések javítására. ■ Sima, vagy csúszásgátló bevonatokhoz ■ Repedések kiöntésére ■ Kötőanyag és önterülő bevonat színes kvarcbetonokhoz ■ 10 °C-on is jól keményedik ■ Időjárásálló ■ T artós nedvességnek ellenáll ■ Vegyszereknek ellenáll ■ Élelmiszeripar területén is a.",
-        ],
-        sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Az anyag jellemzői: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i terület: Az anyag jellemzői: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_463_ep_grund_sr_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_464_ep_decksiegel",
-    sourceIds: ["src_caparol_disboxid_464_ep_decksiegel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Disbon épületvédelem )) Epoxigyanta bevonatok ) Kétkomponensű termékek leírás Műszaki információ Nr. 464 Ásványi eredetű padlók közepes és rendkívül magas mechanikus igénybevétellel: ■ Raktárak és gépipari üzemcsarnokok targonca használattal ■ Felhajtó- és rakodó rámpák ■ Vásárcsarnokok ■ Záróbevonat a Disboxid Parkhaus-System OS 8-ban ■ Jó vegyianyag ellenállóság ■ időjárásállóság ■ Beltérben felhasználható ■ T öbbféle variációban is felhasználható; hengerelhető-, önterülő zárórétegként, önterülő-habarcsként és szórható bevonatként, igazodva a különböző erőssé- g.",
-        ],
-        sourceIds: ["src_caparol_disboxid_464_ep_decksiegel_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Anyagtulajdonságok: Alapanyag:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_464_ep_decksiegel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Minden ásványi eredetű aljzat. Az alapfelület legyen száraz, erős, hordképes, méretstabil és tapadást rontó anyagoktól (por, olaj, zsír, gumi nyomoktól) mentes. A felület húzószilárdsága átlagban legalább 1,5 N/mm², a legkisebb egyedi érték legalább 1,0 N/mm² legyen. Az alapoknak el kell érniük a kiegyenlítő nedvességtartalmukat: ■ Beton- és cementréteg max. 4 súly% ■ Anhydrit réteg max. 0,5% súly% ■ Magnézium esztrich 2-4% súly% ■ Kőfaesztrich 4-8% súly% Felszálló nedvesség kizárandó, magnezit és anhydrit bevonatoknál horizontális víz- szigetelés szükséges A kitöréseket és felületi hibákat Disboxid EP- vagy Disbocret PCC habarccsal ki- javítani. Az edzőt az alapmasszához öntjük és lassú.",
-        ],
-        sourceIds: ["src_caparol_disboxid_464_ep_decksiegel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:.",
-        ],
-        sourceIds: ["src_caparol_disboxid_464_ep_decksiegel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_942_mischquarz",
-    sourceIds: ["src_prod_caparol_disboxid_942_mischquarz_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,1 - 0,4 mm",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_942_mischquarz_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_943_einstreuquarz",
-    sourceIds: ["src_prod_caparol_disboxid_943_einstreuquarz_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,4 - 0,8 mm",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_943_einstreuquarz_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_944_einstreuquarz",
-    sourceIds: ["src_prod_caparol_disboxid_944_einstreuquarz_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. A friss alap- +eacute;s bevonatr+eacute;tegek besz+oacute;r+aacute;s+aacute;hoz, cs+uacute;sz+aacute;smentes bevonatok k+eacute;sz+iacute;t+eacute;se eset+eacute;n. Szemcsem+eacute;ret: 0,7 - 1,2 mm",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_944_einstreuquarz_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_946_moertelquarz",
-    sourceIds: ["src_prod_caparol_disboxid_946_moertelquarz_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Tűzi sz+aacute;r+iacute;t+aacute;s+uacute; kvarchomok. Speci+aacute;lisan epoxibeton k+eacute;sz+iacute;t+eacute;s+eacute;hez. Szemcsem+eacute;ret: 0,25 - 2 mm",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_946_moertelquarz_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_947_slidestop",
-    sourceIds: ["src_prod_caparol_disboxid_947_slidestop_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "Cs+uacute;sz+aacute;sg+aacute;tl+oacute; kieg+eacute;sz+iacute;tőanyag Disbon 405 Klarsiegel +eacute;s Disbon PU-Aquasiegel 458-hoz.",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_947_slidestop_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_disboxid_948_color_chips",
-    sourceIds: ["src_prod_caparol_disboxid_948_color_chips_page"],
-    sections: [
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "30 g/m2 Szín Fekete, fehér, világos szürke, piros, világos kék, sárga.",
-        ],
-        sourceIds: ["src_prod_caparol_disboxid_948_color_chips_page"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_dupa_inn_n1",
     sourceIds: ["src_prod_caparol_dupa_inn_n1_page"],
     sections: [
@@ -3130,156 +2027,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "200 ml/m2 Fényességi fok Matt Szín Fehér",
         ],
         sourceIds: ["src_prod_caparol_dupa_inn_n1_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_fibrosil",
-    sourceIds: ["src_caparol_fibrosil_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Repedésáthidaló elasztikus bevonatok leírás Műszaki információ Nr. 166 A FibroSil repedésáthidaló anyag, alkalmas a vakolatfelületek illetve régi hordké- pes diszperziós bevonatok átdolgozására. A FibroSil átdolgozható olyan diszper - ziós festékekkel, mint pl. Muresko-plus, Amphisilan vagy ThermoSan. Beltérben a FibroSil struktúrált bevonatként alkalmazható és Caparol valamennyi beltéri festék- kel, mint pl. Deco-Lasur matt/fényes átdolgozható. ■ Vízzel hígítható, környezetbarát, enyhe szagú ■ Időjárásálló ■ Aktív kapilláris szár.",
-        ],
-        sourceIds: ["src_caparol_fibrosil_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alap, ill. közbenső réteg: Max. 10% vízzel hígított FibroSil homlokzatfestékkel. Amennyiben az alapfelület minősége megköveteli, egy kiegészítő közbenső réte- get lehet felvinni. Záróréteg: T etszés szerint AmphiSilan, Muresko, Amphisilan, PermaSilan vagy ThermoSan homlokzatfestékkel. Beltérben valamenyi Caparol beltéri falfestékkel vagy Deco Lasur matt/fényes festékkel. Ecsettel, hengerrel. A sima alapfelületen ecsettel, keresztező mozdulatokkal lehet kialakítani az egyenletes felületi struktúrát. A struktúrált alapfelületen pedig henger használata javasolt. A festéket felhasználás előtt jól fel kell keverni. A szerszámok tisztítása vízzel történjen. Kb. 600-800 g/m 2 rétegenként sima.",
-        ],
-        sourceIds: ["src_caparol_fibrosil_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes felületek bevonására olyan helyeken, amelyek az időjá-.",
-        ],
-        sourceIds: ["src_caparol_fibrosil_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Kötőanyag:.",
-        ],
-        sourceIds: ["src_caparol_fibrosil_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_indeko_w",
-    sourceIds: ["src_caparol_indeko_w_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Beltéri falfestékek )) Latex, penészgátló, epoxi és speciális falfestékek leírás Műszaki információ Nr. 800 Magas értékű, mosásálló festék, gombás beltéri felületek javítására, valamint gom- básodásnak kitett felületeknél (sörfőzde, tejgazdaság, vágóhíd, konzervgyár stb.) megelőzésre alkalmazható beltéri festék. Szintén felhasználható privát lakótér higi- éniájának megőrzéséhez is. ■ Vízzel hígítható és enyhe szagú ■ MSZ EN 13 300 szerint mosásálló, 3. osztály ■ Oldószermentes ■ Diffúzióképes (sd(0,1 m) ■ Hosszantartó fungicid és baktericid tulajdonságú ■ Élettanilag.",
-        ],
-        sourceIds: ["src_caparol_indeko_w_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonság: Bizonyítvány: Kötőanyag: Sűrűség:.",
-        ],
-        sourceIds: ["src_caparol_indeko_w_tds"],
-      },
-      {
-        heading: "Előkészítés",
-        paragraphs: [
-          "Felület-előkészítés a Műszaki adatlap szerint: Rétegfelépítés: Felhordás: Anyagfelhasználás: Alsó feldolgozási hőmérséklethatár: Száradási idő: Átvonhatóság: Figyelem! Alkalmas alapfelületek Az alapfelületnek száraznak, tisztának, hordképesnek és egyéb anyagok- tól mentesnek kell lennie. Stabil, normál szívóképességű vakolatokat előkészítés nélkül lehet bevonni. Porzó, málló, szívó vakolatokra alapozás Caparol Tiefgrund LF-el. Alapozás Capagrund LF-el. Mészkőlerakódást lecsiszolni, leportalanítani és Caparol-Mélyalapozó TB-vel alapozni. Szívó lapokra alapozás Caparol Mélyalapozó TB-vel. Sűrű, sima lapokra tapadás- közvetítő alapozás Capagrund LF-el. Habarcséleket lecsiszolni. Alapozás Capagrund LF-el. Vízzel oldódó elszíneződő alapan.",
-        ],
-        sourceIds: ["src_caparol_indeko_w_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Gombás felületet mechanikusan eltávolítani, Capatox-al átmosni és jól megszá- radni hagyni. Alap, ill. közbenső bevonat: Indeko-W 10% vízzel hígítva Záró bevonat: Indeko-W 5% vízzel hígítva. Ecsettel, hengerrel. Munkaeszközöket használat után vízzel tisztítani. Kb. 150 ml/m2˛ sima felületre, rétegenként. Durvább felületre értelemszerűen több. Pontos mennyiség csak próbafelhordással állapítható meg. A bevonat vastagsága nagymértékben befolyásolja a baktericid és fungicid hatás tartósságát, ezért az Indeko-W-t mindig bőven és egyenletesen kell felhordani. A megadott értékeknél kevesebb mennyiségben nem alkalmazható. +5 °C környezeti és alaphőmérséklet. +20 °C és 65 % relatív páratartalom m.",
-        ],
-        sourceIds: ["src_caparol_indeko_w_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_indeko_w_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_isodeck",
-    sourceIds: ["src_caparol_isodeck_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Beltéri falfestékek )) Latex, penészgátló, epoxi és speciális falfestékek leírás Műszaki információ Nr. 848 Speciális beltéri falfesték a nikotinszennyezett fal- és mennyezetfelületek gyors és gazdaságos renoválásához. IsoDeck elszigeteli és megszünteti a nikotinos elszíne- ződéseket, amelyek a hagyományos vízzel hígítható festékek alkalmazásakor felol- dódnának és foltosodást okoznának. IsoDeck oldószermentes és gyorsan szárad. Ezért főleg lakások, irodák, éttermek, szállodák, stb. Renoválására különösen alkalmas, mivel a rétegek felhordása között nincsenek hosszú.",
-        ],
-        sourceIds: ["src_caparol_isodeck_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: Tulajdonságai: Kötőanyag: Fény: Szín:.",
-        ],
-        sourceIds: ["src_caparol_isodeck_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: i terület: Tulajdonságai: Kötőanyag: Fény: Szín:.",
-        ],
-        sourceIds: ["src_caparol_isodeck_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Raktározás:.",
-        ],
-        sourceIds: ["src_caparol_isodeck_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_kd_rillenputz",
-    sourceIds: ["src_caparol_kd_rillenputz_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Vékonyvakolatok )) Diszperziós termékek leírás Műszaki információ Nr. A05 Rusztikus, dekoratív struktúr-vakolat homlokzati felületekre. Alkalmas Capatect hő- szigetelő rendszerek fedő rétegeként. 20 (2,0 mm) 30 (3,0 mm) Diszperzió Fehér Hűvös, de fagymentes helyen. Eredeti, lezárt edényben 24 hónapig tárolható. Veszélyes hulladék tárolóban. Nem szabad a háztartási hulladékkal együtt elhelyez- ni. Csatornarendszerbe, nyílt vizekbe nem kerülhet. A teljesen beszáradt anyagot építési vagy háztartási hulladékként lehet elhelyezni. 25 kg.",
-        ],
-        sourceIds: ["src_caparol_kd_rillenputz_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i területek: Szemcseméretek: Kötőanyag: Szín:.",
-        ],
-        sourceIds: ["src_caparol_kd_rillenputz_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alapozás: Caparol-vakolatalapozóval, max. 5 %-ban vízzel hígítva, a vakolat szí- néhez közeli színárnyalatban. Fedő bevonat: Caparol-rusztikvakolat a megfelelő szemcseméretben. Caparol-rusztikvakolatot, ha szükséges max. 3 %-ban vízzel hígítva simítóval tör - ténő felhordáshoz megfelelő sűrűségűre beállítani és rozsdamentes glettvassal egyenletesen felhordani. A felhordott réteget a szemcseméretnek megfelelően le- húzni és még nedvesen műanyag simítóval körkörösen, vízszintesen vagy függő- legesen eldolgozni. Rozsdamentes acél és műanyag glettvas. Rétegfelépítés: Felhordás: Szerszámok: --- PAGE 2 --- 280 Műszaki információ Nr. A05 Az alapfelület és a környezet egyaránt min. +5 °C legyen. Kö.",
-        ],
-        sourceIds: ["src_caparol_kd_rillenputz_tds"],
-      },
-      {
-        heading: "Korlátozások",
-        paragraphs: [
-          "Korlátozások a Műszaki adatlap szövegéből: Nem alkalmas vízszintes, csapadékvíznek kitett felületek bevonására.",
-        ],
-        sourceIds: ["src_caparol_kd_rillenputz_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Feldolgozás.",
-        ],
-        sourceIds: ["src_caparol_kd_rillenputz_tds"],
       }
     ],
   },
@@ -3325,19 +2072,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
     ],
   },
   {
-    productId: "prod_caparol_meradur_innenkalkfarbe",
-    sourceIds: ["src_prod_caparol_meradur_innenkalkfarbe_page"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "25 kg 300-400 g/m2/2 réteg fehérI. színcsoport",
-        ],
-        sourceIds: ["src_prod_caparol_meradur_innenkalkfarbe_page"],
-      }
-    ],
-  },
-  {
     productId: "prod_caparol_meradur_szinezofestek",
     sourceIds: ["src_prod_caparol_meradur_szinezofestek_page"],
     sections: [
@@ -3347,26 +2081,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "400-700 g/m2 Szín Schönbrunnergelb, Oxydrot, Oxydschwarz, VanDyckbraun, Umbra, Goldocker, Oxydgrün, Echtgelb, Kobaltblau",
         ],
         sourceIds: ["src_prod_caparol_meradur_szinezofestek_page"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_permasilan_nqg",
-    sourceIds: ["src_caparol_permasilan_nqg_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Repedésáthidaló elasztikus bevonatok leírás Műszaki információ Nr. 161 Jó vízgőz-áteresztő, repedésáthidaló homlokzatfesték vakolatok felületi repedései esetére. FibroSil-al kombinálva használható a vakolatrétegeken átmenő repedé- seknél is. /A2 kategória/ Használható ásványi vakolaton P II. és P III. habarcsoknál, beton, és intakt plaszto elasztikus alakítható rugalmas anyaggal bevont felületeken, hordképes régi festéseken és hőszigetelő rendszereknél. ■ Vízzel hígítható, környezetkímélő és enyhe szagú. ■ Időjárásálló. ■ Kiváló.",
-        ],
-        sourceIds: ["src_caparol_permasilan_nqg_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: a ecsettel vagy hengerrel. Szerszámokat használat után vízzel tisztítsuk. Minimális felhasználási mennyiség 200 ml/m 2 munkafolyamatonként sima alap- felüleleten. Durvább felületen ennek megfelelően több. A pontos felhasználási mennyiséget próbafestéssel lehet meghatározni. A feldolgozásnál és száradásnál: +5 °C az alapfelületre és a levegőre. +20 °C-nal és 65 % relatív levegőnedvességnél 12 óra után felületszáraz és új- rafesthető. T eljes átkeményedés és terhelhetőség kb. 3 nap után. Alacsonyabb hőmérsékletnél és magasabb légnedvességnél az időtartam hosszabb lesz. Nem ajánlatos erős napsütésnél, szélben, ködben, esetleges esőben vagy éjjeli fagy előtt feldolgozni. „Nedves a nedvesre” t.",
-        ],
-        sourceIds: ["src_caparol_permasilan_nqg_tds"],
       }
     ],
   },
@@ -3394,87 +2108,6 @@ export const caparolProfessionalDescriptions: ProductProfessionalDescriptionEnri
           "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Biztonsági előírások:.",
         ],
         sourceIds: ["src_caparol_primalon_gruener_abbeizer_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_silitol_fassadenspachtel",
-    sourceIds: ["src_caparol_silitol_fassadenspachtel_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Alapfelületek javítása )) Homlokzati glettek leírás Műszaki információ Nr. A700 A homlokzatok renoválása esetén a nagyobb egyenetlenségek, odvasságok és repedések kisimítására, beton- és durva, sérült vakolati felületek simára dolgozá- sára. Különösen alkalmas olyan objektumokhoz (simítások), amelyek fedőbevonata Sylitol- vagy Primasil-termék lesz. ■ A Sylitol Fassadenspachtel könnyen feldolgozható ■ Egyenletesen szárad ■ Jó kitöltő képességű ■ Maximálisan felhordható vastagság 15 mm. 0,8 kg/liter. Szürke 10 l / 8 kg. Hűvös, fagymentes h.",
-        ],
-        sourceIds: ["src_caparol_silitol_fassadenspachtel_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Rozsdamentes acél vagy műanyag simítóval a felületre egy munkamenetben felhor- dani. A Sylitol Fassadenspachtel felhasználáskész állapotban kerül kiszerelésre és szükség esetén a feldolgozási konzisztenciára beállítá-sához max. 2 % tiszta vízzel keverhető. Mélyebb felületi kitörések, hibák javítása esetén max. 10 % cementtel keverhető. Kb 0,8 kg/m2/mm. +7 °C alatti hőmérsékletnél (környező levegő, alapfelület, anyag) nem szabad fel- dolgozni. Homlokzati simításokat közvetlenül tűző napsugárzás, eső vagy erős szél esetén nem szabad végezni.",
-        ],
-        sourceIds: ["src_caparol_silitol_fassadenspachtel_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Tárolás:.",
-        ],
-        sourceIds: ["src_caparol_silitol_fassadenspachtel_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_silitol_homlokzatfestek",
-    sourceIds: ["src_caparol_silitol_homlokzatfestek_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Szilikát termékek leírás Műszaki információ Nr. 195 Sylitol Homlokzatfesték alkalmas régi ásványi és szilikát alapú festések renoválá- sára, különösen műemlékvédelem alatt álló épületek esetében, továbbá mész-, mészcement és cementhabarcs vakolatok és terméskő felületek festésére. Sylitol Szilikát-homlokzatfesték alkalmas továbbá vakolatjavító rendszerek fedő festésére. ■ Környezetkímélő ■ Kiválóan vízpára áteresztő ■ Időjárásálló. (Sd(0,1 m) Kálivízüveg szerves stabilizátorokkal. Hűvös és fagymentes helyen, er.",
-        ],
-        sourceIds: ["src_caparol_silitol_homlokzatfestek_tds"],
-      },
-      {
-        heading: "Alkalmazás",
-        paragraphs: [
-          "Felhasználási terület a Műszaki adatlap alapján: i terület: Tulajdonságai: Kötőanyag:.",
-        ],
-        sourceIds: ["src_caparol_silitol_homlokzatfestek_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Az egyenletesn és gyengén szívó alapfelület esetén: Alap: Sylitol Fassadenfarbe 2:1 arányban Sylitol Koncentrátummal hígítva Erősen és egyenletlenül szívó alapfelület esetén: Sylitol Koncentrátum 2:1 arányban vízzel hígítva Alapozás: Sylitol Koncentrátummal, 1:1 arányban vízzel hígítva. Közbülső és fedő rétegek: Sylitol Szilikát homlokzatfesték, max. 5 %-ban Sylitol Koncentrátummal hígítva. Kenéssel, hengerezéssel vagy szórással. Sylitol Színezőfestékkel. A sötét színárnyalatokat gyárilag színeztessük! Sylitol Konzentrátummal. Alapozás: Rétegfelépítés: Felhordás: Színezés: Hígítás: --- PAGE 2 --- 22 Műszaki információ Nr. 195 Kb. 400-700 g/m2 egy közbülső és fedő rétegre. (T ájékoztató jel.",
-        ],
-        sourceIds: ["src_caparol_silitol_homlokzatfestek_tds"],
-      }
-    ],
-  },
-  {
-    productId: "prod_caparol_sylitolr_minera",
-    sourceIds: ["src_caparol_sylitolr_minera_tds"],
-    sections: [
-      {
-        heading: "Termékleírás",
-        paragraphs: [
-          "A Műszaki adatlap szerint a(z) ) Homlokzatfestékek és bevonatok )) Szilikát termékek leírás Műszaki információ Nr. 193 Jól töltő, felület kiegyenlítő homlokzati festések készítésére, közbülső- és fedőré- tegként. Sylitol-Minera kiválóan alkalmas tömött és sima, vagy maratott felületeken tapadást segítő alapozó rétegként szilikát alapú fedő bevonatok alá. ■ OÉSZ szerint időtálló. ■ Repedéseket eltömő, nagy tömörségű. ■ Vízpára- és CO2 -áteresztő. Kiváló eső elleni védelem, víztaszító. ■ Ásványi eredetű alapfelületekkel kovásodik, ezáltal jó tapadás. ■ T ömör, sima alapfelületeke.",
-        ],
-        sourceIds: ["src_caparol_sylitolr_minera_tds"],
-      },
-      {
-        heading: "Felhasználás",
-        paragraphs: [
-          "Alkalmazási tudnivalók a Műszaki adatlap szerint: Alap-, közbülső- és fedő bevonatként max. 5% Sylitol koncentrátummal hígítva bőven felhordva. Az erősen vagy különböző mértékben szívó felületeket előtte 2:1 arányban vízzel hígított Sylitol koncentrátummal alapozva. Sima felületekre kefével, strukturált felületekre hengerrel. A szerszámokat használat után azonnal vízzel, esetleg háztartási mosogatószer hozzáadásával kell tisztítani. A szünetekben a szerszámokat a festékben vagy víz alatt kell tárolni. 400-500 g/m2 rétegenként. A felület szívásától és struktúrájától függően az anyag-.",
-        ],
-        sourceIds: ["src_caparol_sylitolr_minera_tds"],
-      },
-      {
-        heading: "Műszaki adatok",
-        paragraphs: [
-          "Műszaki adatok a Műszaki adatlap szerint: Kiszerelés: Szín:; Fényesség: Kiszerelés:.",
-        ],
-        sourceIds: ["src_caparol_sylitolr_minera_tds"],
       }
     ],
   },

@@ -41,11 +41,19 @@ def ts_str(s: str) -> str:
     return json.dumps(s, ensure_ascii=False)
 
 
+MARKETING_FLUFF_RE = re.compile(
+    r"(?i)\b(?:ideális választás|tökéletes választás|legjobb a piacon|"
+    r"kimagasl[oó](?:an)?|forradalmi|csúcskategóriás)\b"
+)
+
+
 def sanitize(text: str) -> str:
     t = re.sub(r"\s+", " ", (text or "").strip())
     t = t.replace("&", "+").replace('"', "’").replace("'", "’")
     t = t.replace("<", "(").replace(">", ")")
-    return t
+    t = MARKETING_FLUFF_RE.sub("", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    return t.strip()
 
 
 def strip_tags(chunk: str) -> str:
