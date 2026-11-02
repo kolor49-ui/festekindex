@@ -114,6 +114,15 @@ export const sources: Source[] = [
     accessedAt: "2026-10-30",
   },
   {
+    id: "src_baumit_hu",
+    type: "official_website",
+    title: "Baumit Magyarország — hivatalos weboldal",
+    url: "https://baumit.hu/",
+    publisher: "Baumit Kft.",
+    accessedAt: "2026-11-02",
+  },
+
+  {
     id: "src_sika_hu",
     type: "official_website",
     title: "Sika Hungária — hivatalos weboldal",

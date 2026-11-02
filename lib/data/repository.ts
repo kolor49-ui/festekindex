@@ -59,11 +59,40 @@ import {
   dufaProducts,
 } from "./imports/dufaV1";
 import {
+  applyAkzoV1,
+  akzoBrands,
+  akzoProducts,
+} from "./imports/akzoV1";
+import {
+  applyRevcoV1,
+  revcoBrands,
+  revcoProducts,
+} from "./imports/revcoV1";
+import {
+  applyEgrokorrV1,
+  egrokorrBrands,
+  egrokorrProducts,
+} from "./imports/egrokorrV1";
+import {
+  applyBaumitV1,
+  baumitBrands,
+  baumitProducts,
+} from "./imports/baumitV1";
+import {
+  applyCaparolV1,
+  caparolBrands,
+  caparolProducts,
+} from "./imports/caparolV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
   mergeTechnologies,
 } from "./imports/merge";
+
+
+
+
 import { publicListDescription } from "@/lib/seo/publicListCopy";
 
 const SITE_ORIGIN = "https://festekindex.hu";
@@ -89,7 +118,13 @@ const brands = mergeById(
     ),
     remmersBrands,
   ),
-  dufaBrands,
+  mergeById(
+    mergeById(
+      mergeById(dufaBrands, akzoBrands),
+      mergeById(revcoBrands, egrokorrBrands),
+    ),
+    mergeById(baumitBrands, caparolBrands),
+  ),
 );
 const productFamilies = mergeById(
   productFamiliesBase,
@@ -109,7 +144,13 @@ const productsMerged = mergeById(
     ),
     remmersProducts,
   ),
-  dufaProducts,
+  mergeById(
+    mergeById(
+      mergeById(dufaProducts, akzoProducts),
+      mergeById(revcoProducts, egrokorrProducts),
+    ),
+    mergeById(baumitProducts, caparolProducts),
+  ),
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
 const technologies = mergeTechnologies(
@@ -139,9 +180,14 @@ const poli6 = applyPoli6V1(jub95.products, jub95.sources, jub95.relations);
 const poli65 = applyPoli65ReviewV1(poli6.products, poli6.sources, poli6.relations);
 const remmers = applyRemmersV1(poli65.products, poli65.sources, poli65.relations);
 const dufa = applyDufaV1(remmers.products, remmers.sources, remmers.relations);
-const products = dufa.products;
-const relations = dufa.relations;
-const sources = dufa.sources;
+const akzo = applyAkzoV1(dufa.products, dufa.sources, dufa.relations);
+const revco = applyRevcoV1(akzo.products, akzo.sources, akzo.relations);
+const egrokorr = applyEgrokorrV1(revco.products, revco.sources, revco.relations);
+const baumit = applyBaumitV1(egrokorr.products, egrokorr.sources, egrokorr.relations);
+const caparol = applyCaparolV1(baumit.products, baumit.sources, baumit.relations);
+const products = caparol.products;
+const relations = caparol.relations;
+const sources = caparol.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

@@ -124,6 +124,21 @@ export const REMMERS_V1_COUNT = 91;
 /** Düfa / Meffert Hungária overlay (REVIEW wave; HOLD excluded; noindex). */
 export const DUFA_V1_COUNT = 57;
 
+/** AkzoNobel HU (Dulux/Sadolin/Hammerite) overlay (REVIEW; HOLD excluded; noindex). */
+export const AKZO_V1_COUNT = 14;
+
+/** REVCO / Saint-Gobain overlay (REVIEW; HOLD excluded; noindex). */
+export const REVCO_V1_COUNT = 26;
+
+/** EGROKORR overlay (REVIEW; HOLD excluded; noindex; encrypted-PDF SKUs held out). */
+export const EGROKORR_V1_COUNT = 15;
+
+/** Baumit HU overlay (REVIEW; HOLD excluded; noindex). */
+export const BAUMIT_V1_COUNT = 165;
+
+/** Caparol HU overlay (REVIEW; HOLD excluded; noindex). */
+export const CAPAROL_V1_COUNT = 122;
+
 /**
  * Official manufacturer website sources added in v8.1 (sources.ts),
  * outside Festék Bázis enrichment overlays.
@@ -144,7 +159,12 @@ export function expectedProductCountAfterClosure(): number {
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
     REMMERS_V1_COUNT +
-    DUFA_V1_COUNT
+    DUFA_V1_COUNT +
+    AKZO_V1_COUNT +
+    REVCO_V1_COUNT +
+    EGROKORR_V1_COUNT +
+    BAUMIT_V1_COUNT +
+    CAPAROL_V1_COUNT
   );
 }
 
@@ -180,12 +200,21 @@ export function expectedSearchDocumentsAfterClosure(): number {
     POLI_65_REVIEW_COUNT +
     REMMERS_V1_COUNT +
     DUFA_V1_COUNT +
+    AKZO_V1_COUNT +
+    REVCO_V1_COUNT +
+    EGROKORR_V1_COUNT +
+    BAUMIT_V1_COUNT +
+    CAPAROL_V1_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
     V83_POLI_NEW_BRAND_COUNT +
     V84_POLI_REVIEW_NEW_BRAND_COUNT +
-    1 // brand_profitec
+    1 + // brand_profitec
+    2 + // brand_sadolin + brand_hammerite
+    2 + // egrokorr sub-brands shipped: dunaplaszt + sziloplaszt
+    1 + // brand_baumit
+    1 // org_baumit_hungary search doc
   );
 }
 
@@ -224,7 +253,12 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     POLI_6_PASS_COUNT +
     POLI_65_REVIEW_COUNT +
     REMMERS_V1_COUNT +
-    DUFA_V1_COUNT
+    DUFA_V1_COUNT +
+    AKZO_V1_COUNT +
+    REVCO_V1_COUNT +
+    EGROKORR_V1_COUNT +
+    BAUMIT_V1_COUNT +
+    CAPAROL_V1_COUNT
   );
 }
 

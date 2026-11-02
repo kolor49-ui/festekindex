@@ -1,0 +1,160 @@
+import type { ProductDescriptionEnrichment } from "../festekBazisEnrichmentV1/types";
+
+export const revcoDescriptions: ProductDescriptionEnrichment[] = [
+  {
+    productId: "prod_revco_alfa_belteri_diszperzios_falfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) ALFA beltéri falfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, nedves ruhával. Eltarthatósági idő: Eredeti csomagolásban, fagymentes helyen, a gyártástól számított 18 hónapig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_alfa_belteri_diszperzios_falfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) ALFA beltéri falfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, nedves ruhával. Eltarthatósági idő: Eredeti csomagolásban, fagymentes helyen, a gyártástól számított 18 hónapig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_aura_premium_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) AURA prémium vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomago- lásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_aura_premium_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) AURA prémium vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomago- lásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_c1t_basic_csemperagaszto",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO C1T BASIC egy portlandcement bázisú csemperagasztó, mely ideális kisméretű kerámialapokhoz, beltérben, cement- és mészcement kötésű felületeken.",
+    sourceSummarySourceIds: ["src_prod_revco_c1t_basic_csemperagaszto_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO C1T BASIC egy portlandcement bázisú csemperagasztó, mely ideális kisméretű kerámialapokhoz, beltérben, cement- és mészcement kötésű felületeken.",
+  },
+  {
+    productId: "prod_revco_c20_estrich",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO C20 ESTRICH egy magas minőségű, portlandcement bázisú, tulajdonságjavító anyagokat tartalmazó, az aljzat kiegyenlítésére szolgáló beton.",
+    sourceSummarySourceIds: ["src_prod_revco_c20_estrich_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO C20 ESTRICH egy magas minőségű, portlandcement bázisú, tulajdonságjavító anyagokat tartalmazó, az aljzat kiegyenlítésére szolgáló beton.",
+  },
+  {
+    productId: "prod_revco_c2te_flex_burkolatragaszto",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO C2TE FLEX egy portlandcement bázisú, flexibilis burkolatragasztó, mely ajánlott fokozott igénybevételű felületekre, kis és közepes méretű (max. 900 cm 2 ), alacsony nedvszívó képességű burkolólapokhoz, padló és falfűtésre is, cement és mész-cement kötésű felületeken, beltérben és fedett kültéren.",
+    sourceSummarySourceIds: ["src_prod_revco_c2te_flex_burkolatragaszto_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO C2TE FLEX egy portlandcement bázisú, flexibilis burkolatragasztó, mely ajánlott fokozott igénybevételű felületekre, kis és közepes méretű (max. 900 cm 2 ), alacsony nedvszívó képességű burkolólapokhoz, padló és falfűtésre is, cement és mész-cement kötésű felületeken, beltérben és fedett kültéren.",
+  },
+  {
+    productId: "prod_revco_deco_brocade_remixhez",
+    sourceSummary: "A Műszaki adatlap szerint a(z) Az összes DECO adalékanyag esetén érvényes, hogy a bekevert eiben vizsgálja! DECO GLITTER MINI - festékbe keverhető csillámadalék.",
+    sourceSummarySourceIds: ["src_revco_deco_brocade_remixhez_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) Az összes DECO adalékanyag esetén érvényes, hogy a bekevert eiben vizsgálja! DECO GLITTER MINI - festékbe keverhető csillámadalék.",
+  },
+  {
+    productId: "prod_revco_exterior_homlokzatfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) EXTERIOR homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_exterior_homlokzatfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) EXTERIOR homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_hf25_falazohabacs",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO HF25 FALAZÓHABARCS magas minőségű, ásványi alapú, por állagú, tulajdonságjavító adalékokat tartalmazó zsákos kiszerelésű szárazhabarcs, mely alkalmas falazóelemek összeépítésére (tégla, beton, kő), kézi és gépi felhordásra HF25 minőségben, kül- és beltérben egyaránt.",
+    sourceSummarySourceIds: ["src_prod_revco_hf25_falazohabacs_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO HF25 FALAZÓHABARCS magas minőségű, ásványi alapú, por állagú, tulajdonságjavító adalékokat tartalmazó zsákos kiszerelésű szárazhabarcs, mely alkalmas falazóelemek összeépítésére (tégla, beton, kő), kézi és gépi felhordásra HF25 minőségben, kül- és beltérben egyaránt.",
+  },
+  {
+    productId: "prod_revco_neo_akril_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) NEO+ SPACHTEL ÉS STRUKTÚRA vakolat et és az ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. A mintaanyagokon lévő színek tájékoztató jellegűek, az anyag szemcsézettségéből,.",
+    sourceSummarySourceIds: ["src_revco_neo_akril_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) NEO+ SPACHTEL ÉS STRUKTÚRA vakolat et és az ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. A mintaanyagokon lévő színek tájékoztató jellegűek, az anyag szemcsézettségéből,.",
+  },
+  {
+    productId: "prod_revco_optimix_glett",
+    sourceSummary: "A Műszaki adatlap szerint a(z) OPTIMIX glett meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Gyártástól számított 12 hónap.",
+    sourceSummarySourceIds: ["src_revco_optimix_glett_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) OPTIMIX glett meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Gyártástól számított 12 hónap.",
+  },
+  {
+    productId: "prod_revco_origo_belteri_diszperzios_falfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) ORIGO beltéri falfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, száraz ruhával. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_origo_belteri_diszperzios_falfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) ORIGO beltéri falfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, száraz ruhával. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_primer_falimpregnalo",
+    sourceSummary: "A Műszaki adatlap szerint a(z) PRIMER falimpregnáló meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_primer_falimpregnalo_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) PRIMER falimpregnáló meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_primer_vakolatalapozo",
+    sourceSummary: "A Műszaki adatlap szerint a(z) PRIMER vakolatalapozó ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. Ügyeljünk arra, hogy bőrre, szembe ne kerüljön, ha mégis előfordul, bő vízzel mossuk le, szükség esetén forduljunk szakorvoshoz. Mindig az anyaghoz javasolt, színezett alapozót használjunk. TUDNIVALÓK: FIGYELEM! Műszaki tájékoztató A termékeinkhez tart.",
+    sourceSummarySourceIds: ["src_revco_primer_vakolatalapozo_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) PRIMER vakolatalapozó ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. Ügyeljünk arra, hogy bőrre, szembe ne kerüljön, ha mégis előfordul, bő vízzel mossuk le, szükség esetén forduljunk szakorvoshoz. Mindig az anyaghoz javasolt, színezett alapozót használjunk. TUDNIVALÓK: FIGYELEM! Műszaki tájékoztató A termékeinkhez tart.",
+  },
+  {
+    productId: "prod_revco_remix_cover_labazat_es_betonfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) REMIX COVER lábazat- és betonfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_remix_cover_labazat_es_betonfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) REMIX COVER lábazat- és betonfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_remix_granit_labazati_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) REMIX lábazati- és díszítővakolat enyhén sűrűbb állagú, a könnyebb feldolgozhatóság érdekében adjon hozzá 1-2 dl csapvizet vagy REVCO REMIX kötőanyagot vödrönként. Az „N” natúr kő egy természetes színű kőzúzalék, ebből adódóan a színe eltérhet a mintákon megadottól. ALAPFELÜLET JELLEMZŐI Az alapfelület tartósan por- és szennyeződésmentes, valamint teljes rétegvastagságában száraz legyen. Vakolt felület és beton falazat esetén az alapfelület legyen terhelhető, mozgás- és zsugorodásmentes. A felületnek simítottnak vagy glettel.",
+    sourceSummarySourceIds: ["src_revco_remix_granit_labazati_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) REMIX lábazati- és díszítővakolat enyhén sűrűbb állagú, a könnyebb feldolgozhatóság érdekében adjon hozzá 1-2 dl csapvizet vagy REVCO REMIX kötőanyagot vödrönként. Az „N” natúr kő egy természetes színű kőzúzalék, ebből adódóan a színe eltérhet a mintákon megadottól. ALAPFELÜLET JELLEMZŐI Az alapfelület tartósan por- és szennyeződésmentes, valamint teljes rétegvastagságában száraz legyen. Vakolt felület és beton falazat esetén az alapfelület legyen terhelhető, mozgás- és zsugorodásmentes. A felületnek simítottnak vagy glettel.",
+  },
+  {
+    productId: "prod_revco_s1_max_burkolatragaszto",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO S1 MAX egy portlandcement bázisú extra flexibilis burkolatragasztó, mely ideális nagy méretű (3600 cm 2 -nél nagyobb), alacsony nedvszívó képességű burkolólapokhoz, cement és mész-cement kötésű felületeken, kül- és beltérben, valamint intenzív forgalomnak kitett helyekre is. Felhasználható padlóra, falra, padló vagy falfűtéses felületre, megfelelően merevített gipszkarton, illetve CK lapo",
+    sourceSummarySourceIds: ["src_prod_revco_s1_max_burkolatragaszto_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO S1 MAX egy portlandcement bázisú extra flexibilis burkolatragasztó, mely ideális nagy méretű (3600 cm 2 -nél nagyobb), alacsony nedvszívó képességű burkolólapokhoz, cement és mész-cement kötésű felületeken, kül- és beltérben, valamint intenzív forgalomnak kitett helyekre is. Felhasználható padlóra, falra, padló vagy falfűtéses felületre, megfelelően merevített gipszkarton, illetve CK lapo",
+  },
+  {
+    productId: "prod_revco_silicate_falimpregnalo",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICATE falimpregnáló meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Eredeti csomagolásban, fagymentes helyen a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_silicate_falimpregnalo_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICATE falimpregnáló meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Eltarthatósági idő: Eredeti csomagolásban, fagymentes helyen a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_silicate_homlokzatfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICATE homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_silicate_homlokzatfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICATE homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_silicate_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICATE SPACHTEL ÉS STRUKTÚRA vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_silicate_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICATE SPACHTEL ÉS STRUKTÚRA vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_silicate_vakolatalapozo",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICATE vakolatalapozó ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. Ügyeljünk arra, hogy bőrre, szembe ne kerüljön, ha mégis előfordul, bő vízzel mossuk le, szükség esetén forduljunk szakorvoshoz. TUDNIVALÓK: FIGYELEM! Mindig az anyaghoz javasolt, színezett alapozót használjunk. Műszaki tájékoztató A termékeinkhez tart.",
+    sourceSummarySourceIds: ["src_revco_silicate_vakolatalapozo_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICATE vakolatalapozó ismertetőt eddigi legfrissebb tapasztalataink és ismereteink alapján készítettük, ez azonban nem mentesíti a felhasználót előzetes gyakorlati próba és szín ellenőrzés elvégzése alól. A felhordás megkezdése után színreklamációt nem fogadunk el. Ügyeljünk arra, hogy bőrre, szembe ne kerüljön, ha mégis előfordul, bő vízzel mossuk le, szükség esetén forduljunk szakorvoshoz. TUDNIVALÓK: FIGYELEM! Mindig az anyaghoz javasolt, színezett alapozót használjunk. Műszaki tájékoztató A termékeinkhez tart.",
+  },
+  {
+    productId: "prod_revco_silicon_homlokzatfestek",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICON homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_silicon_homlokzatfestek_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICON homlokzatfesték meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 1 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_silicon_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) SILICON SPACHTEL ÉS STRUKTÚRA vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_silicon_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) SILICON SPACHTEL ÉS STRUKTÚRA vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_thermo_line_hoszigetelo_rendszer",
+    sourceSummary: "A hivatalos termékoldal szerint: * grafitos EPS 80 hőszigetelő lemezhez a REVCO FIX PREMIUM ásványi kötőanyagú homlokzati hőszigetelő rendszerragasztó javasolt!.",
+    sourceSummarySourceIds: ["src_prod_revco_thermo_line_hoszigetelo_rendszer_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: * grafitos EPS 80 hőszigetelő lemezhez a REVCO FIX PREMIUM ásványi kötőanyagú homlokzati hőszigetelő rendszerragasztó javasolt!.",
+  },
+  {
+    productId: "prod_revco_vakolohabarcs",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO VAKOLÓHABARCS magas minőségű, ásványi bázisú, mészcement kötésű, finomszemcsés alapvakolat, mely alkalmas régi és új épületek külső és belső falfelületeinek gépi vagy kézi vakolására. Könnyen eldolgozható, anyagában besimítható, nagy vakolási teljesítményt biztosító, gazdaságos alapvakolat.",
+    sourceSummarySourceIds: ["src_prod_revco_vakolohabarcs_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO VAKOLÓHABARCS magas minőségű, ásványi bázisú, mészcement kötésű, finomszemcsés alapvakolat, mely alkalmas régi és új épületek külső és belső falfelületeinek gépi vagy kézi vakolására. Könnyen eldolgozható, anyagában besimítható, nagy vakolási teljesítményt biztosító, gazdaságos alapvakolat.",
+  },
+  {
+    productId: "prod_revco_vario_akril_vakolat",
+    sourceSummary: "A Műszaki adatlap szerint a(z) VARIO+ SPACHTEL, STRUKTÚRA ÉS ROLL PUTZ vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+    sourceSummarySourceIds: ["src_revco_vario_akril_vakolat_tds"],
+    editorialSummary: "A Műszaki adatlap szerint a(z) VARIO+ SPACHTEL, STRUKTÚRA ÉS ROLL PUTZ vakolat meghosszabbodnak, magasabb hőmérséklet és alacsonyabb páratartalom esetén a száradási tulajdonságok csökkennek. Tisztítás: Amennyiben szükséges, finom szőrű kefével, tiszta vízzel, zsíros szennyeződés esetén enyhe mosószeres vízzel tisztítható. Eltarthatósági idő: Eredeti bontatlan csomagolásban, fagymentes helyen, a gyártástól számított 2 évig. A gyártási dátum a vödör oldalán található.",
+  },
+  {
+    productId: "prod_revco_winter_vakolatadalek",
+    sourceSummary: "A hivatalos termékoldal szerint: A REVCO WINTER vakolatadalék gyárilag előkevert, speciális adalék anyag, amely segíti, gyorsítja a diszperziós kötőanyagú vakolatok felületének kötését alacsony hőmérsékleten. Segítségével a vakolatok 0°C-ig felhasználhatóak. Az adalék elősegíti a vakolat felületi film képződését, ezáltal alacsony hőmérséklet és magas páratartalom esetén csökkenti a színfoltosodás és a kötőanyag kioldódás veszélyé",
+    sourceSummarySourceIds: ["src_prod_revco_winter_vakolatadalek_page"],
+    editorialSummary: "A hivatalos termékoldal szerint: A REVCO WINTER vakolatadalék gyárilag előkevert, speciális adalék anyag, amely segíti, gyorsítja a diszperziós kötőanyagú vakolatok felületének kötését alacsony hőmérsékleten. Segítségével a vakolatok 0°C-ig felhasználhatóak. Az adalék elősegíti a vakolat felületi film képződését, ezáltal alacsony hőmérséklet és magas páratartalom esetén csökkenti a színfoltosodás és a kötőanyag kioldódás veszélyé",
+  }
+];

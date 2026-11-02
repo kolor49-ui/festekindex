@@ -1,0 +1,10 @@
+export { baumitProducts } from "./products";
+export { baumitSources } from "./sources";
+export { baumitRelations } from "./relations";
+export { baumitDescriptions } from "./descriptions";
+export { baumitProfessionalDescriptions } from "./professionalDescriptions";
+export { baumitBrands } from "./brands";
+export { applyBaumitV1 } from "./apply";
+export const BAUMIT_V1_COUNT = 165;
+export const BAUMIT_V1_PASS_COUNT = 0;
+export const BAUMIT_V1_REVIEW_COUNT = 165;

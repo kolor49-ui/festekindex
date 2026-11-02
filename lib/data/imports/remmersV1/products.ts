@@ -421,7 +421,7 @@ export const remmersProducts: Product[] = [
   {
     id: "prod_remmers_facade_cream_25_546305",
     type: "product",
-    slug: "facade-cream-25",
+    slug: "facade-cream-25-546305",
     name: "Facade Cream 25",
     shortDescription: "A(z) Facade Cream 25 a Műszaki adatlap szerint: Krémállagú hidrofobizáló impregnálószer [basic].",
     officialUrl: "https://www.remmers.hu/hu/e%CC%81pueletek-e%CC%81s-talajve%CC%81delem/felu%CC%81ji%CC%81ta%CC%81s/homlokzatok-felu%CC%81ji%CC%81ta%CC%81sa/vi%CC%81za%CC%81llo%CC%81i%CC%81to%CC%81szer/facade-cream-25/p/000000000000546305",
@@ -437,7 +437,7 @@ export const remmersProducts: Product[] = [
   {
     id: "prod_remmers_facade_cream_25_70713",
     type: "product",
-    slug: "facade-cream-25",
+    slug: "facade-cream-25-70713",
     name: "Façade Cream 25",
     shortDescription: "Felhasználási terület: Ásványi alapfelületek impregnálására Homlokzatok védelme csapóeső ellen. A szennyeződési és zöldülési hajlam csökkentése Porózusos. ásványi építőanyagok…",
     officialUrl: "https://www.remmers.hu/hu/e%CC%81pueletek-e%CC%81s-talajve%CC%81delem/felu%CC%81ji%CC%81ta%CC%81s/homlokzatok-felu%CC%81ji%CC%81ta%CC%81sa/vi%CC%81za%CC%81llo%CC%81i%CC%81to%CC%81szer/facade-cream-25/p/000000000000070713",

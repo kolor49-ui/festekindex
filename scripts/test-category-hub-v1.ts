@@ -150,11 +150,11 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 53, f: 2, b: 7, o: 6, t: 4, s: 1, k: 0 },
-  cat_homlokzat: { p: 65, f: 2, b: 10, o: 5, t: 4, s: 5, k: 0 },
-  cat_dekor: { p: 107, f: 2, b: 14, o: 6, t: 4, s: 5, k: 0 },
-  cat_epitesi: { p: 135, f: 0, b: 12, o: 4, t: 0, s: 0, k: 0 },
-  cat_ipari: { p: 30, f: 2, b: 5, o: 4, t: 5, s: 11, k: 0 },
+  cat_faipar: { p: 93, f: 2, b: 12, o: 9, t: 4, s: 1, k: 0 },
+  cat_homlokzat: { p: 187, f: 2, b: 13, o: 7, t: 4, s: 5, k: 0 },
+  cat_dekor: { p: 137, f: 2, b: 20, o: 10, t: 4, s: 5, k: 0 },
+  cat_epitesi: { p: 282, f: 0, b: 20, o: 8, t: 0, s: 0, k: 0 },
+  cat_ipari: { p: 33, f: 2, b: 6, o: 5, t: 5, s: 11, k: 0 },
   cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
   cat_padlo: { p: 6, f: 0, b: 2, o: 2, t: 3, s: 2, k: 0 },
   cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
@@ -244,7 +244,7 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 53);
+  assert.equal(p.products.length, 93);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_lazuran"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_poli_boroka"));
@@ -282,7 +282,7 @@ section("Faipari Brand separation");
   // Product-derived company navigation (not omitted beside Brands)
   assert.ok(model.organizationContext);
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 6);
+  assert.equal(model.organizationContext!.unified.length, 9);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.id === "org_festek_bazis_zrt",
@@ -319,12 +319,12 @@ section("Homlokzat company navigation");
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_jub_hu"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_poli_farbe"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_meffert_hungaria"));
-  assert.equal(p.derivedOrganizations.length, 5);
+  assert.equal(p.derivedOrganizations.length, 7);
   assert.equal(p.directOrganizations.length, 0);
   const model = buildCategoryHubModel(p.category)!;
   assert.ok(model.organizationContext, "Homlokzat must expose Cégek");
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 5);
+  assert.equal(model.organizationContext!.unified.length, 7);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.href === "/cegek/festek-bazis-zrt",
@@ -373,15 +373,11 @@ section("Dekor / 7016 safety");
   // 7016 resolves manufacturer via Family, not fake Brand
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   const model = buildCategoryHubModel(p.category)!;
-  assert.equal(model.organizationContext?.mode, "split");
+  // With multi-manufacturer P1 overlays, every dekor org has products → unified
+  assert.equal(model.organizationContext?.mode, "unified");
   assert.ok(
-    model.organizationContext!.productOrgs.some(
+    model.organizationContext!.unified.some(
       (o) => o.id === "org_festek_bazis_zrt",
-    ),
-  );
-  assert.ok(
-    model.organizationContext!.additionalOrgs.every(
-      (o) => o.id !== "org_festek_bazis_zrt",
     ),
   );
   const html = renderToStaticMarkup(
@@ -391,7 +387,6 @@ section("Dekor / 7016 safety");
   assert.ok(html.includes("7016"));
   assert.ok(html.includes("Cégek"));
   assert.ok(html.includes('href="/cegek/festek-bazis-zrt"'));
-  assert.ok(html.includes("Egyéb cégek"));
   assert.ok(!html.includes("Tulajdonos"));
   assert.ok(!html.includes("Képviselet"));
   // Filterable browser: no family-group dump / Termékcsaládok secondary

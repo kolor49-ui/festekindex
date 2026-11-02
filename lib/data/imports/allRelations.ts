@@ -13,6 +13,11 @@ import { poli6Relations } from "./poli6V1/relations";
 import { poli65ReviewRelations } from "./poli65ReviewV1/relations";
 import { remmersRelations } from "./remmersV1/relations";
 import { dufaRelations } from "./dufaV1/relations";
+import { akzoRelations } from "./akzoV1/relations";
+import { revcoRelations } from "./revcoV1/relations";
+import { egrokorrRelations } from "./egrokorrV1/relations";
+import { baumitRelations } from "./baumitV1/relations";
+import { caparolRelations } from "./caparolV1/relations";
 
 export const allRelations = mergeRelationsByCanonicalKey(
   mergeRelationsByCanonicalKey(
@@ -21,18 +26,36 @@ export const allRelations = mergeRelationsByCanonicalKey(
         mergeRelationsByCanonicalKey(
           mergeRelationsByCanonicalKey(
             mergeRelationsByCanonicalKey(
-              mergeRelationsByCanonicalKey(relationsBase, festekBazisV02Seed.relations),
-              festekBazisEnrichmentV1.relations,
+              mergeRelationsByCanonicalKey(
+                mergeRelationsByCanonicalKey(
+                  mergeRelationsByCanonicalKey(
+                    mergeRelationsByCanonicalKey(
+                      mergeRelationsByCanonicalKey(
+                        mergeRelationsByCanonicalKey(
+                          relationsBase,
+                          festekBazisV02Seed.relations,
+                        ),
+                        festekBazisEnrichmentV1.relations,
+                      ),
+                      ppgTrilak42Relations,
+                    ),
+                    jub95Relations,
+                  ),
+                  poli6Relations,
+                ),
+                poli65ReviewRelations,
+              ),
+              remmersRelations,
             ),
-            ppgTrilak42Relations,
+            dufaRelations,
           ),
-          jub95Relations,
+          akzoRelations,
         ),
-        poli6Relations,
+        revcoRelations,
       ),
-      poli65ReviewRelations,
+      egrokorrRelations,
     ),
-    remmersRelations,
+    baumitRelations,
   ),
-  dufaRelations,
+  caparolRelations,
 );

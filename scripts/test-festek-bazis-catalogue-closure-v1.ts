@@ -163,7 +163,12 @@ section("Baselines / counts");
       !p.id.startsWith("prod_jub_") &&
       !p.id.startsWith("prod_poli_farbe_") &&
       !p.id.startsWith("prod_remmers_") &&
-      !p.id.startsWith("prod_dufa_"),
+      !p.id.startsWith("prod_dufa_") &&
+      !p.id.startsWith("prod_akzo_") &&
+      !p.id.startsWith("prod_caparol_") &&
+      !p.id.startsWith("prod_baumit_") &&
+      !p.id.startsWith("prod_revco_") &&
+      !p.id.startsWith("prod_egrokorr_"),
   );
   assert.equal(
     festekBazisProducts.length,

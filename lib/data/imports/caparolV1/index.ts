@@ -1,0 +1,10 @@
+export { caparolProducts } from "./products";
+export { caparolSources } from "./sources";
+export { caparolRelations } from "./relations";
+export { caparolDescriptions } from "./descriptions";
+export { caparolProfessionalDescriptions } from "./professionalDescriptions";
+export { caparolBrands } from "./brands";
+export { applyCaparolV1 } from "./apply";
+export const CAPAROL_V1_COUNT = 122;
+export const CAPAROL_V1_PASS_COUNT = 0;
+export const CAPAROL_V1_REVIEW_COUNT = 122;

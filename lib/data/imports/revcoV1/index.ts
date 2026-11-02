@@ -1,0 +1,10 @@
+export { revcoProducts } from "./products";
+export { revcoSources } from "./sources";
+export { revcoRelations } from "./relations";
+export { revcoDescriptions } from "./descriptions";
+export { revcoProfessionalDescriptions } from "./professionalDescriptions";
+export { revcoBrands } from "./brands";
+export { applyRevcoV1 } from "./apply";
+export const REVCO_V1_COUNT = 26;
+export const REVCO_V1_PASS_COUNT = 0;
+export const REVCO_V1_REVIEW_COUNT = 26;

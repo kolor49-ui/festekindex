@@ -1,0 +1,10 @@
+export { akzoProducts } from "./products";
+export { akzoSources } from "./sources";
+export { akzoRelations } from "./relations";
+export { akzoDescriptions } from "./descriptions";
+export { akzoProfessionalDescriptions } from "./professionalDescriptions";
+export { akzoBrands } from "./brands";
+export { applyAkzoV1 } from "./apply";
+export const AKZO_V1_COUNT = 14;
+export const AKZO_V1_PASS_COUNT = 0;
+export const AKZO_V1_REVIEW_COUNT = 14;

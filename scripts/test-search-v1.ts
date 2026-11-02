@@ -64,11 +64,12 @@ section("eligibility");
   const counts = countSearchCatalogByType();
   assert.equal(counts.product, expectedProductCountAfterClosure(), "all FB products searchable");
   assert.equal(counts.surface, 15, "all surfaces searchable");
-  assert.equal(counts.organization, 16, "v8.1 manufacturer expansion");
+  assert.equal(counts.organization, 17, "v8.1 manufacturer expansion + Baumit");
+
   assert.equal(
     counts.brand,
-    36,
-    "published brands only (incl. PPG + JUB + Poli + Düfa sub-brands)",
+    41,
+    "published brands only (incl. PPG + JUB + Poli + Düfa + Akzo/Egrokorr/Baumit sub-brands)",
   );
   assert.equal(counts.productFamily, 8);
   assert.equal(counts.technology, 9);
@@ -258,7 +259,7 @@ section("progressive roots");
   assert.ok(!ids.includes("brand_graco"));
   assert.ok(!ids.includes("brand_wagner"));
   assert.ok(!ids.includes("brand_7016"));
-  assert.ok(!ids.includes("brand_dulux"));
+  assert.ok(ids.includes("brand_dulux"));
   assert.ok(!roots.some((r) => /nélkül|egyéb márka/i.test(r.name)));
 
   const valmor = getProductSearchChildren("brand_valmor", "brand");

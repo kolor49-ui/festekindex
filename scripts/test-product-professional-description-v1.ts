@@ -130,6 +130,31 @@ section("Coverage + provenance");
           /dufa-hungary\.hu/i.test(src.url || ""),
           `${sid} Düfa official URL`,
         );
+      } else if (p.id.startsWith("prod_akzo_")) {
+        assert.ok(
+          /dulux\.hu|akzonobel\.com|sadolin\.|hammerite\./i.test(src.url || ""),
+          `${sid} Akzo official URL`,
+        );
+      } else if (p.id.startsWith("prod_caparol_")) {
+        assert.ok(
+          /caparol\.hu/i.test(src.url || ""),
+          `${sid} Caparol official URL`,
+        );
+      } else if (p.id.startsWith("prod_baumit_")) {
+        assert.ok(
+          /baumit\.hu/i.test(src.url || ""),
+          `${sid} Baumit official URL`,
+        );
+      } else if (p.id.startsWith("prod_revco_")) {
+        assert.ok(
+          /revco\.hu/i.test(src.url || ""),
+          `${sid} REVCO official URL`,
+        );
+      } else if (p.id.startsWith("prod_egrokorr_")) {
+        assert.ok(
+          /egrokorr\.hu/i.test(src.url || ""),
+          `${sid} Egrokorr official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),
