@@ -159,6 +159,9 @@ export const KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT = 107;
 /** Baumit 165 product Google unlock (FB-parity PASS + operator GO). */
 export const BAUMIT_PRODUCT_SEO_UNLOCK_COUNT = 165;
 
+/** Caparol 119 product Google unlock (FB-parity PASS + operator GO; 3 thin stay noindex). */
+export const CAPAROL_PRODUCT_SEO_UNLOCK_COUNT = 119;
+
 /** Publicly indexable products (FB + unlocked PASS_PARITY cohorts). */
 export function expectedPublicProductCount(): number {
   return (
@@ -166,7 +169,8 @@ export function expectedPublicProductCount(): number {
     PPG_PRODUCT_SEO_UNLOCK_COUNT +
     JUB_PRODUCT_SEO_UNLOCK_COUNT +
     KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT +
-    BAUMIT_PRODUCT_SEO_UNLOCK_COUNT
+    BAUMIT_PRODUCT_SEO_UNLOCK_COUNT +
+    CAPAROL_PRODUCT_SEO_UNLOCK_COUNT
   );
 }
 

@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** Caparol HU PASS+REVIEW overlay. indexable locked false. */
+/** Caparol HU overlay. indexable unlocked after enrich (FB-parity + GO); thin SKUs stay noindex. */
 export const caparolProducts: Product[] = [
   {
     id: "prod_caparol_acrylstar",

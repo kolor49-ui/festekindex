@@ -161,6 +161,19 @@ assert.equal(
   "Baumit cohort unlocked",
 );
 assert.equal(
+  evaluatePublicIndexability(getProductById("prod_caparol_amphisilan_plus")!)
+    .indexable,
+  true,
+  "Caparol PASS cohort unlocked",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById("prod_caparol_dupa_inn_n1")!,
+  ).indexable,
+  false,
+  "Caparol thin SKUs stay noindex",
+);
+assert.equal(
   evaluatePublicIndexability(
     getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
   ).indexable,
@@ -316,7 +329,7 @@ assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
   expectedPublicProductCount(),
-  "FB + PPG + JUB + KEMIKÁL + Baumit unlocked; other overlays stay noindex",
+  "FB + PPG + JUB + KEMIKÁL + Baumit + Caparol unlocked; other overlays stay noindex",
 );
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/termekek/"))
@@ -394,8 +407,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Hubs + FB 53 + PPG 42 + JUB 95 + KEMIKÁL 107 + Baumit 165 → 518.
-assert.equal(sm.length, 518, `expected 518 sitemap URLs, got ${sm.length}`);
+// Hubs + FB 53 + PPG 42 + JUB 95 + KEMIKÁL 107 + Baumit 165 + Caparol 119 → 637.
+assert.equal(sm.length, 637, `expected 637 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
