@@ -271,7 +271,7 @@ section("Faipari Brand separation");
     p.brandPresentation.additionalBrands.some((b) => b.id === "brand_milesi"),
   );
   const model = buildCategoryHubModel(p.category)!;
-  assert.equal(model.indexable, false);
+  assert.equal(model.indexable, true);
   const html = renderToStaticMarkup(
     createElement(CategoryHubPage, { model }),
   );
@@ -518,11 +518,11 @@ const indexableYes = [
   "cat_dekor",
   "cat_homlokzat",
   "cat_ipari",
+  "cat_faipar",
   "cat_porfestek",
   "cat_szoras",
 ];
 const indexableNo = [
-  "cat_faipar",
   "cat_higito_segedanyag",
   "cat_padlo",
   "cat_csiszolas",
@@ -557,6 +557,7 @@ const sitemapCats = listPublishedForSitemap()
   .sort();
 assert.deepEqual(sitemapCats, [
   "/kategoriak/dekor-es-falfestek",
+  "/kategoriak/faipari-bevonatok",
   "/kategoriak/homlokzat-es-hoszigeteles",
   "/kategoriak/ipari-bevonat-es-korroziovedelem",
   "/kategoriak/porfestek",

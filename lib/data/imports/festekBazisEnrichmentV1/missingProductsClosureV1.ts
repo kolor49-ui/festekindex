@@ -140,10 +140,11 @@ export const BAUMIT_V1_COUNT = 165;
 export const CAPAROL_V1_COUNT = 122;
 
 /**
- * Official manufacturer website sources added in v8.1 (sources.ts),
+ * Official manufacturer website sources added in v8.1+ (sources.ts),
  * outside Festék Bázis enrichment overlays.
+ * Includes Baumit (`src_baumit_hu`) after the P1 manufacturer fill.
  */
-export const V81_MANUFACTURER_SOURCE_DELTA = 8;
+export const V81_MANUFACTURER_SOURCE_DELTA = 9;
 
 /** New brand SearchDocuments in v8.1 (Trinát, Lazurán + 7 manufacturer brands). */
 export const V81_NEW_BRAND_COUNT = 9;

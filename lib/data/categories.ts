@@ -28,16 +28,16 @@ export const categories: Category[] = [
     name: "Dekor- és falfesték",
     shortDescription:
       "Beltéri és kültéri dekoratív festékek, falfesték-rendszerek és kapcsolódó márkák.",
-    body: "A dekor- és falfesték szakterület a lakó- és középületek felületkezelésének alapja. Ide tartoznak a beltéri falfestékek, homlokzati dekoratív rendszerek és a hozzájuk kapcsolódó magyarországi gyártók, forgalmazók.",
+    body: "A dekor- és falfesték szakterület a lakó- és középületek felületkezelésének alapja. Ide tartoznak a beltéri diszperziós és latex falfestékek, dekoratív beltéri rendszerek, valamint a hozzájuk kapcsolódó alapozók. A FESTÉKINDEX-en a kategória a magyarországi gyártókhoz, márkákhoz és termékekhez vezet; a konkrét műszaki előírások a gyártói adatlapok szerint értendők.",
     parentId: null,
     sortOrder: 1,
     status: "published",
     indexable: true,
     seoTitle: "Dekor- és falfesték | FESTÉKINDEX",
     seoDescription:
-      "Dekoratív és falfesték rendszerek: beltéri és kültéri falfestékek, gyártók és márkák a FESTÉKINDEX-en.",
+      "Dekoratív és falfesték rendszerek: beltéri falfestékek, gyártók és márkák a FESTÉKINDEX szakmai indexén.",
     sourceIds: [],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-11-02",
   },
   {
     id: "cat_epitesi",
@@ -66,16 +66,16 @@ export const categories: Category[] = [
     name: "Homlokzat és hőszigetelés",
     shortDescription:
       "Homlokzati bevonatok, hőszigetelő rendszerek és kapcsolódó anyagok.",
-    body: "Homlokzati festékek, vakolatrendszerek és hőszigeteléssel összefüggő bevonati megoldások a festékipar és az építőipar határán.",
+    body: "A homlokzat és hőszigetelés szakterület a kültéri falbevonatokat és a hőszigetelő rendszerekhez kapcsolódó vakolatokat, alapozókat és homlokzatfestékeket fogja össze. A festékipar és az építőipar határán áll: a FESTÉKINDEX-en gyártói szervezetekhez, márkákhoz és termékekhez vezet, a rendszerillesztés mindig a gyártói előírás szerint értendő.",
     parentId: null,
     sortOrder: 3,
     status: "published",
     indexable: true,
     seoTitle: "Homlokzat és hőszigetelés | FESTÉKINDEX",
     seoDescription:
-      "Homlokzati bevonatok és hőszigetelő rendszerek: márkák, anyagok és szakmai kapcsolatok a FESTÉKINDEX-en.",
+      "Homlokzati festékek, vakolatok és hőszigetelő rendszerek: gyártók, márkák és szakmai kapcsolatok a FESTÉKINDEX-en.",
     sourceIds: [],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-11-02",
   },
   {
     id: "cat_ipari",
@@ -101,16 +101,17 @@ export const categories: Category[] = [
     slug: "faipari-bevonatok",
     name: "Faipari bevonatok",
     shortDescription:
-      "Faipari lakkok, pácolók, ipari famunkák bevonatrendszerei.",
-    body: "Faipari bevonatok: bútoripari és épületasztalos rendszerek, lakkok, pácolók és ipari alkalmazástechnika.",
+      "Faipari lakkok, lazúrok, pácolók és épületasztalos bevonatrendszerek.",
+    body: "A faipari bevonatok szakterület a bútoripari és épületasztalos felületkezelést fogja össze: lakkok, lazúrok, pácolók, alapozók és favédő rendszerek. A FESTÉKINDEX-en a kategória a kapcsolódó gyártókhoz, márkákhoz és termékekhez vezet; a konkrét felhordási és hígítási előírások mindig a gyártói műszaki adatlap szerint értendők.",
     parentId: null,
     sortOrder: 5,
     status: "published",
     indexable: true,
     seoTitle: "Faipari bevonatok | FESTÉKINDEX",
-    seoDescription: "Faipari bevonatrendszerek, márkák és magyarországi kapcsolatok.",
+    seoDescription:
+      "Faipari lakkok, lazúrok és pácolók: gyártók, márkák és szakmai kapcsolatok a FESTÉKINDEX-en.",
     sourceIds: [],
-    updatedAt: "2026-10-05",
+    updatedAt: "2026-11-02",
   },
   {
     id: "cat_auto",

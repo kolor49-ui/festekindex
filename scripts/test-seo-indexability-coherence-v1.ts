@@ -207,8 +207,18 @@ for (const id of [
   "brand_dulux",
   "brand_sikkens",
   "brand_international",
-  // Héra remains publicly indexable; Trinát/Lazurán locked noindex until SEO unlock
   "brand_hera",
+  // Phase 2 manufacturer / PPG brand unlock (products stay noindex)
+  "brand_trinat",
+  "brand_lazuran",
+  "brand_jub",
+  "brand_poli_farbe",
+  "brand_remmers",
+  "brand_dufa",
+  "brand_caparol",
+  "brand_baumit",
+  "brand_revco",
+  "brand_egrokorr",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, true, id);
@@ -219,8 +229,6 @@ for (const id of [
   "brand_interpon",
   "brand_milesi",
   "brand_sika",
-  "brand_trinat",
-  "brand_lazuran",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, false, id);
@@ -308,6 +316,7 @@ const indexableCats = [
   "cat_dekor",
   "cat_homlokzat",
   "cat_ipari",
+  "cat_faipar",
   "cat_porfestek",
   "cat_szoras",
 ];
@@ -326,7 +335,7 @@ assert.equal(
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/kategoriak/"))
     .length,
-  5,
+  6,
 );
 
 assert.equal(listKnowledge().length, 2);
@@ -340,17 +349,25 @@ console.log("Tech/Category/Knowledge OK");
 
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
-// 7 list/home + entity details; /termekek+/feluletek omitted while children noindex.
-// PPG TRILAK unlocked after body quality pass → 8 orgs.
-assert.equal(sm.length, 35, `expected 35 sitemap URLs, got ${sm.length}`);
+// List/home hubs + entity details; /termekek+/feluletek omitted while children noindex.
+// Phase 2: +8 manufacturer orgs, +10 brands, +1 category (faipar) → 54.
+assert.equal(sm.length, 54, `expected 54 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
 const detailBrands = sm.filter(
   (e) => e.path.startsWith("/markak/") && e.path !== "/markak",
 );
-assert.equal(detailOrgs.length, 8, "pre-existing orgs + PPG TRILAK; v8.1 makers locked noindex");
-assert.equal(detailBrands.length, 9, "pre-existing brands + Héra (new brands locked noindex)");
+assert.equal(
+  detailOrgs.length,
+  16,
+  "Wave-1 orgs + JUB/Poli/Remmers/Meffert/Egrokorr/Caparol/REVCO/Baumit",
+);
+assert.equal(
+  detailBrands.length,
+  19,
+  "Wave-1 brands + Trinát/Lazurán + P1 umbrella brands",
+);
 assert.ok(
   !sm.some((e) => e.path === "/termekek" || e.path === "/feluletek"),
   "locked-child list hubs must stay out of sitemap",
@@ -359,6 +376,9 @@ assert.ok(
   sm.some((e) => e.path === "/cegek/ppg-trilak"),
   "PPG TRILAK must be in sitemap after body quality pass",
 );
+assert.ok(sm.some((e) => e.path === "/cegek/jub-kft"));
+assert.ok(sm.some((e) => e.path === "/markak/jub"));
+assert.ok(sm.some((e) => e.path === "/kategoriak/faipari-bevonatok"));
 assert.ok(sm.some((e) => e.path === "/cegek/festek-bazis-zrt"));
 assert.ok(sm.some((e) => e.path === "/markak/valmor"));
 assert.ok(sm.some((e) => e.path === "/markak/factor"));
