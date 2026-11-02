@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** Remmers wood+construction PASS+REVIEW overlay. indexable locked false. */
+/** Remmers overlay. indexable unlocked after enrich (FB-parity + GO); thin SKUs stay noindex. */
 export const remmersProducts: Product[] = [
   {
     id: "prod_remmers_2k_epoxy_primer_4500776405",

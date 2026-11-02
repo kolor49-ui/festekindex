@@ -177,12 +177,33 @@ assert.equal(
   evaluatePublicIndexability(
     getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
   ).indexable,
+  true,
+  "Remmers PASS cohort unlocked",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById("prod_remmers_ceramix_07_665025")!,
+  ).indexable,
+  false,
+  "Remmers thin SKUs stay noindex",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById("prod_poli_farbe_poli_farbe_boroka_vastaglazur")!,
+  ).indexable,
+  true,
+  "Poli-Farbe cohort unlocked",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById("prod_dufa_dufa_diamond_premium_minosegu_belteri_falfestek")!,
+  ).indexable,
   false,
   "non-GO overlays stay noindex",
 );
 assert.equal(
   evaluatePublicIndexability(
-    getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
+    getProductById("prod_dufa_dufa_diamond_premium_minosegu_belteri_falfestek")!,
   ).source,
   "flag_noindex",
 );
@@ -329,7 +350,7 @@ assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
   expectedPublicProductCount(),
-  "FB + PPG + JUB + KEMIKÁL + Baumit + Caparol unlocked; other overlays stay noindex",
+  "major unlock cohorts public; remaining overlays stay noindex",
 );
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/termekek/"))
@@ -407,8 +428,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Hubs + FB 53 + PPG 42 + JUB 95 + KEMIKÁL 107 + Baumit 165 + Caparol 119 → 637.
-assert.equal(sm.length, 637, `expected 637 sitemap URLs, got ${sm.length}`);
+// Prior hubs + Remmers 89 + Poli 71 → 797.
+assert.equal(sm.length, 797, `expected 797 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );

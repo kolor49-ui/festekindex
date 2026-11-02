@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** Poli-Farbe 65 REVIEW catalogue identities (v8.4). indexable locked false. HOLD excluded. */
+/** Poli-Farbe 65 REVIEW. indexable unlocked after enrich (FB-parity + GO). HOLD excluded. */
 export const poli65ReviewProducts: Product[] = [
   {
     id: "prod_poli_farbe_boroka_base_fakonzervalo_alapozo",

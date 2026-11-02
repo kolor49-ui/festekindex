@@ -20,9 +20,9 @@ function section(name: string) {
   console.log(`\n=== ${name} ===`);
 }
 
-/** Still-locked manufacturer overlays (FB/PPG/JUB/KEMIKÁL/Baumit/Caparol unlocked separately). */
+/** Still-locked manufacturer overlays (major cohorts unlocked separately). */
 const LOCKED_OVERLAY_RE =
-  /^prod_(poli_farbe_|remmers_|dufa_|akzo_|revco_|egrokorr_)/;
+  /^prod_(dufa_|akzo_|revco_|egrokorr_|sika_|mapei_)/;
 
 section("parity evaluate all products");
 const products = listProducts();
@@ -44,7 +44,7 @@ const overlayParityPass = overlayLocked.filter((r) => r.parity.pass);
 assert.equal(
   unlocked.length,
   expectedPublicProductCount(),
-  "public product count must match FB+PPG+JUB+KEMIKÁL+Baumit+Caparol unlock cohorts",
+  "public product count must match unlocked cohorts incl. Remmers+Poli",
 );
 
 assert.equal(

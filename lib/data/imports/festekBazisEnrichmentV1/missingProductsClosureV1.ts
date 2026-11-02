@@ -162,6 +162,12 @@ export const BAUMIT_PRODUCT_SEO_UNLOCK_COUNT = 165;
 /** Caparol 119 product Google unlock (FB-parity PASS + operator GO; 3 thin stay noindex). */
 export const CAPAROL_PRODUCT_SEO_UNLOCK_COUNT = 119;
 
+/** Remmers 89 product Google unlock (FB-parity PASS + operator GO; 2 thin stay noindex). */
+export const REMMERS_PRODUCT_SEO_UNLOCK_COUNT = 89;
+
+/** Poli-Farbe 71 product Google unlock (6 PASS + 65 REVIEW; FB-parity PASS + operator GO). */
+export const POLI_PRODUCT_SEO_UNLOCK_COUNT = 71;
+
 /** Publicly indexable products (FB + unlocked PASS_PARITY cohorts). */
 export function expectedPublicProductCount(): number {
   return (
@@ -170,7 +176,9 @@ export function expectedPublicProductCount(): number {
     JUB_PRODUCT_SEO_UNLOCK_COUNT +
     KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT +
     BAUMIT_PRODUCT_SEO_UNLOCK_COUNT +
-    CAPAROL_PRODUCT_SEO_UNLOCK_COUNT
+    CAPAROL_PRODUCT_SEO_UNLOCK_COUNT +
+    REMMERS_PRODUCT_SEO_UNLOCK_COUNT +
+    POLI_PRODUCT_SEO_UNLOCK_COUNT
   );
 }
 

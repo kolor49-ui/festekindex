@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** Poli-Farbe 6 PASS catalogue identities (v8.3). indexable locked false. */
+/** Poli-Farbe 6 PASS. indexable unlocked after enrich (FB-parity + GO). */
 export const poli6Products: Product[] = [
   {
     id: "prod_poli_farbe_poli_farbe_boroka_vastaglazur",
