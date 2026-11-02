@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** JUB 95 PASS catalogue identities (v8.2). indexable locked false. */
+/** JUB 95 PASS catalogue identities (v8.2). indexable unlocked after enrich (FB-parity + GO). */
 export const jub95Products: Product[] = [
   {
     id: "prod_jub_jupol_perfect",

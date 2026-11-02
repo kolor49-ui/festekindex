@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** KEMIKÁL PASS+REVIEW overlay. indexable locked false. */
+/** KEMIKÁL overlay. indexable unlocked after enrich (FB-parity + GO). */
 export const kemikalProducts: Product[] = [
   {
     id: "prod_kemikal_3f_alapozo",

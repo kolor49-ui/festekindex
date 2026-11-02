@@ -142,6 +142,18 @@ assert.equal(
   "PPG Trilak PASS cohort unlocked",
 );
 assert.equal(
+  evaluatePublicIndexability(getProductById("prod_jub_jupol_perfect")!)
+    .indexable,
+  true,
+  "JUB PASS cohort unlocked",
+);
+assert.equal(
+  evaluatePublicIndexability(getProductById("prod_kemikal_acifer_k")!)
+    .indexable,
+  true,
+  "KEMIKÁL cohort unlocked",
+);
+assert.equal(
   evaluatePublicIndexability(
     getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
   ).indexable,
@@ -297,7 +309,7 @@ assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
   expectedPublicProductCount(),
-  "FB + PPG cohorts unlocked; other overlays stay noindex",
+  "FB + PPG + JUB + KEMIKÁL unlocked; other overlays stay noindex",
 );
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/termekek/"))
@@ -375,8 +387,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Phase 2 hubs + FB 53 + PPG 42 + KEMIKÁL org/brand → 151.
-assert.equal(sm.length, 151, `expected 151 sitemap URLs, got ${sm.length}`);
+// Hubs + FB 53 + PPG 42 + JUB 95 + KEMIKÁL 107 (+ KEMIKÁL org/brand) → 353.
+assert.equal(sm.length, 353, `expected 353 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );

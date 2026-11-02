@@ -150,9 +150,20 @@ export const FB_PRODUCT_SEO_UNLOCK_COUNT = 53;
 /** PPG Trilak 42 PASS product Google unlock (FB-parity PASS). */
 export const PPG_PRODUCT_SEO_UNLOCK_COUNT = 42;
 
+/** JUB 95 PASS product Google unlock (FB-parity PASS + operator GO). */
+export const JUB_PRODUCT_SEO_UNLOCK_COUNT = 95;
+
+/** KEMIKÁL 107 product Google unlock (FB-parity PASS + operator GO). */
+export const KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT = 107;
+
 /** Publicly indexable products (FB + unlocked PASS_PARITY cohorts). */
 export function expectedPublicProductCount(): number {
-  return FB_PRODUCT_SEO_UNLOCK_COUNT + PPG_PRODUCT_SEO_UNLOCK_COUNT;
+  return (
+    FB_PRODUCT_SEO_UNLOCK_COUNT +
+    PPG_PRODUCT_SEO_UNLOCK_COUNT +
+    JUB_PRODUCT_SEO_UNLOCK_COUNT +
+    KEMIKAL_PRODUCT_SEO_UNLOCK_COUNT
+  );
 }
 
 /**
