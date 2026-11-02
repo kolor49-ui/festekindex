@@ -142,6 +142,12 @@ export const CAPAROL_V1_COUNT = 122;
 /** KEMIKÁL overlay (REVIEW; HOLD/ERROR excluded; noindex). */
 export const KEMIKAL_V1_COUNT = 107;
 
+/** Sika HU coating wave v1 (noindex until GO). */
+export const SIKA_V1_COUNT = 20;
+
+/** Mapei HU paint/coating wave v1 (noindex until GO). */
+export const MAPEI_V1_COUNT = 9;
+
 /**
  * Festék Bázis product Google unlock cohort (editorial + professional ready).
  */
@@ -209,7 +215,9 @@ export function expectedProductCountAfterClosure(): number {
     EGROKORR_V1_COUNT +
     BAUMIT_V1_COUNT +
     CAPAROL_V1_COUNT +
-    KEMIKAL_V1_COUNT
+    KEMIKAL_V1_COUNT +
+    SIKA_V1_COUNT +
+    MAPEI_V1_COUNT
   );
 }
 
@@ -251,6 +259,8 @@ export function expectedSearchDocumentsAfterClosure(): number {
     BAUMIT_V1_COUNT +
     CAPAROL_V1_COUNT +
     KEMIKAL_V1_COUNT +
+    SIKA_V1_COUNT +
+    MAPEI_V1_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
@@ -263,7 +273,9 @@ export function expectedSearchDocumentsAfterClosure(): number {
     1 + // org_baumit_hungary search doc
     1 + // brand_kemikal
     1 + // org_kemikal search doc
-    2 // brand_bornit + brand_tetol
+    2 + // brand_bornit + brand_tetol
+    1 + // brand_mapei (noindex SearchDocument may still count — see search tests)
+    1 // org_mapei
   );
 }
 
@@ -308,7 +320,9 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     EGROKORR_V1_COUNT +
     BAUMIT_V1_COUNT +
     CAPAROL_V1_COUNT +
-    KEMIKAL_V1_COUNT
+    KEMIKAL_V1_COUNT +
+    SIKA_V1_COUNT +
+    MAPEI_V1_COUNT
   );
 }
 

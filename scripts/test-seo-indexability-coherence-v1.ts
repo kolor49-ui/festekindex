@@ -296,6 +296,7 @@ for (const id of [
   "brand_baumit",
   "brand_revco",
   "brand_egrokorr",
+  "brand_sika",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, true, id);
@@ -305,7 +306,7 @@ for (const id of [
   "brand_mirka",
   "brand_interpon",
   "brand_milesi",
-  "brand_sika",
+  "brand_mapei",
 ]) {
   const b = getBrandById(id)!;
   assert.equal(evaluatePublicIndexability(b).indexable, false, id);
@@ -428,8 +429,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Prior hubs + Remmers 89 + Poli 71 → 797.
-assert.equal(sm.length, 797, `expected 797 sitemap URLs, got ${sm.length}`);
+// Prior hubs + Remmers/Poli + Sika brand portfolio unlock → 798.
+assert.equal(sm.length, 798, `expected 798 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
@@ -443,8 +444,8 @@ assert.equal(
 );
 assert.equal(
   detailBrands.length,
-  20,
-  "Wave-1 brands + Trinát/Lazurán + P1 umbrella brands + Kemikál",
+  21,
+  "Wave-1 brands + Trinát/Lazurán + P1 umbrella brands + Kemikál + Sika portfolio",
 );
 assert.ok(sm.some((e) => e.path === "/cegek/kemikal"));
 assert.ok(sm.some((e) => e.path === "/markak/kemikal"));
@@ -534,13 +535,14 @@ const M4 = rows.filter((r) => !r.pub.baseIndexable && r.pub.indexable);
 assert.equal(M1.length, 0, `M1 remaining: ${M1.map((r) => r.entity.id)}`);
 assert.equal(M2.length, 0, `M2: ${M2.map((r) => r.entity.id)}`);
 assert.equal(M3.length, 0, `M3: ${M3.map((r) => r.entity.id)}`);
-// Héra may pass base quality after clean copy; Hub override set shrinks accordingly.
-assert.equal(M4.length, 4);
+// Hub overrides + Sika brand substantive portfolio (products still noindex).
+assert.equal(M4.length, 5);
 assert.deepEqual(
   M4.map((r) => r.entity.id).sort(),
   [
     "brand_coror",
     "brand_factor",
+    "brand_sika",
     "brand_valmor",
     "org_festek_bazis_zrt",
   ].sort(),

@@ -89,6 +89,17 @@ import {
   kemikalProducts,
 } from "./imports/kemikalV1";
 import {
+  applySikaV1,
+  sikaBrands,
+  sikaProducts,
+} from "./imports/sikaV1";
+import {
+  applyMapeiV1,
+  mapeiBrands,
+  mapeiOrganizations,
+  mapeiProducts,
+} from "./imports/mapeiV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -103,8 +114,8 @@ import { publicListDescription } from "@/lib/seo/publicListCopy";
 const SITE_ORIGIN = "https://festekindex.hu";
 
 const organizations = mergeById(
-  organizationsBase,
-  festekBazisV02Seed.organizations,
+  mergeById(organizationsBase, festekBazisV02Seed.organizations),
+  mapeiOrganizations,
 );
 const brands = mergeById(
   mergeById(
@@ -131,7 +142,7 @@ const brands = mergeById(
       ),
       mergeById(baumitBrands, caparolBrands),
     ),
-    kemikalBrands,
+    mergeById(kemikalBrands, mergeById(sikaBrands, mapeiBrands)),
   ),
 );
 const productFamilies = mergeById(
@@ -160,7 +171,7 @@ const productsMerged = mergeById(
       ),
       mergeById(baumitProducts, caparolProducts),
     ),
-    kemikalProducts,
+    mergeById(kemikalProducts, mergeById(sikaProducts, mapeiProducts)),
   ),
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
@@ -197,9 +208,11 @@ const egrokorr = applyEgrokorrV1(revco.products, revco.sources, revco.relations)
 const baumit = applyBaumitV1(egrokorr.products, egrokorr.sources, egrokorr.relations);
 const caparol = applyCaparolV1(baumit.products, baumit.sources, baumit.relations);
 const kemikal = applyKemikalV1(caparol.products, caparol.sources, caparol.relations);
-const products = kemikal.products;
-const relations = kemikal.relations;
-const sources = kemikal.sources;
+const sika = applySikaV1(kemikal.products, kemikal.sources, kemikal.relations);
+const mapei = applyMapeiV1(sika.products, sika.sources, sika.relations);
+const products = mapei.products;
+const relations = mapei.relations;
+const sources = mapei.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

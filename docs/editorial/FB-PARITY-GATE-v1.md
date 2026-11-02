@@ -24,6 +24,7 @@
 3. Run **FB-parity gate** — FAIL stays noindex.
 4. Operator **GO** only on PASS_PARITY cohort (allowlist + flag).
 5. Currently unlocked: Festék Bázis 53 + PPG Trilak 42 + JUB 95 + KEMIKÁL 107 + Baumit 165 + Caparol 119 + Remmers 89 + Poli-Farbe 71 — must remain parity PASS.
+   Sika 20 + Mapei 9 first-wave fill is noindex until a separate cohort GO.
    Other overlays stay noindex until a separate cohort GO.
 
 ## Operator time
