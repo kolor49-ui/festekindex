@@ -26,7 +26,8 @@ Do not invent measurement method or broaden into an unsupported universal thresh
 
 ### B1-DOC-01 — Claim matrix Hungarian exactClaim linkage
 **Status:** CLOSED — 2026-11-02  
-Batch 1 technical claim matrix `exactClaim` values linked to Hungarian `sourceEvidence` fragments (163/163). Canonical: `docs/editorial/TECHNICAL-CLAIMS-B1.csv` + audit CSV. Product `indexable` flags remain locked until a separate cohort GO.
+Batch 1 technical claim matrix `exactClaim` values linked to Hungarian `sourceEvidence` fragments (163/163). Canonical: `docs/editorial/TECHNICAL-CLAIMS-B1.csv` + audit CSV.  
+Follow-up: Festék Bázis product cohort Google unlock GO applied 2026-11-02 (53 products). Manufacturer overlay products remain noindex.
 
 ## Catalogue remainder (not in this release)
 

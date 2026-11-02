@@ -29,6 +29,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -116,7 +117,7 @@ for (const p of products) {
   }
 }
 assert.equal(products.length, expectedProductCountAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(specs, expectedSpecCountAfterClosure());
 assert.equal(packs, expectedPackagingCountAfterClosure());
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());

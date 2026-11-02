@@ -39,6 +39,7 @@ import {
   expectedApplicableToSurfaceAfterClosure,
   expectedSearchDocumentsAfterClosure,
   V81_MANUFACTURER_SOURCE_DELTA,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 
 import { sources as sourcesBase } from "../lib/data/sources";
@@ -123,11 +124,29 @@ assert.equal(
 assert.equal(
   evaluatePublicIndexability(getProductById("prod_valmor_airflow_interior")!)
     .indexable,
-  false,
+  true,
+  "Festék Bázis product cohort unlocked",
 );
 assert.equal(
   evaluatePublicIndexability(getProductById("prod_valmor_airflow_interior")!)
     .source,
+  "base",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById(
+      "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
+    )!,
+  ).indexable,
+  false,
+  "overlay products stay noindex",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById(
+      "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
+    )!,
+  ).source,
   "flag_noindex",
 );
 assert.equal(
@@ -272,12 +291,13 @@ section("Product / Surface locks");
 assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
-  0,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  "Festék Bázis cohort unlocked; overlays stay noindex",
 );
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/termekek/"))
     .length,
-  0,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 );
 assert.equal(listSurfaces().length, 15);
 assert.equal(
@@ -349,9 +369,9 @@ console.log("Tech/Category/Knowledge OK");
 
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
-// List/home hubs + entity details; /termekek+/feluletek omitted while children noindex.
-// Phase 2: +8 manufacturer orgs, +10 brands, +1 category (faipar) → 54.
-assert.equal(sm.length, 54, `expected 54 sitemap URLs, got ${sm.length}`);
+// List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
+// Phase 2 hubs (54) + Festék Bázis product cohort unlock (53) → 107.
+assert.equal(sm.length, 107, `expected 107 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );

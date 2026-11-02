@@ -23,6 +23,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import { getCanonicalBrandOwner } from "../lib/navigation/entityNavigation";
@@ -274,11 +275,13 @@ section("Locked data + hierarchy");
   assert.equal(listProducts().length, expectedProductCountAfterClosure());
   let specs = 0;
   let packs = 0;
+  let publicProducts = 0;
   for (const p of listProducts()) {
     specs += p.specifications?.length ?? 0;
     packs += p.packagingOptions?.length ?? 0;
-    assert.equal(evaluatePublicIndexability(p).indexable, false);
+    if (evaluatePublicIndexability(p).indexable) publicProducts++;
   }
+  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
 

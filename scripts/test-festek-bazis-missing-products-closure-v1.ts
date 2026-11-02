@@ -26,6 +26,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import {
@@ -131,7 +132,7 @@ section("Accepted candidates — identity + provenance");
     assert.equal(searchDoc!.type, "product");
     assert.equal(searchDoc!.href, `/termekek/${p!.slug}`);
 
-    assert.equal(evaluatePublicIndexability(p!).indexable, false);
+    assert.equal(evaluatePublicIndexability(p!).indexable, true);
   }
   console.log("accepted identity OK");
 }
@@ -310,9 +311,11 @@ section("Search / SEO / ranking unchanged policy");
     buildSearchCatalog().length,
     expectedSearchDocumentsAfterClosure(),
   );
-  for (const p of listProducts()) {
-    assert.equal(evaluatePublicIndexability(p).indexable, false);
-  }
+  assert.equal(
+    listProducts().filter((p) => evaluatePublicIndexability(p).indexable)
+      .length,
+    FB_PRODUCT_SEO_UNLOCK_COUNT,
+  );
   // Ranking / normalization modules not modified by this closure — smoke only
   console.log("search/SEO policy OK");
 }

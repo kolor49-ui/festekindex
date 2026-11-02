@@ -24,6 +24,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -336,7 +337,7 @@ assert.equal(specs, expectedSpecCountAfterClosure());
 assert.equal(packs, expectedPackagingCountAfterClosure());
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 assert.equal(diluted, expectedDilutedWithAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(surfaces.length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(

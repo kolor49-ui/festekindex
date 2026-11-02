@@ -1,6 +1,9 @@
 /**
  * Apply Festék Bázis enrichment v1 onto merged v0.2 seed.
- * Identity freeze: never overwrite id, slug, name, status, indexable.
+ * Identity freeze: never overwrite id, slug, name, status.
+ * Exception (FB product SEO unlock GO): after description + professional
+ * enrichment, eligible Festék Bázis products may flip indexable→true when
+ * editorial/professional SEO thresholds pass. Overlay manufacturers stay locked.
  */
 
 import type { Product, Relation, Source } from "../../types";
@@ -17,6 +20,37 @@ import {
   productColorAvailabilityV1,
   type ProductColorAvailabilityPatch,
 } from "./colorSystemV1";
+import {
+  productSeoBodyText,
+  productSeoShortText,
+} from "@/lib/seo/productSeoText";
+
+/** Festék Bázis description cohort — only these IDs may unlock via enrichment. */
+const FB_PRODUCT_SEO_UNLOCK_IDS = new Set(
+  productDescriptionEnrichmentsV1.map((d) => d.productId),
+);
+
+function meetsEnrichedProductSeoThreshold(product: Product): boolean {
+  const short = productSeoShortText(product);
+  const body = productSeoBodyText(product);
+  if (short.length < 40) return false;
+  if (body.length < 120) return false;
+  if (product.sourceIds.length < 1 && body.length < 220) return false;
+  return true;
+}
+
+/** Explicit FB cohort Google unlock after editorial+professional enrichment. */
+export function unlockFestekBazisProductIndexability(
+  products: Product[],
+): Product[] {
+  return products.map((product) => {
+    if (!FB_PRODUCT_SEO_UNLOCK_IDS.has(product.id)) return product;
+    if (product.status !== "published") return product;
+    if (!meetsEnrichedProductSeoThreshold(product)) return product;
+    if (product.indexable === true) return product;
+    return { ...product, indexable: true };
+  });
+}
 
 function uniqueIds(ids: string[]): string[] {
   return [...new Set(ids.filter(Boolean))];
@@ -194,10 +228,12 @@ export function applyFestekBazisEnrichmentV1(
   relations: Relation[];
 } {
   return {
-    products: applyProductColorAvailability(
-      applyProductProfessionalDescriptionEnrichments(
-        applyProductDescriptionEnrichments(
-          applyProductEnrichments(products, enrichment.productPatches),
+    products: unlockFestekBazisProductIndexability(
+      applyProductColorAvailability(
+        applyProductProfessionalDescriptionEnrichments(
+          applyProductDescriptionEnrichments(
+            applyProductEnrichments(products, enrichment.productPatches),
+          ),
         ),
       ),
     ),

@@ -9,6 +9,12 @@
 
 import type { AnyEntity } from "@/lib/data/types";
 import { allRelations } from "@/lib/data/imports/allRelations";
+import {
+  productSeoBodyText,
+  productSeoShortText,
+} from "@/lib/seo/productSeoText";
+
+export { productSeoBodyText, productSeoShortText } from "@/lib/seo/productSeoText";
 
 /**
  * Base/raw quality gate for programmatic entity pages.
@@ -34,8 +40,14 @@ export function evaluateIndexability(entity: AnyEntity): {
     return { indexable: false, reasons: ["synthetic_nav_category"] };
   }
 
-  const body = entity.body?.trim() ?? "";
-  const short = entity.shortDescription?.trim() ?? "";
+  const short =
+    entity.type === "product"
+      ? productSeoShortText(entity)
+      : (entity.shortDescription?.trim() ?? "");
+  const body =
+    entity.type === "product"
+      ? productSeoBodyText(entity)
+      : (entity.body?.trim() ?? "");
   const relatedCount = allRelations.filter(
     (r) =>
       r.status === "active" &&

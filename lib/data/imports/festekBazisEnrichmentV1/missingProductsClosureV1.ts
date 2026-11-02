@@ -140,6 +140,12 @@ export const BAUMIT_V1_COUNT = 165;
 export const CAPAROL_V1_COUNT = 122;
 
 /**
+ * Festék Bázis product Google unlock cohort (editorial + professional ready).
+ * Overlay manufacturer products remain noindex.
+ */
+export const FB_PRODUCT_SEO_UNLOCK_COUNT = 53;
+
+/**
  * Official manufacturer website sources added in v8.1+ (sources.ts),
  * outside Festék Bázis enrichment overlays.
  * Includes Baumit (`src_baumit_hu`) after the P1 manufacturer fill.

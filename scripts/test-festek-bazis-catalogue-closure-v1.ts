@@ -20,6 +20,7 @@ import {
 import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   getActiveRelationsForEntity,
@@ -98,7 +99,7 @@ section("Accepted Products integrated");
       assert.ok(src, `${c.productId} prof source ${sid}`);
       assert.ok(src!.url?.includes("festekbazis.hu"));
     }
-    assert.equal(evaluatePublicIndexability(p!).indexable, false, c.productId);
+    assert.equal(evaluatePublicIndexability(p!).indexable, true, c.productId);
 
     const brand = getCanonicalProductBrand(p!.id);
     const family = getCanonicalProductFamily(p!.id);

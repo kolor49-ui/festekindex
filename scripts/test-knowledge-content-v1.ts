@@ -22,6 +22,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -236,7 +237,7 @@ assert.equal(listTechnologies().length, 9);
 assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(listSurfaces().length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 

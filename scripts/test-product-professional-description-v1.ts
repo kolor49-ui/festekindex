@@ -15,6 +15,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   expectedMergedSourcesAfterCatalogueClosure,
@@ -53,11 +54,13 @@ section("Baseline locks");
   let specs = 0;
   let packs = 0;
   let diluted = 0;
+  let publicProducts = 0;
   for (const p of products) {
     specs += p.specifications?.length ?? 0;
     packs += p.packagingOptions?.length ?? 0;
-    assert.equal(evaluatePublicIndexability(p).indexable, false, p.id);
+    if (evaluatePublicIndexability(p).indexable) publicProducts++;
   }
+  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(

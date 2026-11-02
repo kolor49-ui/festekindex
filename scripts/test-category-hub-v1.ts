@@ -26,6 +26,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -677,7 +678,7 @@ assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 48);
 assert.equal(listSurfaces().length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length, expectedApplicableToSurfaceAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 assert.equal(
   evaluateIndexability(listTechnologies().find((t) => t.id === "tech_porfestek")!)

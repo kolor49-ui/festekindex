@@ -24,6 +24,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -422,7 +423,7 @@ assert.equal(
   ).length,
   expectedApplicableToSurfaceAfterClosure(),
 );
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(surfaces.filter((s) => s.indexable).length, 0);
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/feluletek/"))

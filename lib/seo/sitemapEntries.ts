@@ -11,8 +11,9 @@ import {
 import { isPubliclyIndexable } from "@/lib/seo/publicIndexability";
 
 export function listPublishedForSitemap(): SitemapEntry[] {
-  // /termekek and /feluletek stay out of the sitemap while all child detail
-  // pages are noindex (list hubs themselves are also noindex).
+  // /termekek and /feluletek list hubs stay out of the sitemap (explicit
+  // noindex). Product detail URLs enter only when publicly indexable
+  // (Festék Bázis cohort unlocked; manufacturer overlays remain locked).
   const entries: SitemapEntry[] = [
     { path: "/", lastModified: "2026-10-05" },
     { path: "/cegek", lastModified: "2026-10-05" },

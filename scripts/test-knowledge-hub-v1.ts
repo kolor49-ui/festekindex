@@ -36,6 +36,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -611,7 +612,7 @@ assert.equal(
   expectedMergedSourcesAfterClosure() + V81_MANUFACTURER_SOURCE_DELTA,
 );
 
-assert.equal(products.filter((p) => p.indexable).length, 0);
+assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 console.log("dataset OK");
 

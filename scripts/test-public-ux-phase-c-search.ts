@@ -30,6 +30,7 @@ import {
   expectedSpecCountAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedDilutedWithAfterClosure,
+  FB_PRODUCT_SEO_UNLOCK_COUNT,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   getActiveRelationsForEntity,
@@ -274,14 +275,16 @@ section("Data regression gate");
   let specs = 0;
   let packs = 0;
   let diluted = 0;
+  let publicProducts = 0;
   for (const p of listProducts()) {
     specs += p.specifications?.length ?? 0;
     packs += p.packagingOptions?.length ?? 0;
-    assert.equal(evaluatePublicIndexability(p).indexable, false);
+    if (evaluatePublicIndexability(p).indexable) publicProducts++;
     for (const r of getActiveRelationsForEntity(p.id)) {
       if (r.relationType === "dilutedWith" && r.fromEntityId === p.id) diluted++;
     }
   }
+  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(diluted, expectedDilutedWithAfterClosure());
