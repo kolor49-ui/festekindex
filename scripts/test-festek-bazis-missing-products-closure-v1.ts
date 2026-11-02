@@ -26,7 +26,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import {
@@ -206,8 +206,7 @@ section("Counts derived from accepted fixtures");
     packs,
     diluted,
     search: buildSearchCatalog().length,
-    enrichmentSources: festekBazisEnrichmentV1.sources.length,
-  });
+    enrichmentSources: festekBazisEnrichmentV1.sources.length});
 }
 
 section("S-31 dilutedWith — Industry Primer + Enamel only");
@@ -314,7 +313,7 @@ section("Search / SEO / ranking unchanged policy");
   assert.equal(
     listProducts().filter((p) => evaluatePublicIndexability(p).indexable)
       .length,
-    FB_PRODUCT_SEO_UNLOCK_COUNT,
+    expectedPublicProductCount(),
   );
   // Ranking / normalization modules not modified by this closure — smoke only
   console.log("search/SEO policy OK");
@@ -333,8 +332,7 @@ section("Description coverage intact + extended");
   }
   console.log("descriptions OK", {
     festekBazisOverlay: productDescriptionEnrichmentsV1.length,
-    productsWithEditorial: listProducts().length,
-  });
+    productsWithEditorial: listProducts().length});
 }
 
 console.log("\nALL Missing Products Closure v1 checks passed.");

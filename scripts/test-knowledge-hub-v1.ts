@@ -36,7 +36,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -68,15 +68,13 @@ const BODY_HASH: Record<string, string> = {
   know_airless_alapok:
     "0fde3a843a1f81896ea0618b869139034fbb55a671b261ab400f0d87065644e2",
   know_porfestek_vs_folyadek:
-    "f324d4d5e4b3863b6bedb63bf4d38a6f3fd9bf679eae6a1a21501b76c80943ee",
-};
+    "f324d4d5e4b3863b6bedb63bf4d38a6f3fd9bf679eae6a1a21501b76c80943ee"};
 
 const SHORT_DESC: Record<string, string> = {
   know_airless_alapok:
     "Mi az airless technológia, hogyan működik, mire használják, és milyen biztonsági szabályokat kell betartani.",
   know_porfestek_vs_folyadek:
-    "Szakmai összevetés: mikor előnyös a porfesték, mikor a folyékony bevonatrendszer, és milyen szempontok döntik el a választást.",
-};
+    "Szakmai összevetés: mikor előnyös a porfesték, mikor a folyékony bevonatrendszer, és milyen szempontok döntik el a választást."};
 
 function visibleText(html: string): string {
   return html
@@ -123,8 +121,7 @@ const relatedToKnow = allRelations.filter(
 assert.equal(relatedToKnow.length, 0);
 
 const airlessOut = getRelatedEntities("know_airless_alapok", {
-  direction: "outgoing",
-});
+  direction: "outgoing"});
 assert.equal(
   airlessOut.filter((r) => r.relation.relationType === "documents").length,
   2,
@@ -139,8 +136,7 @@ assert.ok(airlessOut.some((r) => r.entity.id === "brand_graco"));
 assert.ok(airlessOut.some((r) => r.entity.id === "cat_szoras"));
 
 const powderOut = getRelatedEntities("know_porfestek_vs_folyadek", {
-  direction: "outgoing",
-});
+  direction: "outgoing"});
 assert.equal(
   powderOut.filter((r) => r.relation.relationType === "documents").length,
   1,
@@ -612,7 +608,7 @@ assert.equal(
   expectedMergedSourcesAfterClosure() + V81_MANUFACTURER_SOURCE_DELTA,
 );
 
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 console.log("dataset OK");
 
@@ -646,8 +642,7 @@ assert.equal(
 assert.ok(
   getRelatedEntities("prod_factor_parquet", {
     relationTypes: ["dilutedWith"],
-    direction: "outgoing",
-  }).some((r) => r.entity.id === "prod_coror_synthetic"),
+    direction: "outgoing"}).some((r) => r.entity.id === "prod_coror_synthetic"),
 );
 assert.equal(getCanonicalBrandOwner("brand_graco")?.id, "org_graco_inc");
 // Euroll is not Graco owner / not breadcrumb parent for Knowledge

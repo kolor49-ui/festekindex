@@ -23,7 +23,8 @@
 2. Enrich to FB depth from official page/TDS only — no invention.
 3. Run **FB-parity gate** — FAIL stays noindex.
 4. Operator **GO** only on PASS_PARITY cohort (allowlist + flag).
-5. Currently unlocked: Festék Bázis 53 — must remain parity PASS.
+5. Currently unlocked: Festék Bázis 53 + PPG Trilak 42 — must remain parity PASS.
+   Other overlays stay noindex until a separate cohort GO.
 
 ## Operator time
 

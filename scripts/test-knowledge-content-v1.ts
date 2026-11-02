@@ -22,7 +22,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -100,8 +100,7 @@ const relatedToKnow = allRelations.filter(
 assert.equal(relatedToKnow.length, 0);
 
 const airlessOut = getRelatedEntities("know_airless_alapok", {
-  direction: "outgoing",
-});
+  direction: "outgoing"});
 const airlessDocs = airlessOut.filter(
   (r) => r.relation.relationType === "documents",
 );
@@ -115,8 +114,7 @@ assert.equal(airlessCats.length, 1);
 assert.equal(airlessCats[0]!.entity.id, "cat_szoras");
 
 const powderOut = getRelatedEntities("know_porfestek_vs_folyadek", {
-  direction: "outgoing",
-});
+  direction: "outgoing"});
 const powderDocs = powderOut.filter(
   (r) => r.relation.relationType === "documents",
 );
@@ -237,7 +235,7 @@ assert.equal(listTechnologies().length, 9);
 assert.equal(productUses.length, expectedUsesTechnologyAfterClosure());
 assert.equal(listSurfaces().length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 
@@ -262,8 +260,7 @@ assert.equal(
 assert.ok(
   getRelatedEntities("prod_factor_parquet", {
     relationTypes: ["dilutedWith"],
-    direction: "outgoing",
-  }).some((r) => r.entity.id === "prod_coror_synthetic"),
+    direction: "outgoing"}).some((r) => r.entity.id === "prod_coror_synthetic"),
 );
 assert.equal(
   allRelations.filter(

@@ -20,7 +20,7 @@ import {
 import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   getActiveRelationsForEntity,
@@ -69,8 +69,7 @@ section("Candidate inventory decisions");
   );
   console.log("decisions OK", {
     accepted: accepted.length,
-    rejected: rejected.length,
-  });
+    rejected: rejected.length});
 }
 
 section("Accepted Products integrated");

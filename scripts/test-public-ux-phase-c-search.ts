@@ -30,7 +30,7 @@ import {
   expectedSpecCountAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedDilutedWithAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   getActiveRelationsForEntity,
@@ -125,8 +125,7 @@ section("Identity vs context classification");
   }
   console.log("matchKind OK", {
     identity: beton.filter((h) => h.matchKind === "identity").length,
-    context: contextHits.length,
-  });
+    context: contextHits.length});
 }
 
 section("Regression queries");
@@ -202,8 +201,7 @@ section("Featured manufacturers from ranked hits");
         const params = new URLSearchParams({ q: "Fa" });
         if (gyartoSlug) params.set("gyarto", gyartoSlug);
         return `/kereses?${params.toString()}`;
-      },
-    }),
+      }}),
   );
   assert.ok(tabsHtml.includes("Kiemelt márkák és cégek"));
   assert.ok(tabsHtml.includes("Mind"));
@@ -223,8 +221,7 @@ section("SearchBox SSR smoke + leakage");
     createElement(SearchBox, {
       catalog,
       initialQuery: "",
-      variant: "page",
-    }),
+      variant: "page"}),
   );
   assert.ok(html.includes('role="combobox"'));
   assert.ok(html.includes('name="q"'));
@@ -236,8 +233,7 @@ section("SearchBox SSR smoke + leakage");
   const resultsHtml = renderToStaticMarkup(
     createElement(SearchResultsList, {
       results: searchCatalog("coror", { limit: 8 }),
-      query: "coror",
-    }),
+      query: "coror"}),
   );
   assert.ok(resultsHtml.includes("Termék") || resultsHtml.includes("Márka"));
   assert.ok(!INTERNAL.test(resultsHtml));
@@ -247,8 +243,7 @@ section("SearchBox SSR smoke + leakage");
   const emptyHtml = renderToStaticMarkup(
     createElement(SearchResultsList, {
       results: [],
-      query: "zzzznotfound",
-    }),
+      query: "zzzznotfound"}),
   );
   assert.ok(emptyHtml.includes("Nincs találat"));
   assert.ok(emptyHtml.includes('href="/cegek"'));
@@ -284,7 +279,7 @@ section("Data regression gate");
       if (r.relationType === "dilutedWith" && r.fromEntityId === p.id) diluted++;
     }
   }
-  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
+  assert.equal(publicProducts, expectedPublicProductCount());
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(diluted, expectedDilutedWithAfterClosure());

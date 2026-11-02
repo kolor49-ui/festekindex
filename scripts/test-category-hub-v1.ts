@@ -26,7 +26,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -73,8 +73,7 @@ function countIncoming(type: string) {
     }
     const hit = getRelatedEntities(r.toEntityId, {
       relationTypes: ["belongsToCategory"],
-      direction: "incoming",
-    }).find((x) => x.relation.id === r.id);
+      direction: "incoming"}).find((x) => x.relation.id === r.id);
     return hit?.entity.type === type;
   }).length;
 }
@@ -159,8 +158,7 @@ const RICHNESS: Record<string, RichExp> = {
   cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
   cat_padlo: { p: 6, f: 0, b: 2, o: 2, t: 3, s: 2, k: 0 },
   cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
-  cat_tuzvedo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 },
-};
+  cat_tuzvedo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 }};
 
 section("product-backed richness");
 for (const [id, exp] of Object.entries(RICHNESS)) {
@@ -472,8 +470,7 @@ for (const c of categories.filter((x) => x.id !== "cat_all")) {
     for (const pid of productIds) {
       const has = getRelatedEntities(pid, {
         relationTypes: ["usesTechnology"],
-        direction: "outgoing",
-      }).some((r) => r.entity.id === t.id);
+        direction: "outgoing"}).some((r) => r.entity.id === t.id);
       if (has) {
         found = true;
         break;
@@ -486,8 +483,7 @@ for (const c of categories.filter((x) => x.id !== "cat_all")) {
     for (const pid of productIds) {
       const has = getRelatedEntities(pid, {
         relationTypes: ["applicableToSurface"],
-        direction: "outgoing",
-      }).some((r) => r.entity.id === s.id);
+        direction: "outgoing"}).some((r) => r.entity.id === s.id);
       if (has) {
         found = true;
         break;
@@ -678,7 +674,7 @@ assert.equal(new Set(productUses.map((r) => r.fromEntityId)).size, 48);
 assert.equal(listSurfaces().length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(ats.filter((r) => (r.sourceIds?.length ?? 0) > 0).length, expectedApplicableToSurfaceAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(listSurfaces().filter((s) => s.indexable).length, 0);
 assert.equal(
   evaluateIndexability(listTechnologies().find((t) => t.id === "tech_porfestek")!)
@@ -711,8 +707,7 @@ assert.equal(
 );
 const parquetDiluted = getRelatedEntities("prod_factor_parquet", {
   relationTypes: ["dilutedWith"],
-  direction: "outgoing",
-}).map((r) => r.entity.id);
+  direction: "outgoing"}).map((r) => r.entity.id);
 assert.ok(parquetDiluted.includes("prod_coror_synthetic"));
 
 const brand7016Rels = allRelations.filter(

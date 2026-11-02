@@ -39,7 +39,7 @@ import {
   expectedApplicableToSurfaceAfterClosure,
   expectedSearchDocumentsAfterClosure,
   V81_MANUFACTURER_SOURCE_DELTA,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 
 import { sources as sourcesBase } from "../lib/data/sources";
@@ -138,14 +138,19 @@ assert.equal(
       "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
     )!,
   ).indexable,
-  false,
-  "overlay products stay noindex",
+  true,
+  "PPG Trilak PASS cohort unlocked",
 );
 assert.equal(
   evaluatePublicIndexability(
-    getProductById(
-      "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
-    )!,
+    getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
+  ).indexable,
+  false,
+  "non-GO overlays stay noindex",
+);
+assert.equal(
+  evaluatePublicIndexability(
+    getProductById("prod_remmers_2k_epoxy_primer_4500776405")!,
   ).source,
   "flag_noindex",
 );
@@ -291,13 +296,13 @@ section("Product / Surface locks");
 assert.equal(listProducts().length, expectedProductCountAfterClosure());
 assert.equal(
   listProducts().filter((p) => evaluatePublicIndexability(p).indexable).length,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
-  "Festék Bázis cohort unlocked; overlays stay noindex",
+  expectedPublicProductCount(),
+  "FB + PPG cohorts unlocked; other overlays stay noindex",
 );
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/termekek/"))
     .length,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount(),
 );
 assert.equal(listSurfaces().length, 15);
 assert.equal(
@@ -370,8 +375,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Phase 2 hubs (54) + Festék Bázis product cohort unlock (53) → 107.
-assert.equal(sm.length, 107, `expected 107 sitemap URLs, got ${sm.length}`);
+// Phase 2 hubs (54) + FB 53 + PPG 42 → 149.
+assert.equal(sm.length, 149, `expected 149 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
@@ -462,8 +467,7 @@ for (const entity of listAllEntities()) {
     entity,
     pub,
     robots,
-    sitemap: smSet.has(getEntityHref(entity)),
-  });
+    sitemap: smSet.has(getEntityHref(entity))});
 }
 
 const M1 = rows.filter((r) => r.robots === true && !r.sitemap);
@@ -505,13 +509,11 @@ console.log("coherence OK");
 section("public UI smoke / leakage");
 const fbHtml = renderToStaticMarkup(
   createElement(OrganizationHubPage, {
-    model: buildOrganizationHubModel(fb)!,
-  }),
+    model: buildOrganizationHubModel(fb)!}),
 );
 const valmorHtml = renderToStaticMarkup(
   createElement(BrandHubPage, {
-    model: buildBrandHubModel(valmor)!,
-  }),
+    model: buildBrandHubModel(valmor)!}),
 );
 for (const html of [fbHtml, valmorHtml]) {
   const vis = html
@@ -534,8 +536,7 @@ for (const p of products) {
   packs += p.packagingOptions?.length ?? 0;
   for (const r of getRelatedEntities(p.id, {
     relationTypes: ["dilutedWith"],
-    direction: "outgoing",
-  })) {
+    direction: "outgoing"})) {
     diluted++;
   }
 }
@@ -606,8 +607,7 @@ assert.equal(
 assert.ok(
   getRelatedEntities("prod_factor_parquet", {
     relationTypes: ["dilutedWith"],
-    direction: "outgoing",
-  }).some((r) => r.entity.id === "prod_coror_synthetic"),
+    direction: "outgoing"}).some((r) => r.entity.id === "prod_coror_synthetic"),
 );
 assert.equal(getCanonicalBrandOwner("brand_graco")?.id, "org_graco_inc");
 assert.equal(listOrganizations().filter((o) => o.id === "org_festek_bazis_zrt").length, 1);

@@ -141,9 +141,16 @@ export const CAPAROL_V1_COUNT = 122;
 
 /**
  * Festék Bázis product Google unlock cohort (editorial + professional ready).
- * Overlay manufacturer products remain noindex.
  */
 export const FB_PRODUCT_SEO_UNLOCK_COUNT = 53;
+
+/** PPG Trilak 42 PASS product Google unlock (FB-parity PASS). */
+export const PPG_PRODUCT_SEO_UNLOCK_COUNT = 42;
+
+/** Publicly indexable products (FB + unlocked PASS_PARITY cohorts). */
+export function expectedPublicProductCount(): number {
+  return FB_PRODUCT_SEO_UNLOCK_COUNT + PPG_PRODUCT_SEO_UNLOCK_COUNT;
+}
 
 /**
  * Official manufacturer website sources added in v8.1+ (sources.ts),

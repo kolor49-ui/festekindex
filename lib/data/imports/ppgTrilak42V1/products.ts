@@ -1,6 +1,6 @@
 import type { Product } from "../../types";
 
-/** PPG Trilak 42 PASS catalogue identities (v8.1). indexable locked false. */
+/** PPG Trilak 42 PASS catalogue identities (v8.1). indexable unlocked after enrich (FB-parity). */
 export const ppgTrilak42Products: Product[] = [
   {
     id: "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",

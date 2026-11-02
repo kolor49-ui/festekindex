@@ -24,7 +24,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -72,8 +72,7 @@ const EXPECTED: Record<string, Exp> = {
     s: 1,
     k: 1,
     fDir: 3,
-    bDir: 2,
-  },
+    bDir: 2},
   tech_martas: { p: 1, fDer: 1, bDer: 1, oDer: 1, c: 1, s: 1, k: 0, fDir: 0 },
   tech_csiszolas: {
     p: 0,
@@ -84,8 +83,7 @@ const EXPECTED: Record<string, Exp> = {
     s: 0,
     k: 0,
     fDir: 0,
-    bDir: 1,
-  },
+    bDir: 1},
   tech_porfestek: {
     p: 0,
     fDer: 0,
@@ -95,9 +93,7 @@ const EXPECTED: Record<string, Exp> = {
     s: 0,
     k: 1,
     fDir: 0,
-    bDir: 1,
-  },
-};
+    bDir: 1}};
 
 section("build all models");
 const technologies = listTechnologies();
@@ -121,8 +117,7 @@ for (const t of technologies) {
     s: portfolio.surfaces.length,
     k: portfolio.knowledge.length,
     fDir: portfolio.directFamilies.length,
-    bDir: portfolio.directBrands.length,
-  };
+    bDir: portfolio.directBrands.length};
 
   assert.equal(actual.p, exp.p, `${t.id} P`);
   assert.equal(actual.fDer, exp.fDer, `${t.id} Fder`);
@@ -313,8 +308,7 @@ console.log("leakage OK");
 section("spray overlap regression");
 const enamelTechs = getRelatedEntities("prod_coror_ind_enamel", {
   relationTypes: ["usesTechnology"],
-  direction: "outgoing",
-}).map((r) => r.entity.id);
+  direction: "outgoing"}).map((r) => r.entity.id);
 assert.ok(enamelTechs.includes("tech_szoras"));
 assert.ok(enamelTechs.includes("tech_airless"));
 assert.ok(enamelTechs.includes("tech_air_mix"));
@@ -423,7 +417,7 @@ assert.equal(
   ).length,
   expectedApplicableToSurfaceAfterClosure(),
 );
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(surfaces.filter((s) => s.indexable).length, 0);
 assert.equal(
   listPublishedForSitemap().filter((e) => e.path.startsWith("/feluletek/"))
@@ -457,8 +451,7 @@ assert.equal(
 assert.ok(
   getRelatedEntities("prod_factor_parquet", {
     relationTypes: ["dilutedWith"],
-    direction: "outgoing",
-  }).some((r) => r.entity.id === "prod_coror_synthetic"),
+    direction: "outgoing"}).some((r) => r.entity.id === "prod_coror_synthetic"),
 );
 console.log("dataset OK");
 

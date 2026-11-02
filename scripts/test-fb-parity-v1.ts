@@ -14,14 +14,15 @@ import {
   evaluateFbParity,
   type FbParityReason,
 } from "../lib/seo/fbParity";
-import { FB_PRODUCT_SEO_UNLOCK_COUNT } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
+import { expectedPublicProductCount } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 
 function section(name: string) {
   console.log(`\n=== ${name} ===`);
 }
 
-const OVERLAY_RE =
-  /^prod_(trilak_|jub_|poli_farbe_|remmers_|dufa_|akzo_|caparol_|baumit_|revco_|egrokorr_)/;
+/** Still-locked manufacturer overlays (PPG unlocked separately). */
+const LOCKED_OVERLAY_RE =
+  /^prod_(jub_|poli_farbe_|remmers_|dufa_|akzo_|caparol_|baumit_|revco_|egrokorr_)/;
 
 section("parity evaluate all products");
 const products = listProducts();
@@ -35,13 +36,15 @@ const unlocked = results.filter((r) => r.public);
 const locked = results.filter((r) => !r.public);
 const unlockedFail = unlocked.filter((r) => !r.parity.pass);
 const lockedPass = locked.filter((r) => r.parity.pass);
-const overlayLocked = locked.filter((r) => OVERLAY_RE.test(r.product.id));
+const overlayLocked = locked.filter((r) =>
+  LOCKED_OVERLAY_RE.test(r.product.id),
+);
 const overlayParityPass = overlayLocked.filter((r) => r.parity.pass);
 
 assert.equal(
   unlocked.length,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
-  "public product count must match FB unlock cohort",
+  expectedPublicProductCount(),
+  "public product count must match FB+PPG unlock cohorts",
 );
 
 assert.equal(
@@ -54,7 +57,10 @@ assert.equal(
 
 for (const r of unlocked) {
   assert.ok(r.parity.pass, r.product.id);
-  assert.ok(!OVERLAY_RE.test(r.product.id), `overlay must not be public ${r.product.id}`);
+  assert.ok(
+    !LOCKED_OVERLAY_RE.test(r.product.id),
+    `locked overlay must not be public ${r.product.id}`,
+  );
 }
 
 console.log("unlocked parity OK", {

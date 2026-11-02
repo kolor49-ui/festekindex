@@ -23,7 +23,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import { expectedProductCountAfterCatalogueClosure } from "../lib/data/imports/festekBazisEnrichmentV1/catalogueClosureV1";
 import { getCanonicalBrandOwner } from "../lib/navigation/entityNavigation";
@@ -199,8 +199,7 @@ section("Product description visibility — 30/30 hub lead SSR");
     { substr: "COROR Rapid Korróziógátló Alapozó", needle: /alapozó|korrózió/i },
     {
       substr: "VALMOR AIR FLOW Lélegző Beltéri Falfesték",
-      needle: /páraáteresztő|lélegző|beltéri/i,
-    },
+      needle: /páraáteresztő|lélegző|beltéri/i},
   ];
 
   for (const p of products) {
@@ -266,8 +265,7 @@ section("Product description visibility — 30/30 hub lead SSR");
     editorial,
     source,
     resolvedLead,
-    renderedLead,
-  });
+    renderedLead});
 }
 
 section("Locked data + hierarchy");
@@ -281,7 +279,7 @@ section("Locked data + hierarchy");
     packs += p.packagingOptions?.length ?? 0;
     if (evaluatePublicIndexability(p).indexable) publicProducts++;
   }
-  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
+  assert.equal(publicProducts, expectedPublicProductCount());
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
 

@@ -29,7 +29,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -91,14 +91,12 @@ assert.equal(formatSpecCondition({ basis: "per_coat" }), "rétegenként");
 assert.ok(
   formatSpecCondition({
     temperatureC: 25,
-    note: "40 µm száraz rétegvastagság esetén",
-  })?.includes("25 °C-on"),
+    note: "40 µm száraz rétegvastagság esetén"})?.includes("25 °C-on"),
 );
 assert.ok(
   formatSpecCondition({
     temperatureC: 25,
-    note: "40 µm száraz rétegvastagság esetén",
-  })?.includes("40 µm"),
+    note: "40 µm száraz rétegvastagság esetén"})?.includes("40 µm"),
 );
 console.log("formatter OK");
 
@@ -117,7 +115,7 @@ for (const p of products) {
   }
 }
 assert.equal(products.length, expectedProductCountAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(specs, expectedSpecCountAfterClosure());
 assert.equal(packs, expectedPackagingCountAfterClosure());
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());

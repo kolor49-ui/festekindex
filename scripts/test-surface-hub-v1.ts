@@ -24,7 +24,7 @@ import {
   expectedEnrichmentSourcesAfterClosure,
   expectedPackagingCountAfterClosure,
   expectedProductCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
   expectedSpecCountAfterClosure,
   expectedMergedSourcesAfterClosure,
   expectedProductCategoryRelationsAfterClosure,
@@ -63,8 +63,7 @@ const EXPECTED: Record<
   surface_muanyag: { p: 4, f: 2, b: 1, o: 1, c: 2, t: 3, k: 0 },
   surface_osb: { p: 2, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
   surface_keramia_csempe: { p: 4, f: 1, b: 2, o: 1, c: 2, t: 3, k: 0 },
-  surface_mdf: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 },
-};
+  surface_mdf: { p: 1, f: 1, b: 1, o: 1, c: 1, t: 3, k: 0 }};
 
 section("build all models");
 const surfaces = listSurfaces();
@@ -86,8 +85,7 @@ for (const s of surfaces) {
     o: portfolio.organizations.length,
     c: portfolio.categories.length,
     t: portfolio.technologies.length,
-    k: portfolio.knowledge.length,
-  };
+    k: portfolio.knowledge.length};
 
   assert.deepEqual(
     actual,
@@ -279,10 +277,8 @@ section("Fa surface discovery chrome");
         id: o.id,
         name: o.name,
         slug: o.slug,
-        hitCount: o.productCount,
-      })),
-      surfacePath: "/feluletek/fa",
-    }),
+        hitCount: o.productCount})),
+      surfacePath: "/feluletek/fa"}),
   );
   assert.ok(faHtml.includes("Kiemelt márkák és cégek"));
   assert.ok(faHtml.includes("Mind"));
@@ -337,7 +333,7 @@ assert.equal(specs, expectedSpecCountAfterClosure());
 assert.equal(packs, expectedPackagingCountAfterClosure());
 assert.equal(festekBazisEnrichmentV1.sources.length, expectedEnrichmentSourcesAfterClosure());
 assert.equal(diluted, expectedDilutedWithAfterClosure());
-assert.equal(products.filter((p) => p.indexable).length, FB_PRODUCT_SEO_UNLOCK_COUNT);
+assert.equal(products.filter((p) => p.indexable).length, expectedPublicProductCount());
 assert.equal(surfaces.length, 15);
 assert.equal(ats.length, expectedApplicableToSurfaceAfterClosure());
 assert.equal(

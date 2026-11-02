@@ -15,7 +15,7 @@ import {
   expectedProductCountAfterClosure,
   expectedSearchDocumentsAfterClosure,
   expectedSpecCountAfterClosure,
-  FB_PRODUCT_SEO_UNLOCK_COUNT,
+  expectedPublicProductCount,
 } from "../lib/data/imports/festekBazisEnrichmentV1/missingProductsClosureV1";
 import {
   expectedMergedSourcesAfterCatalogueClosure,
@@ -60,7 +60,7 @@ section("Baseline locks");
     packs += p.packagingOptions?.length ?? 0;
     if (evaluatePublicIndexability(p).indexable) publicProducts++;
   }
-  assert.equal(publicProducts, FB_PRODUCT_SEO_UNLOCK_COUNT);
+  assert.equal(publicProducts, expectedPublicProductCount());
   assert.equal(specs, expectedSpecCountAfterClosure());
   assert.equal(packs, expectedPackagingCountAfterClosure());
   assert.equal(
@@ -212,8 +212,7 @@ section("Coverage + provenance");
   console.log("coverage OK", {
     products: withDesc.length,
     totalSections,
-    headings: Object.fromEntries(headingCounts),
-  });
+    headings: Object.fromEntries(headingCounts)});
 }
 
 section("Reference content");
