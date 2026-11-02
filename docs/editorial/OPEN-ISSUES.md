@@ -25,8 +25,8 @@ Do not fabricate an SDS source record.
 Do not invent measurement method or broaden into an unsupported universal threshold.
 
 ### B1-DOC-01 — Claim matrix Hungarian exactClaim linkage
-**Status:** OPEN — before later Product SEO Quality Gate  
-Batch 1 technical claim matrix still uses English claim summaries in parts of `exactClaim`. Link each claim to exact Hungarian public text before SEO unlock work.
+**Status:** CLOSED — 2026-11-02  
+Batch 1 technical claim matrix `exactClaim` values linked to Hungarian `sourceEvidence` fragments (163/163). Canonical: `docs/editorial/TECHNICAL-CLAIMS-B1.csv` + audit CSV. Product `indexable` flags remain locked until a separate cohort GO.
 
 ## Catalogue remainder (not in this release)
 
