@@ -375,8 +375,8 @@ console.log("Tech/Category/Knowledge OK");
 section("sitemap total + M1/M2/M3");
 const sm = listPublishedForSitemap();
 // List/home hubs + entity details; /termekek+/feluletek list hubs stay out.
-// Phase 2 hubs (54) + FB 53 + PPG 42 → 149.
-assert.equal(sm.length, 149, `expected 149 sitemap URLs, got ${sm.length}`);
+// Phase 2 hubs + FB 53 + PPG 42 + KEMIKÁL org/brand → 151.
+assert.equal(sm.length, 151, `expected 151 sitemap URLs, got ${sm.length}`);
 const detailOrgs = sm.filter(
   (e) => e.path.startsWith("/cegek/") && e.path !== "/cegek",
 );
@@ -385,14 +385,16 @@ const detailBrands = sm.filter(
 );
 assert.equal(
   detailOrgs.length,
-  16,
-  "Wave-1 orgs + JUB/Poli/Remmers/Meffert/Egrokorr/Caparol/REVCO/Baumit",
+  17,
+  "Wave-1 orgs + JUB/Poli/Remmers/Meffert/Egrokorr/Caparol/REVCO/Baumit/KEMIKÁL",
 );
 assert.equal(
   detailBrands.length,
-  19,
-  "Wave-1 brands + Trinát/Lazurán + P1 umbrella brands",
+  20,
+  "Wave-1 brands + Trinát/Lazurán + P1 umbrella brands + Kemikál",
 );
+assert.ok(sm.some((e) => e.path === "/cegek/kemikal"));
+assert.ok(sm.some((e) => e.path === "/markak/kemikal"));
 assert.ok(
   !sm.some((e) => e.path === "/termekek" || e.path === "/feluletek"),
   "locked-child list hubs must stay out of sitemap",

@@ -338,5 +338,26 @@ export const organizations: Organization[] = [
     updatedAt: "2026-11-02",
     verifiedAt: "2026-11-02",
   },
+  {
+    id: "org_kemikal",
+    type: "organization",
+    slug: "kemikal",
+    name: "KEMIKÁL Építőanyagipari Zrt.",
+    legalName: "KEMIKÁL Építőanyagipari Zártkörűen Működő Részvénytársaság",
+    country: "HU",
+    roles: ["manufacturer"],
+    website: "https://kemikal.hu/",
+    shortDescription:
+      "Építőipari vegyipar, felületvédelem és szigetelés — magyar gyártó.",
+    body: "A KEMIKÁL Építőanyagipari Zrt. magyar építőanyag-ipari gyártó. Hivatalos forrás: kemikal.hu. A FESTÉKINDEX-en gyártói hubként jelenik meg; a termékoldalak külön noindex minőségi körben kapcsolódnak.",
+    status: "published",
+    indexable: true,
+    seoTitle: "KEMIKÁL Építőanyagipari Zrt. | FESTÉKINDEX",
+    seoDescription:
+      "KEMIKÁL: építőipari vegyipar, felületvédelem és szigetelés — gyártói adatlap a FESTÉKINDEX-en.",
+    sourceIds: ["src_kemikal_hu"],
+    updatedAt: "2026-11-02",
+    verifiedAt: "2026-11-02",
+  },
 ];
 

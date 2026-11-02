@@ -139,6 +139,9 @@ export const BAUMIT_V1_COUNT = 165;
 /** Caparol HU overlay (REVIEW; HOLD excluded; noindex). */
 export const CAPAROL_V1_COUNT = 122;
 
+/** KEMIKÁL overlay (REVIEW; HOLD/ERROR excluded; noindex). */
+export const KEMIKAL_V1_COUNT = 107;
+
 /**
  * Festék Bázis product Google unlock cohort (editorial + professional ready).
  */
@@ -157,7 +160,7 @@ export function expectedPublicProductCount(): number {
  * outside Festék Bázis enrichment overlays.
  * Includes Baumit (`src_baumit_hu`) after the P1 manufacturer fill.
  */
-export const V81_MANUFACTURER_SOURCE_DELTA = 9;
+export const V81_MANUFACTURER_SOURCE_DELTA = 10;
 
 /** New brand SearchDocuments in v8.1 (Trinát, Lazurán + 7 manufacturer brands). */
 export const V81_NEW_BRAND_COUNT = 9;
@@ -178,7 +181,8 @@ export function expectedProductCountAfterClosure(): number {
     REVCO_V1_COUNT +
     EGROKORR_V1_COUNT +
     BAUMIT_V1_COUNT +
-    CAPAROL_V1_COUNT
+    CAPAROL_V1_COUNT +
+    KEMIKAL_V1_COUNT
   );
 }
 
@@ -219,6 +223,7 @@ export function expectedSearchDocumentsAfterClosure(): number {
     EGROKORR_V1_COUNT +
     BAUMIT_V1_COUNT +
     CAPAROL_V1_COUNT +
+    KEMIKAL_V1_COUNT +
     V81_NEW_BRAND_COUNT +
     V81_NEW_ORG_COUNT +
     V82_JUB_NEW_BRAND_COUNT +
@@ -228,7 +233,10 @@ export function expectedSearchDocumentsAfterClosure(): number {
     2 + // brand_sadolin + brand_hammerite
     2 + // egrokorr sub-brands shipped: dunaplaszt + sziloplaszt
     1 + // brand_baumit
-    1 // org_baumit_hungary search doc
+    1 + // org_baumit_hungary search doc
+    1 + // brand_kemikal
+    1 + // org_kemikal search doc
+    2 // brand_bornit + brand_tetol
   );
 }
 
@@ -272,7 +280,8 @@ export function expectedProductCategoryRelationsAfterClosure(): number {
     REVCO_V1_COUNT +
     EGROKORR_V1_COUNT +
     BAUMIT_V1_COUNT +
-    CAPAROL_V1_COUNT
+    CAPAROL_V1_COUNT +
+    KEMIKAL_V1_COUNT
   );
 }
 

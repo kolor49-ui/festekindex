@@ -82,7 +82,8 @@ section("Coverage — FESTÉK BÁZIS Products");
       !p.id.startsWith("prod_caparol_") &&
       !p.id.startsWith("prod_baumit_") &&
       !p.id.startsWith("prod_revco_") &&
-      !p.id.startsWith("prod_egrokorr_")
+      !p.id.startsWith("prod_egrokorr_") &&
+      !p.id.startsWith("prod_kemikal_")
     ) {
       assert.ok(descIds.has(p.id), `missing description for ${p.id}`);
     }

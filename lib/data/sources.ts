@@ -131,6 +131,15 @@ export const sources: Source[] = [
     accessedAt: "2026-09-10",
   },
   {
+    id: "src_kemikal_hu",
+    type: "official_website",
+    title: "KEMIKÁL — hivatalos weboldal",
+    url: "https://kemikal.hu/",
+    publisher: "KEMIKÁL Építőanyagipari Zrt.",
+    accessedAt: "2026-11-02",
+  },
+
+  {
     id: "src_airless_knowledge",
     type: "other",
     title: "Airless szórástechnika — szakmai összefoglaló források",

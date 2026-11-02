@@ -158,6 +158,11 @@ section("Coverage + provenance");
           /egrokorr\.hu/i.test(src.url || ""),
           `${sid} Egrokorr official URL`,
         );
+      } else if (p.id.startsWith("prod_kemikal_")) {
+        assert.ok(
+          /kemikal\.hu/i.test(src.url || ""),
+          `${sid} KEMIKÁL official URL`,
+        );
       } else {
         assert.ok(
           src.url?.includes("festekbazis.hu"),

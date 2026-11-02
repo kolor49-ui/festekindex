@@ -413,6 +413,31 @@ export const relations: Relation[] = [
     status: "active",
   },
   {
+    id: "rel_kemikal_owns_brand",
+    fromEntityId: "org_kemikal",
+    toEntityId: "brand_kemikal",
+    relationType: "owns",
+    sourceIds: ["src_kemikal_hu"],
+    status: "active",
+  },
+  {
+    id: "rel_kemikal_org_cat_epitesi",
+    fromEntityId: "org_kemikal",
+    toEntityId: "cat_epitesi",
+    relationType: "belongsToCategory",
+    sourceIds: ["src_kemikal_hu"],
+    status: "active",
+  },
+  {
+    id: "rel_kemikal_brand_cat_epitesi",
+    fromEntityId: "brand_kemikal",
+    toEntityId: "cat_epitesi",
+    relationType: "belongsToCategory",
+    sourceIds: ["src_kemikal_hu"],
+    status: "active",
+  },
+
+  {
     id: "rel_sika_brand_cat_beton",
     fromEntityId: "brand_sika",
     toEntityId: "cat_beton",

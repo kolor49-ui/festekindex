@@ -89,8 +89,8 @@ assert.equal(productsWithCat.size, expectedProductCategoryRelationsAfterClosure(
 assert.equal(products.length - productsWithCat.size, 3);
 
 assert.equal(countIncoming("productFamily"), 1);
-assert.equal(countIncoming("brand"), 14); // +Trinát, +Lazurán category links
-assert.equal(countIncoming("organization"), 8);
+assert.equal(countIncoming("brand"), 15); // +Trinát, +Lazurán, +Kemikál category links
+assert.equal(countIncoming("organization"), 9); // +KEMIKÁL org category link
 assert.equal(countIncoming("technology"), 3);
 assert.equal(countIncoming("knowledge"), 2);
 assert.equal(countIncoming("surface"), 0);
@@ -150,12 +150,12 @@ type RichExp = {
 };
 
 const RICHNESS: Record<string, RichExp> = {
-  cat_faipar: { p: 93, f: 2, b: 12, o: 9, t: 4, s: 1, k: 0 },
-  cat_homlokzat: { p: 187, f: 2, b: 13, o: 7, t: 4, s: 5, k: 0 },
-  cat_dekor: { p: 137, f: 2, b: 20, o: 10, t: 4, s: 5, k: 0 },
-  cat_epitesi: { p: 282, f: 0, b: 20, o: 8, t: 0, s: 0, k: 0 },
-  cat_ipari: { p: 33, f: 2, b: 6, o: 5, t: 5, s: 11, k: 0 },
-  cat_higito_segedanyag: { p: 3, f: 1, b: 1, o: 1, t: 0, s: 0, k: 0 },
+  cat_faipar: { p: 120, f: 2, b: 15, o: 10, t: 4, s: 1, k: 0 },
+  cat_homlokzat: { p: 204, f: 2, b: 15, o: 8, t: 4, s: 5, k: 0 },
+  cat_dekor: { p: 143, f: 2, b: 21, o: 11, t: 4, s: 5, k: 0 },
+  cat_epitesi: { p: 334, f: 0, b: 23, o: 9, t: 0, s: 0, k: 0 },
+  cat_ipari: { p: 36, f: 2, b: 7, o: 6, t: 5, s: 11, k: 0 },
+  cat_higito_segedanyag: { p: 5, f: 1, b: 2, o: 2, t: 0, s: 0, k: 0 },
   cat_padlo: { p: 6, f: 0, b: 2, o: 2, t: 3, s: 2, k: 0 },
   cat_csiszolas: { p: 5, f: 2, b: 2, o: 1, t: 2, s: 6, k: 0 },
   cat_tuzvedo: { p: 2, f: 0, b: 1, o: 1, t: 3, s: 0, k: 0 }};
@@ -243,17 +243,19 @@ console.log("Szórás OK");
 section("Faipari Brand separation");
 {
   const p = getCategoryPortfolio("cat_faipar")!;
-  assert.equal(p.products.length, 93);
+  assert.equal(p.products.length, 120);
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_factor"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_lazuran"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_poli_boroka"));
   assert.ok(p.derivedBrands.some((b) => b.id === "brand_remmers"));
+  assert.ok(p.derivedBrands.some((b) => b.id === "brand_kemikal"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_festek_bazis_zrt"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_ppg_trilak"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_jub_hu"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_poli_farbe"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_remmers_ungarn"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_meffert_hungaria"));
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_kemikal"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_sikkens"));
   assert.ok(p.directBrands.some((b) => b.id === "brand_milesi"));
   assert.equal(p.brandPresentation.mode, "split");
@@ -281,7 +283,7 @@ section("Faipari Brand separation");
   // Product-derived company navigation (not omitted beside Brands)
   assert.ok(model.organizationContext);
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 9);
+  assert.equal(model.organizationContext!.unified.length, 10);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.id === "org_festek_bazis_zrt",
@@ -318,12 +320,13 @@ section("Homlokzat company navigation");
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_jub_hu"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_poli_farbe"));
   assert.ok(p.derivedOrganizations.some((o) => o.id === "org_meffert_hungaria"));
-  assert.equal(p.derivedOrganizations.length, 7);
+  assert.ok(p.derivedOrganizations.some((o) => o.id === "org_kemikal"));
+  assert.equal(p.derivedOrganizations.length, 8);
   assert.equal(p.directOrganizations.length, 0);
   const model = buildCategoryHubModel(p.category)!;
   assert.ok(model.organizationContext, "Homlokzat must expose Cégek");
   assert.equal(model.organizationContext!.mode, "unified");
-  assert.equal(model.organizationContext!.unified.length, 7);
+  assert.equal(model.organizationContext!.unified.length, 8);
   assert.ok(
     model.organizationContext!.unified.some(
       (o) => o.href === "/cegek/festek-bazis-zrt",

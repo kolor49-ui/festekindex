@@ -84,6 +84,11 @@ import {
   caparolProducts,
 } from "./imports/caparolV1";
 import {
+  applyKemikalV1,
+  kemikalBrands,
+  kemikalProducts,
+} from "./imports/kemikalV1";
+import {
   mergeById,
   mergeRelationsByCanonicalKey,
   mergeSurfaces,
@@ -120,10 +125,13 @@ const brands = mergeById(
   ),
   mergeById(
     mergeById(
-      mergeById(dufaBrands, akzoBrands),
-      mergeById(revcoBrands, egrokorrBrands),
+      mergeById(
+        mergeById(dufaBrands, akzoBrands),
+        mergeById(revcoBrands, egrokorrBrands),
+      ),
+      mergeById(baumitBrands, caparolBrands),
     ),
-    mergeById(baumitBrands, caparolBrands),
+    kemikalBrands,
   ),
 );
 const productFamilies = mergeById(
@@ -146,10 +154,13 @@ const productsMerged = mergeById(
   ),
   mergeById(
     mergeById(
-      mergeById(dufaProducts, akzoProducts),
-      mergeById(revcoProducts, egrokorrProducts),
+      mergeById(
+        mergeById(dufaProducts, akzoProducts),
+        mergeById(revcoProducts, egrokorrProducts),
+      ),
+      mergeById(baumitProducts, caparolProducts),
     ),
-    mergeById(baumitProducts, caparolProducts),
+    kemikalProducts,
   ),
 );
 const surfaces = mergeSurfaces(surfacesBase, festekBazisV02Seed.surfaces);
@@ -185,9 +196,10 @@ const revco = applyRevcoV1(akzo.products, akzo.sources, akzo.relations);
 const egrokorr = applyEgrokorrV1(revco.products, revco.sources, revco.relations);
 const baumit = applyBaumitV1(egrokorr.products, egrokorr.sources, egrokorr.relations);
 const caparol = applyCaparolV1(baumit.products, baumit.sources, baumit.relations);
-const products = caparol.products;
-const relations = caparol.relations;
-const sources = caparol.sources;
+const kemikal = applyKemikalV1(caparol.products, caparol.sources, caparol.relations);
+const products = kemikal.products;
+const relations = kemikal.relations;
+const sources = kemikal.sources;
 
 const TYPE_PATH: Record<EntityType, string> = {
   organization: "cegek",

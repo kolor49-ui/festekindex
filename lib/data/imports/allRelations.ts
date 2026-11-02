@@ -18,6 +18,7 @@ import { revcoRelations } from "./revcoV1/relations";
 import { egrokorrRelations } from "./egrokorrV1/relations";
 import { baumitRelations } from "./baumitV1/relations";
 import { caparolRelations } from "./caparolV1/relations";
+import { kemikalRelations } from "./kemikalV1/relations";
 
 export const allRelations = mergeRelationsByCanonicalKey(
   mergeRelationsByCanonicalKey(
@@ -32,30 +33,33 @@ export const allRelations = mergeRelationsByCanonicalKey(
                     mergeRelationsByCanonicalKey(
                       mergeRelationsByCanonicalKey(
                         mergeRelationsByCanonicalKey(
-                          relationsBase,
-                          festekBazisV02Seed.relations,
+                          mergeRelationsByCanonicalKey(
+                            relationsBase,
+                            festekBazisV02Seed.relations,
+                          ),
+                          festekBazisEnrichmentV1.relations,
                         ),
-                        festekBazisEnrichmentV1.relations,
+                        ppgTrilak42Relations,
                       ),
-                      ppgTrilak42Relations,
+                      jub95Relations,
                     ),
-                    jub95Relations,
+                    poli6Relations,
                   ),
-                  poli6Relations,
+                  poli65ReviewRelations,
                 ),
-                poli65ReviewRelations,
+                remmersRelations,
               ),
-              remmersRelations,
+              dufaRelations,
             ),
-            dufaRelations,
+            akzoRelations,
           ),
-          akzoRelations,
+          revcoRelations,
         ),
-        revcoRelations,
+        egrokorrRelations,
       ),
-      egrokorrRelations,
+      baumitRelations,
     ),
-    baumitRelations,
+    caparolRelations,
   ),
-  caparolRelations,
+  kemikalRelations,
 );

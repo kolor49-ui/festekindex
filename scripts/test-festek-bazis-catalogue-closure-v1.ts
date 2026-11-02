@@ -168,7 +168,8 @@ section("Baselines / counts");
       !p.id.startsWith("prod_caparol_") &&
       !p.id.startsWith("prod_baumit_") &&
       !p.id.startsWith("prod_revco_") &&
-      !p.id.startsWith("prod_egrokorr_"),
+      !p.id.startsWith("prod_egrokorr_") &&
+      !p.id.startsWith("prod_kemikal_"),
   );
   assert.equal(
     festekBazisProducts.length,

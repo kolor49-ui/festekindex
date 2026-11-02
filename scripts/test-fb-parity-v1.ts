@@ -22,7 +22,7 @@ function section(name: string) {
 
 /** Still-locked manufacturer overlays (PPG unlocked separately). */
 const LOCKED_OVERLAY_RE =
-  /^prod_(jub_|poli_farbe_|remmers_|dufa_|akzo_|caparol_|baumit_|revco_|egrokorr_)/;
+  /^prod_(jub_|poli_farbe_|remmers_|dufa_|akzo_|caparol_|baumit_|revco_|egrokorr_|kemikal_)/;
 
 section("parity evaluate all products");
 const products = listProducts();

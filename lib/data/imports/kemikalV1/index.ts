@@ -1,0 +1,10 @@
+export { kemikalProducts } from "./products";
+export { kemikalSources } from "./sources";
+export { kemikalRelations } from "./relations";
+export { kemikalDescriptions } from "./descriptions";
+export { kemikalProfessionalDescriptions } from "./professionalDescriptions";
+export { kemikalBrands } from "./brands";
+export { applyKemikalV1 } from "./apply";
+export const KEMIKAL_V1_COUNT = 107;
+export const KEMIKAL_V1_PASS_COUNT = 0;
+export const KEMIKAL_V1_REVIEW_COUNT = 107;

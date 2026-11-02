@@ -193,6 +193,23 @@ export const brands: Brand[] = [
     updatedAt: "2026-10-05",
   },
   {
+    id: "brand_kemikal",
+    type: "brand",
+    slug: "kemikal",
+    name: "Kemikál",
+    shortDescription: "KEMIKÁL gyártói márka — építőipari vegyipar és felületvédelem.",
+    body: "A Kemikál márka a KEMIKÁL Építőanyagipari Zrt. gyártói portfóliójához kapcsolódik. Hivatalos forrás: kemikal.hu. A FESTÉKINDEX-en a márkahub a gyártói szervezethez és alkategória-márkákhoz (Bornit, Tetol) kapcsolódik; a termékoldalak noindex körben maradnak.",
+    status: "published",
+    indexable: true,
+    seoTitle: "Kemikál | FESTÉKINDEX",
+    seoDescription:
+      "Kemikál: építőipari vegyipar és felületvédelem a KEMIKÁL Építőanyagipari Zrt. portfóliójában — FESTÉKINDEX.",
+    sourceIds: ["src_kemikal_hu"],
+    updatedAt: "2026-11-02",
+    verifiedAt: "2026-11-02",
+  },
+
+  {
     id: "brand_poli_farbe",
     type: "brand",
     slug: "poli-farbe",
