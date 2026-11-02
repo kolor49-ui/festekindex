@@ -1,0 +1,35 @@
+---
+description: Gyártói szöveg átírás (nem másolat); Festék Bázis érinthetetlen
+alwaysApply: true
+---
+
+# Editorial rewrite szabály (nem-FB gyártók)
+
+## Cél
+Minden nem–Festék Bázis termék leírása **saját, átírt** editorial + szakmai szöveg legyen, a gyártó **nyilvános** forrásaiból. Nem dump, nem inventálás.
+
+## Tilos
+1. **Festék Bázis cohort** bármely enrich / product / parity / unlock fájljához nyúlni  
+   (`festekBazisEnrichmentV1`, FB 53 unlock, FB-only tesztek), kivéve ha a user **explicit** FB-t kér.
+2. Gyártói szöveg **szó szerinti** vagy „A hivatalos … szerint:” + nyers bemásolás editorial/professional mezőbe.
+3. **Inventálás:** szám, mire való, száradás, hígítás, előny, ami a forrásban nincs.
+4. Jogi disclaimer / ÁSZF / cookie / „változtatás jogát fenntartjuk” leadbe vagy szakmai szakaszba.
+5. TDS **hiánya** miatt tartalom kitalálása. TDS opcionális.
+
+## Kötelező
+1. Forrás = ami a gyártó **bárkinek** elérhetővé tesz (termékoldal, nyilvános PDF). Titkosított / botfal mögötti ≠ forrás.
+2. **Átírás:** új mondatszerkezet, Festékindex hangnem, szakaszolás; tények = forrás.
+3. Minden állításhoz legyen `sourceIds` / provenance a felhasznált nyilvános URL-re.
+4. Marketing-fluff tilos (Editorial Standard ban list).
+5. Google unlock csak: **FB-parity PASS** + user **GO** cohort. Soft PASS ≠ automatikus unlock.
+6. Visszamenőlegesen is: meglévő nem-FB overlay (KEMIKÁL, Remmers, JUB, …) dump-szövegét rewrite körben javítani — **FB-t kihagyni**.
+
+## Elfogadható kimenet
+- `editorialSummary`: rövid, átírt lead (≥40), forrásból.
+- Professional sections: csak forrásban meglévő témák; hiányzó szakasz **üresen marad**, nem töltjük ki.
+- Ha a nyilvános oldal túl vékony → termék **noindex / REVIEW / HOLD**, nem „kiegészítjük”.
+
+## Ellenőrző kérdés commit előtt
+- Nyúltem FB-hez? → ha igen, állj.
+- Ez átírás vagy másolat? → másolat = nem mehet.
+- Van olyan mondat, ami a forrásban nincs? → töröld.
