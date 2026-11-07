@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-30T19:32Z",
+  "catalogue_total": 190,
+  "festek_bazis": 53,
+  "ppg_trilak_42": 42,
+  "jub_95_pass": 95,
+  "jub_review_excluded": 24,
+  "jub_hold_excluded": 8,
+  "jub_indexable_true": 0,
+  "overlay_product_ids_match_roster": true,
+  "final_four_v7_3_untouched": true,
+  "dirty_hold_tree_untouched": true,
+  "no_commit_push_deploy": true,
+  "google_ready_v1_local_preserved": true
+}

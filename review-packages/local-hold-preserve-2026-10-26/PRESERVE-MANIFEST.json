@@ -1,0 +1,66 @@
+{
+  "preservedFiles": {
+    "docs/editorial/CATALOGUE-EDITORIAL-STATUS-v1.csv": {
+      "sha256": "7c7cdea08cc7ce7a3162adb4dee0c4e142740268f470c943455773c32793c820",
+      "bytes": 8148
+    },
+    "docs/editorial/OPEN-ISSUES.md": {
+      "sha256": "6961db32088de9970f33d0f719a95c58f7412167383fb319e14ed0d4c4087872",
+      "bytes": 7296
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts": {
+      "sha256": "c25776cb55969324ff366638820c06a9b441882cc6cf6f511b38d230914ebbd7",
+      "bytes": 16242
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts": {
+      "sha256": "011ef24640e0cc10d71235e628494765831b7e79f60a9b3760f624220ef0843a",
+      "bytes": 64107
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts": {
+      "sha256": "27eebdd65a37861717f7b370b33ddfbc350fb78ae2f4f0733ee7c293fa34e144",
+      "bytes": 18326
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts": {
+      "sha256": "05b6376f147a71ae9f6f589b1ddeb82a5b2759de99e07bfe366f110a340e540a",
+      "bytes": 73561
+    }
+  },
+  "holdOverlay": {
+    "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts": {
+      "holdBlocksApplied": [
+        "prod_7016_enamel"
+      ],
+      "overlaySha256": "c25776cb55969324ff366638820c06a9b441882cc6cf6f511b38d230914ebbd7",
+      "originSha256": "33a0960491087a42837496e3ead72017ba185800fc089c309bedaf8e0fa4d5d0",
+      "workSha256": "c25776cb55969324ff366638820c06a9b441882cc6cf6f511b38d230914ebbd7",
+      "equalsOrigin": false
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts": {
+      "holdBlocksApplied": [
+        "prod_7016_enamel"
+      ],
+      "overlaySha256": "d7063d59288ac5ba4e37f6f3dd017e97ebbdfb5397e4cb7dc61cb32efb3a60c5",
+      "originSha256": "f688a78e3e2164e1089ebe3f8269c2e98276e3ceba852dc824a1793b0612314e",
+      "workSha256": "011ef24640e0cc10d71235e628494765831b7e79f60a9b3760f624220ef0843a",
+      "equalsOrigin": false
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts": {
+      "holdBlocksApplied": [
+        "prod_valmor_airflow_facade"
+      ],
+      "overlaySha256": "27eebdd65a37861717f7b370b33ddfbc350fb78ae2f4f0733ee7c293fa34e144",
+      "originSha256": "8fb9f72630c90566dac55011a61b774e71a1d16dce1b41b6dc30cfad4b2e5191",
+      "workSha256": "27eebdd65a37861717f7b370b33ddfbc350fb78ae2f4f0733ee7c293fa34e144",
+      "equalsOrigin": false
+    },
+    "lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts": {
+      "holdBlocksApplied": [
+        "prod_valmor_airflow_facade"
+      ],
+      "overlaySha256": "05b6376f147a71ae9f6f589b1ddeb82a5b2759de99e07bfe366f110a340e540a",
+      "originSha256": "e7dd47b1d5adb7ac7e790531b7c5a615f8df0607ff50485f53249826160c2c11",
+      "workSha256": "05b6376f147a71ae9f6f589b1ddeb82a5b2759de99e07bfe366f110a340e540a",
+      "equalsOrigin": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "package": "festekindex-poli-farbe-6-pass-release-readiness-v8-3",
+  "created_at": "2026-10-30T19:46:33Z",
+  "source_run": "tools/mass-import/runs/poli-farbe-v5",
+  "counts": {
+    "PASS": 6,
+    "REVIEW": 65,
+    "HOLD": 2,
+    "ERROR": 0
+  },
+  "files": {
+    "roster/PASS-IDS.txt": "0069e9b977f7b2c0ddcb8fe7d4cd8035d9c7db47ddf74dff1f6786d237f24080",
+    "roster/REVIEW-IDS.txt": "4aeb83752a36d9106d341cf23fa5b26483d5a4f589414d034899f579d6d34339",
+    "roster/HOLD-IDS.txt": "c9476ff9107f03e4df04009208461c2c7a1e7f803a3f0a47b11b8417b54a4541",
+    "roster/PASS-LIST.md": "07cacc65963bb3132c5da541298683fb67d4b1bcdca7f913b065243dfaa5942b",
+    "roster/ROSTER.csv": "87e233c5203007108eaf15ce3ba8e4e68e2114f9f15f78f462502adda1e5020c",
+    "gates/POLI-V5-SUMMARY.json": "2cb387a13c2d6455fa1a0a72a013b8958fd6918d6ea06314e5fc7fef9bb554bb"
+  },
+  "constraints": [
+    "LOCAL_ONLY",
+    "NEVER_AUTO_PUBLISH",
+    "PASS_NE_PUBLISH_LICENCE",
+    "MANUFACTURER_CONTACT_MORATORIUM",
+    "NO_INVENTED_DATA",
+    "INDEXABLE_FALSE_UNTIL_EXPLICIT_UNLOCK",
+    "HOLD_REVIEW_EXCLUDED_FROM_RELEASE"
+  ]
+}

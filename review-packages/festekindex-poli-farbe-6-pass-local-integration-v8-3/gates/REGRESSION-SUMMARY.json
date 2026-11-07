@@ -1,0 +1,106 @@
+{
+  "total": 20,
+  "fail": 0,
+  "rows": [
+    {
+      "meta": "01-validate-graph.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "02-tsc.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "03-seo.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "04-product-hub.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "05-search.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "06-ux-a.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "07-build.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "08-category.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "09-professional.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "10-description.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "11-catalogue-closure.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "12-missing-products.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "13-ux-b.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "14-ux-c.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "15-color.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "16-surface.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "17-tech.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "18-knowledge.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "19-knowledge-content.meta.json",
+      "exit": 0,
+      "ok": true
+    },
+    {
+      "meta": "20-color-audit.meta.json",
+      "exit": 0,
+      "ok": true
+    }
+  ]
+}

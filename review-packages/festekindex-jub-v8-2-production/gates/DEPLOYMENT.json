@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-30T20:47:14Z",
+  "id": 7448465869,
+  "sha": "dc38ca5600251f3d3f7b64b5771f96335a452f1b",
+  "short_sha": "dc38ca5",
+  "environment": "Production",
+  "state": "success",
+  "description": "Deployment has completed",
+  "target_url": "https://festekindex-nc8oshjaz-kolor49-7303s-projects.vercel.app",
+  "public_domain": "https://festekindex.hu"
+}

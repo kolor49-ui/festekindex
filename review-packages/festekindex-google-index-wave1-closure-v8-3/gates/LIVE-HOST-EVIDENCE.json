@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-30T19:46:34Z",
+  "apex_sitemap": {
+    "url": "https://festekindex.hu/sitemap.xml",
+    "http_status_line": [
+      "HTTP/2 200 "
+    ],
+    "content_type_ok": true,
+    "url_count": 36,
+    "hosts": [
+      "festekindex.hu"
+    ],
+    "sha256": "b842bd2aab7327faf2f01e5e0a211893fb3627204c9e0ccfcd01bd93a5f71d48"
+  },
+  "www_sitemap_redirect": {
+    "url": "https://www.festekindex.hu/sitemap.xml",
+    "http_status_line": [
+      "HTTP/2 308 "
+    ],
+    "location": "https://festekindex.hu/sitemap.xml"
+  },
+  "robots": "User-Agent: *\nAllow: /\n\nHost: https://festekindex.hu\nSitemap: https://festekindex.hu/sitemap.xml\n"
+}

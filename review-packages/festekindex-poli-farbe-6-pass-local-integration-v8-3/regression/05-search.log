@@ -1,0 +1,68 @@
+
+=== normalization ===
+normalization OK
+
+=== eligibility ===
+docs 299 {
+  organization: 16,
+  brand: 34,
+  productFamily: 8,
+  product: 196,
+  technology: 9,
+  surface: 15,
+  category: 19,
+  knowledge: 2
+}
+eligibility OK
+
+=== empty / min query ===
+empty/min OK
+
+=== short query fa vs fal ===
+fa vs fal OK 8
+
+=== ranking identity ===
+ranking OK
+
+=== accentless + product queries ===
+accent/product OK
+
+=== labels ===
+labels OK
+
+=== internal leakage queries ===
+leakage OK
+
+=== progressive roots ===
+progressive OK
+
+=== direct surface context ===
+surface context OK
+
+=== dataset lock smoke ===
+dataset OK
+
+=== QA sample tops ===
+festék bázis → organization:FESTÉK BÁZIS Zrt. | brand:COROR | brand:FACTOR | brand:VALMOR | productFamily:7016™
+festek bazis → organization:FESTÉK BÁZIS Zrt. | brand:COROR | brand:FACTOR | brand:VALMOR | productFamily:7016™
+valmor → brand:VALMOR | productFamily:VALMOR AIR FLOW | product:VALMOR Garázsfesték | product:VALMOR Homlokzatfesték | product:VALMOR Kőbalzsam
+air flow → productFamily:VALMOR AIR FLOW | product:VALMOR AIR FLOW Sóglett | product:VALMOR AIR FLOW Fixatív Felületkezelő | product:VALMOR AIR FLOW Kenhető Hőtükör | product:VALMOR AIR FLOW Beltéri Hőtükör-Festék
+coror rapid → productFamily:COROR Rapid | product:COROR Rapid Festéklemaró | product:COROR Rapid Zománcfesték | product:COROR Rapid Aqua Zománcfesték | product:COROR Rapid Korróziógátló Alapozó
+korrozio → category:Ipari bevonat és korrózióvédelem | product:Trinát korroziógátló alapozó | product:COROR Industry Korróziógátló Alapozó | product:COROR Rapid Korróziógátló Alapozó | product:Trinát Aqua korróziógátló alapozó
+parkettalakk → product:FACTOR Parkettalakk | product:FACTOR Aqua Parkettalakk
+7016 → productFamily:7016™ | product:7016™ Antracit Akril Zománc | product:7016™ Antracit Kültéri Falfesték | product:7016™ Antracit Pergola Fafesték | product:7016™ Antracit Egyrétegű Beltéri Falfesték
+airless → technology:Airless festékszórás | knowledge:Airless festékszórás — alapok | product:COROR Industry Ipari Zománc | brand:Graco | productFamily:Graco GX
+beton → surface:Beton | category:Betonvédelem és vízszigetelés | product:BETON Kontakt | product:DECOR Beton look | product:VALMOR Szemcsés Lábazat- és Betonfesték
+vakolat → surface:Vakolat | product:VALMOR Vakolat | product:Héra Thermotek lábazati vakolat | product:7016™ Antracit Kapart 1,5 Vakolat | product:Héra Thermotek Silicate vakolatalapozó
+fa → surface:Fa | category:Faipari bevonatok | surface:MDF | product:Lazurán univerzális faanyagvédő | product:7016™ Antracit Pergola Fafesték
+porfestek → category:Porfesték | technology:Porfesték bevonatolás | knowledge:Porfesték és folyékony bevonat — mikor melyik? | brand:Interpon
+factor → brand:FACTOR | productFamily:FACTOR Aqua | product:FACTOR Csónaklakk | product:FACTOR Padlózománc | product:FACTOR Parkettalakk
+graco → brand:Graco | productFamily:Graco GX | productFamily:Graco Ultra | productFamily:Graco Mark VII | organization:Graco Inc.
+wagner → brand:Wagner | organization:Wagner Group | organization:M.L.S. Magyarország
+higito → category:Hígító és segédanyag | product:COROR Aromás Hígító | product:COROR Szintetikus Hígító | product:COROR Industry S-31 Hígító | product:COROR Industry Ipari Zománc
+zomanc → product:7016™ Antracit Akril Zománc | product:COROR Industry Ipari Zománc | product:COROR Rapid Zománcfesték | product:Trinát magasfényű zománcfesték | product:Trinát matt zománcfesték
+alapozo → product:Héra folttakaró alapozó | product:Trinát korroziógátló alapozó | product:Trinát univerzális alapozó | product:VALMOR Hídképző Alapozó | product:COROR Industry Korróziógátló Alapozó
+homlokzat → category:Homlokzat és hőszigetelés | product:VALMOR AIR FLOW Homlokzat és Lábazatfesték | product:VALMOR Homlokzatfesték | product:7016™ Antracit Kapart 1,5 Vakolat | product:7016™ Antracit Kültéri Falfesték
+padlo → category:Padló és műgyanta | product:VALMOR Biztonságos Padló- és Jelölőfesték | product:FACTOR Padlózománc | product:VALMOR Flexibilis Padlóbevonat | product:VALMOR Aqua-Tech Kenhető Vízszigetelés
+
+ALL Search v1 checks passed.

@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "PASS": 95,
+    "REVIEW": 24,
+    "HOLD": 8,
+    "ERROR": 0
+  },
+  "elapsed_seconds": 473.517,
+  "auto_published": false,
+  "enrichment_writes": 0,
+  "pass": 95
+}

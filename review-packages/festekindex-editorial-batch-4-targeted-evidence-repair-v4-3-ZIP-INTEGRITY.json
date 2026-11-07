@@ -1,0 +1,14 @@
+{
+  "path": "/Users/macbookair/Desktop/festekindex/review-packages/festekindex-editorial-batch-4-targeted-evidence-repair-v4-3.zip",
+  "desktopPath": "/Users/macbookair/Desktop/festekindex-editorial-batch-4-targeted-evidence-repair-v4-3.zip",
+  "sizeBytes": 879390,
+  "sha256": "9711dcef110cbbd855e13d23aac2e143e085769a4220a419091d300617a252f5",
+  "entries": 229,
+  "archiveIntegrity": "OK",
+  "nestedZipEntries": [],
+  "hasBackupDir": false,
+  "testzip": "OK",
+  "desktopSha256Matches": true,
+  "reviewSha256Matches": true,
+  "note": "External delivery SHA of ZIP bytes; also written to sibling .sha256 sidecars. In-archive ZIP-INTEGRITY uses SEE_EXTERNAL_SIDECAR placeholder by design."
+}

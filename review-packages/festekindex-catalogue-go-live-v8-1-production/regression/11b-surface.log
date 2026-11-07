@@ -1,0 +1,20 @@
+
+=== build all models ===
+models OK
+
+=== reference regressions ===
+reference OK
+
+=== public copy firewall ===
+leakage OK
+
+=== Fa surface discovery chrome ===
+Fa discovery OK FESTÉK BÁZIS Zrt.
+
+=== populated MDF / Tegla section HTML ===
+section HTML OK
+
+=== dataset regression ===
+dataset OK
+
+ALL Surface Hub v1 checks passed.

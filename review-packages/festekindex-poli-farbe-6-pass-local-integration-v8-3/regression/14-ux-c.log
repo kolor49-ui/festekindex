@@ -1,0 +1,32 @@
+
+=== SearchDocuments baseline ===
+catalog OK 299
+
+=== Autocomplete eligibility ===
+eligibility OK
+
+=== Public type labels + no internal enums ===
+labels OK
+
+=== Identity vs context classification ===
+matchKind OK { identity: 5, context: 15 }
+
+=== Regression queries ===
+regression queries OK
+
+=== New Product search ===
+new products searchable OK
+
+=== Featured manufacturers from ranked hits ===
+featured manufacturers OK PPG TRILAK Kft., FESTÉK BÁZIS Zrt.
+
+=== SearchBox SSR smoke + leakage ===
+UI smoke OK
+
+=== Ranking / normalization unchanged smoke ===
+engine lock OK
+
+=== Data regression gate ===
+data gate OK
+
+ALL Public UX Phase C Search checks passed.

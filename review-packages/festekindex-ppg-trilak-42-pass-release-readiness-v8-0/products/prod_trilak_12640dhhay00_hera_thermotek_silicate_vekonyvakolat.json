@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhhay00_hera_thermotek_silicate_vekonyvakolat",
+  "proposed_slug": "hera-thermotek-silicate-vekonyvakolat",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Thermotek Silicate vékonyvakolat",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhay00_hera_thermotek_silicate_vekonyvakolat_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-thermotek-silicate-vekonyvakolat/12640DHHAY00",
+      "sha256": "7c0ca0c7fa0eccf22bf3ea31ae1f23c27f611cedeb8c11e33871f14751a9fc6a"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHAY00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=6154846717f2210d96ce22acb312d3656cf9a66a",
+      "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHAY00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHAY00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "d95e3b23232020249ff205011307569f5e6ccf5e19df5bea82506c73cfe233db"
+    }
+  ],
+  "claims_ok": 8,
+  "claims_total": 8,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Thermotek Silicate vékonyvakolat a Műszaki adatlap szerint ásványi kálivízüveg kötőanyagú dekorációs vékonyvakolat. A Héra Thermotek Silicate Vékonyvakolat egy ásványi kálivízüveg kötőanyagú dekorációs vakolat, mely hosszútávú élettartamot biztosít a felületnek. Kiváló páraáteresztő tulajdonságának köszönhetően támogatja a rendszer megfelelő légáteresztését.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Thermotek Silicate vékonyvakolat a Műszaki adatlap szerint ásványi kálivízüveg kötőanyagú dekorációs vékonyvakolat. A Héra Thermotek Silicate Vékonyvakolat egy ásványi kálivízüveg kötőanyagú dekorációs vakolat, mely hosszútávú élettartamot biztosít a felületnek. Kiváló páraáteresztő tulajdonságának köszönhetően támogatja a rendszer megfelelő légáteresztését."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHAY00_tds",
+          "doc_kind": "tds",
+          "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf",
+          "page": 1,
+          "quote": "A Héra Thermotek Silicate Vékonyvakolat egy ásványi kálivízüveg kötőanyagú dekorációs vakolat, mely hosszútávú élettartamot biztosít a felületnek. Kiváló páraát"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: A Héra Thermotek Silicate Vékonyvakolat a Héra homlokzati hőszigetelő rendszer befejező rétege, de ásványi alapfelületeken használható önmagában is díszítő vakolatként."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHAY00_tds",
+          "doc_kind": "tds",
+          "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf",
+          "page": 1,
+          "quote": "A Héra Thermotek Silicate Vékonyvakolat a Héra homlokzati hőszigetelő rendszer befejező rétege, de ásványi alapfelületeken használható önmagában is díszítő vako"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: Az alapfelület legyen: megfelelően szilárd, nem zsugorodó, egyenletesen nedvszívó, homogén, pormentes, sókivirágzástól és zsaluolajtól mentes és egyenletes. A hőszigetelő lap ragasztására és az üvegszövet beágyazására Héra Dryvit ProFlex Ragasztó és Simító Tapasz ajánlott. A Héra Thermotek Silicate Vékonyvakolat felhordása előtt 24 órával a Héra Thermotek Silicate Vakolatalapozó használata szükséges, azonos vagy hasonló színben, mint a kiválasztott vékonyvakolat színe."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHAY00_tds",
+          "doc_kind": "tds",
+          "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf",
+          "page": 1,
+          "quote": "Az alapfelület legyen: megfelelően szilárd, nem zsugorodó, egyenletesen nedvszívó, homogén, pormentes, sókivirágzástól és zsaluolajtól mentes és egyenletes. A h"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverjük fel lassú fordulatú fúrógépbe fogott keverőszárral vagy speciális festékkeverő géppel. Javasolt +5-25 oC közötti anyag, alapfelület és levegő hőmérsékleten, maximum 80%-os relatív páratartalom alatt. Ne dolgozzunk esőre hajló, párás, hideg időben vagy eső alkalmával. Kapart struktúra 1,5 mm szemcseméret 2,5 kg/m2 Az anyagszükséglet függ többek között a felhordás módjától, és a felülettől. Az anyagszükséglet pontos értékét adott esetben a bevonandó falfelületen kell meghatározni."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHAY00_tds",
+          "doc_kind": "tds",
+          "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverjük fel lassú fordulatú fúrógépbe fogott keverőszárral vagy speciális festékkeverő géppel. A Héra Thermotek Silicat"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Kapart struktúra 1,5 mm szemcseméret 2,5 kg/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811 1,75-1,9 g/cm3 Fényesség EN 1062 matt matt Szárazanyag tartalom (m/m %) HSZ B027 78-80 % Hamutartalom (m/m %) HSZ A008 95 % 450 oC-on."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHAY00_tds",
+          "doc_kind": "tds",
+          "sha256": "3147a3c3161f791a6cc982eadc3cfe6370705f9282d55104fa713482c5354bcf",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811 1,75-1,9 g/cm3 Fényesség EN 1062 matt matt Szárazanyag tartalom (m/m %) HSZ B027 78-80"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

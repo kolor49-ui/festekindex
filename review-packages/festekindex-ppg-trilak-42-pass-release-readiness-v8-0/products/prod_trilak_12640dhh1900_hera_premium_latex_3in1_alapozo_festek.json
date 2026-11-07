@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
+  "proposed_slug": "hera-premium-latex-3in1-alapozo-festek",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Prémium Latex 3in1 alapozó festék",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-premium-latex-3in1-alapozo-festek/12640DHH1900",
+      "sha256": "f326f3c7f0cef7cfd5e012f07da08e8db911b49b49a71364d87b581eede3250e"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHH1900_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=0cd55e5db9464b4432539ec1378f0da5efc560f2",
+      "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHH1900_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHH1900&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "85666d36f521b3c8ef06c826a234ccee93a1348d1e940a00880c0e19ed057e26"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfest ékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Prémium Latex 3in1 alapozó festék a Műszaki adatlap szerint kül- és beltéri diszperziós alapozó. Kiegyenlíti a felület szívóképességét, biztosítja a megfelelő fedőképességet és fokozza a falfest ékek tapadását. Használatával elkerülhetőek a színeltérésekből fakadó kivitelezési hibák, ezáltal szebb, egységesebb végső megjelenés érhető el."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 1,
+          "quote": "Kiegyenlíti a felület szívóképességét , biztosítja a megfelelő fedőképességet és fokozza a falfest ékek tapadását. Használatával elkerülhetőek a színeltérésekbő"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Kiválóan alkalmas beltéri és kültéri, egyenetlen nedvszívó -képességű és eltérő színárnyalatú, új és régi vakolt, glettelt, különösen gipszkartonozott falfelületek alapozására."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 1,
+          "quote": "Kiválóan alkalmas beltéri és kültéri, egyenetlen nedvszívó -képességű és eltérő színárnyalatú, új és régi vakolt, glettelt, különösen gipszkartonozott falfelüle"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A régi, laza, pergő vakolat - és festékréteget mechanikai úton kell eltávolítani. Az esetleges vakolathibákat ki kell javítani. A festendő felület legyen tiszta, száraz, portól és repedésektől mentes. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. CMC-alapú glettanyagok használata nem javasolt. Kültéri felület esetén a vakolat minősége legyen min. vH 10."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 1,
+          "quote": "A régi, laza, pergő vakolat - és festékréteget mechanikai úton kell eltávolítani. Az esetleges vakolathibákat ki kell javítani. A festendő felület legyen tiszta"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel. A termék felhordásra kész állapotban kerül forgalomba, hígítása nem javasolt, indokolt esetben max. 10% vízzel. Javasolt +5 -30 oC közötti anyag, alap felület és levegő hőmérsékleten, 80% -os relatív páratartalom alatt. Kültéren ne dolgozzon esőre hajló, párás, hideg időben vagy eső alkalmával. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Egy rétegben: 12 m2 /l egy rétegben (függ a felülettől és a felhordás módjától) Javasolt rétegszám: 1 réteg Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel. A termék felhordásra kész állapotban kerül forgalomba, hígítása nem javasolt, indokolt esetben max. 10% víz"
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: nem javasolt, indokolt esetben max."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 2,
+          "quote": "nem javasolt, indokolt esetben max"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Egy rétegben: 12 m2 /l egy rétegben (függ a felülettől és a felhordás; Javasolt rétegszám: 1 réteg; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,44-1,54 g/cm3 szárazanyag tartalom HSZ B027 54,0-59,0 % Mettler Toledo HS 153 150oC/1mg/50s Fényesség matt nedves dörzsállóság MSZ-EN 13300 1. osztály."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH1900_tds",
+          "doc_kind": "tds",
+          "sha256": "44e8744699b601576314a47acb992e4800e5df186b90cc6ec8f5a7692656280a",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,44-1,54 g/cm3 szárazanyag tartalom HSZ B027 54,0-59,0 % Mettler Toledo HS 153 150o"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

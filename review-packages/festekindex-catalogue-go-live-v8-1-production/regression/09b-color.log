@@ -1,0 +1,17 @@
+
+=== ColorSystem / Color catalog ===
+catalog OK { systems: 5, colors: 140, ral: 20 }
+
+=== Product availability provenance ===
+provenance OK { relations: 197 }
+
+=== No finish-as-Color / no full RAL dump ===
+safety OK
+
+=== Product Hub Színválaszték SSR ===
+hub SSR OK
+
+=== Baseline locks ===
+baseline OK { specs: 237, packs: 135, search: 186 }
+
+ALL Color System v1 checks passed.

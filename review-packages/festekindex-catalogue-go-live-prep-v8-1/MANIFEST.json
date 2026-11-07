@@ -1,0 +1,17 @@
+{
+  "package": "festekindex-catalogue-go-live-prep-v8-1",
+  "decision": "LOCAL_IMPLEMENTATION_COMPLETE_NO_GO_LIVE",
+  "productsTotal": 95,
+  "festekBazis": 53,
+  "ppgTrilakPass": 42,
+  "ppgReviewExcluded": 31,
+  "ppgHoldExcluded": 1,
+  "productIndexable": 0,
+  "sitemapUrls": 36,
+  "finalFourSha256": "27e740ed72dec30f582110f179b7b275a73f25d058956ed5ce8c2f3d73ef0582",
+  "overlay": "lib/data/imports/ppgTrilak42V1",
+  "noCommit": true,
+  "noPush": true,
+  "noDeploy": true,
+  "noGoogleIndexUnlock": true
+}

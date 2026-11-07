@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "test": "validate-graph",
+      "ok": true
+    },
+    {
+      "test": "test-product-professional-description-v1",
+      "ok": true
+    },
+    {
+      "test": "test-product-description-enrichment-v1",
+      "ok": true
+    },
+    {
+      "test": "test-product-hub-v21",
+      "ok": true
+    },
+    {
+      "test": "test-festek-bazis-catalogue-closure-v1",
+      "ok": true
+    },
+    {
+      "test": "test-festek-bazis-missing-products-closure-v1",
+      "ok": true
+    },
+    {
+      "test": "test-search-v1",
+      "ok": true
+    },
+    {
+      "test": "test-public-ux-phase-a",
+      "ok": true
+    },
+    {
+      "test": "test-public-ux-phase-b",
+      "ok": true
+    },
+    {
+      "test": "test-public-ux-phase-c-search",
+      "ok": true
+    },
+    {
+      "test": "test-seo-indexability-coherence-v1",
+      "ok": true
+    },
+    {
+      "test": "test-festek-bazis-color-audit-v1",
+      "ok": true
+    },
+    {
+      "test": "test-category-hub-v1",
+      "ok": true
+    },
+    {
+      "test": "test-surface-hub-v1",
+      "ok": true
+    },
+    {
+      "test": "test-technology-hub-v1",
+      "ok": true
+    },
+    {
+      "test": "test-knowledge-hub-v1",
+      "ok": true
+    },
+    {
+      "test": "test-knowledge-content-v1",
+      "ok": true
+    },
+    {
+      "test": "build",
+      "ok": true
+    }
+  ],
+  "all_ok": true
+}

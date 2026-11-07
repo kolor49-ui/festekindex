@@ -1,0 +1,73 @@
+
+> festekindex@0.1.0 build
+> next build
+
+▲ Next.js 16.3.8 (Turbopack)
+✓ Running next.config.ts took 213ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 17.9s
+  Running TypeScript ...
+  Finished TypeScript in 15.9s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/200) ...
+  Generating static pages using 3 workers (50/200) 
+  Generating static pages using 3 workers (100/200) 
+  Generating static pages using 3 workers (150/200) 
+✓ Generating static pages using 3 workers (200/200) in 9.1s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /cegek
+├   /cegek/[slug]
+│ ├ ● /cegek/graco-inc
+│ ├ ● /cegek/euroll-hungaria
+│ ├ ● /cegek/wagner-group
+│ └ ● [+13 more paths]
+├ ○ /feluletek
+├ ƒ /feluletek/[slug]
+├ ○ /kategoriak
+├   /kategoriak/[slug]
+│ ├ ● /kategoriak/dekor-es-falfestek
+│ ├ ● /kategoriak/epitesi-vegyipar
+│ ├ ● /kategoriak/homlokzat-es-hoszigeteles
+│ └ ● [+16 more paths]
+├ ƒ /kereses
+├ ○ /markak
+├   /markak/[slug]
+│ ├ ● /markak/graco
+│ ├ ● /markak/wagner
+│ ├ ● /markak/mirka
+│ └ ● [+19 more paths]
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ○ /technologiak
+├   /technologiak/[slug]
+│ ├ ● /technologiak/airless-festekszoras
+│ ├ ● /technologiak/porfestek-bevonat
+│ ├ ● /technologiak/csiszolastechnika
+│ └ ● [+6 more paths]
+├ ○ /termekcsaladok
+├   /termekcsaladok/[slug]
+│ ├ ● /termekcsaladok/graco-mark-vii
+│ ├ ● /termekcsaladok/graco-ultra
+│ ├ ● /termekcsaladok/graco-gx
+│ └ ● [+5 more paths]
+├ ○ /termekek
+├   /termekek/[slug]
+│ ├ ● /termekek/valmor-air-flow-lelegzo-belteri-falfestek
+│ ├ ● /termekek/valmor-air-flow-lelegzo-melyalapozo-1-1
+│ ├ ● /termekek/valmor-air-flow-homlokzat-es-labazatfestek
+│ └ ● [+92 more paths]
+├ ○ /tudastar
+└   /tudastar/[slug]
+  ├ ● /tudastar/airless-festekszoras-alapok
+  └ ● /tudastar/porfestek-es-folyadek-bevonat
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

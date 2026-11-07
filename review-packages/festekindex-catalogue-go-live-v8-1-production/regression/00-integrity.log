@@ -1,0 +1,29 @@
+{
+  "products": 95,
+  "fb": 53,
+  "trilak": 42,
+  "manifest": 42,
+  "dups": [],
+  "missingBrand": 0,
+  "missingTds": 0,
+  "missingSds": 0,
+  "idxProducts": 0,
+  "sitemap": 36,
+  "productSitemap": 0,
+  "brandCounts": {
+    "brand_hera": 19,
+    "brand_lazuran": 5,
+    "brand_trinat": 18
+  },
+  "owners": {
+    "hera": "org_ppg_trilak",
+    "trinat": "org_ppg_trilak",
+    "lazuran": "org_ppg_trilak"
+  },
+  "newNoindex": {
+    "trinat": true,
+    "lazuran": true,
+    "poli": true
+  },
+  "heraIndexable": true
+}

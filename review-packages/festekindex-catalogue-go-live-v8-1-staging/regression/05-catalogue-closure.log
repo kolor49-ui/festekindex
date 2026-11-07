@@ -1,0 +1,20 @@
+
+=== Candidate inventory decisions ===
+decisions OK { accepted: 23, rejected: 1 }
+
+=== Accepted Products integrated ===
+accepted integration OK 23
+
+=== Mandatory candidates ===
+mandatory OK
+
+=== Baselines / counts ===
+counts OK { specs: 237, packs: 135, diluted: 8, products: 95 }
+
+=== Search identity queries ===
+search OK
+
+=== 7016 safety ===
+7016 OK
+
+ALL FESTÉK BÁZIS Catalogue Closure v1 checks passed.

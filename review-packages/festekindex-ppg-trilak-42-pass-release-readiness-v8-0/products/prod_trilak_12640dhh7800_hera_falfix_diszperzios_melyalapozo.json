@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhh7800_hera_falfix_diszperzios_melyalapozo",
+  "proposed_slug": "hera-falfix-diszperzios-melyalapozo",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Falfix diszperziós mélyalapozó",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhh7800_hera_falfix_diszperzios_melyalapozo_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-falfix-diszperzios-melyalapozo/12640DHH7800",
+      "sha256": "3bc97510fd152011d42f16f942af57951620e65ab59aeeb5428f78cd217917b5"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHH7800_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=04b231c154911dd6ea3333685a8df8af2531bcd5",
+      "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHH7800_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHH7800&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "87d61ae4e5d53d16157562d819513efa14ae870799244cf9986c27d88701b147"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal - és homlokzatfestékek alá egyar ánt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó - képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást, valamint megfelelő…",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Falfix diszperziós mélyalapozó a Műszaki adatlap szerint kül- és beltéri diszperziós mélyalapozó. Kül- és beltéri fal - és homlokzatfestékek alá egyar ánt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó - képességét, valamint leköti a festendő felületen lévő port és krétásodott régi festékréteget így elkerülhetővé teszi a foltosodást, valamint megfelelő…"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH7800_tds",
+          "doc_kind": "tds",
+          "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4",
+          "page": 1,
+          "quote": "Kül- és beltéri fal - és homlokzatfestékek alá egyar ánt alkalmazható. A pára- és légáteresztő tulajdonságokkal rendelkező alapozó kiegyenlíti a fal nedvszívó -"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Vakolt, meszelt vagy bármilyen korábban már más diszperziós festékkel festett beltéri falfelületre, gipszkarton felületre, fűrészporos tapétára felületi előkészítés után közvetlenül felvihető."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH7800_tds",
+          "doc_kind": "tds",
+          "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4",
+          "page": 1,
+          "quote": "Vakolt, meszelt vagy bármilyen korábban már más diszperziós festékkel festett beltéri falfelületre, gipszkarton felületre, fűrészporos tapétára felületi előkész"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. CMC- alapú glettanyagok használata nem javasolt Kültéri felület esetén a vakolat minősége legyen min. vH 10. Homlokzati felületek glettelését nem javasoljuk, mivel a glettanyagok hosszú távú tartóssága homlokzatfelületeken kétséges."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH7800_tds",
+          "doc_kind": "tds",
+          "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelül"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel. A Héra Falfix mélyalapozót minden esetben vízzel kell hígítani. A hígítási arány beltérben 1:3-tól akár 1:5 -ig terjedhet az adott felület szívóképességének… Javasolt +5 -30 oC közötti anyag, alap felület és levegő hőmérsékleten, 80% -os relatív páratartalom alatt. Kültéren ne dolgozzon esőre hajló, párás, hideg időben vagy eső alkalmával. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Javasolt rétegszám: 1-2 réteg Egy rétegben: 0,12-0,15 l/m2, a már hígított anyagból Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH7800_tds",
+          "doc_kind": "tds",
+          "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel. A Héra Falfix mélyalapozót minden esetben vízzel kell hígítani. A hígítási arány beltérben 1:3-tól akár 1:5"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 1-2 réteg; Egy rétegben: 0,12-0,15 l/m2, a már hígított anyagból; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,00-1,03 g/cm3 szárazanyag tartalom HSZ B027 13,5 15,5 % Mettler Toledo HS 153 150oC/1mg/50s."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHH7800_tds",
+          "doc_kind": "tds",
+          "sha256": "be98a0573f079e338c42cf43456eafca78e2215a6584c14e5a502356472bc7f4",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,00-1,03 g/cm3 szárazanyag tartalom HSZ B027 13,5 15,5 % Mettler Toledo HS 153 150o"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

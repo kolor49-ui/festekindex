@@ -1,0 +1,65 @@
+
+=== inventory + relation counts ===
+counts OK
+
+=== uncategorized Products ===
+uncategorized OK
+
+=== multi-category distribution ===
+distribution OK
+
+=== cat_all exclusion ===
+cat_all OK
+
+=== product-backed richness ===
+richness OK
+
+=== zero-Product Categories ===
+zero-Product OK
+
+=== Porfesték Category ===
+Porfesték OK
+
+=== Szórás Category ===
+Szórás OK
+
+=== Faipari Brand separation ===
+Faipari OK
+
+=== Homlokzat company navigation ===
+Homlokzat company OK
+
+=== Dekor / 7016 safety ===
+7016 OK
+
+=== Ipari company navigation ===
+Ipari company OK
+
+=== empty company section omitted ===
+empty company OK
+
+=== Szórás Graco/Euroll company safety ===
+Szórás company OK
+
+=== pairwise Technology / Surface ===
+pairwise OK
+
+=== Hígító copy firewall ===
+Hígító OK
+
+=== SEO indexability matrix ===
+SEO OK
+
+=== public leakage ===
+leakage OK
+
+=== Csiszolás semantic separation ===
+Csiszolás OK
+
+=== dataset regression ===
+dataset OK
+
+=== nav Category list ===
+nav OK
+
+ALL Category Hub v1 checks passed.

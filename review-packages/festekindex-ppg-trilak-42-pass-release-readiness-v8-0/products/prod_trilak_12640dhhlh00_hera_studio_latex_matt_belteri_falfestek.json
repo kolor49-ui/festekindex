@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhhlh00_hera_studio_latex_matt_belteri_falfestek",
+  "proposed_slug": "hera-studio-latex-matt-belteri-falfestek",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Stúdió Latex Matt beltéri falfesték",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhlh00_hera_studio_latex_matt_belteri_falfestek_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-studio-latex-matt-belteri-falfestek/12640DHHLH00",
+      "sha256": "241e1553e3a478d476f3283f9f642fa25a4ef887fbe1b68323c77c835474eae6"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHLH00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=fb45079a9c0ffe6085cf1663134ab894fc1c5cc4",
+      "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHLH00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHLH00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "0d7e5a016b131cdb0e6dc68e45a1dab24c9af884d91eb09773e2bc81c379aec0"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Stúdió Latex Matt beltéri falfesték a Műszaki adatlap szerint a kiemelkedő fehérségű és fedőképességű Héra Stúdió Latex Matt beltéri falfesték. A páraáteresztő, ugyanakkor mosás - és dörzsálló tartós bevonat kifejezetten alkalmas nagy igénybevételnek kitett helyiségek, például gyerekszobák, konyhák vagy fürdőszobák kifestéséhez.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Stúdió Latex Matt beltéri falfesték a Műszaki adatlap szerint a kiemelkedő fehérségű és fedőképességű Héra Stúdió Latex Matt beltéri falfesték. A páraáteresztő, ugyanakkor mosás - és dörzsálló tartós bevonat kifejezetten alkalmas nagy igénybevételnek kitett helyiségek, például gyerekszobák, konyhák vagy fürdőszobák kifestéséhez."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHLH00_tds",
+          "doc_kind": "tds",
+          "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552",
+          "page": 1,
+          "quote": "A kiemelkedő fehérségű és fedőképességű Héra Stúdió Latex Matt beltéri falfesték . A páraáteresztő, ugyanakkor mosás - és dörzsálló tartós bevonat kifejezetten "
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Vakolt, beton, gipszkarton és glettelt belső falfelületek festésére."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHLH00_tds",
+          "doc_kind": "tds",
+          "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552",
+          "page": 1,
+          "quote": "Vakolt, beton, gipszkarton és glettelt belső falfelületek festésére."
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. CMC- alapú glett anyagok használata nem javasolt Új, vakolt vagy beton illetve; gipsz tartalmú glettel előkészített vagy gipszkarton felületek: Glettelt, vagy egyenetlen vakolt felületek esetén finoman csiszolja mega felületet, majd tisztítsa meg a portól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHLH00_tds",
+          "doc_kind": "tds",
+          "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelül"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. Héra Stúdió Latex Matt beltéri falfesték felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. A termék felhordását +5 és +30 oC közötti anyag, alapfelület és levegő hőmérsékleten, 80%-os relatív páratartalom alatt javasoljuk. Felhordás módja: Ecsettel, hengerrel vagy megfelelő szóró berendezéssel. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Javasolt rétegszám: 2 réteg Egy rétegben: 0,1-0,12 l/m2 Két rétegben: 0,24-0,28 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHLH00_tds",
+          "doc_kind": "tds",
+          "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. Héra Stúdió Latex Matt beltéri falfesték felhasználásra kés"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 2 réteg; Egy rétegben: 0,1-0,12 l/m2; Két rétegben: 0,24-0,28 l/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,49-1,53 g/cm3 kiadósság MSZ-EN 13300 5,2 m2/l 98 % fedés esetén nedves dörzsállóság MSZ-EN 13300 2. osztály MSZ EN ISO 11998 fényesség MSZ-EN 13300 matt MSZ EN ISO 2813 fedőképesség MSZ-EN 13300 2.."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHLH00_tds",
+          "doc_kind": "tds",
+          "sha256": "aecd64ed7b91b97033476f15e150bc9a83a9d3600be4d7b001d4a84a93a6b552",
+          "page": 4,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,49-1,53 g/cm3 kiadósság MSZ-EN 13300 5,2 m2/l 98 % fedés esetén nedves dörzsállósá"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

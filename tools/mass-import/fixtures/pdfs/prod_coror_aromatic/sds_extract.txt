@@ -1,0 +1,218 @@
+--- PAGE 1 ---
+BIZTONSÁGI ADATLAP 
+ 
+Az 1907/2006/EK és az 1272/2008/EK rendelet szerint 
+Coror Aromás Hígító 
+Kiállítás kelte: 2016. 07. 28.  Felülvizsgálva:  2024. 06. 27.  Verziószám/terjedelem: 3. verzió/1. oldal 
+ 
+FESTÉK BÁZIS Zrt. 9545 Jánosháza, Jókai u. 28. 
+E-mail: festekbazis@festekbazis.hu 
+ 
+1. SZAKASZ: Az anyag / keverék és vállalat/ vállalkozás azonosítása 
+ 
+1.1. Termékazonosító 
+Keverék megnevezése:   Coror Aromás Hígító 
+UFI:       1F00-106H-M003-5D3J 
+ 
+1.2. Az anyag vagy keverék megfelelő azonosított felhasználásai, illetve ellenjavallt felhasználásai:
+   
+Azonosított felhasználás:   Festékhígítás, felülettisztítás 
+Ellenjavallt felhasználás:    G yártó által nem javasolt felhasználás. 
+   
+1.3. A biztonsági adatlap szállítójának adatai  
+      Festék Bázis Zrt. 
+9545 Jánosháza, Jókai u. 28. 
+telefon: +36 20 3672-600 
+ 
+Felelős személy e-mail címe:   festekbazis@festekbazis.hu 
+ 
+1.4. Sürgősségi telefonszám:   Egészségügyi Toxikológiai és Tájékoztató Szolgálat (ETTSZ) 
+1097 Budapest, Albert Flórián út 2-6. 
++36 80 201-199 (0-24 órában, díjmentesen hívható – csak 
+Magyarországról) 
++36 1 476 6464 (0-24 órában, normál díj ellenében hívható 
+– külföldről is) 
+ 
+2. SZAKASZ: A veszély azonosítása 
+ 
+2.1. Az anyag vagy keverék osztályozása 
+   
+Veszélyességi osztály Figyelmeztető mondat 
+Flam. Liq. 3 H226 Tűzveszélyes folyadék és gőz. 
+Acute Tox. 4 H312 Bőrrel érintkezve ártalmas. 
+Skin Irrit. 2 H315 Bőrirritáló hatású 
+Eye Dam. 1 H318 Súlyos szemkárosodást okoz. 
+Acute Tox. 4 H332 Belélegezve ártalmas. 
+  
+ 
+2.2. Címkézési elemek: 
+  
+  Termékazonosító: 
+Kereskedelmi név:  Coror Aromás Hígító 
+ 
+Jogszabály alapján feltüntetendő veszélyes összetevő(k): Xilol (izomerek keveréke); n-Butil-alkohol  
+ 
+GHS piktogram:    
+ 
+  Figyelmeztetés: Veszély 
+  
+ 
+Figyelmeztető mondatok: 
+
+--- PAGE 2 ---
+BIZTONSÁGI ADATLAP 
+ 
+Az 1907/2006/EK és az 1272/2008/EK rendelet szerint 
+Coror Aromás Hígító 
+Kiállítás kelte: 2016. 07. 28.  Felülvizsgálva:  2024. 06. 27.  Verziószám/terjedelem: 3. verzió/2. oldal 
+ 
+FESTÉK BÁZIS Zrt. 9545 Jánosháza, Jókai u. 28. 
+E-mail: festekbazis@festekbazis.hu 
+H226 Tűzveszélyes folyadék és gőz. 
+H312 Bőrrel érintkezve ártalmas. 
+H315 Bőrirritáló hatású 
+H318 Súlyos szemkárosodást okoz. 
+H332 Belélegezve ártalmas 
+ 
+Kiegészítő veszélyességi információ: - 
+ 
+Óvintézkedésre vonatkozó mondatok:  
+Általános:  
+P101 Orvosi tanácsadás esetén tartsa kéznél a termék edényét vagy címkéjét. 
+P102 Gyermekektől elzárva tartandó. 
+ 
+Megelőzés: 
+P210  Hőtől, forró felületektől, szikrától, nyílt lángtól és más gyújtóforrástól távol tartandó. Tilos 
+a dohányzás. 
+P271 Kizárólag szabadban vagy jól szellőző helyiségben használható. 
+P280  Védőkesztyű, védőruha, szemvédő/arcvédő használata kötelező.  
+ 
+Elhárító intézkedés: 
+P305 + P351 + P338 + P310  SZEMBE KERÜLÉS esetén: Több percig tartó óvatos öblítés vízzel. 
+Adott esetben a kontaktlencsék eltávolítása, ha könnyen megoldható. Az öblítés folytatása. 
+Azonnal forduljon TOXIKOLÓGIAI KÖZPONTHOZ vagy orvoshoz. 
+P312 Rosszullét esetén forduljon TOXIKOLÓGIAI KÖZPONTHOZ vagy orvoshoz 
+  Tárolás:  
+P403 + P235 Jól szellőző helyen tárolandó. Hűvös helyen tartandó. 
+ 
+  Elhelyezés hulladékként: 
+ 
+P501 A tartalom/edény elhelyezése hulladékként: a 225/2015. (VIII. 7.) Korm. rendeletnek, 
+valamint a 72/2013. (VIII. 27.) VM rendeletnek megfelelően. 
+ 
+  További jelölési, illetve feliratozási kötelezettség: 
+Tapintással érzékelhető, veszélyre utaló jelkép: lakossági forgalmazás esetén szükséges. 
+Gyermekbiztos zár: nem szükséges. 
+Veszélyes áruk szállítása (ADR a 284/2023. (VI. 30.) Korm. rendelet szerint): lásd 14. szakasz. 
+  
+2.3.  Egyéb veszélyek: 
+ 
+A termék nem tartalmaz perzisztens, bioakkumulatív és mérgező (PBT), illetve nagyon perzisztens és nagyon 
+bioakkumulatív (vPvB) összetevőt (1907/2006/EK rendelet XIII. melléklet). 
+A termék nem tartalmaz endokrin károsító tulajdonsággal rendelkező anyagot 0,1% vagy annál magasabb 
+koncentrációban. 
+ 
+3. SZAKASZ: Összetétel/összetevőkre vonatkozó információk 
+ 
+3.2. Keverékek 
+Kémiai jelleg: Aromás oldószer és alkohol keveréke. 
+  
+--- PAGE 3 ---
+BIZTONSÁGI ADATLAP 
+ 
+Az 1907/2006/EK és az 1272/2008/EK rendelet szerint 
+Coror Aromás Hígító 
+Kiállítás kelte: 2016. 07. 28.  Felülvizsgálva:  2024. 06. 27.  Verziószám/terjedelem: 3. verzió/3. oldal 
+ 
+FESTÉK BÁZIS Zrt. 9545 Jánosháza, Jókai u. 28. 
+E-mail: festekbazis@festekbazis.hu 
+ 
+Veszélyes összetevők: 
+ 
+Megnevezés EK 
+szám 
+CAS 
+szám 
+Vesz. osztály és 
+kategória 
+Figyelmeztető 
+mondat 
+Koncentráció 
+tömeg % 
+Xilol (izomerek keveréke)* 
+REACH reg. szám: 
+01-2119488216-32 
+215-535-7 1330-20-7 Flam. Liq. 3 
+Acute Tox. 4 
+Skin Irrit. 2 
+Acute Tox. 4 
+H226 
+H312 
+H315 
+H332 
+91-95 
+n-Butil-alkohol*: 
+REACH reg. szám: 
+01-2119484630-38 
+200-751-6 71-36-3 Flam. Liq. 3 
+Acute Tox. 4 
+Skin Irrit. 2 
+Eye Dam. 1 
+STOT SE 3 
+STOT SE 3 
+H226 
+H302 
+H315 
+H318 
+H335 
+H336 
+4,5-5,5 
+Propán-2-ol* 
+REACH reg. szám: 
+01-2119457558-25 
+200-661-7 67-63-0 Flam. Liq. 2 
+Eye Irrit. 2 
+STOT SE 3 
+H225 
+H319 
+H336 
+1,8-2,2 
+ 
+*Expozíciós határértékkel rendelkezik. 
+ 
+A Vesz. osztály és kategória, a H-mondat(ok) teljes szövegét lásd a 16. szakaszban. 
+ 
+4. SZAKASZ: Elsősegély-nyújtási intézkedések 
+ 
+4.1. Az elsősegély-nyújtási intézkedések ismertetése: 
+ 
+Általános utasítás:   Öntudatlan vagy görcsös állapotban lévő személynek ne adjunk be semmit szájon át. 
+ 
+Belélegzés:  A sérültet vigyük friss levegőre, lazítsuk meg ruházatát, helyezzük nyugalmi helyzetbe. 
+Panasz esetén hívjunk orvost. 
+ 
+Szembe jutás: Öblítsük ki a szemet a szemhéjak széthúzásával és a szemgolyó egyidejű 
+mozgatásával. Adott esetben a kontaktlencsét távolítsuk el, majd folytassuk az 
+öblítést néhány percig. Tartós irritáció esetén forduljunk orvoshoz. 
+ 
+Bőrre jutás:  Az anyaggal átitatott ruházatot le kell vetni. 
+A bőrre került anyagot bő vízzel, szappannal le kell mosni. 
+Panasz esetén forduljunk orvoshoz. 
+ 
+Lenyelés esetén:  Hánytatni tilos! Öblítsük ki a szájüreget vízzel. Forduljunk orvoshoz. Spontán 
+hányáskor a sérült fejét hajtsuk előre. Az orvosnak mutassuk meg a biztonsági 
+adatlapot vagy a címkét. 
+ 
+Az elsősegélynyújtó védelme:  Veszélyes lehet a szájon át történő élesztést végző elsősegélynyújtó személy                   
+számára. 
+ 
+4.2. A legfontosabb – akut és késleltetett – tünetek és hatások: 
+ 
+ Belélegzés: A gőzök belélegzése fejfájást, szédülést, hányást és megváltozott tudatállapotot okozhat.  
+Szembe jutás: vörösödés, szemirritáció. Súlyos szemkárosodást okoz. 
+Bőrre jutás: vörösödés, irritáció.  
+Bőrrel érintkezve ártalmas. Belélegezve ártalmas. 
+Lenyelés esetén: megváltozott tudatállapotot és a koordináció elvesztését okozhatja. 
+ 
+ 
+4.3. A szükséges azonnali orvosi ellátás és különleges ellátás jelzése: 

@@ -1,0 +1,271 @@
+[
+  {
+    "kind": "organization",
+    "id": "org_poli_farbe",
+    "slug": "poli-farbe",
+    "name": "Poli-Farbe Kft.",
+    "legalName": "Poli-Farbe Vegyipari Kft.",
+    "country": "HU",
+    "roles": [
+      "manufacturer"
+    ],
+    "website": "https://www.polifarbe.hu/",
+    "hqCity": "Bócsa",
+    "shortDescription": "Magyar festék- és vakolatgyártó — Śnieżka csoport tagja.",
+    "body": "A Poli-Farbe Vegyipari Kft. bócsai székhelyű magyar festék- és vakolatgyártó. Hivatalos forrás: polifarbe.hu. A FESTÉKINDEX-en a szervezet és a márkák külön entitásként kezelendők; termékimport későbbi körben.",
+    "source": {
+      "id": "src_poli_farbe_official",
+      "url": "https://www.polifarbe.hu/",
+      "title": "Poli-Farbe Kft. — hivatalos weboldal",
+      "publisher": "Poli-Farbe Kft."
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_poli_farbe",
+        "slug": "poli-farbe",
+        "name": "Poli-Farbe",
+        "shortDescription": "Poli-Farbe dekoratív festék- és vakolatmárka.",
+        "source_url": "https://www.polifarbe.hu/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "organization",
+    "id": "org_jub_hu",
+    "slug": "jub-kft",
+    "name": "JUB Kft.",
+    "legalName": "JUB Kft.",
+    "country": "HU",
+    "roles": [
+      "manufacturer",
+      "representation"
+    ],
+    "website": "https://www.jub.hu/",
+    "hqCity": "Celldömölk",
+    "shortDescription": "JUB építőipari festékek és homlokzati rendszerek magyarországi szervezete.",
+    "body": "A JUB Kft. a JUB márka magyarországi szervezete (Celldömölk). Hivatalos forrás: jub.hu. Termékoldalak és letölthető anyagok a gyártói oldalon elérhetők.",
+    "source": {
+      "id": "src_jub_hu",
+      "url": "https://www.jub.hu/",
+      "title": "JUB Magyarország — hivatalos weboldal",
+      "publisher": "JUB Kft."
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_jub",
+        "slug": "jub",
+        "name": "JUB",
+        "shortDescription": "JUB építőipari festék- és homlokzati rendszermárka.",
+        "source_url": "https://www.jub.hu/"
+      },
+      {
+        "id": "brand_jupol",
+        "slug": "jupol",
+        "name": "JUPOL",
+        "shortDescription": "JUPOL beltéri falfesték termékcsalád (JUB).",
+        "source_url": "https://www.jub.hu/termekek/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "organization",
+    "id": "org_remmers_ungarn",
+    "slug": "remmers-ungarn",
+    "name": "Remmers Ungarn Kft.",
+    "legalName": "Remmers Ungarn Kft.",
+    "country": "HU",
+    "roles": [
+      "manufacturer",
+      "representation"
+    ],
+    "website": "https://www.remmers.hu/hu",
+    "hqCity": "Biatorbágy",
+    "shortDescription": "Remmers épületvédelem és faanyagvédelem — magyarországi szervezet.",
+    "body": "A Remmers Ungarn Kft. (Biatorbágy) a Remmers rendszermegoldások magyarországi szervezete. Hivatalos forrás: remmers.hu.",
+    "source": {
+      "id": "src_remmers_hu",
+      "url": "https://www.remmers.hu/hu",
+      "title": "Remmers Magyarország — hivatalos weboldal",
+      "publisher": "Remmers Ungarn Kft."
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_remmers",
+        "slug": "remmers",
+        "name": "Remmers",
+        "shortDescription": "Remmers épület- és faanyagvédelmi márka.",
+        "source_url": "https://www.remmers.hu/hu"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "organization",
+    "id": "org_meffert_hungaria",
+    "slug": "meffert-hungaria",
+    "name": "Meffert Hungária Kft.",
+    "legalName": "Meffert Hungária Kft.",
+    "country": "HU",
+    "roles": [
+      "manufacturer",
+      "representation"
+    ],
+    "website": "https://dufa-hungary.hu/",
+    "hqCity": "Rétság",
+    "shortDescription": "Meffert / Düfa festékek és vakolatok magyarországi gyártó/importőr.",
+    "body": "A Meffert Hungária Kft. (Rétság) a Düfa márka magyarországi szereplője. Hivatalos forrás: dufa-hungary.hu.",
+    "source": {
+      "id": "src_dufa_hungary",
+      "url": "https://dufa-hungary.hu/",
+      "title": "Düfa / Meffert Hungária — hivatalos weboldal",
+      "publisher": "Meffert Hungária Kft."
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_dufa",
+        "slug": "dufa",
+        "name": "Düfa",
+        "shortDescription": "Düfa festék- és vakolatmárka (Meffert).",
+        "source_url": "https://dufa-hungary.hu/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "organization",
+    "id": "org_egrokorr",
+    "slug": "egrokorr",
+    "name": "EGROKORR Zrt.",
+    "legalName": "EGROKORR Festékipari Zrt.",
+    "country": "HU",
+    "roles": [
+      "manufacturer"
+    ],
+    "website": "https://egrokorr.hu/",
+    "hqCity": "Érd",
+    "shortDescription": "Magyar festékgyár — ipari és lakossági bevonatok.",
+    "body": "Az EGROKORR Zrt. magyar festékgyártó. Hivatalos forrás: egrokorr.hu. Márkák/termékcsaládok (pl. Dunaplaszt) külön Brand entitásként vezetendők a későbbi importban.",
+    "source": {
+      "id": "src_egrokorr_official",
+      "url": "https://egrokorr.hu/",
+      "title": "EGROKORR Zrt. — hivatalos weboldal",
+      "publisher": "EGROKORR Zrt."
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_egrokorr",
+        "slug": "egrokorr",
+        "name": "Egrokorr",
+        "shortDescription": "Egrokorr gyártói márkaidentitás.",
+        "source_url": "https://egrokorr.hu/"
+      },
+      {
+        "id": "brand_dunaplaszt",
+        "slug": "dunaplaszt",
+        "name": "Dunaplaszt",
+        "shortDescription": "Dunaplaszt lakossági/ipari bevonatcsalád (Egrokorr).",
+        "source_url": "https://egrokorr.hu/termekek/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "organization",
+    "id": "org_thenordicmark_caparol",
+    "slug": "thenordicmark",
+    "name": "thenordicmark Kft.",
+    "legalName": "thenordicmark Korlátolt Felelősségű Társaság",
+    "country": "HU",
+    "roles": [
+      "representation",
+      "distributor"
+    ],
+    "website": "https://www.caparol.hu/",
+    "hqCity": "Budapest",
+    "shortDescription": "Caparol magyarországi képviselet / partner (thenordicmark KFT).",
+    "body": "A Caparol márka magyarországi weboldalát és képviseletét a thenordicmark KFT üzemelteti (caparol.hu impresszum). A gyártói DAW/Caparol és a hazai képviselet külön Organization entitásként kezelendő.",
+    "source": {
+      "id": "src_caparol_hu",
+      "url": "https://www.caparol.hu/",
+      "title": "Caparol Magyarország — hivatalos weboldal",
+      "publisher": "thenordicmark KFT"
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_caparol",
+        "slug": "caparol",
+        "name": "Caparol",
+        "shortDescription": "Caparol építőipari festék- és bevonatmárka.",
+        "source_url": "https://www.caparol.hu/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website + impresszum 2026-10-30",
+    "note": "Do not invent Caparol as HU manufacturer; representation/distributor role is source-backed."
+  },
+  {
+    "kind": "organization",
+    "id": "org_saint_gobain_revco",
+    "slug": "saint-gobain-hungary-revco",
+    "name": "Saint-Gobain Hungary Kft. — REVCO Divízió",
+    "legalName": "Saint-Gobain Hungary Kft.",
+    "country": "HU",
+    "roles": [
+      "manufacturer",
+      "representation"
+    ],
+    "website": "https://revco.hu/",
+    "hqCity": "Szigetszentmiklós",
+    "shortDescription": "REVCO vakolatok és festékek — Saint-Gobain Hungary REVCO Divízió.",
+    "body": "A REVCO márka magyarországi szervezete a Saint-Gobain Hungary Kft. REVCO Divíziója (Szigetszentmiklós). Hivatalos forrás: revco.hu/kapcsolat.",
+    "source": {
+      "id": "src_revco_hu",
+      "url": "https://revco.hu/",
+      "title": "REVCO Magyarország — hivatalos weboldal",
+      "publisher": "Saint-Gobain Hungary Kft. REVCO Divízió"
+    },
+    "brands_proposed": [
+      {
+        "id": "brand_revco",
+        "slug": "revco",
+        "name": "REVCO",
+        "shortDescription": "REVCO vakolat- és festékmárka.",
+        "source_url": "https://revco.hu/"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "official website 2026-10-30"
+  },
+  {
+    "kind": "brand_extension_ppg",
+    "note": "Required before publishing Trinát/Lazurán PASS products",
+    "org_id": "org_ppg_trilak",
+    "brands_proposed": [
+      {
+        "id": "brand_trinat",
+        "slug": "trinat",
+        "name": "Trinát",
+        "shortDescription": "Trinát zománc- és fémfesték márka — PPG TRILAK.",
+        "source_url": "https://trilak.ppg.com/hu-HU/",
+        "parent_org": "org_ppg_trilak"
+      },
+      {
+        "id": "brand_lazuran",
+        "slug": "lazuran",
+        "name": "Lazurán",
+        "shortDescription": "Lazurán faanyagvédő és lazúr márka — PPG TRILAK.",
+        "source_url": "https://trilak.ppg.com/hu-HU/",
+        "parent_org": "org_ppg_trilak"
+      }
+    ],
+    "status_proposed": "draft_candidate_not_live",
+    "verified_from": "PPG Trilak product pages in mass-import v4 + trilak.ppg.com"
+  }
+]

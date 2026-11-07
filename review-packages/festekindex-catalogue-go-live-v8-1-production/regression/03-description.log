@@ -1,0 +1,26 @@
+
+=== Coverage — FESTÉK BÁZIS Products ===
+coverage OK
+
+=== Provenance — official festekbazis.hu only ===
+provenance OK
+
+=== No duplicate editorial spam ===
+differentiation OK
+
+=== Targeted reference Products ===
+reference OK
+
+=== Product Hub lead uses editorialSummary ===
+Product Hub lead OK
+
+=== Product description visibility — 30/30 hub lead SSR ===
+Product description visibility OK { editorial: 95, source: 95, resolvedLead: 95, renderedLead: 95 }
+
+=== Locked data + hierarchy ===
+locks OK { specs: 237, packs: 135, diluted: 8 }
+
+=== Source count sanity ===
+sources OK 105
+
+ALL Product Description Enrichment v1 checks passed.

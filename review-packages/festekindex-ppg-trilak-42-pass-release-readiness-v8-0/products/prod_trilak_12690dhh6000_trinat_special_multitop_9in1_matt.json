@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12690dhh6000_trinat_special_multitop_9in1_matt",
+  "proposed_slug": "trinat-special-multitop-9in1-matt",
+  "slug_collision_with_53": false,
+  "product_name": "Trinát Special multiTOP 9in1 matt",
+  "brand": "Trinát",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_trinat (MISSING — candidate)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12690dhh6000_trinat_special_multitop_9in1_matt_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/trinat-special-multitop-9in1-matt/12690DHH6000",
+      "sha256": "0365f25f4ca179179ded1baabf457648204d04705cfba2f70c28d7850cc39fa0"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12690DHH6000_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=929bb631c021b07c14da0bed5e71bae9cb5945d2",
+      "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12690DHH6000_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12690DHH6000&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=677&SearchAllPublicFolders=False",
+      "sha256": "c6e234a72dff5fd328089f327af457fc79207921a01cd790b8a2392d10c12845"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Trinát Special multiTOP 9in1 matt a Műszaki adatlap szerint vízbázisú, matt alapozó és fedőfesték. A Trinát Special Multitop 9in1 festék széleskörűen alkalmazható alapozóként és fedőfestékként is alumínium, acél, horganyzott acél, réz, fa, műanyag, kerámia és csempe felületekre. Szélsőséges időjárásoknak kitett felületeken is tartós bevonatot képez.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Trinát Special multiTOP 9in1 matt a Műszaki adatlap szerint vízbázisú, matt alapozó és fedőfesték. A Trinát Special Multitop 9in1 festék széleskörűen alkalmazható alapozóként és fedőfestékként is alumínium, acél, horganyzott acél, réz, fa, műanyag, kerámia és csempe felületekre. Szélsőséges időjárásoknak kitett felületeken is tartós bevonatot képez."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 1,
+          "quote": "A Trinát Special Multitop 9in1 festék széleskörűen alkalmazható alapozóként és fedőfestékként is alumínium, acél, horganyzott acél, réz, fa, műanyag, kerámia és"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Megfelelően előkészített kül - és beltéri alumínium, acél, horganyzott acél, réz, fa, műanyag, kerámia és csempe felületek bevonataként alkalmazható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 1,
+          "quote": "Megfelelően előkészített kül - és beltéri alumínium, acél, horganyzott acél, réz, fa, műanyag, kerámia és csempe felületek bevonataként alkalmazható."
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen tiszta száraz, hordképes, egyenletes szívóképességű. A porló, leváló részeket el kell távolítani és az adott alapf elületnek megfelelően kijavítani. A festendő faanyag max. 5 % nedvességtartalmú lehet. Új és régi fém felületek: Zsírtalanítsa a felületet, majd vízzel öblítse le. Zsírtalanításra használjon zsíroldó szert tartalmazó vizet (ne használjon oldószerrel átitatott rongyot, mert ez utóbbival a zsíros szennyeződések a felületen maradhatnak )."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 1,
+          "quote": "A festendő felület legyen tiszta száraz, hordképes, egyenletes szívóképességű. A porló, leváló részeket el kell távolítani és az adott alapf elületnek megfelelő"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverjük fel, illetve bizonyos időközönként festés közben is. Ügyeljen arra, hogy felkeverés közben a festékbe ne kerüljenek légbuborékok. Javasolt +5-25oC közötti anyag, alapfelület és levegő hőmérsékleten, 65%-os relatív páratartalom alatt. Felhordás módja: Ecsettel, hengerrel vagy megfelelő szóró berendezéssel. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Javasolt rétegszám: 2-3 réteg (max. 100 µm rétegvastagság) Egy rétegben: 0,1 l/m2 Az anyagszükséglet függ többek között a felhordás módjától és az alapfelülettől."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverjük fel, illetve bizonyos időközönként festés közben is. Ügyeljen arra, hogy felkeverés közben a festékbe ne kerülj"
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: nem javasolt a festés. ne használjon oldószerrel átitatott rongyot, mert ez utóbbival a zsíros szennyeződések a."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 4,
+          "quote": "nem javasolt a festés"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 2-3 réteg (max. 100 µm rétegvastagság); Egy rétegben: 0,1 l/m2; Megjegyzés: a javasolt rétegfelépítések minden esetben a legjobb tudásunk szerinti ajánlások, és; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1.23-1.47 g/cm3 színfüggő kiadósság MSZ EN ISO 6504-3 10 m2/l fehér szín esetében: - 96.6% (1 réteg) - 98.8% (2 réteg) fényesség 60°-on MSZ EN ISO 2813 1-10 matt fényesség 85°-on MSZ EN ISO 2813 8-35…."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHH6000_tds",
+          "doc_kind": "tds",
+          "sha256": "da9f3bf243ec3caa76dfa9261ff22e7872814ad1449991909b0909080fd064eb",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1.23-1.47 g/cm3 színfüggő kiadósság MSZ EN ISO 6504-3 10 m2/l fehér szín esetében: -"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

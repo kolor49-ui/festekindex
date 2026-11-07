@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhhba00_hera_matt_feher_belteri_falfestek",
+  "proposed_slug": "hera-matt-feher-belteri-falfestek",
+  "slug_collision_with_53": false,
+  "product_name": "Héra matt fehér beltéri falfesték",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhba00_hera_matt_feher_belteri_falfestek_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-matt-feher-belteri-falfestek/12640DHHBA00",
+      "sha256": "18e1cea54b5af466d5044419af518c3919c93d411879c868f099138ef9b621c6"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHBA00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=4f02ca3f30316b279c272a8d2aee1ddd2c874371",
+      "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHBA00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHBA00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "607d45bc846dab8d7a1cf954947f8653c4f9c46fb05fe6300442ea10e4b9259f"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történtő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra matt fehér beltéri falfesték a Műszaki adatlap szerint matt, extra fehér falfesték vakolt, beton, gipszkarton és glettelt felületekre. A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történtő felhordásakor a legoptimálisabb festékmennyiség kerüljön a falakra. Héra Színezőpasztákkal bármilyen pasztell árnyalatra egyszerűen színezhető."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHBA00_tds",
+          "doc_kind": "tds",
+          "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9",
+          "page": 1,
+          "quote": "A tökéletesen fehér felületet képző Héra Beltéri falfesték egyedi összetétele lehetővé teszi, hogy a festőhengerrel történtő felhordásakor a legoptimálisabb fes"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Vakolt, meszelt vagy bármilyen korábban már más diszperziós festékkel festett beltéri falfelületre, gipszkarton felületre, fűrészporos tapétára felületi előkészítés után közvetlenül felvihető."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHBA00_tds",
+          "doc_kind": "tds",
+          "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9",
+          "page": 1,
+          "quote": "Vakolt, meszelt vagy bármilyen korábban már más diszperziós festékkel festett beltéri falfelületre, gipszkarton felületre, fűrészporos tapétára felületi előkész"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. CMC- alapú glettanyagok használata nem javasolt Új, vakolt vagy beton illetve; gipsz tartalmú glettel előkészített vagy gipszkarton felületek: Finoman csiszolja meg a felületet csiszolópapírral majd tisztítsa meg a portól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHBA00_tds",
+          "doc_kind": "tds",
+          "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelül"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverjük fel, illetve bizonyos időközönként festés közben is. Héra beltéri falfesték felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. Javasolt +5 -30 oC közötti anyag, alap felület és levegő hőmérsékleten, 80% -os relat ív páratartalom alatt. Felhordás módja: Ecsettel, hengerrel vagy megfelelő szóró berendezéssel. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Javasolt rétegszám: 2-3 réteg Egy rétegben: 0,12-0,14 l/m2 Két rétegben: 0,24-0,28 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHBA00_tds",
+          "doc_kind": "tds",
+          "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverjük fel, illetve bizonyos időközönként festés közben is. Héra beltéri falfesték felhasználásra kész állapotban kerü"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 2-3 réteg; Egy rétegben: 0,12-0,14 l/m2; Két rétegben: 0,24-0,28 l/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,48-1,54 g/cm3 kiadósság MSZ EN ISO 6504-3 5 m2/l 98.8 % fedőképességnél nedves dörzsállóság MSZ-EN 13300 4.."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHBA00_tds",
+          "doc_kind": "tds",
+          "sha256": "d83c64a289c26a8693030a7a202cea91106357291d9a7400d2373c75276b18f9",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811-1 1,48-1,54 g/cm3 kiadósság MSZ EN ISO 6504-3 5 m2/l 98.8 % fedőképességnél nedves dör"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

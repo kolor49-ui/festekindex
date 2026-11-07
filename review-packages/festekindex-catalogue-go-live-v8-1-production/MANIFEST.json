@@ -1,0 +1,16 @@
+{
+  "package": "festekindex-catalogue-go-live-v8-1-production",
+  "decision": "GO_COMPLETE_LIVE_VERIFIED",
+  "releaseCommit": "c389819",
+  "productionSha": "b3fd3f6",
+  "deploymentId": 7443854323,
+  "deploymentState": "success",
+  "publicUrl": "https://festekindex.hu",
+  "products": 95,
+  "ppgPassLiveOk": 42,
+  "productIndexable": 0,
+  "googleIndexUnlock": false,
+  "finalFourSha256": "27e740ed72dec30f582110f179b7b275a73f25d058956ed5ce8c2f3d73ef0582",
+  "holdExcluded": true,
+  "rollbackPrePpg": "f319091"
+}

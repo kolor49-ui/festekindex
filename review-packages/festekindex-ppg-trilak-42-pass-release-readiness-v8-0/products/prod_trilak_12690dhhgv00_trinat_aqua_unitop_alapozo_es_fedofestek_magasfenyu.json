@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12690dhhgv00_trinat_aqua_unitop_alapozo_es_fedofestek_magasfenyu",
+  "proposed_slug": "trinat-aqua-unitop-alapozo-es-fedofestek-magasfenyu",
+  "slug_collision_with_53": false,
+  "product_name": "Trinát Aqua uniTOP alapozó és fedőfesték, magasfényű",
+  "brand": "Trinát",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_trinat (MISSING — candidate)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12690dhhgv00_trinat_aqua_unitop_alapozo_es_fedofestek_magasfenyu_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/trinat-aqua-unitop-alapozo-es-fedofestek-magasfenyu/12690DHHGV00",
+      "sha256": "b4ca870574fecfe9a2ff3e90ce399d94c4860af330433452d7a6dd8b87d0a69a"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12690DHHGV00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=f291e75714a7aadf497dbc50e0894811a382d611",
+      "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12690DHHGV00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12690DHHGV00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=677&SearchAllPublicFolders=False",
+      "sha256": "6e105d5d84cfe613f1d9f6d01c1b7e007e9e5414546fa6ba2acb81d1056a3b2a"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Trinát Aqua uniTOP alapozó és fedőfesték, magasfényű a Műszaki adatlap szerint vízbázisú zománcfesték. Magasfényű, nagy fedőképességű, vízzel hígítható, akrilgyanta kötőanyagú zománcfesték fa-, műanyag fém felületekre. Száradása gyors, nem jár kellemetlen oldószerszaggal. Esztétikus, egyenletes felületet biztosít. • Gyorsan szárad • Időjárásálló • Univerzálisan használható • Gyermekjátékra is • Oldószerszagmentes.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Trinát Aqua uniTOP alapozó és fedőfesték, magasfényű a Műszaki adatlap szerint vízbázisú zománcfesték. Magasfényű, nagy fedőképességű, vízzel hígítható, akrilgyanta kötőanyagú zománcfesték fa-, műanyag fém felületekre. Száradása gyors, nem jár kellemetlen oldószerszaggal. Esztétikus, egyenletes felületet biztosít. • Gyorsan szárad • Időjárásálló • Univerzálisan használható • Gyermekjátékra is • Oldószerszagmentes."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 1,
+          "quote": "Magasfényű, nagy fedőképességű, vízzel hígítható, akrilgyanta kötőanyagú zománcfesték fa-, műanyag fém felületekre. Száradása gyors, nem jár kellemetlen oldósze"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Megfelelően elő készített kül - és beltéri fa -, műanyag és fém* felületek és gyermekjátékok bevonataként alkalmazható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 1,
+          "quote": "Megfelelően elő készített kül - és beltéri fa -, műanyag és fém* felületek és gyermekjátékok bevonataként alkalmazható."
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani, és az adott alapfelületnek megfelelően kijavítani. A festendő faanyag max. 5 % nedvességtartalmú lehet. Új és régi fafelületek előkészítése: Az új, korábban még nem kezelt fafelületet finoman csiszolja megcsiszolópapírral a fa szálirányában, majd tisztítsa meg a portól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani , és az"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua unitop magasfényű zománc felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. Javasolt +5-25oC közötti anyag, alapfelület és levegő hőmérsékleten, 65%-os relatív páratartalom alatt. Felhordás módja: Akril ecsettel, hengerrel vagy szórással. A száradási idő és az átvonhatóság nagymértékben függ az alapf elülettől, a páratartalomtól, a hőmérséklettől és a felhordott réteg vastagságától. Javasolt rétegszám: 2-3 réteg (min. 30µm száraz rétegvastagságban) Egy rétegben: 0,1 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua unitop magasfényű zománc felhasználásra kész "
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: nem javasolt a festés. ne használjon oldószerrel."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 4,
+          "quote": "nem javasolt a festés"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 2-3 réteg (min. 30µm száraz rétegvastagságban); Egy rétegben: 0,1 l/m2; Megjegyzés: a javasolt rétegfelépítések minden esetben a legjobb tudásunk szerinti ajánlások, és; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,06 – 1,23 g/cm3 színtől függő szárazanyag tartalom MSZ EN ISO3251:2003 41 – 48 % színtől függő kiadósság ISO 6504-3:2007 6,19 m2/l fehér, 98% fedőképesség mellett fényesség 20°-on MSZ EN ISO…."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHGV00_tds",
+          "doc_kind": "tds",
+          "sha256": "5d5637e611db8282094c74578c5b2b488294e3e6ca144658ac1d4f1a49360e17",
+          "page": 4,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,06 – 1,23 g/cm3 színtől függő szárazanyag tartalom MSZ EN ISO3251:2003 41 – 48 %"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

@@ -1,0 +1,15 @@
+{
+  "package": "festekindex-google-index-wave1-closure-v8-3",
+  "files": {
+    "RELEASE-REPORT.md": "43806a6d518e0556a1d49a7710f1fcf8e07f72e3c1f8afbb2df71aba5959260d",
+    "gates/DECISION.md": "2ad76a45a39f30690fc2bc1bf4f06734ee659081ab6f8413b6693785ec61f85c",
+    "gates/LIVE-HOST-EVIDENCE.json": "052e3c730da80ff5d4b7cf6f51f2352b0cdfbfdad18e05ca7a62a593e9217812",
+    "gates/seo-coherence.log": "0ab56a438ed1a6f4102d2a1b564b6b6dd1ef97166d4dfa2070418295c7f05378",
+    "live/SITEMAP-URLS.txt": "4b0a5a4a1d75dea080830c57fb1e17778e80cb03388544865effb68ee8f8c0b7",
+    "live/robots.txt": "3ea59e4f01ec19900e776f65f218b2fd1e8a29c038ef7126b8168e81070bdccd",
+    "live/sitemap.headers.txt": "c0176643522a064f4d7a223df9d20fc123c8ed9b9a63a2044884e1330fe229b9",
+    "live/sitemap.xml": "b842bd2aab7327faf2f01e5e0a211893fb3627204c9e0ccfcd01bd93a5f71d48",
+    "live/www-sitemap.headers.txt": "b3a513a8fc3373dfbefd310dd5015e4d94eb7f81d3b22315e983cf714f3a3f2c",
+    "seo/SEO-QUALITY-NOTE.md": "ab91da9b8c8a721f7df9d7102b10029fc8cdeb9c94e5ff6126123a4fd3a8c4ba"
+  }
+}

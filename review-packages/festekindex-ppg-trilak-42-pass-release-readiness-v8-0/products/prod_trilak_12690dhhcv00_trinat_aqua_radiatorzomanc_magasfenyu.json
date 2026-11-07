@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12690dhhcv00_trinat_aqua_radiatorzomanc_magasfenyu",
+  "proposed_slug": "trinat-aqua-radiatorzomanc-magasfenyu",
+  "slug_collision_with_53": false,
+  "product_name": "Trinát Aqua radiátorzománc, magasfényű",
+  "brand": "Trinát",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_trinat (MISSING — candidate)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12690dhhcv00_trinat_aqua_radiatorzomanc_magasfenyu_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/trinat-aqua-radiatorzomanc-magasfenyu/12690DHHCV00",
+      "sha256": "422a7eef1b4be96381855c5aa8de6da70ca6bf38cf7d05bc577146837d41f483"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12690DHHCV00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=e70c0c2658d39999f38c4d1100b62895c1b7c1af",
+      "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12690DHHCV00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12690DHHCV00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=677&SearchAllPublicFolders=False",
+      "sha256": "44abe3417f9c74ec6c73f9936bc1332e26056a9e16e17a5e3986751dd8c38c8e"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Trinát Aqua radiátorzománc, magasfényű a Műszaki adatlap szerint vízbázisú, fehér, magasfényű zománcfesték. Magasfényű, fehér színű, v ízzel hígítható, akril át gyanta kötőanyagú, 100°C -ig hőálló zománcfesték acélfelületű fűtőtestekre. Száradása gyors, nem jár kellemetlen oldószerszaggal. Esztétikus, egyenletes felületet biztosít.  Hőálló  Kiválóan tapad  Jól terül  Gyorsan szárad.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Trinát Aqua radiátorzománc, magasfényű a Műszaki adatlap szerint vízbázisú, fehér, magasfényű zománcfesték. Magasfényű, fehér színű, v ízzel hígítható, akril át gyanta kötőanyagú, 100°C -ig hőálló zománcfesték acélfelületű fűtőtestekre. Száradása gyors, nem jár kellemetlen oldószerszaggal. Esztétikus, egyenletes felületet biztosít.  Hőálló  Kiválóan tapad  Jól terül  Gyorsan szárad."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 1,
+          "quote": "Magasfényű, fehér színű, v ízzel hígítható, akril át gyanta kötőanyagú , 100°C -ig hőálló zománcfesték acélfelületű fűtőtestekre. Száradása gyors, nem jár kelle"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Megfelelően elő készített kül - és beltéri acélfelületű fűtőtestek (radiátorok, csővezetékek) bevonataként alkalmazható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 1,
+          "quote": "Megfelelően elő készített kül - és beltéri acélfelületű fűtőtestek (radiátorok, csővezetékek) bevonataként alkalmazható."
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani, és az adott alapfelületnek megfelelően kijavítani. Új és régi vas, illetve acélfelületek előkészítése: Az új, korábban még nem kezelt fém felületről, a z esetleges rozsdát mechanikai eljárással (csiszolás, raskettázás vagy szemcs eszórás) el kell távolítani, majd zsírtalanítani, és vízzel leöblíteni."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani , és az"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua radiátorzománc felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. Javasolt +5-25oC közötti anyag, alapfelület és levegő hőmérsékleten, 65%-os relatív páratartalom alatt. Felhordás módja: Akril ecsettel, hengerrel vagy szórással. A száradási idő és az átvonhatóság nagymértékben függ az alapf elülettől, a páratartalomtól, a hőmérséklettől és a felhordott réteg vastagságától. Javasolt rétegszám: 2-3 réteg (min. 30µm száraz rétegvastagságban) Egy rétegben: 0,1 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua radiátorzománc felhasználásra kész állapotban"
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: nem javasolt a festés. ne használjon oldószerrel."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 4,
+          "quote": "nem javasolt a festés"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 2-3 réteg (min. 30µm száraz rétegvastagságban); Egy rétegben: 0,1 l/m2; Megjegyzés: a javasolt rétegfelépítések minden esetben a legjobb tudásunk szerinti ajánlások, és; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,06 – 1,23 g/cm3 szárazanyag tartalom MSZ EN ISO3251:2003 41 – 48 % kiadósság ISO 6504-3:2007 6,19 m2/l 98% fedőképesség mellett fényesség 20°-on MSZ EN ISO 2813:2000 53 magasfényű fényesség 60°-on…."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHCV00_tds",
+          "doc_kind": "tds",
+          "sha256": "32330a9fa86a7834cf832242c6ca32c2d8e62821949daeda3df2dbd1d1bd2e7d",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,06 – 1,23 g/cm3 szárazanyag tartalom MSZ EN ISO3251:2003 41 – 48 % kiadósság ISO"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

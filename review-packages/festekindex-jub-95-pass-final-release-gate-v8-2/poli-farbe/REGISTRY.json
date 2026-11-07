@@ -1,0 +1,1011 @@
+{
+  "run": "poli-farbe-v3",
+  "counts": {
+    "REVIEW": 62,
+    "HOLD": 11
+  },
+  "note": "Poli-Farbe remains separate. 0 PASS. TDS gap (SDS-only pages / adatlap library is SDS). Quality gates not relaxed. Does not block JUB local integration.",
+  "products": [
+    {
+      "product_id": "prod_poli_farbe_boroka_base_fakonzervalo_alapozo",
+      "product_name": "Boróka Base fakonzerváló alapozó",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_lenolaj",
+      "product_name": "Lenolaj",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_platinum_foltallo_konyha_es_furdoszoba",
+      "product_name": "Platinum Foltálló konyha és fürdőszoba",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_platinum_hofeher",
+      "product_name": "Platinum Hófehér",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_fakonzervalo_vekonylazur",
+      "product_name": "Poli-Farbe Boróka fakonzerváló vékonylazúr",
+      "status": "HOLD",
+      "reasons": [
+        "hold:tds_sds_identity_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_vastaglazur",
+      "product_name": "Poli-Farbe Boróka vastaglazúr",
+      "status": "HOLD",
+      "reasons": [
+        "hold:tds_sds_identity_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_egyretegu_belteri_falfestek",
+      "product_name": "Poli-Farbe Platinum egyrétegű beltéri falfesték",
+      "status": "HOLD",
+      "reasons": [
+        "hold:tds_sds_identity_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_feher_alapozo_festek",
+      "product_name": "Poli-Farbe Platinum Fehér Alapozó Festék",
+      "status": "HOLD",
+      "reasons": [
+        "hold:tds_sds_identity_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_prakticolor_diszperzios_homlokzati_nemesvakolat",
+      "product_name": "PraktiColor diszperziós homlokzati nemesvakolat",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_prakticolor_termo_ragasztohabarcs",
+      "product_name": "PraktiColor termo ragasztóhabarcs",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_prakticolor_vekonyvakolat_alapozo",
+      "product_name": "PraktiColor vékonyvakolat alapozó",
+      "status": "HOLD",
+      "reasons": [
+        "hold:sds_title_name_mismatch"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_corso_diszlec_es_mennyezetlap_ragaszto",
+      "product_name": "Corso díszléc- és mennyezetlap ragasztó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:missing_sds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_belteri_meszes_glett",
+      "product_name": "Poli-Farbe beltéri meszes glett",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_classic_vizzel_higithato_fabevono_vekonylazur",
+      "product_name": "Poli-Farbe Boróka Classic Vízzel hígítható fabevonó vékonylazúr",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_folyekony_fa5768",
+      "product_name": "Poli- Farbe Boróka Folyékony Fa",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_primer_fakonzervalo_alapozo",
+      "product_name": "Poli-Farbe Boróka Primer fakonzerváló alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_vizzel_higithato_fabevono_vastaglazur",
+      "product_name": "Poli-Farbe Boróka vízzel hígítható fabevonó vastaglazúr",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_boroka_vizzel_higithato_parkettalakk",
+      "product_name": "Poli-Farbe Boróka vízzel hígítható parkettalakk",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_cellkolor_aqua_selyemfenyu_zomancfestek",
+      "product_name": "Poli-Farbe Cellkolor Aqua selyemfényű zománcfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_cellkolor_aqua_univerzalis_alapozo",
+      "product_name": "Poli-Farbe Cellkolor Aqua univerzális alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_cellkolor_multi_surface_zomancfestek",
+      "product_name": "Poli-Farbe Cellkolor multi-surface zománcfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_cellkolor_radiatorzomanc",
+      "product_name": "Poli-Farbe Cellkolor radiátorzománc",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_cellkolor_univerzalis_korroziogatlo_alapozo",
+      "product_name": "Poli-Farbe Cellkolor univerzális korróziógátló alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_diszperzios_alapozo",
+      "product_name": "Poli-Farbe diszperziós alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_diszperzios_belso_fal_es_mennyezetfestek",
+      "product_name": "Poli-Farbe diszperziós belső fal- és mennyezetfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_diszperzios_homlokzatfestek",
+      "product_name": "Poli-Farbe diszperziós homlokzatfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_diszperzios_homlokzati_nemesvakolat_szi_ntelen_bazis",
+      "product_name": "Poli-Farbe diszperziós homlokzati nemesvakolat szí­ntelen bázis",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_diszperzios_vekonyvakolat",
+      "product_name": "Poli-Farbe Diszperziós vékonyvakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_foltbenzin",
+      "product_name": "Poli-Farbe foltbenzin",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_glettgipsz_0_6_mm",
+      "product_name": "Poli-Farbe glettgipsz 0-6 mm",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_glettgipsz_extra_3_10_mm",
+      "product_name": "Poli-Farbe glettgipsz extra 3-10 mm",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_hengerelheto_vakolat",
+      "product_name": "Poli-Farbe hengerelhető vakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_belteri_diszperzios_falfestek",
+      "product_name": "Poli-Farbe Inntaler beltéri diszperziós falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_diszperzios_homlokzatfestek",
+      "product_name": "Poli-Farbe Inntaler diszperziós homlokzatfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_diszperzios_melyalapozo",
+      "product_name": "Poli-Farbe Inntaler diszperziós mélyalapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_izolalo_belso_falfestek",
+      "product_name": "Poli-Farbe Inntaler izoláló belső falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_peneszlemoso",
+      "product_name": "Poli-Farbe Inntaler penészlemosó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_premium_belteri_falfestek",
+      "product_name": "Poli-Farbe Inntaler Premium beltéri falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szilikat_belteri_falfestek",
+      "product_name": "Poli-Farbe Inntaler szilikát beltéri falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:missing_sds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szilikat_homlokzatfestek_uj_receptura",
+      "product_name": "Poli-Farbe Inntaler szilikát homlokzatfesték - új receptúra",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szilikat_melyalapozo",
+      "product_name": "Poli-Farbe Inntaler szilikát mélyalapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szilikon_homlokzatfestek",
+      "product_name": "Poli-Farbe Inntaler szilikon homlokzatfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szines_diszperzios_homlokzatfestek_ton_in_ton",
+      "product_name": "Poli-Farbe Inntaler színes diszperziós homlokzatfesték Ton in ton",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_szines_homlokzati_diszperzios_falfestek",
+      "product_name": "Poli-Farbe Inntaler színes homlokzati diszperziós falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_uvegfatyol",
+      "product_name": "Poli-Farbe Inntaler üvegfátyol",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:missing_sds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_inntaler_uvegszovet_tapeta",
+      "product_name": "Poli-Farbe Inntaler üvegszövet tapéta",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:missing_sds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_keritesfestek",
+      "product_name": "Poli-Farbe kerítésfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_kesz_glett",
+      "product_name": "Poli-Farbe kész glett",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_kotoanyag_oldat",
+      "product_name": "Poli-Farbe kötőanyag oldat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_kromofag",
+      "product_name": "Poli-Farbe kromofág",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_kul_es_belteri_meszfestek",
+      "product_name": "Poli-Farbe kül- és beltéri mészfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_kulteri_glettanyag",
+      "product_name": "Poli-Farbe kültéri glettanyag",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_labazatfestek",
+      "product_name": "Poli-Farbe lábazatfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_labazati_vakolat",
+      "product_name": "Poli-Farbe lábazati vakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_decor_metaleffekt_festek",
+      "product_name": "Poli-Farbe Platinum Decor metáleffekt festék",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_decor_szines_belteri_falfestek",
+      "product_name": "Poli-Farbe Platinum Decor színes beltéri falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_diszperzios_melyalapozo",
+      "product_name": "Poli-Farbe Platinum diszperziós mélyalapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_falfeny",
+      "product_name": "Poli-Farbe Platinum falfény",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_platinum_foltallo_belteri_latex_falfestek",
+      "product_name": "Poli-Farbe Platinum Foltálló Beltéri latex falfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_poli_mix_univerzalis_szinezopaszta",
+      "product_name": "Poli-Farbe Poli-Mix Univerzális színezőpaszta",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_rozsdaoldo",
+      "product_name": "Poli-Farbe rozsdaoldó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szilikat_homlokzati_nemesvakolat",
+      "product_name": "Poli-Farbe szilikát homlokzati nemesvakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szilikat_vakolatalapozo",
+      "product_name": "Poli-Farbe szilikát vakolatalapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szilikonvakolat",
+      "product_name": "Poli-Farbe szilikonvakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szilikonvakolat_alapozo",
+      "product_name": "Poli-Farbe szilikonvakolat alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szinezett_marvanyszemcse",
+      "product_name": "Poli-Farbe színezett márványszemcse",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:missing_sds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szinezofestek",
+      "product_name": "Poli-Farbe színezőfesték",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_szinezopaszta",
+      "product_name": "Poli-Farbe színezőpaszta",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_termo_ragasztohabarcs",
+      "product_name": "Poli-Farbe termo ragasztóhabarcs",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_missing:editorialSummary",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_termo_ragasztohabarcs_bazis",
+      "product_name": "Poli-Farbe Termo ragasztóhabarcs bázis",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_ton_in_ton_diszperzios_homlokzati_nemesvakolat",
+      "product_name": "Poli-Farbe Ton in ton diszperziós homlokzati nemesvakolat",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_vakolat_szaradasgyorsito_koncentratum",
+      "product_name": "Poli-Farbe vakolat száradásgyorsító koncentrátum",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    },
+    {
+      "product_id": "prod_poli_farbe_poli_farbe_vekonyvakolat_alapozo",
+      "product_name": "Poli-Farbe vékonyvakolat alapozó",
+      "status": "REVIEW",
+      "reasons": [
+        "review:missing_tds",
+        "review:weak_quotes:1",
+        "review:enrichment_missing:Alkalmazás",
+        "review:enrichment_missing:Előkészítés",
+        "review:enrichment_missing:Felhasználás",
+        "review:enrichment_missing:Műszaki adatok",
+        "review:enrichment_missing:Termékleírás",
+        "review:enrichment_incomplete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+
+=== inventory ===
+inventory OK
+
+=== graph counts ===
+graph OK
+
+=== portfolio DIRECT-FIRST ===
+portfolio OK
+
+=== content lock ===
+content lock OK
+
+=== article parser ===
+parser OK
+
+=== hub models ===
+models OK
+
+=== SSR pages + negative expansion ===
+SSR + negative OK
+
+=== sources provenance ===
+sources OK
+
+=== public language ===
+public language OK
+
+=== breadcrumb + SEO ===
+SEO OK
+
+=== locked dataset ===
+global merged Source count: 137
+dataset OK
+
+=== critical regressions ===
+critical OK
+
+ALL Knowledge Hub v1 checks passed.

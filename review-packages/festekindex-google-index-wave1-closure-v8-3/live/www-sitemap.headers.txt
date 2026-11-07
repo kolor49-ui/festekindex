@@ -1,0 +1,10 @@
+HTTP/2 308 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Fri, 30 Oct 2026 19:46:34 GMT
+location: https://festekindex.hu/sitemap.xml
+refresh: 0;url=https://festekindex.hu/sitemap.xml
+server: Vercel
+strict-transport-security: max-age=63072000
+x-vercel-id: fra1::j9gcr-1793389594088-235e20d0ffb6
+

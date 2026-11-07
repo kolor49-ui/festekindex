@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "contested": 6,
+    "proven_pass": 6,
+    "excluded": 0,
+    "gate_relaxed": false
+  },
+  "products": [
+    {
+      "product_id": "prod_jub_jupol_citro_strong",
+      "product_name": "JUPOL Citro strong",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    },
+    {
+      "product_id": "prod_jub_silicate_primer",
+      "product_name": "SILICATE Primer",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    },
+    {
+      "product_id": "prod_jub_decor_delight",
+      "product_name": "DECOR Delight",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    },
+    {
+      "product_id": "prod_jub_decor_cashmere",
+      "product_name": "DECOR Cashmere",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    },
+    {
+      "product_id": "prod_jub_jupol_strong",
+      "product_name": "JUPOL Strong",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    },
+    {
+      "product_id": "prod_jub_jupol_latex_transparent",
+      "product_name": "JUPOL Latex transparent",
+      "final_status": "PASS",
+      "reasons": [
+        "pass:local_draft_ready_all_gates"
+      ],
+      "weak_quotes_remaining": 0,
+      "verdict": "PROVEN_PASS",
+      "diagnosis": "technical_quote_page_marker_artifact",
+      "fix": "find_quote_page strips extract --- PAGE N --- markers; TDS page-1 substring verified; re-run PASS with 0 weak_quotes"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-30",
+  "checks": [
+    {
+      "name": "prod_baseline_hera",
+      "url": "https://festekindex.hu/termekek/hera-diszperzit-belteri-falfestek",
+      "status": 200,
+      "final": "https://festekindex.hu/termekek/hera-diszperzit-belteri-falfestek",
+      "len": 7766,
+      "has_noindex": true,
+      "title_snip": "<title>Héra DISZPERZIT beltéri falfesték | FESTÉKINDEX</title>"
+    },
+    {
+      "name": "jub_sample",
+      "url": "https://festekindex.hu/termekek/jub-jupol-gold",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "poli_boroka",
+      "url": "https://festekindex.hu/termekek/poli-farbe-boroka-vastaglazur",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "sitemap",
+      "url": "https://festekindex.hu/sitemap.xml",
+      "status": 200,
+      "final": "https://festekindex.hu/sitemap.xml",
+      "len": 5686,
+      "has_noindex": false,
+      "title_snip": null
+    }
+  ]
+}

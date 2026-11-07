@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12640dhhfk00_hera_thermotek_silicate_vakolatalapozo",
+  "proposed_slug": "hera-thermotek-silicate-vakolatalapozo",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Thermotek Silicate vakolatalapozó",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhfk00_hera_thermotek_silicate_vakolatalapozo_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-thermotek-silicate-vakolatalapozo/12640DHHFK00",
+      "sha256": "1af157ac700620473d88407dd30c93cf870770d34cbb6b147270fd255a010441"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHFK00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=6f57e36082bb7207c1af1cb7dfe5e5c7b2a605f0",
+      "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHFK00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHFK00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "76e0d80a287faf29bb7871a36cb827656d04a904e3c07519afa0727283be457b"
+    }
+  ],
+  "claims_ok": 9,
+  "claims_total": 9,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Thermotek Silicate vakolatalapozó a Műszaki adatlap szerint fehér, matt, érdes felületű pigmentált alapozófesték. A Héra Thermotek Silicate Vakolatalapozó kiváló kálivízüveg kötőanyagú alapozó, mely a teljes hatásfokú szilikát vakolatrendszer eleme. Növeli a hőszigetelő rendszerek mechanikai szilárdságát, használatával a rétegek egymáshoz tapadása nagyértékben megnő.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Thermotek Silicate vakolatalapozó a Műszaki adatlap szerint fehér, matt, érdes felületű pigmentált alapozófesték. A Héra Thermotek Silicate Vakolatalapozó kiváló kálivízüveg kötőanyagú alapozó, mely a teljes hatásfokú szilikát vakolatrendszer eleme. Növeli a hőszigetelő rendszerek mechanikai szilárdságát, használatával a rétegek egymáshoz tapadása nagyértékben megnő."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 1,
+          "quote": "A Héra Thermotek Silicate Vakolatalapozó kiváló kálivízüveg kötőanyagú alapozó, mely a teljes hatásfokú szilikát vakolatrendszer eleme. Növeli a hőszigetelő ren"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Az alapozó a Héra Thermotek Silicate vékonyvakolat alapozója. A szilikát vékonyvakolat felhordása előtt mindenképpen szükséges. Színezett változatban hozzájárul az végső, egyenletes szín kialakulásához. Az alapozó jó páraáteresztő, a bevonat a fal természetes szellőzését nem gátolja. Felhasználható (a Héra Thermotek Silicate vékonyvakolat alá): Homlokzati hőszigetelő rendszer üvegszövet beágyazó ragasztó/simítótapaszára. Kiemelten ajánlott felújító vakolatrendszerre."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 1,
+          "quote": "Az alapozó a Héra Thermotek Silicate vékonyvakolat alapozója. A szilikát vékonyvakolat felhordása előtt mindenképpen szükséges. Színezett változatban hozzájárul"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően szilárd. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. Felhordás előtt az alapozó felkeverése szükséges. Utána ecseteléssel, hengerezéssel felhordható az anyag. A vékonyvakolat alapozót a felhordása után egészen a megszáradásáig védeni kell a csapadéktól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően szilárd. A porló, leváló részeket el kell távolítani és az adott alapfelület"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgo zás előtt alaposan keverjük fel. A Héra Thermotek Silicate vakolatalapozó felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. Javasolt +5-25 oC közötti anyag, alapfelület és levegő hőmérsékleten, 80%-os relatív páratartalom alatt. Ne dolgozzunk esőre hajló, párás, hideg időben vagy eső alkalmával. Egy rétegben: 0,16-0,17 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítástól. Az anyagszükséglet pontos értékét adott esetben a bevonandó falfelületen kell meghatározni."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 2,
+          "quote": "A terméket a feldolgo zás előtt alaposan keverjük fel . A Héra Thermotek Silicate vakolatalapozó felhasználásra kész állapotban kerül forgalomba, hígítása nem s"
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: Gipszfelületekre nem használható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 1,
+          "quote": "Gipszfelületekre nem használható."
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Egy rétegben: 0,16-0,17 l/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811-1 1,49-1,53 g/cm3 Fényesség MSZ EN 13300 tompamatt MSZ EN ISO 2813 Kiadósság gyakorlati érték6m2/l egy rétegben Szemcsefinomság MSZ EN 13300 közepes MSZ EN ISO 1524."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHFK00_tds",
+          "doc_kind": "tds",
+          "sha256": "4399bbf7f672270ef8cfed47f6ff81296edf8d7c95bec245e7f917ddcebf1765",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811-1 1,49-1,53 g/cm3 Fényesség MSZ EN 13300 tompamatt MSZ EN ISO 2813 Kiadósság gyakorlat"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

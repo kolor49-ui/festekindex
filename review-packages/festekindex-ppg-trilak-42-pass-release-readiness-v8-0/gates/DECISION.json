@@ -1,0 +1,17 @@
+{
+  "decision": "RELEASE_PREP_ONLY_NOT_GO_LIVE",
+  "cohort": "42 PPG Trilak PASS from trilak-100-v4",
+  "publish_approved": false,
+  "commit_approved": false,
+  "deploy_approved": false,
+  "index_unlock_approved": false,
+  "blocking_for_go_live": [
+    "Trinát and Lazurán brand entities missing in live catalogue (only Héra exists under PPG)",
+    "No master JSON / enrichment overlay yet for the 42 products",
+    "Product Hub requires published catalogue entries — not created in this package",
+    "SEO remains 0/53 noindex until explicit index unlock GO",
+    "User §3 Google-indexelés message truncated — full plan pending"
+  ],
+  "ready_for_human_review": true,
+  "gate_failures": []
+}

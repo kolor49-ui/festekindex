@@ -1,0 +1,39 @@
+
+=== Exactly three candidates audited ===
+candidates OK 3 accepted
+
+=== Accepted candidates — identity + provenance ===
+accepted identity OK
+
+=== Rejected / unresolved not created ===
+no rejected entities OK
+
+=== No duplicates / no unrelated FB products ===
+duplicates / scope OK
+
+=== Counts derived from accepted fixtures ===
+counts OK {
+  products: 196,
+  specs: 237,
+  packs: 135,
+  diluted: 8,
+  search: 299,
+  enrichmentSources: 105
+}
+
+=== S-31 dilutedWith — Industry Primer + Enamel only ===
+S-31 relations OK
+
+=== Rapid Aqua distinct from solvent Rapid Zománc ===
+Rapid Aqua distinct OK
+
+=== FACTOR Aqua glaze membership ===
+FACTOR glaze OK
+
+=== Search / SEO / ranking unchanged policy ===
+search/SEO policy OK
+
+=== Description coverage intact + extended ===
+descriptions OK { festekBazisOverlay: 53, productsWithEditorial: 196 }
+
+ALL Missing Products Closure v1 checks passed.

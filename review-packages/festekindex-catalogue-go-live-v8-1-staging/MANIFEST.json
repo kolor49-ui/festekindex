@@ -1,0 +1,12 @@
+{
+  "package": "festekindex-catalogue-go-live-v8-1-staging",
+  "decision": "CONDITIONAL_GO_STOP_BEFORE_PROD",
+  "localCommit": "c389819",
+  "products": 95,
+  "ppgPass": 42,
+  "productIndexable": 0,
+  "sitemap": 36,
+  "holdExcluded": true,
+  "pushed": false,
+  "productionDeploy": false
+}

@@ -1,0 +1,279 @@
+{
+  "package": "festekindex-ppg-trilak-42-pass-release-readiness-v8-0",
+  "generated_at": "2026-10-30T15:37:55.741490+00:00",
+  "source_run": "tools/mass-import/runs/trilak-100-v4",
+  "cohort_count": 42,
+  "by_brand": {
+    "Héra": 19,
+    "Lazurán": 5,
+    "Trinát": 18
+  },
+  "all_publishable_false": true,
+  "gate_failures": [],
+  "gate_pass_count": 42,
+  "master_product_count": 53,
+  "duplicate_ids_vs_master": 0,
+  "duplicate_names_vs_master": 0,
+  "slug_collisions": [],
+  "products": [
+    {
+      "product_id": "prod_trilak_12640dhh1900_hera_premium_latex_3in1_alapozo_festek",
+      "name": "Héra Prémium Latex 3in1 alapozó festék",
+      "brand": "Héra",
+      "proposed_slug": "hera-premium-latex-3in1-alapozo-festek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhh3000_hera_bacteria_resist_bakteriumokkal_es_penesszel_szemben_ellenall",
+      "name": "Héra Bacteria Resist baktériumokkal és penésszel szemben ellenálló beltéri falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-bacteria-resist-bakteriumokkal-es-penesszel-szemben-ellenallo-belteri-falfe"
+    },
+    {
+      "product_id": "prod_trilak_12640dhh7800_hera_falfix_diszperzios_melyalapozo",
+      "name": "Héra Falfix diszperziós mélyalapozó",
+      "brand": "Héra",
+      "proposed_slug": "hera-falfix-diszperzios-melyalapozo"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhay00_hera_thermotek_silicate_vekonyvakolat",
+      "name": "Héra Thermotek Silicate vékonyvakolat",
+      "brand": "Héra",
+      "proposed_slug": "hera-thermotek-silicate-vekonyvakolat"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhba00_hera_matt_feher_belteri_falfestek",
+      "name": "Héra matt fehér beltéri falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-matt-feher-belteri-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhbo00_hera_folttakaro_alapozo",
+      "name": "Héra folttakaró alapozó",
+      "brand": "Héra",
+      "proposed_slug": "hera-folttakaro-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhcm00_hera_dryvit_siloxan_vizlepergeto_vekonyvakolat",
+      "name": "Héra Dryvit Siloxan vízlepergető vékonyvakolat",
+      "brand": "Héra",
+      "proposed_slug": "hera-dryvit-siloxan-vizlepergeto-vekonyvakolat"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhed00_hera_peneszgatlo_belso_falfestek",
+      "name": "Héra penészgátló belső falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-peneszgatlo-belso-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhfk00_hera_thermotek_silicate_vakolatalapozo",
+      "name": "Héra Thermotek Silicate vakolatalapozó",
+      "brand": "Héra",
+      "proposed_slug": "hera-thermotek-silicate-vakolatalapozo"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhgm00_hera_thermotek_universal_vakolatalapozo",
+      "name": "Héra Thermotek Universal vakolatalapozó",
+      "brand": "Héra",
+      "proposed_slug": "hera-thermotek-universal-vakolatalapozo"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhhp00_hera_my_color_belteri_falfestek",
+      "name": "Héra MY color beltéri falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-my-color-belteri-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhih00_hera_super_matt_belteri_falfestek",
+      "name": "Héra Super Matt Beltéri Falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-super-matt-belteri-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhii00_hera_diszperzit_mennyezet_es_falfestek",
+      "name": "Héra DISZPERZIT mennyezet- és falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-diszperzit-mennyezet-es-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhii02_hera_mennyezet_es_falfestek",
+      "name": "Héra Mennyezet- és falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-mennyezet-es-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhir00_hera_dryvit_easy_vizlepergeto_vekonyvakolat",
+      "name": "Héra Dryvit Easy vízlepergető vékonyvakolat",
+      "brand": "Héra",
+      "proposed_slug": "hera-dryvit-easy-vizlepergeto-vekonyvakolat"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhka00_hera_diszperzit_belteri_falfestek",
+      "name": "Héra DISZPERZIT beltéri falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-diszperzit-belteri-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhlh00_hera_studio_latex_matt_belteri_falfestek",
+      "name": "Héra Stúdió Latex Matt beltéri falfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-studio-latex-matt-belteri-falfestek"
+    },
+    {
+      "product_id": "prod_trilak_12640dhhus00_hera_meszfestek",
+      "name": "Héra mészfesték",
+      "brand": "Héra",
+      "proposed_slug": "hera-meszfestek"
+    },
+    {
+      "product_id": "prod_trilak_12650dhhch00_lazuran_vastaglazur",
+      "name": "Lazurán Vastaglazúr",
+      "brand": "Lazurán",
+      "proposed_slug": "lazuran-vastaglazur"
+    },
+    {
+      "product_id": "prod_trilak_12650dhhcn00_lazuran_lenolajkence",
+      "name": "Lazurán Lenolajkence",
+      "brand": "Lazurán",
+      "proposed_slug": "lazuran-lenolajkence"
+    },
+    {
+      "product_id": "prod_trilak_12650dhhdl01_lazuran_univerzalis_faanyagvedo",
+      "name": "Lazurán univerzális faanyagvédő",
+      "brand": "Lazurán",
+      "proposed_slug": "lazuran-univerzalis-faanyagvedo"
+    },
+    {
+      "product_id": "prod_trilak_12650dhhfa01_lazuran_aqua_favedo_lazur_3in1",
+      "name": "Lazurán Aqua Favédő lazúr 3in1",
+      "brand": "Lazurán",
+      "proposed_slug": "lazuran-aqua-favedo-lazur-3in1"
+    },
+    {
+      "product_id": "prod_trilak_12650dhhnx01_lazuran_favedo_lazur_3in1",
+      "name": "Lazurán Favédő lazúr 3in1",
+      "brand": "Lazurán",
+      "proposed_slug": "lazuran-favedo-lazur-3in1"
+    },
+    {
+      "product_id": "prod_trilak_12670dhhdz01_hera_thermotek_labazati_vakolat",
+      "name": "Héra Thermotek lábazati vakolat",
+      "brand": "Héra",
+      "proposed_slug": "hera-thermotek-labazati-vakolat"
+    },
+    {
+      "product_id": "prod_trilak_12690dhh2700_trinat_aqua_korroziogatlo_alapozo",
+      "name": "Trinát Aqua korróziógátló alapozó",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-korroziogatlo-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12690dhh6000_trinat_special_multitop_9in1_matt",
+      "name": "Trinát Special multiTOP 9in1 matt",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-special-multitop-9in1-matt"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhbt00_trinat_aqua_univerzalis_alapozo",
+      "name": "Trinát Aqua univerzális alapozó",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-univerzalis-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhcv00_trinat_aqua_radiatorzomanc_magasfenyu",
+      "name": "Trinát Aqua radiátorzománc, magasfényű",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-radiatorzomanc-magasfenyu"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhgn00_trinat_aqua_unitop_alapozo_es_fedofestek_selyemfenyu",
+      "name": "Trinát Aqua uniTOP alapozó és fedőfesték, selyemfényű",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-unitop-alapozo-es-fedofestek-selyemfenyu"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhgv00_trinat_aqua_unitop_alapozo_es_fedofestek_magasfenyu",
+      "name": "Trinát Aqua uniTOP alapozó és fedőfesték, magasfényű",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-unitop-alapozo-es-fedofestek-magasfenyu"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhik00_trinat_aqua_skolatex_iskolatabla_festek",
+      "name": "Trinát Aqua Skolatex iskolatábla festék",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-skolatex-iskolatabla-festek"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhin00_trinat_aqua_unitop_alapozo_es_fedofestek_matt",
+      "name": "Trinát Aqua uniTOP alapozó és fedőfesték, matt",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-aqua-unitop-alapozo-es-fedofestek-matt"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhip00_trinat_special_korroziogatlo_alapozo",
+      "name": "Trinát Special korróziógátló alapozó",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-special-korroziogatlo-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhjv00_trinat_special_rozsdastop_magasfenyu",
+      "name": "Trinát Special rozsdaSTOP magasfényű",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-special-rozsdastop-magasfenyu"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhjv01_trinat_special_rozsdastop_selyemfenyu",
+      "name": "Trinát Special rozsdaSTOP selyemfényű",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-special-rozsdastop-selyemfenyu"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhjv02_trinat_special_rozsdastop_matt",
+      "name": "Trinát Special rozsdaSTOP matt",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-special-rozsdastop-matt"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhny00_trinat_matt_zomancfestek",
+      "name": "Trinát matt zománcfesték",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-matt-zomancfestek"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhoc00_trinat_univerzalis_alapozo",
+      "name": "Trinát univerzális alapozó",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-univerzalis-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhpu00_trinat_korroziogatlo_alapozo",
+      "name": "Trinát korroziógátló alapozó",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-korroziogatlo-alapozo"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhqc00_trinat_magasfenyu_zomancfestek",
+      "name": "Trinát magasfényű zománcfesték",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-magasfenyu-zomancfestek"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhqo00_trinat_mesterzomanc",
+      "name": "Trinát mesterzománc",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-mesterzomanc"
+    },
+    {
+      "product_id": "prod_trilak_12690dhhri00_trinat_selyemfenyu_zomancfestek",
+      "name": "Trinát selyemfényű zománcfesték",
+      "brand": "Trinát",
+      "proposed_slug": "trinat-selyemfenyu-zomancfestek"
+    }
+  ],
+  "policy": {
+    "PASS_ne_publish": true,
+    "commit_push_deploy": "REQUIRES_SEPARATE_APPROVAL",
+    "final_four_v73": "PROTECTED",
+    "dirty_hold_tree": "UNTOUCHED",
+    "live_enrichment_writes": 0
+  }
+}

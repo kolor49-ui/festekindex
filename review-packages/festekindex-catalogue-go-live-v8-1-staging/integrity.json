@@ -1,0 +1,27 @@
+{
+  "products": 95,
+  "trilak": 42,
+  "fb": 53,
+  "productIndexable": 0,
+  "brandCounts": {
+    "brand_hera": 19,
+    "brand_lazuran": 5,
+    "brand_trinat": 18
+  },
+  "sitemap": 36,
+  "brands": {
+    "brand_hera": {
+      "indexable": true,
+      "status": "published"
+    },
+    "brand_trinat": {
+      "indexable": false,
+      "status": "published"
+    },
+    "brand_lazuran": {
+      "indexable": false,
+      "status": "published"
+    }
+  },
+  "newOrgsNoindex": true
+}

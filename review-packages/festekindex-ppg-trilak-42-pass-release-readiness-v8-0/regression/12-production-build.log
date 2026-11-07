@@ -1,0 +1,24 @@
+
+> festekindex@0.1.0 build
+> next build
+
+▲ Next.js 16.3.8 (Turbopack)
+✓ Running next.config.ts took 8.5s
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 15.8s
+  Running TypeScript ...
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/catalogueClosureDescriptionsV1.ts(1,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/catalogueClosureProfessionalDescriptionsV1.ts(1,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/descriptionEnrichment.ts(7,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/files/lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts(1,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/files/lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts(1,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/files/lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts(7,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/files/lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts(6,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/hold-overlay-on-origin-main/professionalDescriptionEnrichment.ts(6,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts(1,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts(1,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts(7,51): error TS2307: Cannot find module './types' or its corresponding type declarations.
+review-packages/local-hold-preserve-2026-10-26/lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts(6,63): error TS2307: Cannot find module './types' or its corresponding type declarations.
+Failed to type check.
+

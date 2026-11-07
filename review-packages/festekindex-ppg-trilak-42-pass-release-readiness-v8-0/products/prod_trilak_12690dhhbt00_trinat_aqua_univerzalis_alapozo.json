@@ -1,0 +1,160 @@
+{
+  "product_id": "prod_trilak_12690dhhbt00_trinat_aqua_univerzalis_alapozo",
+  "proposed_slug": "trinat-aqua-univerzalis-alapozo",
+  "slug_collision_with_53": false,
+  "product_name": "Trinát Aqua univerzális alapozó",
+  "brand": "Trinát",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_trinat (MISSING — candidate)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12690dhhbt00_trinat_aqua_univerzalis_alapozo_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/trinat-aqua-univerzalis-alapozo/12690DHHBT00",
+      "sha256": "435cfa0407f94e3e880c3231e64862dd1b781de67ba4b12a08fae4673e1eec00"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12690DHHBT00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=34e6d7c5b3b6c137499fb7b324f5accfc247a662",
+      "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12690DHHBT00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12690DHHBT00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=677&SearchAllPublicFolders=False",
+      "sha256": "8f13dfd240ce89e2ec1f96776d9c285b48207d114206b8d484a7c20b5730f6ce"
+    }
+  ],
+  "claims_ok": 10,
+  "claims_total": 10,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Trinát Aqua univerzális alapozó a Műszaki adatlap szerint vízbázisú alapozó és közbenső festék fa- és fémfelületekre. Fehér színű, m att, jól csiszolható, nagy fedőképességű, ak rilgyanta kötőanyagú alapozó és közbenső festék. Kiválóan megtapad az alapfelületen, és biztosítja a rá kerülő fedőfesték megfelelő tapadását is. Rugalmas, e sztétikus, egyenletes felületet képez.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Trinát Aqua univerzális alapozó a Műszaki adatlap szerint vízbázisú alapozó és közbenső festék fa- és fémfelületekre. Fehér színű, m att, jól csiszolható, nagy fedőképességű, ak rilgyanta kötőanyagú alapozó és közbenső festék. Kiválóan megtapad az alapfelületen, és biztosítja a rá kerülő fedőfesték megfelelő tapadását is. Rugalmas, e sztétikus, egyenletes felületet képez."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 1,
+          "quote": "Fehér színű, m att, jól csiszolható , nagy fedőképességű, ak rilgyanta kötőanyagú alapozó és közbenső festék. Kiválóan megtapad az alapfelületen, és biztosítja "
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Megfelelően elő készített kül - és beltéri fa felületek (pl. ajtó, ablak, forgácslap, farostlemez ), kemény PVC felületek és gyermekjátékok alapozójaként és acélfelületek közbenső bevonataként alkalmazható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 1,
+          "quote": "Megfelelően elő készített kül - és beltéri fa felületek (pl. ajtó, ablak, forgácslap, farostlemez ), kemény PVC felületek és gyermekjátékok alapozójaként és acé"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani, és az adott alapfelületnek megfelelően kijavítani. A festendő faanyag max. 5 % nedvességtartalmú lehet. Új és régi fafelületek előkészítése: Az új, korábban még nemkezelt fafelületet finoman csiszolja megcsiszolópapírral a fa szálirányában, majd tisztítsa meg a p ortól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, pormentes, hordképes, egyenletes szívóképességű, megfelelően előkészített. A porló, leváló részeket el kell távolítani , és az"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua univerzális alapozó felhasználásra kész állapotban kerül forgalomba, hígítása nem szükséges. Javasolt +5-25oC közötti anyag, alapfelület és levegő hőmérsékleten, 65%-os relatív páratartalom alatt. Felhordás módja: Ecsettel, hengerrel vagy szórással. A száradási idő és az átvonhatóság nagymértékben függ az alapf elülettől, a páratartalomtól, a hőmérséklettől és a felhordott réteg vastagságától. Javasolt rétegszám: 1-2 réteg (min. 40µm száraz rétegvastagságban, közbenső rétegként, fém felületekre, külső térben ajánlott a 2 réteg) Egy rétegben: 0,12 l/m2 Az anyagszükséglet függ többek között a felhordás…"
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 2,
+          "quote": "A terméket a feldolgozás előtt alaposan keverje fel, illetve bizonyos időközönként festés közben is. A Trinát aqua univerzális alapozó felhasználásra kész állap"
+        }
+      ]
+    },
+    {
+      "heading": "Korlátozások",
+      "status": "ok",
+      "paragraphs": [
+        "Korlátozások: nem javasolt a festés. ne használjon oldószerrel."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 4,
+          "quote": "nem javasolt a festés"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám: 1-2 réteg (min. 40µm száraz rétegvastagságban, közbenső rétegként, fém; felületekre, külső térben ajánlott a 2 réteg); Egy rétegben: 0,12 l/m2; Megjegyzés: a javasolt rétegfelépítések minden esetben a legjobb tudásunk szerinti ajánlások, és; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,36-1,40 g/cm3 szárazanyag tartalom MSZ EN ISO3251:2003 57-60 % kiadósság ISO 6504-3:2007 4,34 m2/l 98% fedőképesség mellett, egy rétegben száradási idő 1. fok. DIN EN ISO 15171óra száradási idő 4.."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12690DHHBT00_tds",
+          "doc_kind": "tds",
+          "sha256": "12ef21e278fe7ef8e04a32327e144251461ed22d573e6904ff6ccfb0c70ea8fb",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ ISO 2811-1:2001 1,36-1,40 g/cm3 szárazanyag tartalom MSZ EN ISO3251:2003 57-60 % kiadósság ISO 650"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

@@ -1,0 +1,63 @@
+=== FESTÉKINDEX graph validation (v0.2) ===
+merged entities=188 relations=541
+Festék Bázis v0.2 mapped entities by type: {
+  organization: 1,
+  brand: 3,
+  productFamily: 5,
+  product: 53,
+  surface: 15,
+  technology: 7,
+  category: 1
+}
+Merged entities by type: {
+  organization: 16,
+  brand: 23,
+  technology: 9,
+  category: 20,
+  productFamily: 8,
+  product: 95,
+  knowledge: 2,
+  surface: 15
+}
+Merged relations by type: {
+  owns: 19,
+  manufactures: 50,
+  hasProductFamily: 7,
+  usesTechnology: 121,
+  distributes: 4,
+  officialDistributor: 1,
+  services: 1,
+  belongsToCategory: 120,
+  documents: 3,
+  represents: 1,
+  hasProduct: 95,
+  applicableToSurface: 108,
+  partOfSystem: 2,
+  compatibleWith: 1,
+  dilutedWith: 8
+}
+v0.2 sources=56 relations=242
+
+7016 migration:
+  brand_7016: draft indexable=false
+  pf_7016: productFamily published indexable=false
+
+Warnings (16):
+  [archived_brand_7016_unlinked] brand_7016 is archived draft without relations (canonical: pf_7016)
+  [unlinked_catalog_entity] category cat_epitesi has no active relations yet
+  [unlinked_catalog_entity] category cat_auto has no active relations yet
+  [unlinked_catalog_entity] category cat_szerszam has no active relations yet
+  [unlinked_catalog_entity] category cat_maszkolas has no active relations yet
+  [unlinked_catalog_entity] category cat_feluletkezelo has no active relations yet
+  [unlinked_catalog_entity] category cat_alapanyag has no active relations yet
+  [unlinked_catalog_entity] category cat_kf has no active relations yet
+  [product_class_spec_mismatch] Product prod_valmor_airflow_primer: key gloss not applicable to class primer
+  [product_class_spec_mismatch] Product prod_valmor_airflow_salt: key gloss not applicable to class filler
+  [product_class_spec_mismatch] Product prod_valmor_deep_primer: key gloss not applicable to class primer
+  [product_class_spec_mismatch] Product prod_valmor_plaster: key gloss not applicable to class filler
+  [product_class_spec_mismatch] Product prod_factor_aqua_primer: key gloss not applicable to class primer
+  [product_class_spec_mismatch] Product prod_coror_rapid_primer: key gloss not applicable to class primer
+  [product_class_spec_mismatch] Product prod_coror_rapid_stripper: key coverage not applicable to class surface_prep
+  [product_class_spec_mismatch] Product prod_coror_ind_primer: key gloss not applicable to class primer
+
+VALIDATION OK

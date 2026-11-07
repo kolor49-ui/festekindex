@@ -1,0 +1,17 @@
+{
+  "package": "festekindex-poli-farbe-6-pass-release-readiness-v8-3",
+  "files": {
+    "RELEASE-REPORT.md": "4ebeb88e2b182b0d05294220303ba2c251f6b5c652a8c12f469225bf841ed4a6",
+    "gates/DECISION.md": "b1e34f8f8354c3dad595f1ada5220750fa160b229ca26347fa5d150e900852be",
+    "gates/INTEGRITY.json": "8297f7c6d46f1661f92b90a570d5e7de33ea537c1930be116e8116f52efd08ba",
+    "gates/POLI-V5-SUMMARY.json": "2cb387a13c2d6455fa1a0a72a013b8958fd6918d6ea06314e5fc7fef9bb554bb",
+    "notes/HOLD-REVIEW-REGISTRY.md": "82ac5e385b5e69ec5e04e300b8bcb3778bfdf8977fdbcff64be7ccbc6e5f4210",
+    "notes/MANUFACTURER-CONTACT-MORATORIUM.md": "ed28ca15f7e9950a75219f67f6898f7e12ca637c897a0f94c38d3fef6a799c1e",
+    "roster/HOLD-IDS.txt": "c9476ff9107f03e4df04009208461c2c7a1e7f803a3f0a47b11b8417b54a4541",
+    "roster/PASS-IDS.txt": "0069e9b977f7b2c0ddcb8fe7d4cd8035d9c7db47ddf74dff1f6786d237f24080",
+    "roster/PASS-LIST.md": "07cacc65963bb3132c5da541298683fb67d4b1bcdca7f913b065243dfaa5942b",
+    "roster/REVIEW-IDS.txt": "4aeb83752a36d9106d341cf23fa5b26483d5a4f589414d034899f579d6d34339",
+    "roster/ROSTER.csv": "87e233c5203007108eaf15ce3ba8e4e68e2114f9f15f78f462502adda1e5020c",
+    "seo/SEO-NOTE.md": "a73f3ddb7760bf24b4e597bc3585754fe9b8046792666a8618ce29ea62205f29"
+  }
+}

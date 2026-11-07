@@ -1,0 +1,48 @@
+{
+  "total": 196,
+  "expected": 196,
+  "fb": 53,
+  "fbExpected": 53,
+  "trilak": 42,
+  "trilakExpected": 42,
+  "jub": 95,
+  "jubExpected": 95,
+  "poli": 6,
+  "poliExpected": 6,
+  "poliIndexable": 0,
+  "allProductsIndexable": 0,
+  "sitemapCount": 36,
+  "poliInSitemap": 0,
+  "jubProductInSitemap": 0,
+  "productInSitemap": 0,
+  "poliIds": [
+    "prod_poli_farbe_poli_farbe_boroka_vastaglazur",
+    "prod_poli_farbe_poli_farbe_cellkolor_radiatorzomanc",
+    "prod_poli_farbe_poli_farbe_cellkolor_univerzalis_korroziogatlo_alapozo",
+    "prod_poli_farbe_poli_farbe_inntaler_premium_belteri_falfestek",
+    "prod_poli_farbe_poli_farbe_platinum_egyretegu_belteri_falfestek",
+    "prod_poli_farbe_poli_farbe_platinum_feher_alapozo_festek"
+  ],
+  "poliBrands": [
+    {
+      "id": "brand_poli_farbe",
+      "indexable": false
+    },
+    {
+      "id": "brand_poli_boroka",
+      "indexable": false
+    },
+    {
+      "id": "brand_poli_cellkolor",
+      "indexable": false
+    },
+    {
+      "id": "brand_poli_inntaler",
+      "indexable": false
+    },
+    {
+      "id": "brand_poli_platinum",
+      "indexable": false
+    }
+  ]
+}

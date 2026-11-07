@@ -1,0 +1,30 @@
+
+=== Baseline locks ===
+baseline OK { specs: 237, packs: 135, diluted: 8 }
+
+=== Coverage + provenance ===
+coverage OK {
+  products: 196,
+  totalSections: 1035,
+  headings: {
+    'Alkalmazás': 196,
+    'Előkészítés': 193,
+    'Felhasználás': 196,
+    'Fényesség': 38,
+    'Fontos korlátok és biztonság': 7,
+    'Termékleírás': 143,
+    'Korlátozások': 119,
+    'Műszaki adatok': 143
+  }
+}
+
+=== Reference content ===
+reference OK
+
+=== Hub render order + SSR + leakage ===
+render/SSR OK 196
+
+=== AIR FLOW acceptance smoke ===
+AIR FLOW smoke OK
+
+ALL Product Professional Description v1 checks passed.

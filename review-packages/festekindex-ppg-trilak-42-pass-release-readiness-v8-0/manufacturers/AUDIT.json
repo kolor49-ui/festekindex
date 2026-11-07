@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-10-30T15:37:55.760565+00:00",
+  "live_orgs_checked": [
+    "org_ppg_trilak",
+    "org_akzo_nobel_coatings"
+  ],
+  "live_brands_checked": [
+    "brand_hera",
+    "brand_dulux",
+    "brand_sikkens",
+    "brand_international",
+    "brand_interpon"
+  ],
+  "matrix": [
+    {
+      "maker": "PPG Trilak",
+      "org_live": true,
+      "org_id": "org_ppg_trilak",
+      "brands_live": [
+        "Héra"
+      ],
+      "brands_missing_for_42": [
+        "Trinát",
+        "Lazurán"
+      ],
+      "status": "PARTIAL"
+    },
+    {
+      "maker": "Poli-Farbe",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://www.polifarbe.hu/"
+    },
+    {
+      "maker": "Akzo Nobel / Dulux",
+      "org_live": true,
+      "org_id": "org_akzo_nobel_coatings",
+      "brands_live": [
+        "Dulux",
+        "Sikkens",
+        "International",
+        "Interpon"
+      ],
+      "status": "PRESENT"
+    },
+    {
+      "maker": "JUB",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://www.jub.hu/"
+    },
+    {
+      "maker": "Remmers",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://www.remmers.hu/hu"
+    },
+    {
+      "maker": "Meffert",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://dufa-hungary.hu/",
+      "note": "Meffert Hungária / Düfa"
+    },
+    {
+      "maker": "Egrokorr",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://egrokorr.hu/"
+    },
+    {
+      "maker": "Caparol",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://www.caparol.hu/",
+      "note": "HU representation: thenordicmark KFT"
+    },
+    {
+      "maker": "Revco",
+      "org_live": false,
+      "brands_live": [],
+      "status": "MISSING",
+      "official": "https://revco.hu/",
+      "note": "Saint-Gobain Hungary Kft. REVCO Divízió"
+    }
+  ]
+}

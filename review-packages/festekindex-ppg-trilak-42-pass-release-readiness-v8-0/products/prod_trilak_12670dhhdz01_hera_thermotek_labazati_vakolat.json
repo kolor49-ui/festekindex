@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12670dhhdz01_hera_thermotek_labazati_vakolat",
+  "proposed_slug": "hera-thermotek-labazati-vakolat",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Thermotek lábazati vakolat",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12670dhhdz01_hera_thermotek_labazati_vakolat_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-thermotek-labazati-vakolat/12670DHHDZ01",
+      "sha256": "da5c073ddf11c3af0472badaae09705b3faf0f12cc32dc639f7ad1e353cc7279"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12670DHHDZ01_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=efe985e0c5d2a6e8578eb37f45ca955973b84518",
+      "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12670DHHDZ01_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12670DHHDZ01&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=676&SearchAllPublicFolders=False",
+      "sha256": "8a4e91b45cc1d14e7350e5df95a2a8107f0293edb442176287f6bf81403842c9"
+    }
+  ],
+  "claims_ok": 9,
+  "claims_total": 9,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Thermotek lábazati vakolat a Műszaki adatlap szerint épületek lábazatának esztétikus védelmére és díszítő bevonására szolgál. A Thermotek lábazati vakolat megfelelő színű, selyemmatt, valamint esztétikus felületű. Szállítási formájában két komponensből áll: egy kötőanyag komponensből és az ebbe belekeverendő színes szemcsékből. Összekevert állapotban 1,5 mm szemcsenagyságú színes, homogén massza. Kötőanyaga módosított akrilátdiszperzió.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Thermotek lábazati vakolat a Műszaki adatlap szerint épületek lábazatának esztétikus védelmére és díszítő bevonására szolgál. A Thermotek lábazati vakolat megfelelő színű, selyemmatt, valamint esztétikus felületű. Szállítási formájában két komponensből áll: egy kötőanyag komponensből és az ebbe belekeverendő színes szemcsékből. Összekevert állapotban 1,5 mm szemcsenagyságú színes, homogén massza. Kötőanyaga módosított akrilátdiszperzió."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12670DHHDZ01_tds",
+          "doc_kind": "tds",
+          "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86",
+          "page": 1,
+          "quote": "A Thermotek lábazati vakolat megfelelő színű, selyemmatt, valamint esztétikus felületű. Szállítási formájában két komponensből áll: egy kötőanyag komponensből é"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: A Thermotek lábazati vakolat homlokzatokon, főként lábazati felületeken és beltéri falfelületeken dekorációs célból használható. Betonfelületeken és cementvakolaton is alkalmazható."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12670DHHDZ01_tds",
+          "doc_kind": "tds",
+          "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86",
+          "page": 1,
+          "quote": "A Thermotek lábazati vakolat homlokzatokon, főként lábazati felületeken és beltéri falfelületeken dekorációs célból használható. Betonfelületeken és cementvakol"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: Új, festetlen felületek Portalanítás utánHéra Falfix diszperziós mély alapozóval kell beereszteni, hogy a felület szívóképességét kiegyenlítsük. Ezután az esetleges kisebb felületi hibákat ki kell javítani. A sima felületet, világos színek esetében javasoljuk a termék színével megegyező Thermotek kolor vakolatalapozóval alapozni, sötétebb színek esetében pedig a Héra kolor homlokzat és lábazatfestékkel alapozni."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12670DHHDZ01_tds",
+          "doc_kind": "tds",
+          "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86",
+          "page": 1,
+          "quote": "Új, festetlen felületek Portalanítás utánHéra Falfix diszperziós mély alapozóval kell beereszteni, hogy a felület szívóképességét kiegyenlítsük. Ezután az esetl"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A 4,5 kg kötőanyagba lassú fordulatú, rozsdamentes keverőszáras fúrógéppel keverjük bele5db egész tasak, egyenként 2,1 kg -os színes szemcsét a színárnyalatnak megfelelő arányban vagy tetszés szerint. Javasolt +5-25 oC közötti anyag, alapfelület és levegő hőmérsékleten, maximum 80%-os relatív páratartalom alatt. Ne dolgozzunk esőre hajló, párás, hideg időben vagy eső alkalmával. Összekevert anyag 4,5 - 5 kg/m2 Az anyagszükséglet függ többek között a felhordás módjától, és a felülettől. Az anyagszükséglet pontos értékét adott esetben a bevonandó falfelületen kell meghatározni."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12670DHHDZ01_tds",
+          "doc_kind": "tds",
+          "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86",
+          "page": 2,
+          "quote": "A 4,5 kg kötőanyagba lassú fordulatú, rozsdamentes keverőszáras fúrógéppel keverjük bele5db egész tasak, egyenként 2,1 kg -os színes szemcsét a színárnyalatnak "
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Összekevert anyag 4,5 - 5 kg/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés Éghetőség F osztály Páraáteresztő képesség EN 7783-2 V2 Vízfelvétel EN 1062-3 W3 Tapadás min. EN 1542 0,3 MPa."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12670DHHDZ01_tds",
+          "doc_kind": "tds",
+          "sha256": "f773f91516e8d7d591a8c1b22522043a2f939556df3897d3aa8375a608257c86",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Éghetőség F osztály Páraáteresztő képesség EN 7783-2 V2 Vízfelvétel EN 1062-3 W3 Tapadás min. EN 1542 0,3 MPa"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

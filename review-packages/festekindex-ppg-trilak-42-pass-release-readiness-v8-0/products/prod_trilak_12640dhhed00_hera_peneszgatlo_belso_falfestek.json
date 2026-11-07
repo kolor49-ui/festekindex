@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhhed00_hera_peneszgatlo_belso_falfestek",
+  "proposed_slug": "hera-peneszgatlo-belso-falfestek",
+  "slug_collision_with_53": false,
+  "product_name": "Héra penészgátló belső falfesték",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhed00_hera_peneszgatlo_belso_falfestek_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-peneszgatlo-belso-falfestek/12640DHHED00",
+      "sha256": "40108446da23d6ea055ade457d298d26050b13fb0d57832b66b63839bd57eed6"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHED00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=526bf681dfb00d2b164c15a14970259584ee5bc0",
+      "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHED00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHED00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "0297f76ccc501d467adad1fb728457bb102da88ac9dc73feff7058fe7a9b98cf"
+    }
+  ],
+  "claims_ok": 9,
+  "claims_total": 9,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra penészgátló belső falfesték a Műszaki adatlap szerint matt, fehér biocid tartalmú falfesték vakolt, beton, gipszkarton és glettelt felületekre. Fehér színű, matt biocid tartalmú Héra Penészgátló beltéri falfesték egyaránt alkalmazható megelőző védelem céljából, vagy megfelelő előkészítés után a már szennyezett felületeken is.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra penészgátló belső falfesték a Műszaki adatlap szerint matt, fehér biocid tartalmú falfesték vakolt, beton, gipszkarton és glettelt felületekre. Fehér színű, matt biocid tartalmú Héra Penészgátló beltéri falfesték egyaránt alkalmazható megelőző védelem céljából, vagy megfelelő előkészítés után a már szennyezett felületeken is."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHED00_tds",
+          "doc_kind": "tds",
+          "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4",
+          "page": 1,
+          "quote": "Fehér színű, matt biocid tartalmú Héra Penészgátló beltéri falfesték egyaránt alkalmazható megelőző védelem céljából, vagy megfelelő előkészítés után a már szen"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Vakolt, beton, gipszkarton és glettelt belső falfelületek festésére megelőző védelem céljából, már penészesfelületekre a penésztelepek megfelelő eltávolítása után."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHED00_tds",
+          "doc_kind": "tds",
+          "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4",
+          "page": 1,
+          "quote": "Vakolt, beton, gipszkarton és glettelt belső falfelületek festésére megelőző védelem céljából, már penészesfelületekre a penésztelepek megfelelő eltávolítása ut"
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. CMC - alapú glettanyagok használata nem javasolt Megelőző védelem céljából: Új, vakolt vagy beton illetve; gipsz tartalmú glett el előkészített vagy gipszkarton felületek: Finoman csiszolja meg a felületet csiszolópapírral majd tisztítsa meg a portól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHED00_tds",
+          "doc_kind": "tds",
+          "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4",
+          "page": 1,
+          "quote": "A festendő felület legyen száraz, hordképes, egyenletes szívóképességű, megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelül"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: Javasolt +5 - 30 o Cközötti anyag, alap felület és levegő hőmérsékleten, 80% - os relat ív páratartalom alatt. Felhordás módja: Ecsettel, hengerrel vagy megfelelő szóró berendezéss el. A száradási idő és az átvonhatóság nagymértékben függ az alapfelülettől, a páratartalomtól és a hőmérséklettől. Magasabb páratartalom és alacsonyabb hőmérséklet esetén a száradási idő meghosszabbodik. Javasolt rétegszám (a megfelelő védelem eléréséhez ): 2 réteg Két rétegben: 0,2 5 - 0,28 l/m2 Az anyagszükséglet függ többek között a felhordás módjától, a felülettől és a hígítás tól."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHED00_tds",
+          "doc_kind": "tds",
+          "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4",
+          "page": 2,
+          "quote": "Javasolt +5 - 30 o Cközötti anyag, alap felület és levegő hőmérsékleten, 80% - os relat ív páratartalom alatt . Felhordás módja: Ecsettel, hengerrel vagy megfel"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: Javasolt rétegszám (a; réteg; Két rétegben:; 0,28 l/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811 - 1 1,48 - 1,54 g/cm3 kiadósság MSZ EN ISO 6504 - 3 5 m 2 /l 98.8 % fedőképességnél nedves dörzsállóság MSZ - EN 13300 4.."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHED00_tds",
+          "doc_kind": "tds",
+          "sha256": "9b10428f7fe05d16789ffc2d350a6ac6ae13b1c5ea07da219c9839922d8b7ab4",
+          "page": 3,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés sűrűség MSZ EN ISO 2811 - 1 1,48 - 1,54 g/cm3 kiadósság MSZ EN ISO 6504 - 3 5 m 2 /l 98.8 % fedőképességnél ne"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

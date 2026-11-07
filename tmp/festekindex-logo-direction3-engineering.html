@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FESTÉKINDEX — 3. irány, mérnöki finomítások (fehér)</title>
+  <style>
+    :root {
+      --red: #c62828;
+      --yellow: #e6a700;
+      --green: #2e7d4f;
+      --blue: #1a6fa3;
+      --ink: #121820;
+      --muted: #6a7884;
+      --line: #e6ebef;
+      --paper: #ffffff;
+      --stage: #f7f9fb;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--stage);
+      color: var(--ink);
+    }
+
+    header.page {
+      padding: 28px 28px 16px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    header.page h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: -0.3px;
+      font-weight: 700;
+    }
+    header.page p {
+      margin: 0;
+      max-width: 46rem;
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      padding: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .meta {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .meta strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .meta span {
+      display: block;
+      margin-top: 3px;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .stage {
+      background: #fff;
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      padding: 36px 24px;
+      gap: 28px;
+    }
+
+    .lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      text-align: center;
+    }
+    .lockup.row {
+      flex-direction: row;
+      text-align: left;
+      gap: 14px;
+    }
+    .word {
+      font-size: 18px;
+      font-weight: 750;
+      letter-spacing: 1.4px;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .word .idx { color: var(--blue); }
+    .tag {
+      margin-top: 7px;
+      font-size: 8.5px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Shared: no outer box — only the 4 fields */
+    .icon {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      flex-shrink: 0;
+    }
+    .icon i {
+      display: block;
+      background: #ccc;
+    }
+    .icon i:nth-child(1) { background: var(--red); }
+    .icon i:nth-child(2) { background: var(--yellow); }
+    .icon i:nth-child(3) { background: var(--green); }
+    .icon i:nth-child(4) { background: var(--blue); }
+
+    /* V1 — tight technical tiles, small radius, clear gap */
+    .icon-v1 {
+      width: 56px;
+      height: 56px;
+      gap: 5px;
+    }
+    .icon-v1 i {
+      border-radius: 3px;
+    }
+
+    /* V2 — sharper engineering: almost square, hairline gap */
+    .icon-v2 {
+      width: 56px;
+      height: 56px;
+      gap: 3px;
+    }
+    .icon-v2 i {
+      border-radius: 2px;
+    }
+
+    /* V3 — modular system: rectangles with micro-inset corners (technical, not soft) */
+    .icon-v3 {
+      width: 58px;
+      height: 58px;
+      gap: 4px;
+    }
+    .icon-v3 i {
+      border-radius: 1px 4px 1px 4px;
+    }
+
+    .sizes {
+      display: flex;
+      gap: 18px;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .sizes .icon-v1.sm,
+    .sizes .icon-v2.sm,
+    .sizes .icon-v3.sm { width: 28px; height: 28px; gap: 2.5px; }
+    .sizes .icon-v1.xs,
+    .sizes .icon-v2.xs,
+    .sizes .icon-v3.xs { width: 18px; height: 18px; gap: 1.5px; }
+    .sizes .icon-v1.sm i,
+    .sizes .icon-v2.sm i { border-radius: 2px; }
+    .sizes .icon-v1.xs i,
+    .sizes .icon-v2.xs i { border-radius: 1px; }
+    .sizes .icon-v3.sm i { border-radius: 1px 3px 1px 3px; }
+    .sizes .icon-v3.xs i { border-radius: 0 2px 0 2px; }
+
+    footer.note {
+      padding: 4px 22px 28px;
+      font-size: 12px;
+      color: var(--muted);
+      max-width: 52rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <h1>FESTÉKINDEX — 3. irány · mérnöki finomítások</h1>
+    <p>
+      Ugyanaz a 2×2 színrendszer (piros · sárga · zöld · kék), fehér háttéren.
+      Nincs külső keret / app-doboz. Három letisztult, szögletesebb, műszaki változat.
+    </p>
+  </header>
+
+  <div class="grid">
+    <!-- V1 -->
+    <article class="card">
+      <div class="meta">
+        <strong>V1 — Technical tiles</strong>
+        <span>Egyenlő négyzetek, 5px rés, 3px sarok — rendszerezett index-modul</span>
+      </div>
+      <div class="stage">
+        <div class="icon icon-v1" aria-label="FESTÉKINDEX ikon V1">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="sizes" aria-hidden="true">
+          <div class="icon icon-v1 sm"><i></i><i></i><i></i><i></i></div>
+          <div class="icon icon-v1 xs"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="lockup row">
+          <div class="icon icon-v1" style="width:36px;height:36px;gap:3px" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div>
+            <div class="word">FESTÉK<span class="idx">INDEX</span></div>
+            <div class="tag">A festékipar szakmai indexe</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- V2 -->
+    <article class="card">
+      <div class="meta">
+        <strong>V2 — Precision grid</strong>
+        <span>Élesebb sarkok (2px), szűkebb rés — leginkább mérnöki / CAD hang</span>
+      </div>
+      <div class="stage">
+        <div class="icon icon-v2" aria-label="FESTÉKINDEX ikon V2">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="sizes" aria-hidden="true">
+          <div class="icon icon-v2 sm"><i></i><i></i><i></i><i></i></div>
+          <div class="icon icon-v2 xs"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="lockup row">
+          <div class="icon icon-v2" style="width:36px;height:36px;gap:2px" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div>
+            <div class="word">FESTÉK<span class="idx">INDEX</span></div>
+            <div class="tag">A festékipar szakmai indexe</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- V3 -->
+    <article class="card">
+      <div class="meta">
+        <strong>V3 — Modular bevel</strong>
+        <span>Aszimmetrikus mikro-sarok (1/4) — precíz modul, nem dekoratív</span>
+      </div>
+      <div class="stage">
+        <div class="icon icon-v3" aria-label="FESTÉKINDEX ikon V3">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="sizes" aria-hidden="true">
+          <div class="icon icon-v3 sm"><i></i><i></i><i></i><i></i></div>
+          <div class="icon icon-v3 xs"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="lockup row">
+          <div class="icon icon-v3" style="width:38px;height:38px;gap:3px" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div>
+            <div class="word">FESTÉK<span class="idx">INDEX</span></div>
+            <div class="tag">A festékipar szakmai indexe</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <footer class="note">
+    Fájl: <code>tmp/festekindex-logo-direction3-engineering.html</code> —
+    ajánlásom platformra: <strong>V1</strong> (olvasható kicsiben is) vagy <strong>V2</strong> (legszigorúbb).
+    Írd meg a választottat, ha élesítjük a sidebar / topbar markot.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "expected_product_indexable": "0/53",
+  "change_in_this_package": false,
+  "proposed_42_indexable_if_published_without_unlock": false,
+  "note": "Products currently forced noindex,follow. Adding 42 without SEO unlock should keep noindex until explicit GO.",
+  "seo_impact_if_only_package": "none (artifacts only under review-packages/)"
+}

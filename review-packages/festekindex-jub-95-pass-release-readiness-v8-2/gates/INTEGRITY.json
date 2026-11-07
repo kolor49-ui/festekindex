@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-30T19:01:34.204150+00:00",
+  "files": [
+    {
+      "path": "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts",
+      "sha256": "c25776cb55969324ff366638820c06a9b441882cc6cf6f511b38d230914ebbd7",
+      "exists": true
+    },
+    {
+      "path": "lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts",
+      "sha256": "d7063d59288ac5ba4e37f6f3dd017e97ebbdfb5397e4cb7dc61cb32efb3a60c5",
+      "exists": true
+    },
+    {
+      "path": "lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts",
+      "sha256": "0fea0dfa2fdd0aa29b6669ba4c5791a0f92643573a9cf9ef2f4eb5bcf3164cb5",
+      "exists": true
+    },
+    {
+      "path": "lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts",
+      "sha256": "182ab2e770f01a98fb30bc241692a41b19b9d554951fc9a2e2a53d31846f4d78",
+      "exists": true
+    },
+    {
+      "path": "review-packages/festekindex-final-four-release-closure-v7-3c.zip",
+      "sha256": "27e740ed72dec30f582110f179b7b275a73f25d058956ed5ce8c2f3d73ef0582",
+      "exists": true
+    }
+  ]
+}

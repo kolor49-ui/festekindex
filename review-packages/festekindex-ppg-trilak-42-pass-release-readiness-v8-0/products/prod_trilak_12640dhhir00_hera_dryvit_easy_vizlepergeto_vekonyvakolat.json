@@ -1,0 +1,146 @@
+{
+  "product_id": "prod_trilak_12640dhhir00_hera_dryvit_easy_vizlepergeto_vekonyvakolat",
+  "proposed_slug": "hera-dryvit-easy-vizlepergeto-vekonyvakolat",
+  "slug_collision_with_53": false,
+  "product_name": "Héra Dryvit Easy vízlepergető vékonyvakolat",
+  "brand": "Héra",
+  "manufacturer": "PPG TRILAK Kft.",
+  "org_id_existing": "org_ppg_trilak",
+  "brand_id_existing_or_needed": "brand_hera (exists)",
+  "has_tds": true,
+  "has_sds": true,
+  "sources": [
+    {
+      "kind": "product_page",
+      "source_id": "src_prod_trilak_12640dhhir00_hera_dryvit_easy_vizlepergeto_vekonyvakolat_page",
+      "url": "https://trilak.ppg.com/hu-HU/termek/hera-dryvit-easy-vizlepergeto-vekonyvakolat/12640DHHIR00",
+      "sha256": "9408c090c5cbf63162e83b462f76287cc72511346f21efd39a3190aa38f3cf66"
+    },
+    {
+      "kind": "tds",
+      "source_id": "src_trilak_12640DHHIR00_tds",
+      "url": "https://dam-cdn.ppg.com/adaptivemedia/rendition?id=d820d930aa585ada9ea4a87f04dafdef3576ecf8",
+      "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3"
+    },
+    {
+      "kind": "sds",
+      "source_id": "src_trilak_12640DHHIR00_sds",
+      "url": "https://buyat.ppg.com/EHSDocumentManagerPublic/documentSearchInnerFrame.aspx?CodeCondition=IsEqualTo&CodeValue=12640DHHIR00&Form=4bec1670167100ab0000,4c7e72cfb4ac9f6a0000&Language=hu-HU&SuppressSearchControls=True&FolderID1=675&SearchAllPublicFolders=False",
+      "sha256": "06fe1b39aeef0b24a3d2a518f296b7224ae0be9b6fea067aa20192c9b82779af"
+    }
+  ],
+  "claims_ok": 9,
+  "claims_total": 9,
+  "claims_weak": 0,
+  "claims_banned": 0,
+  "editorial_summary": "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre.",
+  "sections": [
+    {
+      "heading": "Termékleírás",
+      "status": "ok",
+      "paragraphs": [
+        "A Héra Dryvit Easy vízlepergető vékonyvakolat a Műszaki adatlap szerint diszperziós kötőanyag alapú, kapart vagy dörzsölt struktúrájú vékonyvakolat. Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretben. Szilikon adalék tartalmának köszönhetően hidrofób felületet hoz létre."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHIR00_tds",
+          "doc_kind": "tds",
+          "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3",
+          "page": 1,
+          "quote": "Módosított akrilát diszperzió kötőanyagú, jó minőségű, tartós, esztétikus vékonyvakolat. Elérhető kapart vagy dörzsölt struktúrában, 1,5 és2mm -es szemcseméretb"
+        }
+      ]
+    },
+    {
+      "heading": "Alkalmazás",
+      "status": "ok",
+      "paragraphs": [
+        "Alkalmazási terület: Használható vakolt és beton homlokzatfelületek díszítő vakolataként, valamint a Héra hőszigetelő rendszer befejező rétegeként."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHIR00_tds",
+          "doc_kind": "tds",
+          "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3",
+          "page": 1,
+          "quote": "Használható vakolt és beton homlokzatfelületek díszítő vakolataként, valamint a Héra hőszigetelő rendszer befejező rétegeként."
+        }
+      ]
+    },
+    {
+      "heading": "Előkészítés",
+      "status": "ok",
+      "paragraphs": [
+        "Felület-előkészítés: A bevonandó felület legyen száraz, hordképes, egyenletes szívóképességű és megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfelületnek megfelelően kijavítani. A vakolat minősége legyen min. vH 10. Homlokzati felületek glettelését nem javasoljuk, mivel a glettanyagok hosszú távú tartósság ára homlokzatfelületekre vonatkozóan nem rendelkezünk információval. Régi, már diszperziós festékkel festett felületek Afelület legyen stabil és hordképes."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHIR00_tds",
+          "doc_kind": "tds",
+          "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3",
+          "page": 1,
+          "quote": "A bevonandó felület legyen száraz, hordképes, egyenletes szívóképességű és megfelelően alapozott. A porló, leváló részeket el kell távolítani és az adott alapfe"
+        }
+      ]
+    },
+    {
+      "heading": "Felhasználás",
+      "status": "ok",
+      "paragraphs": [
+        "Felhasználás: A terméket a feldolgo zás előtt alaposan keverjük fel lassú fordulatú fúrógépbe fogott keverőszárral vagy speciális festékkeverő géppel. Javasolt +5-25 oC közötti anyag, alapfelület és levegő hőmérsékleten, maximum 80%-os relatív páratartalom alatt. Ne dolgozzunk esőre hajló, párás, hideg időben vagy es őben. Kapart struktúra 1,5 mm szemcseméret Kapart struktúra2mm szemcseméret 2,5 kg/m2 2,7 kg/m2 Dörzsölt struktúra2mm szemcseméret 2,5 kg/m2 Az anyagszükséglet függ többek között a felhordás módjától, és a felülettől."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHIR00_tds",
+          "doc_kind": "tds",
+          "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3",
+          "page": 2,
+          "quote": "A terméket a feldolgo zás előtt alaposan keverjük fel lassú fordulatú fúrógépbe fogott keverőszárral vagy speciális festékkeverő géppel. A vékonyvakolat felhasz"
+        }
+      ]
+    },
+    {
+      "heading": "Műszaki adatok",
+      "status": "ok",
+      "paragraphs": [
+        "Műszaki adatok: 2,5 kg/m2; 2,7 kg/m2; Dörzsölt struktúra 2 mm szemcseméret 2,5 kg/m2; Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811 1,80-1,95 g/cm3 Fényesség EN 1062 matt durva szemcséket tartalmaz Szárazanyag tartalom (m/m %) HSZ B027 81,5-87 % Hamutartalom (m/m %) HSZ A008 74,5-81 % 450 oC-on."
+      ],
+      "evidence": [
+        {
+          "source_id": "src_trilak_12640DHHIR00_tds",
+          "doc_kind": "tds",
+          "sha256": "3d5428b3f69fb8934518e9a6f90d17bf905fa608d8d96cbde02dbab8d76ac8c3",
+          "page": 4,
+          "quote": "Jellemző Vizsgálati előírás Mért érték Megjegyzés Sűrűség MSZ EN ISO 2811 1,80-1,95 g/cm3 Fényesség EN 1062 matt durva szemcséket tartalmaz Szárazanyag tartalom"
+        }
+      ]
+    }
+  ],
+  "specifications": [],
+  "gaps": [
+    "enrichment:missing_section:Korlátozások"
+  ],
+  "release_checks": {
+    "pass_status": true,
+    "publishable_false": true,
+    "has_tds": true,
+    "has_sds": true,
+    "manufacturer_ppg": true,
+    "brand_known": true,
+    "name_nonempty": true,
+    "summary_len_ge_120": true,
+    "required_sections": true,
+    "claims_all_ok_or_empty": true,
+    "no_master_id_dup": true,
+    "no_master_name_dup": true,
+    "no_invented": true,
+    "identity_warnings_clear": true
+  },
+  "release_check_failures": [],
+  "reasons": [
+    "pass:local_draft_ready_all_gates"
+  ],
+  "publishable": false,
+  "auto_published": false,
+  "enrichment_path_written": null
+}

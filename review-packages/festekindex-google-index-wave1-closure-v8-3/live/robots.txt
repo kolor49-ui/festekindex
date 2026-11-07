@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://festekindex.hu
+Sitemap: https://festekindex.hu/sitemap.xml

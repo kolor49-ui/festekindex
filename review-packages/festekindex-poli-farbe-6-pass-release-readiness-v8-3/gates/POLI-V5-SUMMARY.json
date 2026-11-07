@@ -1,0 +1,24 @@
+{
+  "source_run": "tools/mass-import/runs/poli-farbe-v5",
+  "generated_from_summary_at": "2026-10-30T19:37:57.182994+00:00",
+  "counts": {
+    "PASS": 6,
+    "REVIEW": 65,
+    "HOLD": 2,
+    "ERROR": 0
+  },
+  "publish_policy": "NEVER_AUTO_PUBLISH",
+  "auto_published": false,
+  "pass_ids": [
+    "prod_poli_farbe_poli_farbe_boroka_vastaglazur",
+    "prod_poli_farbe_poli_farbe_cellkolor_radiatorzomanc",
+    "prod_poli_farbe_poli_farbe_cellkolor_univerzalis_korroziogatlo_alapozo",
+    "prod_poli_farbe_poli_farbe_inntaler_premium_belteri_falfestek",
+    "prod_poli_farbe_poli_farbe_platinum_egyretegu_belteri_falfestek",
+    "prod_poli_farbe_poli_farbe_platinum_feher_alapozo_festek"
+  ],
+  "hold_ids": [
+    "prod_poli_farbe_poli_farbe_diszperzios_vekonyvakolat",
+    "prod_poli_farbe_poli_farbe_hengerelheto_vakolat"
+  ]
+}

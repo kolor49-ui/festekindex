@@ -1,0 +1,6 @@
+app/globals.css
+components/home/HomeExplorer.tsx
+lib/data/imports/festekBazisEnrichmentV1/catalogueClosureDescriptionsV1.ts
+lib/data/imports/festekBazisEnrichmentV1/catalogueClosureProfessionalDescriptionsV1.ts
+lib/data/imports/festekBazisEnrichmentV1/descriptionEnrichment.ts
+lib/data/imports/festekBazisEnrichmentV1/professionalDescriptionEnrichment.ts
